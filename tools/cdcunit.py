@@ -223,6 +223,7 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 					cellsub4_0 = cellsub4.deref(0x0)
 					print("{}".format(cellsub4_0))
 				except Exception as e:
+					cellsub4_0 = None
 					print("error", e)
 
 				cellsub20 = cell.deref(0x20)

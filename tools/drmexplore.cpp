@@ -7,6 +7,7 @@
 #include <sstream>
 #include <cctype>
 #include "drm.h"
+#include "script.h"
 
 using Reference = DRM::Section::Reference;
 using Section = DRM::Section;
@@ -99,10 +100,9 @@ static void summary(std::ostream &os, Section& s) {
 
 	os << " " << s.header.id;
 	if (s.header.type == Section::ContentType::Script) {
-		auto name = s.ref().deref(0x10);
-		if (name.section != nullptr)
-			os << " " << &(name.access<char>());
-
+		os << " ";
+		void scriptTypeName(std::ostream &os, Reference scriptType);
+		scriptTypeName(os, s.ref());
 	} else if (s.header.type == Section::ContentType::FMODSoundBank) {
 		os << " ";
 		Reference fmod{&s, 16};
@@ -254,6 +254,14 @@ static void query(DRM::DRM* drm, std::string q) {
 				break;
 			}
 
+			// Special cases
+			case 'i': { // detail about scripts
+				for (auto* section: domain) {
+					summary(std::cout, *section);
+					scriptReportS(std::cout, *section);
+				}
+				break;
+			}
 			default: break;
 		}
 	}

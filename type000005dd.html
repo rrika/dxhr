@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005dd</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05DD</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x711]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05DD : <a href="type000004f7.html">quest</a> {
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_0e09_4 = TODO(0A);
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_0e0a_14 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_0e0b_24 = persistent(dtp:045D) {type=bool};
+    void method_0257_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05DD : quest {
+    // sizeof = 0x38
+    objectivescriptablelocator decl_0963_0e09_4 = TODO(0A);
+    objectivescriptablelocator decl_0963_0e0a_14 = TODO(0A);
+    smartscript decl_0089_0e0b_24 = TODO(0A);
+    void method_0257_0() {
+        bool temp_0 = False;
+        objectivescriptablelocator local_4 = TODO(0A);
+        objectivescriptablelocator local_14 = TODO(0A);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 09000000 temp_0
+        /* 000000ec: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000000f0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000000f8: sp  0 +1 */ 06000000 temp_0
+        /* 000000fc: sp  1 -1 */ 64000014
+
+        /* 00000100: sp  0 +0 */ 00000001
+
+        /* 00000104: sp  0 +0 */ 00000002
+        /* 00000108: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 0000010c: sp  1 +1 */ 09000004 local_4
+        /* 00000110: sp  2 -2 */ 34000000
+
+        /* 00000114: sp  0 +0 */ 000004ed
+
+        /* 00000118: sp  0 +0 */ 00000003
+        /* 0000011c: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 00000120: sp  1 +1 */ 09000014 local_14
+        /* 00000124: sp  2 -2 */ 34000000
+
+        /* 00000128: sp  0 +0 */ 000004ed
+
+        /* 0000012c: sp  0 +0 */ 00000004
+        /* 00000130: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 00000134: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 0000013c: sp  0 +0 */ 00000005
+        /* 00000140: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 00000144: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 0000014c: sp  0 +0 */ 00000006
+        ---
+
+        /* 00000150: sp  0 +0 */ 00000007
+        /* 00000154: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

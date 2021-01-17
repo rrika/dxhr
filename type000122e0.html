@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000122e0</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown122E0</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_capsulehot.drm n$[0x73]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown122E0 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000035.html">Unknown0035</a>&gt; decl_0012_019b_40 = {<a href="units.html#000000c0">unit object 000000c0</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000034.html">Unknown0034</a>&gt; decl_0012_019e_48 = {<a href="units.html#000000c1">unit object 000000c1</a>};
+    <a href="type000004ec.html">objective</a> decl_0005_01a0_50 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000031.html">Unknown0031</a>&gt; decl_0012_017c_58 = {<a href="units.html#000000c4">unit object 000000c4</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000033.html">Unknown0033</a>&gt; decl_0012_0165_60 = {<a href="units.html#000000c3">unit object 000000c3</a>};
+    void run();
+    void method_0a46_1(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown122E0 : %triggervolume% {
+    // sizeof = 0x68
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_019b_40 = TODO(0A);
+    instanceref decl_0012_019e_48 = TODO(0A);
+    objective decl_0005_01a0_50 = TODO(0A);
+    instanceref decl_0012_017c_58 = TODO(0A);
+    instanceref decl_0012_0165_60 = TODO(0A);
+    async void run() {
+        Unknown0034 local_0 = TODO(0B);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 09000000 local_0
+        /* 000000ec: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 000000f0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000f8: sp  0 +1 */ 0a000000 local_0
+        /* 000000fc: sp  1 +0 */ 7e000000 00000034
+        /* 00000104: sp  1 -1 */ 66000000 beebbeeb this-&gt;void triggervolumebase::method_0a39_ffff(instance arg_0022_0023_0)
+
+        /* 0000010c: sp  0 +0 */ 00000001
+        /* 00000110: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a46_1(instance arg_0022_0023_0, triggertype arg_0024_0025_4) {
+        bool temp_8 = False;
+        Unknown0033 local_c = TODO(0B);
+        Unknown0031 local_10 = TODO(0B);
+
+        /* 00000164: sp  0 +0 */ 00000002
+        /* 00000168: sp  0 +1 */ 09000008 temp_8
+        /* 0000016c: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000170: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000178: sp  0 +1 */ 06000008 temp_8
+        /* 0000017c: sp  1 -1 */ 64000021
+
+        /* 00000180: sp  0 +0 */ 00000003
+
+        /* 00000184: sp  0 +0 */ 00000004
+        /* 00000188: sp  0 +1 */ 0900000c local_c
+        /* 0000018c: sp  1 +1 */ 0f000060 unnamed member 60
+        /* 00000190: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000198: sp  0 +1 */ 0a00000c local_c
+        /* 0000019c: sp  1 +0 */ 7e000000 00000033
+        /* 000001a4: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 000001ac: sp  0 +0 */ 00000005
+
+        /* 000001b0: sp  0 +0 */ 00000006
+
+        /* 000001b4: sp  0 +0 */ 00000007
+        /* 000001b8: sp  0 +1 */ 09000010 local_10
+        /* 000001bc: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 000001c0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001c8: sp  0 +1 */ 0a000010 local_10
+        /* 000001cc: sp  1 +0 */ 7e000000 00000031
+        /* 000001d4: sp  1 +0 */ 14000424
+        /* 000001d8: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 000001e0: sp  0 +0 */ 00000008
+        /* 000001e4: sp  0 +1 */ 05000000 beebbeeb &#x27;Sequencer AriesDoorController Start&#x27;
+        /* 000001ec: sp  1 +1 */ 03000005
+        /* 000001f0: sp  2 +0 */ 5c000000
+        /* 000001f4: sp  2 +1 */ 04000001
+        /* 000001f8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000200: sp  0 +0 */ 00000009
+        ---
+
+        /* 00000204: sp  0 +0 */ 0000000a
+        /* 00000208: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

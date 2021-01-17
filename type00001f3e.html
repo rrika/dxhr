@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00001f3e</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1F3E</h1>
+		<pre>./tools/drmexplore pc-w/ det_adam_apt_c.drm n$[0x4e]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1F3E : <a href="type00002133.html">%level0_secretarea%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    void method_00e3_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1F3E : %level0_secretarea% {
+    // sizeof = 0x3e
+    stickybool field_4;
+    stickybool field_20;
+    async void method_00e3_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 04000000
+        /* 0000008c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 00000094: sp  0 +0 */ 00000001
+        /* 00000098: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00001f41.html">Unknown1F41</a><br/>
+parent class <a href="type00002133.html">%level0_secretarea%</a><br/>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009cdf</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9CDF</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x95]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9CDF : <a href="type00009e83.html">%dlc_st_final_choice_a%</a> {
+    <a href="type00000522.html">uberobjectevent</a> field_4;
+    <a href="type00000521.html">uberobjectcommand</a> field_14;
+    <a href="type00000521.html">uberobjectcommand</a> field_1c;
+    <a href="type00000521.html">uberobjectcommand</a> field_24;
+    <a href="type00000521.html">uberobjectcommand</a> field_2c;
+    <a href="type00000522.html">uberobjectevent</a> field_3c;
+    <a href="type00000522.html">uberobjectevent</a> field_4c;
+    <a href="type00000522.html">uberobjectevent</a> field_5c;
+    <a href="type00000522.html">uberobjectevent</a> field_6c;
+    <a href="type00000522.html">uberobjectevent</a> field_7c;
+    <a href="type00000521.html">uberobjectcommand</a> field_8c;
+    void method_2888_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9CDF : %dlc_st_final_choice_a% {
+    // sizeof = 0x94
+    uberobjectevent field_4;
+    uberobjectcommand field_14;
+    uberobjectcommand field_1c;
+    uberobjectcommand field_24;
+    uberobjectcommand field_2c;
+    uberobjectevent field_3c;
+    uberobjectevent field_4c;
+    uberobjectevent field_5c;
+    uberobjectevent field_6c;
+    uberobjectevent field_7c;
+    uberobjectcommand field_8c;
+    void method_2888_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 05000000 beebbeeb &#x27;Table OnTimerEnded WORKS&#x27;
+        /* 00000090: sp  1 +1 */ 03000005
+        /* 00000094: sp  2 +0 */ 5c000000
+        /* 00000098: sp  2 +1 */ 04000001
+        /* 0000009c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000000a4: sp  0 +0 */ 00000001
+        /* 000000a8: sp  0 +0 */ 66000000 beebbeeb this-&gt;void Unknown9E74::method_29aa_ffff()
+
+        /* 000000b0: sp  0 +0 */ 00000002
+        /* 000000b4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00009cde.html">Unknown9CDE</a><br/>
+parent class <a href="type00009e83.html">%dlc_st_final_choice_a%</a><br/>
+</body>
+</html>

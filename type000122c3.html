@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000122c3</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown122C3</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_capsulehot.drm n$[0x56]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown122C3 : <a href="type00000525.html">unit</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000035.html">Unknown0035</a>&gt; decl_0012_5634_4 = {<a href="units.html#000000c0">unit object 000000c0</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000122c0.html">Unknown122C0</a>&gt; decl_0012_5636_c = {<a href="units.html#0000c1ac">unit object 0000c1ac</a>};
+    <a href="type000004ec.html">objective</a> decl_0005_4790_14 = TODO(0A);
+    void method_0120_0(<a href="type000004e0.html">instanceref</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown122C3 : unit {
+    // sizeof = 0x1c
+    instanceref decl_0012_5634_4 = TODO(0A);
+    instanceref decl_0012_5636_c = TODO(0A);
+    objective decl_0005_4790_14 = TODO(0A);
+    async void method_0120_0(instanceref arg_0012_0121_0) {
+        bool temp_8 = False;
+        Unknown122C0 local_c = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000008 temp_8
+        /* 000000cc: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000000d8: sp  0 +1 */ 06000008 temp_8
+        /* 000000dc: sp  1 -1 */ 64000010
+
+        /* 000000e0: sp  0 +0 */ 00000001
+
+        /* 000000e4: sp  0 +0 */ 00000002
+        /* 000000e8: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 000000ec: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000000f4: sp  0 +0 */ 00000003
+        /* 000000f8: sp  0 +1 */ 0900000c local_c
+        /* 000000fc: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000100: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000108: sp  0 +1 */ 0a00000c local_c
+        /* 0000010c: sp  1 +0 */ 7e000000 000122c0
+        /* 00000114: sp  1 -1 */ 69000000 beebbeeb void instance::method_07c2_ffff()
+
+        /* 0000011c: sp  0 +0 */ 00000004
+        ---
+
+        /* 00000120: sp  0 +0 */ 00000005
+        /* 00000124: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000136af.html">Unknown136AF</a><br/>
+initialized field in <a href="type000136b5.html">Unknown136B5</a><br/>
+parent class <a href="type00000525.html">unit</a><br/>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009cb7</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9CB7</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0x264]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9CB7 : <a href="type00009e6f.html">%sha1_tympoolroom_lightguard_belltower_a%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009b87.html">Unknown9B87</a>&gt; decl_0012_26c7_3c = {<a href="units.html#00006a29">unit object 00006a29</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009e48.html">%dlc_1_hangarspart1_boxguard_belltower_a%</a>&gt; decl_0012_0aa2_44 = {<a href="units.html#00006a24">unit object 00006a24</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009b58.html">Unknown9B58</a>&gt; decl_0012_284f_4c = {<a href="units.html#00006a2e">unit object 00006a2e</a>};
+    void method_0190_0();
+    void method_01d7_1(<a href="type000004b2.html">aistate</a>, <a href="type000004b2.html">aistate</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9CB7 : %sha1_tympoolroom_lightguard_belltower_a% {
+    // sizeof = 0x54
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_26c7_3c = TODO(0A);
+    instanceref decl_0012_0aa2_44 = TODO(0A);
+    instanceref decl_0012_284f_4c = TODO(0A);
+    async void method_0190_0() {
+        Unknown9B87 local_0 = TODO(0B);
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 09000000 local_0
+        /* 000000dc: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 000000e0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000e8: sp  0 +1 */ 0a000000 local_0
+        /* 000000ec: sp  1 +0 */ 7e000000 00009b87
+        /* 000000f4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown9B87::method_2739_40()
+
+        /* 000000fc: sp  0 +0 */ 00000001
+        /* 00000100: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_01d7_1(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4) {
+        Unknown9B58 local_8 = TODO(0B);
+        Unknown9B58 local_c = TODO(0B);
+        waypointnode local_10 = TODO(0A);
+        bool temp_20 = False;
+        aistate local_24 = TODO(0A);
+        %dlc_1_hangarspart1_boxguard_belltower_a% local_28 = TODO(0B);
+        aistate local_2c = TODO(0A);
+
+        /* 000001d4: sp  0 +0 */ 00000002
+        /* 000001d8: sp  0 +1 */ 09000008 local_8
+        /* 000001dc: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 000001e0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001e8: sp  0 +1 */ 0a000008 local_8
+        /* 000001ec: sp  1 +0 */ 7e000000 00009b58
+        /* 000001f4: sp  1 +0 */ 1400002c
+        /* 000001f8: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0487_ffff()
+
+        /* 00000200: sp  0 +0 */ 00000003
+        /* 00000204: sp  0 +1 */ 0900000c local_c
+        /* 00000208: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 0000020c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000214: sp  0 +1 */ 0a00000c local_c
+        /* 00000218: sp  1 +0 */ 7e000000 00009b58
+        /* 00000220: sp  1 +0 */ 1400001c
+        /* 00000224: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0487_ffff()
+
+        /* 0000022c: sp  0 +0 */ 00000004
+        /* 00000230: sp  0 +1 */ 09000010 local_10
+        /* 00000234: sp  1 -1 */ 66000000 beebbeeb this-&gt;void actornpc::method_0675_ffff(waypointnode arg_0196_0676_0)
+
+        /* 0000023c: sp  0 +0 */ 00000005
+        /* 00000240: sp  0 +1 */ 09000020 temp_20
+        /* 00000244: sp  1 +1 */ 09000024 local_24
+        /* 00000248: sp  2 +1 */ 09000004 arg_01d8_01da_4
+        /* 0000024c: sp  3 -3 */ 65000000 beebbeeb native bool aistate::isEqual(aistate arg_01d8_0594_4)
+        /* 00000254: sp  0 +1 */ 06000020 temp_20
+        /* 00000258: sp  1 -1 */ 6400000b
+
+        /* 0000025c: sp  0 +0 */ 00000006
+        /* 00000260: sp  0 +1 */ 0900002c local_2c
+        /* 00000264: sp  1 +1 */ 09000028 local_28
+        /* 00000268: sp  2 +1 */ 0f000044 unnamed member 44
+        /* 0000026c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000274: sp  1 +1 */ 0a000028 local_28
+        /* 00000278: sp  2 +0 */ 7e000000 00009e48
+        /* 00000280: sp  2 -2 */ 6a000000 beebbeeb virtual void actornpc::method_067b_6c(aistate arg_01d8_01da_0)
+        ---
+
+        /* 00000288: sp  0 +0 */ 00000007
+        /* 0000028c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00009bab.html">Unknown9BAB</a><br/>
+initialized field in <a href="type00009bac.html">Unknown9BAC</a><br/>
+parent class <a href="type00009e6f.html">%sha1_tympoolroom_lightguard_belltower_a%</a><br/>
+</body>
+</html>

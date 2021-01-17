@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000519</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>stickyint</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x626]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class stickyint {
+    void setStickyBool(dword);
+    // referenced at <a href="type00006f66.html">async void Unknown6F66::method_0185_1(clock arg_0182_0186_0)</a>
+    dword value();
+    dword getValue();
+    // referenced at <a href="type00006f66.html">async void Unknown6F66::method_0185_1(clock arg_0182_0186_0)</a>
+    bool isEqual(<a href="type00000519.html">stickyint</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class stickyint {
+    // sizeof = 0x1
+    void setStickyBool(dword arg_0000_value_0); // no bytecode
+    dword value(); // no bytecode
+    dword getValue(); // no bytecode
+    bool isEqual(stickyint arg_084c_0542_4); // no bytecode
+};
+</pre>
+		<h2>See also</h2>
+		argument to method on <a href="type000004d2.html">gamebase</a><br/>
+argument to method on <a href="type00000519.html">stickyint</a><br/>
+field in <a href="type00006f3b.html">Unknown6F3B</a><br/>
+field in <a href="type00006f68.html">%gas_bomb_a%</a><br/>
+field in <a href="type00009cde.html">Unknown9CDE</a><br/>
+field in <a href="type00009e77.html">%dlc_gas_injection_a%</a><br/>
+field in <a href="type0000af11.html">UnknownAF11</a><br/>
+field in <a href="type0000af12.html">UnknownAF12</a><br/>
+field in <a href="type0000af13.html">UnknownAF13</a><br/>
+initialized field in <a href="type000005d0.html">Unknown05D0</a><br/>
+initialized field in <a href="type00006f66.html">Unknown6F66</a><br/>
+initialized field in <a href="type0000af10.html">UnknownAF10</a><br/>
+initialized field in <a href="type0000af14.html">UnknownAF14</a><br/>
+initialized field in <a href="type0000b041.html">%dispatcher_hyronproject_first_phase%</a><br/>
+initialized field in <a href="type0000b042.html">%dispatcher_hyronproject_second_phase%</a><br/>
+initialized field in <a href="type0000b043.html">%dispatcher_hyronproject_third_phase%</a><br/>
+initialized field in <a href="type00012072.html">Unknown12072</a><br/>
+</body>
+</html>

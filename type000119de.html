@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000119de</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown119DE</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_port_2a.drm n$[0xdb]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown119DE : <a href="type0000059c.html">%dispatcher%</a> {
+    <a href="type00000511.html">smartscript</a> decl_0089_5134_4 = persistent(dtp:11A32) {type=bool};
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00009195.html">Unknown9195</a>&gt; decl_0015_23ec_18 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_5136_24 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000004df.html">instance</a>&gt; decl_0012_5137_2c = {<a href="units.html#00005f39">unit object 00005f39</a>};
+    <a href="type000004d6.html">globalsref</a>&lt;gcref <a href="type000005cf.html">Unknown05CF</a>&gt; decl_000d_001b_34 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000119d8.html">Unknown119D8</a>&gt; decl_0012_5139_38 = {<a href="units.html#0000bf14">unit object 0000bf14</a>};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_115c_40 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_513a_48 = persistent(dtp:11A33) {type=bool};
+    void run();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown119DE : %dispatcher% {
+    // sizeof = 0x5c
+    smartscript decl_0089_5134_4 = TODO(0A);
+    unitref decl_0015_23ec_18 = TODO(0A);
+    objective decl_0005_5136_24 = TODO(0A);
+    instanceref decl_0012_5137_2c = TODO(0A);
+    globalsref&lt;Unknown05CF&gt; decl_000d_001b_34 = TODO(0A);
+    instanceref decl_0012_5139_38 = TODO(0A);
+    playerref decl_012a_115c_40 = TODO(0A);
+    smartscript decl_0089_513a_48 = TODO(0A);
+    async void run() {
+        bool temp_0 = False;
+        %human_player% local_4 = TODO(0B);
+        %human_player% local_8 = TODO(0B);
+        Unknown119D8 local_c = TODO(0B);
+        Unknown05CF local_10 = TODO(0B);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000000 temp_0
+        /* 0000012c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000138: sp  0 +1 */ 06000000 temp_0
+        /* 0000013c: sp  1 +1 */ 04000000
+        /* 00000140: sp  2 -1 */ 46000000
+        /* 00000144: sp  1 -1 */ 64000047
+
+        /* 00000148: sp  0 +0 */ 00000001
+
+        /* 0000014c: sp  0 +0 */ 00000002
+
+        /* 00000150: sp  0 +0 */ 00000003
+        /* 00000154: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Remove Augs and Items&#x27;
+        /* 0000015c: sp  1 +1 */ 03000003
+        /* 00000160: sp  2 +0 */ 5c000000
+        /* 00000164: sp  2 +1 */ 04000001
+        /* 00000168: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000170: sp  0 +0 */ 00000004
+        /* 00000174: sp  0 +1 */ 04000001
+        /* 00000178: sp  1 +1 */ 09000004 local_4
+        /* 0000017c: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 00000180: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000188: sp  1 +1 */ 0a000004 local_4
+        /* 0000018c: sp  2 +0 */ 7e000000 00000552
+        /* 00000194: sp  2 -2 */ 6a000000 beebbeeb virtual void actorplayer::method_06f4_76(bool arg_0000_05fe_0)
+
+        /* 0000019c: sp  0 +0 */ 00000005
+        /* 000001a0: sp  0 +1 */ 09000008 local_8
+        /* 000001a4: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000001a8: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000001b0: sp  0 +1 */ 0a000008 local_8
+        /* 000001b4: sp  1 +0 */ 7e000000 00000552
+        /* 000001bc: sp  1 -1 */ 6a000000 beebbeeb virtual void actorplayer::method_06f0_74()
+
+        /* 000001c4: sp  0 +0 */ 00000006
+        /* 000001c8: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gamebase::method_085a_ffff()
+
+        /* 000001d0: sp  0 +0 */ 00000007
+        /* 000001d4: sp  0 +1 */ 04000001
+        /* 000001d8: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001dc: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000001e4: sp  0 +0 */ 00000008
+        /* 000001e8: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 000001ec: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000001f4: sp  0 +0 */ 00000009
+        /* 000001f8: sp  0 +1 */ 0900000c local_c
+        /* 000001fc: sp  1 +1 */ 0f000038 unnamed member 38
+        /* 00000200: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000208: sp  0 +1 */ 0a00000c local_c
+        /* 0000020c: sp  1 +0 */ 7e000000 000119d8
+        /* 00000214: sp  1 -1 */ 70000000 beebbeeb (void)virtual async void %cinematicobject%::method_0b26_3c()
+
+        /* 0000021c: sp  0 +0 */ 0000000a
+        /* 00000220: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 00000224: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000228: sp  2 +1 */ 09000010 local_10
+        /* 0000022c: sp  3 +1 */ 0f000034 unnamed member 34
+        /* 00000230: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 00000238: sp  2 +1 */ 0a000010 local_10
+        /* 0000023c: sp  3 +0 */ 7e000000 000005cf
+        /* 00000244: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4f_16(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 0000024c: sp  0 +0 */ 0000000b
+        /* 00000250: sp  0 +1 */ 04000001
+        /* 00000254: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000258: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000260: sp  0 +0 */ 0000000c
+        ---
+
+        /* 00000264: sp  0 +0 */ 0000000d
+        /* 00000268: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000119ea.html">Unknown119EA</a><br/>
+parent class <a href="type0000059c.html">%dispatcher%</a><br/>
+</body>
+</html>

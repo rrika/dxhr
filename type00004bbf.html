@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00004bbf</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown4BBF</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_limb_clinic.drm n$[0x156]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown4BBF : <a href="type00000525.html">unit</a> {
+    <a href="type00000511.html">smartscript</a> decl_0089_10f2_4 = persistent(dtp:20A5) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_10f3_18 = persistent(dtp:0456) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_183c_2c = persistent(dtp:4C0F) {type=bool};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00004bcc.html">Unknown4BCC</a>&gt; decl_0007_1836_40 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00004bcb.html">Unknown4BCB</a>&gt; decl_0007_1838_44 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000014.html">Unknown0014</a>&gt; decl_0012_003d_48 = {<a href="units.html#00000094">unit object 00000094</a>};
+    <a href="type00000512.html">sound</a> decl_0027_183d_50 = dtp:4C05:Z;
+    <a href="type00000512.html">sound</a> decl_0027_183e_54 = dtp:4C07:Z;
+    <a href="type00000512.html">sound</a> decl_0027_183f_58 = dtp:4C06:Z;
+    void method_0120_0(<a href="type000004e0.html">instanceref</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown4BBF : unit {
+    // sizeof = 0x5c
+    smartscript decl_0089_10f2_4 = TODO(0A);
+    smartscript decl_0089_10f3_18 = TODO(0A);
+    smartscript decl_0089_183c_2c = TODO(0A);
+    scenarioref&lt;Unknown4BCC&gt; decl_0007_1836_40 = TODO(0A);
+    scenarioref&lt;Unknown4BCB&gt; decl_0007_1838_44 = TODO(0A);
+    instanceref decl_0012_003d_48 = TODO(0A);
+    sound decl_0027_183d_50 = TODO(0A);
+    sound decl_0027_183e_54 = TODO(0A);
+    sound decl_0027_183f_58 = TODO(0A);
+    async void method_0120_0(instanceref arg_0012_0121_0) {
+        dword temp_8 = 0;
+        Unknown4BCC local_c = TODO(0B);
+        Unknown4BCB local_10 = TODO(0B);
+        Unknown4BCC local_14 = TODO(0B);
+        Unknown4BCB local_18 = TODO(0B);
+        bool temp_1c = False;
+        bool temp_1d = False;
+        Unknown0014 local_20 = TODO(0B);
+        bool temp_24 = False;
+        Unknown0014 local_28 = TODO(0B);
+
+        /* 00000174: sp  0 +0 */ 00000000
+        /* 00000178: sp  0 +1 */ 09000008 temp_8
+        /* 0000017c: sp  1 +1 */ 03000000
+        /* 00000180: sp  2 +1 */ 03000001
+        /* 00000184: sp  3 -3 */ 66000000 beebbeeb this-&gt;dword corebase::method_0550_ffff(dword arg_0000_0551_4, dword arg_0000_0552_8)
+        /* 0000018c: sp  0 +1 */ 08000008 temp_8
+        /* 00000190: sp  1 +1 */ 03000000
+        /* 00000194: sp  2 -1 */ 45000000
+        /* 00000198: sp  1 -1 */ 64000018
+
+        /* 0000019c: sp  0 +0 */ 00000001
+
+        /* 000001a0: sp  0 +0 */ 00000002
+        /* 000001a4: sp  0 +1 */ 0900000c local_c
+        /* 000001a8: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000001ac: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001b4: sp  0 +1 */ 0a00000c local_c
+        /* 000001b8: sp  1 +0 */ 7e000000 00004bcc
+        /* 000001c0: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000001c8: sp  0 +0 */ 00000003
+        /* 000001cc: sp  0 +1 */ 04000000
+        /* 000001d0: sp  1 +1 */ 09000010 local_10
+        /* 000001d4: sp  2 +1 */ 0f000044 unnamed member 44
+        /* 000001d8: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001e0: sp  1 +1 */ 0a000010 local_10
+        /* 000001e4: sp  2 +0 */ 7e000000 00004bcb
+        /* 000001ec: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000001f4: sp  0 +0 */ 00000004
+        /* 000001f8: sp  0 +0 */ 63000017 00000005
+
+        /* 00000200: sp  0 +0 */ 00000006
+        /* 00000204: sp  0 +1 */ 04000000
+        /* 00000208: sp  1 +1 */ 09000014 local_14
+        /* 0000020c: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 00000210: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000218: sp  1 +1 */ 0a000014 local_14
+        /* 0000021c: sp  2 +0 */ 7e000000 00004bcc
+        /* 00000224: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 0000022c: sp  0 +0 */ 00000007
+        /* 00000230: sp  0 +1 */ 09000018 local_18
+        /* 00000234: sp  1 +1 */ 0f000044 unnamed member 44
+        /* 00000238: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000240: sp  0 +1 */ 0a000018 local_18
+        /* 00000244: sp  1 +0 */ 7e000000 00004bcb
+        /* 0000024c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000254: sp  0 +0 */ 00000008
+
+        /* 00000258: sp  0 +0 */ 00000009
+        ---
+
+        /* 000001fc: sp  0 +0 */ 00000005
+
+        /* 00000200: sp  0 +0 */ 00000006
+        /* 00000204: sp  0 +1 */ 04000000
+        /* 00000208: sp  1 +1 */ 09000014 local_14
+        /* 0000020c: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 00000210: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000218: sp  1 +1 */ 0a000014 local_14
+        /* 0000021c: sp  2 +0 */ 7e000000 00004bcc
+        /* 00000224: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 0000022c: sp  0 +0 */ 00000007
+        /* 00000230: sp  0 +1 */ 09000018 local_18
+        /* 00000234: sp  1 +1 */ 0f000044 unnamed member 44
+        /* 00000238: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000240: sp  0 +1 */ 0a000018 local_18
+        /* 00000244: sp  1 +0 */ 7e000000 00004bcb
+        /* 0000024c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000254: sp  0 +0 */ 00000008
+
+        /* 00000258: sp  0 +0 */ 00000009
+        ---
+        /* 0000025c: sp  0 +1 */ 0900001c temp_1c
+        /* 00000260: sp  1 +1 */ 0f000018 unnamed member 18
+        /* 00000264: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000026c: sp  0 +1 */ 0600001c temp_1c
+        /* 00000270: sp  1 +1 */ 04000000
+        /* 00000274: sp  2 -1 */ 46000000
+        /* 00000278: sp  1 -1 */ 6400003b
+
+        /* 0000027c: sp  0 +0 */ 0000000a
+
+        /* 00000280: sp  0 +0 */ 0000000b
+        /* 00000284: sp  0 +1 */ 0900001d temp_1d
+        /* 00000288: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 0000028c: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000294: sp  0 +1 */ 0600001d temp_1d
+        /* 00000298: sp  1 +1 */ 04000001
+        /* 0000029c: sp  2 -1 */ 46000000
+        /* 000002a0: sp  1 -1 */ 64000013
+
+        /* 000002a4: sp  0 +0 */ 0000000c
+
+        /* 000002a8: sp  0 +0 */ 0000000d
+        /* 000002ac: sp  0 +1 */ 04000000
+        /* 000002b0: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000002b4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000002bc: sp  0 +0 */ 0000000e
+        /* 000002c0: sp  0 +1 */ 09000020 local_20
+        /* 000002c4: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 000002c8: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002d0: sp  0 +1 */ 0a000020 local_20
+        /* 000002d4: sp  1 +0 */ 7e000000 00000014
+        /* 000002dc: sp  1 +0 */ 1400013c
+        /* 000002e0: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 000002e8: sp  0 +0 */ 0000000f
+        /* 000002ec: sp  0 +0 */ 6300001d 00000010
+
+        /* 000002f4: sp  0 +0 */ 00000011
+        /* 000002f8: sp  0 +1 */ 09000024 temp_24
+        /* 000002fc: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000300: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000308: sp  0 +1 */ 06000024 temp_24
+        /* 0000030c: sp  1 +1 */ 04000000
+        /* 00000310: sp  2 -1 */ 46000000
+        /* 00000314: sp  1 -1 */ 64000012
+
+        /* 00000318: sp  0 +0 */ 00000012
+
+        /* 0000031c: sp  0 +0 */ 00000013
+        /* 00000320: sp  0 +1 */ 09000028 local_28
+        /* 00000324: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000328: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000330: sp  0 +1 */ 0a000028 local_28
+        /* 00000334: sp  1 +0 */ 7e000000 00000014
+        /* 0000033c: sp  1 +0 */ 14000144
+        /* 00000340: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 00000348: sp  0 +0 */ 00000014
+        /* 0000034c: sp  0 +1 */ 04000001
+        /* 00000350: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000354: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000035c: sp  0 +0 */ 00000015
+        ---
+
+        /* 000002f0: sp  0 +0 */ 00000010
+
+        /* 000002f4: sp  0 +0 */ 00000011
+        /* 000002f8: sp  0 +1 */ 09000024 temp_24
+        /* 000002fc: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000300: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000308: sp  0 +1 */ 06000024 temp_24
+        /* 0000030c: sp  1 +1 */ 04000000
+        /* 00000310: sp  2 -1 */ 46000000
+        /* 00000314: sp  1 -1 */ 64000012
+
+        /* 00000318: sp  0 +0 */ 00000012
+
+        /* 0000031c: sp  0 +0 */ 00000013
+        /* 00000320: sp  0 +1 */ 09000028 local_28
+        /* 00000324: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000328: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000330: sp  0 +1 */ 0a000028 local_28
+        /* 00000334: sp  1 +0 */ 7e000000 00000014
+        /* 0000033c: sp  1 +0 */ 14000144
+        /* 00000340: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 00000348: sp  0 +0 */ 00000014
+        /* 0000034c: sp  0 +1 */ 04000001
+        /* 00000350: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000354: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000035c: sp  0 +0 */ 00000015
+        ---
+
+        /* 00000360: sp  0 +0 */ 00000016
+
+        /* 00000364: sp  0 +0 */ 00000017
+        ---
+
+        /* 00000368: sp  0 +0 */ 00000018
+        /* 0000036c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00004bc6.html">Unknown4BC6</a><br/>
+initialized field in <a href="type00004bc7.html">Unknown4BC7</a><br/>
+initialized field in <a href="type00004bc8.html">Unknown4BC8</a><br/>
+initialized field in <a href="type00004bca.html">Unknown4BCA</a><br/>
+initialized field in <a href="type00005132.html">Unknown5132</a><br/>
+parent class <a href="type00000525.html">unit</a><br/>
+</body>
+</html>

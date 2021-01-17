@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000c0ae</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownC0AE</h1>
+		<pre>./tools/drmexplore pc-w/ pic__masterunit.drm n$[0x1a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownC0AE : <a href="type00002145.html">%scenario_chooser%</a> {
+    string decl_0000_1059_c = TODO(04);
+    <a href="type00000511.html">smartscript</a> decl_0089_105c_10 = persistent(dtp:C0B9) {type=bool};
+    string decl_0000_105a_24 = TODO(04);
+    <a href="type00000511.html">smartscript</a> decl_0089_105d_28 = persistent(dtp:C0B8) {type=bool};
+    string decl_0000_105b_3c = TODO(04);
+    <a href="type00000511.html">smartscript</a> decl_0089_1398_40 = persistent(dtp:C0B9) {type=bool};
+    <a href="type00000517.html">stickybool</a> field_6c;
+    <a href="type00000517.html">stickybool</a> field_88;
+    <a href="type00000517.html">stickybool</a> field_a4;
+    <a href="type00000517.html">stickybool</a> field_c0;
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00000062.html">Unknown0062</a>&gt; decl_0007_013b_dc = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00000063.html">Unknown0063</a>&gt; decl_0007_0139_e0 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0000c0b4.html">UnknownC0B4</a>&gt; decl_0007_3183_e4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0000005e.html">Unknown005E</a>&gt; decl_0007_0135_e8 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00000063.html">Unknown0063</a>&gt; decl_0007_3184_ec = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00000053.html">Unknown0053</a>&gt; decl_0007_3185_f0 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0000c0b3.html">UnknownC0B3</a>&gt; decl_0007_3187_f4 = TODO(0A);
+    void method_1120_0();
+    void method_1122_1();
+    void method_1121_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownC0AE : %scenario_chooser% {
+    // sizeof = 0xf8
+    string decl_0000_1059_c = TODO(04);
+    smartscript decl_0089_105c_10 = TODO(0A);
+    string decl_0000_105a_24 = TODO(04);
+    smartscript decl_0089_105d_28 = TODO(0A);
+    string decl_0000_105b_3c = TODO(04);
+    smartscript decl_0089_1398_40 = TODO(0A);
+    stickybool field_6c;
+    stickybool field_88;
+    stickybool field_a4;
+    stickybool field_c0;
+    scenarioref&lt;Unknown0062&gt; decl_0007_013b_dc = TODO(0A);
+    scenarioref&lt;Unknown0063&gt; decl_0007_0139_e0 = TODO(0A);
+    scenarioref&lt;UnknownC0B4&gt; decl_0007_3183_e4 = TODO(0A);
+    scenarioref&lt;Unknown005E&gt; decl_0007_0135_e8 = TODO(0A);
+    scenarioref&lt;Unknown0063&gt; decl_0007_3184_ec = TODO(0A);
+    scenarioref&lt;Unknown0053&gt; decl_0007_3185_f0 = TODO(0A);
+    scenarioref&lt;UnknownC0B3&gt; decl_0007_3187_f4 = TODO(0A);
+    void method_1120_0() {
+        Unknown0062 local_0 = TODO(0B);
+        Unknown0063 local_4 = TODO(0B);
+        UnknownC0B4 local_8 = TODO(0B);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 04000000
+        /* 0000012c: sp  1 +1 */ 09000000 local_0
+        /* 00000130: sp  2 +1 */ 0f0000dc unnamed member dc
+        /* 00000134: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000013c: sp  1 +1 */ 0a000000 local_0
+        /* 00000140: sp  2 +0 */ 7e000000 00000062
+        /* 00000148: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000150: sp  0 +0 */ 00000001
+        /* 00000154: sp  0 +1 */ 04000000
+        /* 00000158: sp  1 +1 */ 09000004 local_4
+        /* 0000015c: sp  2 +1 */ 0f0000e0 unnamed member e0
+        /* 00000160: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000168: sp  1 +1 */ 0a000004 local_4
+        /* 0000016c: sp  2 +0 */ 7e000000 00000063
+        /* 00000174: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 0000017c: sp  0 +0 */ 00000002
+        /* 00000180: sp  0 +1 */ 09000008 local_8
+        /* 00000184: sp  1 +1 */ 0f0000e4 unnamed member e4
+        /* 00000188: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000190: sp  0 +1 */ 0a000008 local_8
+        /* 00000194: sp  1 +0 */ 7e000000 0000c0b4
+        /* 0000019c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000001a4: sp  0 +0 */ 00000003
+        /* 000001a8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1122_1() {
+        Unknown0062 local_0 = TODO(0B);
+        Unknown0063 local_4 = TODO(0B);
+        UnknownC0B4 local_8 = TODO(0B);
+
+        /* 000001f4: sp  0 +0 */ 00000004
+        /* 000001f8: sp  0 +1 */ 09000000 local_0
+        /* 000001fc: sp  1 +1 */ 0f0000dc unnamed member dc
+        /* 00000200: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000208: sp  0 +1 */ 0a000000 local_0
+        /* 0000020c: sp  1 +0 */ 7e000000 00000062
+        /* 00000214: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000021c: sp  0 +0 */ 00000005
+        /* 00000220: sp  0 +1 */ 04000000
+        /* 00000224: sp  1 +1 */ 09000004 local_4
+        /* 00000228: sp  2 +1 */ 0f0000e0 unnamed member e0
+        /* 0000022c: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000234: sp  1 +1 */ 0a000004 local_4
+        /* 00000238: sp  2 +0 */ 7e000000 00000063
+        /* 00000240: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000248: sp  0 +0 */ 00000006
+        /* 0000024c: sp  0 +1 */ 04000000
+        /* 00000250: sp  1 +1 */ 09000008 local_8
+        /* 00000254: sp  2 +1 */ 0f0000e4 unnamed member e4
+        /* 00000258: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000260: sp  1 +1 */ 0a000008 local_8
+        /* 00000264: sp  2 +0 */ 7e000000 0000c0b4
+        /* 0000026c: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000274: sp  0 +0 */ 00000007
+        /* 00000278: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1121_2() {
+        UnknownC0B3 local_0 = TODO(0B);
+        Unknown005E local_4 = TODO(0B);
+        Unknown0053 local_8 = TODO(0B);
+        Unknown0063 local_c = TODO(0B);
+
+        /* 000002e4: sp  0 +0 */ 00000008
+        /* 000002e8: sp  0 +1 */ 09000000 local_0
+        /* 000002ec: sp  1 +1 */ 0f0000f4 unnamed member f4
+        /* 000002f0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000002f8: sp  0 +1 */ 0a000000 local_0
+        /* 000002fc: sp  1 +0 */ 7e000000 0000c0b3
+        /* 00000304: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000030c: sp  0 +0 */ 00000009
+        /* 00000310: sp  0 +1 */ 09000004 local_4
+        /* 00000314: sp  1 +1 */ 0f0000e8 unnamed member e8
+        /* 00000318: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000320: sp  0 +1 */ 0a000004 local_4
+        /* 00000324: sp  1 +0 */ 7e000000 0000005e
+        /* 0000032c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000334: sp  0 +0 */ 0000000a
+        /* 00000338: sp  0 +1 */ 09000008 local_8
+        /* 0000033c: sp  1 +1 */ 0f0000f0 unnamed member f0
+        /* 00000340: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000348: sp  0 +1 */ 0a000008 local_8
+        /* 0000034c: sp  1 +0 */ 7e000000 00000053
+        /* 00000354: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000035c: sp  0 +0 */ 0000000b
+        /* 00000360: sp  0 +1 */ 0900000c local_c
+        /* 00000364: sp  1 +1 */ 0f0000ec unnamed member ec
+        /* 00000368: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000370: sp  0 +1 */ 0a00000c local_c
+        /* 00000374: sp  1 +0 */ 7e000000 00000063
+        /* 0000037c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000384: sp  0 +0 */ 0000000c
+        /* 00000388: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00002145.html">%scenario_chooser%</a><br/>
+</body>
+</html>

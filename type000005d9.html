@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005d9</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05D9</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x70d]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05D9 : <a href="type0000050b.html">smartfloat_lazyevaluation</a> {
+    gcref <a href="type00000506.html">smartfloat_anglefromaimingtocover</a> decl_0df3_0df4_4 = TODO(0B);
+    gcref <a href="type00000509.html">smartfloat_approachtarget_scaleddamping</a> decl_0df5_0df6_8 = TODO(0B);
+    float decl_0000_0df7_c = 0.0;
+    void run();
+    float method_09e9_1(bool, float);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05D9 : smartfloat_lazyevaluation {
+    // sizeof = 0x10
+    smartfloat_anglefromaimingtocover decl_0df3_0df4_4 = TODO(0B);
+    smartfloat_approachtarget_scaleddamping decl_0df5_0df6_8 = TODO(0B);
+    float decl_0000_0df7_c = 0.0;
+    async void run() {
+
+        /* 000000b4: sp  0 +0 */ 00000000
+
+        /* 000000b8: sp  0 +0 */ 00000001
+        /* 000000bc: sp  0 +1 */ 02000000 3c1374bc
+        /* 000000c4: sp  1 +1 */ 10000008
+        /* 000000c8: sp  2 -2 */ 69000000 beebbeeb void smartfloat_approachtarget_damping::method_09ed_ffff(float arg_0000_09ee_0)
+
+        /* 000000d0: sp  0 +0 */ 00000002
+        /* 000000d4: sp  0 +1 */ 02000000 3f666666
+        /* 000000dc: sp  1 +1 */ 10000008
+        /* 000000e0: sp  2 -2 */ 69000000 beebbeeb void smartfloat_approachtarget_scaleddamping::method_09f0_ffff(float arg_0000_09f1_0)
+
+        /* 000000e8: sp  0 +0 */ 00000003
+        /* 000000ec: sp  0 +0 */ 7b000000
+        ---
+    }
+    float method_09e9_1(bool arg_0000_08e0_4, float arg_0000_09f5_8) {
+        dword temp_c = 0;
+        actor local_10 = TODO(0B);
+        float temp_14 = 0.0;
+        float temp_18 = 0.0;
+        bool temp_1c = False;
+        smartscript local_20 = TODO(0A);
+        float temp_34 = 0.0;
+
+        /* 00000184: sp  0 +0 */ 00000004
+        /* 00000188: sp  0 +1 */ 09000010 local_10
+        /* 0000018c: sp  1 -1 */ 66000000 beebbeeb this-&gt;actor smartbase::method_09d7_ffff()
+
+        /* 00000194: sp  0 +0 */ 00000005
+        /* 00000198: sp  0 +1 */ 06000004 arg_0000_08e0_4
+        /* 0000019c: sp  1 -1 */ 64000006
+
+        /* 000001a0: sp  0 +0 */ 00000006
+        /* 000001a4: sp  0 +1 */ 0f00000c unnamed member c
+        /* 000001a8: sp  1 +1 */ 03000001
+        /* 000001ac: sp  2 +0 */ 5c000000
+        /* 000001b0: sp  2 -2 */ 2f000000
+        /* 000001b4: sp  0 +0 */ 63000009 00000007
+        /* 000001bc: sp  0 +1 */ 0f00000c unnamed member c
+        /* 000001c0: sp  1 +1 */ 0e00000c unnamed member c
+        /* 000001c4: sp  2 +1 */ 09000014 temp_14
+        /* 000001c8: sp  3 -1 */ 66000000 beebbeeb this-&gt;float smartbase::method_09d8_ffff()
+        /* 000001d0: sp  2 +1 */ 08000014 temp_14
+        /* 000001d4: sp  3 -1 */ 49000000
+        /* 000001d8: sp  2 -2 */ 2f000000
+
+        /* 000001dc: sp  0 +0 */ 00000008
+        ---
+
+        /* 000001b8: sp  0 +0 */ 00000007
+        /* 000001bc: sp  0 +1 */ 0f00000c unnamed member c
+        /* 000001c0: sp  1 +1 */ 0e00000c unnamed member c
+        /* 000001c4: sp  2 +1 */ 09000014 temp_14
+        /* 000001c8: sp  3 -1 */ 66000000 beebbeeb this-&gt;float smartbase::method_09d8_ffff()
+        /* 000001d0: sp  2 +1 */ 08000014 temp_14
+        /* 000001d4: sp  3 -1 */ 49000000
+        /* 000001d8: sp  2 -2 */ 2f000000
+
+        /* 000001dc: sp  0 +0 */ 00000008
+        ---
+
+        /* 000001e0: sp  0 +0 */ 00000009
+        /* 000001e4: sp  0 +1 */ 03000000
+        /* 000001e8: sp  1 +0 */ 5c000000
+        /* 000001ec: sp  1 +1 */ 0e00000c unnamed member c
+        /* 000001f0: sp  2 -1 */ 4c000000
+        /* 000001f4: sp  1 -1 */ 64000005
+
+        /* 000001f8: sp  0 +0 */ 0000000a
+        /* 000001fc: sp  0 +1 */ 0900000c temp_c
+        /* 00000200: sp  1 +1 */ 03000000
+        /* 00000204: sp  2 -2 */ 2f000000
+        /* 00000208: sp  0 +0 */ 63000025 0000000b
+
+        /* 00000210: sp  0 +0 */ 0000000c
+        /* 00000214: sp  0 +1 */ 03000000
+        /* 00000218: sp  1 +0 */ 5c000000
+        /* 0000021c: sp  1 +1 */ 09000018 temp_18
+        /* 00000220: sp  2 +1 */ 10000004
+        /* 00000224: sp  3 -2 */ 6a000000 beebbeeb virtual float smartfloat_anglefromaimingtocover::getValue()
+        /* 0000022c: sp  1 +1 */ 08000018 temp_18
+        /* 00000230: sp  2 -1 */ 4d000000
+        /* 00000234: sp  1 -1 */ 64000005
+
+        /* 00000238: sp  0 +0 */ 0000000d
+        /* 0000023c: sp  0 +1 */ 0900000c temp_c
+        /* 00000240: sp  1 +1 */ 03000001
+        /* 00000244: sp  2 -2 */ 2f000000
+        /* 00000248: sp  0 +0 */ 63000004 0000000e
+        /* 00000250: sp  0 +1 */ 0900000c temp_c
+        /* 00000254: sp  1 +1 */ 03000000
+        /* 00000258: sp  2 -2 */ 2f000000
+
+        /* 0000025c: sp  0 +0 */ 0000000f
+        ---
+
+        /* 0000020c: sp  0 +0 */ 0000000b
+
+        /* 00000210: sp  0 +0 */ 0000000c
+        /* 00000214: sp  0 +1 */ 03000000
+        /* 00000218: sp  1 +0 */ 5c000000
+        /* 0000021c: sp  1 +1 */ 09000018 temp_18
+        /* 00000220: sp  2 +1 */ 10000004
+        /* 00000224: sp  3 -2 */ 6a000000 beebbeeb virtual float smartfloat_anglefromaimingtocover::getValue()
+        /* 0000022c: sp  1 +1 */ 08000018 temp_18
+        /* 00000230: sp  2 -1 */ 4d000000
+        /* 00000234: sp  1 -1 */ 64000005
+
+        /* 00000238: sp  0 +0 */ 0000000d
+        /* 0000023c: sp  0 +1 */ 0900000c temp_c
+        /* 00000240: sp  1 +1 */ 03000001
+        /* 00000244: sp  2 -2 */ 2f000000
+        /* 00000248: sp  0 +0 */ 63000004 0000000e
+        /* 00000250: sp  0 +1 */ 0900000c temp_c
+        /* 00000254: sp  1 +1 */ 03000000
+        /* 00000258: sp  2 -2 */ 2f000000
+
+        /* 0000025c: sp  0 +0 */ 0000000f
+        ---
+
+        /* 0000024c: sp  0 +0 */ 0000000e
+        /* 00000250: sp  0 +1 */ 0900000c temp_c
+        /* 00000254: sp  1 +1 */ 03000000
+        /* 00000258: sp  2 -2 */ 2f000000
+
+        /* 0000025c: sp  0 +0 */ 0000000f
+        ---
+
+        /* 00000260: sp  0 +0 */ 00000010
+        /* 00000264: sp  0 +1 */ 0900001c temp_1c
+        /* 00000268: sp  1 +1 */ 0a000010 local_10
+        /* 0000026c: sp  2 -2 */ 69000000 beebbeeb bool actor::method_0610_ffff()
+        /* 00000274: sp  0 +1 */ 0600001c temp_1c
+        /* 00000278: sp  1 +1 */ 04000000
+        /* 0000027c: sp  2 -1 */ 46000000
+        /* 00000280: sp  1 -1 */ 64000006
+
+        /* 00000284: sp  0 +0 */ 00000011
+        /* 00000288: sp  0 +1 */ 0900000c temp_c
+        /* 0000028c: sp  1 +1 */ 03000001
+        /* 00000290: sp  2 +1 */ 0800000c temp_c
+        /* 00000294: sp  3 -1 */ 3f000000
+        /* 00000298: sp  2 -2 */ 2f000000
+        ---
+
+        /* 0000029c: sp  0 +0 */ 00000012
+
+        /* 000002a0: sp  0 +0 */ 00000013
+        ---
+        /* 000002a4: sp  0 +1 */ 09000020 local_20
+        /* 000002a8: sp  1 +1 */ 0800000c temp_c
+        /* 000002ac: sp  2 +0 */ 5c000000
+        /* 000002b0: sp  2 -2 */ 66000000 beebbeeb this-&gt;smartscript gamebase::method_0883_ffff(float arg_0000_value_4)
+        /* 000002b8: sp  0 +1 */ 09000020 local_20
+        /* 000002bc: sp  1 +1 */ 10000008
+        /* 000002c0: sp  2 -2 */ 6a000000 beebbeeb virtual void smartfloat_approachtarget::method_0658_16(smartscript arg_0089_value_0)
+
+        /* 000002c8: sp  0 +0 */ 00000014
+        /* 000002cc: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000002d0: sp  1 +1 */ 09000034 temp_34
+        /* 000002d4: sp  2 +1 */ 10000008
+        /* 000002d8: sp  3 -2 */ 6a000000 beebbeeb virtual float smartfloat_sampledevaluation::getValue()
+        /* 000002e0: sp  1 +1 */ 08000034 temp_34
+        /* 000002e4: sp  2 -2 */ 2f000000
+        /* 000002e8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type0000050b.html">smartfloat_lazyevaluation</a><br/>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000b024</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%drone_a%</h1>
+		<pre>./tools/drmexplore pc-w/ pan_hyronproject.drm n$[0x86d]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %drone_a% : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000512.html">sound</a> decl_0027_2edc_4 = dtp:0000:V;
+    dword decl_0000_2edd_8 = 5;
+    void method_01dc_0();
+    // referenced at <a href="type0000b024.html">async void %drone_a%::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_0a65_1(<a href="type00000522.html">uberobjectevent</a>);
+    // referenced at <a href="type0000af1b.html">async void UnknownAF1B::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    // referenced at <a href="type0000af1c.html">async void UnknownAF1C::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    // referenced at <a href="type0000af1d.html">async void UnknownAF1D::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_0a13_2(<a href="type00000512.html">sound</a>, dword);
+    // referenced at <a href="type0000af10.html">void UnknownAF10::method_2d9a_0()</a>
+    // referenced at <a href="type0000af14.html">async void UnknownAF14::method_2dbd_1()</a>
+    // referenced at <a href="type0000af16.html">async void UnknownAF16::method_2e34_0()</a>
+    // referenced at <a href="type0000af1b.html">async void UnknownAF1B::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    // referenced at <a href="type0000af1c.html">async void UnknownAF1C::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    // referenced at <a href="type0000af1d.html">async void UnknownAF1D::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    // referenced at <a href="type0000b029.html">void %zhao_door_a%::method_2e8e_1()</a>
+    // referenced at <a href="type0000b041.html">async void %dispatcher_hyronproject_first_phase%::method_2f1f_7()</a>
+    // referenced at <a href="type0000b041.html">async void %dispatcher_hyronproject_first_phase%::method_2f20_8()</a>
+    // referenced at <a href="type0000b042.html">void %dispatcher_hyronproject_second_phase%::method_2f18_0()</a>
+    // referenced at <a href="type0000b042.html">async void %dispatcher_hyronproject_second_phase%::method_2f2a_6()</a>
+    // referenced at <a href="type0000b043.html">async void %dispatcher_hyronproject_third_phase%::method_2f38_6()</a>
+    void method_2ee0_3();
+    // referenced at <a href="type0000af16.html">async void UnknownAF16::method_2e34_0()</a>
+    // referenced at <a href="type0000af68.html">void UnknownAF68::method_0bf0_0()</a>
+    void method_0bd1_4();
+    // referenced at <a href="type0000b024.html">async void %drone_a%::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_2ee1_5();
+    // referenced at <a href="type0000b024.html">async void %drone_a%::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %drone_a% : Unknown0578 {
+    // sizeof = 0xc
+    sound decl_0027_2edc_4 = TODO(0A);
+    dword decl_0000_2edd_8 = 5;
+    void method_01dc_0() {
+        /* 00000124: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a65_1(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        uberobjectevent local_14 = TODO(0A);
+        bool temp_24 = False;
+        uberobjectevent local_28 = TODO(0A);
+        bool temp_38 = False;
+        uberobjectevent local_3c = TODO(0A);
+
+        /* 000001e4: sp  0 +0 */ 00000000
+        /* 000001e8: sp  0 +1 */ 09000010 temp_10
+        /* 000001ec: sp  1 +1 */ 09000014 local_14
+        /* 000001f0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000001f4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001fc: sp  0 +1 */ 06000010 temp_10
+        /* 00000200: sp  1 -1 */ 64000003
+
+        /* 00000204: sp  0 +0 */ 00000001
+        /* 00000208: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %drone_a%::method_01dc_3d()
+        ---
+
+        /* 00000210: sp  0 +0 */ 00000002
+        /* 00000214: sp  0 +1 */ 09000024 temp_24
+        /* 00000218: sp  1 +1 */ 09000028 local_28
+        /* 0000021c: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000220: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000228: sp  0 +1 */ 06000024 temp_24
+        /* 0000022c: sp  1 -1 */ 64000003
+
+        /* 00000230: sp  0 +0 */ 00000003
+        /* 00000234: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %drone_a%::method_0bd1_3f()
+        ---
+
+        /* 0000023c: sp  0 +0 */ 00000004
+        /* 00000240: sp  0 +1 */ 09000038 temp_38
+        /* 00000244: sp  1 +1 */ 0900003c local_3c
+        /* 00000248: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 0000024c: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000254: sp  0 +1 */ 06000038 temp_38
+        /* 00000258: sp  1 -1 */ 6400000d
+
+        /* 0000025c: sp  0 +0 */ 00000005
+
+        /* 00000260: sp  0 +0 */ 00000006
+        /* 00000264: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %drone_a%::method_2ee1_40()
+
+        /* 0000026c: sp  0 +0 */ 00000007
+        /* 00000270: sp  0 +1 */ 05000000 beebbeeb &#x27;CapsuleOpenning&#x27;
+        /* 00000278: sp  1 +1 */ 03000005
+        /* 0000027c: sp  2 +0 */ 5c000000
+        /* 00000280: sp  2 +1 */ 04000001
+        /* 00000284: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000028c: sp  0 +0 */ 00000008
+        ---
+
+        /* 00000290: sp  0 +0 */ 00000009
+        /* 00000294: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0a13_2(sound arg_0027_2ede_0, dword arg_0000_2edf_4) {
+        bool temp_8 = False;
+        soundendtype local_c = TODO(0A);
+
+        /* 000002f4: sp  0 +0 */ 0000000a
+        /* 000002f8: sp  0 +1 */ 09000008 temp_8
+        /* 000002fc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000300: sp  2 -2 */ 65000000 beebbeeb native bool sound::method_0a1a_ffff()
+        /* 00000308: sp  0 +1 */ 06000008 temp_8
+        /* 0000030c: sp  1 +0 */ 50000000
+        /* 00000310: sp  1 +1 */ 08000004 arg_0000_2edf_4
+        /* 00000314: sp  2 +1 */ 0e000008 unnamed member 8
+        /* 00000318: sp  3 -1 */ 44000000
+        /* 0000031c: sp  2 -1 */ 52000000
+        /* 00000320: sp  1 -1 */ 64000014
+
+        /* 00000324: sp  0 +0 */ 0000000b
+
+        /* 00000328: sp  0 +0 */ 0000000c
+        /* 0000032c: sp  0 +1 */ 0900000c local_c
+        /* 00000330: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000334: sp  2 -2 */ 65000000 beebbeeb native void sound::stopSound(soundendtype arg_0a17_0a18_0)
+
+        /* 0000033c: sp  0 +0 */ 0000000d
+        /* 00000340: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 00000344: sp  1 +1 */ 09000000 arg_0027_2ede_0
+        /* 00000348: sp  2 -2 */ 34000000
+
+        /* 0000034c: sp  0 +0 */ 00000512
+
+        /* 00000350: sp  0 +0 */ 0000000e
+        /* 00000354: sp  0 +1 */ 0f000008 unnamed member 8
+        /* 00000358: sp  1 +1 */ 08000004 arg_0000_2edf_4
+        /* 0000035c: sp  2 -2 */ 2f000000
+
+        /* 00000360: sp  0 +0 */ 0000000f
+        /* 00000364: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 00000368: sp  1 -1 */ 65000000 beebbeeb native void sound::startSound2()
+
+        /* 00000370: sp  0 +0 */ 00000010
+        ---
+
+        /* 00000374: sp  0 +0 */ 00000011
+        /* 00000378: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2ee0_3() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 000003b4: sp  0 +0 */ 00000012
+        /* 000003b8: sp  0 +1 */ 09000000 local_0
+        /* 000003bc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000003c4: sp  0 +0 */ 00000013
+        /* 000003c8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0bd1_4() {
+        /* 000003d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2ee1_5() {
+        /* 000003e4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type0000af1b.html">UnknownAF1B</a><br/>
+derived class <a href="type0000af1c.html">UnknownAF1C</a><br/>
+derived class <a href="type0000af1d.html">UnknownAF1D</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+unit object #39 null<br/>
+unit object #40 null<br/>
+unit object #41 null<br/>
+</body>
+</html>

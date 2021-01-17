@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00014b9b</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown14B9B</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega_exterior.drm n$[0x4c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown14B9B : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_40 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d9a.html">Unknown11D9A</a>&gt; decl_0012_532b_48 = {<a href="units.html#0000bfaf">unit object 0000bfaf</a>};
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown14B9B : %triggervolume% {
+    // sizeof = 0x50
+    stickybool field_4;
+    stickybool field_20;
+    playerref decl_012a_012c_40 = TODO(0A);
+    instanceref decl_0012_532b_48 = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+        Unknown11D9A local_14 = TODO(0B);
+
+        /* 00000114: sp  0 +0 */ 00000000
+        /* 00000118: sp  0 +1 */ 0900000c temp_c
+        /* 0000011c: sp  1 +1 */ 09000010 local_10
+        /* 00000120: sp  2 +1 */ 03000001
+        /* 00000124: sp  3 +1 */ 04000001
+        /* 00000128: sp  4 +1 */ 09000008 local_8
+        /* 0000012c: sp  5 +1 */ 0f000040 unnamed member 40
+        /* 00000130: sp  6 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000138: sp  4 +1 */ 0a000008 local_8
+        /* 0000013c: sp  5 +0 */ 7e000000 00000552
+        /* 00000144: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 0000014c: sp  0 +1 */ 0600000c temp_c
+        /* 00000150: sp  1 -1 */ 64000019
+
+        /* 00000154: sp  0 +0 */ 00000001
+
+        /* 00000158: sp  0 +0 */ 00000002
+        /* 0000015c: sp  0 +1 */ 09000014 local_14
+        /* 00000160: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000164: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000016c: sp  0 +1 */ 0a000014 local_14
+        /* 00000170: sp  1 +0 */ 7e000000 00011d9a
+        /* 00000178: sp  1 -1 */ 6a000000 beebbeeb virtual void UnknownE8A0::method_1803_3f()
+
+        /* 00000180: sp  0 +0 */ 00000003
+        /* 00000184: sp  0 +1 */ 04000000
+        /* 00000188: sp  1 -1 */ 66000000 beebbeeb this-&gt;void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 00000190: sp  0 +0 */ 00000004
+        /* 00000194: sp  0 +1 */ 05000000 beebbeeb &#x27;Disk reader enable&#x27;
+        /* 0000019c: sp  1 +1 */ 03000005
+        /* 000001a0: sp  2 +0 */ 5c000000
+        /* 000001a4: sp  2 +1 */ 04000001
+        /* 000001a8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001b0: sp  0 +0 */ 00000005
+        /* 000001b4: sp  0 +0 */ 63000008 00000006
+        /* 000001bc: sp  0 +1 */ 05000000 beebbeeb &#x27;Player does not have virus&#x27;
+        /* 000001c4: sp  1 +1 */ 03000005
+        /* 000001c8: sp  2 +0 */ 5c000000
+        /* 000001cc: sp  2 +1 */ 04000001
+        /* 000001d0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001d8: sp  0 +0 */ 00000007
+        ---
+
+        /* 000001b8: sp  0 +0 */ 00000006
+        /* 000001bc: sp  0 +1 */ 05000000 beebbeeb &#x27;Player does not have virus&#x27;
+        /* 000001c4: sp  1 +1 */ 03000005
+        /* 000001c8: sp  2 +0 */ 5c000000
+        /* 000001cc: sp  2 +1 */ 04000001
+        /* 000001d0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001d8: sp  0 +0 */ 00000007
+        ---
+        /* 000001dc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000063d3</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown63D3</h1>
+		<pre>./tools/drmexplore pc-w/ det_police.drm n$[0x16c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown63D3 : <a href="type000064ca.html">%det1_policebasement_corpse_unknownhacker%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006366.html">Unknown6366</a>&gt; decl_0012_1c55_4 = {<a href="units.html#00000686">unit object 00000686</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000639a.html">Unknown639A</a>&gt; decl_0012_1c56_c = {<a href="units.html#00003478">unit object 00003478</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000638e.html">Unknown638E</a>&gt; decl_0012_1c12_14 = {<a href="units.html#0000340b">unit object 0000340b</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_1021_1c = persistent(dtp:20A7) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_1022_30 = persistent(dtp:20A6) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000063d2.html">Unknown63D2</a>&gt; decl_0012_1c57_44 = {<a href="units.html#000034d6">unit object 000034d6</a>};
+    void method_0606_0(gcref <a href="type000004a8.html">actor</a>, <a href="type000004f2.html">pickup</a>, dword);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown63D3 : %det1_policebasement_corpse_unknownhacker% {
+    // sizeof = 0x4c
+    instanceref decl_0012_1c55_4 = TODO(0A);
+    instanceref decl_0012_1c56_c = TODO(0A);
+    instanceref decl_0012_1c12_14 = TODO(0A);
+    smartscript decl_0089_1021_1c = TODO(0A);
+    smartscript decl_0089_1022_30 = TODO(0A);
+    instanceref decl_0012_1c57_44 = TODO(0A);
+    async void method_0606_0(actor arg_05dc_0607_0, pickup arg_05fb_05fc_4, dword arg_0000_05fd_8) {
+        Unknown6366 local_c = TODO(0B);
+        npcinteraction local_10 = TODO(0A);
+        Unknown6366 local_18 = TODO(0B);
+        waypointnode local_1c = TODO(0A);
+        Unknown639A local_2c = TODO(0B);
+        bool temp_30 = False;
+        bool temp_31 = False;
+
+        /* 00000154: sp  0 +0 */ 00000000
+        /* 00000158: sp  0 +1 */ 09000010 local_10
+        /* 0000015c: sp  1 +1 */ 0900000c local_c
+        /* 00000160: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000164: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000016c: sp  1 +1 */ 0a00000c local_c
+        /* 00000170: sp  2 +0 */ 7e000000 00006366
+        /* 00000178: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 00000180: sp  0 +0 */ 00000001
+        /* 00000184: sp  0 +1 */ 0900001c local_1c
+        /* 00000188: sp  1 +1 */ 09000018 local_18
+        /* 0000018c: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000190: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000198: sp  1 +1 */ 0a000018 local_18
+        /* 0000019c: sp  2 +0 */ 7e000000 00006366
+        /* 000001a4: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0675_ffff(waypointnode arg_0196_0676_0)
+
+        /* 000001ac: sp  0 +0 */ 00000002
+        /* 000001b0: sp  0 +1 */ 04000000
+        /* 000001b4: sp  1 +1 */ 0900002c local_2c
+        /* 000001b8: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000001bc: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001c4: sp  1 +1 */ 0a00002c local_2c
+        /* 000001c8: sp  2 +0 */ 7e000000 0000639a
+        /* 000001d0: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000001d8: sp  0 +0 */ 00000003
+        /* 000001dc: sp  0 +1 */ 09000030 temp_30
+        /* 000001e0: sp  1 +1 */ 0f000030 unnamed member 30
+        /* 000001e4: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000001ec: sp  0 +1 */ 06000030 temp_30
+        /* 000001f0: sp  1 +1 */ 04000000
+        /* 000001f4: sp  2 -1 */ 46000000
+        /* 000001f8: sp  1 +1 */ 09000031 temp_31
+        /* 000001fc: sp  2 +1 */ 0f00001c unnamed member 1c
+        /* 00000200: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000208: sp  1 +1 */ 06000031 temp_31
+        /* 0000020c: sp  2 +1 */ 04000000
+        /* 00000210: sp  3 -1 */ 46000000
+        /* 00000214: sp  2 -1 */ 51000000
+        /* 00000218: sp  1 -1 */ 64000004
+
+        /* 0000021c: sp  0 +0 */ 00000004
+        /* 00000220: sp  0 +1 */ 0f000044 unnamed member 44
+        /* 00000224: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+        ---
+
+        /* 0000022c: sp  0 +0 */ 00000005
+        /* 00000230: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000064ca.html">%det1_policebasement_corpse_unknownhacker%</a><br/>
+</body>
+</html>

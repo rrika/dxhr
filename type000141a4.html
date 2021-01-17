@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000141a4</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown141A4</h1>
+		<pre>./tools/drmexplore pc-w/ sha_tym_lab_admin.drm n$[0xa0]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown141A4 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_40 = TODO(0A);
+    gcref <a href="type000004aa.html">actorplayer</a> decl_0b1f_06a0_48 = TODO(0B);
+    void method_0b47_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown141A4 : %triggervolume% {
+    // sizeof = 0x4c
+    stickybool field_4;
+    stickybool field_20;
+    playerref decl_012a_012c_40 = TODO(0A);
+    actorplayer decl_0b1f_06a0_48 = TODO(0B);
+    async void method_0b47_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        %human_player% local_8 = TODO(0B);
+        instanceref local_c = TODO(0A);
+        %human_player% local_14 = TODO(0B);
+        instanceref local_18 = TODO(0A);
+        instance local_20 = TODO(0B);
+        bool temp_24 = False;
+        pickup local_28 = TODO(0A);
+        bool temp_2c = False;
+        pickup local_30 = TODO(0A);
+        %human_player% local_34 = TODO(0B);
+
+        /* 00000194: sp  0 +0 */ 00000000
+        /* 00000198: sp  0 +1 */ 0f000048 unnamed member 48
+        /* 0000019c: sp  1 +1 */ 09000020 local_20
+        /* 000001a0: sp  2 +1 */ 09000018 local_18
+        /* 000001a4: sp  3 +1 */ 09000014 local_14
+        /* 000001a8: sp  4 +1 */ 0f000040 unnamed member 40
+        /* 000001ac: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000001b4: sp  3 +1 */ 0a000014 local_14
+        /* 000001b8: sp  4 +0 */ 7e000000 00000552
+        /* 000001c0: sp  4 -2 */ 69000000 beebbeeb instanceref instance::method_08e4_ffff()
+        /* 000001c8: sp  2 +1 */ 09000018 local_18
+        /* 000001cc: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001d4: sp  1 +1 */ 0a000020 local_20
+        /* 000001d8: sp  2 +0 */ 7e000000 000004aa
+        /* 000001e0: sp  2 -2 */ 30000000
+
+        /* 000001e4: sp  0 +0 */ 00000001
+        /* 000001e8: sp  0 +1 */ 09000024 temp_24
+        /* 000001ec: sp  1 +1 */ 09000028 local_28
+        /* 000001f0: sp  2 +1 */ 03000001
+        /* 000001f4: sp  3 +1 */ 04000001
+        /* 000001f8: sp  4 +1 */ 10000048
+        /* 000001fc: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 00000204: sp  0 +1 */ 06000024 temp_24
+        /* 00000208: sp  1 +1 */ 0900002c temp_2c
+        /* 0000020c: sp  2 +1 */ 09000030 local_30
+        /* 00000210: sp  3 +1 */ 03000001
+        /* 00000214: sp  4 +1 */ 04000001
+        /* 00000218: sp  5 +1 */ 10000048
+        /* 0000021c: sp  6 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 00000224: sp  1 +1 */ 0600002c temp_2c
+        /* 00000228: sp  2 -1 */ 52000000
+        /* 0000022c: sp  1 -1 */ 64000016
+
+        /* 00000230: sp  0 +0 */ 00000002
+
+        /* 00000234: sp  0 +0 */ 00000003
+        /* 00000238: sp  0 +1 */ 03000004
+        /* 0000023c: sp  1 +1 */ 04000001
+        /* 00000240: sp  2 +1 */ 09000034 local_34
+        /* 00000244: sp  3 +1 */ 0f000040 unnamed member 40
+        /* 00000248: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000250: sp  2 +1 */ 0a000034 local_34
+        /* 00000254: sp  3 +0 */ 7e000000 00000552
+        /* 0000025c: sp  3 -3 */ 69000000 beebbeeb void actor::method_065d_ffff(dword arg_0000_065b_0, bool arg_0000_065e_4)
+
+        /* 00000264: sp  0 +0 */ 00000004
+        /* 00000268: sp  0 +1 */ 05000000 beebbeeb &#x27;player has access card&#x27;
+        /* 00000270: sp  1 +1 */ 03000006
+        /* 00000274: sp  2 +0 */ 5c000000
+        /* 00000278: sp  2 +1 */ 04000001
+        /* 0000027c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000284: sp  0 +0 */ 00000005
+        ---
+
+        /* 00000288: sp  0 +0 */ 00000006
+        /* 0000028c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

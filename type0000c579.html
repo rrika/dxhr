@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000c579</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownC579</h1>
+		<pre>./tools/drmexplore pc-w/ pic_helipad.drm n$[0x38]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownC579 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_325a_40 = TODO(0A);
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_325b_50 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_325c_60 = persistent(dtp:C66D) {type=bool};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownC579 : %triggervolume% {
+    // sizeof = 0x74
+    stickybool field_4;
+    stickybool field_20;
+    objectivescriptablelocator decl_0963_325a_40 = TODO(0A);
+    objectivescriptablelocator decl_0963_325b_50 = TODO(0A);
+    smartscript decl_0089_325c_60 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        bool temp_8 = False;
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 09000008 temp_8
+        /* 000000bc: sp  1 +1 */ 0f000060 unnamed member 60
+        /* 000000c0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000000c8: sp  0 +1 */ 06000008 temp_8
+        /* 000000cc: sp  1 +1 */ 04000000
+        /* 000000d0: sp  2 -1 */ 46000000
+        /* 000000d4: sp  1 -1 */ 6400000f
+
+        /* 000000d8: sp  0 +0 */ 00000001
+
+        /* 000000dc: sp  0 +0 */ 00000002
+        /* 000000e0: sp  0 +1 */ 04000001
+        /* 000000e4: sp  1 +1 */ 0f000060 unnamed member 60
+        /* 000000e8: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000f0: sp  0 +0 */ 00000003
+        /* 000000f4: sp  0 +1 */ 0f000040 unnamed member 40
+        /* 000000f8: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 00000100: sp  0 +0 */ 00000004
+        /* 00000104: sp  0 +1 */ 0f000050 unnamed member 50
+        /* 00000108: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 00000110: sp  0 +0 */ 00000005
+        ---
+
+        /* 00000114: sp  0 +0 */ 00000006
+        /* 00000118: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

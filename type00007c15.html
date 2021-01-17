@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00007c15</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown7C15</h1>
+		<pre>./tools/drmexplore pc-w/ det_sarifhq_rail_tutorial.drm n$[0xd0]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown7C15 : <a href="type00002142.html">%keypad_a%</a> {
+    <a href="type00000521.html">uberobjectcommand</a> field_4;
+    <a href="type00000521.html">uberobjectcommand</a> field_c;
+    <a href="type00000522.html">uberobjectevent</a> field_14;
+    <a href="type00000522.html">uberobjectevent</a> field_24;
+    <a href="type00000522.html">uberobjectevent</a> field_34;
+    <a href="type00000522.html">uberobjectevent</a> field_44;
+    <a href="type00000521.html">uberobjectcommand</a> field_54;
+    <a href="type00000521.html">uberobjectcommand</a> field_5c;
+    <a href="type00000523.html">uberobjectquery</a> field_64;
+    <a href="type00000523.html">uberobjectquery</a> field_70;
+    <a href="type00000521.html">uberobjectcommand</a> field_7c;
+    <a href="type00000522.html">uberobjectevent</a> field_84;
+    <a href="type00000522.html">uberobjectevent</a> field_94;
+    <a href="type00000522.html">uberobjectevent</a> field_a4;
+    <a href="type00000522.html">uberobjectevent</a> field_b4;
+    <a href="type00000522.html">uberobjectevent</a> field_c4;
+    <a href="type00000522.html">uberobjectevent</a> field_d4;
+    <a href="type00000522.html">uberobjectevent</a> field_e4;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00007c12.html">Unknown7C12</a>&gt; decl_0012_20d9_f4 = {<a href="units.html#0000507d">unit object 0000507d</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000593.html">%elevator_button_a%</a>&gt; decl_0012_20de_fc = {<a href="units.html#000050f8">unit object 000050f8</a>};
+    void method_0c06_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown7C15 : %keypad_a% {
+    // sizeof = 0x104
+    uberobjectcommand field_4;
+    uberobjectcommand field_c;
+    uberobjectevent field_14;
+    uberobjectevent field_24;
+    uberobjectevent field_34;
+    uberobjectevent field_44;
+    uberobjectcommand field_54;
+    uberobjectcommand field_5c;
+    uberobjectquery field_64;
+    uberobjectquery field_70;
+    uberobjectcommand field_7c;
+    uberobjectevent field_84;
+    uberobjectevent field_94;
+    uberobjectevent field_a4;
+    uberobjectevent field_b4;
+    uberobjectevent field_c4;
+    uberobjectevent field_d4;
+    uberobjectevent field_e4;
+    instanceref decl_0012_20d9_f4 = TODO(0A);
+    instanceref decl_0012_20de_fc = TODO(0A);
+    void method_0c06_0() {
+        Unknown7C12 local_0 = TODO(0B);
+        %elevator_button_a% local_4 = TODO(0B);
+        npcinteraction local_8 = TODO(0A);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 09000000 local_0
+        /* 000000ec: sp  1 +1 */ 0f0000f4 unnamed member f4
+        /* 000000f0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000f8: sp  0 +1 */ 0a000000 local_0
+        /* 000000fc: sp  1 +0 */ 7e000000 00007c12
+        /* 00000104: sp  1 -1 */ 69000000 beebbeeb void %base_elevator%::method_0ff6_ffff()
+
+        /* 0000010c: sp  0 +0 */ 00000001
+        /* 00000110: sp  0 +1 */ 09000004 local_4
+        /* 00000114: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 00000118: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000120: sp  0 +1 */ 0a000004 local_4
+        /* 00000124: sp  1 +0 */ 7e000000 00000593
+        /* 0000012c: sp  1 -1 */ 69000000 beebbeeb void Unknown0583::method_01a7_ffff()
+
+        /* 00000134: sp  0 +0 */ 00000002
+        /* 00000138: sp  0 +1 */ 09000008 local_8
+        /* 0000013c: sp  1 -1 */ 65000000 beebbeeb native void npcinteraction::method_0956_ffff()
+
+        /* 00000144: sp  0 +0 */ 00000003
+        /* 00000148: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00002142.html">%keypad_a%</a><br/>
+</body>
+</html>

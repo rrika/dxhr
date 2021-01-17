@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000067</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown0067</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x8b]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown0067 : <a href="type00000558.html">%det2_cityaptindus1_riotcop_zekesanders%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000511.html">smartscript</a> decl_0089_0203_3c = persistent(dtp:0480) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_0204_50 = persistent(dtp:045C) {type=bool};
+    void method_01dc_0();
+    void method_0190_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown0067 : %det2_cityaptindus1_riotcop_zekesanders% {
+    // sizeof = 0x64
+    stickybool field_4;
+    stickybool field_20;
+    smartscript decl_0089_0203_3c = TODO(0A);
+    smartscript decl_0089_0204_50 = TODO(0A);
+    async void method_01dc_0() {
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +1 */ 04000001
+        /* 000000ac: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 000000b0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000b8: sp  0 +0 */ 00000001
+        /* 000000bc: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Zeke dead, set SmartBool to TRUE!&#x27;
+        /* 000000c4: sp  1 +1 */ 03000003
+        /* 000000c8: sp  2 +0 */ 5c000000
+        /* 000000cc: sp  2 +1 */ 04000001
+        /* 000000d0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000000d8: sp  0 +0 */ 00000002
+        /* 000000dc: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0190_1() {
+        bool temp_0 = False;
+
+        /* 00000134: sp  0 +0 */ 00000003
+        /* 00000138: sp  0 +1 */ 09000000 temp_0
+        /* 0000013c: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000140: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000148: sp  0 +1 */ 06000000 temp_0
+        /* 0000014c: sp  1 +1 */ 04000000
+        /* 00000150: sp  2 -1 */ 46000000
+        /* 00000154: sp  1 -1 */ 6400000f
+
+        /* 00000158: sp  0 +0 */ 00000004
+
+        /* 0000015c: sp  0 +0 */ 00000005
+        /* 00000160: sp  0 +1 */ 04000001
+        /* 00000164: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000168: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000170: sp  0 +0 */ 00000006
+        /* 00000174: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Trap should be disarmed!&#x27;
+        /* 0000017c: sp  1 +1 */ 03000003
+        /* 00000180: sp  2 +0 */ 5c000000
+        /* 00000184: sp  2 +1 */ 04000001
+        /* 00000188: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000190: sp  0 +0 */ 00000007
+        ---
+
+        /* 00000194: sp  0 +0 */ 00000008
+        /* 00000198: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00002e81.html">Unknown2E81</a><br/>
+parent class <a href="type00000558.html">%det2_cityaptindus1_riotcop_zekesanders%</a><br/>
+</body>
+</html>

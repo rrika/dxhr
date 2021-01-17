@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000093e6</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown93E6</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0xca6]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown93E6 : <a href="type000004f7.html">quest</a> {
+    <a href="type00000512.html">sound</a> decl_0027_25a7_4 = dtp:931D:X;
+    void method_2507_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown93E6 : quest {
+    // sizeof = 0x8
+    sound decl_0027_25a7_4 = TODO(0A);
+    void method_2507_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 0000008c: sp  1 -1 */ 65000000 beebbeeb native void sound::startSound2()
+
+        /* 00000094: sp  0 +0 */ 00000001
+        /* 00000098: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

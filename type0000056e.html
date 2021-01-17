@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000056e</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%npc_barrett%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6bb]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %npc_barrett% : <a href="type00000549.html">Unknown0549</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004c6.html">damagetype</a> decl_062e_0b15_3c = TODO(0A);
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_40 = TODO(0A);
+    void method_05c9_0(<a href="type000004a6.html">action</a>);
+    gcref <a href="type000004c2.html">controller</a> getController059a();
+    bool method_0b16_2();
+    void method_0b17_3();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %npc_barrett% : Unknown0549 {
+    // sizeof = 0x48
+    stickybool field_4;
+    stickybool field_20;
+    damagetype decl_062e_0b15_3c = TODO(0A);
+    playerref decl_012a_012c_40 = TODO(0A);
+    async void method_05c9_0(action arg_0593_0367_0) {
+        /* 000000f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    controller getController059a() {
+        controller local_4 = TODO(0B);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000012c: sp  1 +1 */ 09000004 local_4
+        /* 00000130: sp  2 +1 */ 05000000 beebbeeb &#x27;aibarrettscriptcontroller&#x27;
+        /* 00000138: sp  3 -2 */ 66000000 beebbeeb this-&gt;controller actor::getControllerByName(string arg_0000_0192_4)
+        /* 00000140: sp  1 +1 */ 0a000004 local_4
+        /* 00000144: sp  2 -2 */ 30000000
+        /* 00000148: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0b16_2() {
+
+        /* 00000174: sp  0 +0 */ 00000002
+        /* 00000178: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000017c: sp  1 +1 */ 04000000
+        /* 00000180: sp  2 -2 */ 2e000000
+        /* 00000184: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0b17_3() {
+        %human_player% local_0 = TODO(0B);
+
+        /* 000001b4: sp  0 +0 */ 00000004
+        /* 000001b8: sp  0 +1 */ 03000032
+        /* 000001bc: sp  1 +0 */ 5c000000
+        /* 000001c0: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 000001c4: sp  2 +1 */ 09000000 local_0
+        /* 000001c8: sp  3 +1 */ 0f000040 unnamed member 40
+        /* 000001cc: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000001d4: sp  2 +1 */ 0a000000 local_0
+        /* 000001d8: sp  3 +0 */ 7e000000 00000552
+        /* 000001e0: sp  3 -3 */ 69000000 beebbeeb void actor::method_062f_ffff(float arg_0000_0630_0, damagetype arg_062e_0025_4)
+
+        /* 000001e8: sp  0 +0 */ 00000005
+        /* 000001ec: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000055e7.html">Unknown55E7</a><br/>
+initialized field in <a href="type000055eb.html">Unknown55EB</a><br/>
+parent class <a href="type00000549.html">Unknown0549</a><br/>
+unit object #37 null<br/>
+</body>
+</html>

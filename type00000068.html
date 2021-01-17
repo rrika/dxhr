@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000068</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown0068</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x8c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown0068 : <a href="type00000555.html">%det1_samassembly_civilian_gregthorpe%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004ec.html">objective</a> decl_0005_0206_3c = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_0207_44 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_0208_4c = persistent(dtp:047D) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_0209_60 = persistent(dtp:047C) {type=bool};
+    void method_00e3_0();
+    void method_01dc_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown0068 : %det1_samassembly_civilian_gregthorpe% {
+    // sizeof = 0x74
+    stickybool field_4;
+    stickybool field_20;
+    objective decl_0005_0206_3c = TODO(0A);
+    objective decl_0005_0207_44 = TODO(0A);
+    smartscript decl_0089_0208_4c = TODO(0A);
+    smartscript decl_0089_0209_60 = TODO(0A);
+    async void method_00e3_0() {
+        /* 000000a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_01dc_1() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 04000000
+        /* 000000ec: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 000000f0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000f8: sp  0 +0 */ 00000001
+        /* 000000fc: sp  0 +1 */ 04000000
+        /* 00000100: sp  1 +1 */ 0f000060 unnamed member 60
+        /* 00000104: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000010c: sp  0 +0 */ 00000002
+        /* 00000110: sp  0 +1 */ 09000000 temp_0
+        /* 00000114: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000118: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000120: sp  0 +1 */ 06000000 temp_0
+        /* 00000124: sp  1 -1 */ 64000006
+
+        /* 00000128: sp  0 +0 */ 00000003
+
+        /* 0000012c: sp  0 +0 */ 00000004
+        /* 00000130: sp  0 +1 */ 0f00003c unnamed member 3c
+        /* 00000134: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094c_ffff()
+
+        /* 0000013c: sp  0 +0 */ 00000005
+        ---
+
+        /* 00000140: sp  0 +0 */ 00000006
+        /* 00000144: sp  0 +1 */ 09000001 temp_1
+        /* 00000148: sp  1 +1 */ 0f000044 unnamed member 44
+        /* 0000014c: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000154: sp  0 +1 */ 06000001 temp_1
+        /* 00000158: sp  1 -1 */ 64000006
+
+        /* 0000015c: sp  0 +0 */ 00000007
+
+        /* 00000160: sp  0 +0 */ 00000008
+        /* 00000164: sp  0 +1 */ 0f000044 unnamed member 44
+        /* 00000168: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094c_ffff()
+
+        /* 00000170: sp  0 +0 */ 00000009
+        ---
+
+        /* 00000174: sp  0 +0 */ 0000000a
+        /* 00000178: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000005e0.html">Unknown05E0</a><br/>
+initialized field in <a href="type00006f07.html">Unknown6F07</a><br/>
+initialized field in <a href="type00006f3d.html">Unknown6F3D</a><br/>
+initialized field in <a href="type00006f3e.html">Unknown6F3E</a><br/>
+parent class <a href="type00000555.html">%det1_samassembly_civilian_gregthorpe%</a><br/>
+</body>
+</html>

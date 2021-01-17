@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000120cd</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown120CD</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city__masterunit.drm n$[0x684]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown120CD : <a href="type000004f7.html">quest</a> {
+    <a href="type00000502.html">sequencergraph</a> decl_008c_5621_4 = TODO(0A);
+    void method_0456_0();
+    void method_41fd_1();
+    void method_55fc_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown120CD : quest {
+    // sizeof = 0xc
+    sequencergraph decl_008c_5621_4 = TODO(0A);
+    void method_0456_0() {
+        /* 000000e4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_41fd_1() {
+        symbol local_0 = TODO(0A);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000000 local_0
+        /* 0000012c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native void sequencergraph::method_09d2_ffff(symbol arg_008f_05e2_0)
+
+        /* 00000138: sp  0 +0 */ 00000001
+        /* 0000013c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_55fc_2() {
+        smartscript local_0 = TODO(0A);
+        unitref&lt;Unknown12076&gt; local_14 = TODO(0A);
+        instanceref&lt;Unknown12075&gt; local_20 = TODO(0A);
+        globalsref&lt;Unknown05CF&gt; local_28 = TODO(0A);
+        Unknown05CF local_2c = TODO(0B);
+
+        /* 00000254: sp  0 +0 */ 00000002
+        /* 00000258: sp  0 +1 */ 04000001
+        /* 0000025c: sp  1 +1 */ 09000000 local_0
+        /* 00000260: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000268: sp  0 +0 */ 00000003
+        /* 0000026c: sp  0 +1 */ 09000014 local_14
+        /* 00000270: sp  1 +1 */ 09000020 local_20
+        /* 00000274: sp  2 +1 */ 0900002c local_2c
+        /* 00000278: sp  3 +1 */ 09000028 local_28
+        /* 0000027c: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 00000284: sp  2 +1 */ 0a00002c local_2c
+        /* 00000288: sp  3 +0 */ 7e000000 000005cf
+        /* 00000290: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4f_16(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00000298: sp  0 +0 */ 00000004
+        /* 0000029c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

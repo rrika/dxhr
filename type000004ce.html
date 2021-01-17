@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000004ce</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>dlcsystem</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x5da]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class dlcsystem : <a href="type000004a0.html">corebase</a> {
+    bool method_081b_0(dword);
+    // referenced at <a href="type0000001c.html">async void Unknown001C::run()</a>
+    bool method_081d_1(string);
+    bool method_081f_2(dword);
+    bool method_0821_3(dword);
+    bool method_0822_4();
+    void method_0823_5();
+    void method_0824_6();
+    void method_0825_7();
+    void method_0826_8();
+    dword method_0827_9();
+    void method_0828_a(dword, bool);
+    void method_082a_b(dword);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class dlcsystem : corebase {
+    // sizeof = 0x1
+    bool method_081b_0(dword arg_0000_081c_4); // no bytecode
+    bool method_081d_1(string arg_0000_081e_4); // no bytecode
+    bool method_081f_2(dword arg_0000_0820_4); // no bytecode
+    bool method_0821_3(dword arg_0000_0820_4); // no bytecode
+    bool method_0822_4(); // no bytecode
+    async void method_0823_5() {
+        /* 000001c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0824_6() {
+        /* 000001d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0825_7() {
+        /* 000001e4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0826_8() {
+        /* 000001f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    dword method_0827_9(); // no bytecode
+    void method_0828_a(dword arg_0000_081c_0, bool arg_0000_0829_4); // no bytecode
+    void method_082a_b(dword arg_0000_081c_0); // no bytecode
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000001c.html">Unknown001C</a><br/>
+initialized field in <a href="type00006b58.html">Unknown6B58</a><br/>
+initialized field in <a href="type000071d6.html">Unknown71D6</a><br/>
+initialized field in <a href="type0000729a.html">Unknown729A</a><br/>
+initialized field in <a href="type0001165b.html">Unknown1165B</a><br/>
+initialized field in <a href="type00012bb5.html">Unknown12BB5</a><br/>
+parent class <a href="type000004a0.html">corebase</a><br/>
+</body>
+</html>

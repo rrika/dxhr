@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00001f1d</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%base_elevator%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0xd4c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %base_elevator% : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type000004ab.html">actorsensor</a> decl_06fd_06f6_4 = TODO(0A);
+    <a href="type000004ab.html">actorsensor</a> decl_06fd_0fd8_8 = TODO(0A);
+    <a href="type000004b4.html">anchor</a> decl_00b8_0b8e_c = TODO(0A);
+    <a href="type000004e9.html">modelmarker</a> decl_06e9_0b73_10 = TODO(0A);
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0fd9_28 = {<a href="type00000085.html">type 00000085</a>, 1};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0fda_30 = {<a href="type00000085.html">type 00000085</a>, 0};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fdb_38 = {<a href="type00000085.html">type 00000085</a>, 0};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fdc_48 = {<a href="type00000085.html">type 00000085</a>, 1};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fdd_58 = {<a href="type00000085.html">type 00000085</a>, 2};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fde_68 = {<a href="type00000085.html">type 00000085</a>, 3};
+    <a href="type00000523.html">uberobjectquery</a> decl_0a5d_0fdf_78 = TODO(0A);
+    <a href="type00000523.html">uberobjectquery</a> decl_0a5d_0fe0_84 = TODO(0A);
+    <a href="type00000523.html">uberobjectquery</a> decl_0a5d_0fe1_90 = TODO(0A);
+    <a href="type00000523.html">uberobjectquery</a> decl_0a5d_0fe2_9c = TODO(0A);
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0b54_a8 = {<a href="type00000085.html">type 00000085</a>, 4};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fe3_b8 = {<a href="type00000085.html">type 00000085</a>, 5};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fe4_c8 = {<a href="type00000085.html">type 00000085</a>, 6};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0fe5_d8 = {<a href="type00000085.html">type 00000085</a>, c};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0fe6_e0 = {<a href="type00000085.html">type 00000085</a>, b};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fe7_e8 = {<a href="type00000085.html">type 00000085</a>, 7};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fe8_f8 = {<a href="type00000085.html">type 00000085</a>, 8};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fe9_108 = {<a href="type00000085.html">type 00000085</a>, 9};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0fea_118 = {<a href="type00000085.html">type 00000085</a>, a};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0feb_128 = {<a href="type00000085.html">type 00000085</a>, b};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0fec_138 = {<a href="type00000085.html">type 00000085</a>, 8};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0fed_140 = {<a href="type00000085.html">type 00000085</a>, 7};
+    dword decl_0000_0fee_148 = 0;
+    bool decl_0000_0fef_14c = False;
+    bool decl_0000_0ff0_14d = False;
+    float decl_0000_0ff1_150 = 1.0;
+    float decl_0000_0ff2_154 = 1.0;
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0ff3_158 = {<a href="type00000085.html">type 00000085</a>, c};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0ff4_168 = {<a href="type00000085.html">type 00000085</a>, 17};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0ff5_170 = {<a href="type00000085.html">type 00000085</a>, 18};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_178 = TODO(0A);
+    void run();
+    void method_0887_1(<a href="type000004ab.html">actorsensor</a>, <a href="type000004e0.html">instanceref</a>, dword, bool);
+    void method_0a65_2(<a href="type00000522.html">uberobjectevent</a>);
+    void method_0ff6_3();
+    void method_0ff7_4();
+    void method_0ff8_5();
+    // referenced at <a href="type00001f1d.html">async void %base_elevator%::method_0a65_2(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_0ff9_6();
+    // referenced at <a href="type00001f1d.html">async void %base_elevator%::method_0a65_2(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_0ffa_7();
+    // referenced at <a href="type00001f1d.html">async void %base_elevator%::method_0a65_2(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_0ffb_8();
+    // referenced at <a href="type00001f1d.html">async void %base_elevator%::method_0a65_2(uberobjectevent arg_0a66_0a67_0)</a>
+    bool method_0ffc_9();
+    bool method_0ffd_a();
+    bool method_0ffe_b();
+    bool method_0fff_c();
+    void method_000a_d();
+    // referenced at <a href="type00001f1d.html">async void %base_elevator%::method_0a65_2(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_1000_e();
+    void method_1001_f();
+    void method_1002_10();
+    void method_02ca_11(bool);
+    void method_1003_12();
+    void method_1004_13();
+    void method_1005_14();
+    void method_1006_15();
+    void method_1007_16();
+    bool method_0a75_17();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %base_elevator% : Unknown0578 {
+    // sizeof = 0x180
+    actorsensor decl_06fd_06f6_4 = TODO(0A);
+    actorsensor decl_06fd_0fd8_8 = TODO(0A);
+    anchor decl_00b8_0b8e_c = TODO(0A);
+    modelmarker decl_06e9_0b73_10 = TODO(0A);
+    uberobjectcommand decl_01a8_0fd9_28 = TODO(0A);
+    uberobjectcommand decl_01a8_0fda_30 = TODO(0A);
+    uberobjectevent decl_0a66_0fdb_38 = TODO(0A);
+    uberobjectevent decl_0a66_0fdc_48 = TODO(0A);
+    uberobjectevent decl_0a66_0fdd_58 = TODO(0A);
+    uberobjectevent decl_0a66_0fde_68 = TODO(0A);
+    uberobjectquery decl_0a5d_0fdf_78 = TODO(0A);
+    uberobjectquery decl_0a5d_0fe0_84 = TODO(0A);
+    uberobjectquery decl_0a5d_0fe1_90 = TODO(0A);
+    uberobjectquery decl_0a5d_0fe2_9c = TODO(0A);
+    uberobjectevent decl_0a66_0b54_a8 = TODO(0A);
+    uberobjectevent decl_0a66_0fe3_b8 = TODO(0A);
+    uberobjectevent decl_0a66_0fe4_c8 = TODO(0A);
+    uberobjectcommand decl_01a8_0fe5_d8 = TODO(0A);
+    uberobjectcommand decl_01a8_0fe6_e0 = TODO(0A);
+    uberobjectevent decl_0a66_0fe7_e8 = TODO(0A);
+    uberobjectevent decl_0a66_0fe8_f8 = TODO(0A);
+    uberobjectevent decl_0a66_0fe9_108 = TODO(0A);
+    uberobjectevent decl_0a66_0fea_118 = TODO(0A);
+    uberobjectevent decl_0a66_0feb_128 = TODO(0A);
+    uberobjectcommand decl_01a8_0fec_138 = TODO(0A);
+    uberobjectcommand decl_01a8_0fed_140 = TODO(0A);
+    dword decl_0000_0fee_148 = 0;
+    bool decl_0000_0fef_14c = False;
+    bool decl_0000_0ff0_14d = False;
+    float decl_0000_0ff1_150 = 1.0;
+    float decl_0000_0ff2_154 = 1.0;
+    uberobjectevent decl_0a66_0ff3_158 = TODO(0A);
+    uberobjectcommand decl_01a8_0ff4_168 = TODO(0A);
+    uberobjectcommand decl_01a8_0ff5_170 = TODO(0A);
+    playerref decl_012a_012c_178 = TODO(0A);
+    async void run() {
+
+        /* 00000334: sp  0 +0 */ 00000000
+        /* 00000338: sp  0 +1 */ 0b000000 unnamed member 0
+        /* 0000033c: sp  1 +1 */ 0f000010 unnamed member 10
+        /* 00000340: sp  2 -2 */ 65000000 beebbeeb native void modelmarker::method_0951_ffff(instance arg_0022_0023_0)
+
+        /* 00000348: sp  0 +0 */ 00000001
+        /* 0000034c: sp  0 +1 */ 0f00000c unnamed member c
+        /* 00000350: sp  1 +1 */ 0f000010 unnamed member 10
+        /* 00000354: sp  2 -2 */ 66000000 beebbeeb this-&gt;anchor instance::createModelMarkerAnchor2(modelmarker arg_06e9_08df_4)
+
+        /* 0000035c: sp  0 +0 */ 00000002
+        /* 00000360: sp  0 +1 */ 0f00000c unnamed member c
+        /* 00000364: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000368: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_06f9_ffff(anchor arg_00b8_06fa_0)
+
+        /* 00000370: sp  0 +0 */ 00000003
+
+        /* 00000374: sp  0 +0 */ 00000004
+        /* 00000378: sp  0 +1 */ 0f00000c unnamed member c
+        /* 0000037c: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 00000380: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_06f9_ffff(anchor arg_00b8_06fa_0)
+
+        /* 00000388: sp  0 +0 */ 00000005
+        /* 0000038c: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0887_1(actorsensor arg_06fd_0846_0, instanceref arg_0012_0594_4, dword arg_0000_0888_c, bool arg_0000_0847_10) {
+        bool temp_14 = False;
+        bool temp_15 = False;
+
+        /* 000006f4: sp  0 +0 */ 00000006
+        /* 000006f8: sp  0 +1 */ 09000014 temp_14
+        /* 000006fc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000700: sp  2 +1 */ 09000000 arg_06fd_0846_0
+        /* 00000704: sp  3 -3 */ 65000000 beebbeeb native bool actorsensor::isEqual(actorsensor arg_06fd_0542_4)
+        /* 0000070c: sp  0 +1 */ 06000014 temp_14
+        /* 00000710: sp  1 -1 */ 64000023
+
+        /* 00000714: sp  0 +0 */ 00000007
+
+        /* 00000718: sp  0 +0 */ 00000008
+        /* 0000071c: sp  0 +1 */ 0f000148 unnamed member 148
+        /* 00000720: sp  1 +1 */ 0800000c arg_0000_0888_c
+        /* 00000724: sp  2 -2 */ 2f000000
+
+        /* 00000728: sp  0 +0 */ 00000009
+        /* 0000072c: sp  0 +1 */ 06000010 arg_0000_0847_10
+        /* 00000730: sp  1 -1 */ 64000009
+
+        /* 00000734: sp  0 +0 */ 0000000a
+
+        /* 00000738: sp  0 +0 */ 0000000b
+
+        /* 0000073c: sp  0 +0 */ 0000000c
+
+        /* 00000740: sp  0 +0 */ 0000000d
+        /* 00000744: sp  0 +1 */ 0f000140 unnamed member 140
+        /* 00000748: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000750: sp  0 +0 */ 0000000e
+        /* 00000754: sp  0 +0 */ 63000010 0000000f
+
+        /* 0000075c: sp  0 +0 */ 00000010
+
+        /* 00000760: sp  0 +0 */ 00000011
+
+        /* 00000764: sp  0 +0 */ 00000012
+        /* 00000768: sp  0 +1 */ 0e000148 unnamed member 148
+        /* 0000076c: sp  1 +1 */ 03000000
+        /* 00000770: sp  2 -1 */ 44000000
+        /* 00000774: sp  1 +1 */ 0c00014d unnamed member 14d
+        /* 00000778: sp  2 +0 */ 50000000
+        /* 0000077c: sp  2 -1 */ 51000000
+        /* 00000780: sp  1 -1 */ 64000004
+
+        /* 00000784: sp  0 +0 */ 00000013
+        /* 00000788: sp  0 +1 */ 0f000138 unnamed member 138
+        /* 0000078c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        ---
+
+        /* 00000758: sp  0 +0 */ 0000000f
+
+        /* 0000075c: sp  0 +0 */ 00000010
+
+        /* 00000760: sp  0 +0 */ 00000011
+
+        /* 00000764: sp  0 +0 */ 00000012
+        /* 00000768: sp  0 +1 */ 0e000148 unnamed member 148
+        /* 0000076c: sp  1 +1 */ 03000000
+        /* 00000770: sp  2 -1 */ 44000000
+        /* 00000774: sp  1 +1 */ 0c00014d unnamed member 14d
+        /* 00000778: sp  2 +0 */ 50000000
+        /* 0000077c: sp  2 -1 */ 51000000
+        /* 00000780: sp  1 -1 */ 64000004
+
+        /* 00000784: sp  0 +0 */ 00000013
+        /* 00000788: sp  0 +1 */ 0f000138 unnamed member 138
+        /* 0000078c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        ---
+
+        /* 00000794: sp  0 +0 */ 00000014
+
+        /* 00000798: sp  0 +0 */ 00000015
+        ---
+        /* 0000079c: sp  0 +0 */ 6300000c 00000016
+        /* 000007a4: sp  0 +1 */ 09000015 temp_15
+        /* 000007a8: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 000007ac: sp  2 +1 */ 09000000 arg_06fd_0846_0
+        /* 000007b0: sp  3 -3 */ 65000000 beebbeeb native bool actorsensor::isEqual(actorsensor arg_06fd_0542_4)
+        /* 000007b8: sp  0 +1 */ 06000015 temp_15
+        /* 000007bc: sp  1 -1 */ 64000004
+
+        /* 000007c0: sp  0 +0 */ 00000017
+        /* 000007c4: sp  0 +1 */ 0f00014c unnamed member 14c
+        /* 000007c8: sp  1 +1 */ 06000010 arg_0000_0847_10
+        /* 000007cc: sp  2 -2 */ 2e000000
+        ---
+
+        /* 000007a0: sp  0 +0 */ 00000016
+        /* 000007a4: sp  0 +1 */ 09000015 temp_15
+        /* 000007a8: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 000007ac: sp  2 +1 */ 09000000 arg_06fd_0846_0
+        /* 000007b0: sp  3 -3 */ 65000000 beebbeeb native bool actorsensor::isEqual(actorsensor arg_06fd_0542_4)
+        /* 000007b8: sp  0 +1 */ 06000015 temp_15
+        /* 000007bc: sp  1 -1 */ 64000004
+
+        /* 000007c0: sp  0 +0 */ 00000017
+        /* 000007c4: sp  0 +1 */ 0f00014c unnamed member 14c
+        /* 000007c8: sp  1 +1 */ 06000010 arg_0000_0847_10
+        /* 000007cc: sp  2 -2 */ 2e000000
+        ---
+
+        /* 000007d0: sp  0 +0 */ 00000018
+        ---
+        /* 000007d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a65_2(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        bool temp_11 = False;
+        bool temp_12 = False;
+        bool temp_13 = False;
+        bool temp_14 = False;
+        bool temp_15 = False;
+        bool temp_16 = False;
+        bool temp_17 = False;
+        bool temp_18 = False;
+        bool temp_19 = False;
+        bool temp_1a = False;
+        uberobjectsectionid local_1c = TODO(0A);
+        bool temp_20 = False;
+        bool temp_21 = False;
+        uberobjectsectionid local_24 = TODO(0A);
+
+        /* 00000aa4: sp  0 +0 */ 00000019
+        /* 00000aa8: sp  0 +1 */ 09000010 temp_10
+        /* 00000aac: sp  1 +1 */ 0f000038 unnamed member 38
+        /* 00000ab0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ab4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000abc: sp  0 +1 */ 06000010 temp_10
+        /* 00000ac0: sp  1 -1 */ 64000004
+
+        /* 00000ac4: sp  0 +0 */ 0000001a
+        /* 00000ac8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ff8_3d()
+        /* 00000ad0: sp  0 +0 */ 63000090 0000001b
+        /* 00000ad8: sp  0 +1 */ 09000011 temp_11
+        /* 00000adc: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000ae0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ae4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000aec: sp  0 +1 */ 06000011 temp_11
+        /* 00000af0: sp  1 -1 */ 64000004
+
+        /* 00000af4: sp  0 +0 */ 0000001c
+        /* 00000af8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ff9_3e()
+        /* 00000b00: sp  0 +0 */ 63000084 0000001d
+        /* 00000b08: sp  0 +1 */ 09000012 temp_12
+        /* 00000b0c: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000b10: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b14: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b1c: sp  0 +1 */ 06000012 temp_12
+        /* 00000b20: sp  1 -1 */ 64000004
+
+        /* 00000b24: sp  0 +0 */ 0000001e
+        /* 00000b28: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ffa_3f()
+        /* 00000b30: sp  0 +0 */ 63000078 0000001f
+        /* 00000b38: sp  0 +1 */ 09000013 temp_13
+        /* 00000b3c: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 00000b40: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b44: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b4c: sp  0 +1 */ 06000013 temp_13
+        /* 00000b50: sp  1 -1 */ 64000004
+
+        /* 00000b54: sp  0 +0 */ 00000020
+        /* 00000b58: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ffb_40()
+        /* 00000b60: sp  0 +0 */ 6300006c 00000021
+        /* 00000b68: sp  0 +1 */ 09000014 temp_14
+        /* 00000b6c: sp  1 +1 */ 0f0000a8 unnamed member a8
+        /* 00000b70: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b74: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b7c: sp  0 +1 */ 06000014 temp_14
+        /* 00000b80: sp  1 -1 */ 64000004
+
+        /* 00000b84: sp  0 +0 */ 00000022
+        /* 00000b88: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_000a_41()
+        /* 00000b90: sp  0 +0 */ 63000060 00000023
+        /* 00000b98: sp  0 +1 */ 09000015 temp_15
+        /* 00000b9c: sp  1 +1 */ 0f0000b8 unnamed member b8
+        /* 00000ba0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ba4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bac: sp  0 +1 */ 06000015 temp_15
+        /* 00000bb0: sp  1 +1 */ 09000016 temp_16
+        /* 00000bb4: sp  2 +1 */ 0f0000c8 unnamed member c8
+        /* 00000bb8: sp  3 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000bbc: sp  4 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bc4: sp  1 +1 */ 06000016 temp_16
+        /* 00000bc8: sp  2 -1 */ 52000000
+        /* 00000bcc: sp  1 -1 */ 6400001a
+
+        /* 00000bd0: sp  0 +0 */ 00000024
+
+        /* 00000bd4: sp  0 +0 */ 00000025
+
+        /* 00000bd8: sp  0 +0 */ 00000026
+
+        /* 00000bdc: sp  0 +0 */ 00000027
+        /* 00000be0: sp  0 +1 */ 03000001
+        /* 00000be4: sp  1 +1 */ 0e000148 unnamed member 148
+        /* 00000be8: sp  2 -1 */ 43000000
+        /* 00000bec: sp  1 -1 */ 64000005
+
+        /* 00000bf0: sp  0 +0 */ 00000028
+        /* 00000bf4: sp  0 +1 */ 0f0000e0 unnamed member e0
+        /* 00000bf8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000c00: sp  0 +0 */ 6300000b 00000029
+
+        /* 00000c08: sp  0 +0 */ 0000002a
+        /* 00000c0c: sp  0 +1 */ 04000000
+        /* 00000c10: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000c14: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_0701_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c1c: sp  0 +0 */ 0000002b
+        /* 00000c20: sp  0 +1 */ 0f0000d8 unnamed member d8
+        /* 00000c24: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000c2c: sp  0 +0 */ 0000002c
+
+        /* 00000c30: sp  0 +0 */ 0000002d
+        ---
+
+        /* 00000ad4: sp  0 +0 */ 0000001b
+        /* 00000ad8: sp  0 +1 */ 09000011 temp_11
+        /* 00000adc: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000ae0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ae4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000aec: sp  0 +1 */ 06000011 temp_11
+        /* 00000af0: sp  1 -1 */ 64000004
+
+        /* 00000af4: sp  0 +0 */ 0000001c
+        /* 00000af8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ff9_3e()
+        /* 00000b00: sp  0 +0 */ 63000084 0000001d
+        /* 00000b08: sp  0 +1 */ 09000012 temp_12
+        /* 00000b0c: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000b10: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b14: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b1c: sp  0 +1 */ 06000012 temp_12
+        /* 00000b20: sp  1 -1 */ 64000004
+
+        /* 00000b24: sp  0 +0 */ 0000001e
+        /* 00000b28: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ffa_3f()
+        /* 00000b30: sp  0 +0 */ 63000078 0000001f
+        /* 00000b38: sp  0 +1 */ 09000013 temp_13
+        /* 00000b3c: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 00000b40: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b44: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b4c: sp  0 +1 */ 06000013 temp_13
+        /* 00000b50: sp  1 -1 */ 64000004
+
+        /* 00000b54: sp  0 +0 */ 00000020
+        /* 00000b58: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ffb_40()
+        /* 00000b60: sp  0 +0 */ 6300006c 00000021
+        /* 00000b68: sp  0 +1 */ 09000014 temp_14
+        /* 00000b6c: sp  1 +1 */ 0f0000a8 unnamed member a8
+        /* 00000b70: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b74: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b7c: sp  0 +1 */ 06000014 temp_14
+        /* 00000b80: sp  1 -1 */ 64000004
+
+        /* 00000b84: sp  0 +0 */ 00000022
+        /* 00000b88: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_000a_41()
+        /* 00000b90: sp  0 +0 */ 63000060 00000023
+        /* 00000b98: sp  0 +1 */ 09000015 temp_15
+        /* 00000b9c: sp  1 +1 */ 0f0000b8 unnamed member b8
+        /* 00000ba0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ba4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bac: sp  0 +1 */ 06000015 temp_15
+        /* 00000bb0: sp  1 +1 */ 09000016 temp_16
+        /* 00000bb4: sp  2 +1 */ 0f0000c8 unnamed member c8
+        /* 00000bb8: sp  3 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000bbc: sp  4 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bc4: sp  1 +1 */ 06000016 temp_16
+        /* 00000bc8: sp  2 -1 */ 52000000
+        /* 00000bcc: sp  1 -1 */ 6400001a
+
+        /* 00000bd0: sp  0 +0 */ 00000024
+
+        /* 00000bd4: sp  0 +0 */ 00000025
+
+        /* 00000bd8: sp  0 +0 */ 00000026
+
+        /* 00000bdc: sp  0 +0 */ 00000027
+        /* 00000be0: sp  0 +1 */ 03000001
+        /* 00000be4: sp  1 +1 */ 0e000148 unnamed member 148
+        /* 00000be8: sp  2 -1 */ 43000000
+        /* 00000bec: sp  1 -1 */ 64000005
+
+        /* 00000bf0: sp  0 +0 */ 00000028
+        /* 00000bf4: sp  0 +1 */ 0f0000e0 unnamed member e0
+        /* 00000bf8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000c00: sp  0 +0 */ 6300000b 00000029
+
+        /* 00000c08: sp  0 +0 */ 0000002a
+        /* 00000c0c: sp  0 +1 */ 04000000
+        /* 00000c10: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000c14: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_0701_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c1c: sp  0 +0 */ 0000002b
+        /* 00000c20: sp  0 +1 */ 0f0000d8 unnamed member d8
+        /* 00000c24: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000c2c: sp  0 +0 */ 0000002c
+
+        /* 00000c30: sp  0 +0 */ 0000002d
+        ---
+
+        /* 00000b04: sp  0 +0 */ 0000001d
+        /* 00000b08: sp  0 +1 */ 09000012 temp_12
+        /* 00000b0c: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000b10: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b14: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b1c: sp  0 +1 */ 06000012 temp_12
+        /* 00000b20: sp  1 -1 */ 64000004
+
+        /* 00000b24: sp  0 +0 */ 0000001e
+        /* 00000b28: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ffa_3f()
+        /* 00000b30: sp  0 +0 */ 63000078 0000001f
+        /* 00000b38: sp  0 +1 */ 09000013 temp_13
+        /* 00000b3c: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 00000b40: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b44: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b4c: sp  0 +1 */ 06000013 temp_13
+        /* 00000b50: sp  1 -1 */ 64000004
+
+        /* 00000b54: sp  0 +0 */ 00000020
+        /* 00000b58: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ffb_40()
+        /* 00000b60: sp  0 +0 */ 6300006c 00000021
+        /* 00000b68: sp  0 +1 */ 09000014 temp_14
+        /* 00000b6c: sp  1 +1 */ 0f0000a8 unnamed member a8
+        /* 00000b70: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b74: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b7c: sp  0 +1 */ 06000014 temp_14
+        /* 00000b80: sp  1 -1 */ 64000004
+
+        /* 00000b84: sp  0 +0 */ 00000022
+        /* 00000b88: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_000a_41()
+        /* 00000b90: sp  0 +0 */ 63000060 00000023
+        /* 00000b98: sp  0 +1 */ 09000015 temp_15
+        /* 00000b9c: sp  1 +1 */ 0f0000b8 unnamed member b8
+        /* 00000ba0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ba4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bac: sp  0 +1 */ 06000015 temp_15
+        /* 00000bb0: sp  1 +1 */ 09000016 temp_16
+        /* 00000bb4: sp  2 +1 */ 0f0000c8 unnamed member c8
+        /* 00000bb8: sp  3 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000bbc: sp  4 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bc4: sp  1 +1 */ 06000016 temp_16
+        /* 00000bc8: sp  2 -1 */ 52000000
+        /* 00000bcc: sp  1 -1 */ 6400001a
+
+        /* 00000bd0: sp  0 +0 */ 00000024
+
+        /* 00000bd4: sp  0 +0 */ 00000025
+
+        /* 00000bd8: sp  0 +0 */ 00000026
+
+        /* 00000bdc: sp  0 +0 */ 00000027
+        /* 00000be0: sp  0 +1 */ 03000001
+        /* 00000be4: sp  1 +1 */ 0e000148 unnamed member 148
+        /* 00000be8: sp  2 -1 */ 43000000
+        /* 00000bec: sp  1 -1 */ 64000005
+
+        /* 00000bf0: sp  0 +0 */ 00000028
+        /* 00000bf4: sp  0 +1 */ 0f0000e0 unnamed member e0
+        /* 00000bf8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000c00: sp  0 +0 */ 6300000b 00000029
+
+        /* 00000c08: sp  0 +0 */ 0000002a
+        /* 00000c0c: sp  0 +1 */ 04000000
+        /* 00000c10: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000c14: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_0701_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c1c: sp  0 +0 */ 0000002b
+        /* 00000c20: sp  0 +1 */ 0f0000d8 unnamed member d8
+        /* 00000c24: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000c2c: sp  0 +0 */ 0000002c
+
+        /* 00000c30: sp  0 +0 */ 0000002d
+        ---
+
+        /* 00000b34: sp  0 +0 */ 0000001f
+        /* 00000b38: sp  0 +1 */ 09000013 temp_13
+        /* 00000b3c: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 00000b40: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b44: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b4c: sp  0 +1 */ 06000013 temp_13
+        /* 00000b50: sp  1 -1 */ 64000004
+
+        /* 00000b54: sp  0 +0 */ 00000020
+        /* 00000b58: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_0ffb_40()
+        /* 00000b60: sp  0 +0 */ 6300006c 00000021
+        /* 00000b68: sp  0 +1 */ 09000014 temp_14
+        /* 00000b6c: sp  1 +1 */ 0f0000a8 unnamed member a8
+        /* 00000b70: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b74: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b7c: sp  0 +1 */ 06000014 temp_14
+        /* 00000b80: sp  1 -1 */ 64000004
+
+        /* 00000b84: sp  0 +0 */ 00000022
+        /* 00000b88: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_000a_41()
+        /* 00000b90: sp  0 +0 */ 63000060 00000023
+        /* 00000b98: sp  0 +1 */ 09000015 temp_15
+        /* 00000b9c: sp  1 +1 */ 0f0000b8 unnamed member b8
+        /* 00000ba0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ba4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bac: sp  0 +1 */ 06000015 temp_15
+        /* 00000bb0: sp  1 +1 */ 09000016 temp_16
+        /* 00000bb4: sp  2 +1 */ 0f0000c8 unnamed member c8
+        /* 00000bb8: sp  3 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000bbc: sp  4 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bc4: sp  1 +1 */ 06000016 temp_16
+        /* 00000bc8: sp  2 -1 */ 52000000
+        /* 00000bcc: sp  1 -1 */ 6400001a
+
+        /* 00000bd0: sp  0 +0 */ 00000024
+
+        /* 00000bd4: sp  0 +0 */ 00000025
+
+        /* 00000bd8: sp  0 +0 */ 00000026
+
+        /* 00000bdc: sp  0 +0 */ 00000027
+        /* 00000be0: sp  0 +1 */ 03000001
+        /* 00000be4: sp  1 +1 */ 0e000148 unnamed member 148
+        /* 00000be8: sp  2 -1 */ 43000000
+        /* 00000bec: sp  1 -1 */ 64000005
+
+        /* 00000bf0: sp  0 +0 */ 00000028
+        /* 00000bf4: sp  0 +1 */ 0f0000e0 unnamed member e0
+        /* 00000bf8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000c00: sp  0 +0 */ 6300000b 00000029
+
+        /* 00000c08: sp  0 +0 */ 0000002a
+        /* 00000c0c: sp  0 +1 */ 04000000
+        /* 00000c10: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000c14: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_0701_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c1c: sp  0 +0 */ 0000002b
+        /* 00000c20: sp  0 +1 */ 0f0000d8 unnamed member d8
+        /* 00000c24: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000c2c: sp  0 +0 */ 0000002c
+
+        /* 00000c30: sp  0 +0 */ 0000002d
+        ---
+
+        /* 00000b64: sp  0 +0 */ 00000021
+        /* 00000b68: sp  0 +1 */ 09000014 temp_14
+        /* 00000b6c: sp  1 +1 */ 0f0000a8 unnamed member a8
+        /* 00000b70: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000b74: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000b7c: sp  0 +1 */ 06000014 temp_14
+        /* 00000b80: sp  1 -1 */ 64000004
+
+        /* 00000b84: sp  0 +0 */ 00000022
+        /* 00000b88: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %base_elevator%::method_000a_41()
+        /* 00000b90: sp  0 +0 */ 63000060 00000023
+        /* 00000b98: sp  0 +1 */ 09000015 temp_15
+        /* 00000b9c: sp  1 +1 */ 0f0000b8 unnamed member b8
+        /* 00000ba0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ba4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bac: sp  0 +1 */ 06000015 temp_15
+        /* 00000bb0: sp  1 +1 */ 09000016 temp_16
+        /* 00000bb4: sp  2 +1 */ 0f0000c8 unnamed member c8
+        /* 00000bb8: sp  3 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000bbc: sp  4 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bc4: sp  1 +1 */ 06000016 temp_16
+        /* 00000bc8: sp  2 -1 */ 52000000
+        /* 00000bcc: sp  1 -1 */ 6400001a
+
+        /* 00000bd0: sp  0 +0 */ 00000024
+
+        /* 00000bd4: sp  0 +0 */ 00000025
+
+        /* 00000bd8: sp  0 +0 */ 00000026
+
+        /* 00000bdc: sp  0 +0 */ 00000027
+        /* 00000be0: sp  0 +1 */ 03000001
+        /* 00000be4: sp  1 +1 */ 0e000148 unnamed member 148
+        /* 00000be8: sp  2 -1 */ 43000000
+        /* 00000bec: sp  1 -1 */ 64000005
+
+        /* 00000bf0: sp  0 +0 */ 00000028
+        /* 00000bf4: sp  0 +1 */ 0f0000e0 unnamed member e0
+        /* 00000bf8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000c00: sp  0 +0 */ 6300000b 00000029
+
+        /* 00000c08: sp  0 +0 */ 0000002a
+        /* 00000c0c: sp  0 +1 */ 04000000
+        /* 00000c10: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000c14: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_0701_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c1c: sp  0 +0 */ 0000002b
+        /* 00000c20: sp  0 +1 */ 0f0000d8 unnamed member d8
+        /* 00000c24: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000c2c: sp  0 +0 */ 0000002c
+
+        /* 00000c30: sp  0 +0 */ 0000002d
+        ---
+
+        /* 00000b94: sp  0 +0 */ 00000023
+        /* 00000b98: sp  0 +1 */ 09000015 temp_15
+        /* 00000b9c: sp  1 +1 */ 0f0000b8 unnamed member b8
+        /* 00000ba0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ba4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bac: sp  0 +1 */ 06000015 temp_15
+        /* 00000bb0: sp  1 +1 */ 09000016 temp_16
+        /* 00000bb4: sp  2 +1 */ 0f0000c8 unnamed member c8
+        /* 00000bb8: sp  3 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000bbc: sp  4 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000bc4: sp  1 +1 */ 06000016 temp_16
+        /* 00000bc8: sp  2 -1 */ 52000000
+        /* 00000bcc: sp  1 -1 */ 6400001a
+
+        /* 00000bd0: sp  0 +0 */ 00000024
+
+        /* 00000bd4: sp  0 +0 */ 00000025
+
+        /* 00000bd8: sp  0 +0 */ 00000026
+
+        /* 00000bdc: sp  0 +0 */ 00000027
+        /* 00000be0: sp  0 +1 */ 03000001
+        /* 00000be4: sp  1 +1 */ 0e000148 unnamed member 148
+        /* 00000be8: sp  2 -1 */ 43000000
+        /* 00000bec: sp  1 -1 */ 64000005
+
+        /* 00000bf0: sp  0 +0 */ 00000028
+        /* 00000bf4: sp  0 +1 */ 0f0000e0 unnamed member e0
+        /* 00000bf8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000c00: sp  0 +0 */ 6300000b 00000029
+
+        /* 00000c08: sp  0 +0 */ 0000002a
+        /* 00000c0c: sp  0 +1 */ 04000000
+        /* 00000c10: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000c14: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_0701_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c1c: sp  0 +0 */ 0000002b
+        /* 00000c20: sp  0 +1 */ 0f0000d8 unnamed member d8
+        /* 00000c24: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000c2c: sp  0 +0 */ 0000002c
+
+        /* 00000c30: sp  0 +0 */ 0000002d
+        ---
+
+        /* 00000c04: sp  0 +0 */ 00000029
+
+        /* 00000c08: sp  0 +0 */ 0000002a
+        /* 00000c0c: sp  0 +1 */ 04000000
+        /* 00000c10: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000c14: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_0701_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c1c: sp  0 +0 */ 0000002b
+        /* 00000c20: sp  0 +1 */ 0f0000d8 unnamed member d8
+        /* 00000c24: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000c2c: sp  0 +0 */ 0000002c
+
+        /* 00000c30: sp  0 +0 */ 0000002d
+        ---
+        /* 00000c34: sp  0 +0 */ 63000037 0000002e
+        /* 00000c3c: sp  0 +1 */ 09000017 temp_17
+        /* 00000c40: sp  1 +1 */ 0f0000e8 unnamed member e8
+        /* 00000c44: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000c48: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000c50: sp  0 +1 */ 06000017 temp_17
+        /* 00000c54: sp  1 -1 */ 64000019
+
+        /* 00000c58: sp  0 +0 */ 0000002f
+
+        /* 00000c5c: sp  0 +0 */ 00000030
+        /* 00000c60: sp  0 +1 */ 04000001
+        /* 00000c64: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000c68: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_0701_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c70: sp  0 +0 */ 00000031
+        /* 00000c74: sp  0 +1 */ 0c00014d unnamed member 14d
+        /* 00000c78: sp  1 -1 */ 64000005
+
+        /* 00000c7c: sp  0 +0 */ 00000032
+        /* 00000c80: sp  0 +1 */ 0f00014d unnamed member 14d
+        /* 00000c84: sp  1 +1 */ 04000000
+        /* 00000c88: sp  2 -2 */ 2e000000
+        /* 00000c8c: sp  0 +0 */ 63000009 00000033
+        /* 00000c94: sp  0 +1 */ 0e000148 unnamed member 148
+        /* 00000c98: sp  1 +1 */ 03000000
+        /* 00000c9c: sp  2 -1 */ 44000000
+        /* 00000ca0: sp  1 -1 */ 64000004
+
+        /* 00000ca4: sp  0 +0 */ 00000034
+        /* 00000ca8: sp  0 +1 */ 0f000138 unnamed member 138
+        /* 00000cac: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        ---
+
+        /* 00000c38: sp  0 +0 */ 0000002e
+        /* 00000c3c: sp  0 +1 */ 09000017 temp_17
+        /* 00000c40: sp  1 +1 */ 0f0000e8 unnamed member e8
+        /* 00000c44: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000c48: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000c50: sp  0 +1 */ 06000017 temp_17
+        /* 00000c54: sp  1 -1 */ 64000019
+
+        /* 00000c58: sp  0 +0 */ 0000002f
+
+        /* 00000c5c: sp  0 +0 */ 00000030
+        /* 00000c60: sp  0 +1 */ 04000001
+        /* 00000c64: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000c68: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_0701_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c70: sp  0 +0 */ 00000031
+        /* 00000c74: sp  0 +1 */ 0c00014d unnamed member 14d
+        /* 00000c78: sp  1 -1 */ 64000005
+
+        /* 00000c7c: sp  0 +0 */ 00000032
+        /* 00000c80: sp  0 +1 */ 0f00014d unnamed member 14d
+        /* 00000c84: sp  1 +1 */ 04000000
+        /* 00000c88: sp  2 -2 */ 2e000000
+        /* 00000c8c: sp  0 +0 */ 63000009 00000033
+        /* 00000c94: sp  0 +1 */ 0e000148 unnamed member 148
+        /* 00000c98: sp  1 +1 */ 03000000
+        /* 00000c9c: sp  2 -1 */ 44000000
+        /* 00000ca0: sp  1 -1 */ 64000004
+
+        /* 00000ca4: sp  0 +0 */ 00000034
+        /* 00000ca8: sp  0 +1 */ 0f000138 unnamed member 138
+        /* 00000cac: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        ---
+
+        /* 00000c90: sp  0 +0 */ 00000033
+        /* 00000c94: sp  0 +1 */ 0e000148 unnamed member 148
+        /* 00000c98: sp  1 +1 */ 03000000
+        /* 00000c9c: sp  2 -1 */ 44000000
+        /* 00000ca0: sp  1 -1 */ 64000004
+
+        /* 00000ca4: sp  0 +0 */ 00000034
+        /* 00000ca8: sp  0 +1 */ 0f000138 unnamed member 138
+        /* 00000cac: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        ---
+
+        /* 00000cb4: sp  0 +0 */ 00000035
+        ---
+        /* 00000cb8: sp  0 +0 */ 63000016 00000036
+        /* 00000cc0: sp  0 +1 */ 09000018 temp_18
+        /* 00000cc4: sp  1 +1 */ 0f000158 unnamed member 158
+        /* 00000cc8: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ccc: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000cd4: sp  0 +1 */ 06000018 temp_18
+        /* 00000cd8: sp  1 -1 */ 6400000e
+
+        /* 00000cdc: sp  0 +0 */ 00000037
+
+        /* 00000ce0: sp  0 +0 */ 00000038
+        /* 00000ce4: sp  0 +1 */ 0c00014c unnamed member 14c
+        /* 00000ce8: sp  1 -1 */ 64000005
+
+        /* 00000cec: sp  0 +0 */ 00000039
+        /* 00000cf0: sp  0 +1 */ 0f000168 unnamed member 168
+        /* 00000cf4: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000cfc: sp  0 +0 */ 63000004 0000003a
+        /* 00000d04: sp  0 +1 */ 0f000170 unnamed member 170
+        /* 00000d08: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000d10: sp  0 +0 */ 0000003b
+        ---
+
+        /* 00000cbc: sp  0 +0 */ 00000036
+        /* 00000cc0: sp  0 +1 */ 09000018 temp_18
+        /* 00000cc4: sp  1 +1 */ 0f000158 unnamed member 158
+        /* 00000cc8: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000ccc: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000cd4: sp  0 +1 */ 06000018 temp_18
+        /* 00000cd8: sp  1 -1 */ 6400000e
+
+        /* 00000cdc: sp  0 +0 */ 00000037
+
+        /* 00000ce0: sp  0 +0 */ 00000038
+        /* 00000ce4: sp  0 +1 */ 0c00014c unnamed member 14c
+        /* 00000ce8: sp  1 -1 */ 64000005
+
+        /* 00000cec: sp  0 +0 */ 00000039
+        /* 00000cf0: sp  0 +1 */ 0f000168 unnamed member 168
+        /* 00000cf4: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000cfc: sp  0 +0 */ 63000004 0000003a
+        /* 00000d04: sp  0 +1 */ 0f000170 unnamed member 170
+        /* 00000d08: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000d10: sp  0 +0 */ 0000003b
+        ---
+
+        /* 00000d00: sp  0 +0 */ 0000003a
+        /* 00000d04: sp  0 +1 */ 0f000170 unnamed member 170
+        /* 00000d08: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000d10: sp  0 +0 */ 0000003b
+        ---
+
+        /* 00000d14: sp  0 +0 */ 0000003c
+        ---
+        /* 00000d18: sp  0 +1 */ 09000019 temp_19
+        /* 00000d1c: sp  1 +1 */ 0f0000f8 unnamed member f8
+        /* 00000d20: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000d24: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000d2c: sp  0 +1 */ 06000019 temp_19
+        /* 00000d30: sp  1 +1 */ 0900001a temp_1a
+        /* 00000d34: sp  2 +1 */ 0f000108 unnamed member 108
+        /* 00000d38: sp  3 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000d3c: sp  4 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000d44: sp  1 +1 */ 0600001a temp_1a
+        /* 00000d48: sp  2 -1 */ 52000000
+        /* 00000d4c: sp  1 -1 */ 6400000e
+
+        /* 00000d50: sp  0 +0 */ 0000003d
+
+        /* 00000d54: sp  0 +0 */ 0000003e
+        /* 00000d58: sp  0 +1 */ 0e000150 unnamed member 150
+        /* 00000d5c: sp  1 +1 */ 03000001
+        /* 00000d60: sp  2 +0 */ 5c000000
+        /* 00000d64: sp  2 -1 */ 4e000000
+        /* 00000d68: sp  1 +0 */ 50000000
+        /* 00000d6c: sp  1 -1 */ 64000005
+
+        /* 00000d70: sp  0 +0 */ 0000003f
+        /* 00000d74: sp  0 +1 */ 0900001c local_1c
+        /* 00000d78: sp  1 +1 */ 0e000150 unnamed member 150
+        /* 00000d7c: sp  2 -2 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a70_ffff(uberobjectsectionid arg_07b5_0a6b_0, float arg_0000_09ee_4)
+        ---
+
+        /* 00000d84: sp  0 +0 */ 00000040
+        ---
+
+        /* 00000d88: sp  0 +0 */ 00000041
+        /* 00000d8c: sp  0 +1 */ 09000020 temp_20
+        /* 00000d90: sp  1 +1 */ 0f000118 unnamed member 118
+        /* 00000d94: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000d98: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000da0: sp  0 +1 */ 06000020 temp_20
+        /* 00000da4: sp  1 +1 */ 09000021 temp_21
+        /* 00000da8: sp  2 +1 */ 0f000128 unnamed member 128
+        /* 00000dac: sp  3 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000db0: sp  4 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000db8: sp  1 +1 */ 06000021 temp_21
+        /* 00000dbc: sp  2 -1 */ 52000000
+        /* 00000dc0: sp  1 -1 */ 6400000e
+
+        /* 00000dc4: sp  0 +0 */ 00000042
+
+        /* 00000dc8: sp  0 +0 */ 00000043
+        /* 00000dcc: sp  0 +1 */ 0e000150 unnamed member 150
+        /* 00000dd0: sp  1 +1 */ 03000001
+        /* 00000dd4: sp  2 +0 */ 5c000000
+        /* 00000dd8: sp  2 -1 */ 4e000000
+        /* 00000ddc: sp  1 +0 */ 50000000
+        /* 00000de0: sp  1 -1 */ 64000005
+
+        /* 00000de4: sp  0 +0 */ 00000044
+        /* 00000de8: sp  0 +1 */ 09000024 local_24
+        /* 00000dec: sp  1 +1 */ 0e000154 unnamed member 154
+        /* 00000df0: sp  2 -2 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a70_ffff(uberobjectsectionid arg_07b5_0a6b_0, float arg_0000_09ee_4)
+        ---
+
+        /* 00000df8: sp  0 +0 */ 00000045
+        ---
+
+        /* 00000dfc: sp  0 +0 */ 00000046
+        /* 00000e00: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0ff6_3() {
+
+        /* 00000e14: sp  0 +0 */ 00000047
+        /* 00000e18: sp  0 +1 */ 0f000028 unnamed member 28
+        /* 00000e1c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000e24: sp  0 +0 */ 00000048
+        /* 00000e28: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0ff7_4() {
+
+        /* 00000e34: sp  0 +0 */ 00000049
+        /* 00000e38: sp  0 +1 */ 0f000030 unnamed member 30
+        /* 00000e3c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000e44: sp  0 +0 */ 0000004a
+        /* 00000e48: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0ff8_5() {
+        /* 00000e54: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0ff9_6() {
+        /* 00000e64: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0ffa_7() {
+        /* 00000e74: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0ffb_8() {
+        /* 00000e84: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0ffc_9() {
+        bool temp_4 = False;
+
+        /* 00000eb4: sp  0 +0 */ 0000004b
+        /* 00000eb8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000ebc: sp  1 +1 */ 09000004 temp_4
+        /* 00000ec0: sp  2 +1 */ 0f000078 unnamed member 78
+        /* 00000ec4: sp  3 -2 */ 66000000 beebbeeb this-&gt;bool uberobjectbase::method_0a5c_ffff(uberobjectquery arg_0a5d_0a5e_4)
+        /* 00000ecc: sp  1 +1 */ 06000004 temp_4
+        /* 00000ed0: sp  2 -2 */ 2e000000
+        /* 00000ed4: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0ffd_a() {
+        bool temp_4 = False;
+
+        /* 000003b4: sp  0 +0 */ 0000004d
+        /* 000003b8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000003bc: sp  1 +1 */ 09000004 temp_4
+        /* 000003c0: sp  2 +1 */ 0f000084 unnamed member 84
+        /* 000003c4: sp  3 -2 */ 66000000 beebbeeb this-&gt;bool uberobjectbase::method_0a5c_ffff(uberobjectquery arg_0a5d_0a5e_4)
+        /* 000003cc: sp  1 +1 */ 06000004 temp_4
+        /* 000003d0: sp  2 -2 */ 2e000000
+        /* 000003d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0ffe_b() {
+        bool temp_4 = False;
+
+        /* 00000404: sp  0 +0 */ 0000004f
+        /* 00000408: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000040c: sp  1 +1 */ 09000004 temp_4
+        /* 00000410: sp  2 +1 */ 0f000090 unnamed member 90
+        /* 00000414: sp  3 -2 */ 66000000 beebbeeb this-&gt;bool uberobjectbase::method_0a5c_ffff(uberobjectquery arg_0a5d_0a5e_4)
+        /* 0000041c: sp  1 +1 */ 06000004 temp_4
+        /* 00000420: sp  2 -2 */ 2e000000
+        /* 00000424: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0fff_c() {
+        bool temp_4 = False;
+
+        /* 00000454: sp  0 +0 */ 00000051
+        /* 00000458: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000045c: sp  1 +1 */ 09000004 temp_4
+        /* 00000460: sp  2 +1 */ 0f00009c unnamed member 9c
+        /* 00000464: sp  3 -2 */ 66000000 beebbeeb this-&gt;bool uberobjectbase::method_0a5c_ffff(uberobjectquery arg_0a5d_0a5e_4)
+        /* 0000046c: sp  1 +1 */ 06000004 temp_4
+        /* 00000470: sp  2 -2 */ 2e000000
+        /* 00000474: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_000a_d() {
+        /* 00000484: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1000_e() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 000004c4: sp  0 +0 */ 00000053
+        /* 000004c8: sp  0 +1 */ 0f00014d unnamed member 14d
+        /* 000004cc: sp  1 +1 */ 04000001
+        /* 000004d0: sp  2 -2 */ 2e000000
+
+        /* 000004d4: sp  0 +0 */ 00000054
+        /* 000004d8: sp  0 +1 */ 09000000 local_0
+        /* 000004dc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000004e4: sp  0 +0 */ 00000055
+        /* 000004e8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1001_f() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000524: sp  0 +0 */ 00000056
+        /* 00000528: sp  0 +1 */ 09000000 local_0
+        /* 0000052c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000534: sp  0 +0 */ 00000057
+        /* 00000538: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1002_10() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000574: sp  0 +0 */ 00000058
+        /* 00000578: sp  0 +1 */ 09000000 local_0
+        /* 0000057c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000584: sp  0 +0 */ 00000059
+        /* 00000588: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02ca_11(bool arg_0000_0680_0) {
+        uberobjectcommand local_4 = TODO(0A);
+        uberobjectcommand local_c = TODO(0A);
+
+        /* 000005e4: sp  0 +0 */ 0000005a
+        /* 000005e8: sp  0 +1 */ 06000000 arg_0000_0680_0
+        /* 000005ec: sp  1 -1 */ 64000005
+
+        /* 000005f0: sp  0 +0 */ 0000005b
+        /* 000005f4: sp  0 +1 */ 09000004 local_4
+        /* 000005f8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000600: sp  0 +0 */ 63000004 0000005c
+        /* 00000608: sp  0 +1 */ 0900000c local_c
+        /* 0000060c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000614: sp  0 +0 */ 0000005d
+        ---
+
+        /* 00000604: sp  0 +0 */ 0000005c
+        /* 00000608: sp  0 +1 */ 0900000c local_c
+        /* 0000060c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000614: sp  0 +0 */ 0000005d
+        ---
+        /* 00000618: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1003_12() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000654: sp  0 +0 */ 0000005e
+        /* 00000658: sp  0 +1 */ 09000000 local_0
+        /* 0000065c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000664: sp  0 +0 */ 0000005f
+        /* 00000668: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1004_13() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 000006a4: sp  0 +0 */ 00000060
+        /* 000006a8: sp  0 +1 */ 09000000 local_0
+        /* 000006ac: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000006b4: sp  0 +0 */ 00000061
+        /* 000006b8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1005_14() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000814: sp  0 +0 */ 00000062
+        /* 00000818: sp  0 +1 */ 09000000 local_0
+        /* 0000081c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000824: sp  0 +0 */ 00000063
+        /* 00000828: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1006_15() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000864: sp  0 +0 */ 00000064
+        /* 00000868: sp  0 +1 */ 09000000 local_0
+        /* 0000086c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000874: sp  0 +0 */ 00000065
+        /* 00000878: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1007_16() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 000008b4: sp  0 +0 */ 00000066
+        /* 000008b8: sp  0 +1 */ 09000000 local_0
+        /* 000008bc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000008c4: sp  0 +0 */ 00000067
+        /* 000008c8: sp  0 +1 */ 0f00014d unnamed member 14d
+        /* 000008cc: sp  1 +1 */ 04000000
+        /* 000008d0: sp  2 -2 */ 2e000000
+
+        /* 000008d4: sp  0 +0 */ 00000068
+        /* 000008d8: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0a75_17() {
+        bool temp_4 = False;
+        uberobjectquery local_8 = TODO(0A);
+
+        /* 00000924: sp  0 +0 */ 00000069
+        /* 00000928: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000092c: sp  1 +1 */ 09000004 temp_4
+        /* 00000930: sp  2 +1 */ 09000008 local_8
+        /* 00000934: sp  3 -2 */ 66000000 beebbeeb this-&gt;bool uberobjectbase::method_0a5c_ffff(uberobjectquery arg_0a5d_0a5e_4)
+        /* 0000093c: sp  1 +1 */ 06000004 temp_4
+        /* 00000940: sp  2 -2 */ 2e000000
+        /* 00000944: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00005b36.html">%elevator_fema_vista%</a><br/>
+derived class <a href="type000062ea.html">%elevator_fema_bossroom%</a><br/>
+derived class <a href="type0000759a.html">%det_sam_assembly_ele%</a><br/>
+derived class <a href="type0000759b.html">%det_sam_restricted_ele%</a><br/>
+derived class <a href="type00007d24.html">%elevator_det_sarifoffice%</a><br/>
+derived class <a href="type00009e80.html">%elevator_pan_default%</a><br/>
+derived class <a href="type0000aae1.html">%elevator_pan_hyronproject%</a><br/>
+derived class <a href="type0000c0bb.html">%pic_funicular_a%</a><br/>
+derived class <a href="type0000c67f.html">%elevator_picus_lobby_b%</a><br/>
+derived class <a href="type00011ded.html">%elevator_ranch_lab_a%</a><br/>
+derived class <a href="type000126a5.html">%elevator_const_a%</a><br/>
+derived class <a href="type0001355c.html">%elevator_lower_jayatower_a%</a><br/>
+derived class <a href="type00013de4.html">%elevator_tym_floofarea%</a><br/>
+derived class <a href="type00013f18.html">%elevator_tym_lower%</a><br/>
+derived class <a href="type00013f39.html">%elevator_tym_penthouse%</a><br/>
+derived class <a href="type000146da.html">%elevator_tym_hangar%</a><br/>
+derived class <a href="type0001499a.html">%ao_tym_crane_robot_a%</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+unit object #10 null<br/>
+</body>
+</html>

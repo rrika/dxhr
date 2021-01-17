@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00011d9d</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown11D9D</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega__masterunit.drm n$[0x2f]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown11D9D : <a href="type00000571.html">%damagevolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    void method_00e3_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown11D9D : %damagevolume% {
+    // sizeof = 0x3e
+    stickybool field_4;
+    stickybool field_20;
+    async void method_00e3_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 04000001
+        /* 0000008c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void triggervolumebase::method_0a3f_ffff(bool arg_0000_04d4_0)
+
+        /* 00000094: sp  0 +0 */ 00000001
+        /* 00000098: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00011df2.html">Unknown11DF2</a><br/>
+parent class <a href="type00000571.html">%damagevolume%</a><br/>
+</body>
+</html>

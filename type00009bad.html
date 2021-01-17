@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009bad</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9BAD</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0x58]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9BAD : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00009cdb.html">Unknown9CDB</a>&gt; decl_0007_27d0_40 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00009cd9.html">Unknown9CD9</a>&gt; decl_0007_27d2_44 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00009cd5.html">Unknown9CD5</a>&gt; decl_0007_27d4_48 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_27c8_4c = persistent(dtp:9E24) {type=bool};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9BAD : %triggervolume% {
+    // sizeof = 0x60
+    stickybool field_4;
+    stickybool field_20;
+    scenarioref&lt;Unknown9CDB&gt; decl_0007_27d0_40 = TODO(0A);
+    scenarioref&lt;Unknown9CD9&gt; decl_0007_27d2_44 = TODO(0A);
+    scenarioref&lt;Unknown9CD5&gt; decl_0007_27d4_48 = TODO(0A);
+    smartscript decl_0089_27c8_4c = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown9CDB local_8 = TODO(0B);
+        Unknown9CD9 local_c = TODO(0B);
+        Unknown9CD5 local_10 = TODO(0B);
+        Unknown9CD5 local_14 = TODO(0B);
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 09000008 local_8
+        /* 0000010c: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000110: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000118: sp  0 +1 */ 0a000008 local_8
+        /* 0000011c: sp  1 +0 */ 7e000000 00009cdb
+        /* 00000124: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000012c: sp  0 +0 */ 00000001
+        /* 00000130: sp  0 +1 */ 0900000c local_c
+        /* 00000134: sp  1 +1 */ 0f000044 unnamed member 44
+        /* 00000138: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000140: sp  0 +1 */ 0a00000c local_c
+        /* 00000144: sp  1 +0 */ 7e000000 00009cd9
+        /* 0000014c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000154: sp  0 +0 */ 00000002
+        /* 00000158: sp  0 +1 */ 09000010 local_10
+        /* 0000015c: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000160: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000168: sp  0 +1 */ 0a000010 local_10
+        /* 0000016c: sp  1 +0 */ 7e000000 00009cd5
+        /* 00000174: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c4_ffff()
+
+        /* 0000017c: sp  0 +0 */ 00000003
+        /* 00000180: sp  0 +1 */ 09000014 local_14
+        /* 00000184: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000188: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000190: sp  0 +1 */ 0a000014 local_14
+        /* 00000194: sp  1 +0 */ 7e000000 00009cd5
+        /* 0000019c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000001a4: sp  0 +0 */ 00000004
+        /* 000001a8: sp  0 +1 */ 04000001
+        /* 000001ac: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 000001b0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000001b8: sp  0 +0 */ 00000005
+        /* 000001bc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

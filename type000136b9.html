@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000136b9</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown136B9</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_lowerworker.drm n$[0x36]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown136B9 : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0001065d.html">Unknown1065D</a>&gt; decl_0007_48ee_4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0001065c.html">Unknown1065C</a>&gt; decl_0007_48ec_8 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_48e4_c = TODO(0A);
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown136B9 : %debugbutton% {
+    // sizeof = 0x14
+    scenarioref&lt;Unknown1065D&gt; decl_0007_48ee_4 = TODO(0A);
+    scenarioref&lt;Unknown1065C&gt; decl_0007_48ec_8 = TODO(0A);
+    objective decl_0005_48e4_c = TODO(0A);
+    void method_000a_0() {
+        Unknown1065D local_0 = TODO(0B);
+        Unknown1065C local_4 = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 04000000
+        /* 000000cc: sp  1 +1 */ 09000000 local_0
+        /* 000000d0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000000d4: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000000dc: sp  1 +1 */ 0a000000 local_0
+        /* 000000e0: sp  2 +0 */ 7e000000 0001065d
+        /* 000000e8: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000000f0: sp  0 +0 */ 00000001
+        /* 000000f4: sp  0 +1 */ 09000004 local_4
+        /* 000000f8: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 000000fc: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000104: sp  0 +1 */ 0a000004 local_4
+        /* 00000108: sp  1 +0 */ 7e000000 0001065c
+        /* 00000110: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000118: sp  0 +0 */ 00000002
+        /* 0000011c: sp  0 +1 */ 0f00000c unnamed member c
+        /* 00000120: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+
+        /* 00000128: sp  0 +0 */ 00000003
+        /* 0000012c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

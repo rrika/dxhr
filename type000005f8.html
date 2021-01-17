@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005f8</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05F8</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x735]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05F8 : <a href="type0000051d.html">triggervolumebase</a> {
+    <a href="type00000517.html">stickybool</a> decl_0849_0847_4 = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0eb4_20 = TODO(0A);
+    bool decl_0000_0eb5_3c = False;
+    bool decl_0000_0eb6_3d = False;
+    void OnEntry(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void OnLeave(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_0021_2(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    // referenced at <a href="type000005f8.html">async void Unknown05F8::OnEntry(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    void method_0b47_3(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    // referenced at <a href="type000005f8.html">async void Unknown05F8::OnLeave(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    void method_01b9_4(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    // referenced at <a href="type000005f8.html">async void Unknown05F8::OnEntry(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    void method_0eb7_5(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    // referenced at <a href="type000005f8.html">async void Unknown05F8::OnLeave(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    bool method_0eb8_6();
+    bool method_0eb9_7();
+    bool method_0eba_8();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05F8 : triggervolumebase {
+    // sizeof = 0x3e
+    stickybool decl_0849_0847_4 = TODO(0A);
+    stickybool decl_0849_0eb4_20 = TODO(0A);
+    bool decl_0000_0eb5_3c = False;
+    bool decl_0000_0eb6_3d = False;
+    async void OnEntry(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        bool temp_8 = False;
+
+        /* 00000194: sp  0 +0 */ 00000000
+        /* 00000198: sp  0 +1 */ 09000008 temp_8
+        /* 0000019c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001a0: sp  2 -2 */ 65000000 beebbeeb native bool stickybool::value()
+        /* 000001a8: sp  0 +1 */ 06000008 temp_8
+        /* 000001ac: sp  1 +0 */ 50000000
+        /* 000001b0: sp  1 -1 */ 6400001b
+
+        /* 000001b4: sp  0 +0 */ 00000001
+
+        /* 000001b8: sp  0 +0 */ 00000002
+        /* 000001bc: sp  0 +1 */ 04000001
+        /* 000001c0: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001c4: sp  2 -2 */ 65000000 beebbeeb native void stickybool::setStickyBool(bool arg_0000_value_0)
+
+        /* 000001cc: sp  0 +0 */ 00000003
+        /* 000001d0: sp  0 +1 */ 0a000000 arg_0022_01ba_0
+        /* 000001d4: sp  1 +1 */ 08000004 arg_0024_0025_4
+        /* 000001d8: sp  2 -2 */ 68000000 beebbeeb this-&gt;virtual async void Unknown05F8::method_01b9_40(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)
+
+        /* 000001e0: sp  0 +0 */ 00000004
+        /* 000001e4: sp  0 +1 */ 0c00003d unnamed member 3d
+        /* 000001e8: sp  1 -1 */ 6400000c
+
+        /* 000001ec: sp  0 +0 */ 00000005
+
+        /* 000001f0: sp  0 +0 */ 00000006
+        /* 000001f4: sp  0 +1 */ 04000000
+        /* 000001f8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void instance::method_0572_ffff(bool arg_0000_0548_0)
+
+        /* 00000200: sp  0 +0 */ 00000007
+        /* 00000204: sp  0 +1 */ 05000000 beebbeeb &#x27; OnFirstEntry(player, type);&#x27;
+        /* 0000020c: sp  1 +1 */ 04000001
+        /* 00000210: sp  2 -2 */ 66000000 beebbeeb this-&gt;void corebase::debugPrint(string arg_0000_value_0, bool arg_0000_0548_4)
+
+        /* 00000218: sp  0 +0 */ 00000008
+        ---
+
+        /* 0000021c: sp  0 +0 */ 00000009
+        ---
+
+        /* 00000220: sp  0 +0 */ 0000000a
+        /* 00000224: sp  0 +1 */ 0c00003c unnamed member 3c
+        /* 00000228: sp  1 +0 */ 50000000
+        /* 0000022c: sp  1 -1 */ 6400000b
+
+        /* 00000230: sp  0 +0 */ 0000000b
+
+        /* 00000234: sp  0 +0 */ 0000000c
+        /* 00000238: sp  0 +1 */ 0f00003c unnamed member 3c
+        /* 0000023c: sp  1 +1 */ 04000001
+        /* 00000240: sp  2 -2 */ 2e000000
+
+        /* 00000244: sp  0 +0 */ 0000000d
+        /* 00000248: sp  0 +1 */ 0a000000 arg_0022_01ba_0
+        /* 0000024c: sp  1 +1 */ 08000004 arg_0024_0025_4
+        /* 00000250: sp  2 -2 */ 68000000 beebbeeb this-&gt;virtual async void Unknown05F8::method_0021_3e(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)
+
+        /* 00000258: sp  0 +0 */ 0000000e
+        ---
+
+        /* 0000025c: sp  0 +0 */ 0000000f
+        /* 00000260: sp  0 +1 */ 0c00003d unnamed member 3d
+        /* 00000264: sp  1 -1 */ 6400000c
+
+        /* 00000268: sp  0 +0 */ 00000010
+
+        /* 0000026c: sp  0 +0 */ 00000011
+        /* 00000270: sp  0 +1 */ 04000000
+        /* 00000274: sp  1 -1 */ 66000000 beebbeeb this-&gt;void instance::method_0572_ffff(bool arg_0000_0548_0)
+
+        /* 0000027c: sp  0 +0 */ 00000012
+        /* 00000280: sp  0 +1 */ 05000000 beebbeeb &#x27; OnEntry(player, type);&#x27;
+        /* 00000288: sp  1 +1 */ 04000001
+        /* 0000028c: sp  2 -2 */ 66000000 beebbeeb this-&gt;void corebase::debugPrint(string arg_0000_value_0, bool arg_0000_0548_4)
+
+        /* 00000294: sp  0 +0 */ 00000013
+        ---
+
+        /* 00000298: sp  0 +0 */ 00000014
+        /* 0000029c: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void OnLeave(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        bool temp_8 = False;
+
+        /* 00000304: sp  0 +0 */ 00000015
+        /* 00000308: sp  0 +1 */ 09000008 temp_8
+        /* 0000030c: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 00000310: sp  2 -2 */ 65000000 beebbeeb native bool stickybool::value()
+        /* 00000318: sp  0 +1 */ 06000008 temp_8
+        /* 0000031c: sp  1 +0 */ 50000000
+        /* 00000320: sp  1 -1 */ 6400001b
+
+        /* 00000324: sp  0 +0 */ 00000016
+
+        /* 00000328: sp  0 +0 */ 00000017
+        /* 0000032c: sp  0 +1 */ 04000001
+        /* 00000330: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 00000334: sp  2 -2 */ 65000000 beebbeeb native void stickybool::setStickyBool(bool arg_0000_value_0)
+
+        /* 0000033c: sp  0 +0 */ 00000018
+        /* 00000340: sp  0 +1 */ 0c00003d unnamed member 3d
+        /* 00000344: sp  1 -1 */ 6400000c
+
+        /* 00000348: sp  0 +0 */ 00000019
+
+        /* 0000034c: sp  0 +0 */ 0000001a
+        /* 00000350: sp  0 +1 */ 04000000
+        /* 00000354: sp  1 -1 */ 66000000 beebbeeb this-&gt;void instance::method_0572_ffff(bool arg_0000_0548_0)
+
+        /* 0000035c: sp  0 +0 */ 0000001b
+        /* 00000360: sp  0 +1 */ 05000000 beebbeeb &#x27; OnFirstLeave(player, type);&#x27;
+        /* 00000368: sp  1 +1 */ 04000001
+        /* 0000036c: sp  2 -2 */ 66000000 beebbeeb this-&gt;void corebase::debugPrint(string arg_0000_value_0, bool arg_0000_0548_4)
+
+        /* 00000374: sp  0 +0 */ 0000001c
+        ---
+
+        /* 00000378: sp  0 +0 */ 0000001d
+        /* 0000037c: sp  0 +1 */ 0a000000 arg_0022_01ba_0
+        /* 00000380: sp  1 +1 */ 08000004 arg_0024_0025_4
+        /* 00000384: sp  2 -2 */ 68000000 beebbeeb this-&gt;virtual async void Unknown05F8::method_0eb7_41(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)
+
+        /* 0000038c: sp  0 +0 */ 0000001e
+        ---
+
+        /* 00000390: sp  0 +0 */ 0000001f
+        /* 00000394: sp  0 +1 */ 0c00003c unnamed member 3c
+        /* 00000398: sp  1 -1 */ 6400000b
+
+        /* 0000039c: sp  0 +0 */ 00000020
+
+        /* 000003a0: sp  0 +0 */ 00000021
+        /* 000003a4: sp  0 +1 */ 0f00003c unnamed member 3c
+        /* 000003a8: sp  1 +1 */ 04000000
+        /* 000003ac: sp  2 -2 */ 2e000000
+
+        /* 000003b0: sp  0 +0 */ 00000022
+        /* 000003b4: sp  0 +1 */ 0a000000 arg_0022_01ba_0
+        /* 000003b8: sp  1 +1 */ 08000004 arg_0024_0025_4
+        /* 000003bc: sp  2 -2 */ 68000000 beebbeeb this-&gt;virtual async void Unknown05F8::method_0b47_3f(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)
+
+        /* 000003c4: sp  0 +0 */ 00000023
+        ---
+
+        /* 000003c8: sp  0 +0 */ 00000024
+        /* 000003cc: sp  0 +1 */ 0c00003d unnamed member 3d
+        /* 000003d0: sp  1 -1 */ 6400000c
+
+        /* 000003d4: sp  0 +0 */ 00000025
+
+        /* 000003d8: sp  0 +0 */ 00000026
+        /* 000003dc: sp  0 +1 */ 04000000
+        /* 000003e0: sp  1 -1 */ 66000000 beebbeeb this-&gt;void instance::method_0572_ffff(bool arg_0000_0548_0)
+
+        /* 000003e8: sp  0 +0 */ 00000027
+        /* 000003ec: sp  0 +1 */ 05000000 beebbeeb &#x27; OnLeave(player, type);&#x27;
+        /* 000003f4: sp  1 +1 */ 04000001
+        /* 000003f8: sp  2 -2 */ 66000000 beebbeeb this-&gt;void corebase::debugPrint(string arg_0000_value_0, bool arg_0000_0548_4)
+
+        /* 00000400: sp  0 +0 */ 00000028
+        ---
+
+        /* 00000404: sp  0 +0 */ 00000029
+        /* 00000408: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0021_2(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        /* 00000454: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0b47_3(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        /* 00000464: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_01b9_4(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        /* 00000474: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0eb7_5(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        /* 00000484: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0eb8_6() {
+
+        /* 00000494: sp  0 +0 */ 0000002a
+        /* 00000498: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000049c: sp  1 +1 */ 0c00003c unnamed member 3c
+        /* 000004a0: sp  2 -2 */ 2e000000
+        /* 000004a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0eb9_7() {
+        bool temp_4 = False;
+
+        /* 000004d4: sp  0 +0 */ 0000002c
+        /* 000004d8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000004dc: sp  1 +1 */ 09000004 temp_4
+        /* 000004e0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000004e4: sp  3 -2 */ 65000000 beebbeeb native bool stickybool::value()
+        /* 000004ec: sp  1 +1 */ 06000004 temp_4
+        /* 000004f0: sp  2 -2 */ 2e000000
+        /* 000004f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0eba_8() {
+        bool temp_4 = False;
+
+        /* 00000524: sp  0 +0 */ 0000002e
+        /* 00000528: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000052c: sp  1 +1 */ 09000004 temp_4
+        /* 00000530: sp  2 +1 */ 0f000020 unnamed member 20
+        /* 00000534: sp  3 -2 */ 65000000 beebbeeb native bool stickybool::value()
+        /* 0000053c: sp  1 +1 */ 06000004 temp_4
+        /* 00000540: sp  2 -2 */ 2e000000
+        /* 00000544: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00000575.html">%triggervolume%</a><br/>
+derived class <a href="type00006f6b.html">Unknown6F6B</a><br/>
+parent class <a href="type0000051d.html">triggervolumebase</a><br/>
+</body>
+</html>

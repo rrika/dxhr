@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009b59</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9B59</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0x2]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9B59 : <a href="type00005615.html">%alarm%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009c3e.html">Unknown9C3E</a>&gt; decl_0012_268e_20 = {<a href="units.html#00006a22">unit object 00006a22</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009e85.html">%typhoon_system_a%</a>&gt; decl_0012_2690_28 = {<a href="units.html#00006a23">unit object 00006a23</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009e48.html">%dlc_1_hangarspart1_boxguard_belltower_a%</a>&gt; decl_0012_2692_30 = {<a href="units.html#00006a24">unit object 00006a24</a>};
+    void method_1a3b_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9B59 : %alarm% {
+    // sizeof = 0x38
+    stickybool field_4;
+    instanceref decl_0012_268e_20 = TODO(0A);
+    instanceref decl_0012_2690_28 = TODO(0A);
+    instanceref decl_0012_2692_30 = TODO(0A);
+    void method_1a3b_0() {
+        %dlc_1_hangarspart1_boxguard_belltower_a% local_0 = TODO(0B);
+        aistate local_4 = TODO(0A);
+        %typhoon_system_a% local_8 = TODO(0B);
+        Unknown9C3E local_c = TODO(0B);
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 09000004 local_4
+        /* 0000010c: sp  1 +1 */ 09000000 local_0
+        /* 00000110: sp  2 +1 */ 0f000030 unnamed member 30
+        /* 00000114: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000011c: sp  1 +1 */ 0a000000 local_0
+        /* 00000120: sp  2 +0 */ 7e000000 00009e48
+        /* 00000128: sp  2 -2 */ 6a000000 beebbeeb virtual void actornpc::method_067b_6c(aistate arg_01d8_01da_0)
+
+        /* 00000130: sp  0 +0 */ 00000001
+        /* 00000134: sp  0 +1 */ 09000008 local_8
+        /* 00000138: sp  1 +1 */ 0f000028 unnamed member 28
+        /* 0000013c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000144: sp  0 +1 */ 0a000008 local_8
+        /* 00000148: sp  1 +0 */ 7e000000 00009e85
+        /* 00000150: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown9E75::method_09c5_3e()
+
+        /* 00000158: sp  0 +0 */ 00000002
+        /* 0000015c: sp  0 +1 */ 0900000c local_c
+        /* 00000160: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 00000164: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000016c: sp  0 +1 */ 0a00000c local_c
+        /* 00000170: sp  1 +0 */ 7e000000 00009c3e
+        /* 00000178: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown9E75::method_09c5_3e()
+
+        /* 00000180: sp  0 +0 */ 00000003
+        /* 00000184: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00009c1d.html">Unknown9C1D</a><br/>
+parent class <a href="type00005615.html">%alarm%</a><br/>
+</body>
+</html>

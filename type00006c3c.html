@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006c3c</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6C3C</h1>
+		<pre>./tools/drmexplore pc-w/ det_sam_administration.drm n$[0xb33]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6C3C : <a href="type000004f7.html">quest</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006b64.html">Unknown6B64</a>&gt; decl_0012_1d9b_4 = {<a href="units.html#00003a83">unit object 00003a83</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000001e.html">Unknown001E</a>&gt; decl_0012_0d94_c = {<a href="units.html#00000415">unit object 00000415</a>};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_14 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006b6c.html">Unknown6B6C</a>&gt; decl_0012_1de9_1c = {<a href="units.html#00000416">unit object 00000416</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006bc9.html">Unknown6BC9</a>&gt; decl_0012_1e41_24 = {<a href="units.html#00003da1">unit object 00003da1</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006b6b.html">Unknown6B6B</a>&gt; decl_0012_1d91_2c = {<a href="units.html#00003a81">unit object 00003a81</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00006b6a.html">Unknown6B6A</a>&gt; decl_0007_1daa_34 = TODO(0A);
+    void method_1e2f_0();
+    void method_02dc_1();
+    void method_1e30_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6C3C : quest {
+    // sizeof = 0x38
+    instanceref decl_0012_1d9b_4 = TODO(0A);
+    instanceref decl_0012_0d94_c = TODO(0A);
+    playerref decl_012a_012c_14 = TODO(0A);
+    instanceref decl_0012_1de9_1c = TODO(0A);
+    instanceref decl_0012_1e41_24 = TODO(0A);
+    instanceref decl_0012_1d91_2c = TODO(0A);
+    scenarioref&lt;Unknown6B6A&gt; decl_0007_1daa_34 = TODO(0A);
+    void method_1e2f_0() {
+        Unknown6B64 local_0 = TODO(0B);
+        %human_player% local_4 = TODO(0B);
+        globaleffect local_8 = TODO(0A);
+
+        /* 00000134: sp  0 +0 */ 00000000
+        /* 00000138: sp  0 +1 */ 09000000 local_0
+        /* 0000013c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000140: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000148: sp  0 +1 */ 0a000000 local_0
+        /* 0000014c: sp  1 +0 */ 7e000000 00006b64
+        /* 00000154: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0582::method_0b9d_3f()
+
+        /* 0000015c: sp  0 +0 */ 00000001
+        /* 00000160: sp  0 +1 */ 05000000 beebbeeb &#x27;det_sam_adm_seq_zeke script&#x27;
+        /* 00000168: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 00000170: sp  0 +0 */ 00000002
+        /* 00000174: sp  0 +1 */ 09000004 local_4
+        /* 00000178: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 0000017c: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000184: sp  0 +1 */ 0a000004 local_4
+        /* 00000188: sp  1 +0 */ 7e000000 00000552
+        /* 00000190: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06ce_ffff()
+
+        /* 00000198: sp  0 +0 */ 00000003
+        /* 0000019c: sp  0 +1 */ 0300000f
+        /* 000001a0: sp  1 +1 */ 09000008 local_8
+        /* 000001a4: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02df_ffff(dword arg_0000_0564_0)
+
+        /* 000001ac: sp  0 +0 */ 00000004
+        /* 000001b0: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 000001b4: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000001bc: sp  0 +0 */ 00000005
+        /* 000001c0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02dc_1() {
+        %human_player% local_0 = TODO(0B);
+        globaleffect local_4 = TODO(0A);
+
+        /* 00000224: sp  0 +0 */ 00000006
+        /* 00000228: sp  0 +1 */ 09000000 local_0
+        /* 0000022c: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 00000230: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000238: sp  0 +1 */ 0a000000 local_0
+        /* 0000023c: sp  1 +0 */ 7e000000 00000552
+        /* 00000244: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06cd_ffff()
+
+        /* 0000024c: sp  0 +0 */ 00000007
+        /* 00000250: sp  0 +1 */ 05000000 beebbeeb &#x27;det_sam_adm_seq_zeke script&#x27;
+        /* 00000258: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085d_ffff(string arg_0000_056e_0)
+
+        /* 00000260: sp  0 +0 */ 00000008
+        /* 00000264: sp  0 +1 */ 03000000
+        /* 00000268: sp  1 +1 */ 09000004 local_4
+        /* 0000026c: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02e0_ffff(dword arg_0000_0564_0)
+
+        /* 00000274: sp  0 +0 */ 00000009
+        /* 00000278: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1e30_2() {
+        Unknown6B6B local_0 = TODO(0B);
+
+        /* 000002c4: sp  0 +0 */ 0000000a
+        /* 000002c8: sp  0 +1 */ 09000000 local_0
+        /* 000002cc: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 000002d0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002d8: sp  0 +1 */ 0a000000 local_0
+        /* 000002dc: sp  1 +0 */ 7e000000 00006b6b
+        /* 000002e4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown6B6B::method_1d94_84()
+
+        /* 000002ec: sp  0 +0 */ 0000000b
+        /* 000002f0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

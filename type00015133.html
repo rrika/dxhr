@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00015133</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown15133</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega_restriced_area.drm n$[0x3b]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown15133 : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014aa1.html">Unknown14AA1</a>&gt; decl_0007_5eca_4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014aa2.html">Unknown14AA2</a>&gt; decl_0007_5ecb_8 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_5dab_c = persistent(dtp:0466) {type=bool};
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown15133 : %debugbutton% {
+    // sizeof = 0x20
+    scenarioref&lt;Unknown14AA1&gt; decl_0007_5eca_4 = TODO(0A);
+    scenarioref&lt;Unknown14AA2&gt; decl_0007_5ecb_8 = TODO(0A);
+    smartscript decl_0089_5dab_c = TODO(0A);
+    void method_000a_0() {
+        Unknown14AA1 local_0 = TODO(0B);
+        Unknown14AA2 local_4 = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 04000000
+        /* 000000cc: sp  1 +1 */ 09000000 local_0
+        /* 000000d0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000000d4: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000000dc: sp  1 +1 */ 0a000000 local_0
+        /* 000000e0: sp  2 +0 */ 7e000000 00014aa1
+        /* 000000e8: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000000f0: sp  0 +0 */ 00000001
+        /* 000000f4: sp  0 +1 */ 09000004 local_4
+        /* 000000f8: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 000000fc: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000104: sp  0 +1 */ 0a000004 local_4
+        /* 00000108: sp  1 +0 */ 7e000000 00014aa2
+        /* 00000110: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000118: sp  0 +0 */ 00000002
+        /* 0000011c: sp  0 +1 */ 04000001
+        /* 00000120: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000124: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000012c: sp  0 +0 */ 00000003
+        /* 00000130: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

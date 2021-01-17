@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00007d2e</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown7D2E</h1>
+		<pre>./tools/drmexplore pc-w/ det_sarifhq_rail_tutorial.drm n$[0xb8d]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown7D2E : <a href="type000004f7.html">quest</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00007b45.html">%det_sarif_industries_lab_door_sw_dbl_a%</a>&gt; decl_0012_220e_4 = {<a href="units.html#00005078">unit object 00005078</a>};
+    void method_2164_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown7D2E : quest {
+    // sizeof = 0xc
+    instanceref decl_0012_220e_4 = TODO(0A);
+    void method_2164_0() {
+        %det_sarif_industries_lab_door_sw_dbl_a% local_0 = TODO(0B);
+        %det_sarif_industries_lab_door_sw_dbl_a% local_4 = TODO(0B);
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 04000001
+        /* 000000bc: sp  1 +1 */ 09000000 local_0
+        /* 000000c0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000000c4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000cc: sp  1 +1 */ 0a000000 local_0
+        /* 000000d0: sp  2 +0 */ 7e000000 00007b45
+        /* 000000d8: sp  2 -2 */ 69000000 beebbeeb void instance::method_08e1_ffff(bool arg_0000_08e2_0)
+
+        /* 000000e0: sp  0 +0 */ 00000001
+        /* 000000e4: sp  0 +1 */ 09000004 local_4
+        /* 000000e8: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000ec: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000f4: sp  0 +1 */ 0a000004 local_4
+        /* 000000f8: sp  1 +0 */ 7e000000 00007b45
+        /* 00000100: sp  1 -1 */ 69000000 beebbeeb void instance::method_07c2_ffff()
+
+        /* 00000108: sp  0 +0 */ 00000002
+        /* 0000010c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

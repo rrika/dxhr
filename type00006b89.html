@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006b89</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6B89</h1>
+		<pre>./tools/drmexplore pc-w/ det_sam__masterunit.drm n$[0x60a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6B89 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_4 = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_1de6_c = TODO(0A);
+    void method_1db9_0();
+    void method_1de7_1();
+    // referenced at <a href="type00006b89.html">void Unknown6B89::method_1db9_0()</a>
+    void method_1dba_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6B89 : quest {
+    // sizeof = 0x14
+    playerref decl_012a_012c_4 = TODO(0A);
+    sequencergraph decl_008c_1de6_c = TODO(0A);
+    void method_1db9_0() {
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual async void Unknown6B89::method_1de7_12()
+
+        /* 000000f0: sp  0 +0 */ 00000001
+        /* 000000f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_1de7_1() {
+        %human_player% local_0 = TODO(0B);
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        symbol local_d = TODO(0A);
+
+        /* 00000184: sp  0 +0 */ 00000002
+        /* 00000188: sp  0 +1 */ 09000004 temp_4
+        /* 0000018c: sp  1 +1 */ 09000000 local_0
+        /* 00000190: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000194: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000019c: sp  1 +1 */ 0a000000 local_0
+        /* 000001a0: sp  2 +0 */ 7e000000 00000552
+        /* 000001a8: sp  2 -2 */ 69000000 beebbeeb bool actor::method_05c8_ffff()
+        /* 000001b0: sp  0 +1 */ 06000004 temp_4
+        /* 000001b4: sp  1 -1 */ 64000014
+
+        /* 000001b8: sp  0 +0 */ 00000003
+
+        /* 000001bc: sp  0 +0 */ 00000004
+        ---
+        /* 000001c0: sp  0 +1 */ 0900000c temp_c
+        /* 000001c4: sp  1 +1 */ 04000001
+        /* 000001c8: sp  2 +1 */ 09000008 local_8
+        /* 000001cc: sp  3 +1 */ 0f000004 unnamed member 4
+        /* 000001d0: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000001d8: sp  2 +1 */ 0a000008 local_8
+        /* 000001dc: sp  3 +0 */ 7e000000 00000552
+        /* 000001e4: sp  3 -3 */ 69000000 beebbeeb bool actor::method_0663_ffff(bool arg_0000_0662_4)
+        /* 000001ec: sp  0 +1 */ 0600000c temp_c
+        /* 000001f0: sp  1 +0 */ 50000000
+        /* 000001f4: sp  1 -1 */ 64000003
+
+        /* 000001f8: sp  0 +0 */ 00000005
+        /* 000001fc: sp  0 +0 */ 7c000000
+        /* 00000200: sp  0 +0 */ 63ffffee 00000006
+        ---
+
+        /* 00000204: sp  0 +0 */ 00000006
+        ---
+
+        /* 00000208: sp  0 +0 */ 00000007
+        /* 0000020c: sp  0 +1 */ 0900000d local_d
+        /* 00000210: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000214: sp  2 -2 */ 65000000 beebbeeb native void sequencergraph::method_09d2_ffff(symbol arg_008f_05e2_0)
+
+        /* 0000021c: sp  0 +0 */ 00000008
+        /* 00000220: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1dba_2() {
+        instanceref&lt;Unknown6B6C&gt; local_0 = TODO(0A);
+        Unknown6B6C local_8 = TODO(0B);
+        aifaction local_c = TODO(0A);
+
+        /* 000002b4: sp  0 +0 */ 00000009
+        /* 000002b8: sp  0 +1 */ 0900000c local_c
+        /* 000002bc: sp  1 +1 */ 09000008 local_8
+        /* 000002c0: sp  2 +1 */ 09000000 local_0
+        /* 000002c4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002cc: sp  1 +1 */ 0a000008 local_8
+        /* 000002d0: sp  2 +0 */ 7e000000 00006b6c
+        /* 000002d8: sp  2 -2 */ 6a000000 beebbeeb virtual void actornpc::switchToFaction(aifaction arg_067d_067e_0)
+
+        /* 000002e0: sp  0 +0 */ 0000000a
+        /* 000002e4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

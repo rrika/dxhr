@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0001355a</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%ao_active_satelite_a%</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_lowerresidential.drm n$[0xc9a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %ao_active_satelite_a% : <a href="type0000492f.html">Unknown492F</a> {
+    <a href="type000004ab.html">actorsensor</a> field_4;
+    <a href="type000004ab.html">actorsensor</a> field_8;
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_597e_c = {<a href="type00000edf.html">type 00000edf</a>, 0};
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_09c8_1();
+    // referenced at <a href="type0001355a.html">async void %ao_active_satelite_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %ao_active_satelite_a% : Unknown492F {
+    // sizeof = 0x1c
+    actorsensor field_4;
+    actorsensor field_8;
+    uberobjectevent decl_0a66_597e_c = TODO(0A);
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000010 temp_10
+        /* 000000cc: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000000d0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000000d4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000000dc: sp  0 +1 */ 06000010 temp_10
+        /* 000000e0: sp  1 -1 */ 64000003
+
+        /* 000000e4: sp  0 +0 */ 00000001
+        /* 000000e8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %ao_active_satelite_a%::method_09c8_3d()
+        ---
+
+        /* 000000f0: sp  0 +0 */ 00000002
+        /* 000000f4: sp  0 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000000f8: sp  1 -1 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void uberobjectbase::method_0a65_38(uberobjectevent arg_0a66_0a67_0)
+
+        /* 00000104: sp  0 +0 */ 00000003
+        /* 00000108: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_09c8_1() {
+        /* 00000114: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00013444.html">Unknown13444</a><br/>
+derived class <a href="type00013445.html">Unknown13445</a><br/>
+derived class <a href="type00013446.html">Unknown13446</a><br/>
+parent class <a href="type0000492f.html">Unknown492F</a><br/>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0001344d</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1344D</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_lowerresidential.drm n$[0x83]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1344D : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type000004ec.html">objective</a> decl_0005_487f_4 = TODO(0A);
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_c = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000134a6.html">Unknown134A6</a>&gt; decl_0007_5961_14 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00010651.html">Unknown10651</a>&gt; decl_0007_48d8_18 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0001045e.html">Unknown1045E</a>&gt; decl_0007_4899_1c = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00010453.html">Unknown10453</a>&gt; decl_0012_4873_20 = {<a href="units.html#0000ba9b">unit object 0000ba9b</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000d5b2.html">%so_non_interactive_keypad_a%</a>&gt; decl_0012_488f_28 = {<a href="units.html#0000ba9c">unit object 0000ba9c</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00010452.html">Unknown10452</a>&gt; decl_0012_4872_30 = {<a href="units.html#0000ba9d">unit object 0000ba9d</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002142.html">%keypad_a%</a>&gt; decl_0012_4891_38 = {<a href="units.html#0000ba9e">unit object 0000ba9e</a>};
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1344D : %debugbutton% {
+    // sizeof = 0x40
+    objective decl_0005_487f_4 = TODO(0A);
+    playerref decl_012a_012c_c = TODO(0A);
+    scenarioref&lt;Unknown134A6&gt; decl_0007_5961_14 = TODO(0A);
+    scenarioref&lt;Unknown10651&gt; decl_0007_48d8_18 = TODO(0A);
+    scenarioref&lt;Unknown1045E&gt; decl_0007_4899_1c = TODO(0A);
+    instanceref decl_0012_4873_20 = TODO(0A);
+    instanceref decl_0012_488f_28 = TODO(0A);
+    instanceref decl_0012_4872_30 = TODO(0A);
+    instanceref decl_0012_4891_38 = TODO(0A);
+    void method_000a_0() {
+        Unknown134A6 local_0 = TODO(0B);
+        Unknown10651 local_4 = TODO(0B);
+        Unknown1045E local_8 = TODO(0B);
+        %human_player% local_c = TODO(0B);
+        pickup local_10 = TODO(0A);
+        Unknown10453 local_14 = TODO(0B);
+        %so_non_interactive_keypad_a% local_18 = TODO(0B);
+
+        /* 00000154: sp  0 +0 */ 00000000
+        /* 00000158: sp  0 +1 */ 04000000
+        /* 0000015c: sp  1 +1 */ 09000000 local_0
+        /* 00000160: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000164: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000016c: sp  1 +1 */ 0a000000 local_0
+        /* 00000170: sp  2 +0 */ 7e000000 000134a6
+        /* 00000178: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000180: sp  0 +0 */ 00000001
+        /* 00000184: sp  0 +1 */ 09000004 local_4
+        /* 00000188: sp  1 +1 */ 0f000018 unnamed member 18
+        /* 0000018c: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000194: sp  0 +1 */ 0a000004 local_4
+        /* 00000198: sp  1 +0 */ 7e000000 00010651
+        /* 000001a0: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000001a8: sp  0 +0 */ 00000002
+        /* 000001ac: sp  0 +1 */ 09000008 local_8
+        /* 000001b0: sp  1 +1 */ 0f00001c unnamed member 1c
+        /* 000001b4: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001bc: sp  0 +1 */ 0a000008 local_8
+        /* 000001c0: sp  1 +0 */ 7e000000 0001045e
+        /* 000001c8: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000001d0: sp  0 +0 */ 00000003
+        /* 000001d4: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 000001d8: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+
+        /* 000001e0: sp  0 +0 */ 00000004
+        /* 000001e4: sp  0 +1 */ 09000010 local_10
+        /* 000001e8: sp  1 +1 */ 03000001
+        /* 000001ec: sp  2 +1 */ 04000001
+        /* 000001f0: sp  3 +1 */ 0900000c local_c
+        /* 000001f4: sp  4 +1 */ 0f00000c unnamed member c
+        /* 000001f8: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000200: sp  3 +1 */ 0a00000c local_c
+        /* 00000204: sp  4 +0 */ 7e000000 00000552
+        /* 0000020c: sp  4 -4 */ 69000000 beebbeeb void actor::method_05ff_ffff(pickup arg_05fb_05fc_0, dword arg_0000_05fd_4, bool arg_0000_05fe_8)
+
+        /* 00000214: sp  0 +0 */ 00000005
+        /* 00000218: sp  0 +1 */ 04000000
+        /* 0000021c: sp  1 +1 */ 09000014 local_14
+        /* 00000220: sp  2 +1 */ 0f000020 unnamed member 20
+        /* 00000224: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000022c: sp  1 +1 */ 0a000014 local_14
+        /* 00000230: sp  2 +0 */ 7e000000 00010453
+        /* 00000238: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000240: sp  0 +0 */ 00000006
+        /* 00000244: sp  0 +1 */ 04000000
+        /* 00000248: sp  1 +1 */ 09000018 local_18
+        /* 0000024c: sp  2 +1 */ 0f000028 unnamed member 28
+        /* 00000250: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000258: sp  1 +1 */ 0a000018 local_18
+        /* 0000025c: sp  2 +0 */ 7e000000 0000d5b2
+        /* 00000264: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 0000026c: sp  0 +0 */ 00000007
+        /* 00000270: sp  0 +1 */ 0f000030 unnamed member 30
+        /* 00000274: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 0000027c: sp  0 +0 */ 00000008
+        /* 00000280: sp  0 +1 */ 0f000038 unnamed member 38
+        /* 00000284: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 0000028c: sp  0 +0 */ 00000009
+        /* 00000290: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

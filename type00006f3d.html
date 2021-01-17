@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006f3d</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6F3D</h1>
+		<pre>./tools/drmexplore pc-w/ det_sam_assembly.drm n$[0x10d]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6F3D : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006f3e.html">Unknown6F3E</a>&gt; decl_0012_1a1b_40 = {<a href="units.html#00004220">unit object 00004220</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006f3b.html">Unknown6F3B</a>&gt; decl_0012_1eb2_48 = {<a href="units.html#0000039d">unit object 0000039d</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000068.html">Unknown0068</a>&gt; decl_0012_0205_50 = {<a href="units.html#000000d2">unit object 000000d2</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006f06.html">Unknown6F06</a>&gt; decl_0012_1eca_58 = {<a href="units.html#00003f1b">unit object 00003f1b</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006ee7.html">Unknown6EE7</a>&gt; decl_0012_1ebb_60 = {<a href="units.html#00003f12">unit object 00003f12</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002142.html">%keypad_a%</a>&gt; decl_0012_1ecb_68 = {<a href="units.html#00003f1a">unit object 00003f1a</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006ee8.html">Unknown6EE8</a>&gt; decl_0012_1ebd_70 = {<a href="units.html#00003f13">unit object 00003f13</a>};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6F3D : %triggervolume% {
+    // sizeof = 0x78
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_1a1b_40 = TODO(0A);
+    instanceref decl_0012_1eb2_48 = TODO(0A);
+    instanceref decl_0012_0205_50 = TODO(0A);
+    instanceref decl_0012_1eca_58 = TODO(0A);
+    instanceref decl_0012_1ebb_60 = TODO(0A);
+    instanceref decl_0012_1ecb_68 = TODO(0A);
+    instanceref decl_0012_1ebd_70 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown6F3B local_8 = TODO(0B);
+        Unknown6F3E local_c = TODO(0B);
+        Unknown0068 local_10 = TODO(0B);
+        barkevent local_14 = TODO(0A);
+        Unknown6EE7 local_18 = TODO(0B);
+        Unknown6EE8 local_1c = TODO(0B);
+        Unknown6EE7 local_20 = TODO(0B);
+        Unknown6EE8 local_24 = TODO(0B);
+
+        /* 00000174: sp  0 +0 */ 00000000
+        /* 00000178: sp  0 +1 */ 09000008 local_8
+        /* 0000017c: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000180: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000188: sp  0 +1 */ 0a000008 local_8
+        /* 0000018c: sp  1 +0 */ 7e000000 00006f3b
+        /* 00000194: sp  1 -1 */ 69000000 beebbeeb void %gas_bomb_a%::method_1f13_ffff()
+
+        /* 0000019c: sp  0 +0 */ 00000001
+        /* 000001a0: sp  0 +1 */ 04000000
+        /* 000001a4: sp  1 +1 */ 0900000c local_c
+        /* 000001a8: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 000001ac: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001b4: sp  1 +1 */ 0a00000c local_c
+        /* 000001b8: sp  2 +0 */ 7e000000 00006f3e
+        /* 000001c0: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000001c8: sp  0 +0 */ 00000002
+        /* 000001cc: sp  0 +1 */ 09000014 local_14
+        /* 000001d0: sp  1 +1 */ 09000010 local_10
+        /* 000001d4: sp  2 +1 */ 0f000050 unnamed member 50
+        /* 000001d8: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001e0: sp  1 +1 */ 0a000010 local_10
+        /* 000001e4: sp  2 +0 */ 7e000000 00000068
+        /* 000001ec: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown05CD::method_07f0_76(barkevent arg_01a9_0d05_0)
+
+        /* 000001f4: sp  0 +0 */ 00000003
+        /* 000001f8: sp  0 +1 */ 04000001
+        /* 000001fc: sp  1 +1 */ 09000018 local_18
+        /* 00000200: sp  2 +1 */ 0f000060 unnamed member 60
+        /* 00000204: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000020c: sp  1 +1 */ 0a000018 local_18
+        /* 00000210: sp  2 +0 */ 7e000000 00006ee7
+        /* 00000218: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown057E::method_02ca_43(bool arg_0000_0680_0)
+
+        /* 00000220: sp  0 +0 */ 00000004
+        /* 00000224: sp  0 +1 */ 04000001
+        /* 00000228: sp  1 +1 */ 0900001c local_1c
+        /* 0000022c: sp  2 +1 */ 0f000070 unnamed member 70
+        /* 00000230: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000238: sp  1 +1 */ 0a00001c local_1c
+        /* 0000023c: sp  2 +0 */ 7e000000 00006ee8
+        /* 00000244: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown057E::method_02ca_43(bool arg_0000_0680_0)
+
+        /* 0000024c: sp  0 +0 */ 00000005
+        /* 00000250: sp  0 +1 */ 09000020 local_20
+        /* 00000254: sp  1 +1 */ 0f000060 unnamed member 60
+        /* 00000258: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000260: sp  0 +1 */ 0a000020 local_20
+        /* 00000264: sp  1 +0 */ 7e000000 00006ee7
+        /* 0000026c: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a5_42()
+
+        /* 00000274: sp  0 +0 */ 00000006
+        /* 00000278: sp  0 +1 */ 09000024 local_24
+        /* 0000027c: sp  1 +1 */ 0f000070 unnamed member 70
+        /* 00000280: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000288: sp  0 +1 */ 0a000024 local_24
+        /* 0000028c: sp  1 +0 */ 7e000000 00006ee8
+        /* 00000294: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a5_42()
+
+        /* 0000029c: sp  0 +0 */ 00000007
+        /* 000002a0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00006f3b.html">Unknown6F3B</a><br/>
+initialized field in <a href="type00006f3e.html">Unknown6F3E</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00015164</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown15164</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega_restriced_area.drm n$[0x6f]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown15164 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00015166.html">Unknown15166</a>&gt; decl_0007_5f4a_40 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00015167.html">Unknown15167</a>&gt; decl_0007_5f4c_44 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_5dab_48 = persistent(dtp:0466) {type=bool};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown15164 : %triggervolume% {
+    // sizeof = 0x5c
+    stickybool field_4;
+    stickybool field_20;
+    scenarioref&lt;Unknown15166&gt; decl_0007_5f4a_40 = TODO(0A);
+    scenarioref&lt;Unknown15167&gt; decl_0007_5f4c_44 = TODO(0A);
+    smartscript decl_0089_5dab_48 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        bool temp_8 = False;
+        Unknown15166 local_c = TODO(0B);
+        Unknown15167 local_10 = TODO(0B);
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 09000008 temp_8
+        /* 000000dc: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 000000e0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000000e8: sp  0 +1 */ 06000008 temp_8
+        /* 000000ec: sp  1 +1 */ 04000000
+        /* 000000f0: sp  2 -1 */ 46000000
+        /* 000000f4: sp  1 -1 */ 6400000b
+
+        /* 000000f8: sp  0 +0 */ 00000001
+        /* 000000fc: sp  0 +1 */ 0900000c local_c
+        /* 00000100: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000104: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000010c: sp  0 +1 */ 0a00000c local_c
+        /* 00000110: sp  1 +0 */ 7e000000 00015166
+        /* 00000118: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+        /* 00000120: sp  0 +0 */ 6300000a 00000002
+        /* 00000128: sp  0 +1 */ 09000010 local_10
+        /* 0000012c: sp  1 +1 */ 0f000044 unnamed member 44
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000138: sp  0 +1 */ 0a000010 local_10
+        /* 0000013c: sp  1 +0 */ 7e000000 00015167
+        /* 00000144: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000014c: sp  0 +0 */ 00000003
+        ---
+
+        /* 00000124: sp  0 +0 */ 00000002
+        /* 00000128: sp  0 +1 */ 09000010 local_10
+        /* 0000012c: sp  1 +1 */ 0f000044 unnamed member 44
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000138: sp  0 +1 */ 0a000010 local_10
+        /* 0000013c: sp  1 +0 */ 7e000000 00015167
+        /* 00000144: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000014c: sp  0 +0 */ 00000003
+        ---
+        /* 00000150: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

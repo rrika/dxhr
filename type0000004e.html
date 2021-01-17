@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000004e</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown004E</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x73]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown004E : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000051.html">Unknown0051</a>&gt; decl_0012_0161_40 = {<a href="units.html#000000b3">unit object 000000b3</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000052.html">Unknown0052</a>&gt; decl_0012_0163_48 = {<a href="units.html#000000b4">unit object 000000b4</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000563.html">%mtl_picinternet_soldier_belltower_h%</a>&gt; decl_0012_0142_50 = {<a href="units.html#000000a3">unit object 000000a3</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000004a.html">Unknown004A</a>&gt; decl_0012_01e4_58 = {<a href="units.html#000000aa">unit object 000000aa</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000049.html">Unknown0049</a>&gt; decl_0012_01e5_60 = {<a href="units.html#000000a9">unit object 000000a9</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000048.html">Unknown0048</a>&gt; decl_0012_01e6_68 = {<a href="units.html#000000a7">unit object 000000a7</a>};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown004E : %triggervolume% {
+    // sizeof = 0x70
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_0161_40 = TODO(0A);
+    instanceref decl_0012_0163_48 = TODO(0A);
+    instanceref decl_0012_0142_50 = TODO(0A);
+    instanceref decl_0012_01e4_58 = TODO(0A);
+    instanceref decl_0012_01e5_60 = TODO(0A);
+    instanceref decl_0012_01e6_68 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown0051 local_8 = TODO(0B);
+        Unknown0052 local_c = TODO(0B);
+        Unknown0048 local_10 = TODO(0B);
+        waypointnode local_14 = TODO(0A);
+        Unknown0049 local_24 = TODO(0B);
+        waypointnode local_28 = TODO(0A);
+        Unknown004A local_38 = TODO(0B);
+        waypointnode local_3c = TODO(0A);
+        %mtl_picinternet_soldier_belltower_h% local_4c = TODO(0B);
+        waypointnode local_50 = TODO(0A);
+
+        /* 000001b4: sp  0 +0 */ 00000000
+        /* 000001b8: sp  0 +1 */ 04000000
+        /* 000001bc: sp  1 +1 */ 09000008 local_8
+        /* 000001c0: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 000001c4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001cc: sp  1 +1 */ 0a000008 local_8
+        /* 000001d0: sp  2 +0 */ 7e000000 00000051
+        /* 000001d8: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000001e0: sp  0 +0 */ 00000001
+        /* 000001e4: sp  0 +1 */ 04000000
+        /* 000001e8: sp  1 +1 */ 0900000c local_c
+        /* 000001ec: sp  2 +1 */ 0f000048 unnamed member 48
+        /* 000001f0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001f8: sp  1 +1 */ 0a00000c local_c
+        /* 000001fc: sp  2 +0 */ 7e000000 00000052
+        /* 00000204: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 0000020c: sp  0 +0 */ 00000002
+        /* 00000210: sp  0 +1 */ 09000014 local_14
+        /* 00000214: sp  1 +1 */ 09000010 local_10
+        /* 00000218: sp  2 +1 */ 0f000068 unnamed member 68
+        /* 0000021c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000224: sp  1 +1 */ 0a000010 local_10
+        /* 00000228: sp  2 +0 */ 7e000000 00000048
+        /* 00000230: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0679_ffff(waypointnode arg_0196_0676_0)
+
+        /* 00000238: sp  0 +0 */ 00000003
+        /* 0000023c: sp  0 +1 */ 09000028 local_28
+        /* 00000240: sp  1 +1 */ 09000024 local_24
+        /* 00000244: sp  2 +1 */ 0f000060 unnamed member 60
+        /* 00000248: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000250: sp  1 +1 */ 0a000024 local_24
+        /* 00000254: sp  2 +0 */ 7e000000 00000049
+        /* 0000025c: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0679_ffff(waypointnode arg_0196_0676_0)
+
+        /* 00000264: sp  0 +0 */ 00000004
+        /* 00000268: sp  0 +1 */ 0900003c local_3c
+        /* 0000026c: sp  1 +1 */ 09000038 local_38
+        /* 00000270: sp  2 +1 */ 0f000058 unnamed member 58
+        /* 00000274: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000027c: sp  1 +1 */ 0a000038 local_38
+        /* 00000280: sp  2 +0 */ 7e000000 0000004a
+        /* 00000288: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0679_ffff(waypointnode arg_0196_0676_0)
+
+        /* 00000290: sp  0 +0 */ 00000005
+        /* 00000294: sp  0 +1 */ 09000050 local_50
+        /* 00000298: sp  1 +1 */ 0900004c local_4c
+        /* 0000029c: sp  2 +1 */ 0f000050 unnamed member 50
+        /* 000002a0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002a8: sp  1 +1 */ 0a00004c local_4c
+        /* 000002ac: sp  2 +0 */ 7e000000 00000563
+        /* 000002b4: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0679_ffff(waypointnode arg_0196_0676_0)
+
+        /* 000002bc: sp  0 +0 */ 00000006
+        /* 000002c0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000002c.html">Unknown002C</a><br/>
+initialized field in <a href="type000005e9.html">Unknown05E9</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

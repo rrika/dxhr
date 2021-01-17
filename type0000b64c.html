@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000b64c</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownB64C</h1>
+		<pre>./tools/drmexplore pc-w/ pan_machinery.drm n$[0x4c8]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownB64C : <a href="type00000d46.html">smartbool_fromactor</a> {
+    gcref <a href="type000004a9.html">actornpc</a> decl_06a5_0599_4 = TODO(0B);
+    bool getValue();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownB64C : smartbool_fromactor {
+    // sizeof = 0x8
+    actornpc decl_06a5_0599_4 = TODO(0B);
+    bool getValue() {
+        actornpc local_4 = TODO(0B);
+        actor local_8 = TODO(0B);
+        bool temp_c = False;
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000004 local_4
+        /* 000000cc: sp  1 +1 */ 09000008 local_8
+        /* 000000d0: sp  2 -1 */ 66000000 beebbeeb this-&gt;actor smartbool_fromactor::method_0789_ffff()
+        /* 000000d8: sp  1 +1 */ 0a000008 local_8
+        /* 000000dc: sp  2 +0 */ 7e000000 000004a9
+        /* 000000e4: sp  2 -2 */ 30000000
+
+        /* 000000e8: sp  0 +0 */ 00000001
+        /* 000000ec: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000000f0: sp  1 +1 */ 0900000c temp_c
+        /* 000000f4: sp  2 +1 */ 0a000004 local_4
+        /* 000000f8: sp  3 -2 */ 69000000 beebbeeb bool actornpc::method_068e_ffff()
+        /* 00000100: sp  1 +1 */ 0600000c temp_c
+        /* 00000104: sp  2 -2 */ 2e000000
+        /* 00000108: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000d46.html">smartbool_fromactor</a><br/>
+</body>
+</html>

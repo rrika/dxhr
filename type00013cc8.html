@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00013cc8</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown13CC8</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_thehive.drm n$[0x51]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown13CC8 : <a href="type00002134.html">%triggerplane%</a> {
+    void method_103d_0(gcref <a href="type000004df.html">instance</a>);
+    void method_5a55_1();
+    // referenced at <a href="type00013cc8.html">async void Unknown13CC8::method_103d_0(instance arg_0022_01ba_0)</a>
+    // referenced at <a href="type00013cf1.html">async void Unknown13CF1::method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown13CC8 : %triggerplane% {
+    // sizeof = 0x1
+    async void method_103d_0(instance arg_0022_01ba_0) {
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown13CC8::method_5a55_40()
+
+        /* 000000d0: sp  0 +0 */ 00000001
+        /* 000000d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_5a55_1() {
+        instanceref&lt;Unknown102BD&gt; local_0 = TODO(0A);
+        instanceref&lt;Unknown102BC&gt; local_8 = TODO(0A);
+        objective local_10 = TODO(0A);
+        objective local_18 = TODO(0A);
+        instanceref&lt;Unknown102BA&gt; local_20 = TODO(0A);
+        mission local_28 = TODO(0A);
+        bool temp_30 = False;
+        bool temp_31 = False;
+        Unknown102BA local_34 = TODO(0B);
+
+        /* 00000264: sp  0 +0 */ 00000002
+        /* 00000268: sp  0 +1 */ 09000030 temp_30
+        /* 0000026c: sp  1 +1 */ 09000010 local_10
+        /* 00000270: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000278: sp  0 +1 */ 06000030 temp_30
+        /* 0000027c: sp  1 -1 */ 6400001b
+
+        /* 00000280: sp  0 +0 */ 00000003
+
+        /* 00000284: sp  0 +0 */ 00000004
+        /* 00000288: sp  0 +1 */ 09000031 temp_31
+        /* 0000028c: sp  1 +1 */ 09000028 local_28
+        /* 00000290: sp  2 -2 */ 65000000 beebbeeb native bool mission::method_07b9_ffff()
+        /* 00000298: sp  0 +1 */ 06000031 temp_31
+        /* 0000029c: sp  1 +1 */ 04000000
+        /* 000002a0: sp  2 -1 */ 46000000
+        /* 000002a4: sp  1 -1 */ 64000010
+
+        /* 000002a8: sp  0 +0 */ 00000005
+
+        /* 000002ac: sp  0 +0 */ 00000006
+        /* 000002b0: sp  0 +1 */ 09000000 local_0
+        /* 000002b4: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000002bc: sp  0 +0 */ 00000007
+        /* 000002c0: sp  0 +1 */ 09000034 local_34
+        /* 000002c4: sp  1 +1 */ 09000020 local_20
+        /* 000002c8: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002d0: sp  0 +1 */ 0a000034 local_34
+        /* 000002d4: sp  1 +0 */ 7e000000 000102ba
+        /* 000002dc: sp  1 -1 */ 69000000 beebbeeb void actor::method_063a_ffff()
+
+        /* 000002e4: sp  0 +0 */ 00000008
+        ---
+
+        /* 000002e8: sp  0 +0 */ 00000009
+        ---
+
+        /* 000002ec: sp  0 +0 */ 0000000a
+        /* 000002f0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00002134.html">%triggerplane%</a><br/>
+</body>
+</html>

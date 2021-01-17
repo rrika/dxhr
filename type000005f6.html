@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005f6</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05F6</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x733]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05F6 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004be.html">briefing</a> decl_00c1_0eac_4 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000575.html">%triggervolume%</a>&gt; decl_0012_0ead_c = {<a href="units.html#000003e6">unit object 000003e6</a>};
+    void method_0525_0();
+    void method_0526_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05F6 : quest {
+    // sizeof = 0x14
+    briefing decl_00c1_0eac_4 = TODO(0A);
+    instanceref decl_0012_0ead_c = TODO(0A);
+    void method_0525_0() {
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 03ffffff
+        /* 000000bc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000c0: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 000000c8: sp  0 +0 */ 00000001
+        /* 000000cc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0526_1() {
+
+        /* 000000d4: sp  0 +0 */ 00000002
+        /* 000000d8: sp  0 +1 */ 0f00000c unnamed member c
+        /* 000000dc: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000000e4: sp  0 +0 */ 00000003
+        /* 000000e8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

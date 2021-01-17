@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00001f37</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1F37</h1>
+		<pre>./tools/drmexplore pc-w/ det_adam_apt_c.drm n$[0x46]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1F37 : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00001fc9.html">Unknown1FC9</a>&gt; decl_0007_1029_4 = TODO(0A);
+    void method_0bf3_0();
+    void method_0bf4_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1F37 : %debugbutton% {
+    // sizeof = 0x8
+    scenarioref&lt;Unknown1FC9&gt; decl_0007_1029_4 = TODO(0A);
+    void method_0bf3_0() {
+        Unknown1FC9 local_0 = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000000 local_0
+        /* 000000cc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000000d8: sp  0 +1 */ 0a000000 local_0
+        /* 000000dc: sp  1 +0 */ 7e000000 00001fc9
+        /* 000000e4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000000ec: sp  0 +0 */ 00000001
+        /* 000000f0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0bf4_1() {
+        Unknown1FC9 local_0 = TODO(0B);
+
+        /* 00000124: sp  0 +0 */ 00000002
+        /* 00000128: sp  0 +1 */ 04000001
+        /* 0000012c: sp  1 +1 */ 09000000 local_0
+        /* 00000130: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000134: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000013c: sp  1 +1 */ 0a000000 local_0
+        /* 00000140: sp  2 +0 */ 7e000000 00001fc9
+        /* 00000148: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000150: sp  0 +0 */ 00000003
+        /* 00000154: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

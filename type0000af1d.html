@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000af1d</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownAF1D</h1>
+		<pre>./tools/drmexplore pc-w/ pan_hyronproject.drm n$[0x39]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownAF1D : <a href="type0000b024.html">%drone_a%</a> {
+    <a href="type00000512.html">sound</a> field_4;
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_2e49_c = TODO(0A);
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_2e4a_1c = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000af10.html">UnknownAF10</a>&gt; decl_0012_2d7d_2c = {<a href="units.html#00008613">unit object 00008613</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000af1b.html">UnknownAF1B</a>&gt; decl_0012_2d8e_34 = {<a href="units.html#00008603">unit object 00008603</a>};
+    <a href="type00000512.html">sound</a> decl_0027_2e4b_3c = dtp:AFBF:Vo\eng\Panchaea\Npcs\Unique\Pan_Computer\Barks\PAN_COMPUTER_BRK_Pod3Purge_001;
+    <a href="type00000512.html">sound</a> decl_0027_2e4c_40 = dtp:AFBE:Vo\eng\Panchaea\Npcs\Unique\Pan_Computer\Barks\PAN_COMPUTER_BRK_Pod3Open_001;
+    <a href="type00000512.html">sound</a> decl_0027_2e4d_44 = dtp:AFBB:vo\eng\panchaea\npcs\unique\pan_computer\barks\pan_computer_brk_pod3closes_001;
+    <a href="type00000512.html">sound</a> decl_0027_2e4e_48 = dtp:AFBC:Vo\eng\Panchaea\Npcs\Unique\Pan_Computer\Barks\PAN_COMPUTER_BRK_Pod3Damaged_001;
+    <a href="type00000512.html">sound</a> decl_0027_2e4f_4c = dtp:AFBD:Vo\eng\Panchaea\Npcs\Unique\Pan_Computer\Barks\PAN_COMPUTER_BRK_Pod3Dead_001;
+    <a href="type00000511.html">smartscript</a> decl_0089_2e3f_50 = persistent(dtp:B00F) {type=dword};
+    <a href="type00000511.html">smartscript</a> decl_0089_2d7e_64 = persistent(dtp:B00D) {type=bool};
+    void method_01dc_0();
+    void method_0a65_1(<a href="type00000522.html">uberobjectevent</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownAF1D : %drone_a% {
+    // sizeof = 0x78
+    sound field_4;
+    objectivescriptablelocator decl_0963_2e49_c = TODO(0A);
+    objectivescriptablelocator decl_0963_2e4a_1c = TODO(0A);
+    instanceref decl_0012_2d7d_2c = TODO(0A);
+    instanceref decl_0012_2d8e_34 = TODO(0A);
+    sound decl_0027_2e4b_3c = TODO(0A);
+    sound decl_0027_2e4c_40 = TODO(0A);
+    sound decl_0027_2e4d_44 = TODO(0A);
+    sound decl_0027_2e4e_48 = TODO(0A);
+    sound decl_0027_2e4f_4c = TODO(0A);
+    smartscript decl_0089_2e3f_50 = TODO(0A);
+    smartscript decl_0089_2d7e_64 = TODO(0A);
+    void method_01dc_0() {
+        UnknownAF10 local_0 = TODO(0B);
+        dword temp_4 = 0;
+
+        /* 000000f4: sp  0 +0 */ 00000000
+        /* 000000f8: sp  0 +1 */ 09000000 local_0
+        /* 000000fc: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000100: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000108: sp  0 +1 */ 0a000000 local_0
+        /* 0000010c: sp  1 +0 */ 7e000000 0000af10
+        /* 00000114: sp  1 -1 */ 6a000000 beebbeeb virtual void UnknownAF10::method_2d9a_40()
+
+        /* 0000011c: sp  0 +0 */ 00000001
+        /* 00000120: sp  0 +1 */ 0f00000c unnamed member c
+        /* 00000124: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 0000012c: sp  0 +0 */ 00000002
+        /* 00000130: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 00000134: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 0000013c: sp  0 +0 */ 00000003
+        /* 00000140: sp  0 +1 */ 03000004
+        /* 00000144: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000148: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000150: sp  0 +0 */ 00000004
+        /* 00000154: sp  0 +1 */ 09000004 temp_4
+        /* 00000158: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 0000015c: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000164: sp  0 +1 */ 08000004 temp_4
+        /* 00000168: sp  1 +1 */ 03000006
+        /* 0000016c: sp  2 +0 */ 5c000000
+        /* 00000170: sp  2 +1 */ 04000001
+        /* 00000174: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0545_ffff(dword arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000017c: sp  0 +0 */ 00000005
+        /* 00000180: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a65_1(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        bool temp_11 = False;
+        uberobjectevent local_14 = TODO(0A);
+        UnknownAF1B local_24 = TODO(0B);
+        bool temp_28 = False;
+        uberobjectevent local_2c = TODO(0A);
+        UnknownAF1B local_3c = TODO(0B);
+        bool temp_40 = False;
+        uberobjectevent local_44 = TODO(0A);
+        UnknownAF1B local_54 = TODO(0B);
+        bool temp_58 = False;
+        uberobjectevent local_5c = TODO(0A);
+        UnknownAF1B local_6c = TODO(0B);
+        bool temp_70 = False;
+        uberobjectevent local_74 = TODO(0A);
+        UnknownAF1B local_84 = TODO(0B);
+        bool temp_88 = False;
+        uberobjectevent local_8c = TODO(0A);
+        UnknownAF1B local_9c = TODO(0B);
+
+        /* 00000374: sp  0 +0 */ 00000006
+        /* 00000378: sp  0 +1 */ 09000000 arg_0a66_0a67_0
+        /* 0000037c: sp  1 -1 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void %drone_a%::method_0a65_38(uberobjectevent arg_0a66_0a67_0)
+
+        /* 00000388: sp  0 +0 */ 00000007
+        /* 0000038c: sp  0 +1 */ 09000010 temp_10
+        /* 00000390: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 00000394: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000039c: sp  0 +1 */ 06000010 temp_10
+        /* 000003a0: sp  1 +1 */ 04000000
+        /* 000003a4: sp  2 -1 */ 46000000
+        /* 000003a8: sp  1 -1 */ 64000098
+
+        /* 000003ac: sp  0 +0 */ 00000008
+
+        /* 000003b0: sp  0 +0 */ 00000009
+        /* 000003b4: sp  0 +1 */ 09000011 temp_11
+        /* 000003b8: sp  1 +1 */ 09000014 local_14
+        /* 000003bc: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000003c0: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000003c8: sp  0 +1 */ 06000011 temp_11
+        /* 000003cc: sp  1 -1 */ 64000016
+
+        /* 000003d0: sp  0 +0 */ 0000000a
+
+        /* 000003d4: sp  0 +0 */ 0000000b
+        /* 000003d8: sp  0 +1 */ 0f00003c unnamed member 3c
+        /* 000003dc: sp  1 +1 */ 03000064
+        /* 000003e0: sp  2 +1 */ 09000024 local_24
+        /* 000003e4: sp  3 +1 */ 0f000034 unnamed member 34
+        /* 000003e8: sp  4 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000003f0: sp  2 +1 */ 0a000024 local_24
+        /* 000003f4: sp  3 +0 */ 7e000000 0000af1b
+        /* 000003fc: sp  3 -3 */ 6a000000 beebbeeb virtual void %drone_a%::method_0a13_3e(sound arg_0027_2ede_0, dword arg_0000_2edf_4)
+
+        /* 00000404: sp  0 +0 */ 0000000c
+        /* 00000408: sp  0 +1 */ 0f00000c unnamed member c
+        /* 0000040c: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 00000414: sp  0 +0 */ 0000000d
+        /* 00000418: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 0000041c: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 00000424: sp  0 +0 */ 0000000e
+        ---
+
+        /* 00000428: sp  0 +0 */ 0000000f
+        /* 0000042c: sp  0 +1 */ 09000028 temp_28
+        /* 00000430: sp  1 +1 */ 0900002c local_2c
+        /* 00000434: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000438: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000440: sp  0 +1 */ 06000028 temp_28
+        /* 00000444: sp  1 -1 */ 64000016
+
+        /* 00000448: sp  0 +0 */ 00000010
+
+        /* 0000044c: sp  0 +0 */ 00000011
+        /* 00000450: sp  0 +1 */ 0f00003c unnamed member 3c
+        /* 00000454: sp  1 +1 */ 03000064
+        /* 00000458: sp  2 +1 */ 0900003c local_3c
+        /* 0000045c: sp  3 +1 */ 0f000034 unnamed member 34
+        /* 00000460: sp  4 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000468: sp  2 +1 */ 0a00003c local_3c
+        /* 0000046c: sp  3 +0 */ 7e000000 0000af1b
+        /* 00000474: sp  3 -3 */ 6a000000 beebbeeb virtual void %drone_a%::method_0a13_3e(sound arg_0027_2ede_0, dword arg_0000_2edf_4)
+
+        /* 0000047c: sp  0 +0 */ 00000012
+        /* 00000480: sp  0 +1 */ 0f00000c unnamed member c
+        /* 00000484: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 0000048c: sp  0 +0 */ 00000013
+        /* 00000490: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 00000494: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 0000049c: sp  0 +0 */ 00000014
+        ---
+
+        /* 000004a0: sp  0 +0 */ 00000015
+        /* 000004a4: sp  0 +1 */ 09000040 temp_40
+        /* 000004a8: sp  1 +1 */ 09000044 local_44
+        /* 000004ac: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000004b0: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000004b8: sp  0 +1 */ 06000040 temp_40
+        /* 000004bc: sp  1 -1 */ 6400000c
+
+        /* 000004c0: sp  0 +0 */ 00000016
+        /* 000004c4: sp  0 +1 */ 0f000040 unnamed member 40
+        /* 000004c8: sp  1 +1 */ 03000063
+        /* 000004cc: sp  2 +1 */ 09000054 local_54
+        /* 000004d0: sp  3 +1 */ 0f000034 unnamed member 34
+        /* 000004d4: sp  4 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000004dc: sp  2 +1 */ 0a000054 local_54
+        /* 000004e0: sp  3 +0 */ 7e000000 0000af1b
+        /* 000004e8: sp  3 -3 */ 6a000000 beebbeeb virtual void %drone_a%::method_0a13_3e(sound arg_0027_2ede_0, dword arg_0000_2edf_4)
+        ---
+
+        /* 000004f0: sp  0 +0 */ 00000017
+        /* 000004f4: sp  0 +1 */ 09000058 temp_58
+        /* 000004f8: sp  1 +1 */ 0900005c local_5c
+        /* 000004fc: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000500: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000508: sp  0 +1 */ 06000058 temp_58
+        /* 0000050c: sp  1 -1 */ 64000016
+
+        /* 00000510: sp  0 +0 */ 00000018
+
+        /* 00000514: sp  0 +0 */ 00000019
+        /* 00000518: sp  0 +1 */ 0f000044 unnamed member 44
+        /* 0000051c: sp  1 +1 */ 03000062
+        /* 00000520: sp  2 +1 */ 0900006c local_6c
+        /* 00000524: sp  3 +1 */ 0f000034 unnamed member 34
+        /* 00000528: sp  4 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000530: sp  2 +1 */ 0a00006c local_6c
+        /* 00000534: sp  3 +0 */ 7e000000 0000af1b
+        /* 0000053c: sp  3 -3 */ 6a000000 beebbeeb virtual void %drone_a%::method_0a13_3e(sound arg_0027_2ede_0, dword arg_0000_2edf_4)
+
+        /* 00000544: sp  0 +0 */ 0000001a
+        /* 00000548: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 0000054c: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 00000554: sp  0 +0 */ 0000001b
+        /* 00000558: sp  0 +1 */ 0f00000c unnamed member c
+        /* 0000055c: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 00000564: sp  0 +0 */ 0000001c
+        ---
+
+        /* 00000568: sp  0 +0 */ 0000001d
+        /* 0000056c: sp  0 +1 */ 09000070 temp_70
+        /* 00000570: sp  1 +1 */ 09000074 local_74
+        /* 00000574: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000578: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000580: sp  0 +1 */ 06000070 temp_70
+        /* 00000584: sp  1 -1 */ 6400000c
+
+        /* 00000588: sp  0 +0 */ 0000001e
+        /* 0000058c: sp  0 +1 */ 0f000048 unnamed member 48
+        /* 00000590: sp  1 +1 */ 03000061
+        /* 00000594: sp  2 +1 */ 09000084 local_84
+        /* 00000598: sp  3 +1 */ 0f000034 unnamed member 34
+        /* 0000059c: sp  4 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000005a4: sp  2 +1 */ 0a000084 local_84
+        /* 000005a8: sp  3 +0 */ 7e000000 0000af1b
+        /* 000005b0: sp  3 -3 */ 6a000000 beebbeeb virtual void %drone_a%::method_0a13_3e(sound arg_0027_2ede_0, dword arg_0000_2edf_4)
+        ---
+
+        /* 000005b8: sp  0 +0 */ 0000001f
+        /* 000005bc: sp  0 +1 */ 09000088 temp_88
+        /* 000005c0: sp  1 +1 */ 0900008c local_8c
+        /* 000005c4: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000005c8: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000005d0: sp  0 +1 */ 06000088 temp_88
+        /* 000005d4: sp  1 -1 */ 6400000c
+
+        /* 000005d8: sp  0 +0 */ 00000020
+        /* 000005dc: sp  0 +1 */ 0f00004c unnamed member 4c
+        /* 000005e0: sp  1 +1 */ 03000060
+        /* 000005e4: sp  2 +1 */ 0900009c local_9c
+        /* 000005e8: sp  3 +1 */ 0f000034 unnamed member 34
+        /* 000005ec: sp  4 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000005f4: sp  2 +1 */ 0a00009c local_9c
+        /* 000005f8: sp  3 +0 */ 7e000000 0000af1b
+        /* 00000600: sp  3 -3 */ 6a000000 beebbeeb virtual void %drone_a%::method_0a13_3e(sound arg_0027_2ede_0, dword arg_0000_2edf_4)
+        ---
+
+        /* 00000608: sp  0 +0 */ 00000021
+        ---
+
+        /* 0000060c: sp  0 +0 */ 00000022
+        /* 00000610: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000af16.html">UnknownAF16</a><br/>
+initialized field in <a href="type0000af68.html">UnknownAF68</a><br/>
+parent class <a href="type0000b024.html">%drone_a%</a><br/>
+</body>
+</html>

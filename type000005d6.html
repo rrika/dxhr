@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005d6</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05D6</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x70a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05D6 : <a href="type000004d2.html">gamebase</a> {
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type000004aa.html">actorplayer</a>&gt; decl_012a_06a0_4 = TODO(0A);
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_c = TODO(0A);
+    <a href="type0000051e.html">trophy</a> decl_0d70_0d71_14 = TODO(0A);
+    <a href="type0000051e.html">trophy</a> decl_0d70_0d72_18 = TODO(0A);
+    void method_02db_0();
+    void method_02dc_1();
+    void method_02dd_2();
+    void method_02de_3();
+    void method_02ee_4();
+    void method_02ef_5();
+    void method_02df_6(float);
+    void method_02e0_7(float);
+    void method_0d73_8();
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d74_9()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0312_a()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_02f0_b()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_030f_12()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d77_13()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d7a_16()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d7b_17()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0306_18()</a>
+    void method_0d74_9();
+    void method_0312_a();
+    void method_02f0_b();
+    void method_00e6_c();
+    void method_02ec_d();
+    void method_0d75_e();
+    void method_02e1_f();
+    void method_0d76_10();
+    void method_0304_11();
+    void method_030f_12();
+    void method_0d77_13();
+    void method_0d78_14();
+    void method_0d79_15();
+    void method_0d7a_16();
+    void method_0d7b_17();
+    void method_0306_18();
+    void method_0d7c_19();
+    void method_0d7d_1a();
+    void method_0d7e_1b();
+    void method_0328_1c();
+    void method_02fd_1d();
+    void method_02fe_1e();
+    void method_02ff_1f();
+    void method_0300_20();
+    void method_0319_21();
+    void method_0d7f_22();
+    void method_0d80_23();
+    void method_0d81_24();
+    void method_617d_25();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05D6 : gamebase {
+    // sizeof = 0x1c
+    playerref decl_012a_06a0_4 = TODO(0A);
+    playerref decl_012a_012c_c = TODO(0A);
+    trophy decl_0d70_0d71_14 = TODO(0A);
+    trophy decl_0d70_0d72_18 = TODO(0A);
+    void method_02db_0() {
+        globaleffect local_0 = TODO(0A);
+
+        /* 000005e4: sp  0 +0 */ 00000000
+        /* 000005e8: sp  0 +1 */ 03000000
+        /* 000005ec: sp  1 +1 */ 09000000 local_0
+        /* 000005f0: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02df_ffff(dword arg_0000_0564_0)
+
+        /* 000005f8: sp  0 +0 */ 00000001
+        /* 000005fc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02dc_1() {
+        globaleffect local_0 = TODO(0A);
+
+        /* 00001374: sp  0 +0 */ 00000002
+        /* 00001378: sp  0 +1 */ 03000000
+        /* 0000137c: sp  1 +1 */ 09000000 local_0
+        /* 00001380: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02e0_ffff(dword arg_0000_0564_0)
+
+        /* 00001388: sp  0 +0 */ 00000003
+        /* 0000138c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02dd_2() {
+        actorplayer local_0 = TODO(0B);
+        actorplayer local_4 = TODO(0B);
+        actorplayer local_8 = TODO(0B);
+        actorplayer local_c = TODO(0B);
+
+        /* 00002b14: sp  0 +0 */ 00000004
+        /* 00002b18: sp  0 +1 */ 09000000 local_0
+        /* 00002b1c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00002b20: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00002b28: sp  0 +1 */ 0a000000 local_0
+        /* 00002b2c: sp  1 +0 */ 7e000000 000004aa
+        /* 00002b34: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06d5_ffff()
+
+        /* 00002b3c: sp  0 +0 */ 00000005
+        /* 00002b40: sp  0 +1 */ 09000004 local_4
+        /* 00002b44: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00002b48: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00002b50: sp  0 +1 */ 0a000004 local_4
+        /* 00002b54: sp  1 +0 */ 7e000000 000004aa
+        /* 00002b5c: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06d6_ffff()
+
+        /* 00002b64: sp  0 +0 */ 00000006
+        /* 00002b68: sp  0 +1 */ 05000000 beebbeeb &#x27;Global Cinematic Script&#x27;
+        /* 00002b70: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 00002b78: sp  0 +0 */ 00000007
+        /* 00002b7c: sp  0 +1 */ 04000001
+        /* 00002b80: sp  1 +1 */ 09000008 local_8
+        /* 00002b84: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00002b88: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00002b90: sp  1 +1 */ 0a000008 local_8
+        /* 00002b94: sp  2 +0 */ 7e000000 000004aa
+        /* 00002b9c: sp  2 -2 */ 69000000 beebbeeb void actor::setInvincible(bool arg_0000_04d4_0)
+
+        /* 00002ba4: sp  0 +0 */ 00000008
+        /* 00002ba8: sp  0 +1 */ 0900000c local_c
+        /* 00002bac: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00002bb0: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00002bb8: sp  0 +1 */ 0a00000c local_c
+        /* 00002bbc: sp  1 +0 */ 7e000000 000004aa
+        /* 00002bc4: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06ce_ffff()
+
+        /* 00002bcc: sp  0 +0 */ 00000009
+        /* 00002bd0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02de_3() {
+        actorplayer local_0 = TODO(0B);
+        actorplayer local_4 = TODO(0B);
+
+        /* 00003454: sp  0 +0 */ 0000000a
+        /* 00003458: sp  0 +1 */ 04000000
+        /* 0000345c: sp  1 +1 */ 09000000 local_0
+        /* 00003460: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00003464: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000346c: sp  1 +1 */ 0a000000 local_0
+        /* 00003470: sp  2 +0 */ 7e000000 000004aa
+        /* 00003478: sp  2 -2 */ 69000000 beebbeeb void actor::setInvincible(bool arg_0000_04d4_0)
+
+        /* 00003480: sp  0 +0 */ 0000000b
+        /* 00003484: sp  0 +1 */ 09000004 local_4
+        /* 00003488: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 0000348c: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00003494: sp  0 +1 */ 0a000004 local_4
+        /* 00003498: sp  1 +0 */ 7e000000 000004aa
+        /* 000034a0: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06cd_ffff()
+
+        /* 000034a8: sp  0 +0 */ 0000000c
+        /* 000034ac: sp  0 +1 */ 05000000 beebbeeb &#x27;Global Cinematic Script&#x27;
+        /* 000034b4: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085d_ffff(string arg_0000_056e_0)
+
+        /* 000034bc: sp  0 +0 */ 0000000d
+        /* 000034c0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02ee_4() {
+        playercontroller local_0 = TODO(0B);
+        actorplayer local_4 = TODO(0B);
+        controller local_8 = TODO(0B);
+        actorplayer local_c = TODO(0B);
+        hudgroup local_10 = TODO(0A);
+        actorplayer local_14 = TODO(0B);
+
+        /* 00003584: sp  0 +0 */ 0000000e
+        /* 00003588: sp  0 +1 */ 09000000 local_0
+        /* 0000358c: sp  1 +1 */ 09000008 local_8
+        /* 00003590: sp  2 +1 */ 09000004 local_4
+        /* 00003594: sp  3 +1 */ 0f000004 unnamed member 4
+        /* 00003598: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000035a0: sp  2 +1 */ 0a000004 local_4
+        /* 000035a4: sp  3 +0 */ 7e000000 000004aa
+        /* 000035ac: sp  3 -2 */ 69000000 beebbeeb controller actor::getController05a5()
+        /* 000035b4: sp  1 +1 */ 0a000008 local_8
+        /* 000035b8: sp  2 +0 */ 7e000000 000004f4
+        /* 000035c0: sp  2 -2 */ 30000000
+
+        /* 000035c4: sp  0 +0 */ 0000000f
+        /* 000035c8: sp  0 +1 */ 0a000000 local_0
+        /* 000035cc: sp  1 -1 */ 6a000000 beebbeeb virtual void playercontroller::method_02ee_1b()
+
+        /* 000035d4: sp  0 +0 */ 00000010
+        /* 000035d8: sp  0 +1 */ 04000001
+        /* 000035dc: sp  1 +1 */ 0900000c local_c
+        /* 000035e0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000035e4: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000035ec: sp  1 +1 */ 0a00000c local_c
+        /* 000035f0: sp  2 +0 */ 7e000000 000004aa
+        /* 000035f8: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06d0_ffff(bool arg_0000_06d0_0)
+
+        /* 00003600: sp  0 +0 */ 00000011
+        /* 00003604: sp  0 +1 */ 09000010 local_10
+        /* 00003608: sp  1 +1 */ 0a000000 local_0
+        /* 0000360c: sp  2 -2 */ 6a000000 beebbeeb virtual void playercontroller::method_0985_1f(hudgroup arg_08cd_0983_0)
+
+        /* 00003614: sp  0 +0 */ 00000012
+        /* 00003618: sp  0 +1 */ 09000014 local_14
+        /* 0000361c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00003620: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00003628: sp  0 +1 */ 0a000014 local_14
+        /* 0000362c: sp  1 +0 */ 7e000000 000004aa
+        /* 00003634: sp  1 -1 */ 6a000000 beebbeeb virtual void actorplayer::method_0644_66()
+
+        /* 0000363c: sp  0 +0 */ 00000013
+        /* 00003640: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02ef_5() {
+        playercontroller local_0 = TODO(0B);
+        actorplayer local_4 = TODO(0B);
+        controller local_8 = TODO(0B);
+        actorplayer local_c = TODO(0B);
+
+        /* 000036b4: sp  0 +0 */ 00000014
+        /* 000036b8: sp  0 +1 */ 09000000 local_0
+        /* 000036bc: sp  1 +1 */ 09000008 local_8
+        /* 000036c0: sp  2 +1 */ 09000004 local_4
+        /* 000036c4: sp  3 +1 */ 0f000004 unnamed member 4
+        /* 000036c8: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000036d0: sp  2 +1 */ 0a000004 local_4
+        /* 000036d4: sp  3 +0 */ 7e000000 000004aa
+        /* 000036dc: sp  3 -2 */ 69000000 beebbeeb controller actor::getController05a5()
+        /* 000036e4: sp  1 +1 */ 0a000008 local_8
+        /* 000036e8: sp  2 +0 */ 7e000000 000004f4
+        /* 000036f0: sp  2 -2 */ 30000000
+
+        /* 000036f4: sp  0 +0 */ 00000015
+        /* 000036f8: sp  0 +1 */ 04000000
+        /* 000036fc: sp  1 +1 */ 0900000c local_c
+        /* 00003700: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00003704: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000370c: sp  1 +1 */ 0a00000c local_c
+        /* 00003710: sp  2 +0 */ 7e000000 000004aa
+        /* 00003718: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06d0_ffff(bool arg_0000_06d0_0)
+
+        /* 00003720: sp  0 +0 */ 00000016
+        /* 00003724: sp  0 +1 */ 0a000000 local_0
+        /* 00003728: sp  1 -1 */ 6a000000 beebbeeb virtual void playercontroller::method_0981_1c()
+
+        /* 00003730: sp  0 +0 */ 00000017
+        /* 00003734: sp  0 +1 */ 04000000
+        /* 00003738: sp  1 +1 */ 0a000000 local_0
+        /* 0000373c: sp  2 -2 */ 6a000000 beebbeeb virtual void playercontroller::method_0986_20(bool arg_0000_01a5_0)
+
+        /* 00003744: sp  0 +0 */ 00000018
+        /* 00003748: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02df_6(float arg_0000_0547_0) {
+        globaleffect local_4 = TODO(0A);
+
+        /* 00003774: sp  0 +0 */ 00000019
+        /* 00003778: sp  0 +1 */ 08000000 arg_0000_0547_0
+        /* 0000377c: sp  1 +1 */ 0300001e
+        /* 00003780: sp  2 +0 */ 5c000000
+        /* 00003784: sp  2 -1 */ 4a000000
+        /* 00003788: sp  1 +0 */ 5a000000
+        /* 0000378c: sp  1 +1 */ 09000004 local_4
+        /* 00003790: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02df_ffff(dword arg_0000_0564_0)
+
+        /* 00003798: sp  0 +0 */ 0000001a
+        /* 0000379c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02e0_7(float arg_0000_0547_0) {
+        globaleffect local_4 = TODO(0A);
+
+        /* 000037c4: sp  0 +0 */ 0000001b
+        /* 000037c8: sp  0 +1 */ 08000000 arg_0000_0547_0
+        /* 000037cc: sp  1 +1 */ 0300001e
+        /* 000037d0: sp  2 +0 */ 5c000000
+        /* 000037d4: sp  2 -1 */ 4a000000
+        /* 000037d8: sp  1 +0 */ 5a000000
+        /* 000037dc: sp  1 +1 */ 09000004 local_4
+        /* 000037e0: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02e0_ffff(dword arg_0000_0564_0)
+
+        /* 000037e8: sp  0 +0 */ 0000001c
+        /* 000037ec: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d73_8() {
+        actorplayer local_0 = TODO(0B);
+        actorplayer local_4 = TODO(0B);
+        actorplayer local_8 = TODO(0B);
+        float temp_c = 0.0;
+        actorplayer local_10 = TODO(0B);
+        float temp_14 = 0.0;
+
+        /* 00003874: sp  0 +0 */ 0000001d
+        /* 00003878: sp  0 +1 */ 03000064
+        /* 0000387c: sp  1 +0 */ 5c000000
+        /* 00003880: sp  1 +1 */ 09000000 local_0
+        /* 00003884: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00003888: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00003890: sp  1 +1 */ 0a000000 local_0
+        /* 00003894: sp  2 +0 */ 7e000000 000004aa
+        /* 0000389c: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06b6_ffff(float arg_0000_0630_0)
+
+        /* 000038a4: sp  0 +0 */ 0000001e
+        /* 000038a8: sp  0 +1 */ 0900000c temp_c
+        /* 000038ac: sp  1 +1 */ 09000008 local_8
+        /* 000038b0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000038b4: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000038bc: sp  1 +1 */ 0a000008 local_8
+        /* 000038c0: sp  2 +0 */ 7e000000 000004aa
+        /* 000038c8: sp  2 -2 */ 69000000 beebbeeb float actorplayer::method_06af_ffff()
+        /* 000038d0: sp  0 +1 */ 0800000c temp_c
+        /* 000038d4: sp  1 +1 */ 09000014 temp_14
+        /* 000038d8: sp  2 +1 */ 09000010 local_10
+        /* 000038dc: sp  3 +1 */ 0f000004 unnamed member 4
+        /* 000038e0: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000038e8: sp  2 +1 */ 0a000010 local_10
+        /* 000038ec: sp  3 +0 */ 7e000000 000004aa
+        /* 000038f4: sp  3 -2 */ 69000000 beebbeeb float actorplayer::method_06ab_ffff()
+        /* 000038fc: sp  1 +1 */ 08000014 temp_14
+        /* 00003900: sp  2 -1 */ 49000000
+        /* 00003904: sp  1 +1 */ 09000004 local_4
+        /* 00003908: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 0000390c: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00003914: sp  1 +1 */ 0a000004 local_4
+        /* 00003918: sp  2 +0 */ 7e000000 000004aa
+        /* 00003920: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06b4_ffff(float arg_0000_0630_0)
+
+        /* 00003928: sp  0 +0 */ 0000001f
+        /* 0000392c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d74_9() {
+        globalsref&lt;Unknown05CF&gt; local_0 = TODO(0A);
+        unitref&lt;Unknown0030&gt; local_4 = TODO(0A);
+        instanceref&lt;instance&gt; local_10 = TODO(0A);
+        Unknown05CF local_18 = TODO(0B);
+
+        /* 00003a14: sp  0 +0 */ 00000020
+        /* 00003a18: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05D6::method_0d73_19()
+
+        /* 00003a20: sp  0 +0 */ 00000021
+        /* 00003a24: sp  0 +1 */ 09000004 local_4
+        /* 00003a28: sp  1 +1 */ 09000010 local_10
+        /* 00003a2c: sp  2 +1 */ 09000018 local_18
+        /* 00003a30: sp  3 +1 */ 09000000 local_0
+        /* 00003a34: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 00003a3c: sp  2 +1 */ 0a000018 local_18
+        /* 00003a40: sp  3 +0 */ 7e000000 000005cf
+        /* 00003a48: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4f_16(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00003a50: sp  0 +0 */ 00000022
+        /* 00003a54: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0312_a() {
+        globalsref&lt;Unknown05CF&gt; local_0 = TODO(0A);
+        unitref&lt;Unknown0022&gt; local_4 = TODO(0A);
+        instanceref&lt;Unknown0024&gt; local_10 = TODO(0A);
+        Unknown05CF local_18 = TODO(0B);
+
+        /* 000006e4: sp  0 +0 */ 00000023
+        /* 000006e8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05D6::method_0d73_19()
+
+        /* 000006f0: sp  0 +0 */ 00000024
+        /* 000006f4: sp  0 +1 */ 09000004 local_4
+        /* 000006f8: sp  1 +1 */ 09000010 local_10
+        /* 000006fc: sp  2 +1 */ 09000018 local_18
+        /* 00000700: sp  3 +1 */ 09000000 local_0
+        /* 00000704: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 0000070c: sp  2 +1 */ 0a000018 local_18
+        /* 00000710: sp  3 +0 */ 7e000000 000005cf
+        /* 00000718: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4d_14(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00000720: sp  0 +0 */ 00000025
+        /* 00000724: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02f0_b() {
+        globalsref&lt;Unknown05CF&gt; local_0 = TODO(0A);
+        unitref&lt;Unknown0022&gt; local_4 = TODO(0A);
+        instanceref&lt;Unknown0025&gt; local_10 = TODO(0A);
+        Unknown05CF local_18 = TODO(0B);
+
+        /* 00000814: sp  0 +0 */ 00000026
+        /* 00000818: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05D6::method_0d73_19()
+
+        /* 00000820: sp  0 +0 */ 00000027
+        /* 00000824: sp  0 +1 */ 09000004 local_4
+        /* 00000828: sp  1 +1 */ 09000010 local_10
+        /* 0000082c: sp  2 +1 */ 09000018 local_18
+        /* 00000830: sp  3 +1 */ 09000000 local_0
+        /* 00000834: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 0000083c: sp  2 +1 */ 0a000018 local_18
+        /* 00000840: sp  3 +0 */ 7e000000 000005cf
+        /* 00000848: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4d_14(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00000850: sp  0 +0 */ 00000028
+        /* 00000854: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_00e6_c() {
+        instanceref&lt;Unknown001D&gt; local_0 = TODO(0A);
+        playerref&lt;%human_player%&gt; local_8 = TODO(0A);
+        instanceref&lt;Unknown0021&gt; local_10 = TODO(0A);
+        instanceref&lt;Unknown0020&gt; local_18 = TODO(0A);
+        %human_player% local_20 = TODO(0B);
+        pickup local_24 = TODO(0A);
+        Unknown001D local_28 = TODO(0B);
+        Unknown0020 local_2c = TODO(0B);
+
+        /* 000009d4: sp  0 +0 */ 00000029
+        /* 000009d8: sp  0 +1 */ 09000024 local_24
+        /* 000009dc: sp  1 +1 */ 03000001
+        /* 000009e0: sp  2 +1 */ 04000001
+        /* 000009e4: sp  3 +1 */ 09000020 local_20
+        /* 000009e8: sp  4 +1 */ 09000008 local_8
+        /* 000009ec: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000009f4: sp  3 +1 */ 0a000020 local_20
+        /* 000009f8: sp  4 +0 */ 7e000000 00000552
+        /* 00000a00: sp  4 -4 */ 69000000 beebbeeb void actor::method_05ff_ffff(pickup arg_05fb_05fc_0, dword arg_0000_05fd_4, bool arg_0000_05fe_8)
+
+        /* 00000a08: sp  0 +0 */ 0000002a
+        /* 00000a0c: sp  0 +1 */ 03ffffff
+        /* 00000a10: sp  1 +1 */ 09000028 local_28
+        /* 00000a14: sp  2 +1 */ 09000000 local_0
+        /* 00000a18: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a20: sp  1 +1 */ 0a000028 local_28
+        /* 00000a24: sp  2 +0 */ 7e000000 0000001d
+        /* 00000a2c: sp  2 +0 */ 14000004
+        /* 00000a30: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 00000a38: sp  0 +0 */ 0000002b
+        /* 00000a3c: sp  0 +1 */ 04000000
+        /* 00000a40: sp  1 +1 */ 0900002c local_2c
+        /* 00000a44: sp  2 +1 */ 09000018 local_18
+        /* 00000a48: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a50: sp  1 +1 */ 0a00002c local_2c
+        /* 00000a54: sp  2 +0 */ 7e000000 00000020
+        /* 00000a5c: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000a64: sp  0 +0 */ 0000002c
+        /* 00000a68: sp  0 +1 */ 09000010 local_10
+        /* 00000a6c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000a74: sp  0 +0 */ 0000002d
+        /* 00000a78: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02ec_d() {
+        instanceref&lt;%npc_barrett%&gt; local_0 = TODO(0A);
+
+        /* 00000ad4: sp  0 +0 */ 0000002e
+        /* 00000ad8: sp  0 +1 */ 09000000 local_0
+        /* 00000adc: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000ae4: sp  0 +0 */ 0000002f
+        /* 00000ae8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d75_e() {
+        instanceref&lt;Unknown001E&gt; local_0 = TODO(0A);
+        %human_player% local_8 = TODO(0B);
+        conversation local_c = TODO(0A);
+
+        /* 00000b74: sp  0 +0 */ 00000030
+        /* 00000b78: sp  0 +1 */ 09000000 local_0
+        /* 00000b7c: sp  1 +1 */ 0900000c local_c
+        /* 00000b80: sp  2 +1 */ 04000000
+        /* 00000b84: sp  3 +1 */ 09000008 local_8
+        /* 00000b88: sp  4 +1 */ 0f00000c unnamed member c
+        /* 00000b8c: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000b94: sp  3 +1 */ 0a000008 local_8
+        /* 00000b98: sp  4 +0 */ 7e000000 00000552
+        /* 00000ba0: sp  4 -4 */ 6a000000 beebbeeb virtual void Unknown05D8::method_06d7_6b(instanceref arg_0012_06d8_0, conversation arg_018d_06d9_8, bool arg_0000_06da_10)
+
+        /* 00000ba8: sp  0 +0 */ 00000031
+        /* 00000bac: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02e1_f() {
+        instanceref&lt;%mole_pistol%&gt; local_0 = TODO(0A);
+        instanceref&lt;instance&gt; local_8 = TODO(0A);
+        instanceref&lt;Unknown001F&gt; local_10 = TODO(0A);
+        instanceref&lt;%det1_samrestrictedarea_corpse_themole%&gt; local_18 = TODO(0A);
+        Unknown001F local_20 = TODO(0B);
+        %mole_pistol% local_24 = TODO(0B);
+
+        /* 00000cf4: sp  0 +0 */ 00000032
+        /* 00000cf8: sp  0 +1 */ 09000008 local_8
+        /* 00000cfc: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000d04: sp  0 +0 */ 00000033
+        /* 00000d08: sp  0 +1 */ 09000020 local_20
+        /* 00000d0c: sp  1 +1 */ 09000010 local_10
+        /* 00000d10: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d18: sp  0 +1 */ 0a000020 local_20
+        /* 00000d1c: sp  1 +0 */ 7e000000 0000001f
+        /* 00000d24: sp  1 -1 */ 69000000 beebbeeb void actor::method_063a_ffff()
+
+        /* 00000d2c: sp  0 +0 */ 00000034
+        /* 00000d30: sp  0 +1 */ 09000018 local_18
+        /* 00000d34: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000d3c: sp  0 +0 */ 00000035
+        /* 00000d40: sp  0 +1 */ 04000000
+        /* 00000d44: sp  1 +1 */ 09000024 local_24
+        /* 00000d48: sp  2 +1 */ 09000000 local_0
+        /* 00000d4c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d54: sp  1 +1 */ 0a000024 local_24
+        /* 00000d58: sp  2 +0 */ 7e000000 0000058a
+        /* 00000d60: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000d68: sp  0 +0 */ 00000036
+        /* 00000d6c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d76_10() {
+
+        /* 00000d74: sp  0 +0 */ 00000037
+        /* 00000d78: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gamebase::method_085a_ffff()
+
+        /* 00000d80: sp  0 +0 */ 00000038
+        /* 00000d84: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0304_11() {
+        globalsref&lt;Unknown05CF&gt; local_0 = TODO(0A);
+        unitref&lt;Unknown001B&gt; local_4 = TODO(0A);
+        instanceref&lt;instance&gt; local_10 = TODO(0A);
+        Unknown05CF local_18 = TODO(0B);
+
+        /* 00000e74: sp  0 +0 */ 00000039
+        /* 00000e78: sp  0 +1 */ 09000004 local_4
+        /* 00000e7c: sp  1 +1 */ 09000010 local_10
+        /* 00000e80: sp  2 +1 */ 09000018 local_18
+        /* 00000e84: sp  3 +1 */ 09000000 local_0
+        /* 00000e88: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 00000e90: sp  2 +1 */ 0a000018 local_18
+        /* 00000e94: sp  3 +0 */ 7e000000 000005cf
+        /* 00000e9c: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4d_14(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00000ea4: sp  0 +0 */ 0000003a
+        /* 00000ea8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_030f_12() {
+        globalsref&lt;Unknown05CF&gt; local_0 = TODO(0A);
+        unitref&lt;Unknown0039&gt; local_4 = TODO(0A);
+        instanceref&lt;Unknown0037&gt; local_10 = TODO(0A);
+        Unknown05CF local_18 = TODO(0B);
+
+        /* 00000f94: sp  0 +0 */ 0000003b
+        /* 00000f98: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05D6::method_0d73_19()
+
+        /* 00000fa0: sp  0 +0 */ 0000003c
+        /* 00000fa4: sp  0 +1 */ 09000004 local_4
+        /* 00000fa8: sp  1 +1 */ 09000010 local_10
+        /* 00000fac: sp  2 +1 */ 09000018 local_18
+        /* 00000fb0: sp  3 +1 */ 09000000 local_0
+        /* 00000fb4: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 00000fbc: sp  2 +1 */ 0a000018 local_18
+        /* 00000fc0: sp  3 +0 */ 7e000000 000005cf
+        /* 00000fc8: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4d_14(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00000fd0: sp  0 +0 */ 0000003d
+        /* 00000fd4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d77_13() {
+        globalsref&lt;Unknown05CF&gt; local_0 = TODO(0A);
+        instanceref&lt;Unknown0023&gt; local_4 = TODO(0A);
+        unitref&lt;Unknown0022&gt; local_c = TODO(0A);
+        playerref&lt;%human_player%&gt; local_18 = TODO(0A);
+        smartscript local_20 = TODO(0A);
+        playercontroller local_34 = TODO(0B);
+        %human_player% local_38 = TODO(0B);
+        controller local_3c = TODO(0B);
+        hudgroup local_40 = TODO(0A);
+        %human_player% local_44 = TODO(0B);
+        inputmap local_48 = TODO(0A);
+        %human_player% local_50 = TODO(0B);
+        inputmap local_54 = TODO(0A);
+        %human_player% local_5c = TODO(0B);
+        Unknown05CF local_60 = TODO(0B);
+
+        /* 00001204: sp  0 +0 */ 0000003e
+        /* 00001208: sp  0 +1 */ 09000034 local_34
+        /* 0000120c: sp  1 +1 */ 0900003c local_3c
+        /* 00001210: sp  2 +1 */ 09000038 local_38
+        /* 00001214: sp  3 +1 */ 09000018 local_18
+        /* 00001218: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001220: sp  2 +1 */ 0a000038 local_38
+        /* 00001224: sp  3 +0 */ 7e000000 00000552
+        /* 0000122c: sp  3 -2 */ 69000000 beebbeeb controller actor::getController05a5()
+        /* 00001234: sp  1 +1 */ 0a00003c local_3c
+        /* 00001238: sp  2 +0 */ 7e000000 000004f4
+        /* 00001240: sp  2 -2 */ 30000000
+
+        /* 00001244: sp  0 +0 */ 0000003f
+        /* 00001248: sp  0 +1 */ 04000000
+        /* 0000124c: sp  1 +1 */ 0a000034 local_34
+        /* 00001250: sp  2 -2 */ 6a000000 beebbeeb virtual void playercontroller::method_0986_20(bool arg_0000_01a5_0)
+
+        /* 00001258: sp  0 +0 */ 00000040
+        /* 0000125c: sp  0 +1 */ 09000040 local_40
+        /* 00001260: sp  1 +1 */ 0a000034 local_34
+        /* 00001264: sp  2 -2 */ 6a000000 beebbeeb virtual void playercontroller::method_0985_1f(hudgroup arg_08cd_0983_0)
+
+        /* 0000126c: sp  0 +0 */ 00000041
+        /* 00001270: sp  0 +1 */ 04000001
+        /* 00001274: sp  1 +1 */ 09000020 local_20
+        /* 00001278: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001280: sp  0 +0 */ 00000042
+        /* 00001284: sp  0 +1 */ 09000048 local_48
+        /* 00001288: sp  1 +1 */ 09000044 local_44
+        /* 0000128c: sp  2 +1 */ 09000018 local_18
+        /* 00001290: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001298: sp  1 +1 */ 0a000044 local_44
+        /* 0000129c: sp  2 +0 */ 7e000000 00000552
+        /* 000012a4: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06dc_ffff(inputmap arg_06dd_06de_0)
+
+        /* 000012ac: sp  0 +0 */ 00000043
+        /* 000012b0: sp  0 +1 */ 09000054 local_54
+        /* 000012b4: sp  1 +1 */ 09000050 local_50
+        /* 000012b8: sp  2 +1 */ 09000018 local_18
+        /* 000012bc: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000012c4: sp  1 +1 */ 0a000050 local_50
+        /* 000012c8: sp  2 +0 */ 7e000000 00000552
+        /* 000012d0: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06df_ffff(inputmap arg_06dd_06de_0)
+
+        /* 000012d8: sp  0 +0 */ 00000044
+        /* 000012dc: sp  0 +1 */ 04000000
+        /* 000012e0: sp  1 +1 */ 0900005c local_5c
+        /* 000012e4: sp  2 +1 */ 09000018 local_18
+        /* 000012e8: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000012f0: sp  1 +1 */ 0a00005c local_5c
+        /* 000012f4: sp  2 +0 */ 7e000000 00000552
+        /* 000012fc: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06d3_ffff(bool arg_0000_04d4_0)
+
+        /* 00001304: sp  0 +0 */ 00000045
+        /* 00001308: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05D6::method_0d73_19()
+
+        /* 00001310: sp  0 +0 */ 00000046
+        /* 00001314: sp  0 +1 */ 0900000c local_c
+        /* 00001318: sp  1 +1 */ 09000004 local_4
+        /* 0000131c: sp  2 +1 */ 09000060 local_60
+        /* 00001320: sp  3 +1 */ 09000000 local_0
+        /* 00001324: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 0000132c: sp  2 +1 */ 0a000060 local_60
+        /* 00001330: sp  3 +0 */ 7e000000 000005cf
+        /* 00001338: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4f_16(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00001340: sp  0 +0 */ 00000047
+        /* 00001344: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d78_14() {
+        instanceref&lt;Unknown001C&gt; local_0 = TODO(0A);
+        smartscript local_8 = TODO(0A);
+        instanceref&lt;Unknown0019&gt; local_1c = TODO(0A);
+        instanceref&lt;Unknown0018&gt; local_24 = TODO(0A);
+        scenarioref&lt;Unknown0041&gt; local_2c = TODO(0A);
+        scenarioref&lt;Unknown0042&gt; local_30 = TODO(0A);
+        trophy local_34 = TODO(0A);
+        scenarioref&lt;Unknown0043&gt; local_38 = TODO(0A);
+        scenarioref&lt;Unknown0044&gt; local_3c = TODO(0A);
+        scenarioref&lt;Unknown003E&gt; local_40 = TODO(0A);
+        scenarioref&lt;Unknown003F&gt; local_44 = TODO(0A);
+        scenarioref&lt;Unknown0040&gt; local_48 = TODO(0A);
+        smartscript local_4c = TODO(0A);
+        Unknown0041 local_60 = TODO(0B);
+        Unknown0018 local_64 = TODO(0B);
+        Unknown0019 local_68 = TODO(0B);
+        Unknown0019 local_6c = TODO(0B);
+        Unknown0019 local_70 = TODO(0B);
+        Unknown001C local_74 = TODO(0B);
+        Unknown0041 local_78 = TODO(0B);
+        Unknown0042 local_7c = TODO(0B);
+        %human_player% local_80 = TODO(0B);
+        bool temp_84 = False;
+        Unknown0043 local_88 = TODO(0B);
+        Unknown0044 local_8c = TODO(0B);
+        Unknown003E local_90 = TODO(0B);
+        Unknown003F local_94 = TODO(0B);
+        Unknown0040 local_98 = TODO(0B);
+        music local_9c = TODO(0A);
+        soundgroup local_a4 = TODO(0A);
+        soundgroup local_a8 = TODO(0A);
+        soundgroup local_ac = TODO(0A);
+        soundgroup local_b0 = TODO(0A);
+
+        /* 000018b4: sp  0 +0 */ 00000048
+        /* 000018b8: sp  0 +1 */ 05000000 beebbeeb &#x27;scenario bossfight_after_outro loaded&#x27;
+        /* 000018c0: sp  1 +1 */ 03000006
+        /* 000018c4: sp  2 +0 */ 5c000000
+        /* 000018c8: sp  2 +1 */ 04000001
+        /* 000018cc: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000018d4: sp  0 +0 */ 00000049
+        /* 000018d8: sp  0 +1 */ 09000060 local_60
+        /* 000018dc: sp  1 +1 */ 0900002c local_2c
+        /* 000018e0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000018e8: sp  0 +1 */ 0a000060 local_60
+        /* 000018ec: sp  1 +0 */ 7e000000 00000041
+        /* 000018f4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c4_ffff()
+
+        /* 000018fc: sp  0 +0 */ 0000004a
+        /* 00001900: sp  0 +1 */ 04000001
+        /* 00001904: sp  1 +1 */ 0900004c local_4c
+        /* 00001908: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001910: sp  0 +0 */ 0000004b
+        /* 00001914: sp  0 +1 */ 04000001
+        /* 00001918: sp  1 +1 */ 09000008 local_8
+        /* 0000191c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001924: sp  0 +0 */ 0000004c
+        /* 00001928: sp  0 +1 */ 09000064 local_64
+        /* 0000192c: sp  1 +1 */ 09000024 local_24
+        /* 00001930: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001938: sp  0 +1 */ 0a000064 local_64
+        /* 0000193c: sp  1 +0 */ 7e000000 00000018
+        /* 00001944: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a6_41()
+
+        /* 0000194c: sp  0 +0 */ 0000004d
+        /* 00001950: sp  0 +1 */ 09000068 local_68
+        /* 00001954: sp  1 +1 */ 0900001c local_1c
+        /* 00001958: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001960: sp  0 +1 */ 0a000068 local_68
+        /* 00001964: sp  1 +0 */ 7e000000 00000019
+        /* 0000196c: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a7_40()
+
+        /* 00001974: sp  0 +0 */ 0000004e
+        /* 00001978: sp  0 +1 */ 0900006c local_6c
+        /* 0000197c: sp  1 +1 */ 0900001c local_1c
+        /* 00001980: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001988: sp  0 +1 */ 0a00006c local_6c
+        /* 0000198c: sp  1 +0 */ 7e000000 00000019
+        /* 00001994: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a6_41()
+
+        /* 0000199c: sp  0 +0 */ 0000004f
+        /* 000019a0: sp  0 +1 */ 04000000
+        /* 000019a4: sp  1 +1 */ 09000070 local_70
+        /* 000019a8: sp  2 +1 */ 0900001c local_1c
+        /* 000019ac: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000019b4: sp  1 +1 */ 0a000070 local_70
+        /* 000019b8: sp  2 +0 */ 7e000000 00000019
+        /* 000019c0: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown057E::method_02ca_43(bool arg_0000_0680_0)
+
+        /* 000019c8: sp  0 +0 */ 00000050
+        /* 000019cc: sp  0 +1 */ 03ffffff
+        /* 000019d0: sp  1 +1 */ 09000074 local_74
+        /* 000019d4: sp  2 +1 */ 09000000 local_0
+        /* 000019d8: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000019e0: sp  1 +1 */ 0a000074 local_74
+        /* 000019e4: sp  2 +0 */ 7e000000 0000001c
+        /* 000019ec: sp  2 +0 */ 14000164
+        /* 000019f0: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 000019f8: sp  0 +0 */ 00000051
+        /* 000019fc: sp  0 +1 */ 09000078 local_78
+        /* 00001a00: sp  1 +1 */ 0900002c local_2c
+        /* 00001a04: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00001a0c: sp  0 +1 */ 0a000078 local_78
+        /* 00001a10: sp  1 +0 */ 7e000000 00000041
+        /* 00001a18: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00001a20: sp  0 +0 */ 00000052
+        /* 00001a24: sp  0 +1 */ 04000000
+        /* 00001a28: sp  1 +1 */ 0900007c local_7c
+        /* 00001a2c: sp  2 +1 */ 09000030 local_30
+        /* 00001a30: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00001a38: sp  1 +1 */ 0a00007c local_7c
+        /* 00001a3c: sp  2 +0 */ 7e000000 00000042
+        /* 00001a44: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00001a4c: sp  0 +0 */ 00000053
+        /* 00001a50: sp  0 +1 */ 05000000 beebbeeb &#x27;scenarios bossfight_after_outro activated and before_outro deactivated&#x27;
+        /* 00001a58: sp  1 +1 */ 03000006
+        /* 00001a5c: sp  2 +0 */ 5c000000
+        /* 00001a60: sp  2 +1 */ 04000001
+        /* 00001a64: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00001a6c: sp  0 +0 */ 00000054
+        /* 00001a70: sp  0 +1 */ 05000000 beebbeeb &#x27;Barret is hidden&#x27;
+        /* 00001a78: sp  1 +1 */ 03000006
+        /* 00001a7c: sp  2 +0 */ 5c000000
+        /* 00001a80: sp  2 +1 */ 04000001
+        /* 00001a84: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00001a8c: sp  0 +0 */ 00000055
+        /* 00001a90: sp  0 +1 */ 09000084 temp_84
+        /* 00001a94: sp  1 +1 */ 09000080 local_80
+        /* 00001a98: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00001a9c: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001aa4: sp  1 +1 */ 0a000080 local_80
+        /* 00001aa8: sp  2 +0 */ 7e000000 00000552
+        /* 00001ab0: sp  2 -2 */ 69000000 beebbeeb bool actor::isAlive636()
+        /* 00001ab8: sp  0 +1 */ 06000084 temp_84
+        /* 00001abc: sp  1 -1 */ 64000004
+
+        /* 00001ac0: sp  0 +0 */ 00000056
+        /* 00001ac4: sp  0 +1 */ 09000034 local_34
+        /* 00001ac8: sp  1 -1 */ 65000000 beebbeeb native void trophy::method_01a7_ffff()
+        ---
+
+        /* 00001ad0: sp  0 +0 */ 00000057
+        /* 00001ad4: sp  0 +1 */ 04000000
+        /* 00001ad8: sp  1 +1 */ 09000088 local_88
+        /* 00001adc: sp  2 +1 */ 09000038 local_38
+        /* 00001ae0: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00001ae8: sp  1 +1 */ 0a000088 local_88
+        /* 00001aec: sp  2 +0 */ 7e000000 00000043
+        /* 00001af4: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00001afc: sp  0 +0 */ 00000058
+        /* 00001b00: sp  0 +1 */ 04000000
+        /* 00001b04: sp  1 +1 */ 0900008c local_8c
+        /* 00001b08: sp  2 +1 */ 0900003c local_3c
+        /* 00001b0c: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00001b14: sp  1 +1 */ 0a00008c local_8c
+        /* 00001b18: sp  2 +0 */ 7e000000 00000044
+        /* 00001b20: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00001b28: sp  0 +0 */ 00000059
+        /* 00001b2c: sp  0 +1 */ 04000000
+        /* 00001b30: sp  1 +1 */ 09000090 local_90
+        /* 00001b34: sp  2 +1 */ 09000040 local_40
+        /* 00001b38: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00001b40: sp  1 +1 */ 0a000090 local_90
+        /* 00001b44: sp  2 +0 */ 7e000000 0000003e
+        /* 00001b4c: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00001b54: sp  0 +0 */ 0000005a
+        /* 00001b58: sp  0 +1 */ 04000000
+        /* 00001b5c: sp  1 +1 */ 09000094 local_94
+        /* 00001b60: sp  2 +1 */ 09000044 local_44
+        /* 00001b64: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00001b6c: sp  1 +1 */ 0a000094 local_94
+        /* 00001b70: sp  2 +0 */ 7e000000 0000003f
+        /* 00001b78: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00001b80: sp  0 +0 */ 0000005b
+        /* 00001b84: sp  0 +1 */ 04000000
+        /* 00001b88: sp  1 +1 */ 09000098 local_98
+        /* 00001b8c: sp  2 +1 */ 09000048 local_48
+        /* 00001b90: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00001b98: sp  1 +1 */ 0a000098 local_98
+        /* 00001b9c: sp  2 +0 */ 7e000000 00000040
+        /* 00001ba4: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00001bac: sp  0 +0 */ 0000005c
+        /* 00001bb0: sp  0 +1 */ 03000003
+        /* 00001bb4: sp  1 +0 */ 5c000000
+        /* 00001bb8: sp  1 +1 */ 0900009c local_9c
+        /* 00001bbc: sp  2 -2 */ 65000000 beebbeeb native void music::method_0487_ffff(float arg_0000_0953_0)
+
+        /* 00001bc4: sp  0 +0 */ 0000005d
+        /* 00001bc8: sp  0 +1 */ 030055f0
+        /* 00001bcc: sp  1 +0 */ 5c000000
+        /* 00001bd0: sp  1 +1 */ 03000001
+        /* 00001bd4: sp  2 +0 */ 5c000000
+        /* 00001bd8: sp  2 +1 */ 090000a4 local_a4
+        /* 00001bdc: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_0a22_ffff(float arg_0000_0a23_0, float arg_0000_0547_4)
+
+        /* 00001be4: sp  0 +0 */ 0000005e
+        /* 00001be8: sp  0 +1 */ 030055f0
+        /* 00001bec: sp  1 +0 */ 5c000000
+        /* 00001bf0: sp  1 +1 */ 03000001
+        /* 00001bf4: sp  2 +0 */ 5c000000
+        /* 00001bf8: sp  2 +1 */ 090000a8 local_a8
+        /* 00001bfc: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_0a22_ffff(float arg_0000_0a23_0, float arg_0000_0547_4)
+
+        /* 00001c04: sp  0 +0 */ 0000005f
+        /* 00001c08: sp  0 +1 */ 03000001
+        /* 00001c0c: sp  1 +0 */ 5c000000
+        /* 00001c10: sp  1 +1 */ 03000001
+        /* 00001c14: sp  2 +0 */ 5c000000
+        /* 00001c18: sp  2 +1 */ 090000ac local_ac
+        /* 00001c1c: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00001c24: sp  0 +0 */ 00000060
+        /* 00001c28: sp  0 +1 */ 03000001
+        /* 00001c2c: sp  1 +0 */ 5c000000
+        /* 00001c30: sp  1 +1 */ 03000001
+        /* 00001c34: sp  2 +0 */ 5c000000
+        /* 00001c38: sp  2 +1 */ 090000b0 local_b0
+        /* 00001c3c: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00001c44: sp  0 +0 */ 00000061
+        /* 00001c48: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gamebase::method_085a_ffff()
+
+        /* 00001c50: sp  0 +0 */ 00000062
+        /* 00001c54: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d79_15() {
+        playerref&lt;%human_player%&gt; local_0 = TODO(0A);
+        playercontroller local_8 = TODO(0B);
+        %human_player% local_c = TODO(0B);
+        controller local_10 = TODO(0B);
+
+        /* 00001d84: sp  0 +0 */ 00000063
+        /* 00001d88: sp  0 +1 */ 09000008 local_8
+        /* 00001d8c: sp  1 +1 */ 09000010 local_10
+        /* 00001d90: sp  2 +1 */ 0900000c local_c
+        /* 00001d94: sp  3 +1 */ 09000000 local_0
+        /* 00001d98: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001da0: sp  2 +1 */ 0a00000c local_c
+        /* 00001da4: sp  3 +0 */ 7e000000 00000552
+        /* 00001dac: sp  3 -2 */ 69000000 beebbeeb controller actor::getController05a5()
+        /* 00001db4: sp  1 +1 */ 0a000010 local_10
+        /* 00001db8: sp  2 +0 */ 7e000000 000004f4
+        /* 00001dc0: sp  2 -2 */ 30000000
+
+        /* 00001dc4: sp  0 +0 */ 00000064
+        /* 00001dc8: sp  0 +1 */ 0a000008 local_8
+        /* 00001dcc: sp  1 -1 */ 69000000 beebbeeb void controller::method_07e1_ffff()
+
+        /* 00001dd4: sp  0 +0 */ 00000065
+        /* 00001dd8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d7a_16() {
+        instanceref&lt;instance&gt; local_0 = TODO(0A);
+        unitref&lt;Unknown002E&gt; local_8 = TODO(0A);
+        globalsref&lt;Unknown05CF&gt; local_14 = TODO(0A);
+        Unknown05CF local_18 = TODO(0B);
+
+        /* 00001ec4: sp  0 +0 */ 00000066
+        /* 00001ec8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05D6::method_0d73_19()
+
+        /* 00001ed0: sp  0 +0 */ 00000067
+        /* 00001ed4: sp  0 +1 */ 09000008 local_8
+        /* 00001ed8: sp  1 +1 */ 09000000 local_0
+        /* 00001edc: sp  2 +1 */ 09000018 local_18
+        /* 00001ee0: sp  3 +1 */ 09000014 local_14
+        /* 00001ee4: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 00001eec: sp  2 +1 */ 0a000018 local_18
+        /* 00001ef0: sp  3 +0 */ 7e000000 000005cf
+        /* 00001ef8: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4f_16(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00001f00: sp  0 +0 */ 00000068
+        /* 00001f04: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d7b_17() {
+        globalsref&lt;Unknown05CF&gt; local_0 = TODO(0A);
+        unitref&lt;Unknown0011&gt; local_4 = TODO(0A);
+        instanceref&lt;Unknown0012&gt; local_10 = TODO(0A);
+        Unknown05CF local_18 = TODO(0B);
+
+        /* 00001ff4: sp  0 +0 */ 00000069
+        /* 00001ff8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05D6::method_0d73_19()
+
+        /* 00002000: sp  0 +0 */ 0000006a
+        /* 00002004: sp  0 +1 */ 09000004 local_4
+        /* 00002008: sp  1 +1 */ 09000010 local_10
+        /* 0000200c: sp  2 +1 */ 09000018 local_18
+        /* 00002010: sp  3 +1 */ 09000000 local_0
+        /* 00002014: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 0000201c: sp  2 +1 */ 0a000018 local_18
+        /* 00002020: sp  3 +0 */ 7e000000 000005cf
+        /* 00002028: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4f_16(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00002030: sp  0 +0 */ 0000006b
+        /* 00002034: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0306_18() {
+        globalsref&lt;Unknown05CF&gt; local_0 = TODO(0A);
+        unitref&lt;Unknown003B&gt; local_4 = TODO(0A);
+        instanceref&lt;instance&gt; local_10 = TODO(0A);
+        Unknown05CF local_18 = TODO(0B);
+
+        /* 00002124: sp  0 +0 */ 0000006c
+        /* 00002128: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05D6::method_0d73_19()
+
+        /* 00002130: sp  0 +0 */ 0000006d
+        /* 00002134: sp  0 +1 */ 09000004 local_4
+        /* 00002138: sp  1 +1 */ 09000010 local_10
+        /* 0000213c: sp  2 +1 */ 09000018 local_18
+        /* 00002140: sp  3 +1 */ 09000000 local_0
+        /* 00002144: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 0000214c: sp  2 +1 */ 0a000018 local_18
+        /* 00002150: sp  3 +0 */ 7e000000 000005cf
+        /* 00002158: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4f_16(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00002160: sp  0 +0 */ 0000006e
+        /* 00002164: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d7c_19() {
+        mission local_0 = TODO(0A);
+        smartscript local_8 = TODO(0A);
+        smartscript local_1c = TODO(0A);
+        bool temp_30 = False;
+
+        /* 00002224: sp  0 +0 */ 0000006f
+        /* 00002228: sp  0 +1 */ 09000030 temp_30
+        /* 0000222c: sp  1 +1 */ 09000000 local_0
+        /* 00002230: sp  2 -2 */ 65000000 beebbeeb native bool mission::method_0946_ffff()
+        /* 00002238: sp  0 +1 */ 06000030 temp_30
+        /* 0000223c: sp  1 -1 */ 64000006
+
+        /* 00002240: sp  0 +0 */ 00000070
+        /* 00002244: sp  0 +1 */ 04000001
+        /* 00002248: sp  1 +1 */ 09000008 local_8
+        /* 0000224c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+        /* 00002254: sp  0 +0 */ 63000005 00000071
+        /* 0000225c: sp  0 +1 */ 04000001
+        /* 00002260: sp  1 +1 */ 0900001c local_1c
+        /* 00002264: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000226c: sp  0 +0 */ 00000072
+        ---
+
+        /* 00002258: sp  0 +0 */ 00000071
+        /* 0000225c: sp  0 +1 */ 04000001
+        /* 00002260: sp  1 +1 */ 0900001c local_1c
+        /* 00002264: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000226c: sp  0 +0 */ 00000072
+        ---
+        /* 00002270: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d7d_1a() {
+        instanceref&lt;Unknown0065&gt; local_0 = TODO(0A);
+        instanceref&lt;Unknown0066&gt; local_8 = TODO(0A);
+        Unknown0065 local_10 = TODO(0B);
+        Unknown0066 local_14 = TODO(0B);
+
+        /* 00002344: sp  0 +0 */ 00000073
+        /* 00002348: sp  0 +1 */ 09000010 local_10
+        /* 0000234c: sp  1 +1 */ 09000000 local_0
+        /* 00002350: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002358: sp  0 +1 */ 0a000010 local_10
+        /* 0000235c: sp  1 +0 */ 7e000000 00000065
+        /* 00002364: sp  1 -1 */ 69000000 beebbeeb void projectile::method_0994_ffff()
+
+        /* 0000236c: sp  0 +0 */ 00000074
+        /* 00002370: sp  0 +1 */ 09000014 local_14
+        /* 00002374: sp  1 +1 */ 09000008 local_8
+        /* 00002378: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002380: sp  0 +1 */ 0a000014 local_14
+        /* 00002384: sp  1 +0 */ 7e000000 00000066
+        /* 0000238c: sp  1 -1 */ 69000000 beebbeeb void projectile::method_0994_ffff()
+
+        /* 00002394: sp  0 +0 */ 00000075
+        /* 00002398: sp  0 +1 */ 05000000 beebbeeb &#x27;Force Mine Detection&#x27;
+        /* 000023a0: sp  1 +1 */ 03000003
+        /* 000023a4: sp  2 +0 */ 5c000000
+        /* 000023a8: sp  2 +1 */ 04000001
+        /* 000023ac: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000023b4: sp  0 +0 */ 00000076
+        /* 000023b8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d7e_1b() {
+        instanceref&lt;Unknown0067&gt; local_0 = TODO(0A);
+        Unknown0067 local_8 = TODO(0B);
+        aifaction local_c = TODO(0A);
+
+        /* 00002464: sp  0 +0 */ 00000077
+        /* 00002468: sp  0 +1 */ 0900000c local_c
+        /* 0000246c: sp  1 +1 */ 09000008 local_8
+        /* 00002470: sp  2 +1 */ 09000000 local_0
+        /* 00002474: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000247c: sp  1 +1 */ 0a000008 local_8
+        /* 00002480: sp  2 +0 */ 7e000000 00000067
+        /* 00002488: sp  2 -2 */ 6a000000 beebbeeb virtual void actornpc::switchToFaction(aifaction arg_067d_067e_0)
+
+        /* 00002490: sp  0 +0 */ 00000078
+        /* 00002494: sp  0 +1 */ 05000000 beebbeeb &#x27;Zeke Faction Switch&#x27;
+        /* 0000249c: sp  1 +1 */ 03000003
+        /* 000024a0: sp  2 +0 */ 5c000000
+        /* 000024a4: sp  2 +1 */ 04000001
+        /* 000024a8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000024b0: sp  0 +0 */ 00000079
+        /* 000024b4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0328_1c() {
+        instanceref&lt;Unknown0038&gt; local_0 = TODO(0A);
+        aimanager local_8 = TODO(0A);
+        Unknown0038 local_c = TODO(0B);
+
+        /* 00002554: sp  0 +0 */ 0000007a
+        /* 00002558: sp  0 +1 */ 0900000c local_c
+        /* 0000255c: sp  1 +1 */ 09000000 local_0
+        /* 00002560: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002568: sp  0 +1 */ 0a00000c local_c
+        /* 0000256c: sp  1 +0 */ 7e000000 00000038
+        /* 00002574: sp  1 +1 */ 09000008 local_8
+        /* 00002578: sp  2 -2 */ 65000000 beebbeeb native void aimanager::method_076e_ffff(instance arg_0022_076a_0)
+
+        /* 00002580: sp  0 +0 */ 0000007b
+        /* 00002584: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02fd_1d() {
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_0 = TODO(0A);
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_8 = TODO(0A);
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_10 = TODO(0A);
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_18 = TODO(0A);
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_20 = TODO(0A);
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_28 = TODO(0A);
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_30 = TODO(0A);
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_38 = TODO(0A);
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_40 = TODO(0A);
+        instanceref&lt;%destroyphysicsobjectsvolume%&gt; local_48 = TODO(0A);
+        %destroyphysicsobjectsvolume% local_50 = TODO(0B);
+        %destroyphysicsobjectsvolume% local_54 = TODO(0B);
+        %destroyphysicsobjectsvolume% local_58 = TODO(0B);
+        %destroyphysicsobjectsvolume% local_5c = TODO(0B);
+        %destroyphysicsobjectsvolume% local_60 = TODO(0B);
+        %destroyphysicsobjectsvolume% local_64 = TODO(0B);
+        %destroyphysicsobjectsvolume% local_68 = TODO(0B);
+        %destroyphysicsobjectsvolume% local_6c = TODO(0B);
+        %destroyphysicsobjectsvolume% local_70 = TODO(0B);
+        %destroyphysicsobjectsvolume% local_74 = TODO(0B);
+
+        /* 00002914: sp  0 +0 */ 0000007c
+        /* 00002918: sp  0 +1 */ 09000050 local_50
+        /* 0000291c: sp  1 +1 */ 09000000 local_0
+        /* 00002920: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002928: sp  0 +1 */ 0a000050 local_50
+        /* 0000292c: sp  1 +0 */ 7e000000 00000573
+        /* 00002934: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 0000293c: sp  0 +0 */ 0000007d
+        /* 00002940: sp  0 +1 */ 09000054 local_54
+        /* 00002944: sp  1 +1 */ 09000008 local_8
+        /* 00002948: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002950: sp  0 +1 */ 0a000054 local_54
+        /* 00002954: sp  1 +0 */ 7e000000 00000573
+        /* 0000295c: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 00002964: sp  0 +0 */ 0000007e
+        /* 00002968: sp  0 +1 */ 09000058 local_58
+        /* 0000296c: sp  1 +1 */ 09000010 local_10
+        /* 00002970: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002978: sp  0 +1 */ 0a000058 local_58
+        /* 0000297c: sp  1 +0 */ 7e000000 00000573
+        /* 00002984: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 0000298c: sp  0 +0 */ 0000007f
+        /* 00002990: sp  0 +1 */ 0900005c local_5c
+        /* 00002994: sp  1 +1 */ 09000018 local_18
+        /* 00002998: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000029a0: sp  0 +1 */ 0a00005c local_5c
+        /* 000029a4: sp  1 +0 */ 7e000000 00000573
+        /* 000029ac: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 000029b4: sp  0 +0 */ 00000080
+        /* 000029b8: sp  0 +1 */ 09000060 local_60
+        /* 000029bc: sp  1 +1 */ 09000020 local_20
+        /* 000029c0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000029c8: sp  0 +1 */ 0a000060 local_60
+        /* 000029cc: sp  1 +0 */ 7e000000 00000573
+        /* 000029d4: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 000029dc: sp  0 +0 */ 00000081
+        /* 000029e0: sp  0 +1 */ 09000064 local_64
+        /* 000029e4: sp  1 +1 */ 09000028 local_28
+        /* 000029e8: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000029f0: sp  0 +1 */ 0a000064 local_64
+        /* 000029f4: sp  1 +0 */ 7e000000 00000573
+        /* 000029fc: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 00002a04: sp  0 +0 */ 00000082
+        /* 00002a08: sp  0 +1 */ 09000068 local_68
+        /* 00002a0c: sp  1 +1 */ 09000030 local_30
+        /* 00002a10: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002a18: sp  0 +1 */ 0a000068 local_68
+        /* 00002a1c: sp  1 +0 */ 7e000000 00000573
+        /* 00002a24: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 00002a2c: sp  0 +0 */ 00000083
+        /* 00002a30: sp  0 +1 */ 0900006c local_6c
+        /* 00002a34: sp  1 +1 */ 09000038 local_38
+        /* 00002a38: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002a40: sp  0 +1 */ 0a00006c local_6c
+        /* 00002a44: sp  1 +0 */ 7e000000 00000573
+        /* 00002a4c: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 00002a54: sp  0 +0 */ 00000084
+        /* 00002a58: sp  0 +1 */ 09000070 local_70
+        /* 00002a5c: sp  1 +1 */ 09000040 local_40
+        /* 00002a60: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002a68: sp  0 +1 */ 0a000070 local_70
+        /* 00002a6c: sp  1 +0 */ 7e000000 00000573
+        /* 00002a74: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 00002a7c: sp  0 +0 */ 00000085
+        /* 00002a80: sp  0 +1 */ 09000074 local_74
+        /* 00002a84: sp  1 +1 */ 09000048 local_48
+        /* 00002a88: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002a90: sp  0 +1 */ 0a000074 local_74
+        /* 00002a94: sp  1 +0 */ 7e000000 00000573
+        /* 00002a9c: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 00002aa4: sp  0 +0 */ 00000086
+        /* 00002aa8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02fe_1e() {
+        aimanager local_0 = TODO(0A);
+
+        /* 00002c24: sp  0 +0 */ 00000087
+        /* 00002c28: sp  0 +1 */ 09000000 local_0
+        /* 00002c2c: sp  1 -1 */ 65000000 beebbeeb native void aimanager::method_0777_ffff()
+
+        /* 00002c34: sp  0 +0 */ 00000088
+        /* 00002c38: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02ff_1f() {
+        instanceref&lt;Unknown004C&gt; local_0 = TODO(0A);
+        instanceref&lt;Unknown004D&gt; local_8 = TODO(0A);
+        instanceref&lt;Unknown004E&gt; local_10 = TODO(0A);
+        instanceref&lt;Unknown004F&gt; local_18 = TODO(0A);
+        instanceref&lt;Unknown0050&gt; local_20 = TODO(0A);
+        instanceref&lt;Unknown0051&gt; local_28 = TODO(0A);
+        instanceref&lt;Unknown0052&gt; local_30 = TODO(0A);
+
+        /* 00002e24: sp  0 +0 */ 00000089
+        /* 00002e28: sp  0 +1 */ 09000000 local_0
+        /* 00002e2c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00002e34: sp  0 +0 */ 0000008a
+        /* 00002e38: sp  0 +1 */ 09000028 local_28
+        /* 00002e3c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00002e44: sp  0 +0 */ 0000008b
+        /* 00002e48: sp  0 +1 */ 09000020 local_20
+        /* 00002e4c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00002e54: sp  0 +0 */ 0000008c
+        /* 00002e58: sp  0 +1 */ 09000030 local_30
+        /* 00002e5c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00002e64: sp  0 +0 */ 0000008d
+        /* 00002e68: sp  0 +1 */ 09000008 local_8
+        /* 00002e6c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00002e74: sp  0 +0 */ 0000008e
+        /* 00002e78: sp  0 +1 */ 09000010 local_10
+        /* 00002e7c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00002e84: sp  0 +0 */ 0000008f
+        /* 00002e88: sp  0 +1 */ 09000018 local_18
+        /* 00002e8c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00002e94: sp  0 +0 */ 00000090
+        /* 00002e98: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0300_20() {
+        instanceref&lt;%mtl_picinternet_soldier_belltower_h%&gt; local_0 = TODO(0A);
+        instanceref&lt;%mtl_picinternet_soldier_belltower_h%&gt; local_8 = TODO(0A);
+        instanceref&lt;Unknown0047&gt; local_10 = TODO(0A);
+        instanceref&lt;%mtl_picinternet_soldier_belltower_a%&gt; local_18 = TODO(0A);
+        instanceref&lt;Unknown0048&gt; local_20 = TODO(0A);
+        instanceref&lt;%mtl_picfunicular_soldier_belltower_i%&gt; local_28 = TODO(0A);
+        instanceref&lt;Unknown0049&gt; local_30 = TODO(0A);
+        instanceref&lt;Unknown004A&gt; local_38 = TODO(0A);
+        instanceref&lt;Unknown004B&gt; local_40 = TODO(0A);
+        instanceref&lt;%mtl_picinternet_soldier_belltower_d%&gt; local_48 = TODO(0A);
+        instanceref&lt;%mtl_picinternet_soldier_belltower_j%&gt; local_50 = TODO(0A);
+
+        /* 00003194: sp  0 +0 */ 00000091
+        /* 00003198: sp  0 +1 */ 09000020 local_20
+        /* 0000319c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000031a4: sp  0 +0 */ 00000092
+        /* 000031a8: sp  0 +1 */ 09000038 local_38
+        /* 000031ac: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000031b4: sp  0 +0 */ 00000093
+        /* 000031b8: sp  0 +1 */ 09000000 local_0
+        /* 000031bc: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000031c4: sp  0 +0 */ 00000094
+        /* 000031c8: sp  0 +1 */ 09000030 local_30
+        /* 000031cc: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000031d4: sp  0 +0 */ 00000095
+        /* 000031d8: sp  0 +1 */ 09000008 local_8
+        /* 000031dc: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000031e4: sp  0 +0 */ 00000096
+        /* 000031e8: sp  0 +1 */ 09000010 local_10
+        /* 000031ec: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000031f4: sp  0 +0 */ 00000097
+        /* 000031f8: sp  0 +1 */ 09000018 local_18
+        /* 000031fc: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00003204: sp  0 +0 */ 00000098
+        /* 00003208: sp  0 +1 */ 09000028 local_28
+        /* 0000320c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00003214: sp  0 +0 */ 00000099
+        /* 00003218: sp  0 +1 */ 09000040 local_40
+        /* 0000321c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00003224: sp  0 +0 */ 0000009a
+        /* 00003228: sp  0 +1 */ 09000048 local_48
+        /* 0000322c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00003234: sp  0 +0 */ 0000009b
+        /* 00003238: sp  0 +1 */ 09000050 local_50
+        /* 0000323c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00003244: sp  0 +0 */ 0000009c
+        /* 00003248: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0319_21() {
+
+        /* 00003254: sp  0 +0 */ 0000009d
+        /* 00003258: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gamebase::method_085b_ffff()
+
+        /* 00003260: sp  0 +0 */ 0000009e
+        /* 00003264: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d7f_22() {
+
+        /* 00003274: sp  0 +0 */ 0000009f
+        /* 00003278: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 0000327c: sp  1 -1 */ 65000000 beebbeeb native void trophy::method_01a7_ffff()
+
+        /* 00003284: sp  0 +0 */ 000000a0
+        /* 00003288: sp  0 +1 */ 05000000 beebbeeb &#x27;end of game&#x27;
+        /* 00003290: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 00003298: sp  0 +0 */ 000000a1
+        /* 0000329c: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gamebase::method_0870_ffff()
+
+        /* 000032a4: sp  0 +0 */ 000000a2
+        /* 000032a8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d80_23() {
+
+        /* 000032c4: sp  0 +0 */ 000000a3
+        /* 000032c8: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 000032cc: sp  1 -1 */ 65000000 beebbeeb native void trophy::awardTrophyProbably()
+
+        /* 000032d4: sp  0 +0 */ 000000a4
+        /* 000032d8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d81_24() {
+        objective local_0 = TODO(0A);
+        objective local_8 = TODO(0A);
+        bool temp_10 = False;
+
+        /* 00003344: sp  0 +0 */ 000000a5
+        /* 00003348: sp  0 +1 */ 09000000 local_0
+        /* 0000334c: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00003354: sp  0 +0 */ 000000a6
+        /* 00003358: sp  0 +1 */ 09000010 temp_10
+        /* 0000335c: sp  1 +1 */ 09000008 local_8
+        /* 00003360: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00003368: sp  0 +1 */ 06000010 temp_10
+        /* 0000336c: sp  1 -1 */ 64000004
+
+        /* 00003370: sp  0 +0 */ 000000a7
+        /* 00003374: sp  0 +1 */ 09000008 local_8
+        /* 00003378: sp  1 -1 */ 65000000 beebbeeb native void objective::method_0958_ffff()
+        ---
+
+        /* 00003380: sp  0 +0 */ 000000a8
+        /* 00003384: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_617d_25() {
+        music local_0 = TODO(0A);
+        music local_8 = TODO(0A);
+
+        /* 000033e4: sp  0 +0 */ 000000a9
+        /* 000033e8: sp  0 +1 */ 03000002
+        /* 000033ec: sp  1 +0 */ 5c000000
+        /* 000033f0: sp  1 +1 */ 09000000 local_0
+        /* 000033f4: sp  2 -2 */ 65000000 beebbeeb native void music::method_0487_ffff(float arg_0000_0953_0)
+
+        /* 000033fc: sp  0 +0 */ 000000aa
+        /* 00003400: sp  0 +1 */ 03000002
+        /* 00003404: sp  1 +0 */ 5c000000
+        /* 00003408: sp  1 +1 */ 09000008 local_8
+        /* 0000340c: sp  2 -2 */ 65000000 beebbeeb native void music::method_0487_ffff(float arg_0000_0953_0)
+
+        /* 00003414: sp  0 +0 */ 000000ab
+        /* 00003418: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004d2.html">gamebase</a><br/>
+</body>
+</html>

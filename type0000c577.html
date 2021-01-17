@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000c577</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownC577</h1>
+		<pre>./tools/drmexplore pc-w/ pic_helipad.drm n$[0x36]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownC577 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000027.html">Unknown0027</a>&gt; decl_0012_00fc_40 = {<a href="units.html#0000009d">unit object 0000009d</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0000c629.html">UnknownC629</a>&gt; decl_0007_3251_48 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00000053.html">Unknown0053</a>&gt; decl_0007_0137_4c = TODO(0A);
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownC577 : %triggervolume% {
+    // sizeof = 0x50
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_00fc_40 = TODO(0A);
+    scenarioref&lt;UnknownC629&gt; decl_0007_3251_48 = TODO(0A);
+    scenarioref&lt;Unknown0053&gt; decl_0007_0137_4c = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        UnknownC629 local_8 = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000008 local_8
+        /* 000000cc: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000000d8: sp  0 +1 */ 0a000008 local_8
+        /* 000000dc: sp  1 +0 */ 7e000000 0000c629
+        /* 000000e4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000000ec: sp  0 +0 */ 00000001
+        /* 000000f0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

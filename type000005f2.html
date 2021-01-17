@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005f2</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05F2</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x72f]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05F2 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000036.html">Unknown0036</a>&gt; decl_0012_0e93_4 = {<a href="units.html#00000440">unit object 00000440</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000056c.html">%sha2_conscrashsite_corpse_faridah%</a>&gt; decl_0012_0e95_c = {<a href="units.html#00000441">unit object 00000441</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000554.html">%sce_16_csb_2_shifter_belltower_a%</a>&gt; decl_0012_0e97_14 = {<a href="units.html#00000442">unit object 00000442</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000553.html">%sce_16_csb_2_heavyguard_narharikhan%</a>&gt; decl_0012_0e99_1c = {<a href="units.html#00000443">unit object 00000443</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_0e9a_24 = persistent(dtp:0462) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000594.html">%so_lower_constsite_tempchoppercolision%</a>&gt; decl_0012_0e9c_38 = {<a href="units.html#00000444">unit object 00000444</a>};
+    void method_031f_0();
+    void method_0320_1();
+    void method_0326_2();
+    void method_0327_3();
+    void method_0321_4();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05F2 : quest {
+    // sizeof = 0x40
+    instanceref decl_0012_0e93_4 = TODO(0A);
+    instanceref decl_0012_0e95_c = TODO(0A);
+    instanceref decl_0012_0e97_14 = TODO(0A);
+    instanceref decl_0012_0e99_1c = TODO(0A);
+    smartscript decl_0089_0e9a_24 = TODO(0A);
+    instanceref decl_0012_0e9c_38 = TODO(0A);
+    void method_031f_0() {
+        Unknown0036 local_0 = TODO(0B);
+
+        /* 00000134: sp  0 +0 */ 00000000
+        /* 00000138: sp  0 +1 */ 04000001
+        /* 0000013c: sp  1 +1 */ 09000000 local_0
+        /* 00000140: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000144: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000014c: sp  1 +1 */ 0a000000 local_0
+        /* 00000150: sp  2 +0 */ 7e000000 00000036
+        /* 00000158: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000160: sp  0 +0 */ 00000001
+        /* 00000164: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0320_1() {
+        Unknown0036 local_0 = TODO(0B);
+        %so_lower_constsite_tempchoppercolision% local_4 = TODO(0B);
+
+        /* 000001a4: sp  0 +0 */ 00000002
+        /* 000001a8: sp  0 +1 */ 04000000
+        /* 000001ac: sp  1 +1 */ 09000000 local_0
+        /* 000001b0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000001b4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001bc: sp  1 +1 */ 0a000000 local_0
+        /* 000001c0: sp  2 +0 */ 7e000000 00000036
+        /* 000001c8: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000001d0: sp  0 +0 */ 00000003
+        /* 000001d4: sp  0 +1 */ 09000004 local_4
+        /* 000001d8: sp  1 +1 */ 0f000038 unnamed member 38
+        /* 000001dc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001e4: sp  0 +1 */ 0a000004 local_4
+        /* 000001e8: sp  1 +0 */ 7e000000 00000594
+        /* 000001f0: sp  1 -1 */ 69000000 beebbeeb void instance::method_07c2_ffff()
+
+        /* 000001f8: sp  0 +0 */ 00000004
+        /* 000001fc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0326_2() {
+
+        /* 00000204: sp  0 +0 */ 00000005
+        /* 00000208: sp  0 +1 */ 0f00000c unnamed member c
+        /* 0000020c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000214: sp  0 +0 */ 00000006
+        /* 00000218: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0327_3() {
+        bool temp_0 = False;
+
+        /* 00000244: sp  0 +0 */ 00000007
+        /* 00000248: sp  0 +1 */ 09000000 temp_0
+        /* 0000024c: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 00000250: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000258: sp  0 +1 */ 06000000 temp_0
+        /* 0000025c: sp  1 +1 */ 04000000
+        /* 00000260: sp  2 -1 */ 46000000
+        /* 00000264: sp  1 -1 */ 64000005
+
+        /* 00000268: sp  0 +0 */ 00000008
+        /* 0000026c: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 00000270: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+        /* 00000278: sp  0 +0 */ 63000004 00000009
+        /* 00000280: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 00000284: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 0000028c: sp  0 +0 */ 0000000a
+        ---
+
+        /* 0000027c: sp  0 +0 */ 00000009
+        /* 00000280: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 00000284: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 0000028c: sp  0 +0 */ 0000000a
+        ---
+        /* 00000290: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0321_4() {
+
+        /* 000002a4: sp  0 +0 */ 0000000b
+        /* 000002a8: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gamebase::method_085a_ffff()
+
+        /* 000002b0: sp  0 +0 */ 0000000c
+        /* 000002b4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

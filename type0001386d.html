@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0001386d</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1386D</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_port_2a.drm n$[0x4c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1386D : <a href="type00001c9a.html">pickupbase</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000119ea.html">Unknown119EA</a>&gt; decl_0012_514a_4 = {<a href="units.html#0000bed6">unit object 0000bed6</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000031.html">Unknown0031</a>&gt; decl_0012_01b2_c = {<a href="units.html#000000c4">unit object 000000c4</a>};
+    void method_0813_0(gcref <a href="type000004a8.html">actor</a>, dword);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1386D : pickupbase {
+    // sizeof = 0x14
+    instanceref decl_0012_514a_4 = TODO(0A);
+    instanceref decl_0012_01b2_c = TODO(0A);
+    async void method_0813_0(actor arg_05dc_0f79_0, dword arg_0000_05fd_4) {
+        Unknown119EA local_8 = TODO(0B);
+        Unknown0031 local_c = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000008 local_8
+        /* 000000cc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000d8: sp  0 +1 */ 0a000008 local_8
+        /* 000000dc: sp  1 +0 */ 7e000000 000119ea
+        /* 000000e4: sp  1 -1 */ 69000000 beebbeeb void Unknown11A42::method_1803_ffff()
+
+        /* 000000ec: sp  0 +0 */ 00000001
+        /* 000000f0: sp  0 +1 */ 05000000 beebbeeb &#x27;enabling bomb interaction&#x27;
+        /* 000000f8: sp  1 +1 */ 03000005
+        /* 000000fc: sp  2 +0 */ 5c000000
+        /* 00000100: sp  2 +1 */ 04000001
+        /* 00000104: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000010c: sp  0 +0 */ 00000002
+        /* 00000110: sp  0 +1 */ 03ffffff
+        /* 00000114: sp  1 +1 */ 0900000c local_c
+        /* 00000118: sp  2 +1 */ 0f00000c unnamed member c
+        /* 0000011c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000124: sp  1 +1 */ 0a00000c local_c
+        /* 00000128: sp  2 +0 */ 7e000000 00000031
+        /* 00000130: sp  2 +0 */ 14000094
+        /* 00000134: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 0000013c: sp  0 +0 */ 00000003
+        /* 00000140: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00001c9a.html">pickupbase</a><br/>
+</body>
+</html>

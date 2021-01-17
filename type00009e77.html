@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009e77</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%dlc_gas_injection_a%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6e0]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %dlc_gas_injection_a% : <a href="type00006f68.html">%gas_bomb_a%</a> {
+    <a href="type00000518.html">stickyfloat</a> field_4;
+    <a href="type00000519.html">stickyint</a> field_20;
+    <a href="type00000517.html">stickybool</a> field_3c;
+    <a href="type0000049f.html">clock</a> field_58;
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_2641_70 = {<a href="type000004c8.html">type 000004c8</a>, 0};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_29bd_80 = {<a href="type000004c8.html">type 000004c8</a>, a};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_149d_90 = {<a href="type000004c8.html">type 000004c8</a>, 7};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0090_a0 = {<a href="type000004c8.html">type 000004c8</a>, 2};
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_29be_1();
+    void method_2887_2();
+    // referenced at <a href="type00009cde.html">void Unknown9CDE::method_2887_1()</a>
+    // referenced at <a href="type00009e77.html">async void %dlc_gas_injection_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_2886_3();
+    // referenced at <a href="type00009cde.html">void Unknown9CDE::method_2886_0()</a>
+    // referenced at <a href="type00009e77.html">async void %dlc_gas_injection_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_29bf_4();
+    // referenced at <a href="type00009e77.html">async void %dlc_gas_injection_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %dlc_gas_injection_a% : %gas_bomb_a% {
+    // sizeof = 0xa8
+    stickyfloat field_4;
+    stickyint field_20;
+    stickybool field_3c;
+    clock field_58;
+    uberobjectevent decl_0a66_2641_70 = TODO(0A);
+    uberobjectevent decl_0a66_29bd_80 = TODO(0A);
+    uberobjectevent decl_0a66_149d_90 = TODO(0A);
+    uberobjectcommand decl_01a8_0090_a0 = TODO(0A);
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        bool temp_11 = False;
+        bool temp_12 = False;
+        uberobjectevent local_14 = TODO(0A);
+
+        /* 00000164: sp  0 +0 */ 00000000
+        /* 00000168: sp  0 +1 */ 09000000 arg_0a66_0a67_0
+        /* 0000016c: sp  1 -1 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void %gas_bomb_a%::method_0a65_38(uberobjectevent arg_0a66_0a67_0)
+
+        /* 00000178: sp  0 +0 */ 00000001
+        /* 0000017c: sp  0 +1 */ 09000010 temp_10
+        /* 00000180: sp  1 +1 */ 0f000090 unnamed member 90
+        /* 00000184: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000188: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000190: sp  0 +1 */ 06000010 temp_10
+        /* 00000194: sp  1 -1 */ 64000003
+
+        /* 00000198: sp  0 +0 */ 00000002
+        /* 0000019c: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %dlc_gas_injection_a%::method_2886_49()
+        ---
+
+        /* 000001a4: sp  0 +0 */ 00000003
+        /* 000001a8: sp  0 +1 */ 09000011 temp_11
+        /* 000001ac: sp  1 +1 */ 0f000080 unnamed member 80
+        /* 000001b0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000001b4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001bc: sp  0 +1 */ 06000011 temp_11
+        /* 000001c0: sp  1 -1 */ 64000003
+
+        /* 000001c4: sp  0 +0 */ 00000004
+        /* 000001c8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %dlc_gas_injection_a%::method_2887_48()
+        ---
+
+        /* 000001d0: sp  0 +0 */ 00000005
+        /* 000001d4: sp  0 +1 */ 09000012 temp_12
+        /* 000001d8: sp  1 +1 */ 09000014 local_14
+        /* 000001dc: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000001e0: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001e8: sp  0 +1 */ 06000012 temp_12
+        /* 000001ec: sp  1 -1 */ 64000003
+
+        /* 000001f0: sp  0 +0 */ 00000006
+        /* 000001f4: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %dlc_gas_injection_a%::method_29bf_4a()
+        ---
+
+        /* 000001fc: sp  0 +0 */ 00000007
+        /* 00000200: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29be_1() {
+
+        /* 00000214: sp  0 +0 */ 00000008
+        /* 00000218: sp  0 +1 */ 0f0000a0 unnamed member a0
+        /* 0000021c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000224: sp  0 +0 */ 00000009
+        /* 00000228: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2887_2() {
+        /* 00000234: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2886_3() {
+        /* 00000244: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29bf_4() {
+        /* 00000254: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00009cde.html">Unknown9CDE</a><br/>
+parent class <a href="type00006f68.html">%gas_bomb_a%</a><br/>
+</body>
+</html>

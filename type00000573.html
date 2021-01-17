@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000573</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%destroyphysicsobjectsvolume%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6c2]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %destroyphysicsobjectsvolume% : <a href="type000004f1.html">physicsobjectkillvolume</a> {
+    void run();
+    void method_0b44_1();
+    // referenced at <a href="type00000035.html">void Unknown0035::method_01a2_0()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_02fd_1d()</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %destroyphysicsobjectsvolume% : physicsobjectkillvolume {
+    // sizeof = 0x1
+    async void run() {
+        /* 000000a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0b44_1() {
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +0 */ 66000000 beebbeeb this-&gt;void volume::method_0a94_ffff()
+
+        /* 000000c0: sp  0 +0 */ 00000001
+        /* 000000c4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00000033.html">Unknown0033</a><br/>
+initialized field in <a href="type0000002c.html">Unknown002C</a><br/>
+initialized field in <a href="type000091c3.html">Unknown91C3</a><br/>
+initialized field in <a href="type000091c5.html">Unknown91C5</a><br/>
+initialized field in <a href="type000091c7.html">Unknown91C7</a><br/>
+initialized field in <a href="type00011f4c.html">Unknown11F4C</a><br/>
+initialized field in <a href="type00012658.html">Unknown12658</a><br/>
+initialized field in <a href="type00014684.html">Unknown14684</a><br/>
+parent class <a href="type000004f1.html">physicsobjectkillvolume</a><br/>
+unit object #146 null<br/>
+unit object #280 null<br/>
+unit object #281 null<br/>
+unit object #282 null<br/>
+unit object #283 null<br/>
+unit object #284 null<br/>
+unit object #285 null<br/>
+unit object #286 null<br/>
+unit object #287 null<br/>
+unit object #288 null<br/>
+unit object #289 null<br/>
+unit object #601 null<br/>
+unit object #66 null<br/>
+unit object #76 null<br/>
+unit object #97 null<br/>
+</body>
+</html>

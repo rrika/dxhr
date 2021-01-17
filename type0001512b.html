@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0001512b</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1512B</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega_restriced_area.drm n$[0x31]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1512B : <a href="type00002e96.html">%button%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d99.html">Unknown11D99</a>&gt; decl_0012_52d0_4 = {<a href="units.html#0000bf9c">unit object 0000bf9c</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000151af.html">%ranch_hangar_shuttle_openableroof%</a>&gt; decl_0012_5ec3_c = {<a href="units.html#000111e6">unit object 000111e6</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000593.html">%elevator_button_a%</a>&gt; decl_0012_5343_14 = {<a href="units.html#0000bfb5">unit object 0000bfb5</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d9f.html">Unknown11D9F</a>&gt; decl_0012_5342_1c = {<a href="units.html#0000bfb4">unit object 0000bfb4</a>};
+    void method_0bf3_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1512B : %button% {
+    // sizeof = 0x24
+    instanceref decl_0012_52d0_4 = TODO(0A);
+    instanceref decl_0012_5ec3_c = TODO(0A);
+    instanceref decl_0012_5343_14 = TODO(0A);
+    instanceref decl_0012_5342_1c = TODO(0A);
+    void method_0bf3_0() {
+        Unknown11D9F local_0 = TODO(0B);
+        Unknown11D9F local_4 = TODO(0B);
+        %elevator_button_a% local_8 = TODO(0B);
+        %ranch_hangar_shuttle_openableroof% local_c = TODO(0B);
+        Unknown11D99 local_10 = TODO(0B);
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 09000000 local_0
+        /* 0000010c: sp  1 +1 */ 0f00001c unnamed member 1c
+        /* 00000110: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000118: sp  0 +1 */ 0a000000 local_0
+        /* 0000011c: sp  1 +0 */ 7e000000 00011d9f
+        /* 00000124: sp  1 -1 */ 69000000 beebbeeb void %base_elevator%::method_1000_ffff()
+
+        /* 0000012c: sp  0 +0 */ 00000001
+        /* 00000130: sp  0 +1 */ 04000000
+        /* 00000134: sp  1 +1 */ 09000004 local_4
+        /* 00000138: sp  2 +1 */ 0f00001c unnamed member 1c
+        /* 0000013c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000144: sp  1 +1 */ 0a000004 local_4
+        /* 00000148: sp  2 +0 */ 7e000000 00011d9f
+        /* 00000150: sp  2 -2 */ 69000000 beebbeeb void %base_elevator%::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 00000158: sp  0 +0 */ 00000002
+        /* 0000015c: sp  0 +1 */ 09000008 local_8
+        /* 00000160: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 00000164: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000016c: sp  0 +1 */ 0a000008 local_8
+        /* 00000170: sp  1 +0 */ 7e000000 00000593
+        /* 00000178: sp  1 -1 */ 69000000 beebbeeb void Unknown0583::method_0b9d_ffff()
+
+        /* 00000180: sp  0 +0 */ 00000003
+        /* 00000184: sp  0 +1 */ 0900000c local_c
+        /* 00000188: sp  1 +1 */ 0f00000c unnamed member c
+        /* 0000018c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000194: sp  0 +1 */ 0a00000c local_c
+        /* 00000198: sp  1 +0 */ 7e000000 000151af
+        /* 000001a0: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown2135::method_1358_3e()
+
+        /* 000001a8: sp  0 +0 */ 00000004
+        /* 000001ac: sp  0 +1 */ 09000010 local_10
+        /* 000001b0: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001b4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001bc: sp  0 +1 */ 0a000010 local_10
+        /* 000001c0: sp  1 +0 */ 7e000000 00011d99
+        /* 000001c8: sp  1 +0 */ 14000074
+        /* 000001cc: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 000001d4: sp  0 +0 */ 00000005
+        /* 000001d8: sp  0 +1 */ 04000000
+        /* 000001dc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void Unknown0585::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 000001e4: sp  0 +0 */ 00000006
+        /* 000001e8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00002e96.html">%button%</a><br/>
+</body>
+</html>

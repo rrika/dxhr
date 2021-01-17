@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00003742</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown3742</h1>
+		<pre>./tools/drmexplore pc-w/ det_sarifhq_rail_tutorial.drm n$[0xaf7]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown3742 : <a href="type00000578.html">Unknown0578</a> {
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_1475_1();
+    // referenced at <a href="type00003742.html">async void Unknown3742::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_1476_2();
+    // referenced at <a href="type00003742.html">async void Unknown3742::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_02ca_3(bool);
+    // referenced at <a href="type00007d2d.html">void Unknown7D2D::method_2149_0()</a>
+    // referenced at <a href="type00007d2d.html">void Unknown7D2D::method_214a_1()</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown3742 : Unknown0578 {
+    // sizeof = 0x1
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        uberobjectevent local_14 = TODO(0A);
+        bool temp_24 = False;
+        uberobjectevent local_28 = TODO(0A);
+
+        /* 00000164: sp  0 +0 */ 00000000
+        /* 00000168: sp  0 +1 */ 09000010 temp_10
+        /* 0000016c: sp  1 +1 */ 09000014 local_14
+        /* 00000170: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000174: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000017c: sp  0 +1 */ 06000010 temp_10
+        /* 00000180: sp  1 -1 */ 64000008
+
+        /* 00000184: sp  0 +0 */ 00000001
+
+        /* 00000188: sp  0 +0 */ 00000002
+        /* 0000018c: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown3742::method_1475_3d()
+
+        /* 00000194: sp  0 +0 */ 00000003
+        /* 00000198: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown3742::method_1476_3e()
+
+        /* 000001a0: sp  0 +0 */ 00000004
+        ---
+
+        /* 000001a4: sp  0 +0 */ 00000005
+        /* 000001a8: sp  0 +1 */ 09000024 temp_24
+        /* 000001ac: sp  1 +1 */ 09000028 local_28
+        /* 000001b0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000001b4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001bc: sp  0 +1 */ 06000024 temp_24
+        /* 000001c0: sp  1 -1 */ 64000003
+
+        /* 000001c4: sp  0 +0 */ 00000006
+        /* 000001c8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown3742::method_1476_3e()
+        ---
+
+        /* 000001d0: sp  0 +0 */ 00000007
+        /* 000001d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1475_1() {
+        /* 000001e4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1476_2() {
+        /* 000001f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02ca_3(bool arg_0000_04d4_0) {
+        uberobjectcommand local_4 = TODO(0A);
+        uberobjectcommand local_c = TODO(0A);
+
+        /* 00000254: sp  0 +0 */ 00000008
+        /* 00000258: sp  0 +1 */ 06000000 arg_0000_04d4_0
+        /* 0000025c: sp  1 -1 */ 64000005
+
+        /* 00000260: sp  0 +0 */ 00000009
+        /* 00000264: sp  0 +1 */ 09000004 local_4
+        /* 00000268: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000270: sp  0 +0 */ 63000004 0000000a
+        /* 00000278: sp  0 +1 */ 0900000c local_c
+        /* 0000027c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000284: sp  0 +0 */ 0000000b
+        ---
+
+        /* 00000274: sp  0 +0 */ 0000000a
+        /* 00000278: sp  0 +1 */ 0900000c local_c
+        /* 0000027c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000284: sp  0 +0 */ 0000000b
+        ---
+        /* 00000288: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00005f68.html">%enewspaper_a%</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+</body>
+</html>

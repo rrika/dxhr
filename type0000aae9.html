@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000aae9</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownAAE9</h1>
+		<pre>./tools/drmexplore pc-w/ pan__masterunit.drm n$[0x179]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownAAE9 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_2cc5_4 = TODO(0A);
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_2cc6_14 = TODO(0A);
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_2c30_24 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> spokeToTaggart = persistent(dtp:AAD5) {type=bool};
+    <a href="type00000511.html">smartscript</a> spokeToSarif = persistent(dtp:AAD4) {type=bool};
+    <a href="type000004ec.html">objective</a> decl_0005_2cc9_5c = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_broadcast_choice_darrow = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_broadcast_choice_darrow_sarif = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_broadcast_choice_darrow_taggart = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_broadcast_choice_darrow_sarif_taggart = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_speak_with_sarif = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_speak_with_taggart = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0000aa8e.html">UnknownAA8E</a>&gt; refScenarioPanChaosOff = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0000aa90.html">UnknownAA90</a>&gt; refScenarioPanChaosOn = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aae2.html">%pan_hangar_neon_light_a%</a>&gt; decl_0012_2cd3_9c = {<a href="units.html#00008314">unit object 00008314</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0000aa8f.html">UnknownAA8F</a>&gt; decl_0007_2cd5_a4 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa87.html">UnknownAA87</a>&gt; decl_0012_2c51_a8 = {<a href="units.html#00008315">unit object 00008315</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa88.html">UnknownAA88</a>&gt; decl_0012_2c52_b0 = {<a href="units.html#00008316">unit object 00008316</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa89.html">UnknownAA89</a>&gt; decl_0012_2c53_b8 = {<a href="units.html#00008317">unit object 00008317</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa8a.html">UnknownAA8A</a>&gt; decl_0012_2c54_c0 = {<a href="units.html#00008318">unit object 00008318</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa85.html">UnknownAA85</a>&gt; decl_0012_2c34_c8 = {<a href="units.html#00008319">unit object 00008319</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aade.html">%ao_tym_button_box_a%</a>&gt; decl_0012_2cdc_d0 = {<a href="units.html#0000831a">unit object 0000831a</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aade.html">%ao_tym_button_box_a%</a>&gt; decl_0012_2cdd_d8 = {<a href="units.html#0000831b">unit object 0000831b</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aade.html">%ao_tym_button_box_a%</a>&gt; decl_0012_2cde_e0 = {<a href="units.html#0000831c">unit object 0000831c</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_2cdf_e8 = persistent(dtp:AACB) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2ce0_fc = persistent(dtp:AAD1) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2ce1_110 = persistent(dtp:AAD2) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2ce2_124 = persistent(dtp:AAD3) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2ce3_138 = persistent(dtp:AACD) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2ce4_14c = persistent(dtp:AACF) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aae5.html">%television_ending_eliza%</a>&gt; decl_0012_2ce6_160 = {<a href="units.html#0000831d">unit object 0000831d</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aae5.html">%television_ending_eliza%</a>&gt; decl_0012_2ce7_168 = {<a href="units.html#0000831e">unit object 0000831e</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aae5.html">%television_ending_eliza%</a>&gt; decl_0012_2ce8_170 = {<a href="units.html#0000831f">unit object 0000831f</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aae0.html">%pan_door_sliding_ending%</a>&gt; decl_0012_2cea_178 = {<a href="units.html#00008320">unit object 00008320</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aae4.html">%television_elisa%</a>&gt; decl_0012_2cec_180 = {<a href="units.html#00008321">unit object 00008321</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_2ced_188 = persistent(dtp:AACC) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2cee_19c = persistent(dtp:AACE) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2cef_1b0 = persistent(dtp:AAD0) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aae4.html">%television_elisa%</a>&gt; decl_0012_2cf0_1c4 = {<a href="units.html#00008322">unit object 00008322</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aae4.html">%television_elisa%</a>&gt; decl_0012_2cf1_1cc = {<a href="units.html#00008323">unit object 00008323</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa86.html">UnknownAA86</a>&gt; decl_0012_2c36_1d4 = {<a href="units.html#00008324">unit object 00008324</a>};
+    <a href="type00000502.html">sequencergraph</a> decl_008c_2c0d_1dc = TODO(0A);
+    bool method_2cf3_0();
+    bool method_2cf4_1();
+    void concludeGame_disableTalkToXObjectives();
+    void method_2c6a_3();
+    void method_2c68_4();
+    void method_2c62_5();
+    void method_2c8f_6();
+    void enableChaos();
+    void disableChaos();
+    void method_2cf7_9();
+    void method_2cf8_a();
+    void method_2cf9_b();
+    void method_2cfa_c();
+    void activateSwitchDarrow();
+    void activateSwitchSarif();
+    void activateSwitchTaggart();
+    void activateSwitchDestruction();
+    void openBoxAll();
+    void openBoxDarrow();
+    void openBoxSarifAndDarrow();
+    void openBoxTaggartAndDarrow();
+    void playVideoDarrow();
+    void playVideoSarif();
+    void playVideoTaggart();
+    void playVideoDestruction();
+    void method_2d07_19();
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::activateSwitchDarrow()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::activateSwitchSarif()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::activateSwitchTaggart()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::activateSwitchDestruction()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::openBoxAll()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::openBoxDarrow()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::openBoxSarifAndDarrow()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::openBoxTaggartAndDarrow()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::playVideoSarif()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::playVideoTaggart()</a>
+    // referenced at <a href="type0000aae9.html">void UnknownAAE9::playVideoDestruction()</a>
+    void method_2c63_1a();
+    void method_2c64_1b();
+    void method_2d08_1c();
+    void method_2c90_1d();
+    void method_2c91_1e();
+    void method_2c66_1f();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownAAE9 : quest {
+    // sizeof = 0x1e4
+    objectivescriptablelocator decl_0963_2cc5_4 = TODO(0A);
+    objectivescriptablelocator decl_0963_2cc6_14 = TODO(0A);
+    objectivescriptablelocator decl_0963_2c30_24 = TODO(0A);
+    smartscript spokeToTaggart = TODO(0A);
+    smartscript spokeToSarif = TODO(0A);
+    objective decl_0005_2cc9_5c = TODO(0A);
+    objective objective_broadcast_choice_darrow = TODO(0A);
+    objective objective_broadcast_choice_darrow_sarif = TODO(0A);
+    objective objective_broadcast_choice_darrow_taggart = TODO(0A);
+    objective objective_broadcast_choice_darrow_sarif_taggart = TODO(0A);
+    objective objective_speak_with_sarif = TODO(0A);
+    objective objective_speak_with_taggart = TODO(0A);
+    scenarioref&lt;UnknownAA8E&gt; refScenarioPanChaosOff = TODO(0A);
+    scenarioref&lt;UnknownAA90&gt; refScenarioPanChaosOn = TODO(0A);
+    instanceref decl_0012_2cd3_9c = TODO(0A);
+    scenarioref&lt;UnknownAA8F&gt; decl_0007_2cd5_a4 = TODO(0A);
+    instanceref decl_0012_2c51_a8 = TODO(0A);
+    instanceref decl_0012_2c52_b0 = TODO(0A);
+    instanceref decl_0012_2c53_b8 = TODO(0A);
+    instanceref decl_0012_2c54_c0 = TODO(0A);
+    instanceref decl_0012_2c34_c8 = TODO(0A);
+    instanceref decl_0012_2cdc_d0 = TODO(0A);
+    instanceref decl_0012_2cdd_d8 = TODO(0A);
+    instanceref decl_0012_2cde_e0 = TODO(0A);
+    smartscript decl_0089_2cdf_e8 = TODO(0A);
+    smartscript decl_0089_2ce0_fc = TODO(0A);
+    smartscript decl_0089_2ce1_110 = TODO(0A);
+    smartscript decl_0089_2ce2_124 = TODO(0A);
+    smartscript decl_0089_2ce3_138 = TODO(0A);
+    smartscript decl_0089_2ce4_14c = TODO(0A);
+    instanceref decl_0012_2ce6_160 = TODO(0A);
+    instanceref decl_0012_2ce7_168 = TODO(0A);
+    instanceref decl_0012_2ce8_170 = TODO(0A);
+    instanceref decl_0012_2cea_178 = TODO(0A);
+    instanceref decl_0012_2cec_180 = TODO(0A);
+    smartscript decl_0089_2ced_188 = TODO(0A);
+    smartscript decl_0089_2cee_19c = TODO(0A);
+    smartscript decl_0089_2cef_1b0 = TODO(0A);
+    instanceref decl_0012_2cf0_1c4 = TODO(0A);
+    instanceref decl_0012_2cf1_1cc = TODO(0A);
+    instanceref decl_0012_2c36_1d4 = TODO(0A);
+    sequencergraph decl_008c_2c0d_1dc = TODO(0A);
+    bool method_2cf3_0() {
+        bool temp_4 = False;
+
+        /* 00000464: sp  0 +0 */ 00000000
+        /* 00000468: sp  0 +1 */ 04000001
+        /* 0000046c: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000470: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000478: sp  0 +0 */ 00000001
+        /* 0000047c: sp  0 +1 */ 05000000 beebbeeb &#x27;set_spoketoTaggart_true&#x27;
+        /* 00000484: sp  1 +1 */ 03000006
+        /* 00000488: sp  2 +0 */ 5c000000
+        /* 0000048c: sp  2 +1 */ 04000001
+        /* 00000490: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000498: sp  0 +0 */ 00000002
+        /* 0000049c: sp  0 +1 */ 0f00008c unnamed member 8c
+        /* 000004a0: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000004a8: sp  0 +0 */ 00000003
+        /* 000004ac: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000004b0: sp  1 +1 */ 09000004 temp_4
+        /* 000004b4: sp  2 +1 */ 0f000034 unnamed member 34
+        /* 000004b8: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000004c0: sp  1 +1 */ 06000004 temp_4
+        /* 000004c4: sp  2 -2 */ 2e000000
+        /* 000004c8: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_2cf4_1() {
+        bool temp_4 = False;
+
+        /* 00001324: sp  0 +0 */ 00000005
+        /* 00001328: sp  0 +1 */ 04000001
+        /* 0000132c: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00001330: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001338: sp  0 +0 */ 00000006
+        /* 0000133c: sp  0 +1 */ 05000000 beebbeeb &#x27;set_spoketoSarif_true&#x27;
+        /* 00001344: sp  1 +1 */ 03000006
+        /* 00001348: sp  2 +0 */ 5c000000
+        /* 0000134c: sp  2 +1 */ 04000001
+        /* 00001350: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00001358: sp  0 +0 */ 00000007
+        /* 0000135c: sp  0 +1 */ 0f000084 unnamed member 84
+        /* 00001360: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00001368: sp  0 +0 */ 00000008
+        /* 0000136c: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 00001370: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 00001378: sp  0 +0 */ 00000009
+        /* 0000137c: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 00001380: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 00001388: sp  0 +0 */ 0000000a
+        /* 0000138c: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 00001390: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 00001398: sp  0 +0 */ 0000000b
+        /* 0000139c: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000013a0: sp  1 +1 */ 09000004 temp_4
+        /* 000013a4: sp  2 +1 */ 0f000048 unnamed member 48
+        /* 000013a8: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000013b0: sp  1 +1 */ 06000004 temp_4
+        /* 000013b4: sp  2 -2 */ 2e000000
+        /* 000013b8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void concludeGame_disableTalkToXObjectives() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+        bool temp_2 = False;
+        bool temp_3 = False;
+
+        /* 00001e64: sp  0 +0 */ 0000000d
+        /* 00001e68: sp  0 +1 */ 05000000 beebbeeb &#x27;endofgame&#x27;
+        /* 00001e70: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 00001e78: sp  0 +0 */ 0000000e
+        /* 00001e7c: sp  0 +1 */ 09000000 temp_0
+        /* 00001e80: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00001e84: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001e8c: sp  0 +1 */ 06000000 temp_0
+        /* 00001e90: sp  1 +1 */ 04000001
+        /* 00001e94: sp  2 -1 */ 46000000
+        /* 00001e98: sp  1 +1 */ 09000001 temp_1
+        /* 00001e9c: sp  2 +1 */ 0f000034 unnamed member 34
+        /* 00001ea0: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001ea8: sp  1 +1 */ 06000001 temp_1
+        /* 00001eac: sp  2 +1 */ 04000001
+        /* 00001eb0: sp  3 -1 */ 46000000
+        /* 00001eb4: sp  2 -1 */ 51000000
+        /* 00001eb8: sp  1 -1 */ 64000005
+
+        /* 00001ebc: sp  0 +0 */ 0000000f
+        /* 00001ec0: sp  0 +1 */ 0f00007c unnamed member 7c
+        /* 00001ec4: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+        /* 00001ecc: sp  0 +0 */ 63000020 00000010
+        /* 00001ed4: sp  0 +1 */ 09000002 temp_2
+        /* 00001ed8: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00001edc: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001ee4: sp  0 +1 */ 06000002 temp_2
+        /* 00001ee8: sp  1 +1 */ 04000001
+        /* 00001eec: sp  2 -1 */ 46000000
+        /* 00001ef0: sp  1 -1 */ 64000005
+
+        /* 00001ef4: sp  0 +0 */ 00000011
+        /* 00001ef8: sp  0 +1 */ 0f00006c unnamed member 6c
+        /* 00001efc: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+        /* 00001f04: sp  0 +0 */ 63000012 00000012
+        /* 00001f0c: sp  0 +1 */ 09000003 temp_3
+        /* 00001f10: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00001f14: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001f1c: sp  0 +1 */ 06000003 temp_3
+        /* 00001f20: sp  1 +1 */ 04000001
+        /* 00001f24: sp  2 -1 */ 46000000
+        /* 00001f28: sp  1 -1 */ 64000005
+
+        /* 00001f2c: sp  0 +0 */ 00000013
+        /* 00001f30: sp  0 +1 */ 0f000074 unnamed member 74
+        /* 00001f34: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+        /* 00001f3c: sp  0 +0 */ 63000004 00000014
+        /* 00001f44: sp  0 +1 */ 0f000064 unnamed member 64
+        /* 00001f48: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00001f50: sp  0 +0 */ 00000015
+        ---
+
+        /* 00001ed0: sp  0 +0 */ 00000010
+        /* 00001ed4: sp  0 +1 */ 09000002 temp_2
+        /* 00001ed8: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00001edc: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001ee4: sp  0 +1 */ 06000002 temp_2
+        /* 00001ee8: sp  1 +1 */ 04000001
+        /* 00001eec: sp  2 -1 */ 46000000
+        /* 00001ef0: sp  1 -1 */ 64000005
+
+        /* 00001ef4: sp  0 +0 */ 00000011
+        /* 00001ef8: sp  0 +1 */ 0f00006c unnamed member 6c
+        /* 00001efc: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+        /* 00001f04: sp  0 +0 */ 63000012 00000012
+        /* 00001f0c: sp  0 +1 */ 09000003 temp_3
+        /* 00001f10: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00001f14: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001f1c: sp  0 +1 */ 06000003 temp_3
+        /* 00001f20: sp  1 +1 */ 04000001
+        /* 00001f24: sp  2 -1 */ 46000000
+        /* 00001f28: sp  1 -1 */ 64000005
+
+        /* 00001f2c: sp  0 +0 */ 00000013
+        /* 00001f30: sp  0 +1 */ 0f000074 unnamed member 74
+        /* 00001f34: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+        /* 00001f3c: sp  0 +0 */ 63000004 00000014
+        /* 00001f44: sp  0 +1 */ 0f000064 unnamed member 64
+        /* 00001f48: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00001f50: sp  0 +0 */ 00000015
+        ---
+
+        /* 00001f08: sp  0 +0 */ 00000012
+        /* 00001f0c: sp  0 +1 */ 09000003 temp_3
+        /* 00001f10: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00001f14: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001f1c: sp  0 +1 */ 06000003 temp_3
+        /* 00001f20: sp  1 +1 */ 04000001
+        /* 00001f24: sp  2 -1 */ 46000000
+        /* 00001f28: sp  1 -1 */ 64000005
+
+        /* 00001f2c: sp  0 +0 */ 00000013
+        /* 00001f30: sp  0 +1 */ 0f000074 unnamed member 74
+        /* 00001f34: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+        /* 00001f3c: sp  0 +0 */ 63000004 00000014
+        /* 00001f44: sp  0 +1 */ 0f000064 unnamed member 64
+        /* 00001f48: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00001f50: sp  0 +0 */ 00000015
+        ---
+
+        /* 00001f40: sp  0 +0 */ 00000014
+        /* 00001f44: sp  0 +1 */ 0f000064 unnamed member 64
+        /* 00001f48: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00001f50: sp  0 +0 */ 00000015
+        ---
+        /* 00001f54: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c6a_3() {
+        UnknownAA86 local_0 = TODO(0B);
+
+        /* 00002014: sp  0 +0 */ 00000016
+        /* 00002018: sp  0 +1 */ 09000000 local_0
+        /* 0000201c: sp  1 +1 */ 0f0001d4 unnamed member 1d4
+        /* 00002020: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002028: sp  0 +1 */ 0a000000 local_0
+        /* 0000202c: sp  1 +0 */ 7e000000 0000aa86
+        /* 00002034: sp  1 -1 */ 6a000000 beebbeeb virtual void UnknownAA86::method_2c4a_41()
+
+        /* 0000203c: sp  0 +0 */ 00000017
+        /* 00002040: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c68_4() {
+        UnknownAA86 local_0 = TODO(0B);
+
+        /* 00002074: sp  0 +0 */ 00000018
+        /* 00002078: sp  0 +1 */ 09000000 local_0
+        /* 0000207c: sp  1 +1 */ 0f0001d4 unnamed member 1d4
+        /* 00002080: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002088: sp  0 +1 */ 0a000000 local_0
+        /* 0000208c: sp  1 +0 */ 7e000000 0000aa86
+        /* 00002094: sp  1 -1 */ 6a000000 beebbeeb virtual void UnknownAA86::method_2c4b_42()
+
+        /* 0000209c: sp  0 +0 */ 00000019
+        /* 000020a0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c62_5() {
+        UnknownAA86 local_0 = TODO(0B);
+
+        /* 000020d4: sp  0 +0 */ 0000001a
+        /* 000020d8: sp  0 +1 */ 09000000 local_0
+        /* 000020dc: sp  1 +1 */ 0f0001d4 unnamed member 1d4
+        /* 000020e0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000020e8: sp  0 +1 */ 0a000000 local_0
+        /* 000020ec: sp  1 +0 */ 7e000000 0000aa86
+        /* 000020f4: sp  1 -1 */ 6a000000 beebbeeb virtual void UnknownAA86::method_2c4c_43()
+
+        /* 000020fc: sp  0 +0 */ 0000001b
+        /* 00002100: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c8f_6() {
+        UnknownAA86 local_0 = TODO(0B);
+
+        /* 00002134: sp  0 +0 */ 0000001c
+        /* 00002138: sp  0 +1 */ 09000000 local_0
+        /* 0000213c: sp  1 +1 */ 0f0001d4 unnamed member 1d4
+        /* 00002140: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00002148: sp  0 +1 */ 0a000000 local_0
+        /* 0000214c: sp  1 +0 */ 7e000000 0000aa86
+        /* 00002154: sp  1 -1 */ 6a000000 beebbeeb virtual void UnknownAA86::method_2c4d_44()
+
+        /* 0000215c: sp  0 +0 */ 0000001d
+        /* 00002160: sp  0 +0 */ 7b000000
+        ---
+    }
+    void enableChaos() {
+        UnknownAA8E scenarioPanChaosOff = TODO(0B);
+        UnknownAA90 scenarioPanChaosOn = TODO(0B);
+
+        /* 000021a4: sp  0 +0 */ 0000001e
+        /* 000021a8: sp  0 +1 */ 09000000 scenarioPanChaosOff
+        /* 000021ac: sp  1 +1 */ 0f000094 unnamed member 94
+        /* 000021b0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000021b8: sp  0 +1 */ 0a000000 scenarioPanChaosOff
+        /* 000021bc: sp  1 +0 */ 7e000000 0000aa8e
+        /* 000021c4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000021cc: sp  0 +0 */ 0000001f
+        /* 000021d0: sp  0 +1 */ 04000001
+        /* 000021d4: sp  1 +1 */ 09000004 scenarioPanChaosOn
+        /* 000021d8: sp  2 +1 */ 0f000098 unnamed member 98
+        /* 000021dc: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000021e4: sp  1 +1 */ 0a000004 scenarioPanChaosOn
+        /* 000021e8: sp  2 +0 */ 7e000000 0000aa90
+        /* 000021f0: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000021f8: sp  0 +0 */ 00000020
+        /* 000021fc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void disableChaos() {
+        UnknownAA8E scenarioPanChaosOff = TODO(0B);
+        UnknownAA90 scenarioPanChaosOn = TODO(0B);
+
+        /* 00002234: sp  0 +0 */ 00000021
+        /* 00002238: sp  0 +1 */ 04000001
+        /* 0000223c: sp  1 +1 */ 09000000 scenarioPanChaosOff
+        /* 00002240: sp  2 +1 */ 0f000094 unnamed member 94
+        /* 00002244: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000224c: sp  1 +1 */ 0a000000 scenarioPanChaosOff
+        /* 00002250: sp  2 +0 */ 7e000000 0000aa8e
+        /* 00002258: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00002260: sp  0 +0 */ 00000022
+        /* 00002264: sp  0 +1 */ 09000004 scenarioPanChaosOn
+        /* 00002268: sp  1 +1 */ 0f000098 unnamed member 98
+        /* 0000226c: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00002274: sp  0 +1 */ 0a000004 scenarioPanChaosOn
+        /* 00002278: sp  1 +0 */ 7e000000 0000aa90
+        /* 00002280: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00002288: sp  0 +0 */ 00000023
+        /* 0000228c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2cf7_9() {
+        %pan_hangar_neon_light_a% local_0 = TODO(0B);
+        %pan_hangar_neon_light_a% local_4 = TODO(0B);
+
+        /* 000022c4: sp  0 +0 */ 00000024
+        /* 000022c8: sp  0 +1 */ 09000004 local_4
+        /* 000022cc: sp  1 +1 */ 0f00009c unnamed member 9c
+        /* 000022d0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000022d8: sp  0 +1 */ 0a000004 local_4
+        /* 000022dc: sp  1 +0 */ 7e000000 0000aae2
+        /* 000022e4: sp  1 +0 */ 14000004
+        /* 000022e8: sp  1 +1 */ 09000000 local_0
+        /* 000022ec: sp  2 +1 */ 0f00009c unnamed member 9c
+        /* 000022f0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000022f8: sp  1 +1 */ 0a000000 local_0
+        /* 000022fc: sp  2 +0 */ 7e000000 0000aae2
+        /* 00002304: sp  2 -2 */ 69000000 beebbeeb void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 0000230c: sp  0 +0 */ 00000025
+        /* 00002310: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2cf8_a() {
+        %pan_hangar_neon_light_a% local_0 = TODO(0B);
+        %pan_hangar_neon_light_a% local_4 = TODO(0B);
+
+        /* 00000524: sp  0 +0 */ 00000026
+        /* 00000528: sp  0 +1 */ 09000004 local_4
+        /* 0000052c: sp  1 +1 */ 0f00009c unnamed member 9c
+        /* 00000530: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000538: sp  0 +1 */ 0a000004 local_4
+        /* 0000053c: sp  1 +0 */ 7e000000 0000aae2
+        /* 00000544: sp  1 +0 */ 1400000c
+        /* 00000548: sp  1 +1 */ 09000000 local_0
+        /* 0000054c: sp  2 +1 */ 0f00009c unnamed member 9c
+        /* 00000550: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000558: sp  1 +1 */ 0a000000 local_0
+        /* 0000055c: sp  2 +0 */ 7e000000 0000aae2
+        /* 00000564: sp  2 -2 */ 69000000 beebbeeb void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 0000056c: sp  0 +0 */ 00000027
+        /* 00000570: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2cf9_b() {
+        UnknownAA8F local_0 = TODO(0B);
+
+        /* 000005a4: sp  0 +0 */ 00000028
+        /* 000005a8: sp  0 +1 */ 09000000 local_0
+        /* 000005ac: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 000005b0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000005b8: sp  0 +1 */ 0a000000 local_0
+        /* 000005bc: sp  1 +0 */ 7e000000 0000aa8f
+        /* 000005c4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000005cc: sp  0 +0 */ 00000029
+        /* 000005d0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2cfa_c() {
+        UnknownAA8F local_0 = TODO(0B);
+
+        /* 00000604: sp  0 +0 */ 0000002a
+        /* 00000608: sp  0 +1 */ 04000001
+        /* 0000060c: sp  1 +1 */ 09000000 local_0
+        /* 00000610: sp  2 +1 */ 0f0000a4 unnamed member a4
+        /* 00000614: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000061c: sp  1 +1 */ 0a000000 local_0
+        /* 00000620: sp  2 +0 */ 7e000000 0000aa8f
+        /* 00000628: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000630: sp  0 +0 */ 0000002b
+        /* 00000634: sp  0 +0 */ 7b000000
+        ---
+    }
+    void activateSwitchDarrow() {
+        UnknownAA87 local_0 = TODO(0B);
+        UnknownAA85 local_4 = TODO(0B);
+        %television_ending_eliza% local_8 = TODO(0B);
+        %television_ending_eliza% local_c = TODO(0B);
+
+        /* 000006a4: sp  0 +0 */ 0000002c
+        /* 000006a8: sp  0 +1 */ 05000000 beebbeeb &#x27;activate switch darrow&#x27;
+        /* 000006b0: sp  1 +1 */ 03000006
+        /* 000006b4: sp  2 +0 */ 5c000000
+        /* 000006b8: sp  2 +1 */ 04000001
+        /* 000006bc: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000006c4: sp  0 +0 */ 0000002d
+        /* 000006c8: sp  0 +1 */ 09000000 local_0
+        /* 000006cc: sp  1 +1 */ 0f0000a8 unnamed member a8
+        /* 000006d0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000006d8: sp  0 +1 */ 0a000000 local_0
+        /* 000006dc: sp  1 +0 */ 7e000000 0000aa87
+        /* 000006e4: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1803_3f()
+
+        /* 000006ec: sp  0 +0 */ 0000002e
+        /* 000006f0: sp  0 +1 */ 09000004 local_4
+        /* 000006f4: sp  1 +1 */ 0f0000c8 unnamed member c8
+        /* 000006f8: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000700: sp  0 +1 */ 0a000004 local_4
+        /* 00000704: sp  1 +0 */ 7e000000 0000aa85
+        /* 0000070c: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 00000714: sp  0 +0 */ 0000002f
+        /* 00000718: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00000720: sp  0 +0 */ 00000030
+        /* 00000724: sp  0 +1 */ 04000001
+        /* 00000728: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 0000072c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000734: sp  0 +0 */ 00000031
+        /* 00000738: sp  0 +1 */ 09000008 local_8
+        /* 0000073c: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 00000740: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000748: sp  0 +1 */ 0a000008 local_8
+        /* 0000074c: sp  1 +0 */ 7e000000 0000aae5
+        /* 00000754: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 0000075c: sp  0 +0 */ 00000032
+        /* 00000760: sp  0 +1 */ 0900000c local_c
+        /* 00000764: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 00000768: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000770: sp  0 +1 */ 0a00000c local_c
+        /* 00000774: sp  1 +0 */ 7e000000 0000aae5
+        /* 0000077c: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000784: sp  0 +0 */ 00000033
+        /* 00000788: sp  0 +0 */ 7b000000
+        ---
+    }
+    void activateSwitchSarif() {
+        UnknownAA89 local_0 = TODO(0B);
+        %ao_tym_button_box_a% local_4 = TODO(0B);
+        %television_ending_eliza% local_8 = TODO(0B);
+        %television_ending_eliza% local_c = TODO(0B);
+
+        /* 00000814: sp  0 +0 */ 00000034
+        /* 00000818: sp  0 +1 */ 09000000 local_0
+        /* 0000081c: sp  1 +1 */ 0f0000b8 unnamed member b8
+        /* 00000820: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000828: sp  0 +1 */ 0a000000 local_0
+        /* 0000082c: sp  1 +0 */ 7e000000 0000aa89
+        /* 00000834: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1803_3f()
+
+        /* 0000083c: sp  0 +0 */ 00000035
+        /* 00000840: sp  0 +1 */ 05000000 beebbeeb &#x27;activate switch sarif&#x27;
+        /* 00000848: sp  1 +1 */ 03000006
+        /* 0000084c: sp  2 +0 */ 5c000000
+        /* 00000850: sp  2 +1 */ 04000001
+        /* 00000854: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000085c: sp  0 +0 */ 00000036
+        /* 00000860: sp  0 +1 */ 09000004 local_4
+        /* 00000864: sp  1 +1 */ 0f0000d8 unnamed member d8
+        /* 00000868: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000870: sp  0 +1 */ 0a000004 local_4
+        /* 00000874: sp  1 +0 */ 7e000000 0000aade
+        /* 0000087c: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 00000884: sp  0 +0 */ 00000037
+        /* 00000888: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00000890: sp  0 +0 */ 00000038
+        /* 00000894: sp  0 +1 */ 04000001
+        /* 00000898: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 0000089c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000008a4: sp  0 +0 */ 00000039
+        /* 000008a8: sp  0 +1 */ 09000008 local_8
+        /* 000008ac: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 000008b0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000008b8: sp  0 +1 */ 0a000008 local_8
+        /* 000008bc: sp  1 +0 */ 7e000000 0000aae5
+        /* 000008c4: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 000008cc: sp  0 +0 */ 0000003a
+        /* 000008d0: sp  0 +1 */ 0900000c local_c
+        /* 000008d4: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 000008d8: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000008e0: sp  0 +1 */ 0a00000c local_c
+        /* 000008e4: sp  1 +0 */ 7e000000 0000aae5
+        /* 000008ec: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 000008f4: sp  0 +0 */ 0000003b
+        /* 000008f8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void activateSwitchTaggart() {
+        UnknownAA8A local_0 = TODO(0B);
+        %ao_tym_button_box_a% local_4 = TODO(0B);
+        %television_ending_eliza% local_8 = TODO(0B);
+        %television_ending_eliza% local_c = TODO(0B);
+
+        /* 00000984: sp  0 +0 */ 0000003c
+        /* 00000988: sp  0 +1 */ 09000000 local_0
+        /* 0000098c: sp  1 +1 */ 0f0000c0 unnamed member c0
+        /* 00000990: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000998: sp  0 +1 */ 0a000000 local_0
+        /* 0000099c: sp  1 +0 */ 7e000000 0000aa8a
+        /* 000009a4: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1803_3f()
+
+        /* 000009ac: sp  0 +0 */ 0000003d
+        /* 000009b0: sp  0 +1 */ 09000004 local_4
+        /* 000009b4: sp  1 +1 */ 0f0000e0 unnamed member e0
+        /* 000009b8: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000009c0: sp  0 +1 */ 0a000004 local_4
+        /* 000009c4: sp  1 +0 */ 7e000000 0000aade
+        /* 000009cc: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 000009d4: sp  0 +0 */ 0000003e
+        /* 000009d8: sp  0 +1 */ 05000000 beebbeeb &#x27;activate switch taggart&#x27;
+        /* 000009e0: sp  1 +1 */ 03000006
+        /* 000009e4: sp  2 +0 */ 5c000000
+        /* 000009e8: sp  2 +1 */ 04000001
+        /* 000009ec: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000009f4: sp  0 +0 */ 0000003f
+        /* 000009f8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00000a00: sp  0 +0 */ 00000040
+        /* 00000a04: sp  0 +1 */ 04000001
+        /* 00000a08: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 00000a0c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000a14: sp  0 +0 */ 00000041
+        /* 00000a18: sp  0 +1 */ 09000008 local_8
+        /* 00000a1c: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 00000a20: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a28: sp  0 +1 */ 0a000008 local_8
+        /* 00000a2c: sp  1 +0 */ 7e000000 0000aae5
+        /* 00000a34: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000a3c: sp  0 +0 */ 00000042
+        /* 00000a40: sp  0 +1 */ 0900000c local_c
+        /* 00000a44: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 00000a48: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a50: sp  0 +1 */ 0a00000c local_c
+        /* 00000a54: sp  1 +0 */ 7e000000 0000aae5
+        /* 00000a5c: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000a64: sp  0 +0 */ 00000043
+        /* 00000a68: sp  0 +0 */ 7b000000
+        ---
+    }
+    void activateSwitchDestruction() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        UnknownAA88 local_4 = TODO(0B);
+        %television_ending_eliza% local_8 = TODO(0B);
+        %television_ending_eliza% local_c = TODO(0B);
+        %television_ending_eliza% local_10 = TODO(0B);
+        %television_ending_eliza% local_14 = TODO(0B);
+        %television_elisa% local_18 = TODO(0B);
+        %television_elisa% local_1c = TODO(0B);
+
+        /* 00000b44: sp  0 +0 */ 00000044
+        /* 00000b48: sp  0 +1 */ 04000001
+        /* 00000b4c: sp  1 +1 */ 09000000 local_0
+        /* 00000b50: sp  2 +1 */ 0f000160 unnamed member 160
+        /* 00000b54: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b5c: sp  1 +1 */ 0a000000 local_0
+        /* 00000b60: sp  2 +0 */ 7e000000 0000aae5
+        /* 00000b68: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000b70: sp  0 +0 */ 00000045
+        /* 00000b74: sp  0 +1 */ 09000004 local_4
+        /* 00000b78: sp  1 +1 */ 0f0000b0 unnamed member b0
+        /* 00000b7c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b84: sp  0 +1 */ 0a000004 local_4
+        /* 00000b88: sp  1 +0 */ 7e000000 0000aa88
+        /* 00000b90: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1803_3f()
+
+        /* 00000b98: sp  0 +0 */ 00000046
+        /* 00000b9c: sp  0 +1 */ 05000000 beebbeeb &#x27;activate switch destruction&#x27;
+        /* 00000ba4: sp  1 +1 */ 03000006
+        /* 00000ba8: sp  2 +0 */ 5c000000
+        /* 00000bac: sp  2 +1 */ 04000001
+        /* 00000bb0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000bb8: sp  0 +0 */ 00000047
+        /* 00000bbc: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00000bc4: sp  0 +0 */ 00000048
+        /* 00000bc8: sp  0 +1 */ 04000001
+        /* 00000bcc: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 00000bd0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000bd8: sp  0 +0 */ 00000049
+        /* 00000bdc: sp  0 +1 */ 04000001
+        /* 00000be0: sp  1 +1 */ 09000008 local_8
+        /* 00000be4: sp  2 +1 */ 0f000168 unnamed member 168
+        /* 00000be8: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000bf0: sp  1 +1 */ 0a000008 local_8
+        /* 00000bf4: sp  2 +0 */ 7e000000 0000aae5
+        /* 00000bfc: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c04: sp  0 +0 */ 0000004a
+        /* 00000c08: sp  0 +1 */ 04000001
+        /* 00000c0c: sp  1 +1 */ 0900000c local_c
+        /* 00000c10: sp  2 +1 */ 0f000170 unnamed member 170
+        /* 00000c14: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c1c: sp  1 +1 */ 0a00000c local_c
+        /* 00000c20: sp  2 +0 */ 7e000000 0000aae5
+        /* 00000c28: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000c30: sp  0 +0 */ 0000004b
+        /* 00000c34: sp  0 +1 */ 09000010 local_10
+        /* 00000c38: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 00000c3c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c44: sp  0 +1 */ 0a000010 local_10
+        /* 00000c48: sp  1 +0 */ 7e000000 0000aae5
+        /* 00000c50: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000c58: sp  0 +0 */ 0000004c
+        /* 00000c5c: sp  0 +1 */ 09000014 local_14
+        /* 00000c60: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 00000c64: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c6c: sp  0 +1 */ 0a000014 local_14
+        /* 00000c70: sp  1 +0 */ 7e000000 0000aae5
+        /* 00000c78: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000c80: sp  0 +0 */ 0000004d
+        /* 00000c84: sp  0 +1 */ 04000000
+        /* 00000c88: sp  1 +1 */ 09000018 local_18
+        /* 00000c8c: sp  2 +1 */ 0f0001c4 unnamed member 1c4
+        /* 00000c90: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c98: sp  1 +1 */ 0a000018 local_18
+        /* 00000c9c: sp  2 +0 */ 7e000000 0000aae4
+        /* 00000ca4: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000cac: sp  0 +0 */ 0000004e
+        /* 00000cb0: sp  0 +1 */ 04000000
+        /* 00000cb4: sp  1 +1 */ 0900001c local_1c
+        /* 00000cb8: sp  2 +1 */ 0f0001cc unnamed member 1cc
+        /* 00000cbc: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000cc4: sp  1 +1 */ 0a00001c local_1c
+        /* 00000cc8: sp  2 +0 */ 7e000000 0000aae4
+        /* 00000cd0: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000cd8: sp  0 +0 */ 0000004f
+        /* 00000cdc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void openBoxAll() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        %television_ending_eliza% local_4 = TODO(0B);
+        %television_ending_eliza% local_8 = TODO(0B);
+        %television_elisa% local_c = TODO(0B);
+        UnknownAA85 local_10 = TODO(0B);
+        %ao_tym_button_box_a% local_14 = TODO(0B);
+        %ao_tym_button_box_a% local_18 = TODO(0B);
+
+        /* 00000d94: sp  0 +0 */ 00000050
+        /* 00000d98: sp  0 +1 */ 05000000 beebbeeb &#x27;open box all&#x27;
+        /* 00000da0: sp  1 +1 */ 03000006
+        /* 00000da4: sp  2 +0 */ 5c000000
+        /* 00000da8: sp  2 +1 */ 04000001
+        /* 00000dac: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000db4: sp  0 +0 */ 00000051
+        /* 00000db8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00000dc0: sp  0 +0 */ 00000052
+        /* 00000dc4: sp  0 +1 */ 04000001
+        /* 00000dc8: sp  1 +1 */ 0f000188 unnamed member 188
+        /* 00000dcc: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000dd4: sp  0 +0 */ 00000053
+        /* 00000dd8: sp  0 +1 */ 04000001
+        /* 00000ddc: sp  1 +1 */ 0f000138 unnamed member 138
+        /* 00000de0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000de8: sp  0 +0 */ 00000054
+        /* 00000dec: sp  0 +1 */ 04000001
+        /* 00000df0: sp  1 +1 */ 0f00014c unnamed member 14c
+        /* 00000df4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000dfc: sp  0 +0 */ 00000055
+        /* 00000e00: sp  0 +1 */ 09000000 local_0
+        /* 00000e04: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 00000e08: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e10: sp  0 +1 */ 0a000000 local_0
+        /* 00000e14: sp  1 +0 */ 7e000000 0000aae5
+        /* 00000e1c: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000e24: sp  0 +0 */ 00000056
+        /* 00000e28: sp  0 +1 */ 09000004 local_4
+        /* 00000e2c: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 00000e30: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e38: sp  0 +1 */ 0a000004 local_4
+        /* 00000e3c: sp  1 +0 */ 7e000000 0000aae5
+        /* 00000e44: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000e4c: sp  0 +0 */ 00000057
+        /* 00000e50: sp  0 +1 */ 09000008 local_8
+        /* 00000e54: sp  1 +1 */ 0f000160 unnamed member 160
+        /* 00000e58: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e60: sp  0 +1 */ 0a000008 local_8
+        /* 00000e64: sp  1 +0 */ 7e000000 0000aae5
+        /* 00000e6c: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000e74: sp  0 +0 */ 00000058
+        /* 00000e78: sp  0 +1 */ 04000000
+        /* 00000e7c: sp  1 +1 */ 0900000c local_c
+        /* 00000e80: sp  2 +1 */ 0f000180 unnamed member 180
+        /* 00000e84: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e8c: sp  1 +1 */ 0a00000c local_c
+        /* 00000e90: sp  2 +0 */ 7e000000 0000aae4
+        /* 00000e98: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000ea0: sp  0 +0 */ 00000059
+        /* 00000ea4: sp  0 +1 */ 09000010 local_10
+        /* 00000ea8: sp  1 +1 */ 0f0000c8 unnamed member c8
+        /* 00000eac: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000eb4: sp  0 +1 */ 0a000010 local_10
+        /* 00000eb8: sp  1 +0 */ 7e000000 0000aa85
+        /* 00000ec0: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 00000ec8: sp  0 +0 */ 0000005a
+        /* 00000ecc: sp  0 +1 */ 09000014 local_14
+        /* 00000ed0: sp  1 +1 */ 0f0000d8 unnamed member d8
+        /* 00000ed4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000edc: sp  0 +1 */ 0a000014 local_14
+        /* 00000ee0: sp  1 +0 */ 7e000000 0000aade
+        /* 00000ee8: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 00000ef0: sp  0 +0 */ 0000005b
+        /* 00000ef4: sp  0 +1 */ 09000018 local_18
+        /* 00000ef8: sp  1 +1 */ 0f0000e0 unnamed member e0
+        /* 00000efc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000f04: sp  0 +1 */ 0a000018 local_18
+        /* 00000f08: sp  1 +0 */ 7e000000 0000aade
+        /* 00000f10: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 00000f18: sp  0 +0 */ 0000005c
+        /* 00000f1c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void openBoxDarrow() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        %television_elisa% local_4 = TODO(0B);
+        %television_ending_eliza% local_8 = TODO(0B);
+        %television_ending_eliza% local_c = TODO(0B);
+        UnknownAA85 local_10 = TODO(0B);
+
+        /* 00000fa4: sp  0 +0 */ 0000005d
+        /* 00000fa8: sp  0 +1 */ 05000000 beebbeeb &#x27;open box darrow&#x27;
+        /* 00000fb0: sp  1 +1 */ 03000006
+        /* 00000fb4: sp  2 +0 */ 5c000000
+        /* 00000fb8: sp  2 +1 */ 04000001
+        /* 00000fbc: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000fc4: sp  0 +0 */ 0000005e
+        /* 00000fc8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00000fd0: sp  0 +0 */ 0000005f
+        /* 00000fd4: sp  0 +1 */ 04000001
+        /* 00000fd8: sp  1 +1 */ 0f000188 unnamed member 188
+        /* 00000fdc: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000fe4: sp  0 +0 */ 00000060
+        /* 00000fe8: sp  0 +1 */ 09000000 local_0
+        /* 00000fec: sp  1 +1 */ 0f000160 unnamed member 160
+        /* 00000ff0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000ff8: sp  0 +1 */ 0a000000 local_0
+        /* 00000ffc: sp  1 +0 */ 7e000000 0000aae5
+        /* 00001004: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 0000100c: sp  0 +0 */ 00000061
+        /* 00001010: sp  0 +1 */ 04000000
+        /* 00001014: sp  1 +1 */ 09000004 local_4
+        /* 00001018: sp  2 +1 */ 0f000180 unnamed member 180
+        /* 0000101c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001024: sp  1 +1 */ 0a000004 local_4
+        /* 00001028: sp  2 +0 */ 7e000000 0000aae4
+        /* 00001030: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00001038: sp  0 +0 */ 00000062
+        /* 0000103c: sp  0 +1 */ 04000001
+        /* 00001040: sp  1 +1 */ 0f0001b0 unnamed member 1b0
+        /* 00001044: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000104c: sp  0 +0 */ 00000063
+        /* 00001050: sp  0 +1 */ 04000001
+        /* 00001054: sp  1 +1 */ 0f00019c unnamed member 19c
+        /* 00001058: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001060: sp  0 +0 */ 00000064
+        /* 00001064: sp  0 +1 */ 09000008 local_8
+        /* 00001068: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 0000106c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001074: sp  0 +1 */ 0a000008 local_8
+        /* 00001078: sp  1 +0 */ 7e000000 0000aae5
+        /* 00001080: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00001088: sp  0 +0 */ 00000065
+        /* 0000108c: sp  0 +1 */ 0900000c local_c
+        /* 00001090: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 00001094: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000109c: sp  0 +1 */ 0a00000c local_c
+        /* 000010a0: sp  1 +0 */ 7e000000 0000aae5
+        /* 000010a8: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 000010b0: sp  0 +0 */ 00000066
+        /* 000010b4: sp  0 +1 */ 09000010 local_10
+        /* 000010b8: sp  1 +1 */ 0f0000c8 unnamed member c8
+        /* 000010bc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000010c4: sp  0 +1 */ 0a000010 local_10
+        /* 000010c8: sp  1 +0 */ 7e000000 0000aa85
+        /* 000010d0: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 000010d8: sp  0 +0 */ 00000067
+        /* 000010dc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void openBoxSarifAndDarrow() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        %television_ending_eliza% local_4 = TODO(0B);
+        %television_elisa% local_8 = TODO(0B);
+        %television_ending_eliza% local_c = TODO(0B);
+        UnknownAA85 local_10 = TODO(0B);
+        %ao_tym_button_box_a% local_14 = TODO(0B);
+
+        /* 00001174: sp  0 +0 */ 00000068
+        /* 00001178: sp  0 +1 */ 05000000 beebbeeb &#x27;open box sarif and darrow&#x27;
+        /* 00001180: sp  1 +1 */ 03000006
+        /* 00001184: sp  2 +0 */ 5c000000
+        /* 00001188: sp  2 +1 */ 04000001
+        /* 0000118c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00001194: sp  0 +0 */ 00000069
+        /* 00001198: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 000011a0: sp  0 +0 */ 0000006a
+        /* 000011a4: sp  0 +1 */ 04000001
+        /* 000011a8: sp  1 +1 */ 0f000138 unnamed member 138
+        /* 000011ac: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000011b4: sp  0 +0 */ 0000006b
+        /* 000011b8: sp  0 +1 */ 04000001
+        /* 000011bc: sp  1 +1 */ 0f000188 unnamed member 188
+        /* 000011c0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000011c8: sp  0 +0 */ 0000006c
+        /* 000011cc: sp  0 +1 */ 09000000 local_0
+        /* 000011d0: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 000011d4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000011dc: sp  0 +1 */ 0a000000 local_0
+        /* 000011e0: sp  1 +0 */ 7e000000 0000aae5
+        /* 000011e8: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 000011f0: sp  0 +0 */ 0000006d
+        /* 000011f4: sp  0 +1 */ 09000004 local_4
+        /* 000011f8: sp  1 +1 */ 0f000160 unnamed member 160
+        /* 000011fc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001204: sp  0 +1 */ 0a000004 local_4
+        /* 00001208: sp  1 +0 */ 7e000000 0000aae5
+        /* 00001210: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00001218: sp  0 +0 */ 0000006e
+        /* 0000121c: sp  0 +1 */ 04000000
+        /* 00001220: sp  1 +1 */ 09000008 local_8
+        /* 00001224: sp  2 +1 */ 0f000180 unnamed member 180
+        /* 00001228: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001230: sp  1 +1 */ 0a000008 local_8
+        /* 00001234: sp  2 +0 */ 7e000000 0000aae4
+        /* 0000123c: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00001244: sp  0 +0 */ 0000006f
+        /* 00001248: sp  0 +1 */ 04000001
+        /* 0000124c: sp  1 +1 */ 0f0001b0 unnamed member 1b0
+        /* 00001250: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001258: sp  0 +0 */ 00000070
+        /* 0000125c: sp  0 +1 */ 0900000c local_c
+        /* 00001260: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 00001264: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000126c: sp  0 +1 */ 0a00000c local_c
+        /* 00001270: sp  1 +0 */ 7e000000 0000aae5
+        /* 00001278: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00001280: sp  0 +0 */ 00000071
+        /* 00001284: sp  0 +1 */ 09000010 local_10
+        /* 00001288: sp  1 +1 */ 0f0000c8 unnamed member c8
+        /* 0000128c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001294: sp  0 +1 */ 0a000010 local_10
+        /* 00001298: sp  1 +0 */ 7e000000 0000aa85
+        /* 000012a0: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 000012a8: sp  0 +0 */ 00000072
+        /* 000012ac: sp  0 +1 */ 09000014 local_14
+        /* 000012b0: sp  1 +1 */ 0f0000d8 unnamed member d8
+        /* 000012b4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000012bc: sp  0 +1 */ 0a000014 local_14
+        /* 000012c0: sp  1 +0 */ 7e000000 0000aade
+        /* 000012c8: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 000012d0: sp  0 +0 */ 00000073
+        /* 000012d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void openBoxTaggartAndDarrow() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        %television_ending_eliza% local_4 = TODO(0B);
+        %television_elisa% local_8 = TODO(0B);
+        %television_ending_eliza% local_c = TODO(0B);
+        UnknownAA85 local_10 = TODO(0B);
+        %ao_tym_button_box_a% local_14 = TODO(0B);
+
+        /* 00001464: sp  0 +0 */ 00000074
+        /* 00001468: sp  0 +1 */ 05000000 beebbeeb &#x27;open box taggart and darrow&#x27;
+        /* 00001470: sp  1 +1 */ 03000006
+        /* 00001474: sp  2 +0 */ 5c000000
+        /* 00001478: sp  2 +1 */ 04000001
+        /* 0000147c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00001484: sp  0 +0 */ 00000075
+        /* 00001488: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00001490: sp  0 +0 */ 00000076
+        /* 00001494: sp  0 +1 */ 04000001
+        /* 00001498: sp  1 +1 */ 0f00014c unnamed member 14c
+        /* 0000149c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000014a4: sp  0 +0 */ 00000077
+        /* 000014a8: sp  0 +1 */ 09000000 local_0
+        /* 000014ac: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 000014b0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000014b8: sp  0 +1 */ 0a000000 local_0
+        /* 000014bc: sp  1 +0 */ 7e000000 0000aae5
+        /* 000014c4: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 000014cc: sp  0 +0 */ 00000078
+        /* 000014d0: sp  0 +1 */ 04000001
+        /* 000014d4: sp  1 +1 */ 0f000188 unnamed member 188
+        /* 000014d8: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000014e0: sp  0 +0 */ 00000079
+        /* 000014e4: sp  0 +1 */ 09000004 local_4
+        /* 000014e8: sp  1 +1 */ 0f000160 unnamed member 160
+        /* 000014ec: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000014f4: sp  0 +1 */ 0a000004 local_4
+        /* 000014f8: sp  1 +0 */ 7e000000 0000aae5
+        /* 00001500: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00001508: sp  0 +0 */ 0000007a
+        /* 0000150c: sp  0 +1 */ 04000000
+        /* 00001510: sp  1 +1 */ 09000008 local_8
+        /* 00001514: sp  2 +1 */ 0f000180 unnamed member 180
+        /* 00001518: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001520: sp  1 +1 */ 0a000008 local_8
+        /* 00001524: sp  2 +0 */ 7e000000 0000aae4
+        /* 0000152c: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00001534: sp  0 +0 */ 0000007b
+        /* 00001538: sp  0 +1 */ 04000001
+        /* 0000153c: sp  1 +1 */ 0f00019c unnamed member 19c
+        /* 00001540: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001548: sp  0 +0 */ 0000007c
+        /* 0000154c: sp  0 +1 */ 0900000c local_c
+        /* 00001550: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 00001554: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000155c: sp  0 +1 */ 0a00000c local_c
+        /* 00001560: sp  1 +0 */ 7e000000 0000aae5
+        /* 00001568: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00001570: sp  0 +0 */ 0000007d
+        /* 00001574: sp  0 +1 */ 09000010 local_10
+        /* 00001578: sp  1 +1 */ 0f0000c8 unnamed member c8
+        /* 0000157c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001584: sp  0 +1 */ 0a000010 local_10
+        /* 00001588: sp  1 +0 */ 7e000000 0000aa85
+        /* 00001590: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 00001598: sp  0 +0 */ 0000007e
+        /* 0000159c: sp  0 +1 */ 09000014 local_14
+        /* 000015a0: sp  1 +1 */ 0f0000e0 unnamed member e0
+        /* 000015a4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000015ac: sp  0 +1 */ 0a000014 local_14
+        /* 000015b0: sp  1 +0 */ 7e000000 0000aade
+        /* 000015b8: sp  1 -1 */ 69000000 beebbeeb void %ao_tym_button_box_a%::method_01a6_ffff()
+
+        /* 000015c0: sp  0 +0 */ 0000007f
+        /* 000015c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void playVideoDarrow() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        %television_ending_eliza% local_4 = TODO(0B);
+
+        /* 00001624: sp  0 +0 */ 00000080
+        /* 00001628: sp  0 +1 */ 05000000 beebbeeb &#x27;play video darrow&#x27;
+        /* 00001630: sp  1 +1 */ 03000006
+        /* 00001634: sp  2 +0 */ 5c000000
+        /* 00001638: sp  2 +1 */ 04000001
+        /* 0000163c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00001644: sp  0 +0 */ 00000081
+        /* 00001648: sp  0 +1 */ 04000001
+        /* 0000164c: sp  1 +1 */ 0f0000e8 unnamed member e8
+        /* 00001650: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001658: sp  0 +0 */ 00000082
+        /* 0000165c: sp  0 +1 */ 04000000
+        /* 00001660: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 00001664: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000166c: sp  0 +0 */ 00000083
+        /* 00001670: sp  0 +1 */ 09000000 local_0
+        /* 00001674: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 00001678: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001680: sp  0 +1 */ 0a000000 local_0
+        /* 00001684: sp  1 +0 */ 7e000000 0000aae5
+        /* 0000168c: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00001694: sp  0 +0 */ 00000084
+        /* 00001698: sp  0 +1 */ 09000004 local_4
+        /* 0000169c: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 000016a0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000016a8: sp  0 +1 */ 0a000004 local_4
+        /* 000016ac: sp  1 +0 */ 7e000000 0000aae5
+        /* 000016b4: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 000016bc: sp  0 +0 */ 00000085
+        /* 000016c0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void playVideoSarif() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        %television_ending_eliza% local_4 = TODO(0B);
+
+        /* 00001724: sp  0 +0 */ 00000086
+        /* 00001728: sp  0 +1 */ 05000000 beebbeeb &#x27;play video sarif&#x27;
+        /* 00001730: sp  1 +1 */ 03000006
+        /* 00001734: sp  2 +0 */ 5c000000
+        /* 00001738: sp  2 +1 */ 04000001
+        /* 0000173c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00001744: sp  0 +0 */ 00000087
+        /* 00001748: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00001750: sp  0 +0 */ 00000088
+        /* 00001754: sp  0 +1 */ 04000001
+        /* 00001758: sp  1 +1 */ 0f000110 unnamed member 110
+        /* 0000175c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001764: sp  0 +0 */ 00000089
+        /* 00001768: sp  0 +1 */ 09000000 local_0
+        /* 0000176c: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 00001770: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001778: sp  0 +1 */ 0a000000 local_0
+        /* 0000177c: sp  1 +0 */ 7e000000 0000aae5
+        /* 00001784: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 0000178c: sp  0 +0 */ 0000008a
+        /* 00001790: sp  0 +1 */ 09000004 local_4
+        /* 00001794: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 00001798: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000017a0: sp  0 +1 */ 0a000004 local_4
+        /* 000017a4: sp  1 +0 */ 7e000000 0000aae5
+        /* 000017ac: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 000017b4: sp  0 +0 */ 0000008b
+        /* 000017b8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void playVideoTaggart() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        %television_ending_eliza% local_4 = TODO(0B);
+
+        /* 00001814: sp  0 +0 */ 0000008c
+        /* 00001818: sp  0 +1 */ 05000000 beebbeeb &#x27;play video taggart&#x27;
+        /* 00001820: sp  1 +1 */ 03000006
+        /* 00001824: sp  2 +0 */ 5c000000
+        /* 00001828: sp  2 +1 */ 04000001
+        /* 0000182c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00001834: sp  0 +0 */ 0000008d
+        /* 00001838: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00001840: sp  0 +0 */ 0000008e
+        /* 00001844: sp  0 +1 */ 04000001
+        /* 00001848: sp  1 +1 */ 0f000124 unnamed member 124
+        /* 0000184c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001854: sp  0 +0 */ 0000008f
+        /* 00001858: sp  0 +1 */ 09000000 local_0
+        /* 0000185c: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 00001860: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001868: sp  0 +1 */ 0a000000 local_0
+        /* 0000186c: sp  1 +0 */ 7e000000 0000aae5
+        /* 00001874: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 0000187c: sp  0 +0 */ 00000090
+        /* 00001880: sp  0 +1 */ 09000004 local_4
+        /* 00001884: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 00001888: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001890: sp  0 +1 */ 0a000004 local_4
+        /* 00001894: sp  1 +0 */ 7e000000 0000aae5
+        /* 0000189c: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 000018a4: sp  0 +0 */ 00000091
+        /* 000018a8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void playVideoDestruction() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        %television_ending_eliza% local_4 = TODO(0B);
+        %pan_door_sliding_ending% local_8 = TODO(0B);
+
+        /* 00001914: sp  0 +0 */ 00000092
+        /* 00001918: sp  0 +1 */ 05000000 beebbeeb &#x27;play video destruction&#x27;
+        /* 00001920: sp  1 +1 */ 03000006
+        /* 00001924: sp  2 +0 */ 5c000000
+        /* 00001928: sp  2 +1 */ 04000001
+        /* 0000192c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00001934: sp  0 +0 */ 00000093
+        /* 00001938: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void UnknownAAE9::method_2d07_2a()
+
+        /* 00001940: sp  0 +0 */ 00000094
+        /* 00001944: sp  0 +1 */ 04000001
+        /* 00001948: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 0000194c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001954: sp  0 +0 */ 00000095
+        /* 00001958: sp  0 +1 */ 09000000 local_0
+        /* 0000195c: sp  1 +1 */ 0f000168 unnamed member 168
+        /* 00001960: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001968: sp  0 +1 */ 0a000000 local_0
+        /* 0000196c: sp  1 +0 */ 7e000000 0000aae5
+        /* 00001974: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 0000197c: sp  0 +0 */ 00000096
+        /* 00001980: sp  0 +1 */ 09000004 local_4
+        /* 00001984: sp  1 +1 */ 0f000170 unnamed member 170
+        /* 00001988: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001990: sp  0 +1 */ 0a000004 local_4
+        /* 00001994: sp  1 +0 */ 7e000000 0000aae5
+        /* 0000199c: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 000019a4: sp  0 +0 */ 00000097
+        /* 000019a8: sp  0 +1 */ 09000008 local_8
+        /* 000019ac: sp  1 +1 */ 0f000178 unnamed member 178
+        /* 000019b0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000019b8: sp  0 +1 */ 0a000008 local_8
+        /* 000019bc: sp  1 +0 */ 7e000000 0000aae0
+        /* 000019c4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a6_41()
+
+        /* 000019cc: sp  0 +0 */ 00000098
+        /* 000019d0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2d07_19() {
+
+        /* 00001a04: sp  0 +0 */ 00000099
+        /* 00001a08: sp  0 +1 */ 04000000
+        /* 00001a0c: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 00001a10: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001a18: sp  0 +0 */ 0000009a
+        /* 00001a1c: sp  0 +1 */ 04000000
+        /* 00001a20: sp  1 +1 */ 0f000110 unnamed member 110
+        /* 00001a24: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001a2c: sp  0 +0 */ 0000009b
+        /* 00001a30: sp  0 +1 */ 04000000
+        /* 00001a34: sp  1 +1 */ 0f000124 unnamed member 124
+        /* 00001a38: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001a40: sp  0 +0 */ 0000009c
+        /* 00001a44: sp  0 +1 */ 04000000
+        /* 00001a48: sp  1 +1 */ 0f0000e8 unnamed member e8
+        /* 00001a4c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001a54: sp  0 +0 */ 0000009d
+        /* 00001a58: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c63_1a() {
+        UnknownAA87 local_0 = TODO(0B);
+        UnknownAA88 local_4 = TODO(0B);
+        UnknownAA89 local_8 = TODO(0B);
+        UnknownAA8A local_c = TODO(0B);
+
+        /* 00001ac4: sp  0 +0 */ 0000009e
+        /* 00001ac8: sp  0 +1 */ 09000000 local_0
+        /* 00001acc: sp  1 +1 */ 0f0000a8 unnamed member a8
+        /* 00001ad0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001ad8: sp  0 +1 */ 0a000000 local_0
+        /* 00001adc: sp  1 +0 */ 7e000000 0000aa87
+        /* 00001ae4: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1804_40()
+
+        /* 00001aec: sp  0 +0 */ 0000009f
+        /* 00001af0: sp  0 +1 */ 09000004 local_4
+        /* 00001af4: sp  1 +1 */ 0f0000b0 unnamed member b0
+        /* 00001af8: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001b00: sp  0 +1 */ 0a000004 local_4
+        /* 00001b04: sp  1 +0 */ 7e000000 0000aa88
+        /* 00001b0c: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1804_40()
+
+        /* 00001b14: sp  0 +0 */ 000000a0
+        /* 00001b18: sp  0 +1 */ 09000008 local_8
+        /* 00001b1c: sp  1 +1 */ 0f0000b8 unnamed member b8
+        /* 00001b20: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001b28: sp  0 +1 */ 0a000008 local_8
+        /* 00001b2c: sp  1 +0 */ 7e000000 0000aa89
+        /* 00001b34: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1804_40()
+
+        /* 00001b3c: sp  0 +0 */ 000000a1
+        /* 00001b40: sp  0 +1 */ 0900000c local_c
+        /* 00001b44: sp  1 +1 */ 0f0000c0 unnamed member c0
+        /* 00001b48: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001b50: sp  0 +1 */ 0a00000c local_c
+        /* 00001b54: sp  1 +0 */ 7e000000 0000aa8a
+        /* 00001b5c: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1804_40()
+
+        /* 00001b64: sp  0 +0 */ 000000a2
+        /* 00001b68: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c64_1b() {
+        UnknownAA87 local_0 = TODO(0B);
+        UnknownAA88 local_4 = TODO(0B);
+        UnknownAA89 local_8 = TODO(0B);
+        UnknownAA8A local_c = TODO(0B);
+
+        /* 00001bd4: sp  0 +0 */ 000000a3
+        /* 00001bd8: sp  0 +1 */ 09000000 local_0
+        /* 00001bdc: sp  1 +1 */ 0f0000a8 unnamed member a8
+        /* 00001be0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001be8: sp  0 +1 */ 0a000000 local_0
+        /* 00001bec: sp  1 +0 */ 7e000000 0000aa87
+        /* 00001bf4: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1803_3f()
+
+        /* 00001bfc: sp  0 +0 */ 000000a4
+        /* 00001c00: sp  0 +1 */ 09000004 local_4
+        /* 00001c04: sp  1 +1 */ 0f0000b0 unnamed member b0
+        /* 00001c08: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001c10: sp  0 +1 */ 0a000004 local_4
+        /* 00001c14: sp  1 +0 */ 7e000000 0000aa88
+        /* 00001c1c: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1803_3f()
+
+        /* 00001c24: sp  0 +0 */ 000000a5
+        /* 00001c28: sp  0 +1 */ 09000008 local_8
+        /* 00001c2c: sp  1 +1 */ 0f0000b8 unnamed member b8
+        /* 00001c30: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001c38: sp  0 +1 */ 0a000008 local_8
+        /* 00001c3c: sp  1 +0 */ 7e000000 0000aa89
+        /* 00001c44: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1803_3f()
+
+        /* 00001c4c: sp  0 +0 */ 000000a6
+        /* 00001c50: sp  0 +1 */ 0900000c local_c
+        /* 00001c54: sp  1 +1 */ 0f0000c0 unnamed member c0
+        /* 00001c58: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001c60: sp  0 +1 */ 0a00000c local_c
+        /* 00001c64: sp  1 +0 */ 7e000000 0000aa8a
+        /* 00001c6c: sp  1 -1 */ 6a000000 beebbeeb virtual void %end_switch%::method_1803_3f()
+
+        /* 00001c74: sp  0 +0 */ 000000a7
+        /* 00001c78: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2d08_1c() {
+        %television_ending_eliza% local_0 = TODO(0B);
+        %television_ending_eliza% local_4 = TODO(0B);
+        %television_elisa% local_8 = TODO(0B);
+        %television_elisa% local_c = TODO(0B);
+
+        /* 00001ce4: sp  0 +0 */ 000000a8
+        /* 00001ce8: sp  0 +1 */ 04000000
+        /* 00001cec: sp  1 +1 */ 09000000 local_0
+        /* 00001cf0: sp  2 +1 */ 0f000168 unnamed member 168
+        /* 00001cf4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001cfc: sp  1 +1 */ 0a000000 local_0
+        /* 00001d00: sp  2 +0 */ 7e000000 0000aae5
+        /* 00001d08: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00001d10: sp  0 +0 */ 000000a9
+        /* 00001d14: sp  0 +1 */ 04000000
+        /* 00001d18: sp  1 +1 */ 09000004 local_4
+        /* 00001d1c: sp  2 +1 */ 0f000170 unnamed member 170
+        /* 00001d20: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001d28: sp  1 +1 */ 0a000004 local_4
+        /* 00001d2c: sp  2 +0 */ 7e000000 0000aae5
+        /* 00001d34: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00001d3c: sp  0 +0 */ 000000aa
+        /* 00001d40: sp  0 +1 */ 04000001
+        /* 00001d44: sp  1 +1 */ 09000008 local_8
+        /* 00001d48: sp  2 +1 */ 0f0001c4 unnamed member 1c4
+        /* 00001d4c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001d54: sp  1 +1 */ 0a000008 local_8
+        /* 00001d58: sp  2 +0 */ 7e000000 0000aae4
+        /* 00001d60: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00001d68: sp  0 +0 */ 000000ab
+        /* 00001d6c: sp  0 +1 */ 04000001
+        /* 00001d70: sp  1 +1 */ 0900000c local_c
+        /* 00001d74: sp  2 +1 */ 0f0001cc unnamed member 1cc
+        /* 00001d78: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001d80: sp  1 +1 */ 0a00000c local_c
+        /* 00001d84: sp  2 +0 */ 7e000000 0000aae4
+        /* 00001d8c: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00001d94: sp  0 +0 */ 000000ac
+        /* 00001d98: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c90_1d() {
+        UnknownAA86 local_0 = TODO(0B);
+
+        /* 00001dc4: sp  0 +0 */ 000000ad
+        /* 00001dc8: sp  0 +1 */ 09000000 local_0
+        /* 00001dcc: sp  1 +1 */ 0f0001d4 unnamed member 1d4
+        /* 00001dd0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001dd8: sp  0 +1 */ 0a000000 local_0
+        /* 00001ddc: sp  1 +0 */ 7e000000 0000aa86
+        /* 00001de4: sp  1 -1 */ 6a000000 beebbeeb virtual void UnknownAA86::method_2c4f_46()
+
+        /* 00001dec: sp  0 +0 */ 000000ae
+        /* 00001df0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c91_1e() {
+        UnknownAA86 local_0 = TODO(0B);
+
+        /* 00001f94: sp  0 +0 */ 000000af
+        /* 00001f98: sp  0 +1 */ 09000000 local_0
+        /* 00001f9c: sp  1 +1 */ 0f0001d4 unnamed member 1d4
+        /* 00001fa0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001fa8: sp  0 +1 */ 0a000000 local_0
+        /* 00001fac: sp  1 +0 */ 7e000000 0000aa86
+        /* 00001fb4: sp  1 -1 */ 6a000000 beebbeeb virtual void UnknownAA86::method_2c4d_44()
+
+        /* 00001fbc: sp  0 +0 */ 000000b0
+        /* 00001fc0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c66_1f() {
+
+        /* 00001fd4: sp  0 +0 */ 000000b1
+        /* 00001fd8: sp  0 +1 */ 0f0001dc unnamed member 1dc
+        /* 00001fdc: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 00001fe4: sp  0 +0 */ 000000b2
+        /* 00001fe8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

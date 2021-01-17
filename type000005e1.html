@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005e1</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05E1</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x715]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05E1 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004ec.html">objective</a> objective_secure_the_hostages_updated = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_rescue_josie_thorpe = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_0e16_14 = persistent(dtp:047C) {type=bool};
+    void method_02a8_0();
+    bool method_02a9_1();
+    bool method_02aa_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05E1 : quest {
+    // sizeof = 0x28
+    objective objective_secure_the_hostages_updated = TODO(0A);
+    objective objective_rescue_josie_thorpe = TODO(0A);
+    smartscript decl_0089_0e16_14 = TODO(0A);
+    void method_02a8_0() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+
+        /* 000000f4: sp  0 +0 */ 00000000
+        /* 000000f8: sp  0 +1 */ 09000000 temp_0
+        /* 000000fc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000100: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000108: sp  0 +1 */ 06000000 temp_0
+        /* 0000010c: sp  1 +1 */ 09000001 temp_1
+        /* 00000110: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000114: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 0000011c: sp  1 +1 */ 06000001 temp_1
+        /* 00000120: sp  2 -1 */ 51000000
+        /* 00000124: sp  1 -1 */ 6400000f
+
+        /* 00000128: sp  0 +0 */ 00000001
+
+        /* 0000012c: sp  0 +0 */ 00000002
+        /* 00000130: sp  0 +1 */ 04000001
+        /* 00000134: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 00000138: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000140: sp  0 +0 */ 00000003
+        /* 00000144: sp  0 +1 */ 05000000 beebbeeb &#x27;Greg and Josie Saved&#x27;
+        /* 0000014c: sp  1 +1 */ 03000005
+        /* 00000150: sp  2 +0 */ 5c000000
+        /* 00000154: sp  2 +1 */ 04000001
+        /* 00000158: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000160: sp  0 +0 */ 00000004
+        ---
+
+        /* 00000164: sp  0 +0 */ 00000005
+        /* 00000168: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_02a9_1() {
+
+        /* 00000194: sp  0 +0 */ 00000006
+        /* 00000198: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gamebase::method_0860_ffff()
+
+        /* 000001a0: sp  0 +0 */ 00000007
+        /* 000001a4: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000001a8: sp  1 +1 */ 04000001
+        /* 000001ac: sp  2 -2 */ 2e000000
+        /* 000001b0: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_02aa_2() {
+
+        /* 000001c4: sp  0 +0 */ 00000009
+        /* 000001c8: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gamebase::method_085f_ffff()
+
+        /* 000001d0: sp  0 +0 */ 0000000a
+        /* 000001d4: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000001d8: sp  1 +1 */ 04000001
+        /* 000001dc: sp  2 -2 */ 2e000000
+        /* 000001e0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

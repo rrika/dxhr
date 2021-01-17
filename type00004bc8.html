@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00004bc8</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown4BC8</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_limb_clinic.drm n$[0x15f]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown4BC8 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00000013.html">Unknown0013</a>&gt; decl_0015_0020_40 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00004bc4.html">Unknown4BC4</a>&gt; decl_0012_001e_4c = {<a href="units.html#00001695">unit object 00001695</a>};
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00004bbf.html">Unknown4BBF</a>&gt; decl_0015_183b_54 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00004bc5.html">Unknown4BC5</a>&gt; decl_0012_104c_60 = {<a href="units.html#00001696">unit object 00001696</a>};
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown4BC8 : %triggervolume% {
+    // sizeof = 0x68
+    stickybool field_4;
+    stickybool field_20;
+    unitref decl_0015_0020_40 = TODO(0A);
+    instanceref decl_0012_001e_4c = TODO(0A);
+    unitref decl_0015_183b_54 = TODO(0A);
+    instanceref decl_0012_104c_60 = TODO(0A);
+    async void method_0021_0(instance arg_0022_0023_0, triggertype arg_0024_0025_4) {
+        Unknown0013 local_8 = TODO(0B);
+        Unknown0013 local_c = TODO(0B);
+        Unknown4BBF local_10 = TODO(0B);
+        Unknown4BC5 local_14 = TODO(0B);
+        anchor local_18 = TODO(0A);
+
+        /* 00000114: sp  0 +0 */ 00000000
+        /* 00000118: sp  0 +1 */ 09000008 local_8
+        /* 0000011c: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000120: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000128: sp  0 +1 */ 0a000008 local_8
+        /* 0000012c: sp  1 +0 */ 7e000000 00000013
+        /* 00000134: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_0079_4d()
+
+        /* 0000013c: sp  0 +0 */ 00000001
+        /* 00000140: sp  0 +1 */ 0900000c local_c
+        /* 00000144: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000148: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000150: sp  0 +1 */ 0a00000c local_c
+        /* 00000154: sp  1 +0 */ 7e000000 00000013
+        /* 0000015c: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_0078_4c()
+
+        /* 00000164: sp  0 +0 */ 00000002
+        /* 00000168: sp  0 +1 */ 09000018 local_18
+        /* 0000016c: sp  1 +1 */ 09000014 local_14
+        /* 00000170: sp  2 +1 */ 0f000060 unnamed member 60
+        /* 00000174: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000017c: sp  1 +1 */ 0a000014 local_14
+        /* 00000180: sp  2 +0 */ 7e000000 00004bc5
+        /* 00000188: sp  2 -2 */ 69000000 beebbeeb anchor instance::method_08d9_ffff()
+        /* 00000190: sp  0 +1 */ 09000018 local_18
+        /* 00000194: sp  1 +1 */ 09000010 local_10
+        /* 00000198: sp  2 +1 */ 0f000054 unnamed member 54
+        /* 0000019c: sp  3 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 000001a4: sp  1 +1 */ 0a000010 local_10
+        /* 000001a8: sp  2 +0 */ 7e000000 00004bbf
+        /* 000001b0: sp  2 +0 */ 14000058
+        /* 000001b4: sp  2 -2 */ 6b000000 beebbeeb (void)native async void sound::method_0a12_ffff(anchor arg_00b8_06fa_0)
+
+        /* 000001bc: sp  0 +0 */ 00000003
+        /* 000001c0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

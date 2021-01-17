@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000126a7</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown126A7</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_constructionsite_2a.drm n$[0x9be]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown126A7 : <a href="type000004f7.html">quest</a> {
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type000122e1.html">Unknown122E1</a>&gt; decl_0015_562c_4 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00012677.html">Unknown12677</a>&gt; decl_0012_573c_10 = {<a href="units.html#0000c99d">unit object 0000c99d</a>};
+    void method_5705_0();
+    void method_0456_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown126A7 : quest {
+    // sizeof = 0x18
+    unitref decl_0015_562c_4 = TODO(0A);
+    instanceref decl_0012_573c_10 = TODO(0A);
+    void method_5705_0() {
+        globalsref&lt;Unknown05CF&gt; local_0 = TODO(0A);
+        Unknown05CF local_4 = TODO(0B);
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 0000010c: sp  1 +1 */ 0f000010 unnamed member 10
+        /* 00000110: sp  2 +1 */ 09000004 local_4
+        /* 00000114: sp  3 +1 */ 09000000 local_0
+        /* 00000118: sp  4 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 00000120: sp  2 +1 */ 0a000004 local_4
+        /* 00000124: sp  3 +0 */ 7e000000 000005cf
+        /* 0000012c: sp  3 -3 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d4d_14(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)
+
+        /* 00000134: sp  0 +0 */ 00000001
+        /* 00000138: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0456_1() {
+        /* 00000144: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

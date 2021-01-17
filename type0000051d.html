@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000051d</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>triggervolumebase</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x62a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class triggervolumebase : <a href="type000004df.html">instance</a> {
+    void method_0a39_0(gcref <a href="type000004df.html">instance</a>);
+    void method_0a3a_1(gcref <a href="type000004df.html">instance</a>);
+    void method_0a3b_2(bool);
+    bool method_0a3c_3();
+    void method_0a3d_4(bool);
+    // referenced at <a href="type0000003b.html">async void Unknown003B::method_0120_0(instanceref arg_0012_0121_0)</a>
+    bool method_0a3e_5();
+    void method_0a3f_6(bool);
+    bool method_0a40_7();
+    void method_0a41_8(bool);
+    bool method_0a42_9();
+    void OnEntry(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void OnLeave(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_0a45_c(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    // referenced at <a href="type00000574.html">async void %mapdisplayvolume%::method_0a45_0(instance arg_0022_0023_0, triggertype arg_0024_0025_4)</a>
+    // referenced at <a href="type00000574.html">async void %mapdisplayvolume%::method_0b47_1(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    void method_0a46_d(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_0a47_e(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_0a48_f(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_0a49_10();
+    void method_0a4a_11(gcref <a href="type000004a8.html">actor</a>);
+    void method_0a4b_12(gcref <a href="type000004df.html">instance</a>);
+    // referenced at <a href="type00000571.html">async void %damagevolume%::method_0a48_0(instance arg_0022_0023_0, triggertype arg_0024_0025_4)</a>
+    // referenced at <a href="type00000571.html">async void %damagevolume%::method_0a45_1(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    void method_0a4c_13(dword);
+    // referenced at <a href="type00000574.html">async void %mapdisplayvolume%::method_0a45_0(instance arg_0022_0023_0, triggertype arg_0024_0025_4)</a>
+    void method_0a4d_14(dword);
+    // referenced at <a href="type00000574.html">async void %mapdisplayvolume%::method_0b47_1(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class triggervolumebase : instance {
+    // sizeof = 0x1
+    void method_0a39_0(instance arg_0022_0023_0); // no bytecode
+    void method_0a3a_1(instance arg_0022_0023_0); // no bytecode
+    void method_0a3b_2(bool arg_0000_04d4_0); // no bytecode
+    bool method_0a3c_3(); // no bytecode
+    void method_0a3d_4(bool arg_0000_04d4_0); // no bytecode
+    bool method_0a3e_5(); // no bytecode
+    void method_0a3f_6(bool arg_0000_04d4_0); // no bytecode
+    bool method_0a40_7(); // no bytecode
+    void method_0a41_8(bool arg_0000_04d4_0); // no bytecode
+    bool method_0a42_9(); // no bytecode
+    async void OnEntry(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        /* 000002b4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void OnLeave(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        /* 000002c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a45_c(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        /* 000002d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a46_d(instance arg_0022_0023_0, triggertype arg_0024_0025_4) {
+        /* 000002e4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a47_e(instance arg_0022_0023_0, triggertype arg_0024_0025_4) {
+        /* 000002f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a48_f(instance arg_0022_0023_0, triggertype arg_0024_0025_4) {
+        /* 00000304: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0a49_10(); // no bytecode
+    void method_0a4a_11(actor arg_05dc_05f2_0); // no bytecode
+    void method_0a4b_12(instance arg_0022_0023_0); // no bytecode
+    void method_0a4c_13(dword arg_0000_068c_0); // no bytecode
+    void method_0a4d_14(dword arg_0000_068c_0); // no bytecode
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00000529.html">volume</a><br/>
+derived class <a href="type000005f8.html">Unknown05F8</a><br/>
+derived class <a href="type000020ef.html">triggerplanebase</a><br/>
+parent class <a href="type000004df.html">instance</a><br/>
+</body>
+</html>

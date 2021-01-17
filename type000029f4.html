@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000029f4</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown29F4</h1>
+		<pre>./tools/drmexplore pc-w/ det_city__masterunit.drm n$[0x26]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown29F4 : <a href="type00000525.html">unit</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00001f65.html">Unknown1F65</a>&gt; decl_0012_155b_4 = {<a href="units.html#00000644">unit object 00000644</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000029f5.html">Unknown29F5</a>&gt; decl_0012_155d_c = {<a href="units.html#00000832">unit object 00000832</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000029f5.html">Unknown29F5</a>&gt; decl_0012_155e_14 = {<a href="units.html#00000832">unit object 00000832</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_155f_1c = persistent(dtp:2A36) {type=bool};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_098e_30 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_1560_38 = persistent(dtp:0454) {type=bool};
+    void method_0120_0(<a href="type000004e0.html">instanceref</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown29F4 : unit {
+    // sizeof = 0x4c
+    instanceref decl_0012_155b_4 = TODO(0A);
+    instanceref decl_0012_155d_c = TODO(0A);
+    instanceref decl_0012_155e_14 = TODO(0A);
+    smartscript decl_0089_155f_1c = TODO(0A);
+    playerref decl_012a_098e_30 = TODO(0A);
+    smartscript decl_0089_1560_38 = TODO(0A);
+    async void method_0120_0(instanceref arg_0012_0121_0) {
+        bool temp_8 = False;
+        %human_player% local_c = TODO(0B);
+        bool temp_10 = False;
+        %human_player% local_14 = TODO(0B);
+        conversation local_18 = TODO(0A);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000008 temp_8
+        /* 0000012c: sp  1 +1 */ 0f00001c unnamed member 1c
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000138: sp  0 +1 */ 06000008 temp_8
+        /* 0000013c: sp  1 +1 */ 04000000
+        /* 00000140: sp  2 -1 */ 46000000
+        /* 00000144: sp  1 +1 */ 09000010 temp_10
+        /* 00000148: sp  2 +1 */ 0f00000c unnamed member c
+        /* 0000014c: sp  3 +1 */ 0900000c local_c
+        /* 00000150: sp  4 +1 */ 0f000030 unnamed member 30
+        /* 00000154: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000015c: sp  3 +1 */ 0a00000c local_c
+        /* 00000160: sp  4 +0 */ 7e000000 00000552
+        /* 00000168: sp  4 -3 */ 69000000 beebbeeb bool actorplayer::method_06e1_ffff(instanceref arg_0012_0542_4)
+        /* 00000170: sp  1 +1 */ 06000010 temp_10
+        /* 00000174: sp  2 -1 */ 51000000
+        /* 00000178: sp  1 -1 */ 6400001d
+
+        /* 0000017c: sp  0 +0 */ 00000001
+
+        /* 00000180: sp  0 +0 */ 00000002
+        /* 00000184: sp  0 +1 */ 05000000 beebbeeb &#x27;det01_sq02_giver_setup&#x27;
+        /* 0000018c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 00000194: sp  0 +0 */ 00000003
+        /* 00000198: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 0000019c: sp  1 -1 */ 6b000000 beebbeeb (void)native async void instanceref::method_092a_ffff()
+
+        /* 000001a4: sp  0 +0 */ 00000004
+        /* 000001a8: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 000001ac: sp  1 +1 */ 09000018 local_18
+        /* 000001b0: sp  2 +1 */ 04000000
+        /* 000001b4: sp  3 +1 */ 09000014 local_14
+        /* 000001b8: sp  4 +1 */ 0f000030 unnamed member 30
+        /* 000001bc: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000001c4: sp  3 +1 */ 0a000014 local_14
+        /* 000001c8: sp  4 +0 */ 7e000000 00000552
+        /* 000001d0: sp  4 -4 */ 6a000000 beebbeeb virtual void Unknown05D8::method_06d7_6b(instanceref arg_0012_06d8_0, conversation arg_018d_06d9_8, bool arg_0000_06da_10)
+
+        /* 000001d8: sp  0 +0 */ 00000005
+        /* 000001dc: sp  0 +1 */ 04000001
+        /* 000001e0: sp  1 +1 */ 0f00001c unnamed member 1c
+        /* 000001e4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000001ec: sp  0 +0 */ 00000006
+        ---
+
+        /* 000001f0: sp  0 +0 */ 00000007
+
+        /* 000001f4: sp  0 +0 */ 00000008
+
+        /* 000001f8: sp  0 +0 */ 00000009
+        /* 000001fc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000029f6.html">Unknown29F6</a><br/>
+initialized field in <a href="type000029f7.html">Unknown29F7</a><br/>
+initialized field in <a href="type00003be2.html">Unknown3BE2</a><br/>
+initialized field in <a href="type00003be3.html">Unknown3BE3</a><br/>
+initialized field in <a href="type00003be4.html">Unknown3BE4</a><br/>
+initialized field in <a href="type00004bc0.html">Unknown4BC0</a><br/>
+parent class <a href="type00000525.html">unit</a><br/>
+</body>
+</html>

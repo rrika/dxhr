@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009e87</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9E87</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x71a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9E87 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004e8.html">mission</a> decl_0944_29e4_4 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_26c5_c = persistent(dtp:9E1B) {type=dword};
+    <a href="type00000511.html">smartscript</a> decl_0089_2724_20 = persistent(dtp:9E1A) {type=dword};
+    <a href="type00000511.html">smartscript</a> decl_0089_2723_34 = persistent(dtp:9E0E) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2726_48 = persistent(dtp:9E10) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2728_5c = persistent(dtp:9E12) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_29e5_70 = persistent(dtp:9E0F) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_29e6_84 = persistent(dtp:9E11) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_29e7_98 = persistent(dtp:9E13) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_29e8_ac = persistent(dtp:9E14) {type=bool};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_c0 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_26b2_c8 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_29e9_d0 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_29ea_d8 = persistent(dtp:9E1C) {type=dword};
+    <a href="type000004d4.html">globaleffect</a> decl_0199_29eb_ec = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_29ec_f0 = persistent(dtp:9E0D) {type=bool};
+    <a href="type000004e8.html">mission</a> decl_0944_29ed_104 = TODO(0A);
+    <a href="type000004e8.html">mission</a> decl_0944_2823_10c = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_274a_114 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_274b_11c = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_274c_124 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_274d_12c = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_29ee_134 = TODO(0A);
+    dword method_140b_0();
+    bool method_29ef_1();
+    bool method_29f0_2();
+    dword method_29f1_3();
+    dword method_29f2_4();
+    dword method_29f3_5();
+    dword method_29f4_6();
+    dword method_29f5_7();
+    void method_29f6_8();
+    void method_29f7_9();
+    void method_29f8_a();
+    void method_29f9_b();
+    dword method_29fa_c();
+    void method_29fb_d();
+    void method_29fc_e();
+    void method_29fd_f();
+    void method_2824_10();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9E87 : quest {
+    // sizeof = 0x13c
+    mission decl_0944_29e4_4 = TODO(0A);
+    smartscript decl_0089_26c5_c = TODO(0A);
+    smartscript decl_0089_2724_20 = TODO(0A);
+    smartscript decl_0089_2723_34 = TODO(0A);
+    smartscript decl_0089_2726_48 = TODO(0A);
+    smartscript decl_0089_2728_5c = TODO(0A);
+    smartscript decl_0089_29e5_70 = TODO(0A);
+    smartscript decl_0089_29e6_84 = TODO(0A);
+    smartscript decl_0089_29e7_98 = TODO(0A);
+    smartscript decl_0089_29e8_ac = TODO(0A);
+    playerref decl_012a_012c_c0 = TODO(0A);
+    objective decl_0005_26b2_c8 = TODO(0A);
+    objective decl_0005_29e9_d0 = TODO(0A);
+    smartscript decl_0089_29ea_d8 = TODO(0A);
+    globaleffect decl_0199_29eb_ec = TODO(0A);
+    smartscript decl_0089_29ec_f0 = TODO(0A);
+    mission decl_0944_29ed_104 = TODO(0A);
+    mission decl_0944_2823_10c = TODO(0A);
+    objective decl_0005_274a_114 = TODO(0A);
+    objective decl_0005_274b_11c = TODO(0A);
+    objective decl_0005_274c_124 = TODO(0A);
+    objective decl_0005_274d_12c = TODO(0A);
+    objective decl_0005_29ee_134 = TODO(0A);
+    dword method_140b_0() {
+        bool temp_4 = False;
+        bool temp_5 = False;
+        dword temp_8 = 0;
+
+        /* 00000294: sp  0 +0 */ 00000000
+        /* 00000298: sp  0 +1 */ 09000004 temp_4
+        /* 0000029c: sp  1 +1 */ 0f0000ac unnamed member ac
+        /* 000002a0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000002a8: sp  0 +1 */ 06000004 temp_4
+        /* 000002ac: sp  1 +1 */ 04000000
+        /* 000002b0: sp  2 -1 */ 46000000
+        /* 000002b4: sp  1 -1 */ 64000006
+
+        /* 000002b8: sp  0 +0 */ 00000001
+        /* 000002bc: sp  0 +1 */ 03000000
+        /* 000002c0: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000002c4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+        /* 000002cc: sp  0 +0 */ 63000012 00000002
+        /* 000002d4: sp  0 +1 */ 09000005 temp_5
+        /* 000002d8: sp  1 +1 */ 0f0000c8 unnamed member c8
+        /* 000002dc: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000002e4: sp  0 +1 */ 06000005 temp_5
+        /* 000002e8: sp  1 -1 */ 64000006
+
+        /* 000002ec: sp  0 +0 */ 00000003
+        /* 000002f0: sp  0 +1 */ 03000001
+        /* 000002f4: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000002f8: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+        /* 00000300: sp  0 +0 */ 63000005 00000004
+        /* 00000308: sp  0 +1 */ 03000002
+        /* 0000030c: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000310: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000318: sp  0 +0 */ 00000005
+        ---
+
+        /* 000002d0: sp  0 +0 */ 00000002
+        /* 000002d4: sp  0 +1 */ 09000005 temp_5
+        /* 000002d8: sp  1 +1 */ 0f0000c8 unnamed member c8
+        /* 000002dc: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000002e4: sp  0 +1 */ 06000005 temp_5
+        /* 000002e8: sp  1 -1 */ 64000006
+
+        /* 000002ec: sp  0 +0 */ 00000003
+        /* 000002f0: sp  0 +1 */ 03000001
+        /* 000002f4: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000002f8: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+        /* 00000300: sp  0 +0 */ 63000005 00000004
+        /* 00000308: sp  0 +1 */ 03000002
+        /* 0000030c: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000310: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000318: sp  0 +0 */ 00000005
+        ---
+
+        /* 00000304: sp  0 +0 */ 00000004
+        /* 00000308: sp  0 +1 */ 03000002
+        /* 0000030c: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000310: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000318: sp  0 +0 */ 00000005
+        ---
+        /* 0000031c: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000320: sp  1 +1 */ 09000008 temp_8
+        /* 00000324: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000328: sp  3 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000330: sp  1 +1 */ 08000008 temp_8
+        /* 00000334: sp  2 -2 */ 2f000000
+        /* 00000338: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_29ef_1() {
+        bool temp_4 = False;
+
+        /* 00000784: sp  0 +0 */ 00000007
+        /* 00000788: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000078c: sp  1 +1 */ 09000004 temp_4
+        /* 00000790: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000794: sp  3 -2 */ 65000000 beebbeeb native bool mission::method_0946_ffff()
+        /* 0000079c: sp  1 +1 */ 06000004 temp_4
+        /* 000007a0: sp  2 -2 */ 2e000000
+        /* 000007a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_29f0_2() {
+        bool temp_4 = False;
+
+        /* 000007d4: sp  0 +0 */ 00000009
+        /* 000007d8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000007dc: sp  1 +1 */ 09000004 temp_4
+        /* 000007e0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000007e4: sp  3 -2 */ 65000000 beebbeeb native bool mission::method_07b7_ffff()
+        /* 000007ec: sp  1 +1 */ 06000004 temp_4
+        /* 000007f0: sp  2 -2 */ 2e000000
+        /* 000007f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    dword method_29f1_3() {
+        dword temp_4 = 0;
+
+        /* 00000824: sp  0 +0 */ 0000000b
+        /* 00000828: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000082c: sp  1 +1 */ 09000004 temp_4
+        /* 00000830: sp  2 +1 */ 0f000020 unnamed member 20
+        /* 00000834: sp  3 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 0000083c: sp  1 +1 */ 08000004 temp_4
+        /* 00000840: sp  2 -2 */ 2f000000
+        /* 00000844: sp  0 +0 */ 7b000000
+        ---
+    }
+    dword method_29f2_4() {
+        dword temp_4 = 0;
+        bool temp_8 = False;
+        bool temp_9 = False;
+        bool temp_a = False;
+        bool temp_b = False;
+        bool temp_c = False;
+        bool temp_d = False;
+
+        /* 000008e4: sp  0 +0 */ 0000000d
+        /* 000008e8: sp  0 +1 */ 09000004 temp_4
+        /* 000008ec: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 000008f0: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 000008f8: sp  0 +1 */ 08000004 temp_4
+        /* 000008fc: sp  1 +1 */ 03000003
+        /* 00000900: sp  2 -1 */ 45000000
+        /* 00000904: sp  1 -1 */ 64000014
+
+        /* 00000908: sp  0 +0 */ 0000000e
+
+        /* 0000090c: sp  0 +0 */ 0000000f
+        /* 00000910: sp  0 +1 */ 0f000114 unnamed member 114
+        /* 00000914: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 0000091c: sp  0 +0 */ 00000010
+        /* 00000920: sp  0 +1 */ 0f00011c unnamed member 11c
+        /* 00000924: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 0000092c: sp  0 +0 */ 00000011
+        /* 00000930: sp  0 +1 */ 0f000124 unnamed member 124
+        /* 00000934: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 0000093c: sp  0 +0 */ 00000012
+        /* 00000940: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000944: sp  1 +1 */ 03000000
+        /* 00000948: sp  2 -2 */ 2f000000
+        /* 0000094c: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000958: sp  0 +0 */ 00000014
+        /* 0000095c: sp  0 +1 */ 09000008 temp_8
+        /* 00000960: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000964: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000096c: sp  0 +1 */ 06000008 temp_8
+        /* 00000970: sp  1 +1 */ 09000009 temp_9
+        /* 00000974: sp  2 +1 */ 0f000070 unnamed member 70
+        /* 00000978: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000980: sp  1 +1 */ 06000009 temp_9
+        /* 00000984: sp  2 +1 */ 04000000
+        /* 00000988: sp  3 -1 */ 46000000
+        /* 0000098c: sp  2 -1 */ 51000000
+        /* 00000990: sp  1 -1 */ 64000011
+
+        /* 00000994: sp  0 +0 */ 00000015
+
+        /* 00000998: sp  0 +0 */ 00000016
+        /* 0000099c: sp  0 +1 */ 04000001
+        /* 000009a0: sp  1 +1 */ 0f000070 unnamed member 70
+        /* 000009a4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000009ac: sp  0 +0 */ 00000017
+        /* 000009b0: sp  0 +1 */ 0f000114 unnamed member 114
+        /* 000009b4: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000009bc: sp  0 +0 */ 00000018
+        /* 000009c0: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000009c4: sp  1 +1 */ 03000001
+        /* 000009c8: sp  2 -2 */ 2f000000
+        /* 000009cc: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000009d8: sp  0 +0 */ 0000001a
+        /* 000009dc: sp  0 +1 */ 0900000a temp_a
+        /* 000009e0: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 000009e4: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000009ec: sp  0 +1 */ 0600000a temp_a
+        /* 000009f0: sp  1 +1 */ 0900000b temp_b
+        /* 000009f4: sp  2 +1 */ 0f000084 unnamed member 84
+        /* 000009f8: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000a00: sp  1 +1 */ 0600000b temp_b
+        /* 00000a04: sp  2 +1 */ 04000000
+        /* 00000a08: sp  3 -1 */ 46000000
+        /* 00000a0c: sp  2 -1 */ 51000000
+        /* 00000a10: sp  1 -1 */ 64000011
+
+        /* 00000a14: sp  0 +0 */ 0000001b
+
+        /* 00000a18: sp  0 +0 */ 0000001c
+        /* 00000a1c: sp  0 +1 */ 04000001
+        /* 00000a20: sp  1 +1 */ 0f000084 unnamed member 84
+        /* 00000a24: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000a2c: sp  0 +0 */ 0000001d
+        /* 00000a30: sp  0 +1 */ 0f00011c unnamed member 11c
+        /* 00000a34: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000a3c: sp  0 +0 */ 0000001e
+        /* 00000a40: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000a44: sp  1 +1 */ 03000002
+        /* 00000a48: sp  2 -2 */ 2f000000
+        /* 00000a4c: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000a58: sp  0 +0 */ 00000020
+        /* 00000a5c: sp  0 +1 */ 0900000c temp_c
+        /* 00000a60: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 00000a64: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000a6c: sp  0 +1 */ 0600000c temp_c
+        /* 00000a70: sp  1 +1 */ 0900000d temp_d
+        /* 00000a74: sp  2 +1 */ 0f000098 unnamed member 98
+        /* 00000a78: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000a80: sp  1 +1 */ 0600000d temp_d
+        /* 00000a84: sp  2 +1 */ 04000000
+        /* 00000a88: sp  3 -1 */ 46000000
+        /* 00000a8c: sp  2 -1 */ 51000000
+        /* 00000a90: sp  1 -1 */ 64000010
+
+        /* 00000a94: sp  0 +0 */ 00000021
+
+        /* 00000a98: sp  0 +0 */ 00000022
+        /* 00000a9c: sp  0 +1 */ 04000001
+        /* 00000aa0: sp  1 +1 */ 0f000098 unnamed member 98
+        /* 00000aa4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000aac: sp  0 +0 */ 00000023
+        /* 00000ab0: sp  0 +1 */ 0f000124 unnamed member 124
+        /* 00000ab4: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000abc: sp  0 +0 */ 00000024
+        /* 00000ac0: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000ac4: sp  1 +1 */ 03000003
+        /* 00000ac8: sp  2 -2 */ 2f000000
+        /* 00000acc: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000ad4: sp  0 +0 */ 00000026
+        /* 00000ad8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000adc: sp  1 +1 */ 03000000
+        /* 00000ae0: sp  2 -2 */ 2f000000
+        /* 00000ae4: sp  0 +0 */ 7b000000
+        ---
+    }
+    dword method_29f3_5() {
+        bool temp_4 = False;
+        bool temp_5 = False;
+        bool temp_6 = False;
+        bool temp_7 = False;
+        bool temp_8 = False;
+        bool temp_9 = False;
+
+        /* 00000b74: sp  0 +0 */ 00000028
+        /* 00000b78: sp  0 +1 */ 09000004 temp_4
+        /* 00000b7c: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000b80: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000b88: sp  0 +1 */ 06000004 temp_4
+        /* 00000b8c: sp  1 +1 */ 09000005 temp_5
+        /* 00000b90: sp  2 +1 */ 0f000070 unnamed member 70
+        /* 00000b94: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000b9c: sp  1 +1 */ 06000005 temp_5
+        /* 00000ba0: sp  2 +1 */ 04000000
+        /* 00000ba4: sp  3 -1 */ 46000000
+        /* 00000ba8: sp  2 -1 */ 51000000
+        /* 00000bac: sp  1 -1 */ 64000011
+
+        /* 00000bb0: sp  0 +0 */ 00000029
+
+        /* 00000bb4: sp  0 +0 */ 0000002a
+        /* 00000bb8: sp  0 +1 */ 04000001
+        /* 00000bbc: sp  1 +1 */ 0f000070 unnamed member 70
+        /* 00000bc0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000bc8: sp  0 +0 */ 0000002b
+        /* 00000bcc: sp  0 +1 */ 0f000114 unnamed member 114
+        /* 00000bd0: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000bd8: sp  0 +0 */ 0000002c
+        /* 00000bdc: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000be0: sp  1 +1 */ 03000001
+        /* 00000be4: sp  2 -2 */ 2f000000
+        /* 00000be8: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000bf4: sp  0 +0 */ 0000002e
+        /* 00000bf8: sp  0 +1 */ 09000006 temp_6
+        /* 00000bfc: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000c00: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000c08: sp  0 +1 */ 06000006 temp_6
+        /* 00000c0c: sp  1 +1 */ 09000007 temp_7
+        /* 00000c10: sp  2 +1 */ 0f000084 unnamed member 84
+        /* 00000c14: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000c1c: sp  1 +1 */ 06000007 temp_7
+        /* 00000c20: sp  2 +1 */ 04000000
+        /* 00000c24: sp  3 -1 */ 46000000
+        /* 00000c28: sp  2 -1 */ 51000000
+        /* 00000c2c: sp  1 -1 */ 64000011
+
+        /* 00000c30: sp  0 +0 */ 0000002f
+
+        /* 00000c34: sp  0 +0 */ 00000030
+        /* 00000c38: sp  0 +1 */ 04000001
+        /* 00000c3c: sp  1 +1 */ 0f000084 unnamed member 84
+        /* 00000c40: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000c48: sp  0 +0 */ 00000031
+        /* 00000c4c: sp  0 +1 */ 0f00011c unnamed member 11c
+        /* 00000c50: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000c58: sp  0 +0 */ 00000032
+        /* 00000c5c: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000c60: sp  1 +1 */ 03000002
+        /* 00000c64: sp  2 -2 */ 2f000000
+        /* 00000c68: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000c74: sp  0 +0 */ 00000034
+        /* 00000c78: sp  0 +1 */ 09000008 temp_8
+        /* 00000c7c: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 00000c80: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000c88: sp  0 +1 */ 06000008 temp_8
+        /* 00000c8c: sp  1 +1 */ 09000009 temp_9
+        /* 00000c90: sp  2 +1 */ 0f000098 unnamed member 98
+        /* 00000c94: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000c9c: sp  1 +1 */ 06000009 temp_9
+        /* 00000ca0: sp  2 +1 */ 04000000
+        /* 00000ca4: sp  3 -1 */ 46000000
+        /* 00000ca8: sp  2 -1 */ 51000000
+        /* 00000cac: sp  1 -1 */ 6400000d
+
+        /* 00000cb0: sp  0 +0 */ 00000035
+
+        /* 00000cb4: sp  0 +0 */ 00000036
+        /* 00000cb8: sp  0 +1 */ 04000001
+        /* 00000cbc: sp  1 +1 */ 0f000098 unnamed member 98
+        /* 00000cc0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000cc8: sp  0 +0 */ 00000037
+        /* 00000ccc: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000cd0: sp  1 +1 */ 03000003
+        /* 00000cd4: sp  2 -2 */ 2f000000
+        /* 00000cd8: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000ce4: sp  0 +0 */ 00000039
+        /* 00000ce8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000cec: sp  1 +1 */ 03000000
+        /* 00000cf0: sp  2 -2 */ 2f000000
+        /* 00000cf4: sp  0 +0 */ 7b000000
+        ---
+    }
+    dword method_29f4_6() {
+        bool temp_4 = False;
+        bool temp_5 = False;
+        bool temp_6 = False;
+        bool temp_7 = False;
+        bool temp_8 = False;
+        bool temp_9 = False;
+
+        /* 00000d94: sp  0 +0 */ 0000003c
+        /* 00000d98: sp  0 +1 */ 09000004 temp_4
+        /* 00000d9c: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000da0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000da8: sp  0 +1 */ 06000004 temp_4
+        /* 00000dac: sp  1 +1 */ 04000000
+        /* 00000db0: sp  2 -1 */ 46000000
+        /* 00000db4: sp  1 -1 */ 64000026
+
+        /* 00000db8: sp  0 +0 */ 0000003d
+
+        /* 00000dbc: sp  0 +0 */ 0000003e
+        /* 00000dc0: sp  0 +1 */ 09000005 temp_5
+        /* 00000dc4: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000dc8: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000dd0: sp  0 +1 */ 06000005 temp_5
+        /* 00000dd4: sp  1 +1 */ 04000000
+        /* 00000dd8: sp  2 -1 */ 46000000
+        /* 00000ddc: sp  1 -1 */ 64000006
+
+        /* 00000de0: sp  0 +0 */ 0000003f
+        /* 00000de4: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000de8: sp  1 +1 */ 03000002
+        /* 00000dec: sp  2 -2 */ 2f000000
+        /* 00000df0: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000df8: sp  0 +0 */ 00000040
+        /* 00000dfc: sp  0 +1 */ 09000006 temp_6
+        /* 00000e00: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 00000e04: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000e0c: sp  0 +1 */ 06000006 temp_6
+        /* 00000e10: sp  1 +1 */ 04000000
+        /* 00000e14: sp  2 -1 */ 46000000
+        /* 00000e18: sp  1 -1 */ 64000006
+
+        /* 00000e1c: sp  0 +0 */ 00000041
+        /* 00000e20: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000e24: sp  1 +1 */ 03000002
+        /* 00000e28: sp  2 -2 */ 2f000000
+        /* 00000e2c: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000e34: sp  0 +0 */ 00000042
+        /* 00000e38: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000e3c: sp  1 +1 */ 03000001
+        /* 00000e40: sp  2 -2 */ 2f000000
+        /* 00000e44: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000e50: sp  0 +0 */ 00000044
+        /* 00000e54: sp  0 +1 */ 09000007 temp_7
+        /* 00000e58: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000e5c: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000e64: sp  0 +1 */ 06000007 temp_7
+        /* 00000e68: sp  1 +1 */ 04000000
+        /* 00000e6c: sp  2 -1 */ 46000000
+        /* 00000e70: sp  1 -1 */ 64000017
+
+        /* 00000e74: sp  0 +0 */ 00000045
+
+        /* 00000e78: sp  0 +0 */ 00000046
+        /* 00000e7c: sp  0 +1 */ 09000008 temp_8
+        /* 00000e80: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 00000e84: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000e8c: sp  0 +1 */ 06000008 temp_8
+        /* 00000e90: sp  1 +1 */ 04000000
+        /* 00000e94: sp  2 -1 */ 46000000
+        /* 00000e98: sp  1 -1 */ 64000006
+
+        /* 00000e9c: sp  0 +0 */ 00000047
+        /* 00000ea0: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000ea4: sp  1 +1 */ 03000002
+        /* 00000ea8: sp  2 -2 */ 2f000000
+        /* 00000eac: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000eb4: sp  0 +0 */ 00000048
+        /* 00000eb8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000ebc: sp  1 +1 */ 03000001
+        /* 00000ec0: sp  2 -2 */ 2f000000
+        /* 00000ec4: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000ed0: sp  0 +0 */ 0000004a
+        /* 00000ed4: sp  0 +1 */ 09000009 temp_9
+        /* 00000ed8: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 00000edc: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000ee4: sp  0 +1 */ 06000009 temp_9
+        /* 00000ee8: sp  1 +1 */ 04000000
+        /* 00000eec: sp  2 -1 */ 46000000
+        /* 00000ef0: sp  1 -1 */ 64000005
+
+        /* 00000ef4: sp  0 +0 */ 0000004b
+        /* 00000ef8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000efc: sp  1 +1 */ 03000001
+        /* 00000f00: sp  2 -2 */ 2f000000
+        /* 00000f04: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000f08: sp  0 +0 */ 0000004c
+        /* 00000f0c: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000f10: sp  1 +1 */ 03000000
+        /* 00000f14: sp  2 -2 */ 2f000000
+        /* 00000f18: sp  0 +0 */ 7b000000
+        ---
+    }
+    dword method_29f5_7() {
+        bool temp_4 = False;
+        bool temp_5 = False;
+        bool temp_6 = False;
+        bool temp_7 = False;
+        bool temp_8 = False;
+        bool temp_9 = False;
+
+        /* 00000fa4: sp  0 +0 */ 0000004e
+        /* 00000fa8: sp  0 +1 */ 09000004 temp_4
+        /* 00000fac: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000fb0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000fb8: sp  0 +1 */ 06000004 temp_4
+        /* 00000fbc: sp  1 +1 */ 09000005 temp_5
+        /* 00000fc0: sp  2 +1 */ 0f000070 unnamed member 70
+        /* 00000fc4: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000fcc: sp  1 +1 */ 06000005 temp_5
+        /* 00000fd0: sp  2 +1 */ 04000000
+        /* 00000fd4: sp  3 -1 */ 46000000
+        /* 00000fd8: sp  2 -1 */ 51000000
+        /* 00000fdc: sp  1 -1 */ 64000006
+
+        /* 00000fe0: sp  0 +0 */ 0000004f
+        /* 00000fe4: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000fe8: sp  1 +1 */ 03000001
+        /* 00000fec: sp  2 -2 */ 2f000000
+        /* 00000ff0: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000ff8: sp  0 +0 */ 00000050
+        /* 00000ffc: sp  0 +1 */ 09000006 temp_6
+        /* 00001000: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00001004: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000100c: sp  0 +1 */ 06000006 temp_6
+        /* 00001010: sp  1 +1 */ 09000007 temp_7
+        /* 00001014: sp  2 +1 */ 0f000084 unnamed member 84
+        /* 00001018: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001020: sp  1 +1 */ 06000007 temp_7
+        /* 00001024: sp  2 +1 */ 04000000
+        /* 00001028: sp  3 -1 */ 46000000
+        /* 0000102c: sp  2 -1 */ 51000000
+        /* 00001030: sp  1 -1 */ 64000006
+
+        /* 00001034: sp  0 +0 */ 00000051
+        /* 00001038: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000103c: sp  1 +1 */ 03000001
+        /* 00001040: sp  2 -2 */ 2f000000
+        /* 00001044: sp  0 +0 */ 7b000000
+        ---
+
+        /* 0000104c: sp  0 +0 */ 00000052
+        /* 00001050: sp  0 +1 */ 09000008 temp_8
+        /* 00001054: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 00001058: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001060: sp  0 +1 */ 06000008 temp_8
+        /* 00001064: sp  1 +1 */ 09000009 temp_9
+        /* 00001068: sp  2 +1 */ 0f000098 unnamed member 98
+        /* 0000106c: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001074: sp  1 +1 */ 06000009 temp_9
+        /* 00001078: sp  2 +1 */ 04000000
+        /* 0000107c: sp  3 -1 */ 46000000
+        /* 00001080: sp  2 -1 */ 51000000
+        /* 00001084: sp  1 -1 */ 64000006
+
+        /* 00001088: sp  0 +0 */ 00000053
+        /* 0000108c: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00001090: sp  1 +1 */ 03000001
+        /* 00001094: sp  2 -2 */ 2f000000
+        /* 00001098: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000010a0: sp  0 +0 */ 00000054
+        /* 000010a4: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000010a8: sp  1 +1 */ 03000000
+        /* 000010ac: sp  2 -2 */ 2f000000
+        /* 000010b0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29f6_8() {
+
+        /* 000010d4: sp  0 +0 */ 00000057
+        /* 000010d8: sp  0 +1 */ 03000019
+        /* 000010dc: sp  1 +1 */ 0f0000d8 unnamed member d8
+        /* 000010e0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 000010e8: sp  0 +0 */ 00000058
+        /* 000010ec: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29f7_9() {
+
+        /* 000010f4: sp  0 +0 */ 00000059
+        /* 000010f8: sp  0 +1 */ 03000032
+        /* 000010fc: sp  1 +1 */ 0f0000d8 unnamed member d8
+        /* 00001100: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00001108: sp  0 +0 */ 0000005a
+        /* 0000110c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29f8_a() {
+
+        /* 00000344: sp  0 +0 */ 0000005b
+        /* 00000348: sp  0 +1 */ 0300003c
+        /* 0000034c: sp  1 +1 */ 0f0000ec unnamed member ec
+        /* 00000350: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02e0_ffff(dword arg_0000_0564_0)
+
+        /* 00000358: sp  0 +0 */ 0000005c
+
+        /* 0000035c: sp  0 +0 */ 0000005d
+        /* 00000360: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29f9_b() {
+
+        /* 00000374: sp  0 +0 */ 0000005e
+        /* 00000378: sp  0 +1 */ 0300003c
+        /* 0000037c: sp  1 +1 */ 0f0000ec unnamed member ec
+        /* 00000380: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02df_ffff(dword arg_0000_0564_0)
+
+        /* 00000388: sp  0 +0 */ 0000005f
+
+        /* 0000038c: sp  0 +0 */ 00000060
+        /* 00000390: sp  0 +0 */ 7b000000
+        ---
+    }
+    dword method_29fa_c() {
+        bool temp_4 = False;
+        dword temp_8 = 0;
+        dword temp_c = 0;
+        dword temp_10 = 0;
+
+        /* 00000404: sp  0 +0 */ 00000061
+        /* 00000408: sp  0 +1 */ 04000001
+        /* 0000040c: sp  1 +1 */ 0f0000f0 unnamed member f0
+        /* 00000410: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000418: sp  0 +0 */ 00000062
+        /* 0000041c: sp  0 +1 */ 09000004 temp_4
+        /* 00000420: sp  1 +1 */ 0f0000f0 unnamed member f0
+        /* 00000424: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000042c: sp  0 +1 */ 06000004 temp_4
+        /* 00000430: sp  1 +1 */ 03000006
+        /* 00000434: sp  2 +0 */ 5c000000
+        /* 00000438: sp  2 +1 */ 04000001
+        /* 0000043c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0549_ffff(bool arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000444: sp  0 +0 */ 00000063
+        /* 00000448: sp  0 +1 */ 09000008 temp_8
+        /* 0000044c: sp  1 +1 */ 0f0000d8 unnamed member d8
+        /* 00000450: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000458: sp  0 +1 */ 08000008 temp_8
+        /* 0000045c: sp  1 +1 */ 03000019
+        /* 00000460: sp  2 -1 */ 3e000000
+        /* 00000464: sp  1 +1 */ 0f0000d8 unnamed member d8
+        /* 00000468: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000470: sp  0 +0 */ 00000064
+        /* 00000474: sp  0 +1 */ 0900000c temp_c
+        /* 00000478: sp  1 +1 */ 0f0000d8 unnamed member d8
+        /* 0000047c: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000484: sp  0 +1 */ 0800000c temp_c
+        /* 00000488: sp  1 +1 */ 03000006
+        /* 0000048c: sp  2 +0 */ 5c000000
+        /* 00000490: sp  2 +1 */ 04000001
+        /* 00000494: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0545_ffff(dword arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000049c: sp  0 +0 */ 00000065
+        /* 000004a0: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000004a4: sp  1 +1 */ 09000010 temp_10
+        /* 000004a8: sp  2 +1 */ 0f0000d8 unnamed member d8
+        /* 000004ac: sp  3 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 000004b4: sp  1 +1 */ 08000010 temp_10
+        /* 000004b8: sp  2 -2 */ 2f000000
+        /* 000004bc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29fb_d() {
+
+        /* 000004d4: sp  0 +0 */ 00000067
+        /* 000004d8: sp  0 +1 */ 0f000104 unnamed member 104
+        /* 000004dc: sp  1 -1 */ 65000000 beebbeeb native void mission::disableObjective()
+
+        /* 000004e4: sp  0 +0 */ 00000068
+        /* 000004e8: sp  0 +1 */ 05000000 beebbeeb &#x27;quinns mission meet contact is completed&#x27;
+        /* 000004f0: sp  1 +1 */ 03000008
+        /* 000004f4: sp  2 +0 */ 5c000000
+        /* 000004f8: sp  2 +1 */ 04000001
+        /* 000004fc: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000504: sp  0 +0 */ 00000069
+        /* 00000508: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29fc_e() {
+        bool temp_0 = False;
+
+        /* 00000564: sp  0 +0 */ 0000006a
+        /* 00000568: sp  0 +1 */ 09000000 temp_0
+        /* 0000056c: sp  1 +1 */ 0f00012c unnamed member 12c
+        /* 00000570: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_0946_ffff()
+        /* 00000578: sp  0 +1 */ 06000000 temp_0
+        /* 0000057c: sp  1 -1 */ 6400000b
+
+        /* 00000580: sp  0 +0 */ 0000006b
+
+        /* 00000584: sp  0 +0 */ 0000006c
+        /* 00000588: sp  0 +1 */ 0f00012c unnamed member 12c
+        /* 0000058c: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+
+        /* 00000594: sp  0 +0 */ 0000006d
+        /* 00000598: sp  0 +1 */ 0f00012c unnamed member 12c
+        /* 0000059c: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000005a4: sp  0 +0 */ 0000006e
+        /* 000005a8: sp  0 +0 */ 63000004 0000006f
+        /* 000005b0: sp  0 +1 */ 0f00012c unnamed member 12c
+        /* 000005b4: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000005bc: sp  0 +0 */ 00000070
+        ---
+
+        /* 000005ac: sp  0 +0 */ 0000006f
+        /* 000005b0: sp  0 +1 */ 0f00012c unnamed member 12c
+        /* 000005b4: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000005bc: sp  0 +0 */ 00000070
+        ---
+        /* 000005c0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29fd_f() {
+
+        /* 000005d4: sp  0 +0 */ 00000071
+        /* 000005d8: sp  0 +1 */ 0f00010c unnamed member 10c
+        /* 000005dc: sp  1 -1 */ 65000000 beebbeeb native void mission::disableObjective()
+
+        /* 000005e4: sp  0 +0 */ 00000072
+        /* 000005e8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2824_10() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+        bool temp_2 = False;
+        bool temp_3 = False;
+        bool temp_4 = False;
+
+        /* 00000664: sp  0 +0 */ 00000073
+        /* 00000668: sp  0 +1 */ 09000000 temp_0
+        /* 0000066c: sp  1 +1 */ 0f00010c unnamed member 10c
+        /* 00000670: sp  2 -2 */ 65000000 beebbeeb native bool mission::method_07b7_ffff()
+        /* 00000678: sp  0 +1 */ 06000000 temp_0
+        /* 0000067c: sp  1 -1 */ 64000033
+
+        /* 00000680: sp  0 +0 */ 00000074
+
+        /* 00000684: sp  0 +0 */ 00000075
+        /* 00000688: sp  0 +1 */ 09000001 temp_1
+        /* 0000068c: sp  1 +1 */ 0f000114 unnamed member 114
+        /* 00000690: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000698: sp  0 +1 */ 06000001 temp_1
+        /* 0000069c: sp  1 -1 */ 64000004
+
+        /* 000006a0: sp  0 +0 */ 00000076
+        /* 000006a4: sp  0 +1 */ 0f000114 unnamed member 114
+        /* 000006a8: sp  1 -1 */ 65000000 beebbeeb native void objective::method_0958_ffff()
+        ---
+
+        /* 000006b0: sp  0 +0 */ 00000077
+        /* 000006b4: sp  0 +1 */ 09000002 temp_2
+        /* 000006b8: sp  1 +1 */ 0f00011c unnamed member 11c
+        /* 000006bc: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000006c4: sp  0 +1 */ 06000002 temp_2
+        /* 000006c8: sp  1 -1 */ 64000004
+
+        /* 000006cc: sp  0 +0 */ 00000078
+        /* 000006d0: sp  0 +1 */ 0f00011c unnamed member 11c
+        /* 000006d4: sp  1 -1 */ 65000000 beebbeeb native void objective::method_0958_ffff()
+        ---
+
+        /* 000006dc: sp  0 +0 */ 00000079
+        /* 000006e0: sp  0 +1 */ 09000003 temp_3
+        /* 000006e4: sp  1 +1 */ 0f000124 unnamed member 124
+        /* 000006e8: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000006f0: sp  0 +1 */ 06000003 temp_3
+        /* 000006f4: sp  1 -1 */ 64000004
+
+        /* 000006f8: sp  0 +0 */ 0000007a
+        /* 000006fc: sp  0 +1 */ 0f000124 unnamed member 124
+        /* 00000700: sp  1 -1 */ 65000000 beebbeeb native void objective::method_0958_ffff()
+        ---
+
+        /* 00000708: sp  0 +0 */ 0000007b
+        /* 0000070c: sp  0 +1 */ 09000004 temp_4
+        /* 00000710: sp  1 +1 */ 0f00012c unnamed member 12c
+        /* 00000714: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 0000071c: sp  0 +1 */ 06000004 temp_4
+        /* 00000720: sp  1 -1 */ 64000004
+
+        /* 00000724: sp  0 +0 */ 0000007c
+        /* 00000728: sp  0 +1 */ 0f00012c unnamed member 12c
+        /* 0000072c: sp  1 -1 */ 65000000 beebbeeb native void objective::method_0958_ffff()
+        ---
+
+        /* 00000734: sp  0 +0 */ 0000007d
+        /* 00000738: sp  0 +1 */ 0f00010c unnamed member 10c
+        /* 0000073c: sp  1 -1 */ 65000000 beebbeeb native void mission::method_04b7_ffff()
+
+        /* 00000744: sp  0 +0 */ 0000007e
+        /* 00000748: sp  0 +0 */ 63000001 0000007f
+
+        /* 00000750: sp  0 +0 */ 00000080
+        ---
+
+        /* 0000074c: sp  0 +0 */ 0000007f
+
+        /* 00000750: sp  0 +0 */ 00000080
+        ---
+        /* 00000754: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

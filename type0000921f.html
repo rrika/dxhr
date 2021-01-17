@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000921f</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown921F</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0xb5]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown921F : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00008b56.html">Unknown8B56</a>&gt; decl_0015_232c_40 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_235e_4c = persistent(dtp:8B9E) {type=dword};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000916e.html">Unknown916E</a>&gt; decl_0012_2496_60 = {<a href="units.html#00005eb1">unit object 00005eb1</a>};
+    <a href="type00000512.html">sound</a> decl_0027_2497_68 = dtp:0004:V;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000575.html">%triggervolume%</a>&gt; decl_0012_2498_6c = {<a href="units.html#00005ec9">unit object 00005ec9</a>};
+    <a href="type000004e8.html">mission</a> decl_0944_2499_74 = TODO(0A);
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown921F : %triggervolume% {
+    // sizeof = 0x7c
+    stickybool field_4;
+    stickybool field_20;
+    unitref decl_0015_232c_40 = TODO(0A);
+    smartscript decl_0089_235e_4c = TODO(0A);
+    instanceref decl_0012_2496_60 = TODO(0A);
+    sound decl_0027_2497_68 = TODO(0A);
+    instanceref decl_0012_2498_6c = TODO(0A);
+    mission decl_0944_2499_74 = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown8B56 local_8 = TODO(0B);
+        dword temp_c = 0;
+        Unknown8B56 local_10 = TODO(0B);
+        dword temp_14 = 0;
+        Unknown8B56 local_18 = TODO(0B);
+        Unknown916E local_1c = TODO(0B);
+        bool temp_20 = False;
+        %triggervolume% local_24 = TODO(0B);
+        anchor local_28 = TODO(0A);
+        Unknown916E local_2c = TODO(0B);
+        bool temp_30 = False;
+        soundendtype local_34 = TODO(0A);
+        bool temp_38 = False;
+        soundendtype local_3c = TODO(0A);
+
+        /* 000001f4: sp  0 +0 */ 00000000
+        /* 000001f8: sp  0 +1 */ 09000008 local_8
+        /* 000001fc: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000200: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000208: sp  0 +1 */ 0a000008 local_8
+        /* 0000020c: sp  1 +0 */ 7e000000 00008b56
+        /* 00000214: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2336_21()
+
+        /* 0000021c: sp  0 +0 */ 00000001
+        /* 00000220: sp  0 +1 */ 0900000c temp_c
+        /* 00000224: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 00000228: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000230: sp  0 +1 */ 0800000c temp_c
+        /* 00000234: sp  1 +1 */ 03000000
+        /* 00000238: sp  2 -1 */ 45000000
+        /* 0000023c: sp  1 -1 */ 6400000a
+
+        /* 00000240: sp  0 +0 */ 00000002
+        /* 00000244: sp  0 +1 */ 09000010 local_10
+        /* 00000248: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 0000024c: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000254: sp  0 +1 */ 0a000010 local_10
+        /* 00000258: sp  1 +0 */ 7e000000 00008b56
+        /* 00000260: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2343_2e()
+        ---
+
+        /* 00000268: sp  0 +0 */ 00000003
+        /* 0000026c: sp  0 +1 */ 09000014 temp_14
+        /* 00000270: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 00000274: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 0000027c: sp  0 +1 */ 08000014 temp_14
+        /* 00000280: sp  1 +1 */ 03000001
+        /* 00000284: sp  2 -1 */ 45000000
+        /* 00000288: sp  1 -1 */ 6400000a
+
+        /* 0000028c: sp  0 +0 */ 00000004
+        /* 00000290: sp  0 +1 */ 09000018 local_18
+        /* 00000294: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000298: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 000002a0: sp  0 +1 */ 0a000018 local_18
+        /* 000002a4: sp  1 +0 */ 7e000000 00008b56
+        /* 000002ac: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2344_2f()
+        ---
+
+        /* 000002b4: sp  0 +0 */ 00000005
+        /* 000002b8: sp  0 +1 */ 09000020 temp_20
+        /* 000002bc: sp  1 +1 */ 0900001c local_1c
+        /* 000002c0: sp  2 +1 */ 0f000060 unnamed member 60
+        /* 000002c4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002cc: sp  1 +1 */ 0a00001c local_1c
+        /* 000002d0: sp  2 +0 */ 7e000000 0000916e
+        /* 000002d8: sp  2 +0 */ 14000034
+        /* 000002dc: sp  2 -2 */ 65000000 beebbeeb native bool trophy::method_0a4f_ffff()
+        /* 000002e4: sp  0 +1 */ 06000020 temp_20
+        /* 000002e8: sp  1 +0 */ 50000000
+        /* 000002ec: sp  1 -1 */ 6400000f
+
+        /* 000002f0: sp  0 +0 */ 00000006
+        /* 000002f4: sp  0 +1 */ 09000028 local_28
+        /* 000002f8: sp  1 +1 */ 09000024 local_24
+        /* 000002fc: sp  2 +1 */ 0f00006c unnamed member 6c
+        /* 00000300: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000308: sp  1 +1 */ 0a000024 local_24
+        /* 0000030c: sp  2 +0 */ 7e000000 00000575
+        /* 00000314: sp  2 -2 */ 69000000 beebbeeb anchor instance::method_08d9_ffff()
+        /* 0000031c: sp  0 +1 */ 09000028 local_28
+        /* 00000320: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 00000324: sp  2 -2 */ 65000000 beebbeeb native void sound::startSound1(anchor arg_00b8_06fa_0)
+        ---
+
+        /* 0000032c: sp  0 +0 */ 00000007
+        /* 00000330: sp  0 +1 */ 09000030 temp_30
+        /* 00000334: sp  1 +1 */ 0900002c local_2c
+        /* 00000338: sp  2 +1 */ 0f000060 unnamed member 60
+        /* 0000033c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000344: sp  1 +1 */ 0a00002c local_2c
+        /* 00000348: sp  2 +0 */ 7e000000 0000916e
+        /* 00000350: sp  2 +0 */ 14000034
+        /* 00000354: sp  2 -2 */ 65000000 beebbeeb native bool trophy::method_0a4f_ffff()
+        /* 0000035c: sp  0 +1 */ 06000030 temp_30
+        /* 00000360: sp  1 -1 */ 64000005
+
+        /* 00000364: sp  0 +0 */ 00000008
+        /* 00000368: sp  0 +1 */ 09000034 local_34
+        /* 0000036c: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 00000370: sp  2 -2 */ 65000000 beebbeeb native void sound::stopSound(soundendtype arg_0a17_0a18_0)
+        ---
+
+        /* 00000378: sp  0 +0 */ 00000009
+        /* 0000037c: sp  0 +1 */ 09000038 temp_38
+        /* 00000380: sp  1 +1 */ 0f000074 unnamed member 74
+        /* 00000384: sp  2 -2 */ 65000000 beebbeeb native bool mission::method_0948_ffff()
+        /* 0000038c: sp  0 +1 */ 06000038 temp_38
+        /* 00000390: sp  1 -1 */ 64000005
+
+        /* 00000394: sp  0 +0 */ 0000000a
+        /* 00000398: sp  0 +1 */ 0900003c local_3c
+        /* 0000039c: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 000003a0: sp  2 -2 */ 65000000 beebbeeb native void sound::stopSound(soundendtype arg_0a17_0a18_0)
+        ---
+
+        /* 000003a8: sp  0 +0 */ 0000000b
+        /* 000003ac: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

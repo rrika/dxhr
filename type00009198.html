@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009198</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9198</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0x2e]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9198 : <a href="type000093c7.html">%dlc_pod_control_room_a%</a> {
+    <a href="type00000522.html">uberobjectevent</a> field_4;
+    <a href="type00000522.html">uberobjectevent</a> field_14;
+    <a href="type00000522.html">uberobjectevent</a> field_24;
+    <a href="type00000521.html">uberobjectcommand</a> field_34;
+    <a href="type00000521.html">uberobjectcommand</a> field_3c;
+    <a href="type00000521.html">uberobjectcommand</a> field_44;
+    <a href="type000004ec.html">objective</a> decl_0005_23ff_4c = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_2400_54 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092ad.html">Unknown92AD</a>&gt; decl_0007_2402_5c = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092af.html">Unknown92AF</a>&gt; decl_0007_2404_60 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_23d0_64 = persistent(dtp:939C) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_23d2_78 = persistent(dtp:939D) {type=bool};
+    <a href="type0000051e.html">trophy</a> decl_0d70_2405_8c = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000916e.html">Unknown916E</a>&gt; decl_0012_23b4_90 = {<a href="units.html#00005eb1">unit object 00005eb1</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092ae.html">Unknown92AE</a>&gt; decl_0007_2408_98 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_2409_9c = persistent(dtp:939E) {type=dword};
+    void method_240a_0();
+    void method_240b_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9198 : %dlc_pod_control_room_a% {
+    // sizeof = 0xb0
+    uberobjectevent field_4;
+    uberobjectevent field_14;
+    uberobjectevent field_24;
+    uberobjectcommand field_34;
+    uberobjectcommand field_3c;
+    uberobjectcommand field_44;
+    objective decl_0005_23ff_4c = TODO(0A);
+    objective decl_0005_2400_54 = TODO(0A);
+    scenarioref&lt;Unknown92AD&gt; decl_0007_2402_5c = TODO(0A);
+    scenarioref&lt;Unknown92AF&gt; decl_0007_2404_60 = TODO(0A);
+    smartscript decl_0089_23d0_64 = TODO(0A);
+    smartscript decl_0089_23d2_78 = TODO(0A);
+    trophy decl_0d70_2405_8c = TODO(0A);
+    instanceref decl_0012_23b4_90 = TODO(0A);
+    scenarioref&lt;Unknown92AE&gt; decl_0007_2408_98 = TODO(0A);
+    smartscript decl_0089_2409_9c = TODO(0A);
+    void method_240a_0() {
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 03000002
+        /* 000000cc: sp  1 +1 */ 0f00009c unnamed member 9c
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 000000d8: sp  0 +0 */ 00000001
+        /* 000000dc: sp  0 +1 */ 04000001
+        /* 000000e0: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 000000e4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000ec: sp  0 +0 */ 00000002
+        /* 000000f0: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Bool POD ALIVE set to true&#x27;
+        /* 000000f8: sp  1 +1 */ 03000003
+        /* 000000fc: sp  2 +0 */ 5c000000
+        /* 00000100: sp  2 +1 */ 04000001
+        /* 00000104: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000010c: sp  0 +0 */ 00000003
+        /* 00000110: sp  0 +1 */ 0f00008c unnamed member 8c
+        /* 00000114: sp  1 -1 */ 65000000 beebbeeb native void trophy::method_01a7_ffff()
+
+        /* 0000011c: sp  0 +0 */ 00000004
+        /* 00000120: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Achievement FIX POD Unlocked!&#x27;
+        /* 00000128: sp  1 +1 */ 03000003
+        /* 0000012c: sp  2 +0 */ 5c000000
+        /* 00000130: sp  2 +1 */ 04000001
+        /* 00000134: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000013c: sp  0 +0 */ 00000005
+        /* 00000140: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_240b_1() {
+
+        /* 000001b4: sp  0 +0 */ 00000006
+        /* 000001b8: sp  0 +1 */ 04000001
+        /* 000001bc: sp  1 +1 */ 0f000078 unnamed member 78
+        /* 000001c0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000001c8: sp  0 +0 */ 00000007
+        /* 000001cc: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Bool POD DEAD set to true&#x27;
+        /* 000001d4: sp  1 +1 */ 03000003
+        /* 000001d8: sp  2 +0 */ 5c000000
+        /* 000001dc: sp  2 +1 */ 04000001
+        /* 000001e0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001e8: sp  0 +0 */ 00000008
+        /* 000001ec: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000921a.html">Unknown921A</a><br/>
+parent class <a href="type000093c7.html">%dlc_pod_control_room_a%</a><br/>
+</body>
+</html>

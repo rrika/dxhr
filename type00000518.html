@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000518</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>stickyfloat</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x625]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class stickyfloat {
+    void setStickyBool(float);
+    // referenced at <a href="type00006f66.html">void Unknown6F66::method_07f2_0(float arg_0000_06be_0)</a>
+    float value();
+    float getValue();
+    // referenced at <a href="type00006f66.html">async void Unknown6F66::method_08ce_2()</a>
+    bool isEqual(<a href="type00000518.html">stickyfloat</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class stickyfloat {
+    // sizeof = 0x1
+    void setStickyBool(float arg_0000_value_0); // no bytecode
+    float value(); // no bytecode
+    float getValue(); // no bytecode
+    bool isEqual(stickyfloat arg_084e_0542_4); // no bytecode
+};
+</pre>
+		<h2>See also</h2>
+		argument to method on <a href="type000004d2.html">gamebase</a><br/>
+argument to method on <a href="type00000518.html">stickyfloat</a><br/>
+field in <a href="type00006f3b.html">Unknown6F3B</a><br/>
+field in <a href="type00006f68.html">%gas_bomb_a%</a><br/>
+field in <a href="type00009cde.html">Unknown9CDE</a><br/>
+field in <a href="type00009e77.html">%dlc_gas_injection_a%</a><br/>
+initialized field in <a href="type00006f66.html">Unknown6F66</a><br/>
+</body>
+</html>

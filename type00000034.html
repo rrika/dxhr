@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000034</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown0034</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x46]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown0034 : <a href="type00000568.html">%sha1_capsulehotelcalm_civilian_arievanbruggen%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000035.html">Unknown0035</a>&gt; decl_0012_018a_3c = {<a href="units.html#000000c0">unit object 000000c0</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_018b_44 = persistent(dtp:0461) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_018c_58 = persistent(dtp:0463) {type=bool};
+    <a href="type000004c3.html">conversation</a> decl_018d_018e_6c = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_018f_74 = TODO(0A);
+    void method_0190_0();
+    void method_0191_1(<a href="type000004a3.html">symbol</a>, enum <a href="type000004c4.html">conversationenum</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown0034 : %sha1_capsulehotelcalm_civilian_arievanbruggen% {
+    // sizeof = 0x7c
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_018a_3c = TODO(0A);
+    smartscript decl_0089_018b_44 = TODO(0A);
+    smartscript decl_0089_018c_58 = TODO(0A);
+    conversation decl_018d_018e_6c = TODO(0A);
+    sequencergraph decl_008c_018f_74 = TODO(0A);
+    async void method_0190_0() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+
+        /* 000000f4: sp  0 +0 */ 00000000
+
+        /* 000000f8: sp  0 +0 */ 00000001
+        /* 000000fc: sp  0 +1 */ 04000001
+        /* 00000100: sp  1 +1 */ 0f000044 unnamed member 44
+        /* 00000104: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000010c: sp  0 +0 */ 00000002
+        /* 00000110: sp  0 +1 */ 04000000
+        /* 00000114: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000118: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000120: sp  0 +0 */ 00000003
+        /* 00000124: sp  0 +1 */ 05000000 beebbeeb &#x27;ArieVanBruggen is dead&#x27;
+        /* 0000012c: sp  1 +1 */ 03000005
+        /* 00000130: sp  2 +0 */ 5c000000
+        /* 00000134: sp  2 +1 */ 04000001
+        /* 00000138: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000140: sp  0 +0 */ 00000004
+        /* 00000144: sp  0 +1 */ 09000000 temp_0
+        /* 00000148: sp  1 +1 */ 0f000044 unnamed member 44
+        /* 0000014c: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000154: sp  0 +1 */ 06000000 temp_0
+        /* 00000158: sp  1 +1 */ 03000005
+        /* 0000015c: sp  2 +0 */ 5c000000
+        /* 00000160: sp  2 +1 */ 04000001
+        /* 00000164: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0549_ffff(bool arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000016c: sp  0 +0 */ 00000005
+        /* 00000170: sp  0 +1 */ 05000000 beebbeeb &#x27;Weapon Given to Arie&#x27;
+        /* 00000178: sp  1 +1 */ 03000005
+        /* 0000017c: sp  2 +0 */ 5c000000
+        /* 00000180: sp  2 +1 */ 04000001
+        /* 00000184: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000018c: sp  0 +0 */ 00000006
+        /* 00000190: sp  0 +1 */ 09000001 temp_1
+        /* 00000194: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000198: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000001a0: sp  0 +1 */ 06000001 temp_1
+        /* 000001a4: sp  1 +1 */ 03000005
+        /* 000001a8: sp  2 +0 */ 5c000000
+        /* 000001ac: sp  2 +1 */ 04000001
+        /* 000001b0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0549_ffff(bool arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001b8: sp  0 +0 */ 00000007
+        /* 000001bc: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0191_1(symbol arg_008f_0192_0, conversationenum arg_0193_0194_4) {
+        Unknown0035 local_8 = TODO(0B);
+        bool temp_c = False;
+        symbol local_d = TODO(0A);
+        Unknown0035 local_10 = TODO(0B);
+        waypointnode local_14 = TODO(0A);
+        bool temp_24 = False;
+        globaleffect local_28 = TODO(0A);
+
+        /* 000002a4: sp  0 +0 */ 00000008
+
+        /* 000002a8: sp  0 +0 */ 00000009
+        /* 000002ac: sp  0 +1 */ 09000008 local_8
+        /* 000002b0: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 000002b4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002bc: sp  0 +1 */ 0a000008 local_8
+        /* 000002c0: sp  1 +0 */ 7e000000 00000035
+        /* 000002c8: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0035::method_01a5_42()
+
+        /* 000002d0: sp  0 +0 */ 0000000a
+        /* 000002d4: sp  0 +1 */ 0900000c temp_c
+        /* 000002d8: sp  1 +1 */ 0900000d local_d
+        /* 000002dc: sp  2 +1 */ 0f00006c unnamed member 6c
+        /* 000002e0: sp  3 -2 */ 65000000 beebbeeb native symbol conversation::method_07fa_ffff()
+        /* 000002e8: sp  1 +1 */ 0900000d local_d
+        /* 000002ec: sp  2 +1 */ 09000000 arg_008f_0192_0
+        /* 000002f0: sp  3 -3 */ 65000000 beebbeeb native bool symbol::isEqual(symbol arg_008f_0542_4)
+        /* 000002f8: sp  0 +1 */ 0600000c temp_c
+        /* 000002fc: sp  1 -1 */ 64000011
+
+        /* 00000300: sp  0 +0 */ 0000000b
+
+        /* 00000304: sp  0 +0 */ 0000000c
+        /* 00000308: sp  0 +1 */ 04000000
+        /* 0000030c: sp  1 +1 */ 09000010 local_10
+        /* 00000310: sp  2 +1 */ 0f00003c unnamed member 3c
+        /* 00000314: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000031c: sp  1 +1 */ 0a000010 local_10
+        /* 00000320: sp  2 +0 */ 7e000000 00000035
+        /* 00000328: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown0581::method_02ca_43(bool arg_0000_0680_0)
+
+        /* 00000330: sp  0 +0 */ 0000000d
+        /* 00000334: sp  0 +1 */ 09000014 local_14
+        /* 00000338: sp  1 -1 */ 66000000 beebbeeb this-&gt;void actornpc::method_0675_ffff(waypointnode arg_0196_0676_0)
+
+        /* 00000340: sp  0 +0 */ 0000000e
+        ---
+
+        /* 00000344: sp  0 +0 */ 0000000f
+        /* 00000348: sp  0 +1 */ 09000024 temp_24
+        /* 0000034c: sp  1 +1 */ 0f000074 unnamed member 74
+        /* 00000350: sp  2 -2 */ 65000000 beebbeeb native bool sequencergraph::method_053c_ffff()
+        /* 00000358: sp  0 +1 */ 06000024 temp_24
+        /* 0000035c: sp  1 +0 */ 50000000
+        /* 00000360: sp  1 -1 */ 6400000a
+
+        /* 00000364: sp  0 +0 */ 00000010
+        /* 00000368: sp  0 +1 */ 02000000 3f000000
+        /* 00000370: sp  1 +1 */ 0300001e
+        /* 00000374: sp  2 +0 */ 5c000000
+        /* 00000378: sp  2 -1 */ 4a000000
+        /* 0000037c: sp  1 +0 */ 5a000000
+        /* 00000380: sp  1 +1 */ 09000028 local_28
+        /* 00000384: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02e0_ffff(dword arg_0000_0564_0)
+        ---
+
+        /* 0000038c: sp  0 +0 */ 00000011
+        /* 00000390: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00000035.html">Unknown0035</a><br/>
+initialized field in <a href="type000005f4.html">Unknown05F4</a><br/>
+initialized field in <a href="type000122e0.html">Unknown122E0</a><br/>
+initialized field in <a href="type0001239e.html">Unknown1239E</a><br/>
+parent class <a href="type00000568.html">%sha1_capsulehotelcalm_civilian_arievanbruggen%</a><br/>
+</body>
+</html>

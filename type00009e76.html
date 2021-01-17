@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009e76</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%ao_rear_boat_bridge_hangar_a%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6de]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %ao_rear_boat_bridge_hangar_a% : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_29b7_4 = {<a href="type000004ab.html">type 000004ab</a>, 1};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_29b8_c = {<a href="type000004ab.html">type 000004ab</a>, 0};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0b9f_1c = {<a href="type000004ab.html">type 000004ab</a>, 0};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_29b9_2c = {<a href="type000004ab.html">type 000004ab</a>, 0};
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_27af_1();
+    // referenced at <a href="type00009e76.html">async void %ao_rear_boat_bridge_hangar_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_29ba_2();
+    // referenced at <a href="type00009e76.html">async void %ao_rear_boat_bridge_hangar_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %ao_rear_boat_bridge_hangar_a% : Unknown0578 {
+    // sizeof = 0x34
+    uberobjectcommand decl_01a8_29b7_4 = TODO(0A);
+    uberobjectevent decl_0a66_29b8_c = TODO(0A);
+    uberobjectevent decl_0a66_0b9f_1c = TODO(0A);
+    uberobjectcommand decl_01a8_29b9_2c = TODO(0A);
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        bool temp_11 = False;
+
+        /* 000000f4: sp  0 +0 */ 00000000
+        /* 000000f8: sp  0 +1 */ 09000010 temp_10
+        /* 000000fc: sp  1 +1 */ 0f00001c unnamed member 1c
+        /* 00000100: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000104: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000010c: sp  0 +1 */ 06000010 temp_10
+        /* 00000110: sp  1 -1 */ 64000003
+
+        /* 00000114: sp  0 +0 */ 00000001
+        /* 00000118: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %ao_rear_boat_bridge_hangar_a%::method_29ba_3e()
+        ---
+
+        /* 00000120: sp  0 +0 */ 00000002
+        /* 00000124: sp  0 +1 */ 09000011 temp_11
+        /* 00000128: sp  1 +1 */ 0f00000c unnamed member c
+        /* 0000012c: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000130: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000138: sp  0 +1 */ 06000011 temp_11
+        /* 0000013c: sp  1 -1 */ 64000003
+
+        /* 00000140: sp  0 +0 */ 00000003
+        /* 00000144: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %ao_rear_boat_bridge_hangar_a%::method_27af_3d()
+        ---
+
+        /* 0000014c: sp  0 +0 */ 00000004
+        /* 00000150: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_27af_1() {
+        /* 00000164: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29ba_2() {
+        /* 00000174: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00009b9f.html">Unknown9B9F</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+unit object #430 null<br/>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00004d7b</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown4D7B</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_police.drm n$[0xe2]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown4D7B : <a href="type00002cc8.html">%level1_secretarea%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00004d7a.html">Unknown4D7A</a>&gt; decl_0012_16ca_40 = {<a href="units.html#000016d2">unit object 000016d2</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00004d7c.html">Unknown4D7C</a>&gt; decl_0012_1898_48 = {<a href="units.html#000016d4">unit object 000016d4</a>};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown4D7B : %level1_secretarea% {
+    // sizeof = 0x50
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_16ca_40 = TODO(0A);
+    instanceref decl_0012_1898_48 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_0023_0, triggertype arg_0024_0025_4) {
+        Unknown4D7A local_8 = TODO(0B);
+        Unknown4D7C local_c = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 04000000
+        /* 000000cc: sp  1 +1 */ 09000008 local_8
+        /* 000000d0: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 000000d4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000dc: sp  1 +1 */ 0a000008 local_8
+        /* 000000e0: sp  2 +0 */ 7e000000 00004d7a
+        /* 000000e8: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000000f0: sp  0 +0 */ 00000001
+        /* 000000f4: sp  0 +1 */ 04000000
+        /* 000000f8: sp  1 +1 */ 0900000c local_c
+        /* 000000fc: sp  2 +1 */ 0f000048 unnamed member 48
+        /* 00000100: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000108: sp  1 +1 */ 0a00000c local_c
+        /* 0000010c: sp  2 +0 */ 7e000000 00004d7c
+        /* 00000114: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 0000011c: sp  0 +0 */ 00000002
+        /* 00000120: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00004d7a.html">Unknown4D7A</a><br/>
+initialized field in <a href="type00004d7c.html">Unknown4D7C</a><br/>
+parent class <a href="type00002cc8.html">%level1_secretarea%</a><br/>
+</body>
+</html>

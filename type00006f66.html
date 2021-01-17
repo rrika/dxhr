@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006f66</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6F66</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6bf]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6F66 : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000518.html">stickyfloat</a> decl_084e_1f02_4 = TODO(0A);
+    <a href="type00000519.html">stickyint</a> decl_084c_1f04_20 = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_1f06_3c = TODO(0A);
+    <a href="type0000049f.html">clock</a> decl_0182_1f08_58 = TODO(0A);
+    void method_07f2_0(float);
+    // referenced at <a href="type00006f68.html">async void %gas_bomb_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_0185_1(<a href="type0000049f.html">clock</a>);
+    void method_08ce_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6F66 : Unknown0578 {
+    // sizeof = 0x5c
+    stickyfloat decl_084e_1f02_4 = TODO(0A);
+    stickyint decl_084c_1f04_20 = TODO(0A);
+    stickybool decl_0849_1f06_3c = TODO(0A);
+    clock decl_0182_1f08_58 = TODO(0A);
+    void method_07f2_0(float arg_0000_06be_0) {
+        bool temp_4 = False;
+        float temp_8 = 0.0;
+        uberobjectcommand local_c = TODO(0A);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000004 temp_4
+        /* 0000012c: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native bool stickybool::getValue()
+        /* 00000138: sp  0 +1 */ 06000004 temp_4
+        /* 0000013c: sp  1 +0 */ 50000000
+        /* 00000140: sp  1 -1 */ 6400001e
+
+        /* 00000144: sp  0 +0 */ 00000001
+
+        /* 00000148: sp  0 +0 */ 00000002
+        /* 0000014c: sp  0 +1 */ 04000001
+        /* 00000150: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000154: sp  2 -2 */ 65000000 beebbeeb native void stickybool::setStickyBool(bool arg_0000_value_0)
+
+        /* 0000015c: sp  0 +0 */ 00000003
+        /* 00000160: sp  0 +1 */ 09000008 temp_8
+        /* 00000164: sp  1 -1 */ 66000000 beebbeeb this-&gt;float gamebase::method_0859_ffff()
+        /* 0000016c: sp  0 +1 */ 08000008 temp_8
+        /* 00000170: sp  1 +1 */ 08000000 arg_0000_06be_0
+        /* 00000174: sp  2 -1 */ 48000000
+        /* 00000178: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 0000017c: sp  2 -2 */ 65000000 beebbeeb native void stickyfloat::setStickyBool(float arg_0000_value_0)
+
+        /* 00000184: sp  0 +0 */ 00000004
+        /* 00000188: sp  0 +1 */ 08000000 arg_0000_06be_0
+        /* 0000018c: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000190: sp  2 -2 */ 65000000 beebbeeb native void clock::method_053f_ffff(float arg_0000_0540_0)
+
+        /* 00000198: sp  0 +0 */ 00000005
+        /* 0000019c: sp  0 +1 */ 0f000058 unnamed member 58
+        /* 000001a0: sp  1 -1 */ 65000000 beebbeeb native void clock::method_0090_ffff()
+
+        /* 000001a8: sp  0 +0 */ 00000006
+        /* 000001ac: sp  0 +1 */ 0900000c local_c
+        /* 000001b0: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000001b8: sp  0 +0 */ 00000007
+        ---
+
+        /* 000001bc: sp  0 +0 */ 00000008
+        /* 000001c0: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0185_1(clock arg_0182_0186_0) {
+        bool temp_4 = False;
+        dword temp_8 = 0;
+        uberobjectcommand local_c = TODO(0A);
+
+        /* 00000224: sp  0 +0 */ 00000009
+        /* 00000228: sp  0 +1 */ 09000004 temp_4
+        /* 0000022c: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000230: sp  2 +1 */ 09000000 arg_0182_0186_0
+        /* 00000234: sp  3 -3 */ 65000000 beebbeeb native bool clock::isEqual(clock arg_0182_0542_4)
+        /* 0000023c: sp  0 +1 */ 06000004 temp_4
+        /* 00000240: sp  1 -1 */ 6400001a
+
+        /* 00000244: sp  0 +0 */ 0000000a
+
+        /* 00000248: sp  0 +0 */ 0000000b
+        /* 0000024c: sp  0 +1 */ 04000000
+        /* 00000250: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000254: sp  2 -2 */ 65000000 beebbeeb native void stickybool::setStickyBool(bool arg_0000_value_0)
+
+        /* 0000025c: sp  0 +0 */ 0000000c
+        /* 00000260: sp  0 +1 */ 09000008 temp_8
+        /* 00000264: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 00000268: sp  2 -2 */ 65000000 beebbeeb native dword stickyint::getValue()
+        /* 00000270: sp  0 +1 */ 08000008 temp_8
+        /* 00000274: sp  1 +1 */ 03000001
+        /* 00000278: sp  2 -1 */ 3e000000
+        /* 0000027c: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 00000280: sp  2 -2 */ 65000000 beebbeeb native void stickyint::setStickyBool(dword arg_0000_value_0)
+
+        /* 00000288: sp  0 +0 */ 0000000d
+        /* 0000028c: sp  0 +1 */ 0f000058 unnamed member 58
+        /* 00000290: sp  1 -1 */ 65000000 beebbeeb native void clock::method_0487_ffff()
+
+        /* 00000298: sp  0 +0 */ 0000000e
+        /* 0000029c: sp  0 +1 */ 0900000c local_c
+        /* 000002a0: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000002a8: sp  0 +0 */ 0000000f
+        ---
+
+        /* 000002ac: sp  0 +0 */ 00000010
+        /* 000002b0: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_08ce_2() {
+        bool temp_0 = False;
+        float temp_4 = 0.0;
+        float temp_8 = 0.0;
+
+        /* 00000304: sp  0 +0 */ 00000011
+        /* 00000308: sp  0 +1 */ 09000000 temp_0
+        /* 0000030c: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000310: sp  2 -2 */ 65000000 beebbeeb native bool stickybool::getValue()
+        /* 00000318: sp  0 +1 */ 06000000 temp_0
+        /* 0000031c: sp  1 -1 */ 64000014
+
+        /* 00000320: sp  0 +0 */ 00000012
+
+        /* 00000324: sp  0 +0 */ 00000013
+        /* 00000328: sp  0 +1 */ 09000004 temp_4
+        /* 0000032c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000330: sp  2 -2 */ 65000000 beebbeeb native float stickyfloat::getValue()
+        /* 00000338: sp  0 +1 */ 08000004 temp_4
+        /* 0000033c: sp  1 +1 */ 09000008 temp_8
+        /* 00000340: sp  2 -1 */ 66000000 beebbeeb this-&gt;float gamebase::method_0859_ffff()
+        /* 00000348: sp  1 +1 */ 08000008 temp_8
+        /* 0000034c: sp  2 -1 */ 49000000
+        /* 00000350: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000354: sp  2 -2 */ 65000000 beebbeeb native void clock::method_053f_ffff(float arg_0000_0540_0)
+
+        /* 0000035c: sp  0 +0 */ 00000014
+        /* 00000360: sp  0 +1 */ 0f000058 unnamed member 58
+        /* 00000364: sp  1 -1 */ 65000000 beebbeeb native void clock::method_0090_ffff()
+
+        /* 0000036c: sp  0 +0 */ 00000015
+        ---
+
+        /* 00000370: sp  0 +0 */ 00000016
+        /* 00000374: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00006f68.html">%gas_bomb_a%</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+</body>
+</html>

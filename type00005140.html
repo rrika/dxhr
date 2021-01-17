@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00005140</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown5140</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_sarif.drm n$[0xc7]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown5140 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00000013.html">Unknown0013</a>&gt; decl_0015_0020_40 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00001fa7.html">Unknown1FA7</a>&gt; decl_0007_18a3_4c = TODO(0A);
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown5140 : %triggervolume% {
+    // sizeof = 0x50
+    stickybool field_4;
+    stickybool field_20;
+    unitref decl_0015_0020_40 = TODO(0A);
+    scenarioref&lt;Unknown1FA7&gt; decl_0007_18a3_4c = TODO(0A);
+    async void method_0021_0(instance arg_0022_0023_0, triggertype arg_0024_0025_4) {
+        Unknown1FA7 local_8 = TODO(0B);
+        bool temp_c = False;
+        Unknown0013 local_10 = TODO(0B);
+        Unknown0013 local_14 = TODO(0B);
+        Unknown0013 local_18 = TODO(0B);
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 0300000d
+        /* 0000010c: sp  1 +1 */ 03000000
+        /* 00000110: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_083c_ffff(dword arg_0000_083b_0, dword arg_0000_value_4)
+
+        /* 00000118: sp  0 +0 */ 00000001
+        /* 0000011c: sp  0 +1 */ 0900000c temp_c
+        /* 00000120: sp  1 +1 */ 09000008 local_8
+        /* 00000124: sp  2 +1 */ 0f00004c unnamed member 4c
+        /* 00000128: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000130: sp  1 +1 */ 0a000008 local_8
+        /* 00000134: sp  2 +0 */ 7e000000 00001fa7
+        /* 0000013c: sp  2 -2 */ 69000000 beebbeeb bool scenario::method_09c7_ffff()
+        /* 00000144: sp  0 +1 */ 0600000c temp_c
+        /* 00000148: sp  1 -1 */ 6400000b
+
+        /* 0000014c: sp  0 +0 */ 00000002
+        /* 00000150: sp  0 +1 */ 09000010 local_10
+        /* 00000154: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000158: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000160: sp  0 +1 */ 0a000010 local_10
+        /* 00000164: sp  1 +0 */ 7e000000 00000013
+        /* 0000016c: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_0048_1c()
+        /* 00000174: sp  0 +0 */ 6300000a 00000003
+        /* 0000017c: sp  0 +1 */ 09000014 local_14
+        /* 00000180: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000184: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 0000018c: sp  0 +1 */ 0a000014 local_14
+        /* 00000190: sp  1 +0 */ 7e000000 00000013
+        /* 00000198: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_0047_1b()
+
+        /* 000001a0: sp  0 +0 */ 00000004
+        ---
+
+        /* 00000178: sp  0 +0 */ 00000003
+        /* 0000017c: sp  0 +1 */ 09000014 local_14
+        /* 00000180: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000184: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 0000018c: sp  0 +1 */ 0a000014 local_14
+        /* 00000190: sp  1 +0 */ 7e000000 00000013
+        /* 00000198: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_0047_1b()
+
+        /* 000001a0: sp  0 +0 */ 00000004
+        ---
+        /* 000001a4: sp  0 +1 */ 09000018 local_18
+        /* 000001a8: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000001ac: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 000001b4: sp  0 +1 */ 0a000018 local_18
+        /* 000001b8: sp  1 +0 */ 7e000000 00000013
+        /* 000001c0: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_004d_21()
+
+        /* 000001c8: sp  0 +0 */ 00000005
+        /* 000001cc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

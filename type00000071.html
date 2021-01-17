@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000071</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown0071</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x9e]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown0071 : <a href="type00000596.html">%sha_lowerhengsha_answeringmachine_a%</a> {
+    <a href="type00000512.html">sound</a> field_c;
+    <a href="type00000511.html">smartscript</a> decl_0089_0229_10 = persistent(dtp:0473) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000070.html">Unknown0070</a>&gt; decl_0012_0219_24 = {<a href="units.html#000000c7">unit object 000000c7</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000003c.html">Unknown003C</a>&gt; decl_0012_022b_2c = {<a href="units.html#000000cc">unit object 000000cc</a>};
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown0071 : %sha_lowerhengsha_answeringmachine_a% {
+    // sizeof = 0x34
+    sound field_c;
+    smartscript decl_0089_0229_10 = TODO(0A);
+    instanceref decl_0012_0219_24 = TODO(0A);
+    instanceref decl_0012_022b_2c = TODO(0A);
+    void method_000a_0() {
+        Unknown0070 local_0 = TODO(0B);
+        Unknown003C local_4 = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +0 */ 67000000 beebbeeb beebbeeb this-&gt;virtual void %sha_lowerhengsha_answeringmachine_a%::method_000a_3d()
+
+        /* 000000d4: sp  0 +0 */ 00000001
+        /* 000000d8: sp  0 +1 */ 04000001
+        /* 000000dc: sp  1 +1 */ 0f000010 unnamed member 10
+        /* 000000e0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000e8: sp  0 +0 */ 00000002
+        /* 000000ec: sp  0 +1 */ 09000000 local_0
+        /* 000000f0: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000000f4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000fc: sp  0 +1 */ 0a000000 local_0
+        /* 00000100: sp  1 +0 */ 7e000000 00000070
+        /* 00000108: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0070::method_0227_40()
+
+        /* 00000110: sp  0 +0 */ 00000003
+        /* 00000114: sp  0 +1 */ 04000000
+        /* 00000118: sp  1 +1 */ 09000004 local_4
+        /* 0000011c: sp  2 +1 */ 0f00002c unnamed member 2c
+        /* 00000120: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000128: sp  1 +1 */ 0a000004 local_4
+        /* 0000012c: sp  2 +0 */ 7e000000 0000003c
+        /* 00000134: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown0582::method_02ca_43(bool arg_0000_0680_0)
+
+        /* 0000013c: sp  0 +0 */ 00000004
+        /* 00000140: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00000070.html">Unknown0070</a><br/>
+initialized field in <a href="type000005ef.html">Unknown05EF</a><br/>
+parent class <a href="type00000596.html">%sha_lowerhengsha_answeringmachine_a%</a><br/>
+</body>
+</html>

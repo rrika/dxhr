@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000592</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%sha_caps_capsule_door%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6ee]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %sha_caps_capsule_door% : <a href="type00000581.html">Unknown0581</a> {
+    <a href="type000004f5.html">playerref</a> field_4;
+    <a href="type000004f5.html">playerref</a> field_c;
+    <a href="type00000512.html">sound</a> field_1c;
+    <a href="type00000526.html">unitref</a> field_20;
+    <a href="type00000517.html">stickybool</a> field_2c;
+    <a href="type000004e6.html">marker</a> field_48;
+    <a href="type000004e6.html">marker</a> field_50;
+    <a href="type00000522.html">uberobjectevent</a> field_64;
+    <a href="type00000522.html">uberobjectevent</a> field_74;
+    <a href="type00000522.html">uberobjectevent</a> field_84;
+    <a href="type00000522.html">uberobjectevent</a> field_94;
+    <a href="type00000521.html">uberobjectcommand</a> field_a4;
+    <a href="type00000521.html">uberobjectcommand</a> field_ac;
+    <a href="type00000523.html">uberobjectquery</a> field_b4;
+    <a href="type00000523.html">uberobjectquery</a> field_c0;
+    <a href="type00000523.html">uberobjectquery</a> field_cc;
+    <a href="type00000523.html">uberobjectquery</a> field_d8;
+    <a href="type00000522.html">uberobjectevent</a> field_e4;
+    <a href="type00000522.html">uberobjectevent</a> field_f4;
+    <a href="type00000521.html">uberobjectcommand</a> field_104;
+    <a href="type00000522.html">uberobjectevent</a> field_10c;
+    <a href="type00000523.html">uberobjectquery</a> field_11c;
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_01a3_1();
+    // referenced at <a href="type00000592.html">async void %sha_caps_capsule_door%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %sha_caps_capsule_door% : Unknown0581 {
+    // sizeof = 0x128
+    playerref field_4;
+    playerref field_c;
+    sound field_1c;
+    unitref field_20;
+    stickybool field_2c;
+    marker field_48;
+    marker field_50;
+    uberobjectevent field_64;
+    uberobjectevent field_74;
+    uberobjectevent field_84;
+    uberobjectevent field_94;
+    uberobjectcommand field_a4;
+    uberobjectcommand field_ac;
+    uberobjectquery field_b4;
+    uberobjectquery field_c0;
+    uberobjectquery field_cc;
+    uberobjectquery field_d8;
+    uberobjectevent field_e4;
+    uberobjectevent field_f4;
+    uberobjectcommand field_104;
+    uberobjectevent field_10c;
+    uberobjectquery field_11c;
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        uberobjectevent local_14 = TODO(0A);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000000ec: sp  1 -1 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void Unknown0581::method_0a65_38(uberobjectevent arg_0a66_0a67_0)
+
+        /* 000000f8: sp  0 +0 */ 00000001
+        /* 000000fc: sp  0 +1 */ 09000010 temp_10
+        /* 00000100: sp  1 +1 */ 09000014 local_14
+        /* 00000104: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000108: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000110: sp  0 +1 */ 06000010 temp_10
+        /* 00000114: sp  1 -1 */ 64000003
+
+        /* 00000118: sp  0 +0 */ 00000002
+        /* 0000011c: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %sha_caps_capsule_door%::method_01a3_4f()
+        ---
+
+        /* 00000124: sp  0 +0 */ 00000003
+        /* 00000128: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a3_1() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000164: sp  0 +0 */ 00000004
+        /* 00000168: sp  0 +1 */ 09000000 local_0
+        /* 0000016c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000174: sp  0 +0 */ 00000005
+        /* 00000178: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00000035.html">Unknown0035</a><br/>
+derived class <a href="type000122c0.html">Unknown122C0</a><br/>
+parent class <a href="type00000581.html">Unknown0581</a><br/>
+unit object #114 null<br/>
+unit object #152 null<br/>
+</body>
+</html>

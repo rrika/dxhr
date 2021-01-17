@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000505</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>smartfloat</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x612]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class smartfloat : <a href="type00000503.html">smartbase</a> {
+    void method_08e0_0();
+    void method_09d4_1(<a href="type000004a3.html">symbol</a>, <a href="type00000511.html">smartscript</a>);
+    float getValue();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class smartfloat : smartbase {
+    // sizeof = 0x1
+    void method_08e0_0(); // no bytecode
+    void method_09d4_1(symbol arg_008f_09d5_0, smartscript arg_0089_087c_4); // no bytecode
+    float getValue(); // no bytecode
+};
+</pre>
+		<h2>See also</h2>
+		argument to method on <a href="type000004a8.html">actor</a><br/>
+derived class <a href="type0000050a.html">smartfloat_fromactor</a><br/>
+derived class <a href="type0000050b.html">smartfloat_lazyevaluation</a><br/>
+derived class <a href="type0000050c.html">smartfloat_sampledevaluation</a><br/>
+parent class <a href="type00000503.html">smartbase</a><br/>
+</body>
+</html>

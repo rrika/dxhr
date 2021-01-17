@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00005cee</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown5CEE</h1>
+		<pre>./tools/drmexplore pc-w/ det_fema_exterior.drm n$[0xacc]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown5CEE : <a href="type000004f7.html">quest</a> {
+    <a href="type00000511.html">smartscript</a> decl_0089_1b04_4 = persistent(dtp:5CDA) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_1b05_18 = persistent(dtp:045F) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_1b06_2c = persistent(dtp:5CDB) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_1b07_40 = persistent(dtp:5CDE) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_1b08_54 = persistent(dtp:5CDC) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_1b09_68 = persistent(dtp:5CDD) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_1b0a_7c = persistent(dtp:5CDF) {type=bool};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_098e_90 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00005c61.html">Unknown5C61</a>&gt; decl_0012_1b0c_98 = {<a href="units.html#000029d3">unit object 000029d3</a>};
+    void method_1adc_0();
+    bool method_1add_1();
+    bool method_1adf_2();
+    bool method_1ade_3();
+    void method_1aea_4();
+    bool method_1ae6_5();
+    bool method_1ae0_6();
+    bool method_1ae1_7();
+    bool method_1ae2_8();
+    bool method_1ae3_9();
+    bool method_1aed_a();
+    bool method_1aeb_b();
+    bool method_1aec_c();
+    bool method_1ae4_d();
+    bool method_1ae5_e();
+    bool method_1ae7_f();
+    bool method_1ae8_10();
+    bool method_1ae9_11();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown5CEE : quest {
+    // sizeof = 0xa0
+    smartscript decl_0089_1b04_4 = TODO(0A);
+    smartscript decl_0089_1b05_18 = TODO(0A);
+    smartscript decl_0089_1b06_2c = TODO(0A);
+    smartscript decl_0089_1b07_40 = TODO(0A);
+    smartscript decl_0089_1b08_54 = TODO(0A);
+    smartscript decl_0089_1b09_68 = TODO(0A);
+    smartscript decl_0089_1b0a_7c = TODO(0A);
+    playerref decl_012a_098e_90 = TODO(0A);
+    instanceref decl_0012_1b0c_98 = TODO(0A);
+    void method_1adc_0() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+        bool temp_2 = False;
+        bool temp_3 = False;
+        bool temp_4 = False;
+        bool temp_5 = False;
+        Unknown5C61 local_8 = TODO(0B);
+        npcinteraction local_c = TODO(0A);
+
+        /* 00000344: sp  0 +0 */ 00000000
+        /* 00000348: sp  0 +1 */ 09000000 temp_0
+        /* 0000034c: sp  1 +1 */ 0f000018 unnamed member 18
+        /* 00000350: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000358: sp  0 +1 */ 06000000 temp_0
+        /* 0000035c: sp  1 -1 */ 64000038
+
+        /* 00000360: sp  0 +0 */ 00000001
+
+        /* 00000364: sp  0 +0 */ 00000002
+        /* 00000368: sp  0 +1 */ 09000001 temp_1
+        /* 0000036c: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000370: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000378: sp  0 +1 */ 06000001 temp_1
+        /* 0000037c: sp  1 -1 */ 6400002f
+
+        /* 00000380: sp  0 +0 */ 00000003
+
+        /* 00000384: sp  0 +0 */ 00000004
+        /* 00000388: sp  0 +1 */ 09000002 temp_2
+        /* 0000038c: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000390: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000398: sp  0 +1 */ 06000002 temp_2
+        /* 0000039c: sp  1 -1 */ 64000026
+
+        /* 000003a0: sp  0 +0 */ 00000005
+
+        /* 000003a4: sp  0 +0 */ 00000006
+        /* 000003a8: sp  0 +1 */ 09000003 temp_3
+        /* 000003ac: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 000003b0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000003b8: sp  0 +1 */ 06000003 temp_3
+        /* 000003bc: sp  1 -1 */ 6400001d
+
+        /* 000003c0: sp  0 +0 */ 00000007
+
+        /* 000003c4: sp  0 +0 */ 00000008
+        /* 000003c8: sp  0 +1 */ 09000004 temp_4
+        /* 000003cc: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 000003d0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000003d8: sp  0 +1 */ 06000004 temp_4
+        /* 000003dc: sp  1 -1 */ 64000014
+
+        /* 000003e0: sp  0 +0 */ 00000009
+
+        /* 000003e4: sp  0 +0 */ 0000000a
+        /* 000003e8: sp  0 +1 */ 09000005 temp_5
+        /* 000003ec: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 000003f0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000003f8: sp  0 +1 */ 06000005 temp_5
+        /* 000003fc: sp  1 -1 */ 6400000b
+
+        /* 00000400: sp  0 +0 */ 0000000b
+        /* 00000404: sp  0 +1 */ 0900000c local_c
+        /* 00000408: sp  1 +1 */ 09000008 local_8
+        /* 0000040c: sp  2 +1 */ 0f000098 unnamed member 98
+        /* 00000410: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000418: sp  1 +1 */ 0a000008 local_8
+        /* 0000041c: sp  2 +0 */ 7e000000 00005c61
+        /* 00000424: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+        ---
+
+        /* 0000042c: sp  0 +0 */ 0000000c
+        ---
+
+        /* 00000430: sp  0 +0 */ 0000000d
+        ---
+
+        /* 00000434: sp  0 +0 */ 0000000e
+        ---
+
+        /* 00000438: sp  0 +0 */ 0000000f
+        ---
+
+        /* 0000043c: sp  0 +0 */ 00000010
+        ---
+
+        /* 00000440: sp  0 +0 */ 00000011
+        /* 00000444: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1add_1() {
+        bool temp_4 = False;
+
+        /* 00000c84: sp  0 +0 */ 00000012
+        /* 00000c88: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000c8c: sp  1 +1 */ 09000004 temp_4
+        /* 00000c90: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000c94: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000c9c: sp  1 +1 */ 06000004 temp_4
+        /* 00000ca0: sp  2 +1 */ 04000000
+        /* 00000ca4: sp  3 -1 */ 46000000
+        /* 00000ca8: sp  2 -2 */ 2e000000
+        /* 00000cac: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1adf_2() {
+        %human_player% local_4 = TODO(0B);
+        bool temp_8 = False;
+        pickup local_c = TODO(0A);
+        bool temp_10 = False;
+        bool temp_11 = False;
+        bool temp_12 = False;
+
+        /* 00000d54: sp  0 +0 */ 00000014
+        /* 00000d58: sp  0 +1 */ 09000008 temp_8
+        /* 00000d5c: sp  1 +1 */ 0900000c local_c
+        /* 00000d60: sp  2 +1 */ 030000af
+        /* 00000d64: sp  3 +1 */ 04000001
+        /* 00000d68: sp  4 +1 */ 09000004 local_4
+        /* 00000d6c: sp  5 +1 */ 0f000090 unnamed member 90
+        /* 00000d70: sp  6 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000d78: sp  4 +1 */ 0a000004 local_4
+        /* 00000d7c: sp  5 +0 */ 7e000000 00000552
+        /* 00000d84: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 00000d8c: sp  0 +1 */ 06000008 temp_8
+        /* 00000d90: sp  1 +1 */ 04000000
+        /* 00000d94: sp  2 -1 */ 46000000
+        /* 00000d98: sp  1 -1 */ 6400002c
+
+        /* 00000d9c: sp  0 +0 */ 00000015
+
+        /* 00000da0: sp  0 +0 */ 00000016
+        /* 00000da4: sp  0 +1 */ 09000010 temp_10
+        /* 00000da8: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 00000dac: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000db4: sp  0 +1 */ 06000010 temp_10
+        /* 00000db8: sp  1 +1 */ 04000000
+        /* 00000dbc: sp  2 -1 */ 46000000
+        /* 00000dc0: sp  1 -1 */ 64000005
+
+        /* 00000dc4: sp  0 +0 */ 00000017
+        /* 00000dc8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000dcc: sp  1 +1 */ 04000001
+        /* 00000dd0: sp  2 -2 */ 2e000000
+        /* 00000dd4: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000dd8: sp  0 +0 */ 00000018
+        /* 00000ddc: sp  0 +1 */ 09000011 temp_11
+        /* 00000de0: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 00000de4: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000dec: sp  0 +1 */ 06000011 temp_11
+        /* 00000df0: sp  1 +1 */ 04000000
+        /* 00000df4: sp  2 -1 */ 46000000
+        /* 00000df8: sp  1 -1 */ 64000005
+
+        /* 00000dfc: sp  0 +0 */ 00000019
+        /* 00000e00: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000e04: sp  1 +1 */ 04000001
+        /* 00000e08: sp  2 -2 */ 2e000000
+        /* 00000e0c: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000e10: sp  0 +0 */ 0000001a
+        /* 00000e14: sp  0 +1 */ 09000012 temp_12
+        /* 00000e18: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000e1c: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000e24: sp  0 +1 */ 06000012 temp_12
+        /* 00000e28: sp  1 +1 */ 04000000
+        /* 00000e2c: sp  2 -1 */ 46000000
+        /* 00000e30: sp  1 -1 */ 64000005
+
+        /* 00000e34: sp  0 +0 */ 0000001b
+        /* 00000e38: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000e3c: sp  1 +1 */ 04000001
+        /* 00000e40: sp  2 -2 */ 2e000000
+        /* 00000e44: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000e48: sp  0 +0 */ 0000001c
+        ---
+
+        /* 00000e4c: sp  0 +0 */ 0000001d
+        /* 00000e50: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000e54: sp  1 +1 */ 04000000
+        /* 00000e58: sp  2 -2 */ 2e000000
+        /* 00000e5c: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ade_3() {
+        bool temp_4 = False;
+        bool temp_5 = False;
+        bool temp_6 = False;
+        bool temp_7 = False;
+        bool temp_8 = False;
+
+        /* 00000ee4: sp  0 +0 */ 0000001f
+        /* 00000ee8: sp  0 +1 */ 09000004 temp_4
+        /* 00000eec: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000ef0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000ef8: sp  0 +1 */ 06000004 temp_4
+        /* 00000efc: sp  1 +1 */ 04000000
+        /* 00000f00: sp  2 -1 */ 46000000
+        /* 00000f04: sp  1 -1 */ 64000005
+
+        /* 00000f08: sp  0 +0 */ 00000020
+        /* 00000f0c: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000f10: sp  1 +1 */ 04000001
+        /* 00000f14: sp  2 -2 */ 2e000000
+        /* 00000f18: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000f1c: sp  0 +0 */ 00000021
+        /* 00000f20: sp  0 +1 */ 09000005 temp_5
+        /* 00000f24: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000f28: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000f30: sp  0 +1 */ 06000005 temp_5
+        /* 00000f34: sp  1 +1 */ 04000000
+        /* 00000f38: sp  2 -1 */ 46000000
+        /* 00000f3c: sp  1 -1 */ 64000005
+
+        /* 00000f40: sp  0 +0 */ 00000022
+        /* 00000f44: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000f48: sp  1 +1 */ 04000001
+        /* 00000f4c: sp  2 -2 */ 2e000000
+        /* 00000f50: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000f54: sp  0 +0 */ 00000023
+        /* 00000f58: sp  0 +1 */ 09000006 temp_6
+        /* 00000f5c: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 00000f60: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000f68: sp  0 +1 */ 06000006 temp_6
+        /* 00000f6c: sp  1 +1 */ 04000000
+        /* 00000f70: sp  2 -1 */ 46000000
+        /* 00000f74: sp  1 +1 */ 09000007 temp_7
+        /* 00000f78: sp  2 +1 */ 0f000068 unnamed member 68
+        /* 00000f7c: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000f84: sp  1 +1 */ 06000007 temp_7
+        /* 00000f88: sp  2 +1 */ 04000000
+        /* 00000f8c: sp  3 -1 */ 46000000
+        /* 00000f90: sp  2 +1 */ 09000008 temp_8
+        /* 00000f94: sp  3 +1 */ 0f00007c unnamed member 7c
+        /* 00000f98: sp  4 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000fa0: sp  2 +1 */ 06000008 temp_8
+        /* 00000fa4: sp  3 +1 */ 04000000
+        /* 00000fa8: sp  4 -1 */ 46000000
+        /* 00000fac: sp  3 -1 */ 52000000
+        /* 00000fb0: sp  2 -1 */ 52000000
+        /* 00000fb4: sp  1 -1 */ 64000005
+
+        /* 00000fb8: sp  0 +0 */ 00000024
+        /* 00000fbc: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000fc0: sp  1 +1 */ 04000001
+        /* 00000fc4: sp  2 -2 */ 2e000000
+        /* 00000fc8: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000fcc: sp  0 +0 */ 00000025
+        /* 00000fd0: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000fd4: sp  1 +1 */ 04000000
+        /* 00000fd8: sp  2 -2 */ 2e000000
+        /* 00000fdc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1aea_4() {
+
+        /* 00000ff4: sp  0 +0 */ 00000027
+        /* 00000ff8: sp  0 +1 */ 04000001
+        /* 00000ffc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00001000: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00001008: sp  0 +0 */ 00000028
+        /* 0000100c: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae6_5() {
+        bool temp_4 = False;
+
+        /* 00001034: sp  0 +0 */ 00000029
+        /* 00001038: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000103c: sp  1 +1 */ 09000004 temp_4
+        /* 00001040: sp  2 +1 */ 0f000018 unnamed member 18
+        /* 00001044: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000104c: sp  1 +1 */ 06000004 temp_4
+        /* 00001050: sp  2 +1 */ 04000000
+        /* 00001054: sp  3 -1 */ 46000000
+        /* 00001058: sp  2 -2 */ 2e000000
+        /* 0000105c: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae0_6() {
+        %human_player% local_4 = TODO(0B);
+        bool temp_8 = False;
+        pickup local_c = TODO(0A);
+        bool temp_10 = False;
+
+        /* 000010e4: sp  0 +0 */ 0000002b
+        /* 000010e8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000010ec: sp  1 +1 */ 09000008 temp_8
+        /* 000010f0: sp  2 +1 */ 0900000c local_c
+        /* 000010f4: sp  3 +1 */ 03000190
+        /* 000010f8: sp  4 +1 */ 04000001
+        /* 000010fc: sp  5 +1 */ 09000004 local_4
+        /* 00001100: sp  6 +1 */ 0f000090 unnamed member 90
+        /* 00001104: sp  7 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000110c: sp  5 +1 */ 0a000004 local_4
+        /* 00001110: sp  6 +0 */ 7e000000 00000552
+        /* 00001118: sp  6 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 00001120: sp  1 +1 */ 06000008 temp_8
+        /* 00001124: sp  2 +1 */ 09000010 temp_10
+        /* 00001128: sp  3 +1 */ 0f00002c unnamed member 2c
+        /* 0000112c: sp  4 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00001134: sp  2 +1 */ 06000010 temp_10
+        /* 00001138: sp  3 +1 */ 04000000
+        /* 0000113c: sp  4 -1 */ 46000000
+        /* 00001140: sp  3 -1 */ 51000000
+        /* 00001144: sp  2 -2 */ 2e000000
+        /* 00001148: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae1_7() {
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+
+        /* 000011c4: sp  0 +0 */ 0000002d
+        /* 000011c8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000011cc: sp  1 +1 */ 09000004 temp_4
+        /* 000011d0: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 000011d4: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000011dc: sp  1 +1 */ 06000004 temp_4
+        /* 000011e0: sp  2 +1 */ 04000000
+        /* 000011e4: sp  3 -1 */ 46000000
+        /* 000011e8: sp  2 +1 */ 0900000c temp_c
+        /* 000011ec: sp  3 +1 */ 09000010 local_10
+        /* 000011f0: sp  4 +1 */ 030005dc
+        /* 000011f4: sp  5 +1 */ 04000001
+        /* 000011f8: sp  6 +1 */ 09000008 local_8
+        /* 000011fc: sp  7 +1 */ 0f000090 unnamed member 90
+        /* 00001200: sp  8 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001208: sp  6 +1 */ 0a000008 local_8
+        /* 0000120c: sp  7 +0 */ 7e000000 00000552
+        /* 00001214: sp  7 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 0000121c: sp  2 +1 */ 0600000c temp_c
+        /* 00001220: sp  3 -1 */ 51000000
+        /* 00001224: sp  2 -2 */ 2e000000
+        /* 00001228: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae2_8() {
+        %human_player% local_4 = TODO(0B);
+        bool temp_8 = False;
+        pickup local_c = TODO(0A);
+        bool temp_10 = False;
+        %human_player% local_14 = TODO(0B);
+        bool temp_18 = False;
+        pickup local_1c = TODO(0A);
+        bool temp_20 = False;
+        %human_player% local_24 = TODO(0B);
+        bool temp_28 = False;
+        pickup local_2c = TODO(0A);
+        bool temp_30 = False;
+
+        /* 00001364: sp  0 +0 */ 0000002f
+        /* 00001368: sp  0 +1 */ 09000008 temp_8
+        /* 0000136c: sp  1 +1 */ 0900000c local_c
+        /* 00001370: sp  2 +1 */ 030000af
+        /* 00001374: sp  3 +1 */ 04000001
+        /* 00001378: sp  4 +1 */ 09000004 local_4
+        /* 0000137c: sp  5 +1 */ 0f000090 unnamed member 90
+        /* 00001380: sp  6 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001388: sp  4 +1 */ 0a000004 local_4
+        /* 0000138c: sp  5 +0 */ 7e000000 00000552
+        /* 00001394: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 0000139c: sp  0 +1 */ 06000008 temp_8
+        /* 000013a0: sp  1 -1 */ 64000010
+
+        /* 000013a4: sp  0 +0 */ 00000030
+
+        /* 000013a8: sp  0 +0 */ 00000031
+        /* 000013ac: sp  0 +1 */ 09000010 temp_10
+        /* 000013b0: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 000013b4: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000013bc: sp  0 +1 */ 06000010 temp_10
+        /* 000013c0: sp  1 +1 */ 04000000
+        /* 000013c4: sp  2 -1 */ 46000000
+        /* 000013c8: sp  1 -1 */ 64000005
+
+        /* 000013cc: sp  0 +0 */ 00000032
+        /* 000013d0: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000013d4: sp  1 +1 */ 04000001
+        /* 000013d8: sp  2 -2 */ 2e000000
+        /* 000013dc: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000013e0: sp  0 +0 */ 00000033
+        ---
+
+        /* 000013e4: sp  0 +0 */ 00000034
+        /* 000013e8: sp  0 +1 */ 09000018 temp_18
+        /* 000013ec: sp  1 +1 */ 0900001c local_1c
+        /* 000013f0: sp  2 +1 */ 03000118
+        /* 000013f4: sp  3 +1 */ 04000001
+        /* 000013f8: sp  4 +1 */ 09000014 local_14
+        /* 000013fc: sp  5 +1 */ 0f000090 unnamed member 90
+        /* 00001400: sp  6 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001408: sp  4 +1 */ 0a000014 local_14
+        /* 0000140c: sp  5 +0 */ 7e000000 00000552
+        /* 00001414: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 0000141c: sp  0 +1 */ 06000018 temp_18
+        /* 00001420: sp  1 -1 */ 64000010
+
+        /* 00001424: sp  0 +0 */ 00000035
+
+        /* 00001428: sp  0 +0 */ 00000036
+        /* 0000142c: sp  0 +1 */ 09000020 temp_20
+        /* 00001430: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 00001434: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000143c: sp  0 +1 */ 06000020 temp_20
+        /* 00001440: sp  1 +1 */ 04000000
+        /* 00001444: sp  2 -1 */ 46000000
+        /* 00001448: sp  1 -1 */ 64000005
+
+        /* 0000144c: sp  0 +0 */ 00000037
+        /* 00001450: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00001454: sp  1 +1 */ 04000001
+        /* 00001458: sp  2 -2 */ 2e000000
+        /* 0000145c: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00001460: sp  0 +0 */ 00000038
+        ---
+
+        /* 00001464: sp  0 +0 */ 00000039
+        /* 00001468: sp  0 +1 */ 09000028 temp_28
+        /* 0000146c: sp  1 +1 */ 0900002c local_2c
+        /* 00001470: sp  2 +1 */ 030000fa
+        /* 00001474: sp  3 +1 */ 04000001
+        /* 00001478: sp  4 +1 */ 09000024 local_24
+        /* 0000147c: sp  5 +1 */ 0f000090 unnamed member 90
+        /* 00001480: sp  6 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001488: sp  4 +1 */ 0a000024 local_24
+        /* 0000148c: sp  5 +0 */ 7e000000 00000552
+        /* 00001494: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 0000149c: sp  0 +1 */ 06000028 temp_28
+        /* 000014a0: sp  1 -1 */ 64000010
+
+        /* 000014a4: sp  0 +0 */ 0000003a
+
+        /* 000014a8: sp  0 +0 */ 0000003b
+        /* 000014ac: sp  0 +1 */ 09000030 temp_30
+        /* 000014b0: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 000014b4: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000014bc: sp  0 +1 */ 06000030 temp_30
+        /* 000014c0: sp  1 +1 */ 04000000
+        /* 000014c4: sp  2 -1 */ 46000000
+        /* 000014c8: sp  1 -1 */ 64000005
+
+        /* 000014cc: sp  0 +0 */ 0000003c
+        /* 000014d0: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000014d4: sp  1 +1 */ 04000001
+        /* 000014d8: sp  2 -2 */ 2e000000
+        /* 000014dc: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000014e0: sp  0 +0 */ 0000003d
+        ---
+
+        /* 000014e4: sp  0 +0 */ 0000003e
+        /* 000014e8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000014ec: sp  1 +1 */ 04000000
+        /* 000014f0: sp  2 -2 */ 2e000000
+        /* 000014f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae3_9() {
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+
+        /* 00001574: sp  0 +0 */ 00000040
+        /* 00001578: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000157c: sp  1 +1 */ 09000004 temp_4
+        /* 00001580: sp  2 +1 */ 0f00007c unnamed member 7c
+        /* 00001584: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000158c: sp  1 +1 */ 06000004 temp_4
+        /* 00001590: sp  2 +1 */ 04000000
+        /* 00001594: sp  3 -1 */ 46000000
+        /* 00001598: sp  2 +1 */ 0900000c temp_c
+        /* 0000159c: sp  3 +1 */ 09000010 local_10
+        /* 000015a0: sp  4 +1 */ 030000af
+        /* 000015a4: sp  5 +1 */ 04000001
+        /* 000015a8: sp  6 +1 */ 09000008 local_8
+        /* 000015ac: sp  7 +1 */ 0f000090 unnamed member 90
+        /* 000015b0: sp  8 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000015b8: sp  6 +1 */ 0a000008 local_8
+        /* 000015bc: sp  7 +0 */ 7e000000 00000552
+        /* 000015c4: sp  7 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 000015cc: sp  2 +1 */ 0600000c temp_c
+        /* 000015d0: sp  3 +1 */ 04000000
+        /* 000015d4: sp  4 -1 */ 46000000
+        /* 000015d8: sp  3 -1 */ 51000000
+        /* 000015dc: sp  2 -2 */ 2e000000
+        /* 000015e0: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1aed_a() {
+        %human_player% local_4 = TODO(0B);
+        bool temp_8 = False;
+        pickup local_c = TODO(0A);
+        bool temp_10 = False;
+        bool temp_11 = False;
+        bool temp_12 = False;
+
+        /* 000004e4: sp  0 +0 */ 00000042
+        /* 000004e8: sp  0 +1 */ 09000008 temp_8
+        /* 000004ec: sp  1 +1 */ 0900000c local_c
+        /* 000004f0: sp  2 +1 */ 030000af
+        /* 000004f4: sp  3 +1 */ 04000001
+        /* 000004f8: sp  4 +1 */ 09000004 local_4
+        /* 000004fc: sp  5 +1 */ 0f000090 unnamed member 90
+        /* 00000500: sp  6 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000508: sp  4 +1 */ 0a000004 local_4
+        /* 0000050c: sp  5 +0 */ 7e000000 00000552
+        /* 00000514: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 0000051c: sp  0 +1 */ 06000008 temp_8
+        /* 00000520: sp  1 +1 */ 04000000
+        /* 00000524: sp  2 -1 */ 46000000
+        /* 00000528: sp  1 -1 */ 6400002c
+
+        /* 0000052c: sp  0 +0 */ 00000043
+
+        /* 00000530: sp  0 +0 */ 00000044
+        /* 00000534: sp  0 +1 */ 09000010 temp_10
+        /* 00000538: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 0000053c: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000544: sp  0 +1 */ 06000010 temp_10
+        /* 00000548: sp  1 +1 */ 04000000
+        /* 0000054c: sp  2 -1 */ 46000000
+        /* 00000550: sp  1 -1 */ 64000005
+
+        /* 00000554: sp  0 +0 */ 00000045
+        /* 00000558: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000055c: sp  1 +1 */ 04000001
+        /* 00000560: sp  2 -2 */ 2e000000
+        /* 00000564: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000568: sp  0 +0 */ 00000046
+        /* 0000056c: sp  0 +1 */ 09000011 temp_11
+        /* 00000570: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 00000574: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000057c: sp  0 +1 */ 06000011 temp_11
+        /* 00000580: sp  1 +1 */ 04000000
+        /* 00000584: sp  2 -1 */ 46000000
+        /* 00000588: sp  1 -1 */ 64000005
+
+        /* 0000058c: sp  0 +0 */ 00000047
+        /* 00000590: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000594: sp  1 +1 */ 04000001
+        /* 00000598: sp  2 -2 */ 2e000000
+        /* 0000059c: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000005a0: sp  0 +0 */ 00000048
+        /* 000005a4: sp  0 +1 */ 09000012 temp_12
+        /* 000005a8: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 000005ac: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000005b4: sp  0 +1 */ 06000012 temp_12
+        /* 000005b8: sp  1 +1 */ 04000000
+        /* 000005bc: sp  2 -1 */ 46000000
+        /* 000005c0: sp  1 -1 */ 64000005
+
+        /* 000005c4: sp  0 +0 */ 00000049
+        /* 000005c8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000005cc: sp  1 +1 */ 04000001
+        /* 000005d0: sp  2 -2 */ 2e000000
+        /* 000005d4: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000005d8: sp  0 +0 */ 0000004a
+        ---
+
+        /* 000005dc: sp  0 +0 */ 0000004b
+        /* 000005e0: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000005e4: sp  1 +1 */ 04000000
+        /* 000005e8: sp  2 -2 */ 2e000000
+        /* 000005ec: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1aeb_b() {
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+
+        /* 00000674: sp  0 +0 */ 0000004d
+        /* 00000678: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000067c: sp  1 +1 */ 09000004 temp_4
+        /* 00000680: sp  2 +1 */ 0f000068 unnamed member 68
+        /* 00000684: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000068c: sp  1 +1 */ 06000004 temp_4
+        /* 00000690: sp  2 +1 */ 04000000
+        /* 00000694: sp  3 -1 */ 46000000
+        /* 00000698: sp  2 +1 */ 0900000c temp_c
+        /* 0000069c: sp  3 +1 */ 09000010 local_10
+        /* 000006a0: sp  4 +1 */ 030000fa
+        /* 000006a4: sp  5 +1 */ 04000001
+        /* 000006a8: sp  6 +1 */ 09000008 local_8
+        /* 000006ac: sp  7 +1 */ 0f000090 unnamed member 90
+        /* 000006b0: sp  8 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000006b8: sp  6 +1 */ 0a000008 local_8
+        /* 000006bc: sp  7 +0 */ 7e000000 00000552
+        /* 000006c4: sp  7 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 000006cc: sp  2 +1 */ 0600000c temp_c
+        /* 000006d0: sp  3 +1 */ 04000000
+        /* 000006d4: sp  4 -1 */ 46000000
+        /* 000006d8: sp  3 -1 */ 51000000
+        /* 000006dc: sp  2 -2 */ 2e000000
+        /* 000006e0: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1aec_c() {
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+
+        /* 00000764: sp  0 +0 */ 0000004f
+        /* 00000768: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000076c: sp  1 +1 */ 09000004 temp_4
+        /* 00000770: sp  2 +1 */ 0f000054 unnamed member 54
+        /* 00000774: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000077c: sp  1 +1 */ 06000004 temp_4
+        /* 00000780: sp  2 +1 */ 04000000
+        /* 00000784: sp  3 -1 */ 46000000
+        /* 00000788: sp  2 +1 */ 0900000c temp_c
+        /* 0000078c: sp  3 +1 */ 09000010 local_10
+        /* 00000790: sp  4 +1 */ 03000118
+        /* 00000794: sp  5 +1 */ 04000001
+        /* 00000798: sp  6 +1 */ 09000008 local_8
+        /* 0000079c: sp  7 +1 */ 0f000090 unnamed member 90
+        /* 000007a0: sp  8 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000007a8: sp  6 +1 */ 0a000008 local_8
+        /* 000007ac: sp  7 +0 */ 7e000000 00000552
+        /* 000007b4: sp  7 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 000007bc: sp  2 +1 */ 0600000c temp_c
+        /* 000007c0: sp  3 +1 */ 04000000
+        /* 000007c4: sp  4 -1 */ 46000000
+        /* 000007c8: sp  3 -1 */ 51000000
+        /* 000007cc: sp  2 -2 */ 2e000000
+        /* 000007d0: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae4_d() {
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+
+        /* 00000854: sp  0 +0 */ 00000051
+        /* 00000858: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000085c: sp  1 +1 */ 09000004 temp_4
+        /* 00000860: sp  2 +1 */ 0f00002c unnamed member 2c
+        /* 00000864: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000086c: sp  1 +1 */ 06000004 temp_4
+        /* 00000870: sp  2 +1 */ 04000000
+        /* 00000874: sp  3 -1 */ 46000000
+        /* 00000878: sp  2 +1 */ 0900000c temp_c
+        /* 0000087c: sp  3 +1 */ 09000010 local_10
+        /* 00000880: sp  4 +1 */ 03000190
+        /* 00000884: sp  5 +1 */ 04000001
+        /* 00000888: sp  6 +1 */ 09000008 local_8
+        /* 0000088c: sp  7 +1 */ 0f000090 unnamed member 90
+        /* 00000890: sp  8 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000898: sp  6 +1 */ 0a000008 local_8
+        /* 0000089c: sp  7 +0 */ 7e000000 00000552
+        /* 000008a4: sp  7 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 000008ac: sp  2 +1 */ 0600000c temp_c
+        /* 000008b0: sp  3 +1 */ 04000000
+        /* 000008b4: sp  4 -1 */ 46000000
+        /* 000008b8: sp  3 -1 */ 51000000
+        /* 000008bc: sp  2 -2 */ 2e000000
+        /* 000008c0: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae5_e() {
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+
+        /* 00000944: sp  0 +0 */ 00000053
+        /* 00000948: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000094c: sp  1 +1 */ 09000004 temp_4
+        /* 00000950: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 00000954: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000095c: sp  1 +1 */ 06000004 temp_4
+        /* 00000960: sp  2 +1 */ 04000000
+        /* 00000964: sp  3 -1 */ 46000000
+        /* 00000968: sp  2 +1 */ 0900000c temp_c
+        /* 0000096c: sp  3 +1 */ 09000010 local_10
+        /* 00000970: sp  4 +1 */ 030005dc
+        /* 00000974: sp  5 +1 */ 04000001
+        /* 00000978: sp  6 +1 */ 09000008 local_8
+        /* 0000097c: sp  7 +1 */ 0f000090 unnamed member 90
+        /* 00000980: sp  8 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000988: sp  6 +1 */ 0a000008 local_8
+        /* 0000098c: sp  7 +0 */ 7e000000 00000552
+        /* 00000994: sp  7 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 0000099c: sp  2 +1 */ 0600000c temp_c
+        /* 000009a0: sp  3 +1 */ 04000000
+        /* 000009a4: sp  4 -1 */ 46000000
+        /* 000009a8: sp  3 -1 */ 51000000
+        /* 000009ac: sp  2 -2 */ 2e000000
+        /* 000009b0: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae7_f() {
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+
+        /* 00000a34: sp  0 +0 */ 00000055
+        /* 00000a38: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000a3c: sp  1 +1 */ 09000004 temp_4
+        /* 00000a40: sp  2 +1 */ 0f000054 unnamed member 54
+        /* 00000a44: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000a4c: sp  1 +1 */ 06000004 temp_4
+        /* 00000a50: sp  2 +0 */ 50000000
+        /* 00000a54: sp  2 +1 */ 0900000c temp_c
+        /* 00000a58: sp  3 +1 */ 09000010 local_10
+        /* 00000a5c: sp  4 +1 */ 03000118
+        /* 00000a60: sp  5 +1 */ 04000001
+        /* 00000a64: sp  6 +1 */ 09000008 local_8
+        /* 00000a68: sp  7 +1 */ 0f000090 unnamed member 90
+        /* 00000a6c: sp  8 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000a74: sp  6 +1 */ 0a000008 local_8
+        /* 00000a78: sp  7 +0 */ 7e000000 00000552
+        /* 00000a80: sp  7 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 00000a88: sp  2 +1 */ 0600000c temp_c
+        /* 00000a8c: sp  3 -1 */ 51000000
+        /* 00000a90: sp  2 -2 */ 2e000000
+        /* 00000a94: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae8_10() {
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+
+        /* 00000b14: sp  0 +0 */ 00000057
+        /* 00000b18: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000b1c: sp  1 +1 */ 09000004 temp_4
+        /* 00000b20: sp  2 +1 */ 0f000068 unnamed member 68
+        /* 00000b24: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000b2c: sp  1 +1 */ 06000004 temp_4
+        /* 00000b30: sp  2 +0 */ 50000000
+        /* 00000b34: sp  2 +1 */ 0900000c temp_c
+        /* 00000b38: sp  3 +1 */ 09000010 local_10
+        /* 00000b3c: sp  4 +1 */ 030000fa
+        /* 00000b40: sp  5 +1 */ 04000001
+        /* 00000b44: sp  6 +1 */ 09000008 local_8
+        /* 00000b48: sp  7 +1 */ 0f000090 unnamed member 90
+        /* 00000b4c: sp  8 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000b54: sp  6 +1 */ 0a000008 local_8
+        /* 00000b58: sp  7 +0 */ 7e000000 00000552
+        /* 00000b60: sp  7 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 00000b68: sp  2 +1 */ 0600000c temp_c
+        /* 00000b6c: sp  3 -1 */ 51000000
+        /* 00000b70: sp  2 -2 */ 2e000000
+        /* 00000b74: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_1ae9_11() {
+        bool temp_4 = False;
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+
+        /* 00000bf4: sp  0 +0 */ 00000059
+        /* 00000bf8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000bfc: sp  1 +1 */ 09000004 temp_4
+        /* 00000c00: sp  2 +1 */ 0f00007c unnamed member 7c
+        /* 00000c04: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000c0c: sp  1 +1 */ 06000004 temp_4
+        /* 00000c10: sp  2 +0 */ 50000000
+        /* 00000c14: sp  2 +1 */ 0900000c temp_c
+        /* 00000c18: sp  3 +1 */ 09000010 local_10
+        /* 00000c1c: sp  4 +1 */ 030000af
+        /* 00000c20: sp  5 +1 */ 04000001
+        /* 00000c24: sp  6 +1 */ 09000008 local_8
+        /* 00000c28: sp  7 +1 */ 0f000090 unnamed member 90
+        /* 00000c2c: sp  8 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000c34: sp  6 +1 */ 0a000008 local_8
+        /* 00000c38: sp  7 +0 */ 7e000000 00000552
+        /* 00000c40: sp  7 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 00000c48: sp  2 +1 */ 0600000c temp_c
+        /* 00000c4c: sp  3 -1 */ 51000000
+        /* 00000c50: sp  2 -2 */ 2e000000
+        /* 00000c54: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

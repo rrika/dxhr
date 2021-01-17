@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006bbe</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6BBE</h1>
+		<pre>./tools/drmexplore pc-w/ det_sam_administration.drm n$[0xf7]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6BBE : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_40 = TODO(0A);
+    gcref <a href="type000004aa.html">actorplayer</a> decl_0b1f_06a0_48 = TODO(0B);
+    <a href="type000004be.html">briefing</a> decl_00c1_100c_4c = TODO(0A);
+    <a href="type000004be.html">briefing</a> decl_00c1_100d_54 = TODO(0A);
+    <a href="type000004be.html">briefing</a> decl_00c1_100e_5c = TODO(0A);
+    <a href="type000004e2.html">inventoryitem</a> decl_0604_05fc_64 = TODO(0A);
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_0a45_1(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_0b47_2(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6BBE : %triggervolume% {
+    // sizeof = 0x78
+    stickybool field_4;
+    stickybool field_20;
+    playerref decl_012a_012c_40 = TODO(0A);
+    actorplayer decl_0b1f_06a0_48 = TODO(0B);
+    briefing decl_00c1_100c_4c = TODO(0A);
+    briefing decl_00c1_100d_54 = TODO(0A);
+    briefing decl_00c1_100e_5c = TODO(0A);
+    inventoryitem decl_0604_05fc_64 = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        bool temp_8 = False;
+        %human_player% local_c = TODO(0B);
+        bool temp_10 = False;
+        pickup local_14 = TODO(0A);
+        %human_player% local_18 = TODO(0B);
+        %human_player% local_1c = TODO(0B);
+        instanceref local_20 = TODO(0A);
+        %human_player% local_28 = TODO(0B);
+        instanceref local_2c = TODO(0A);
+        instance local_34 = TODO(0B);
+
+        /* 000001c4: sp  0 +0 */ 00000000
+        /* 000001c8: sp  0 +1 */ 09000008 temp_8
+        /* 000001cc: sp  1 +1 */ 03ffffff
+        /* 000001d0: sp  2 +1 */ 0f00004c unnamed member 4c
+        /* 000001d4: sp  3 -3 */ 65000000 beebbeeb native bool briefing::method_07b7_ffff(dword arg_0000_068c_4)
+        /* 000001dc: sp  0 +1 */ 06000008 temp_8
+        /* 000001e0: sp  1 +0 */ 50000000
+        /* 000001e4: sp  1 -1 */ 64000027
+
+        /* 000001e8: sp  0 +0 */ 00000001
+
+        /* 000001ec: sp  0 +0 */ 00000002
+        /* 000001f0: sp  0 +1 */ 09000010 temp_10
+        /* 000001f4: sp  1 +1 */ 09000014 local_14
+        /* 000001f8: sp  2 +1 */ 03000001
+        /* 000001fc: sp  3 +1 */ 04000001
+        /* 00000200: sp  4 +1 */ 0900000c local_c
+        /* 00000204: sp  5 +1 */ 0f000040 unnamed member 40
+        /* 00000208: sp  6 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000210: sp  4 +1 */ 0a00000c local_c
+        /* 00000214: sp  5 +0 */ 7e000000 00000552
+        /* 0000021c: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 00000224: sp  0 +1 */ 06000010 temp_10
+        /* 00000228: sp  1 +0 */ 50000000
+        /* 0000022c: sp  1 -1 */ 64000014
+
+        /* 00000230: sp  0 +0 */ 00000003
+
+        /* 00000234: sp  0 +0 */ 00000004
+        /* 00000238: sp  0 +1 */ 0f000064 unnamed member 64
+        /* 0000023c: sp  1 +1 */ 04000001
+        /* 00000240: sp  2 +1 */ 04000000
+        /* 00000244: sp  3 +1 */ 09000018 local_18
+        /* 00000248: sp  4 +1 */ 0f000040 unnamed member 40
+        /* 0000024c: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000254: sp  3 +1 */ 0a000018 local_18
+        /* 00000258: sp  4 +0 */ 7e000000 00000552
+        /* 00000260: sp  4 -4 */ 6a000000 beebbeeb virtual void actor::method_0603_5e(inventoryitem arg_0604_05f7_0, bool arg_0000_05fe_14, bool arg_0000_0605_15)
+
+        /* 00000268: sp  0 +0 */ 00000005
+        /* 0000026c: sp  0 +1 */ 03000000
+        /* 00000270: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 00000274: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 0000027c: sp  0 +0 */ 00000006
+        ---
+
+        /* 00000280: sp  0 +0 */ 00000007
+        ---
+
+        /* 00000284: sp  0 +0 */ 00000008
+        /* 00000288: sp  0 +1 */ 0f000048 unnamed member 48
+        /* 0000028c: sp  1 +1 */ 09000034 local_34
+        /* 00000290: sp  2 +1 */ 0900002c local_2c
+        /* 00000294: sp  3 +1 */ 09000028 local_28
+        /* 00000298: sp  4 +1 */ 0f000040 unnamed member 40
+        /* 0000029c: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000002a4: sp  3 +1 */ 0a000028 local_28
+        /* 000002a8: sp  4 +0 */ 7e000000 00000552
+        /* 000002b0: sp  4 -2 */ 69000000 beebbeeb instanceref instance::method_08e4_ffff()
+        /* 000002b8: sp  2 +1 */ 0900002c local_2c
+        /* 000002bc: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002c4: sp  1 +1 */ 0a000034 local_34
+        /* 000002c8: sp  2 +0 */ 7e000000 000004aa
+        /* 000002d0: sp  2 -2 */ 30000000
+
+        /* 000002d4: sp  0 +0 */ 00000009
+        /* 000002d8: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a45_1(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        bool temp_8 = False;
+        action local_c = TODO(0A);
+        bool temp_18 = False;
+        bool temp_19 = False;
+
+        /* 00000354: sp  0 +0 */ 0000000a
+        /* 00000358: sp  0 +1 */ 09000008 temp_8
+        /* 0000035c: sp  1 +1 */ 0900000c local_c
+        /* 00000360: sp  2 +1 */ 10000048
+        /* 00000364: sp  3 -3 */ 69000000 beebbeeb bool actor::method_0620_ffff(action arg_0593_0367_4)
+        /* 0000036c: sp  0 +1 */ 06000008 temp_8
+        /* 00000370: sp  1 -1 */ 64000024
+
+        /* 00000374: sp  0 +0 */ 0000000b
+
+        /* 00000378: sp  0 +0 */ 0000000c
+        /* 0000037c: sp  0 +1 */ 09000018 temp_18
+        /* 00000380: sp  1 +1 */ 03000000
+        /* 00000384: sp  2 +1 */ 0f000054 unnamed member 54
+        /* 00000388: sp  3 -3 */ 65000000 beebbeeb native bool briefing::method_07b7_ffff(dword arg_0000_068c_4)
+        /* 00000390: sp  0 +1 */ 06000018 temp_18
+        /* 00000394: sp  1 -1 */ 64000006
+
+        /* 00000398: sp  0 +0 */ 0000000d
+        /* 0000039c: sp  0 +1 */ 03000000
+        /* 000003a0: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 000003a4: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_0456_ffff(dword arg_0000_068c_0)
+        /* 000003ac: sp  0 +0 */ 63000014 0000000e
+
+        /* 000003b4: sp  0 +0 */ 0000000f
+        /* 000003b8: sp  0 +1 */ 03000000
+        /* 000003bc: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 000003c0: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 000003c8: sp  0 +0 */ 00000010
+        /* 000003cc: sp  0 +1 */ 09000019 temp_19
+        /* 000003d0: sp  1 +1 */ 03ffffff
+        /* 000003d4: sp  2 +1 */ 0f00004c unnamed member 4c
+        /* 000003d8: sp  3 -3 */ 65000000 beebbeeb native bool briefing::method_07b7_ffff(dword arg_0000_068c_4)
+        /* 000003e0: sp  0 +1 */ 06000019 temp_19
+        /* 000003e4: sp  1 -1 */ 64000005
+
+        /* 000003e8: sp  0 +0 */ 00000011
+        /* 000003ec: sp  0 +1 */ 03000000
+        /* 000003f0: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 000003f4: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_0456_ffff(dword arg_0000_068c_0)
+        ---
+
+        /* 000003b0: sp  0 +0 */ 0000000e
+
+        /* 000003b4: sp  0 +0 */ 0000000f
+        /* 000003b8: sp  0 +1 */ 03000000
+        /* 000003bc: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 000003c0: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 000003c8: sp  0 +0 */ 00000010
+        /* 000003cc: sp  0 +1 */ 09000019 temp_19
+        /* 000003d0: sp  1 +1 */ 03ffffff
+        /* 000003d4: sp  2 +1 */ 0f00004c unnamed member 4c
+        /* 000003d8: sp  3 -3 */ 65000000 beebbeeb native bool briefing::method_07b7_ffff(dword arg_0000_068c_4)
+        /* 000003e0: sp  0 +1 */ 06000019 temp_19
+        /* 000003e4: sp  1 -1 */ 64000005
+
+        /* 000003e8: sp  0 +0 */ 00000011
+        /* 000003ec: sp  0 +1 */ 03000000
+        /* 000003f0: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 000003f4: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_0456_ffff(dword arg_0000_068c_0)
+        ---
+
+        /* 000003fc: sp  0 +0 */ 00000012
+
+        /* 00000400: sp  0 +0 */ 00000013
+        ---
+
+        /* 00000404: sp  0 +0 */ 00000014
+        /* 00000408: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0b47_2(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        pickup local_10 = TODO(0A);
+        %human_player% local_14 = TODO(0B);
+        pickup local_18 = TODO(0A);
+        bool temp_1c = False;
+
+        /* 000004b4: sp  0 +0 */ 00000015
+        /* 000004b8: sp  0 +1 */ 0900000c temp_c
+        /* 000004bc: sp  1 +1 */ 09000010 local_10
+        /* 000004c0: sp  2 +1 */ 03000001
+        /* 000004c4: sp  3 +1 */ 04000001
+        /* 000004c8: sp  4 +1 */ 09000008 local_8
+        /* 000004cc: sp  5 +1 */ 0f000040 unnamed member 40
+        /* 000004d0: sp  6 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000004d8: sp  4 +1 */ 0a000008 local_8
+        /* 000004dc: sp  5 +0 */ 7e000000 00000552
+        /* 000004e4: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 000004ec: sp  0 +1 */ 0600000c temp_c
+        /* 000004f0: sp  1 -1 */ 6400000d
+
+        /* 000004f4: sp  0 +0 */ 00000016
+        /* 000004f8: sp  0 +1 */ 09000018 local_18
+        /* 000004fc: sp  1 +1 */ 03000001
+        /* 00000500: sp  2 +1 */ 04000000
+        /* 00000504: sp  3 +1 */ 09000014 local_14
+        /* 00000508: sp  4 +1 */ 0f000040 unnamed member 40
+        /* 0000050c: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000514: sp  3 +1 */ 0a000014 local_14
+        /* 00000518: sp  4 +0 */ 7e000000 00000552
+        /* 00000520: sp  4 -4 */ 69000000 beebbeeb void actor::method_0600_ffff(pickup arg_05fb_05fc_0, dword arg_0000_05fd_4, bool arg_0000_05fe_8)
+        ---
+
+        /* 00000528: sp  0 +0 */ 00000017
+        /* 0000052c: sp  0 +1 */ 0900001c temp_1c
+        /* 00000530: sp  1 +1 */ 03ffffff
+        /* 00000534: sp  2 +1 */ 0f00004c unnamed member 4c
+        /* 00000538: sp  3 -3 */ 65000000 beebbeeb native bool briefing::method_07b7_ffff(dword arg_0000_068c_4)
+        /* 00000540: sp  0 +1 */ 0600001c temp_1c
+        /* 00000544: sp  1 -1 */ 64000005
+
+        /* 00000548: sp  0 +0 */ 00000018
+        /* 0000054c: sp  0 +1 */ 03000000
+        /* 00000550: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 00000554: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_0456_ffff(dword arg_0000_068c_0)
+        ---
+
+        /* 0000055c: sp  0 +0 */ 00000019
+        /* 00000560: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

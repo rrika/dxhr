@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005f4</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05F4</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x731]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05F4 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000034.html">Unknown0034</a>&gt; decl_0012_0ea6_4 = {<a href="units.html#000000c1">unit object 000000c1</a>};
+    void method_042a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05F4 : quest {
+    // sizeof = 0xc
+    instanceref decl_0012_0ea6_4 = TODO(0A);
+    void method_042a_0() {
+        Unknown0034 local_0 = TODO(0B);
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +1 */ 04000001
+        /* 000000ac: sp  1 +1 */ 09000000 local_0
+        /* 000000b0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000000b4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000bc: sp  1 +1 */ 0a000000 local_0
+        /* 000000c0: sp  2 +0 */ 7e000000 00000034
+        /* 000000c8: sp  2 -2 */ 69000000 beebbeeb void actor::setInvincible(bool arg_0000_04d4_0)
+
+        /* 000000d0: sp  0 +0 */ 00000001
+        /* 000000d4: sp  0 +1 */ 05000000 beebbeeb &#x27;Arie Now Invincible&#x27;
+        /* 000000dc: sp  1 +1 */ 03000005
+        /* 000000e0: sp  2 +0 */ 5c000000
+        /* 000000e4: sp  2 +1 */ 04000001
+        /* 000000e8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000000f0: sp  0 +0 */ 00000002
+        /* 000000f4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

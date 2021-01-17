@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000004a9</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>actornpc</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x5b4]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class actornpc : <a href="type000004a8.html">actor</a> {
+    bool method_059c_0();
+    <a href="type000004c1.html">class</a> method_066a_1();
+    void method_066c_2(<a href="type000004c1.html">class</a>);
+    void method_066e_3(bool);
+    // referenced at <a href="type00009b8f.html">async void Unknown9B8F::method_0a74_0()</a>
+    void method_0670_4(<a href="type0000052b.html">waypointset</a>);
+    // referenced at <a href="type000005cd.html">void Unknown05CD::method_0d0b_18(waypointset arg_01e3_0d0c_0)</a>
+    void method_0672_5(<a href="type0000052b.html">waypointset</a>);
+    void method_0673_6(<a href="type0000052b.html">waypointset</a>);
+    // referenced at <a href="type000005cd.html">void Unknown05CD::method_0d0d_19(waypointset arg_01e3_0d0e_0)</a>
+    void method_0674_7(<a href="type0000052b.html">waypointset</a>);
+    // referenced at <a href="type0000004d.html">async void Unknown004D::method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    // referenced at <a href="type000005cd.html">void Unknown05CD::method_0d0f_1a(waypointset arg_01e3_0d10_0)</a>
+    void method_0675_8(<a href="type0000052a.html">waypointnode</a>);
+    // referenced at <a href="type00000034.html">async void Unknown0034::method_0191_1(symbol arg_008f_0192_0, conversationenum arg_0193_0194_4)</a>
+    void method_0677_9(<a href="type0000052a.html">waypointnode</a>);
+    void method_0678_a(<a href="type0000052a.html">waypointnode</a>);
+    // referenced at <a href="type00009ba9.html">async void Unknown9BA9::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009baa.html">async void Unknown9BAA::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009cc4.html">async void Unknown9CC4::method_05ce_0(waypointnode arg_0196_05cf_0)</a>
+    // referenced at <a href="type00009cc8.html">async void Unknown9CC8::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type0000004a.html">async void Unknown004A::method_01dc_0()</a>
+    void method_0679_b(<a href="type0000052a.html">waypointnode</a>);
+    // referenced at <a href="type00000048.html">async void Unknown0048::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type0000004a.html">async void Unknown004A::method_01dc_0()</a>
+    // referenced at <a href="type0000004e.html">async void Unknown004E::method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    // referenced at <a href="type00000060.html">async void Unknown0060::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00000061.html">async void Unknown0061::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_0e51_3()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::checkSebastien()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::checkNicolas()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::checkRene()</a>
+    <a href="type000004b2.html">aistate</a> method_067a_c();
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_0de0_1a(instanceref arg_0012_06d8_0, conversation arg_018d_06d9_8, bool arg_0000_06da_10)</a>
+    void method_067b_d(<a href="type000004b2.html">aistate</a>);
+    // referenced at <a href="type00009b8f.html">async void Unknown9B8F::method_0a74_0()</a>
+    // referenced at <a href="type00009e8a.html">void Unknown9E8A::method_2a21_1()</a>
+    void switchToFaction(<a href="type000004af.html">aifaction</a>);
+    // referenced at <a href="type00009b8f.html">async void Unknown9B8F::method_0a74_0()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d7e_1b()</a>
+    // referenced at <a href="type00009e8a.html">void Unknown9E8A::method_2a21_1()</a>
+    void method_067f_f(bool);
+    void method_0681_10();
+    void method_0682_11();
+    void method_0683_12(<a href="type000004ef.html">occupation</a>, float);
+    // referenced at <a href="type00009e8c.html">void Unknown9E8C::method_28e4_0()</a>
+    // referenced at <a href="type00009e8c.html">void Unknown9E8C::method_28e5_1()</a>
+    void method_0685_13();
+    void method_0686_14(float);
+    void method_0687_15(<a href="type000004eb.html">npcinteraction</a>);
+    void method_068a_16(<a href="type000004eb.html">npcinteraction</a>);
+    void method_068b_17(<a href="type000004c3.html">conversation</a>, dword);
+    void method_068d_18(bool);
+    bool method_068e_19();
+    bool method_068f_1a();
+    void method_0690_1b(<a href="type000004e0.html">instanceref</a>);
+    // referenced at <a href="type000005cd.html">void Unknown05CD::method_0d11_1b()</a>
+    void method_0692_1c(bool);
+    void method_0694_1d(<a href="type000004e0.html">instanceref</a>);
+    void method_0695_1e(bool);
+    bool method_0697_1f();
+    // referenced at <a href="type000005cd.html">instancestatus Unknown05CD::method_091d_11()</a>
+    bool method_0698_20();
+    // referenced at <a href="type000005cd.html">instancestatus Unknown05CD::method_091d_11()</a>
+    bool method_0699_21();
+    void method_069a_22();
+    void method_069b_23(bool);
+    void method_01d7_24(<a href="type000004b2.html">aistate</a>, <a href="type000004b2.html">aistate</a>);
+    // referenced at <a href="type000005cd.html">async void Unknown05CD::method_01d7_17(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    void method_069d_25();
+    void method_05a2_26();
+    void method_069e_27(bool, dword);
+    // referenced at <a href="type000005cd.html">async void Unknown05CD::method_05f4_4(instanceref arg_0012_05f2_0)</a>
+    // referenced at <a href="type000005d8.html">void Unknown05D8::method_0ddf_19(actornpc arg_06a5_0dd7_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class actornpc : actor {
+    // sizeof = 0x1
+    bool method_059c_0(); // no bytecode
+    class method_066a_1(); // no bytecode
+    void method_066c_2(class arg_066b_066d_0); // no bytecode
+    void method_066e_3(bool arg_0000_066f_0); // no bytecode
+    void method_0670_4(waypointset arg_01e3_0671_0); // no bytecode
+    void method_0672_5(waypointset arg_01e3_0671_0); // no bytecode
+    void method_0673_6(waypointset arg_01e3_0671_0); // no bytecode
+    void method_0674_7(waypointset arg_01e3_0671_0); // no bytecode
+    void method_0675_8(waypointnode arg_0196_0676_0); // no bytecode
+    void method_0677_9(waypointnode arg_0196_0676_0); // no bytecode
+    void method_0678_a(waypointnode arg_0196_0676_0); // no bytecode
+    void method_0679_b(waypointnode arg_0196_0676_0); // no bytecode
+    aistate method_067a_c(); // no bytecode
+    void method_067b_d(aistate arg_01d8_01da_0); // no bytecode
+    void switchToFaction(aifaction arg_067d_067e_0); // no bytecode
+    void method_067f_f(bool arg_0000_0680_0); // no bytecode
+    void method_0681_10(); // no bytecode
+    void method_0682_11(); // no bytecode
+    void method_0683_12(occupation arg_05f6_05f7_0, float arg_0000_0684_4); // no bytecode
+    void method_0685_13(); // no bytecode
+    void method_0686_14(float arg_0000_0630_0); // no bytecode
+    void method_0687_15(npcinteraction arg_0688_0689_0); // no bytecode
+    void method_068a_16(npcinteraction arg_0688_0689_0); // no bytecode
+    void method_068b_17(conversation arg_018d_05ee_0, dword arg_0000_068c_8); // no bytecode
+    void method_068d_18(bool arg_0000_04d4_0); // no bytecode
+    bool method_068e_19(); // no bytecode
+    bool method_068f_1a(); // no bytecode
+    void method_0690_1b(instanceref arg_0012_0691_0); // no bytecode
+    void method_0692_1c(bool arg_0000_0693_0); // no bytecode
+    void method_0694_1d(instanceref arg_0012_0691_0); // no bytecode
+    void method_0695_1e(bool arg_0000_0696_0); // no bytecode
+    bool method_0697_1f(); // no bytecode
+    bool method_0698_20(); // no bytecode
+    bool method_0699_21() {
+
+        /* 000004f4: sp  0 +0 */ 00000000
+        /* 000004f8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000004fc: sp  1 +1 */ 04000000
+        /* 00000500: sp  2 -2 */ 2e000000
+        /* 00000504: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_069a_22() {
+        /* 00000514: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_069b_23(bool arg_0000_069c_0) {
+        /* 00000524: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_01d7_24(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4) {
+        /* 00000534: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_069d_25() {
+        /* 00000544: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_05a2_26(); // no bytecode
+    void method_069e_27(bool arg_0000_069f_0, dword arg_0000_068c_4); // no bytecode
+};
+</pre>
+		<h2>See also</h2>
+		argument to method on <a href="type000005d8.html">Unknown05D8</a><br/>
+derived class <a href="type000005cd.html">Unknown05CD</a><br/>
+derived class <a href="type0000c164.html">%npc_boss_federova%</a><br/>
+initialized field in <a href="type000026ad.html">Unknown26AD</a><br/>
+initialized field in <a href="type0000b64c.html">UnknownB64C</a><br/>
+parent class <a href="type000004a8.html">actor</a><br/>
+</body>
+</html>

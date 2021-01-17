@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000004a0</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>corebase</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x5ab]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class corebase {
+    void method_0545_0(dword, float, bool);
+    // referenced at <a href="type0000a4a9.html">void UnknownA4A9::method_2ac7_0()</a>
+    // referenced at <a href="type00009e87.html">dword Unknown9E87::method_29fa_c()</a>
+    void method_0549_1(bool, float, bool);
+    // referenced at <a href="type00000034.html">async void Unknown0034::method_0190_0()</a>
+    // referenced at <a href="type00009cc5.html">async void Unknown9CC5::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009cc6.html">async void Unknown9CC6::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009cc7.html">async void Unknown9CC7::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009cca.html">async void Unknown9CCA::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009ccc.html">async void Unknown9CCC::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009ccd.html">async void Unknown9CCD::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009e87.html">dword Unknown9E87::method_29fa_c()</a>
+    void method_054a_2(float, float, bool);
+    void method_054b_3(string, float, bool);
+    // referenced at <a href="type0000a49c.html">void UnknownA49C::method_2abe_0()</a>
+    // referenced at <a href="type00009b87.html">void Unknown9B87::method_2739_0()</a>
+    // referenced at <a href="type00009b88.html">void Unknown9B88::method_273d_0()</a>
+    // referenced at <a href="type00009b88.html">void Unknown9B88::method_273e_1()</a>
+    // referenced at <a href="type00009b9f.html">void Unknown9B9F::method_27af_0()</a>
+    // referenced at <a href="type00009ba8.html">void Unknown9BA8::method_265a_0()</a>
+    // referenced at <a href="type00009ba8.html">void Unknown9BA8::method_265b_1()</a>
+    // referenced at <a href="type00009c3d.html">void Unknown9C3D::method_16e4_0(bool arg_0000_0b29_0)</a>
+    // referenced at <a href="type0000001a.html">void Unknown001A::method_00b3_0()</a>
+    // referenced at <a href="type0000001a.html">void Unknown001A::method_00b4_1()</a>
+    // referenced at <a href="type0000001a.html">void Unknown001A::method_00b5_2()</a>
+    // referenced at <a href="type0000001a.html">void Unknown001A::method_00b6_3()</a>
+    // referenced at <a href="type0000001c.html">async void Unknown001C::run()</a>
+    // referenced at <a href="type00000034.html">async void Unknown0034::method_0190_0()</a>
+    // referenced at <a href="type00000035.html">void Unknown0035::method_01a2_0()</a>
+    // referenced at <a href="type00000035.html">async void Unknown0035::method_001a_7()</a>
+    // referenced at <a href="type00000038.html">void Unknown0038::method_01b4_0()</a>
+    // referenced at <a href="type0000003b.html">async void Unknown003B::method_0120_0(instanceref arg_0012_0121_0)</a>
+    // referenced at <a href="type00009cbb.html">async void Unknown9CBB::method_00e3_1()</a>
+    // referenced at <a href="type00009cc5.html">async void Unknown9CC5::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009cc6.html">async void Unknown9CC6::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009cc7.html">async void Unknown9CC7::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009cca.html">async void Unknown9CCA::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009ccc.html">async void Unknown9CCC::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009ccd.html">async void Unknown9CCD::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type0000004a.html">async void Unknown004A::method_01dc_0()</a>
+    // referenced at <a href="type00000067.html">async void Unknown0067::method_01dc_0()</a>
+    // referenced at <a href="type00000067.html">async void Unknown0067::method_0190_1()</a>
+    // referenced at <a href="type00009cde.html">void Unknown9CDE::method_2886_0()</a>
+    // referenced at <a href="type00009cde.html">void Unknown9CDE::method_2887_1()</a>
+    // referenced at <a href="type00009cdf.html">void Unknown9CDF::method_2888_0()</a>
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b26_2()</a>
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b27_3()</a>
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b28_4()</a>
+    // referenced at <a href="type00002136.html">async void %base_camera%::method_0887_1(actorsensor arg_06fd_0846_0, instanceref arg_0012_0594_4, dword arg_0000_0888_c, bool arg_0000_0847_10)</a>
+    // referenced at <a href="type00002136.html">void %base_camera%::method_136c_3()</a>
+    // referenced at <a href="type00002136.html">async void %base_camera%::method_0a73_11()</a>
+    // referenced at <a href="type00009e73.html">void Unknown9E73::method_29a0_1()</a>
+    // referenced at <a href="type00009e73.html">void Unknown9E73::method_29a1_2()</a>
+    // referenced at <a href="type00009e73.html">void Unknown9E73::method_29a2_3()</a>
+    // referenced at <a href="type00005613.html">void Unknown5613::method_16e4_1(bool arg_0000_0b29_0)</a>
+    // referenced at <a href="type00005613.html">async void Unknown5613::method_0887_3(actorsensor arg_06fd_0846_0, instanceref arg_0012_0594_4, dword arg_0000_0888_c, bool arg_0000_0847_10)</a>
+    // referenced at <a href="type00009ab9.html">async void %sas_scanner_a%::method_0a65_2(uberobjectevent arg_0a66_0a67_0)</a>
+    // referenced at <a href="type00009ab9.html">void %sas_scanner_a%::method_264e_3()</a>
+    // referenced at <a href="type00009ab9.html">void %sas_scanner_a%::method_264f_4()</a>
+    // referenced at <a href="type00009e83.html">void %dlc_st_final_choice_a%::method_2888_1()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d78_14()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d7d_1a()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d7e_1b()</a>
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_0de0_1a(instanceref arg_0012_06d8_0, conversation arg_018d_06d9_8, bool arg_0000_06da_10)</a>
+    // referenced at <a href="type000005e1.html">void Unknown05E1::method_02a8_0()</a>
+    // referenced at <a href="type000093e1.html">void Unknown93E1::method_24df_0()</a>
+    // referenced at <a href="type000093e1.html">void Unknown93E1::method_24e0_1()</a>
+    // referenced at <a href="type000093e1.html">void Unknown93E1::method_253f_3()</a>
+    // referenced at <a href="type0000a4a9.html">void UnknownA4A9::method_2ac7_0()</a>
+    // referenced at <a href="type00009e87.html">void Unknown9E87::method_29fb_d()</a>
+    // referenced at <a href="type000005e4.html">void Unknown05E4::method_02a8_1()</a>
+    // referenced at <a href="type000005e5.html">void Unknown05E5::method_0272_1()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_0492_1()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_0493_2()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_0e51_3()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::checkSebastien()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::checkNicolas()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::checkRene()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_029b_a()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_0298_b()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_029a_c()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_0299_d()</a>
+    // referenced at <a href="type00009e89.html">void Unknown9E89::method_289c_2()</a>
+    // referenced at <a href="type00009e8b.html">void Unknown9E8B::method_2a2b_2()</a>
+    // referenced at <a href="type00009e8b.html">void Unknown9E8B::method_289c_6()</a>
+    // referenced at <a href="type00009e8b.html">void Unknown9E8B::method_29fb_8()</a>
+    // referenced at <a href="type00009e8c.html">void Unknown9E8C::method_28e4_0()</a>
+    // referenced at <a href="type00009e8c.html">void Unknown9E8C::method_28e5_1()</a>
+    // referenced at <a href="type00009e8c.html">void Unknown9E8C::method_28f2_2()</a>
+    // referenced at <a href="type00009e8d.html">void Unknown9E8D::method_28a4_0()</a>
+    // referenced at <a href="type00009e8d.html">void Unknown9E8D::method_28a5_1()</a>
+    // referenced at <a href="type000005f4.html">void Unknown05F4::method_042a_0()</a>
+    void method_054c_4(dword, bool);
+    void method_054d_5(bool, bool);
+    void method_054e_6(float, bool);
+    void debugPrint(string, bool);
+    // referenced at <a href="type000005d2.html">async void Unknown05D2::run()</a>
+    // referenced at <a href="type000005f8.html">async void Unknown05F8::OnEntry(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    // referenced at <a href="type000005f8.html">async void Unknown05F8::OnLeave(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    dword method_0550_8(dword, dword);
+    float rand(float, float);
+    float method_0554_a(float, float);
+    float cos(float);
+    float sin(float);
+    bool method_055a_d(dword);
+    string method_055b_e(string);
+    bool method_055d_f();
+    bool method_055e_10();
+    bool method_055f_11();
+    bool method_0560_12();
+    bool method_0561_13();
+    bool method_0562_14();
+    bool method_0563_15();
+    float method_0564_16(float);
+    <a href="type000004a4.html">vector</a> method_0565_17(float, float, float);
+    <a href="type000004a2.html">rotation</a> method_0568_18(float, float, float);
+    <a href="type000004a4.html">vector</a> method_056a_19(float, float, float);
+    <a href="type000004a2.html">rotation</a> method_056b_1a(float, float, float);
+    void method_056c_1b(<a href="type000004a1.html">messagechannel</a>, dword, string);
+    void method_0185_1c(<a href="type0000049f.html">clock</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class corebase {
+    // sizeof = 0x1
+    void method_0545_0(dword arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8); // no bytecode
+    void method_0549_1(bool arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8); // no bytecode
+    void method_054a_2(float arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8); // no bytecode
+    void method_054b_3(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8); // no bytecode
+    void method_054c_4(dword arg_0000_value_0, bool arg_0000_0548_4); // no bytecode
+    void method_054d_5(bool arg_0000_value_0, bool arg_0000_0548_1); // no bytecode
+    void method_054e_6(float arg_0000_value_0, bool arg_0000_0548_4); // no bytecode
+    void debugPrint(string arg_0000_value_0, bool arg_0000_0548_4); // no bytecode
+    dword method_0550_8(dword arg_0000_0551_4, dword arg_0000_0552_8); // no bytecode
+    float rand(float arg_0000_0551_4, float arg_0000_0552_8); // no bytecode
+    float method_0554_a(float arg_0000_0555_4, float arg_0000_0556_8); // no bytecode
+    float cos(float arg_0000_0558_4); // no bytecode
+    float sin(float arg_0000_0558_4); // no bytecode
+    bool method_055a_d(dword arg_0000_value_4); // no bytecode
+    string method_055b_e(string arg_0000_055c_4); // no bytecode
+    bool method_055d_f(); // no bytecode
+    bool method_055e_10(); // no bytecode
+    bool method_055f_11(); // no bytecode
+    bool method_0560_12(); // no bytecode
+    bool method_0561_13(); // no bytecode
+    bool method_0562_14(); // no bytecode
+    bool method_0563_15(); // no bytecode
+    float method_0564_16(float arg_0000_0564_4) {
+
+        /* 000003a4: sp  0 +0 */ 00000000
+        /* 000003a8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000003ac: sp  1 +1 */ 08000004 arg_0000_0564_4
+        /* 000003b0: sp  2 +1 */ 02000000 3f800000
+        /* 000003b8: sp  3 +1 */ 02000000 41f00000
+        /* 000003c0: sp  4 -1 */ 4b000000
+        /* 000003c4: sp  3 -1 */ 4a000000
+        /* 000003c8: sp  2 -2 */ 2f000000
+        /* 000003cc: sp  0 +0 */ 7b000000
+        ---
+    }
+    vector method_0565_17(float arg_0000_0556_4, float arg_0000_0555_8, float arg_0000_0566_c); // no bytecode
+    rotation method_0568_18(float arg_0000_0556_4, float arg_0000_0555_8, float arg_0000_0566_c); // no bytecode
+    vector method_056a_19(float arg_0000_0556_4, float arg_0000_0555_8, float arg_0000_0566_c); // no bytecode
+    rotation method_056b_1a(float arg_0000_0556_4, float arg_0000_0555_8, float arg_0000_0566_c); // no bytecode
+    async void method_056c_1b(messagechannel arg_056d_056e_0, dword arg_0000_056f_14, string arg_0000_0570_18) {
+        /* 000003e4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0185_1c(clock arg_0182_0186_0) {
+        /* 000003f4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type000004ce.html">dlcsystem</a><br/>
+derived class <a href="type000004d2.html">gamebase</a><br/>
+derived class <a href="type000004fc.html">scaleformmoviecontroller</a><br/>
+</body>
+</html>

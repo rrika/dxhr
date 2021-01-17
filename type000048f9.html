@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000048f9</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown48F9</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_industrial.drm n$[0x102]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown48F9 : <a href="type0000492e.html">%det1_cityindustrial_lowlife_drb_g%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004ec.html">objective</a> decl_0005_17e7_3c = TODO(0A);
+    void method_01d7_0(<a href="type000004b2.html">aistate</a>, <a href="type000004b2.html">aistate</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown48F9 : %det1_cityindustrial_lowlife_drb_g% {
+    // sizeof = 0x44
+    stickybool field_4;
+    stickybool field_20;
+    objective decl_0005_17e7_3c = TODO(0A);
+    async void method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4) {
+        bool temp_8 = False;
+        aistate local_c = TODO(0A);
+        bool temp_10 = False;
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 09000008 temp_8
+        /* 000000dc: sp  1 +1 */ 0900000c local_c
+        /* 000000e0: sp  2 +1 */ 09000004 arg_01d8_01da_4
+        /* 000000e4: sp  3 -3 */ 65000000 beebbeeb native bool aistate::isEqual(aistate arg_01d8_0594_4)
+        /* 000000ec: sp  0 +1 */ 06000008 temp_8
+        /* 000000f0: sp  1 -1 */ 6400000d
+
+        /* 000000f4: sp  0 +0 */ 00000001
+
+        /* 000000f8: sp  0 +0 */ 00000002
+        /* 000000fc: sp  0 +1 */ 09000010 temp_10
+        /* 00000100: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000104: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 0000010c: sp  0 +1 */ 06000010 temp_10
+        /* 00000110: sp  1 -1 */ 64000004
+
+        /* 00000114: sp  0 +0 */ 00000003
+        /* 00000118: sp  0 +1 */ 0f00003c unnamed member 3c
+        /* 0000011c: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094c_ffff()
+        ---
+
+        /* 00000124: sp  0 +0 */ 00000004
+        ---
+
+        /* 00000128: sp  0 +0 */ 00000005
+        /* 0000012c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000048db.html">Unknown48DB</a><br/>
+initialized field in <a href="type000048dc.html">Unknown48DC</a><br/>
+parent class <a href="type0000492e.html">%det1_cityindustrial_lowlife_drb_g%</a><br/>
+</body>
+</html>

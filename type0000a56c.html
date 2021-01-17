@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000a56c</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%base_dlc_eye_scanner%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_prison.drm n$[0xb08]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %base_dlc_eye_scanner% : <a href="type00000585.html">Unknown0585</a> {
+    <a href="type000004ab.html">actorsensor</a> decl_06fd_2b75_4 = TODO(0A);
+    <a href="type000004b4.html">anchor</a> decl_00b8_2b76_8 = TODO(0A);
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_c = TODO(0A);
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_2641_14 = {<a href="type000004e6.html">type 000004e6</a>, 0};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_08e2_24 = {<a href="type000004e6.html">type 000004e6</a>, 9};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_2b77_2c = {<a href="type000004e6.html">type 000004e6</a>, a};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_2b78_34 = {<a href="type000004e6.html">type 000004e6</a>, b};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_2b79_3c = {<a href="type000004e6.html">type 000004e6</a>, c};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_2b7a_44 = {<a href="type000004e6.html">type 000004e6</a>, d};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_2b7b_4c = {<a href="type000004e6.html">type 000004e6</a>, e};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_2b7c_54 = {<a href="type000004e6.html">type 000004e6</a>, 2};
+    <a href="type000004ec.html">objective</a> decl_0005_26a7_64 = TODO(0A);
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0c00_6c = {<a href="type000004e6.html">type 000004e6</a>, 3};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_2a6f_7c = {<a href="type000004e6.html">type 000004e6</a>, 4};
+    bool decl_0000_2b7d_8c = False;
+    void run();
+    void method_0887_1(<a href="type000004ab.html">actorsensor</a>, <a href="type000004e0.html">instanceref</a>, dword, bool);
+    void method_0a65_2(<a href="type00000522.html">uberobjectevent</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %base_dlc_eye_scanner% : Unknown0585 {
+    // sizeof = 0x8d
+    actorsensor decl_06fd_2b75_4 = TODO(0A);
+    anchor decl_00b8_2b76_8 = TODO(0A);
+    playerref decl_012a_012c_c = TODO(0A);
+    uberobjectevent decl_0a66_2641_14 = TODO(0A);
+    uberobjectcommand decl_01a8_08e2_24 = TODO(0A);
+    uberobjectcommand decl_01a8_2b77_2c = TODO(0A);
+    uberobjectcommand decl_01a8_2b78_34 = TODO(0A);
+    uberobjectcommand decl_01a8_2b79_3c = TODO(0A);
+    uberobjectcommand decl_01a8_2b7a_44 = TODO(0A);
+    uberobjectcommand decl_01a8_2b7b_4c = TODO(0A);
+    uberobjectevent decl_0a66_2b7c_54 = TODO(0A);
+    objective decl_0005_26a7_64 = TODO(0A);
+    uberobjectevent decl_0a66_0c00_6c = TODO(0A);
+    uberobjectevent decl_0a66_2a6f_7c = TODO(0A);
+    bool decl_0000_2b7d_8c = False;
+    async void run() {
+        anchor local_0 = TODO(0A);
+
+        /* 00000114: sp  0 +0 */ 00000000
+        /* 00000118: sp  0 +0 */ 77000000
+
+        /* 0000011c: sp  0 +0 */ 00000000
+
+        /* 00000120: sp  0 +0 */ 00000001
+        /* 00000124: sp  0 +1 */ 09000000 local_0
+        /* 00000128: sp  1 +1 */ 03000001
+        /* 0000012c: sp  2 -2 */ 66000000 beebbeeb this-&gt;anchor instance::createModelMarkerAnchor1(dword arg_0000_08dd_4)
+        /* 00000134: sp  0 +1 */ 09000000 local_0
+        /* 00000138: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 0000013c: sp  2 -2 */ 65000000 beebbeeb native void actorsensor::method_06f9_ffff(anchor arg_00b8_06fa_0)
+
+        /* 00000144: sp  0 +0 */ 00000002
+        /* 00000148: sp  0 +1 */ 0f000008 unnamed member 8
+        /* 0000014c: sp  1 +1 */ 03000005
+        /* 00000150: sp  2 -2 */ 66000000 beebbeeb this-&gt;anchor instance::createModelMarkerAnchor1(dword arg_0000_08dd_4)
+
+        /* 00000158: sp  0 +0 */ 00000003
+        /* 0000015c: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0887_1(actorsensor arg_06fd_0846_0, instanceref arg_0012_0594_4, dword arg_0000_0888_c, bool arg_0000_0847_10) {
+        bool temp_14 = False;
+
+        /* 00000184: sp  0 +0 */ 00000004
+        /* 00000188: sp  0 +1 */ 09000014 temp_14
+        /* 0000018c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000190: sp  2 +1 */ 09000000 arg_06fd_0846_0
+        /* 00000194: sp  3 -3 */ 65000000 beebbeeb native bool actorsensor::isEqual(actorsensor arg_06fd_0542_4)
+        /* 0000019c: sp  0 +1 */ 06000014 temp_14
+        /* 000001a0: sp  1 -1 */ 64000016
+
+        /* 000001a4: sp  0 +0 */ 00000005
+
+        /* 000001a8: sp  0 +0 */ 00000006
+        /* 000001ac: sp  0 +1 */ 0800000c arg_0000_0888_c
+        /* 000001b0: sp  1 +1 */ 03000000
+        /* 000001b4: sp  2 -1 */ 45000000
+        /* 000001b8: sp  1 -1 */ 6400000b
+
+        /* 000001bc: sp  0 +0 */ 00000007
+
+        /* 000001c0: sp  0 +0 */ 00000008
+        /* 000001c4: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 000001c8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000001d0: sp  0 +0 */ 00000009
+        /* 000001d4: sp  0 +1 */ 0f00003c unnamed member 3c
+        /* 000001d8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000001e0: sp  0 +0 */ 0000000a
+        /* 000001e4: sp  0 +0 */ 63000004 0000000b
+        /* 000001ec: sp  0 +1 */ 0f000034 unnamed member 34
+        /* 000001f0: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000001f8: sp  0 +0 */ 0000000c
+        ---
+
+        /* 000001e8: sp  0 +0 */ 0000000b
+        /* 000001ec: sp  0 +1 */ 0f000034 unnamed member 34
+        /* 000001f0: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000001f8: sp  0 +0 */ 0000000c
+        ---
+
+        /* 000001fc: sp  0 +0 */ 0000000d
+        /* 00000200: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0a65_2(uberobjectevent arg_0a66_0a67_0) {
+        playerref&lt;actorplayer&gt; local_10 = TODO(0A);
+        bool temp_18 = False;
+        bool temp_19 = False;
+        %human_player% local_1c = TODO(0B);
+        pickup local_20 = TODO(0A);
+        bool temp_24 = False;
+        bool temp_25 = False;
+        %human_player% local_28 = TODO(0B);
+        %human_player% local_2c = TODO(0B);
+        rotation local_30 = TODO(0A);
+        anchor local_40 = TODO(0A);
+        %human_player% local_44 = TODO(0B);
+        action local_48 = TODO(0A);
+        %human_player% local_54 = TODO(0B);
+        %human_player% local_58 = TODO(0B);
+        bool temp_5c = False;
+        %human_player% local_60 = TODO(0B);
+        bool temp_64 = False;
+        %human_player% local_68 = TODO(0B);
+        action local_6c = TODO(0A);
+        %human_player% local_78 = TODO(0B);
+        inputmap local_7c = TODO(0A);
+        %human_player% local_84 = TODO(0B);
+        %human_player% local_88 = TODO(0B);
+        bool temp_8c = False;
+        %human_player% local_90 = TODO(0B);
+        inputmap local_94 = TODO(0A);
+        %human_player% local_9c = TODO(0B);
+        action local_a0 = TODO(0A);
+        %human_player% local_ac = TODO(0B);
+        %human_player% local_b0 = TODO(0B);
+
+        /* 00000504: sp  0 +0 */ 0000000e
+        /* 00000508: sp  0 +1 */ 09000018 temp_18
+        /* 0000050c: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 00000510: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000514: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000051c: sp  0 +1 */ 06000018 temp_18
+        /* 00000520: sp  1 -1 */ 6400003f
+
+        /* 00000524: sp  0 +0 */ 0000000f
+
+        /* 00000528: sp  0 +0 */ 00000010
+        /* 0000052c: sp  0 +1 */ 09000019 temp_19
+        /* 00000530: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 00000534: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 0000053c: sp  0 +1 */ 06000019 temp_19
+        /* 00000540: sp  1 -1 */ 64000020
+
+        /* 00000544: sp  0 +0 */ 00000011
+
+        /* 00000548: sp  0 +0 */ 00000012
+        /* 0000054c: sp  0 +1 */ 0f000044 unnamed member 44
+        /* 00000550: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000558: sp  0 +0 */ 00000013
+        /* 0000055c: sp  0 +1 */ 0f00002c unnamed member 2c
+        /* 00000560: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000568: sp  0 +0 */ 00000014
+        /* 0000056c: sp  0 +1 */ 09000020 local_20
+        /* 00000570: sp  1 +1 */ 03000001
+        /* 00000574: sp  2 +1 */ 04000001
+        /* 00000578: sp  3 +1 */ 0900001c local_1c
+        /* 0000057c: sp  4 +1 */ 0f00000c unnamed member c
+        /* 00000580: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000588: sp  3 +1 */ 0a00001c local_1c
+        /* 0000058c: sp  4 +0 */ 7e000000 00000552
+        /* 00000594: sp  4 -4 */ 69000000 beebbeeb void actor::method_0600_ffff(pickup arg_05fb_05fc_0, dword arg_0000_05fd_4, bool arg_0000_05fe_8)
+
+        /* 0000059c: sp  0 +0 */ 00000015
+        /* 000005a0: sp  0 +1 */ 05000000 beebbeeb &#x27;Acces Granted&#x27;
+        /* 000005a8: sp  1 +1 */ 03000005
+        /* 000005ac: sp  2 +0 */ 5c000000
+        /* 000005b0: sp  2 +1 */ 04000001
+        /* 000005b4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000005bc: sp  0 +0 */ 00000016
+        /* 000005c0: sp  0 +0 */ 63000016 00000017
+        /* 000005c8: sp  0 +1 */ 09000024 temp_24
+        /* 000005cc: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 000005d0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000005d8: sp  0 +1 */ 06000024 temp_24
+        /* 000005dc: sp  1 +0 */ 50000000
+        /* 000005e0: sp  1 -1 */ 6400000e
+
+        /* 000005e4: sp  0 +0 */ 00000018
+
+        /* 000005e8: sp  0 +0 */ 00000019
+        /* 000005ec: sp  0 +1 */ 05000000 beebbeeb &#x27;Acces Denied&#x27;
+        /* 000005f4: sp  1 +1 */ 03000005
+        /* 000005f8: sp  2 +0 */ 5c000000
+        /* 000005fc: sp  2 +1 */ 04000001
+        /* 00000600: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000608: sp  0 +0 */ 0000001a
+        /* 0000060c: sp  0 +1 */ 0f00004c unnamed member 4c
+        /* 00000610: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000618: sp  0 +0 */ 0000001b
+        ---
+
+        /* 000005c4: sp  0 +0 */ 00000017
+        /* 000005c8: sp  0 +1 */ 09000024 temp_24
+        /* 000005cc: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 000005d0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000005d8: sp  0 +1 */ 06000024 temp_24
+        /* 000005dc: sp  1 +0 */ 50000000
+        /* 000005e0: sp  1 -1 */ 6400000e
+
+        /* 000005e4: sp  0 +0 */ 00000018
+
+        /* 000005e8: sp  0 +0 */ 00000019
+        /* 000005ec: sp  0 +1 */ 05000000 beebbeeb &#x27;Acces Denied&#x27;
+        /* 000005f4: sp  1 +1 */ 03000005
+        /* 000005f8: sp  2 +0 */ 5c000000
+        /* 000005fc: sp  2 +1 */ 04000001
+        /* 00000600: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000608: sp  0 +0 */ 0000001a
+        /* 0000060c: sp  0 +1 */ 0f00004c unnamed member 4c
+        /* 00000610: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000618: sp  0 +0 */ 0000001b
+        ---
+
+        /* 0000061c: sp  0 +0 */ 0000001c
+        ---
+
+        /* 00000620: sp  0 +0 */ 0000001d
+        /* 00000624: sp  0 +1 */ 09000025 temp_25
+        /* 00000628: sp  1 +1 */ 0f00006c unnamed member 6c
+        /* 0000062c: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000630: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000638: sp  0 +1 */ 06000025 temp_25
+        /* 0000063c: sp  1 -1 */ 64000088
+
+        /* 00000640: sp  0 +0 */ 0000001e
+
+        /* 00000644: sp  0 +0 */ 0000001f
+        /* 00000648: sp  0 +1 */ 0f000008 unnamed member 8
+        /* 0000064c: sp  1 +1 */ 09000028 local_28
+        /* 00000650: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000654: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000065c: sp  1 +1 */ 0a000028 local_28
+        /* 00000660: sp  2 +0 */ 7e000000 00000552
+        /* 00000668: sp  2 -2 */ 69000000 beebbeeb void instance::method_08ee_ffff(anchor arg_00b8_08ef_0)
+
+        /* 00000670: sp  0 +0 */ 00000020
+        /* 00000674: sp  0 +1 */ 09000030 local_30
+        /* 00000678: sp  1 +1 */ 09000040 local_40
+        /* 0000067c: sp  2 -1 */ 66000000 beebbeeb this-&gt;anchor instance::method_08d9_ffff()
+        /* 00000684: sp  1 +1 */ 09000040 local_40
+        /* 00000688: sp  2 +1 */ 0f000008 unnamed member 8
+        /* 0000068c: sp  3 -3 */ 65000000 beebbeeb native rotation anchor::method_078d_ffff(anchor arg_00b8_0542_4)
+        /* 00000694: sp  0 +1 */ 09000030 local_30
+        /* 00000698: sp  1 +1 */ 0900002c local_2c
+        /* 0000069c: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000006a0: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000006a8: sp  1 +1 */ 0a00002c local_2c
+        /* 000006ac: sp  2 +0 */ 7e000000 00000552
+        /* 000006b4: sp  2 -2 */ 69000000 beebbeeb void actor::method_064b_ffff(rotation arg_0569_064c_0)
+
+        /* 000006bc: sp  0 +0 */ 00000021
+        /* 000006c0: sp  0 +1 */ 09000048 local_48
+        /* 000006c4: sp  1 +1 */ 09000044 local_44
+        /* 000006c8: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000006cc: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000006d4: sp  1 +1 */ 0a000044 local_44
+        /* 000006d8: sp  2 +0 */ 7e000000 00000552
+        /* 000006e0: sp  2 -2 */ 6a000000 beebbeeb virtual void actor::method_05c4_3e(action arg_0593_0367_0)
+
+        /* 000006e8: sp  0 +0 */ 00000022
+        /* 000006ec: sp  0 +1 */ 09000054 local_54
+        /* 000006f0: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000006f4: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000006fc: sp  0 +1 */ 0a000054 local_54
+        /* 00000700: sp  1 +0 */ 7e000000 00000552
+        /* 00000708: sp  1 -1 */ 6a000000 beebbeeb virtual void actorplayer::method_0644_66()
+
+        /* 00000710: sp  0 +0 */ 00000023
+        /* 00000714: sp  0 +1 */ 0900005c temp_5c
+        /* 00000718: sp  1 +1 */ 04000001
+        /* 0000071c: sp  2 +1 */ 09000058 local_58
+        /* 00000720: sp  3 +1 */ 0f00000c unnamed member c
+        /* 00000724: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000072c: sp  2 +1 */ 0a000058 local_58
+        /* 00000730: sp  3 +0 */ 7e000000 00000552
+        /* 00000738: sp  3 -3 */ 69000000 beebbeeb bool actor::method_0661_ffff(bool arg_0000_0662_4)
+        /* 00000740: sp  0 +1 */ 0600005c temp_5c
+        /* 00000744: sp  1 -1 */ 64000005
+
+        /* 00000748: sp  0 +0 */ 00000024
+        /* 0000074c: sp  0 +1 */ 0f00008c unnamed member 8c
+        /* 00000750: sp  1 +1 */ 04000001
+        /* 00000754: sp  2 -2 */ 2e000000
+        /* 00000758: sp  0 +0 */ 6300001f 00000025
+        /* 00000760: sp  0 +1 */ 09000064 temp_64
+        /* 00000764: sp  1 +1 */ 04000001
+        /* 00000768: sp  2 +1 */ 09000060 local_60
+        /* 0000076c: sp  3 +1 */ 0f00000c unnamed member c
+        /* 00000770: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000778: sp  2 +1 */ 0a000060 local_60
+        /* 0000077c: sp  3 +0 */ 7e000000 00000552
+        /* 00000784: sp  3 -3 */ 69000000 beebbeeb bool actor::method_0663_ffff(bool arg_0000_0662_4)
+        /* 0000078c: sp  0 +1 */ 06000064 temp_64
+        /* 00000790: sp  1 -1 */ 64000011
+
+        /* 00000794: sp  0 +0 */ 00000026
+
+        /* 00000798: sp  0 +0 */ 00000027
+        /* 0000079c: sp  0 +1 */ 0f00008c unnamed member 8c
+        /* 000007a0: sp  1 +1 */ 04000000
+        /* 000007a4: sp  2 -2 */ 2e000000
+
+        /* 000007a8: sp  0 +0 */ 00000028
+        /* 000007ac: sp  0 +1 */ 0900006c local_6c
+        /* 000007b0: sp  1 +1 */ 09000068 local_68
+        /* 000007b4: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000007b8: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000007c0: sp  1 +1 */ 0a000068 local_68
+        /* 000007c4: sp  2 +0 */ 7e000000 00000552
+        /* 000007cc: sp  2 -2 */ 6a000000 beebbeeb virtual void actor::method_05c4_3e(action arg_0593_0367_0)
+
+        /* 000007d4: sp  0 +0 */ 00000029
+        ---
+
+        /* 0000075c: sp  0 +0 */ 00000025
+        /* 00000760: sp  0 +1 */ 09000064 temp_64
+        /* 00000764: sp  1 +1 */ 04000001
+        /* 00000768: sp  2 +1 */ 09000060 local_60
+        /* 0000076c: sp  3 +1 */ 0f00000c unnamed member c
+        /* 00000770: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000778: sp  2 +1 */ 0a000060 local_60
+        /* 0000077c: sp  3 +0 */ 7e000000 00000552
+        /* 00000784: sp  3 -3 */ 69000000 beebbeeb bool actor::method_0663_ffff(bool arg_0000_0662_4)
+        /* 0000078c: sp  0 +1 */ 06000064 temp_64
+        /* 00000790: sp  1 -1 */ 64000011
+
+        /* 00000794: sp  0 +0 */ 00000026
+
+        /* 00000798: sp  0 +0 */ 00000027
+        /* 0000079c: sp  0 +1 */ 0f00008c unnamed member 8c
+        /* 000007a0: sp  1 +1 */ 04000000
+        /* 000007a4: sp  2 -2 */ 2e000000
+
+        /* 000007a8: sp  0 +0 */ 00000028
+        /* 000007ac: sp  0 +1 */ 0900006c local_6c
+        /* 000007b0: sp  1 +1 */ 09000068 local_68
+        /* 000007b4: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000007b8: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000007c0: sp  1 +1 */ 0a000068 local_68
+        /* 000007c4: sp  2 +0 */ 7e000000 00000552
+        /* 000007cc: sp  2 -2 */ 6a000000 beebbeeb virtual void actor::method_05c4_3e(action arg_0593_0367_0)
+
+        /* 000007d4: sp  0 +0 */ 00000029
+        ---
+
+        /* 000007d8: sp  0 +0 */ 0000002a
+        ---
+        /* 000007dc: sp  0 +1 */ 0900007c local_7c
+        /* 000007e0: sp  1 +1 */ 09000078 local_78
+        /* 000007e4: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000007e8: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000007f0: sp  1 +1 */ 0a000078 local_78
+        /* 000007f4: sp  2 +0 */ 7e000000 00000552
+        /* 000007fc: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06dc_ffff(inputmap arg_06dd_06de_0)
+
+        /* 00000804: sp  0 +0 */ 0000002b
+        /* 00000808: sp  0 +1 */ 09000084 local_84
+        /* 0000080c: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000810: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000818: sp  0 +1 */ 0a000084 local_84
+        /* 0000081c: sp  1 +0 */ 7e000000 00000552
+        /* 00000824: sp  1 -1 */ 69000000 beebbeeb void gamebase::method_0860_ffff()
+
+        /* 0000082c: sp  0 +0 */ 0000002c
+        /* 00000830: sp  0 +1 */ 05000000 beebbeeb &#x27;menu&#x27;
+        /* 00000838: sp  1 +1 */ 09000088 local_88
+        /* 0000083c: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000840: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000848: sp  1 +1 */ 0a000088 local_88
+        /* 0000084c: sp  2 +0 */ 7e000000 00000552
+        /* 00000854: sp  2 -2 */ 69000000 beebbeeb void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 0000085c: sp  0 +0 */ 0000002d
+        ---
+
+        /* 00000860: sp  0 +0 */ 0000002e
+        /* 00000864: sp  0 +1 */ 0900008c temp_8c
+        /* 00000868: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 0000086c: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000870: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000878: sp  0 +1 */ 0600008c temp_8c
+        /* 0000087c: sp  1 -1 */ 64000033
+
+        /* 00000880: sp  0 +0 */ 0000002f
+
+        /* 00000884: sp  0 +0 */ 00000030
+        /* 00000888: sp  0 +1 */ 09000094 local_94
+        /* 0000088c: sp  1 +1 */ 09000090 local_90
+        /* 00000890: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000894: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000089c: sp  1 +1 */ 0a000090 local_90
+        /* 000008a0: sp  2 +0 */ 7e000000 00000552
+        /* 000008a8: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06dc_ffff(inputmap arg_06dd_06de_0)
+
+        /* 000008b0: sp  0 +0 */ 00000031
+        /* 000008b4: sp  0 +1 */ 0c00008c unnamed member 8c
+        /* 000008b8: sp  1 +1 */ 04000000
+        /* 000008bc: sp  2 -1 */ 46000000
+        /* 000008c0: sp  1 -1 */ 6400000b
+
+        /* 000008c4: sp  0 +0 */ 00000032
+        /* 000008c8: sp  0 +1 */ 090000a0 local_a0
+        /* 000008cc: sp  1 +1 */ 0900009c local_9c
+        /* 000008d0: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000008d4: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000008dc: sp  1 +1 */ 0a00009c local_9c
+        /* 000008e0: sp  2 +0 */ 7e000000 00000552
+        /* 000008e8: sp  2 -2 */ 6a000000 beebbeeb virtual void actor::method_05c4_3e(action arg_0593_0367_0)
+        ---
+
+        /* 000008f0: sp  0 +0 */ 00000033
+        /* 000008f4: sp  0 +1 */ 090000ac local_ac
+        /* 000008f8: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000008fc: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000904: sp  0 +1 */ 0a0000ac local_ac
+        /* 00000908: sp  1 +0 */ 7e000000 00000552
+        /* 00000910: sp  1 -1 */ 69000000 beebbeeb void gamebase::method_085f_ffff()
+
+        /* 00000918: sp  0 +0 */ 00000034
+        /* 0000091c: sp  0 +1 */ 05000000 beebbeeb &#x27;menu&#x27;
+        /* 00000924: sp  1 +1 */ 090000b0 local_b0
+        /* 00000928: sp  2 +1 */ 0f00000c unnamed member c
+        /* 0000092c: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000934: sp  1 +1 */ 0a0000b0 local_b0
+        /* 00000938: sp  2 +0 */ 7e000000 00000552
+        /* 00000940: sp  2 -2 */ 69000000 beebbeeb void gamebase::method_085d_ffff(string arg_0000_056e_0)
+
+        /* 00000948: sp  0 +0 */ 00000035
+        ---
+
+        /* 0000094c: sp  0 +0 */ 00000036
+        /* 00000950: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type0000a56f.html">%dlc_secret_eye_scan_a%</a><br/>
+parent class <a href="type00000585.html">Unknown0585</a><br/>
+</body>
+</html>

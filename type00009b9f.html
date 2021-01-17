@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009b9f</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9B9F</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0xe]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9B9F : <a href="type00009e76.html">%ao_rear_boat_bridge_hangar_a%</a> {
+    <a href="type00000521.html">uberobjectcommand</a> field_4;
+    <a href="type00000522.html">uberobjectevent</a> field_c;
+    <a href="type00000522.html">uberobjectevent</a> field_1c;
+    <a href="type00000521.html">uberobjectcommand</a> field_2c;
+    <a href="type00009e26.html">plannerobstacle</a> decl_2698_27ae_34 = TODO(0A);
+    void method_27af_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9B9F : %ao_rear_boat_bridge_hangar_a% {
+    // sizeof = 0x40
+    uberobjectcommand field_4;
+    uberobjectevent field_c;
+    uberobjectevent field_1c;
+    uberobjectcommand field_2c;
+    plannerobstacle decl_2698_27ae_34 = TODO(0A);
+    void method_27af_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 0f000034 unnamed member 34
+        /* 0000008c: sp  1 -1 */ 65000000 beebbeeb native void plannerobstacle::method_0801_ffff()
+
+        /* 00000094: sp  0 +0 */ 00000001
+        /* 00000098: sp  0 +1 */ 05000000 beebbeeb &#x27;planner obstacle disables as soon as the bridge is opened&#x27;
+        /* 000000a0: sp  1 +1 */ 03000008
+        /* 000000a4: sp  2 +0 */ 5c000000
+        /* 000000a8: sp  2 +1 */ 04000001
+        /* 000000ac: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000000b4: sp  0 +0 */ 00000002
+        /* 000000b8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00009b7b.html">Unknown9B7B</a><br/>
+initialized field in <a href="type00009b7c.html">Unknown9B7C</a><br/>
+initialized field in <a href="type00009bd0.html">Unknown9BD0</a><br/>
+initialized field in <a href="type00009c1d.html">Unknown9C1D</a><br/>
+initialized field in <a href="type00009cbf.html">Unknown9CBF</a><br/>
+initialized field in <a href="type00009cc0.html">Unknown9CC0</a><br/>
+parent class <a href="type00009e76.html">%ao_rear_boat_bridge_hangar_a%</a><br/>
+</body>
+</html>

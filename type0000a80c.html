@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000a80c</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownA80C</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_restricted_area.drm n$[0x2]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownA80C : <a href="type0000a87e.html">UnknownA87E</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    void method_01dc_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownA80C : UnknownA87E {
+    // sizeof = 0x3c
+    stickybool field_4;
+    stickybool field_20;
+    async void method_01dc_0() {
+        barkevent local_0 = TODO(0A);
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 09000000 local_0
+        /* 000000bc: sp  1 -1 */ 68000000 beebbeeb this-&gt;virtual void Unknown05CD::method_07f0_76(barkevent arg_01a9_0d05_0)
+
+        /* 000000c4: sp  0 +0 */ 00000001
+        /* 000000c8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000a810.html">UnknownA810</a><br/>
+initialized field in <a href="type0000a886.html">UnknownA886</a><br/>
+parent class <a href="type0000a87e.html">UnknownA87E</a><br/>
+</body>
+</html>

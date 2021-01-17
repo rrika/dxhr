@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000e5bc</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%soundsplinevolume%</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_lowernightlife.drm n$[0xd21]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %soundsplinevolume% : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type0000e5bb.html">soundspline</a> decl_3cac_3cbe_40 = TODO(0A);
+    <a href="type00000512.html">sound</a> decl_0027_3cbf_48 = dtp:0000:V;
+    <a href="type0000e5bc.html">ScriptDynArrayImpl</a>&lt;<a href="type0000e5bb.html">soundspline</a>&gt; decl_0000_3cc0_4c = TODO(07);
+    <a href="type0000e5bc.html">ScriptDynArrayImpl</a>&lt;<a href="type00000512.html">sound</a>&gt; decl_0000_3cc1_50 = TODO(07);
+    float decl_0000_3cc2_54 = 10.0;
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_3cbc_1();
+    // referenced at <a href="type0000e5bc.html">async void %soundsplinevolume%::method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    <a href="type0000e5bb.html">soundspline</a> method_3cb0_2();
+    // referenced at <a href="type0000e5bc.html">async void %soundsplinevolume%::method_3cbc_1()</a>
+    <a href="type00000512.html">sound</a> method_3cb1_3();
+    // referenced at <a href="type0000e5bc.html">async void %soundsplinevolume%::method_3cbc_1()</a>
+    float method_3cb2_4();
+    // referenced at <a href="type0000e5bc.html">async void %soundsplinevolume%::method_3cbc_1()</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %soundsplinevolume% : %triggervolume% {
+    // sizeof = 0x58
+    stickybool field_4;
+    stickybool field_20;
+    soundspline decl_3cac_3cbe_40 = TODO(0A);
+    sound decl_0027_3cbf_48 = TODO(0A);
+    ScriptDynArrayImpl&lt;soundspline&gt; decl_0000_3cc0_4c = TODO(07);
+    ScriptDynArrayImpl&lt;sound&gt; decl_0000_3cc1_50 = TODO(07);
+    float decl_0000_3cc2_54 = 10.0;
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +0 */ 6e000000 beebbeeb (void)this-&gt;virtual async void %soundsplinevolume%::method_3cbc_42()
+
+        /* 00000110: sp  0 +0 */ 00000001
+        /* 00000114: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_3cbc_1() {
+        bool temp_0 = False;
+        soundspline local_4 = TODO(0A);
+        sound local_c = TODO(0A);
+        dword temp_10 = 0;
+        dword temp_14 = 0;
+        dword temp_18 = 0;
+        float temp_1c = 0.0;
+
+        /* 000001b4: sp  0 +0 */ 00000002
+        ---
+        /* 000001b8: sp  1 +1 */ 09000000 temp_0
+        /* 000001bc: sp  2 -1 */ 66000000 beebbeeb this-&gt;bool Unknown05F8::method_0eb8_ffff()
+        /* 000001c4: sp  1 +1 */ 06000000 temp_0
+        /* 000001c8: sp  2 -1 */ 64000036
+
+        /* 000001cc: sp  1 +0 */ 00000003
+
+        /* 000001d0: sp  1 +0 */ 00000004
+        /* 000001d4: sp  1 +1 */ 0900000c local_c
+        /* 000001d8: sp  2 -1 */ 68000000 beebbeeb this-&gt;virtual sound %soundsplinevolume%::method_3cb1_44()
+        /* 000001e0: sp  1 +1 */ 0900000c local_c
+        /* 000001e4: sp  2 +1 */ 09000004 local_4
+        /* 000001e8: sp  3 -1 */ 68000000 beebbeeb this-&gt;virtual soundspline %soundsplinevolume%::method_3cb0_43()
+        /* 000001f0: sp  2 +1 */ 09000004 local_4
+        /* 000001f4: sp  3 -2 */ 65000000 beebbeeb native void soundspline::method_0a13_ffff(sound arg_0027_0a11_0)
+
+        /* 000001fc: sp  1 +0 */ 00000005
+        /* 00000200: sp  1 +1 */ 09000010 temp_10
+        /* 00000204: sp  2 +1 */ 03000000
+        /* 00000208: sp  3 -2 */ 2f000000
+        /* 0000020c: sp  1 +1 */ 08000010 temp_10
+        ---
+        /* 00000210: sp 597 +1 */ 09000014 temp_14
+        /* 00000214: sp 598 +1 */ 1000004c
+        /* 00000218: sp 599 -1 */ 65000000 00000701 ScriptDynArrayImpl::size
+        /* 00000220: sp 598 +1 */ 08000014 temp_14
+        /* 00000224: sp 599 -1 */ 44000000
+        /* 00000228: sp 598 -1 */ 64000016
+        /* 0000022c: sp 597 +1 */ 09000018 temp_18
+        /* 00000230: sp 598 +1 */ 08000010 temp_10
+        /* 00000234: sp 599 -2 */ 2f000000
+
+        /* 00000238: sp 597 +0 */ 00000006
+        /* 0000023c: sp 597 +1 */ 10000050
+        /* 00000240: sp 598 +99 */ 20000000
+        /* 00000244: sp 697 +1 */ 08000018 temp_18
+        /* 00000248: sp 698 +99 */ 22000000
+        /* 0000024c: sp 797 +99 */ 1e000004
+        /* 00000250: sp 896 +1 */ 1000004c
+        /* 00000254: sp 897 +99 */ 20000000
+        /* 00000258: sp 996 +1 */ 08000018 temp_18
+        /* 0000025c: sp 997 +99 */ 22000000
+        /* 00000260: sp 1096 +99 */ 1e000008
+        /* 00000264: sp 1195 -2 */ 65000000 beebbeeb native void soundspline::method_0a13_ffff(sound arg_0027_0a11_0)
+        /* 0000026c: sp 1193 +1 */ 09000010 temp_10
+        /* 00000270: sp 1194 +1 */ 08000010 temp_10
+        /* 00000274: sp 1195 +1 */ 03000001
+        /* 00000278: sp 1196 -1 */ 3e000000
+        /* 0000027c: sp 1195 -2 */ 2f000000
+        /* 00000280: sp 1193 +0 */ 63ffffe2 00000007
+        /* 00000288: sp 1193 +1 */ 0900001c temp_1c
+        /* 0000028c: sp 1194 -1 */ 68000000 beebbeeb this-&gt;virtual float %soundsplinevolume%::method_3cb2_45()
+        /* 00000294: sp 1193 +1 */ 0800001c temp_1c
+        /* 00000298: sp 1194 -1 */ 80000000
+
+        /* 0000029c: sp 1193 +0 */ 00000008
+        /* 000002a0: sp 1193 +0 */ 63ffffc4 00000009
+        /* 000002a8: sp 1193 +0 */ 7b000000
+        ---
+
+        /* 00000284: sp  1 +0 */ 00000007
+        /* 00000288: sp  1 +1 */ 0900001c temp_1c
+        /* 0000028c: sp  2 -1 */ 68000000 beebbeeb this-&gt;virtual float %soundsplinevolume%::method_3cb2_45()
+        /* 00000294: sp  1 +1 */ 0800001c temp_1c
+        /* 00000298: sp  2 -1 */ 80000000
+
+        /* 0000029c: sp  1 +0 */ 00000008
+        /* 000002a0: sp  1 +0 */ 63ffffc4 00000009
+        /* 000002a8: sp  1 +0 */ 7b000000
+        ---
+
+        /* 000002a4: sp  0 +0 */ 00000009
+        /* 000002a8: sp  0 +0 */ 7b000000
+        ---
+    }
+    soundspline method_3cb0_2() {
+
+        /* 000002b4: sp  0 +0 */ 0000000a
+        /* 000002b8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000002bc: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000002c0: sp  2 -2 */ 34000000
+
+        /* 000002c4: sp  0 +0 */ 0000e5bb
+        /* 000002c8: sp  0 +0 */ 7b000000
+        ---
+    }
+    sound method_3cb1_3() {
+
+        /* 000002d4: sp  0 +0 */ 0000000c
+        /* 000002d8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000002dc: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 000002e0: sp  2 -2 */ 34000000
+
+        /* 000002e4: sp  0 +0 */ 00000512
+        /* 000002e8: sp  0 +0 */ 7b000000
+        ---
+    }
+    float method_3cb2_4() {
+
+        /* 000002f4: sp  0 +0 */ 0000000e
+        /* 000002f8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000002fc: sp  1 +1 */ 0e000054 unnamed member 54
+        /* 00000300: sp  2 -2 */ 2f000000
+        /* 00000304: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00012fda.html">Unknown12FDA</a><br/>
+derived class <a href="type00012fdb.html">Unknown12FDB</a><br/>
+derived class <a href="type00012fdc.html">Unknown12FDC</a><br/>
+derived class <a href="type00012fdd.html">Unknown12FDD</a><br/>
+derived class <a href="type00012fde.html">Unknown12FDE</a><br/>
+derived class <a href="type00013874.html">Unknown13874</a><br/>
+derived class <a href="type00013875.html">Unknown13875</a><br/>
+derived class <a href="type00013876.html">Unknown13876</a><br/>
+derived class <a href="type00013877.html">Unknown13877</a><br/>
+derived class <a href="type00013878.html">Unknown13878</a><br/>
+derived class <a href="type00013cc7.html">Unknown13CC7</a><br/>
+initialized field in <a href="type0000e5bc.html">%soundsplinevolume%</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+unit object #1026 null<br/>
+unit object #1027 null<br/>
+unit object #1028 null<br/>
+unit object #1029 null<br/>
+unit object #1030 null<br/>
+unit object #1360 null<br/>
+unit object #1361 null<br/>
+unit object #1362 null<br/>
+unit object #1363 null<br/>
+unit object #1364 null<br/>
+unit object #586 null<br/>
+</body>
+</html>

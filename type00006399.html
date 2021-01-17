@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006399</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6399</h1>
+		<pre>./tools/drmexplore pc-w/ det_police.drm n$[0x132]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6399 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006369.html">Unknown6369</a>&gt; decl_0012_1bbd_40 = {<a href="units.html#00003330">unit object 00003330</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006396.html">Unknown6396</a>&gt; decl_0012_1c24_48 = {<a href="units.html#00003491">unit object 00003491</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006392.html">Unknown6392</a>&gt; decl_0012_1c21_50 = {<a href="units.html#00003490">unit object 00003490</a>};
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6399 : %triggervolume% {
+    // sizeof = 0x58
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_1bbd_40 = TODO(0A);
+    instanceref decl_0012_1c24_48 = TODO(0A);
+    instanceref decl_0012_1c21_50 = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown6369 local_8 = TODO(0B);
+        Unknown6369 local_c = TODO(0B);
+        waypointnode local_10 = TODO(0A);
+        Unknown6396 local_20 = TODO(0B);
+        Unknown6392 local_24 = TODO(0B);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000008 local_8
+        /* 0000012c: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000138: sp  0 +1 */ 0a000008 local_8
+        /* 0000013c: sp  1 +0 */ 7e000000 00006369
+        /* 00000144: sp  1 -1 */ 69000000 beebbeeb void actornpc::method_0682_ffff()
+
+        /* 0000014c: sp  0 +0 */ 00000001
+        /* 00000150: sp  0 +1 */ 09000010 local_10
+        /* 00000154: sp  1 +1 */ 0900000c local_c
+        /* 00000158: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 0000015c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000164: sp  1 +1 */ 0a00000c local_c
+        /* 00000168: sp  2 +0 */ 7e000000 00006369
+        /* 00000170: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0675_ffff(waypointnode arg_0196_0676_0)
+
+        /* 00000178: sp  0 +0 */ 00000002
+        /* 0000017c: sp  0 +1 */ 04000000
+        /* 00000180: sp  1 +1 */ 09000020 local_20
+        /* 00000184: sp  2 +1 */ 0f000048 unnamed member 48
+        /* 00000188: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000190: sp  1 +1 */ 0a000020 local_20
+        /* 00000194: sp  2 +0 */ 7e000000 00006396
+        /* 0000019c: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 000001a4: sp  0 +0 */ 00000003
+        /* 000001a8: sp  0 +1 */ 04000000
+        /* 000001ac: sp  1 +1 */ 09000024 local_24
+        /* 000001b0: sp  2 +1 */ 0f000050 unnamed member 50
+        /* 000001b4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001bc: sp  1 +1 */ 0a000024 local_24
+        /* 000001c0: sp  2 +0 */ 7e000000 00006392
+        /* 000001c8: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 000001d0: sp  0 +0 */ 00000004
+        /* 000001d4: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Cop MB015 Start Patrolling!&#x27;
+        /* 000001dc: sp  1 +1 */ 03000003
+        /* 000001e0: sp  2 +0 */ 5c000000
+        /* 000001e4: sp  2 +1 */ 04000001
+        /* 000001e8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001f0: sp  0 +0 */ 00000005
+        /* 000001f4: sp  0 +1 */ 04000000
+        /* 000001f8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 00000200: sp  0 +0 */ 00000006
+        /* 00000204: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00006392.html">Unknown6392</a><br/>
+initialized field in <a href="type00006396.html">Unknown6396</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

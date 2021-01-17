@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00013cf1</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown13CF1</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_thehive.drm n$[0x7a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown13CF1 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown13CF1 : %triggervolume% {
+    // sizeof = 0x3e
+    stickybool field_4;
+    stickybool field_20;
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        instanceref&lt;Unknown13CC8&gt; local_8 = TODO(0A);
+        Unknown13CC8 local_10 = TODO(0B);
+
+        /* 000000f4: sp  0 +0 */ 00000000
+        /* 000000f8: sp  0 +1 */ 09000010 local_10
+        /* 000000fc: sp  1 +1 */ 09000008 local_8
+        /* 00000100: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000108: sp  0 +1 */ 0a000010 local_10
+        /* 0000010c: sp  1 +0 */ 7e000000 00013cc8
+        /* 00000114: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown13CC8::method_5a55_40()
+
+        /* 0000011c: sp  0 +0 */ 00000001
+        /* 00000120: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

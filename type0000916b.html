@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000916b</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown916B</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0x1]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown916B : <a href="type00005615.html">%alarm%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000511.html">smartscript</a> decl_0089_23af_20 = persistent(dtp:939A) {type=bool};
+    void method_19f4_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown916B : %alarm% {
+    // sizeof = 0x34
+    stickybool field_4;
+    smartscript decl_0089_23af_20 = TODO(0A);
+    void method_19f4_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 04000001
+        /* 0000008c: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 00000090: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000098: sp  0 +0 */ 00000001
+        /* 0000009c: sp  0 +1 */ 05000000 beebbeeb &#x27;The player has triggered the alarm.&#x27;
+        /* 000000a4: sp  1 +1 */ 03000005
+        /* 000000a8: sp  2 +0 */ 5c000000
+        /* 000000ac: sp  2 +1 */ 04000001
+        /* 000000b0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000000b8: sp  0 +0 */ 00000002
+        /* 000000bc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00005615.html">%alarm%</a><br/>
+</body>
+</html>

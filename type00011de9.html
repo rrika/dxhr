@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00011de9</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%ranch_tunnel_console_a%</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega__masterunit.drm n$[0x579]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %ranch_tunnel_console_a% : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_530b_4 = {<a href="type00000e26.html">type 00000e26</a>, 0};
+    void method_530c_0();
+    // referenced at <a href="type00011df0.html">void Unknown11DF0::method_5330_2()</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %ranch_tunnel_console_a% : Unknown0578 {
+    // sizeof = 0xc
+    uberobjectcommand decl_01a8_530b_4 = TODO(0A);
+    void method_530c_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 0000008c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000094: sp  0 +0 */ 00000001
+        /* 00000098: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00011df0.html">Unknown11DF0</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+</body>
+</html>

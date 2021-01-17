@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006f3a</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6F3A</h1>
+		<pre>./tools/drmexplore pc-w/ det_sam_assembly.drm n$[0x10a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6F3A : <a href="type0000059c.html">%dispatcher%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006f3b.html">Unknown6F3B</a>&gt; decl_0012_1eb2_4 = {<a href="units.html#0000039d">unit object 0000039d</a>};
+    void method_1eb3_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6F3A : %dispatcher% {
+    // sizeof = 0xc
+    instanceref decl_0012_1eb2_4 = TODO(0A);
+    void method_1eb3_0() {
+        Unknown6F3B local_0 = TODO(0B);
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +1 */ 09000000 local_0
+        /* 000000ac: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000b0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000b8: sp  0 +1 */ 0a000000 local_0
+        /* 000000bc: sp  1 +0 */ 7e000000 00006f3b
+        /* 000000c4: sp  1 -1 */ 69000000 beebbeeb void %gas_bomb_a%::method_1f14_ffff()
+
+        /* 000000cc: sp  0 +0 */ 00000001
+        /* 000000d0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00006f3b.html">Unknown6F3B</a><br/>
+parent class <a href="type0000059c.html">%dispatcher%</a><br/>
+</body>
+</html>

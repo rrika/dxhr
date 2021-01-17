@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000b3fb</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownB3FB</h1>
+		<pre>./tools/drmexplore pc-w/ pan_insertion.drm n$[0x1b]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownB3FB : <a href="type00002134.html">%triggerplane%</a> {
+    <a href="type000004e3.html">light</a> decl_0098_2f78_4 = TODO(0A);
+    <a href="type000004d5.html">globalparams</a> decl_0094_2f79_10 = TODO(0A);
+    <a href="type000004c9.html">deferredlight</a> decl_009b_2f7b_18 = TODO(0A);
+    <a href="type000004c9.html">deferredlight</a> decl_009b_2f7c_30 = TODO(0A);
+    void method_103d_0(gcref <a href="type000004df.html">instance</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownB3FB : %triggerplane% {
+    // sizeof = 0x48
+    light decl_0098_2f78_4 = TODO(0A);
+    globalparams decl_0094_2f79_10 = TODO(0A);
+    deferredlight decl_009b_2f7b_18 = TODO(0A);
+    deferredlight decl_009b_2f7c_30 = TODO(0A);
+    async void method_103d_0(instance arg_0022_01ba_0) {
+
+        /* 00000094: sp  0 +0 */ 00000000
+        /* 00000098: sp  0 +1 */ 04000000
+        /* 0000009c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000a0: sp  2 -2 */ 65000000 beebbeeb native void light::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000000a8: sp  0 +0 */ 00000001
+        /* 000000ac: sp  0 +1 */ 0f000010 unnamed member 10
+        /* 000000b0: sp  1 -1 */ 65000000 beebbeeb native void globalparams::method_08b0_ffff()
+
+        /* 000000b8: sp  0 +0 */ 00000002
+        /* 000000bc: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 000000c0: sp  1 -1 */ 65000000 beebbeeb native void deferredlight::method_0805_ffff()
+
+        /* 000000c8: sp  0 +0 */ 00000003
+        /* 000000cc: sp  0 +1 */ 0f000030 unnamed member 30
+        /* 000000d0: sp  1 -1 */ 65000000 beebbeeb native void deferredlight::method_0805_ffff()
+
+        /* 000000d8: sp  0 +0 */ 00000004
+        /* 000000dc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00002134.html">%triggerplane%</a><br/>
+</body>
+</html>

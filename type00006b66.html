@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006b66</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6B66</h1>
+		<pre>./tools/drmexplore pc-w/ det_sam__masterunit.drm n$[0x31]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6B66 : <a href="type00006b85.html">%det1_samadministration_streetcop_swat_b%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000511.html">smartscript</a> decl_0089_1d87_3c = persistent(dtp:047D) {type=bool};
+    void method_00e3_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6B66 : %det1_samadministration_streetcop_swat_b% {
+    // sizeof = 0x50
+    stickybool field_4;
+    stickybool field_20;
+    smartscript decl_0089_1d87_3c = TODO(0A);
+    async void method_00e3_0() {
+        bool temp_0 = False;
+        npcinteraction local_4 = TODO(0A);
+        npcinteraction local_c = TODO(0A);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 09000000 temp_0
+        /* 000000ec: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 000000f0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000000f8: sp  0 +1 */ 06000000 temp_0
+        /* 000000fc: sp  1 +1 */ 04000001
+        /* 00000100: sp  2 -1 */ 46000000
+        /* 00000104: sp  1 -1 */ 6400000f
+
+        /* 00000108: sp  0 +0 */ 00000001
+
+        /* 0000010c: sp  0 +0 */ 00000002
+        /* 00000110: sp  0 +1 */ 09000004 local_4
+        /* 00000114: sp  1 -1 */ 66000000 beebbeeb this-&gt;void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 0000011c: sp  0 +0 */ 00000003
+        /* 00000120: sp  0 +1 */ 05000000 beebbeeb &#x27;Hostages Saved, Set BCop02 Positive&#x27;
+        /* 00000128: sp  1 +1 */ 03000005
+        /* 0000012c: sp  2 +0 */ 5c000000
+        /* 00000130: sp  2 +1 */ 04000001
+        /* 00000134: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000013c: sp  0 +0 */ 00000004
+        /* 00000140: sp  0 +0 */ 6300000e 00000005
+
+        /* 00000148: sp  0 +0 */ 00000006
+        /* 0000014c: sp  0 +1 */ 0900000c local_c
+        /* 00000150: sp  1 -1 */ 66000000 beebbeeb this-&gt;void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 00000158: sp  0 +0 */ 00000007
+        /* 0000015c: sp  0 +1 */ 05000000 beebbeeb &#x27;Hostages Dead, Set BCop02 Negative&#x27;
+        /* 00000164: sp  1 +1 */ 03000005
+        /* 00000168: sp  2 +0 */ 5c000000
+        /* 0000016c: sp  2 +1 */ 04000001
+        /* 00000170: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000178: sp  0 +0 */ 00000008
+
+        /* 0000017c: sp  0 +0 */ 00000009
+        ---
+
+        /* 00000144: sp  0 +0 */ 00000005
+
+        /* 00000148: sp  0 +0 */ 00000006
+        /* 0000014c: sp  0 +1 */ 0900000c local_c
+        /* 00000150: sp  1 -1 */ 66000000 beebbeeb this-&gt;void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 00000158: sp  0 +0 */ 00000007
+        /* 0000015c: sp  0 +1 */ 05000000 beebbeeb &#x27;Hostages Dead, Set BCop02 Negative&#x27;
+        /* 00000164: sp  1 +1 */ 03000005
+        /* 00000168: sp  2 +0 */ 5c000000
+        /* 0000016c: sp  2 +1 */ 04000001
+        /* 00000170: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000178: sp  0 +0 */ 00000008
+
+        /* 0000017c: sp  0 +0 */ 00000009
+        ---
+        /* 00000180: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00006b6c.html">Unknown6B6C</a><br/>
+parent class <a href="type00006b85.html">%det1_samadministration_streetcop_swat_b%</a><br/>
+</body>
+</html>

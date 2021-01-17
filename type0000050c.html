@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000050c</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>smartfloat_sampledevaluation</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x619]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class smartfloat_sampledevaluation : <a href="type00000505.html">smartfloat</a> {
+    void method_09f7_0(float);
+    void method_08e0_1();
+    float method_09e9_2(bool, bool, float, float, float);
+    float getValue();
+    // referenced at <a href="type000005d9.html">float Unknown05D9::method_09e9_1(bool arg_0000_08e0_4, float arg_0000_09f5_8)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class smartfloat_sampledevaluation : smartfloat {
+    // sizeof = 0x1
+    void method_09f7_0(float arg_0000_09f8_0); // no bytecode
+    void method_08e0_1(); // no bytecode
+    float method_09e9_2(bool arg_0000_09e5_4, bool arg_0000_09ea_5, float arg_0000_09e8_8, float arg_0000_09b6_c, float arg_0000_09eb_10); // no bytecode
+    float getValue(); // no bytecode
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00000507.html">smartfloat_approachtarget</a><br/>
+parent class <a href="type00000505.html">smartfloat</a><br/>
+</body>
+</html>

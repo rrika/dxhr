@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009e78</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%dlc_gas_injection_timer_a%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6e1]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %dlc_gas_injection_timer_a% : <a href="type00000578.html">Unknown0578</a> {
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_29c2_1();
+    // referenced at <a href="type00009e78.html">async void %dlc_gas_injection_timer_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %dlc_gas_injection_timer_a% : Unknown0578 {
+    // sizeof = 0x1
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        uberobjectevent local_14 = TODO(0A);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000000ec: sp  1 -1 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void uberobjectbase::method_0a65_38(uberobjectevent arg_0a66_0a67_0)
+
+        /* 000000f8: sp  0 +0 */ 00000001
+        /* 000000fc: sp  0 +1 */ 09000010 temp_10
+        /* 00000100: sp  1 +1 */ 09000014 local_14
+        /* 00000104: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000108: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000110: sp  0 +1 */ 06000010 temp_10
+        /* 00000114: sp  1 -1 */ 64000003
+
+        /* 00000118: sp  0 +0 */ 00000002
+        /* 0000011c: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %dlc_gas_injection_timer_a%::method_29c2_3d()
+        ---
+
+        /* 00000124: sp  0 +0 */ 00000003
+        /* 00000128: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29c2_1() {
+        /* 00000134: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00009cdd.html">Unknown9CDD</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+</body>
+</html>

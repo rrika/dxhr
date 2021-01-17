@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000141aa</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown141AA</h1>
+		<pre>./tools/drmexplore pc-w/ sha_tym_lab_admin.drm n$[0xa6]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown141AA : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00011f4a.html">Unknown11F4A</a>&gt; decl_0015_53e1_40 = TODO(0A);
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown141AA : %triggervolume% {
+    // sizeof = 0x4c
+    stickybool field_4;
+    stickybool field_20;
+    unitref decl_0015_53e1_40 = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown11F4A local_8 = TODO(0B);
+        Unknown11F4A local_c = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000008 local_8
+        /* 000000cc: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 000000d8: sp  0 +1 */ 0a000008 local_8
+        /* 000000dc: sp  1 +0 */ 7e000000 00011f4a
+        /* 000000e4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown11F4A::method_53f9_2b()
+
+        /* 000000ec: sp  0 +0 */ 00000001
+        /* 000000f0: sp  0 +1 */ 0900000c local_c
+        /* 000000f4: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000000f8: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000100: sp  0 +1 */ 0a00000c local_c
+        /* 00000104: sp  1 +0 */ 7e000000 00011f4a
+        /* 0000010c: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown11F4A::method_53eb_1d()
+
+        /* 00000114: sp  0 +0 */ 00000002
+        /* 00000118: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

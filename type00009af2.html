@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009af2</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%dlc_burke_bossfight_door_a%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6ec]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %dlc_burke_bossfight_door_a% : <a href="type00003649.html">Unknown3649</a> {
+    <a href="type000004ab.html">actorsensor</a> field_4;
+    <a href="type000004ab.html">actorsensor</a> field_8;
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_01a5_c = {<a href="type0000048f.html">type 0000048f</a>, 3};
+    void method_2666_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %dlc_burke_bossfight_door_a% : Unknown3649 {
+    // sizeof = 0x14
+    actorsensor field_4;
+    actorsensor field_8;
+    uberobjectcommand decl_01a8_01a5_c = TODO(0A);
+    void method_2666_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 0f00000c unnamed member c
+        /* 0000008c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000094: sp  0 +0 */ 00000001
+        /* 00000098: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00009b8f.html">Unknown9B8F</a><br/>
+parent class <a href="type00003649.html">Unknown3649</a><br/>
+unit object #357 null<br/>
+</body>
+</html>

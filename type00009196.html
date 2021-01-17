@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009196</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9196</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0x2c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9196 : <a href="type000093c6.html">%dlc_jensens_armor_a%</a> {
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_4 = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_23f5_c = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_23f6_14 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000921e.html">Unknown921E</a>&gt; decl_0012_23f8_1c = {<a href="units.html#00005eb0">unit object 00005eb0</a>};
+    <a href="type00000512.html">sound</a> decl_0027_23f9_24 = dtp:BEEB:V;
+    <a href="type00000511.html">smartscript</a> decl_0089_23fa_28 = persistent(dtp:9397) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_23fb_3c = persistent(dtp:9398) {type=bool};
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_23fc_50 = TODO(0A);
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9196 : %dlc_jensens_armor_a% {
+    // sizeof = 0x60
+    playerref decl_012a_012c_4 = TODO(0A);
+    sequencergraph decl_008c_23f5_c = TODO(0A);
+    sequencergraph decl_008c_23f6_14 = TODO(0A);
+    instanceref decl_0012_23f8_1c = TODO(0A);
+    sound decl_0027_23f9_24 = TODO(0A);
+    smartscript decl_0089_23fa_28 = TODO(0A);
+    smartscript decl_0089_23fb_3c = TODO(0A);
+    objectivescriptablelocator decl_0963_23fc_50 = TODO(0A);
+    void method_000a_0() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 000000dc: sp  1 -1 */ 65000000 beebbeeb native void sound::startSound2()
+
+        /* 000000e4: sp  0 +0 */ 00000001
+        /* 000000e8: sp  0 +1 */ 0f00000c unnamed member c
+        /* 000000ec: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 000000f4: sp  0 +0 */ 00000002
+        /* 000000f8: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Swapping models sequencer triggered!&#x27;
+        /* 00000100: sp  1 +1 */ 03000003
+        /* 00000104: sp  2 +0 */ 5c000000
+        /* 00000108: sp  2 +1 */ 04000001
+        /* 0000010c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000114: sp  0 +0 */ 00000003
+        /* 00000118: sp  0 +1 */ 04000000
+        /* 0000011c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void Unknown0585::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 00000124: sp  0 +0 */ 00000004
+        /* 00000128: sp  0 +1 */ 0f000050 unnamed member 50
+        /* 0000012c: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 00000134: sp  0 +0 */ 00000005
+        /* 00000138: sp  0 +1 */ 04000001
+        /* 0000013c: sp  1 +1 */ 0f000028 unnamed member 28
+        /* 00000140: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000148: sp  0 +0 */ 00000006
+        /* 0000014c: sp  0 +1 */ 09000000 temp_0
+        /* 00000150: sp  1 +1 */ 0f000028 unnamed member 28
+        /* 00000154: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000015c: sp  0 +1 */ 06000000 temp_0
+        /* 00000160: sp  1 +1 */ 04000001
+        /* 00000164: sp  2 -1 */ 46000000
+        /* 00000168: sp  1 +1 */ 09000001 temp_1
+        /* 0000016c: sp  2 +1 */ 0f00003c unnamed member 3c
+        /* 00000170: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000178: sp  1 +1 */ 06000001 temp_1
+        /* 0000017c: sp  2 +1 */ 04000001
+        /* 00000180: sp  3 -1 */ 46000000
+        /* 00000184: sp  2 -1 */ 51000000
+        /* 00000188: sp  1 -1 */ 64000013
+
+        /* 0000018c: sp  0 +0 */ 00000007
+
+        /* 00000190: sp  0 +0 */ 00000008
+        /* 00000194: sp  0 +1 */ 05000000 beebbeeb &#x27;All inventory recovered&#x27;
+        /* 0000019c: sp  1 +1 */ 0300000a
+        /* 000001a0: sp  2 +0 */ 5c000000
+        /* 000001a4: sp  2 +1 */ 04000001
+        /* 000001a8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001b0: sp  0 +0 */ 00000009
+        /* 000001b4: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 000001b8: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000001c0: sp  0 +0 */ 0000000a
+        /* 000001c4: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 000001c8: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 000001d0: sp  0 +0 */ 0000000b
+        /* 000001d4: sp  0 +0 */ 63000008 0000000c
+        /* 000001dc: sp  0 +1 */ 05000000 beebbeeb &#x27;All inventory yet to be recovered&#x27;
+        /* 000001e4: sp  1 +1 */ 0300000a
+        /* 000001e8: sp  2 +0 */ 5c000000
+        /* 000001ec: sp  2 +1 */ 04000001
+        /* 000001f0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001f8: sp  0 +0 */ 0000000d
+        ---
+
+        /* 000001d8: sp  0 +0 */ 0000000c
+        /* 000001dc: sp  0 +1 */ 05000000 beebbeeb &#x27;All inventory yet to be recovered&#x27;
+        /* 000001e4: sp  1 +1 */ 0300000a
+        /* 000001e8: sp  2 +0 */ 5c000000
+        /* 000001ec: sp  2 +1 */ 04000001
+        /* 000001f0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001f8: sp  0 +0 */ 0000000d
+        ---
+        /* 000001fc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000093c6.html">%dlc_jensens_armor_a%</a><br/>
+</body>
+</html>

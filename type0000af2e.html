@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000af2e</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownAF2E</h1>
+		<pre>./tools/drmexplore pc-w/ pan_hyronproject.drm n$[0x4a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownAF2E : <a href="type00004f69.html">%electricity_damagevolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    void method_00e3_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownAF2E : %electricity_damagevolume% {
+    // sizeof = 0x3e
+    stickybool field_4;
+    stickybool field_20;
+    async void method_00e3_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 04000001
+        /* 0000008c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void triggervolumebase::method_0a3f_ffff(bool arg_0000_04d4_0)
+
+        /* 00000094: sp  0 +0 */ 00000001
+        /* 00000098: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00004f69.html">%electricity_damagevolume%</a><br/>
+</body>
+</html>

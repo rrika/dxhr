@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00013cbf</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown13CBF</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_thehive.drm n$[0x44]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown13CBF : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type000004ec.html">objective</a> decl_0005_49be_4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00013cf4.html">Unknown13CF4</a>&gt; decl_0007_5a45_c = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0001207e.html">Unknown1207E</a>&gt; decl_0007_550a_10 = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_5a46_14 = TODO(0A);
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown13CBF : %debugbutton% {
+    // sizeof = 0x1c
+    objective decl_0005_49be_4 = TODO(0A);
+    scenarioref&lt;Unknown13CF4&gt; decl_0007_5a45_c = TODO(0A);
+    scenarioref&lt;Unknown1207E&gt; decl_0007_550a_10 = TODO(0A);
+    sequencergraph decl_008c_5a46_14 = TODO(0A);
+    void method_000a_0() {
+        Unknown13CF4 local_0 = TODO(0B);
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 09000000 local_0
+        /* 000000bc: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000000c0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000000c8: sp  0 +1 */ 0a000000 local_0
+        /* 000000cc: sp  1 +0 */ 7e000000 00013cf4
+        /* 000000d4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000000dc: sp  0 +0 */ 00000001
+        /* 000000e0: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 000000e4: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+
+        /* 000000ec: sp  0 +0 */ 00000002
+
+        /* 000000f0: sp  0 +0 */ 00000003
+
+        /* 000000f4: sp  0 +0 */ 00000004
+        /* 000000f8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

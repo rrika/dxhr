@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005d2</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05D2</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x706]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05D2 : <a href="type000004d2.html">gamebase</a> {
+    <a href="type00000517.html">stickybool</a> decl_0849_0d6a_4 = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d6b_20 = TODO(0A);
+    void run();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05D2 : gamebase {
+    // sizeof = 0x3c
+    stickybool decl_0849_0d6a_4 = TODO(0A);
+    stickybool decl_0849_0d6b_20 = TODO(0A);
+    async void run() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 05000000 beebbeeb &#x27;global_panchea::Run()&#x27;
+        /* 00000090: sp  1 +1 */ 04000001
+        /* 00000094: sp  2 -2 */ 66000000 beebbeeb this-&gt;void corebase::debugPrint(string arg_0000_value_0, bool arg_0000_0548_4)
+
+        /* 0000009c: sp  0 +0 */ 00000001
+        /* 000000a0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000005cf.html">Unknown05CF</a><br/>
+parent class <a href="type000004d2.html">gamebase</a><br/>
+</body>
+</html>

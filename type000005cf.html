@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005cf</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05CF</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x703]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05CF : <a href="type000004d3.html">gameglobalsbase</a> {
+    gcref <a href="type000005d7.html">Unknown05D7</a> decl_0d32_0d33_4 = TODO(0B);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d34_8 = TODO(0A);
+    gcref <a href="type000005d0.html">Unknown05D0</a> decl_0d35_0d36_24 = TODO(0B);
+    gcref <a href="type000005d1.html">Unknown05D1</a> decl_0d37_0d38_28 = TODO(0B);
+    gcref <a href="type000005d2.html">Unknown05D2</a> decl_0d39_0d3a_2c = TODO(0B);
+    gcref <a href="type000005d3.html">Unknown05D3</a> decl_0d3b_0d3c_30 = TODO(0B);
+    gcref <a href="type000005d4.html">Unknown05D4</a> decl_0d3d_0d3e_34 = TODO(0B);
+    gcref <a href="type000005d5.html">Unknown05D5</a> decl_0d3f_0d40_38 = TODO(0B);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d41_3c = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d42_58 = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d43_74 = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d44_90 = TODO(0A);
+    float decl_0000_0d45_ac = 0.5;
+    <a href="type00000517.html">stickybool</a> decl_0849_0d46_b0 = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d47_cc = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d48_e8 = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d49_104 = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0d4a_120 = TODO(0A);
+    <a href="type000004ee.html">objectref</a> decl_0018_0d4b_13c = TODO(0A);
+    void run();
+    void method_0d4c_1(<a href="type00000526.html">unitref</a>);
+    void method_0d4d_2(<a href="type00000526.html">unitref</a>, <a href="type000004e0.html">instanceref</a>);
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0312_a()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_02f0_b()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0304_11()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_030f_12()</a>
+    void method_0d4e_3(<a href="type00000526.html">unitref</a>);
+    void method_0d4f_4(<a href="type00000526.html">unitref</a>, <a href="type000004e0.html">instanceref</a>);
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d74_9()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d77_13()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d7a_16()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d7b_17()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0306_18()</a>
+    void method_0d50_5(<a href="type00000526.html">unitref</a>, <a href="type000004e0.html">instanceref</a>, <a href="type000004ee.html">objectref</a>);
+    // referenced at <a href="type0000003c.html">async void Unknown003C::method_001a_0()</a>
+    void method_0d52_6(<a href="type00000526.html">unitref</a>, bool);
+    // referenced at <a href="type000005cf.html">void Unknown05CF::method_0d4c_1(unitref arg_0015_0868_0)</a>
+    // referenced at <a href="type000005cf.html">void Unknown05CF::method_0d4e_3(unitref arg_0015_0868_0)</a>
+    void method_0d53_7(<a href="type00000526.html">unitref</a>, <a href="type000004e0.html">instanceref</a>, bool);
+    // referenced at <a href="type000005cf.html">void Unknown05CF::method_0d4d_2(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)</a>
+    // referenced at <a href="type000005cf.html">void Unknown05CF::method_0d4f_4(unitref arg_0015_0868_0, instanceref arg_0012_086c_c)</a>
+    // referenced at <a href="type000005cf.html">void Unknown05CF::method_0d50_5(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, objectref arg_0018_0d51_14)</a>
+    void method_0d54_8();
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0d52_6(unitref arg_0015_0868_0, bool arg_0000_0869_c)</a>
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0d53_7(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14)</a>
+    void method_0d55_9();
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0d52_6(unitref arg_0015_0868_0, bool arg_0000_0869_c)</a>
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0d53_7(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14)</a>
+    void method_0891_a(<a href="type00000526.html">unitref</a>, bool);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05CF : gameglobalsbase {
+    // sizeof = 0x140
+    Unknown05D7 decl_0d32_0d33_4 = TODO(0B);
+    stickybool decl_0849_0d34_8 = TODO(0A);
+    Unknown05D0 decl_0d35_0d36_24 = TODO(0B);
+    Unknown05D1 decl_0d37_0d38_28 = TODO(0B);
+    Unknown05D2 decl_0d39_0d3a_2c = TODO(0B);
+    Unknown05D3 decl_0d3b_0d3c_30 = TODO(0B);
+    Unknown05D4 decl_0d3d_0d3e_34 = TODO(0B);
+    Unknown05D5 decl_0d3f_0d40_38 = TODO(0B);
+    stickybool decl_0849_0d41_3c = TODO(0A);
+    stickybool decl_0849_0d42_58 = TODO(0A);
+    stickybool decl_0849_0d43_74 = TODO(0A);
+    stickybool decl_0849_0d44_90 = TODO(0A);
+    float decl_0000_0d45_ac = 0.5;
+    stickybool decl_0849_0d46_b0 = TODO(0A);
+    stickybool decl_0849_0d47_cc = TODO(0A);
+    stickybool decl_0849_0d48_e8 = TODO(0A);
+    stickybool decl_0849_0d49_104 = TODO(0A);
+    stickybool decl_0849_0d4a_120 = TODO(0A);
+    objectref decl_0018_0d4b_13c = TODO(0A);
+    async void run() {
+        globaleffect local_0 = TODO(0A);
+
+        /* 000001f4: sp  0 +0 */ 00000000
+        /* 000001f8: sp  0 +1 */ 04000000
+        /* 000001fc: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 00000200: sp  2 -2 */ 65000000 beebbeeb native void stickybool::setStickyBool(bool arg_0000_value_0)
+
+        /* 00000208: sp  0 +0 */ 00000001
+        /* 0000020c: sp  0 +1 */ 03000000
+        /* 00000210: sp  1 +1 */ 09000000 local_0
+        /* 00000214: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02df_ffff(dword arg_0000_0564_0)
+
+        /* 0000021c: sp  0 +0 */ 00000002
+        /* 00000220: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d4c_1(unitref arg_0015_0868_0) {
+
+        /* 000004f4: sp  0 +0 */ 00000003
+        /* 000004f8: sp  0 +1 */ 09000000 arg_0015_0868_0
+        /* 000004fc: sp  1 +1 */ 04000000
+        /* 00000500: sp  2 -2 */ 68000000 beebbeeb this-&gt;virtual async void Unknown05CF::method_0d52_18(unitref arg_0015_0868_0, bool arg_0000_0869_c)
+
+        /* 00000508: sp  0 +0 */ 00000004
+        /* 0000050c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d4d_2(unitref arg_0015_0868_0, instanceref arg_0012_086c_c) {
+
+        /* 00000514: sp  0 +0 */ 00000005
+        /* 00000518: sp  0 +1 */ 09000000 arg_0015_0868_0
+        /* 0000051c: sp  1 +1 */ 0900000c arg_0012_086c_c
+        /* 00000520: sp  2 +1 */ 04000000
+        /* 00000524: sp  3 -3 */ 68000000 beebbeeb this-&gt;virtual async void Unknown05CF::method_0d53_19(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14)
+
+        /* 0000052c: sp  0 +0 */ 00000006
+        /* 00000530: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d4e_3(unitref arg_0015_0868_0) {
+
+        /* 00000544: sp  0 +0 */ 00000007
+        /* 00000548: sp  0 +1 */ 09000000 arg_0015_0868_0
+        /* 0000054c: sp  1 +1 */ 04000001
+        /* 00000550: sp  2 -2 */ 68000000 beebbeeb this-&gt;virtual async void Unknown05CF::method_0d52_18(unitref arg_0015_0868_0, bool arg_0000_0869_c)
+
+        /* 00000558: sp  0 +0 */ 00000008
+        /* 0000055c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d4f_4(unitref arg_0015_0868_0, instanceref arg_0012_086c_c) {
+
+        /* 00000564: sp  0 +0 */ 00000009
+        /* 00000568: sp  0 +1 */ 09000000 arg_0015_0868_0
+        /* 0000056c: sp  1 +1 */ 0900000c arg_0012_086c_c
+        /* 00000570: sp  2 +1 */ 04000001
+        /* 00000574: sp  3 -3 */ 68000000 beebbeeb this-&gt;virtual async void Unknown05CF::method_0d53_19(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14)
+
+        /* 0000057c: sp  0 +0 */ 0000000a
+        /* 00000580: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d50_5(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, objectref arg_0018_0d51_14) {
+
+        /* 00000594: sp  0 +0 */ 0000000b
+        /* 00000598: sp  0 +1 */ 0f00013c unnamed member 13c
+        /* 0000059c: sp  1 +1 */ 09000014 arg_0018_0d51_14
+        /* 000005a0: sp  2 -2 */ 34000000
+
+        /* 000005a4: sp  0 +0 */ 000004ee
+
+        /* 000005a8: sp  0 +0 */ 0000000c
+        /* 000005ac: sp  0 +1 */ 09000000 arg_0015_0868_0
+        /* 000005b0: sp  1 +1 */ 0900000c arg_0012_086c_c
+        /* 000005b4: sp  2 +1 */ 04000000
+        /* 000005b8: sp  3 -3 */ 68000000 beebbeeb this-&gt;virtual async void Unknown05CF::method_0d53_19(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14)
+
+        /* 000005c0: sp  0 +0 */ 0000000d
+        /* 000005c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0d52_6(unitref arg_0015_0868_0, bool arg_0000_0869_c) {
+        playerref&lt;actorplayer&gt; local_10 = TODO(0A);
+        actorplayer local_18 = TODO(0B);
+        bool temp_1c = False;
+        objectref local_20 = TODO(0A);
+
+        /* 00000664: sp  0 +0 */ 0000000e
+        /* 00000668: sp  0 +1 */ 0900001c temp_1c
+        /* 0000066c: sp  1 +1 */ 09000018 local_18
+        /* 00000670: sp  2 +1 */ 09000010 local_10
+        /* 00000674: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000067c: sp  1 +1 */ 0a000018 local_18
+        /* 00000680: sp  2 +0 */ 7e000000 000004aa
+        /* 00000688: sp  2 -2 */ 69000000 beebbeeb bool actor::isAlive635()
+        /* 00000690: sp  0 +1 */ 0600001c temp_1c
+        /* 00000694: sp  1 -1 */ 64000002
+
+        /* 00000698: sp  0 +0 */ 0000000f
+        /* 0000069c: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000006a0: sp  0 +0 */ 00000010
+        /* 000006a4: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05CF::method_0d54_1a()
+
+        /* 000006ac: sp  0 +0 */ 00000011
+        /* 000006b0: sp  0 +1 */ 0e0000ac unnamed member ac
+        /* 000006b4: sp  1 -1 */ 80000000
+
+        /* 000006b8: sp  0 +0 */ 00000012
+        /* 000006bc: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05CF::method_0d55_1b()
+
+        /* 000006c4: sp  0 +0 */ 00000013
+        /* 000006c8: sp  0 +1 */ 0600000c arg_0000_0869_c
+        /* 000006cc: sp  1 -1 */ 64000005
+
+        /* 000006d0: sp  0 +0 */ 00000014
+        /* 000006d4: sp  0 +1 */ 04000000
+        /* 000006d8: sp  1 +1 */ 10000004
+        /* 000006dc: sp  2 -2 */ 69000000 beebbeeb void scenariomanager::method_09cb_ffff(bool arg_0000_031d_0)
+        ---
+
+        /* 000006e4: sp  0 +0 */ 00000015
+        /* 000006e8: sp  0 +1 */ 09000000 arg_0015_0868_0
+        /* 000006ec: sp  1 +1 */ 0600000c arg_0000_0869_c
+        /* 000006f0: sp  2 +1 */ 0f00013c unnamed member 13c
+        /* 000006f4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void gamebase::method_0867_ffff(unitref arg_0015_0868_0, bool arg_0000_0869_c, objectref arg_0018_086a_10)
+
+        /* 000006fc: sp  0 +0 */ 00000016
+        /* 00000700: sp  0 +1 */ 0f00013c unnamed member 13c
+        /* 00000704: sp  1 +1 */ 09000020 local_20
+        /* 00000708: sp  2 -2 */ 34000000
+
+        /* 0000070c: sp  0 +0 */ 000004ee
+
+        /* 00000710: sp  0 +0 */ 00000017
+        /* 00000714: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0d53_7(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14) {
+        playerref&lt;actorplayer&gt; local_18 = TODO(0A);
+        actorplayer local_20 = TODO(0B);
+        bool temp_24 = False;
+        objectref local_28 = TODO(0A);
+
+        /* 000007b4: sp  0 +0 */ 00000018
+        /* 000007b8: sp  0 +1 */ 09000024 temp_24
+        /* 000007bc: sp  1 +1 */ 09000020 local_20
+        /* 000007c0: sp  2 +1 */ 09000018 local_18
+        /* 000007c4: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000007cc: sp  1 +1 */ 0a000020 local_20
+        /* 000007d0: sp  2 +0 */ 7e000000 000004aa
+        /* 000007d8: sp  2 -2 */ 69000000 beebbeeb bool actor::isAlive635()
+        /* 000007e0: sp  0 +1 */ 06000024 temp_24
+        /* 000007e4: sp  1 -1 */ 64000002
+
+        /* 000007e8: sp  0 +0 */ 00000019
+        /* 000007ec: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000007f0: sp  0 +0 */ 0000001a
+        /* 000007f4: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05CF::method_0d54_1a()
+
+        /* 000007fc: sp  0 +0 */ 0000001b
+        /* 00000800: sp  0 +1 */ 0e0000ac unnamed member ac
+        /* 00000804: sp  1 -1 */ 80000000
+
+        /* 00000808: sp  0 +0 */ 0000001c
+        /* 0000080c: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown05CF::method_0d55_1b()
+
+        /* 00000814: sp  0 +0 */ 0000001d
+        /* 00000818: sp  0 +1 */ 06000014 arg_0000_0869_14
+        /* 0000081c: sp  1 -1 */ 64000005
+
+        /* 00000820: sp  0 +0 */ 0000001e
+        /* 00000824: sp  0 +1 */ 04000000
+        /* 00000828: sp  1 +1 */ 10000004
+        /* 0000082c: sp  2 -2 */ 69000000 beebbeeb void scenariomanager::method_09cb_ffff(bool arg_0000_031d_0)
+        ---
+
+        /* 00000834: sp  0 +0 */ 0000001f
+        /* 00000838: sp  0 +1 */ 09000000 arg_0015_0868_0
+        /* 0000083c: sp  1 +1 */ 0900000c arg_0012_086c_c
+        /* 00000840: sp  2 +1 */ 06000014 arg_0000_0869_14
+        /* 00000844: sp  3 +1 */ 0f00013c unnamed member 13c
+        /* 00000848: sp  4 -4 */ 66000000 beebbeeb this-&gt;void gamebase::method_086b_ffff(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14, objectref arg_0018_086a_18)
+
+        /* 00000850: sp  0 +0 */ 00000020
+        /* 00000854: sp  0 +1 */ 0f00013c unnamed member 13c
+        /* 00000858: sp  1 +1 */ 09000028 local_28
+        /* 0000085c: sp  2 -2 */ 34000000
+
+        /* 00000860: sp  0 +0 */ 000004ee
+
+        /* 00000864: sp  0 +0 */ 00000021
+        /* 00000868: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d54_8() {
+        playerref&lt;actorplayer&gt; local_0 = TODO(0A);
+        actorplayer local_8 = TODO(0B);
+        actorplayer local_c = TODO(0B);
+        actorplayer local_10 = TODO(0B);
+        globaleffect local_14 = TODO(0A);
+
+        /* 00000904: sp  0 +0 */ 00000022
+        /* 00000908: sp  0 +1 */ 05000000 beebbeeb &#x27;GameGlobals Script&#x27;
+        /* 00000910: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 00000918: sp  0 +0 */ 00000023
+        /* 0000091c: sp  0 +1 */ 09000008 local_8
+        /* 00000920: sp  1 +1 */ 09000000 local_0
+        /* 00000924: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000092c: sp  0 +1 */ 0a000008 local_8
+        /* 00000930: sp  1 +0 */ 7e000000 000004aa
+        /* 00000938: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06ce_ffff()
+
+        /* 00000940: sp  0 +0 */ 00000024
+        /* 00000944: sp  0 +1 */ 04000001
+        /* 00000948: sp  1 +1 */ 0900000c local_c
+        /* 0000094c: sp  2 +1 */ 09000000 local_0
+        /* 00000950: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000958: sp  1 +1 */ 0a00000c local_c
+        /* 0000095c: sp  2 +0 */ 7e000000 000004aa
+        /* 00000964: sp  2 -2 */ 69000000 beebbeeb void actor::setInvincible(bool arg_0000_04d4_0)
+
+        /* 0000096c: sp  0 +0 */ 00000025
+        /* 00000970: sp  0 +1 */ 09000010 local_10
+        /* 00000974: sp  1 +1 */ 09000000 local_0
+        /* 00000978: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000980: sp  0 +1 */ 0a000010 local_10
+        /* 00000984: sp  1 +0 */ 7e000000 000004aa
+        /* 0000098c: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06d6_ffff()
+
+        /* 00000994: sp  0 +0 */ 00000026
+        /* 00000998: sp  0 +1 */ 0e0000ac unnamed member ac
+        /* 0000099c: sp  1 +1 */ 0300001e
+        /* 000009a0: sp  2 +0 */ 5c000000
+        /* 000009a4: sp  2 -1 */ 4a000000
+        /* 000009a8: sp  1 +0 */ 5a000000
+        /* 000009ac: sp  1 +1 */ 09000014 local_14
+        /* 000009b0: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02df_ffff(dword arg_0000_0564_0)
+
+        /* 000009b8: sp  0 +0 */ 00000027
+        /* 000009bc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0d55_9() {
+        playerref&lt;actorplayer&gt; local_0 = TODO(0A);
+        actorplayer local_8 = TODO(0B);
+        actorplayer local_c = TODO(0B);
+
+        /* 00000a44: sp  0 +0 */ 00000028
+        /* 00000a48: sp  0 +1 */ 04000000
+        /* 00000a4c: sp  1 +1 */ 09000008 local_8
+        /* 00000a50: sp  2 +1 */ 09000000 local_0
+        /* 00000a54: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000a5c: sp  1 +1 */ 0a000008 local_8
+        /* 00000a60: sp  2 +0 */ 7e000000 000004aa
+        /* 00000a68: sp  2 -2 */ 69000000 beebbeeb void actor::setInvincible(bool arg_0000_04d4_0)
+
+        /* 00000a70: sp  0 +0 */ 00000029
+        /* 00000a74: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gamebase::method_085b_ffff()
+
+        /* 00000a7c: sp  0 +0 */ 0000002a
+        /* 00000a80: sp  0 +1 */ 05000000 beebbeeb &#x27;GameGlobals Script&#x27;
+        /* 00000a88: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085d_ffff(string arg_0000_056e_0)
+
+        /* 00000a90: sp  0 +0 */ 0000002b
+        /* 00000a94: sp  0 +1 */ 0900000c local_c
+        /* 00000a98: sp  1 +1 */ 09000000 local_0
+        /* 00000a9c: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000aa4: sp  0 +1 */ 0a00000c local_c
+        /* 00000aa8: sp  1 +0 */ 7e000000 000004aa
+        /* 00000ab0: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06cd_ffff()
+
+        /* 00000ab8: sp  0 +0 */ 0000002c
+        /* 00000abc: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0891_a(unitref arg_0015_0868_0, bool arg_0000_0892_c) {
+        playerref&lt;actorplayer&gt; local_10 = TODO(0A);
+        actorplayer local_18 = TODO(0B);
+        actorplayer local_1c = TODO(0B);
+        float temp_20 = 0.0;
+        actorplayer local_24 = TODO(0B);
+        actorplayer local_28 = TODO(0B);
+        globaleffect local_2c = TODO(0A);
+        float temp_30 = 0.0;
+        float temp_34 = 0.0;
+
+        /* 00000314: sp  0 +0 */ 0000002d
+        /* 00000318: sp  0 +1 */ 05000000 beebbeeb &#x27;GameGlobals Script Loading Finished&#x27;
+        /* 00000320: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 00000328: sp  0 +0 */ 0000002e
+        /* 0000032c: sp  0 +1 */ 09000018 local_18
+        /* 00000330: sp  1 +1 */ 09000010 local_10
+        /* 00000334: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000033c: sp  0 +1 */ 0a000018 local_18
+        /* 00000340: sp  1 +0 */ 7e000000 000004aa
+        /* 00000348: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06ce_ffff()
+
+        /* 00000350: sp  0 +0 */ 0000002f
+        /* 00000354: sp  0 +1 */ 04000001
+        /* 00000358: sp  1 +1 */ 0900001c local_1c
+        /* 0000035c: sp  2 +1 */ 09000010 local_10
+        /* 00000360: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000368: sp  1 +1 */ 0a00001c local_1c
+        /* 0000036c: sp  2 +0 */ 7e000000 000004aa
+        /* 00000374: sp  2 -2 */ 69000000 beebbeeb void actor::setInvincible(bool arg_0000_04d4_0)
+
+        /* 0000037c: sp  0 +0 */ 00000030
+
+        /* 00000380: sp  0 +0 */ 00000031
+        /* 00000384: sp  0 +1 */ 0600000c arg_0000_0892_c
+        /* 00000388: sp  1 -1 */ 64000005
+
+        /* 0000038c: sp  0 +0 */ 00000032
+        /* 00000390: sp  0 +1 */ 02000000 3e19999a
+        /* 00000398: sp  1 -1 */ 80000000
+        /* 0000039c: sp  0 +0 */ 63000007 00000033
+        /* 000003a4: sp  0 +1 */ 09000020 temp_20
+        /* 000003a8: sp  1 +1 */ 09000000 arg_0015_0868_0
+        /* 000003ac: sp  2 -2 */ 65000000 beebbeeb native float unitref::method_0a88_ffff()
+        /* 000003b4: sp  0 +1 */ 08000020 temp_20
+        /* 000003b8: sp  1 -1 */ 80000000
+
+        /* 000003bc: sp  0 +0 */ 00000034
+        ---
+
+        /* 000003a0: sp  0 +0 */ 00000033
+        /* 000003a4: sp  0 +1 */ 09000020 temp_20
+        /* 000003a8: sp  1 +1 */ 09000000 arg_0015_0868_0
+        /* 000003ac: sp  2 -2 */ 65000000 beebbeeb native float unitref::method_0a88_ffff()
+        /* 000003b4: sp  0 +1 */ 08000020 temp_20
+        /* 000003b8: sp  1 -1 */ 80000000
+
+        /* 000003bc: sp  0 +0 */ 00000034
+        ---
+        /* 000003c0: sp  0 +1 */ 04000000
+        /* 000003c4: sp  1 +1 */ 09000024 local_24
+        /* 000003c8: sp  2 +1 */ 09000010 local_10
+        /* 000003cc: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000003d4: sp  1 +1 */ 0a000024 local_24
+        /* 000003d8: sp  2 +0 */ 7e000000 000004aa
+        /* 000003e0: sp  2 -2 */ 69000000 beebbeeb void actor::setInvincible(bool arg_0000_04d4_0)
+
+        /* 000003e8: sp  0 +0 */ 00000035
+        /* 000003ec: sp  0 +1 */ 09000028 local_28
+        /* 000003f0: sp  1 +1 */ 09000010 local_10
+        /* 000003f4: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000003fc: sp  0 +1 */ 0a000028 local_28
+        /* 00000400: sp  1 +0 */ 7e000000 000004aa
+        /* 00000408: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06cd_ffff()
+
+        /* 00000410: sp  0 +0 */ 00000036
+        /* 00000414: sp  0 +1 */ 09000030 temp_30
+        /* 00000418: sp  1 +1 */ 09000000 arg_0015_0868_0
+        /* 0000041c: sp  2 -2 */ 65000000 beebbeeb native float unitref::method_0a89_ffff()
+        /* 00000424: sp  0 +1 */ 08000030 temp_30
+        /* 00000428: sp  1 +1 */ 0300001e
+        /* 0000042c: sp  2 +0 */ 5c000000
+        /* 00000430: sp  2 -1 */ 4a000000
+        /* 00000434: sp  1 +0 */ 5a000000
+        /* 00000438: sp  1 +1 */ 0900002c local_2c
+        /* 0000043c: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02e0_ffff(dword arg_0000_0564_0)
+
+        /* 00000444: sp  0 +0 */ 00000037
+        /* 00000448: sp  0 +0 */ 66000000 beebbeeb this-&gt;void gameglobalsbase::method_0890_ffff()
+
+        /* 00000450: sp  0 +0 */ 00000038
+        /* 00000454: sp  0 +1 */ 09000034 temp_34
+        /* 00000458: sp  1 +1 */ 09000000 arg_0015_0868_0
+        /* 0000045c: sp  2 -2 */ 65000000 beebbeeb native float unitref::method_0a89_ffff()
+        /* 00000464: sp  0 +1 */ 08000034 temp_34
+        /* 00000468: sp  1 -1 */ 80000000
+
+        /* 0000046c: sp  0 +0 */ 00000039
+        /* 00000470: sp  0 +1 */ 05000000 beebbeeb &#x27;GameGlobals Script Loading Finished&#x27;
+        /* 00000478: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085d_ffff(string arg_0000_056e_0)
+
+        /* 00000480: sp  0 +0 */ 0000003a
+        /* 00000484: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000000d.html">Unknown000D</a><br/>
+initialized field in <a href="type0000000f.html">Unknown000F</a><br/>
+initialized field in <a href="type00000011.html">Unknown0011</a><br/>
+initialized field in <a href="type00000013.html">Unknown0013</a><br/>
+initialized field in <a href="type0000002e.html">Unknown002E</a><br/>
+initialized field in <a href="type0000003c.html">Unknown003C</a><br/>
+initialized field in <a href="type00001f03.html">Unknown1F03</a><br/>
+initialized field in <a href="type00006382.html">Unknown6382</a><br/>
+initialized field in <a href="type0000638e.html">Unknown638E</a><br/>
+initialized field in <a href="type00009b89.html">Unknown9B89</a><br/>
+initialized field in <a href="type000119de.html">Unknown119DE</a><br/>
+initialized field in <a href="type00012071.html">Unknown12071</a><br/>
+initialized field in <a href="type00012b06.html">Unknown12B06</a><br/>
+initialized field in <a href="type00012fb8.html">Unknown12FB8</a><br/>
+initialized field in <a href="type00012fb9.html">Unknown12FB9</a><br/>
+initialized field in <a href="type00012fba.html">Unknown12FBA</a><br/>
+initialized field in <a href="type00012fd9.html">Unknown12FD9</a><br/>
+initialized field in <a href="type000133f6.html">Unknown133F6</a><br/>
+initialized field in <a href="type000133f7.html">Unknown133F7</a><br/>
+initialized field in <a href="type00013456.html">Unknown13456</a><br/>
+initialized field in <a href="type000136b5.html">Unknown136B5</a><br/>
+parent class <a href="type000004d3.html">gameglobalsbase</a><br/>
+</body>
+</html>

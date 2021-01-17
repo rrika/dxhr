@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000093e2</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown93E2</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0xca2]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown93E2 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000929f.html">Unknown929F</a>&gt; decl_0012_249a_4 = {<a href="units.html#000069d7">unit object 000069d7</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000092a0.html">Unknown92A0</a>&gt; decl_0012_249c_c = {<a href="units.html#000069f0">unit object 000069f0</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_247c_14 = persistent(dtp:939F) {type=dword};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092ac.html">Unknown92AC</a>&gt; decl_0007_2479_28 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092a1.html">Unknown92A1</a>&gt; decl_0007_247b_2c = TODO(0A);
+    void method_24ca_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown93E2 : quest {
+    // sizeof = 0x30
+    instanceref decl_0012_249a_4 = TODO(0A);
+    instanceref decl_0012_249c_c = TODO(0A);
+    smartscript decl_0089_247c_14 = TODO(0A);
+    scenarioref&lt;Unknown92AC&gt; decl_0007_2479_28 = TODO(0A);
+    scenarioref&lt;Unknown92A1&gt; decl_0007_247b_2c = TODO(0A);
+    void method_24ca_0() {
+        dword temp_0 = 0;
+        Unknown92A1 local_4 = TODO(0B);
+        Unknown92AC local_8 = TODO(0B);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Guards coming in CIC are birthed!&#x27;
+        /* 000000f0: sp  1 +1 */ 03000003
+        /* 000000f4: sp  2 +0 */ 5c000000
+        /* 000000f8: sp  2 +1 */ 04000001
+        /* 000000fc: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000104: sp  0 +0 */ 00000001
+        /* 00000108: sp  0 +1 */ 03000002
+        /* 0000010c: sp  1 +1 */ 09000000 temp_0
+        /* 00000110: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000114: sp  3 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 0000011c: sp  1 +1 */ 08000000 temp_0
+        /* 00000120: sp  2 -1 */ 44000000
+        /* 00000124: sp  1 -1 */ 64000015
+
+        /* 00000128: sp  0 +0 */ 00000002
+
+        /* 0000012c: sp  0 +0 */ 00000003
+        /* 00000130: sp  0 +1 */ 09000004 local_4
+        /* 00000134: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000138: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000140: sp  0 +1 */ 0a000004 local_4
+        /* 00000144: sp  1 +0 */ 7e000000 000092a1
+        /* 0000014c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000154: sp  0 +0 */ 00000004
+        /* 00000158: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Guards of CIC will be alarmed!&#x27;
+        /* 00000160: sp  1 +1 */ 03000003
+        /* 00000164: sp  2 +0 */ 5c000000
+        /* 00000168: sp  2 +1 */ 04000001
+        /* 0000016c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000174: sp  0 +0 */ 00000005
+        /* 00000178: sp  0 +0 */ 63000014 00000006
+
+        /* 00000180: sp  0 +0 */ 00000007
+        /* 00000184: sp  0 +1 */ 09000008 local_8
+        /* 00000188: sp  1 +1 */ 0f000028 unnamed member 28
+        /* 0000018c: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000194: sp  0 +1 */ 0a000008 local_8
+        /* 00000198: sp  1 +0 */ 7e000000 000092ac
+        /* 000001a0: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000001a8: sp  0 +0 */ 00000008
+        /* 000001ac: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Guards of CIC will be relaxed!&#x27;
+        /* 000001b4: sp  1 +1 */ 03000003
+        /* 000001b8: sp  2 +0 */ 5c000000
+        /* 000001bc: sp  2 +1 */ 04000001
+        /* 000001c0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001c8: sp  0 +0 */ 00000009
+
+        /* 000001cc: sp  0 +0 */ 0000000a
+        ---
+
+        /* 0000017c: sp  0 +0 */ 00000006
+
+        /* 00000180: sp  0 +0 */ 00000007
+        /* 00000184: sp  0 +1 */ 09000008 local_8
+        /* 00000188: sp  1 +1 */ 0f000028 unnamed member 28
+        /* 0000018c: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000194: sp  0 +1 */ 0a000008 local_8
+        /* 00000198: sp  1 +0 */ 7e000000 000092ac
+        /* 000001a0: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000001a8: sp  0 +0 */ 00000008
+        /* 000001ac: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Guards of CIC will be relaxed!&#x27;
+        /* 000001b4: sp  1 +1 */ 03000003
+        /* 000001b8: sp  2 +0 */ 5c000000
+        /* 000001bc: sp  2 +1 */ 04000001
+        /* 000001c0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001c8: sp  0 +0 */ 00000009
+
+        /* 000001cc: sp  0 +0 */ 0000000a
+        ---
+        /* 000001d0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

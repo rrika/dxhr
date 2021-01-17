@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000091fd</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown91FD</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0x93]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown91FD : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00008b56.html">Unknown8B56</a>&gt; decl_0015_232c_40 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_235e_4c = persistent(dtp:8B9E) {type=dword};
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown91FD : %triggervolume% {
+    // sizeof = 0x60
+    stickybool field_4;
+    stickybool field_20;
+    unitref decl_0015_232c_40 = TODO(0A);
+    smartscript decl_0089_235e_4c = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown8B56 local_8 = TODO(0B);
+        dword temp_c = 0;
+        Unknown8B56 local_10 = TODO(0B);
+        dword temp_14 = 0;
+        Unknown8B56 local_18 = TODO(0B);
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 09000008 local_8
+        /* 0000010c: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000110: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000118: sp  0 +1 */ 0a000008 local_8
+        /* 0000011c: sp  1 +0 */ 7e000000 00008b56
+        /* 00000124: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2336_21()
+
+        /* 0000012c: sp  0 +0 */ 00000001
+        /* 00000130: sp  0 +1 */ 0900000c temp_c
+        /* 00000134: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 00000138: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000140: sp  0 +1 */ 0800000c temp_c
+        /* 00000144: sp  1 +1 */ 03000000
+        /* 00000148: sp  2 -1 */ 45000000
+        /* 0000014c: sp  1 -1 */ 6400000a
+
+        /* 00000150: sp  0 +0 */ 00000002
+        /* 00000154: sp  0 +1 */ 09000010 local_10
+        /* 00000158: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 0000015c: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000164: sp  0 +1 */ 0a000010 local_10
+        /* 00000168: sp  1 +0 */ 7e000000 00008b56
+        /* 00000170: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2343_2e()
+        ---
+
+        /* 00000178: sp  0 +0 */ 00000003
+        /* 0000017c: sp  0 +1 */ 09000014 temp_14
+        /* 00000180: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 00000184: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 0000018c: sp  0 +1 */ 08000014 temp_14
+        /* 00000190: sp  1 +1 */ 03000001
+        /* 00000194: sp  2 -1 */ 45000000
+        /* 00000198: sp  1 -1 */ 6400000a
+
+        /* 0000019c: sp  0 +0 */ 00000004
+        /* 000001a0: sp  0 +1 */ 09000018 local_18
+        /* 000001a4: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000001a8: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 000001b0: sp  0 +1 */ 0a000018 local_18
+        /* 000001b4: sp  1 +0 */ 7e000000 00008b56
+        /* 000001bc: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2344_2f()
+        ---
+
+        /* 000001c4: sp  0 +0 */ 00000005
+        /* 000001c8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

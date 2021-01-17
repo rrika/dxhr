@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000004d2</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>gamebase</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x5de]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class gamebase : <a href="type000004a0.html">corebase</a> {
+    gcref <a href="type000004d3.html">gameglobalsbase</a> getGameGlobals();
+    void method_0830_1(string, string);
+    void method_0832_2(bool, string);
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b27_3()</a>
+    // referenced at <a href="type0000057f.html">void Unknown057F::method_0b9d_4()</a>
+    // referenced at <a href="type0000057f.html">void Unknown057F::method_01a7_5()</a>
+    // referenced at <a href="type0000057f.html">void Unknown057F::method_01a6_6()</a>
+    // referenced at <a href="type0000057f.html">void Unknown057F::method_01a5_7()</a>
+    // referenced at <a href="type0000057f.html">void Unknown057F::method_02ca_8(bool arg_0000_0680_0)</a>
+    void method_0834_3(float);
+    void method_0836_4(float);
+    void method_0837_5();
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b26_2()</a>
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_0de0_1a(instanceref arg_0012_06d8_0, conversation arg_018d_06d9_8, bool arg_0000_06da_10)</a>
+    void method_0838_6(dword, float);
+    dword method_083a_7(dword);
+    // referenced at <a href="type00008b56.html">async void Unknown8B56::method_007a_1b(music arg_0039_007b_0)</a>
+    // referenced at <a href="type0000002a.html">async void Unknown002A::method_007a_10(music arg_0039_007b_0)</a>
+    // referenced at <a href="type00009e88.html">void Unknown9E88::method_28b9_0()</a>
+    // referenced at <a href="type00009e88.html">void Unknown9E88::method_28ba_1()</a>
+    // referenced at <a href="type00009e88.html">void Unknown9E88::method_28bc_3()</a>
+    void method_083c_8(dword, dword);
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_06e2_12()</a>
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_06e3_13()</a>
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_06e4_14()</a>
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_06e5_15()</a>
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_06e6_16(dword arg_0000_0080_0)</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_0494_0()</a>
+    void method_083d_9(dword, dword);
+    void method_083e_a(dword, dword);
+    void method_083f_b(<a href="type00000512.html">sound</a>);
+    void method_0840_c(<a href="type00000512.html">sound</a>);
+    void method_0841_d(<a href="type00000512.html">sound</a>);
+    void method_0842_e(<a href="type000004f0.html">padshock</a>);
+    void method_0844_f(<a href="type000004f8.html">rangesensor</a>, gcref <a href="type000004df.html">instance</a>, bool);
+    void method_0848_10(<a href="type00000517.html">stickybool</a>, bool);
+    void method_084b_11(<a href="type00000519.html">stickyint</a>, dword);
+    void method_084d_12(<a href="type00000518.html">stickyfloat</a>, float);
+    void method_084f_13(<a href="type0000051b.html">terraingroup</a>, dword);
+    void method_007c_14(<a href="type00000526.html">unitref</a>);
+    void method_0852_15(<a href="type00000526.html">unitref</a>);
+    void method_007e_16(<a href="type00000526.html">unitref</a>);
+    dword method_0853_17(dword);
+    dword method_0551_18(dword, dword);
+    dword method_0552_19(dword, dword);
+    float method_0855_1a(float, float);
+    float method_0856_1b(float, float);
+    float method_0857_1c(float);
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_05c9_1(action arg_0593_0367_0)</a>
+    float method_0858_1d(float);
+    float method_0859_1e();
+    // referenced at <a href="type00006f66.html">void Unknown6F66::method_07f2_0(float arg_0000_06be_0)</a>
+    // referenced at <a href="type00006f66.html">async void Unknown6F66::method_08ce_2()</a>
+    void method_085a_1f();
+    // referenced at <a href="type00000018.html">void Unknown0018::method_008e_0()</a>
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b26_2()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d76_10()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d78_14()</a>
+    // referenced at <a href="type000093e1.html">void Unknown93E1::method_253f_3()</a>
+    // referenced at <a href="type000005ea.html">void Unknown05EA::method_0494_0()</a>
+    // referenced at <a href="type000005f2.html">void Unknown05F2::method_0321_4()</a>
+    void method_085b_20();
+    // referenced at <a href="type000005cf.html">void Unknown05CF::method_0d55_9()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0319_21()</a>
+    void method_085c_21();
+    void method_085d_22(string);
+    // referenced at <a href="type00009b8f.html">async void Unknown9B8F::method_0a74_0()</a>
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b26_2()</a>
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_08f1_5()</a>
+    // referenced at <a href="type00009ab9.html">void %sas_scanner_a%::method_264f_4()</a>
+    // referenced at <a href="type00000596.html">async void %sha_lowerhengsha_answeringmachine_a%::method_0c2e_1()</a>
+    // referenced at <a href="type000005cf.html">void Unknown05CF::method_0d55_9()</a>
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0891_a(unitref arg_0015_0868_0, bool arg_0000_0892_c)</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_02de_3()</a>
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_0de0_1a(instanceref arg_0012_06d8_0, conversation arg_018d_06d9_8, bool arg_0000_06da_10)</a>
+    void method_085e_23(string);
+    // referenced at <a href="type00009b8f.html">async void Unknown9B8F::method_0a74_0()</a>
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b26_2()</a>
+    // referenced at <a href="type00009ab9.html">void %sas_scanner_a%::method_264e_3()</a>
+    // referenced at <a href="type00000596.html">async void %sha_lowerhengsha_answeringmachine_a%::method_0c2e_1()</a>
+    // referenced at <a href="type000005cf.html">void Unknown05CF::method_0d54_8()</a>
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0891_a(unitref arg_0015_0868_0, bool arg_0000_0892_c)</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_02dd_2()</a>
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d7f_22()</a>
+    // referenced at <a href="type000005d8.html">async void Unknown05D8::method_0de0_1a(instanceref arg_0012_06d8_0, conversation arg_018d_06d9_8, bool arg_0000_06da_10)</a>
+    void method_085f_24();
+    // referenced at <a href="type00005613.html">void Unknown5613::method_1a50_2(bool arg_0000_0801_0)</a>
+    // referenced at <a href="type00009ab9.html">void %sas_scanner_a%::method_264f_4()</a>
+    // referenced at <a href="type000005e1.html">bool Unknown05E1::method_02aa_2()</a>
+    void method_0860_25();
+    // referenced at <a href="type00005613.html">void Unknown5613::method_1a50_2(bool arg_0000_0801_0)</a>
+    // referenced at <a href="type00009ab9.html">void %sas_scanner_a%::method_264e_3()</a>
+    // referenced at <a href="type000005e1.html">bool Unknown05E1::method_02a9_1()</a>
+    bool method_0861_26();
+    void method_0862_27();
+    void method_0863_28();
+    bool method_0864_29();
+    // referenced at <a href="type0000057f.html">bool Unknown057F::method_0a75_9()</a>
+    bool method_0865_2a();
+    bool method_0866_2b();
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b25_0()</a>
+    // referenced at <a href="type0000056f.html">async void %cinematicobject%::method_0b27_3()</a>
+    void method_0867_2c(<a href="type00000526.html">unitref</a>, bool, <a href="type000004ee.html">objectref</a>);
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0d52_6(unitref arg_0015_0868_0, bool arg_0000_0869_c)</a>
+    void method_086b_2d(<a href="type00000526.html">unitref</a>, <a href="type000004e0.html">instanceref</a>, bool, <a href="type000004ee.html">objectref</a>);
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0d53_7(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14)</a>
+    void method_086d_2e(<a href="type00000526.html">unitref</a>, <a href="type000004e0.html">instanceref</a>);
+    void method_086e_2f();
+    void method_086f_30();
+    void method_0870_31();
+    // referenced at <a href="type000005d6.html">void Unknown05D6::method_0d7f_22()</a>
+    void method_0871_32(<a href="type000004e0.html">instanceref</a>);
+    void method_0873_33(<a href="type000004a4.html">vector</a>, float, float, enum <a href="type000004cd.html">disturbancetypeenum</a>, enum <a href="type000004cc.html">disturbanceseverityenum</a>, enum <a href="type000004d0.html">enumaidisturbancedetailsdtp</a>);
+    void method_087b_34(<a href="type00000511.html">smartscript</a>);
+    void method_087d_35(<a href="type00000511.html">smartscript</a>, <a href="type00000504.html">smartcontext</a>);
+    float method_0880_36(<a href="type00000511.html">smartscript</a>, <a href="type00000504.html">smartcontext</a>);
+    <a href="type00000511.html">smartscript</a> method_0881_37(gcref <a href="type000004df.html">instance</a>);
+    <a href="type00000511.html">smartscript</a> method_0882_38(bool);
+    // referenced at <a href="type00009cc6.html">async void Unknown9CC6::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    // referenced at <a href="type00009cc7.html">async void Unknown9CC7::method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4)</a>
+    <a href="type00000511.html">smartscript</a> method_0883_39(float);
+    // referenced at <a href="type000005d9.html">float Unknown05D9::method_09e9_1(bool arg_0000_08e0_4, float arg_0000_09f5_8)</a>
+    <a href="type00000511.html">smartscript</a> method_0884_3a(dword);
+    <a href="type00000511.html">smartscript</a> method_0885_3b(gcref <a href="type00000503.html">smartbase</a>);
+    void method_0887_3c(<a href="type000004ab.html">actorsensor</a>, <a href="type000004e0.html">instanceref</a>, dword, bool);
+    void method_0889_3d();
+    void method_088a_3e();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class gamebase : corebase {
+    // sizeof = 0x1
+    gameglobalsbase getGameGlobals(); // no bytecode
+    void method_0830_1(string arg_0000_0831_0, string arg_0000_value_4); // no bytecode
+    void method_0832_2(bool arg_0000_025a_0, string arg_0000_0833_4); // no bytecode
+    void method_0834_3(float arg_0000_0835_0); // no bytecode
+    void method_0836_4(float arg_0000_0835_0); // no bytecode
+    void method_0837_5(); // no bytecode
+    void method_0838_6(dword arg_0000_0025_0, float arg_0000_0839_4); // no bytecode
+    dword method_083a_7(dword arg_0000_083b_4); // no bytecode
+    void method_083c_8(dword arg_0000_083b_0, dword arg_0000_value_4); // no bytecode
+    void method_083d_9(dword arg_0000_083b_0, dword arg_0000_value_4); // no bytecode
+    void method_083e_a(dword arg_0000_083b_0, dword arg_0000_value_4); // no bytecode
+    async void method_083f_b(sound arg_0027_0594_0) {
+        /* 000007a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0840_c(sound arg_0027_0594_0) {
+        /* 000007b4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0841_d(sound arg_0027_0594_0) {
+        /* 000007c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0842_e(padshock arg_0843_0594_0) {
+        /* 000007d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0844_f(rangesensor arg_0845_0846_0, instance arg_0022_0594_8, bool arg_0000_0847_c) {
+        /* 000007e4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0848_10(stickybool arg_0849_084a_0, bool arg_0000_value_1c) {
+        /* 000007f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_084b_11(stickyint arg_084c_084a_0, dword arg_0000_value_1c) {
+        /* 00000804: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_084d_12(stickyfloat arg_084e_084a_0, float arg_0000_value_1c) {
+        /* 00000814: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_084f_13(terraingroup arg_0850_0851_0, dword arg_0000_068c_4) {
+        /* 00000824: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_007c_14(unitref arg_0015_007d_0) {
+        /* 00000834: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0852_15(unitref arg_0015_007d_0) {
+        /* 00000844: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_007e_16(unitref arg_0015_007d_0) {
+        /* 00000854: sp  0 +0 */ 7b000000
+        ---
+    }
+    dword method_0853_17(dword arg_0000_value_4); // no bytecode
+    dword method_0551_18(dword arg_0000_value_4, dword arg_0000_0854_8); // no bytecode
+    dword method_0552_19(dword arg_0000_value_4, dword arg_0000_0854_8); // no bytecode
+    float method_0855_1a(float arg_0000_value_4, float arg_0000_0854_8); // no bytecode
+    float method_0856_1b(float arg_0000_value_4, float arg_0000_0854_8); // no bytecode
+    float method_0857_1c(float arg_0000_value_4); // no bytecode
+    float method_0858_1d(float arg_0000_value_4); // no bytecode
+    float method_0859_1e(); // no bytecode
+    void method_085a_1f(); // no bytecode
+    void method_085b_20(); // no bytecode
+    void method_085c_21(); // no bytecode
+    void method_085d_22(string arg_0000_056e_0); // no bytecode
+    void method_085e_23(string arg_0000_056e_0); // no bytecode
+    void method_085f_24(); // no bytecode
+    void method_0860_25(); // no bytecode
+    bool method_0861_26(); // no bytecode
+    void method_0862_27(); // no bytecode
+    void method_0863_28(); // no bytecode
+    bool method_0864_29(); // no bytecode
+    bool method_0865_2a(); // no bytecode
+    bool method_0866_2b(); // no bytecode
+    void method_0867_2c(unitref arg_0015_0868_0, bool arg_0000_0869_c, objectref arg_0018_086a_10); // no bytecode
+    void method_086b_2d(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14, objectref arg_0018_086a_18); // no bytecode
+    void method_086d_2e(unitref arg_0015_0868_0, instanceref arg_0012_086c_c); // no bytecode
+    void method_086e_2f(); // no bytecode
+    void method_086f_30(); // no bytecode
+    void method_0870_31(); // no bytecode
+    void method_0871_32(instanceref arg_0012_0872_0); // no bytecode
+    void method_0873_33(vector arg_0567_07ee_0, float arg_0000_0874_10, float arg_0000_0875_14, disturbancetypeenum arg_0876_0025_18, disturbanceseverityenum arg_0877_0878_1c, enumaidisturbancedetailsdtp arg_0879_087a_20); // no bytecode
+    void method_087b_34(smartscript arg_0089_087c_0); // no bytecode
+    void method_087d_35(smartscript arg_0089_087c_0, smartcontext arg_087e_087f_14); // no bytecode
+    float method_0880_36(smartscript arg_0089_087c_4, smartcontext arg_087e_087f_18); // no bytecode
+    smartscript method_0881_37(instance arg_0022_value_4); // no bytecode
+    smartscript method_0882_38(bool arg_0000_value_4); // no bytecode
+    smartscript method_0883_39(float arg_0000_value_4); // no bytecode
+    smartscript method_0884_3a(dword arg_0000_value_4); // no bytecode
+    smartscript method_0885_3b(smartbase arg_0886_value_4); // no bytecode
+    async void method_0887_3c(actorsensor arg_06fd_0846_0, instanceref arg_0012_0594_4, dword arg_0000_0888_c, bool arg_0000_0847_10) {
+        /* 00000864: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0889_3d() {
+        /* 00000874: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_088a_3e() {
+        /* 00000884: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type000004b1.html">aimingcontroller</a><br/>
+derived class <a href="type000004c2.html">controller</a><br/>
+derived class <a href="type000004d3.html">gameglobalsbase</a><br/>
+derived class <a href="type000004db.html">heightcontroller</a><br/>
+derived class <a href="type000004df.html">instance</a><br/>
+derived class <a href="type000004e4.html">locomotioncontroller</a><br/>
+derived class <a href="type000004f7.html">quest</a><br/>
+derived class <a href="type000004fe.html">scenario</a><br/>
+derived class <a href="type000004ff.html">scenariomanager</a><br/>
+derived class <a href="type00000503.html">smartbase</a><br/>
+derived class <a href="type00000525.html">unit</a><br/>
+derived class <a href="type000005d0.html">Unknown05D0</a><br/>
+derived class <a href="type000005d1.html">Unknown05D1</a><br/>
+derived class <a href="type000005d2.html">Unknown05D2</a><br/>
+derived class <a href="type000005d3.html">Unknown05D3</a><br/>
+derived class <a href="type000005d4.html">Unknown05D4</a><br/>
+derived class <a href="type000005d5.html">Unknown05D5</a><br/>
+derived class <a href="type000005d6.html">Unknown05D6</a><br/>
+parent class <a href="type000004a0.html">corebase</a><br/>
+</body>
+</html>

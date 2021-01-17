@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009195</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9195</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0x2b]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9195 : <a href="type00000525.html">unit</a> {
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092a8.html">Unknown92A8</a>&gt; decl_0007_23ee_4 = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_23ef_8 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_23f0_10 = persistent(dtp:9390) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_23f1_24 = persistent(dtp:9391) {type=bool};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092ab.html">Unknown92AB</a>&gt; decl_0007_23f3_38 = TODO(0A);
+    void method_0120_0(<a href="type000004e0.html">instanceref</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9195 : unit {
+    // sizeof = 0x3c
+    scenarioref&lt;Unknown92A8&gt; decl_0007_23ee_4 = TODO(0A);
+    sequencergraph decl_008c_23ef_8 = TODO(0A);
+    smartscript decl_0089_23f0_10 = TODO(0A);
+    smartscript decl_0089_23f1_24 = TODO(0A);
+    scenarioref&lt;Unknown92AB&gt; decl_0007_23f3_38 = TODO(0A);
+    async void method_0120_0(instanceref arg_0012_0121_0) {
+        Unknown92AB local_8 = TODO(0B);
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 04000001
+        /* 000000bc: sp  1 +1 */ 0f000010 unnamed member 10
+        /* 000000c0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000c8: sp  0 +0 */ 00000001
+        /* 000000cc: sp  0 +1 */ 04000000
+        /* 000000d0: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000000d4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000dc: sp  0 +0 */ 00000002
+        /* 000000e0: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - CIC Screens are working normally!&#x27;
+        /* 000000e8: sp  1 +1 */ 03000003
+        /* 000000ec: sp  2 +0 */ 5c000000
+        /* 000000f0: sp  2 +1 */ 04000001
+        /* 000000f4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000000fc: sp  0 +0 */ 00000003
+        /* 00000100: sp  0 +1 */ 09000008 local_8
+        /* 00000104: sp  1 +1 */ 0f000038 unnamed member 38
+        /* 00000108: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000110: sp  0 +1 */ 0a000008 local_8
+        /* 00000114: sp  1 +0 */ 7e000000 000092ab
+        /* 0000011c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000124: sp  0 +0 */ 00000004
+        /* 00000128: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Praxis Room set to PRE-Objective!&#x27;
+        /* 00000130: sp  1 +1 */ 03000003
+        /* 00000134: sp  2 +0 */ 5c000000
+        /* 00000138: sp  2 +1 */ 04000001
+        /* 0000013c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000144: sp  0 +0 */ 00000005
+        /* 00000148: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000119de.html">Unknown119DE</a><br/>
+parent class <a href="type00000525.html">unit</a><br/>
+</body>
+</html>

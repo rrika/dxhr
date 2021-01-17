@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009e83</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%dlc_st_final_choice_a%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6f2]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %dlc_st_final_choice_a% : <a href="type00009e73.html">Unknown9E73</a> {
+    <a href="type00000522.html">uberobjectevent</a> field_4;
+    <a href="type00000521.html">uberobjectcommand</a> field_14;
+    <a href="type00000521.html">uberobjectcommand</a> field_1c;
+    <a href="type00000521.html">uberobjectcommand</a> field_24;
+    <a href="type00000521.html">uberobjectcommand</a> field_2c;
+    <a href="type000004be.html">briefing</a> decl_00c1_17b6_34 = TODO(0A);
+    <a href="type00000522.html">uberobjectevent</a> field_3c;
+    <a href="type00000522.html">uberobjectevent</a> field_4c;
+    <a href="type00000522.html">uberobjectevent</a> field_5c;
+    <a href="type00000522.html">uberobjectevent</a> field_6c;
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_29d9_7c = {<a href="type000004ca.html">type 000004ca</a>, 5};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_29da_8c = {<a href="type000004ca.html">type 000004ca</a>, a};
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_2888_1();
+    // referenced at <a href="type00009e83.html">async void %dlc_st_final_choice_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_29db_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %dlc_st_final_choice_a% : Unknown9E73 {
+    // sizeof = 0x94
+    uberobjectevent field_4;
+    uberobjectcommand field_14;
+    uberobjectcommand field_1c;
+    uberobjectcommand field_24;
+    uberobjectcommand field_2c;
+    briefing decl_00c1_17b6_34 = TODO(0A);
+    uberobjectevent field_3c;
+    uberobjectevent field_4c;
+    uberobjectevent field_5c;
+    uberobjectevent field_6c;
+    uberobjectevent decl_0a66_29d9_7c = TODO(0A);
+    uberobjectcommand decl_01a8_29da_8c = TODO(0A);
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+
+        /* 000000f4: sp  0 +0 */ 00000000
+        /* 000000f8: sp  0 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000000fc: sp  1 -1 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void Unknown9E73::method_0a65_38(uberobjectevent arg_0a66_0a67_0)
+
+        /* 00000108: sp  0 +0 */ 00000001
+        /* 0000010c: sp  0 +1 */ 09000010 temp_10
+        /* 00000110: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000114: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000118: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000120: sp  0 +1 */ 06000010 temp_10
+        /* 00000124: sp  1 -1 */ 64000003
+
+        /* 00000128: sp  0 +0 */ 00000002
+        /* 0000012c: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %dlc_st_final_choice_a%::method_2888_40()
+        ---
+
+        /* 00000134: sp  0 +0 */ 00000003
+        /* 00000138: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2888_1() {
+
+        /* 00000144: sp  0 +0 */ 00000004
+        /* 00000148: sp  0 +1 */ 05000000 beebbeeb &#x27;timer_ended&#x27;
+        /* 00000150: sp  1 +1 */ 03000005
+        /* 00000154: sp  2 +0 */ 5c000000
+        /* 00000158: sp  2 +1 */ 04000001
+        /* 0000015c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000164: sp  0 +0 */ 00000005
+        /* 00000168: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_29db_2() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 000001b4: sp  0 +0 */ 00000006
+        /* 000001b8: sp  0 +1 */ 09000000 local_0
+        /* 000001bc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000001c4: sp  0 +0 */ 00000007
+        /* 000001c8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00009cdf.html">Unknown9CDF</a><br/>
+parent class <a href="type00009e73.html">Unknown9E73</a><br/>
+</body>
+</html>

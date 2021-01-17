@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000004ff</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>scenariomanager</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x60c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class scenariomanager : <a href="type000004d2.html">gamebase</a> {
+    void method_09cb_0(bool);
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0d52_6(unitref arg_0015_0868_0, bool arg_0000_0869_c)</a>
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0d53_7(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, bool arg_0000_0869_14)</a>
+    void method_09cc_1(gcref <a href="type000004fe.html">scenario</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class scenariomanager : gamebase {
+    // sizeof = 0x1
+    void method_09cb_0(bool arg_0000_031d_0); // no bytecode
+    async void method_09cc_1(scenario arg_09cd_09c3_0) {
+        /* 000000a4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type000005d7.html">Unknown05D7</a><br/>
+parent class <a href="type000004d2.html">gamebase</a><br/>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005ce</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05CE</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x702]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05CE : <a href="type000005cd.html">Unknown05CD</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    gcref <a href="type000004c2.html">controller</a> getController059a();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05CE : Unknown05CD {
+    // sizeof = 0x3c
+    stickybool field_4;
+    stickybool field_20;
+    controller getController059a() {
+        controller local_4 = TODO(0B);
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000000ac: sp  1 +1 */ 09000004 local_4
+        /* 000000b0: sp  2 +1 */ 05000000 beebbeeb &#x27;aiquadrupedscriptcontroller&#x27;
+        /* 000000b8: sp  3 -2 */ 66000000 beebbeeb this-&gt;controller actor::getControllerByName(string arg_0000_0192_4)
+        /* 000000c0: sp  1 +1 */ 0a000004 local_4
+        /* 000000c4: sp  2 -2 */ 30000000
+        /* 000000c8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00000535.html">Unknown0535</a><br/>
+parent class <a href="type000005cd.html">Unknown05CD</a><br/>
+</body>
+</html>

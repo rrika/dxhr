@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00001f03</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1F03</h1>
+		<pre>./tools/drmexplore pc-w/ det_adam_apt_b.drm n$[0x1b]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1F03 : <a href="type00000525.html">unit</a> {
+    <a href="type000004d6.html">globalsref</a>&lt;gcref <a href="type000005cf.html">Unknown05CF</a>&gt; decl_000d_000f_4 = TODO(0A);
+    void run();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1F03 : unit {
+    // sizeof = 0x8
+    globalsref&lt;Unknown05CF&gt; decl_000d_000f_4 = TODO(0A);
+    async void run() {
+        Unknown05CF local_0 = TODO(0B);
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +0 */ 77000000
+
+        /* 000000ac: sp  0 +0 */ 00000000
+
+        /* 000000b0: sp  0 +0 */ 00000001
+        /* 000000b4: sp  0 +1 */ 04000001
+        /* 000000b8: sp  1 +1 */ 09000000 local_0
+        /* 000000bc: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000000c0: sp  3 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 000000c8: sp  1 +1 */ 0a000000 local_0
+        /* 000000cc: sp  2 +0 */ 7e000000 000005cf
+        /* 000000d4: sp  2 +0 */ 14000008
+        /* 000000d8: sp  2 -2 */ 65000000 beebbeeb native void stickybool::setStickyBool(bool arg_0000_value_0)
+
+        /* 000000e0: sp  0 +0 */ 00000002
+        /* 000000e4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000525.html">unit</a><br/>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00013cf3</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown13CF3</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_thehive.drm n$[0x7c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown13CF3 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004ec.html">objective</a> decl_0005_5853_40 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000102bd.html">Unknown102BD</a>&gt; decl_0012_4793_48 = {<a href="units.html#0000ba72">unit object 0000ba72</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000102bc.html">Unknown102BC</a>&gt; decl_0012_4836_50 = {<a href="units.html#0000ba84">unit object 0000ba84</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000102ba.html">Unknown102BA</a>&gt; decl_0012_4838_58 = {<a href="units.html#0000ba85">unit object 0000ba85</a>};
+    <a href="type000004ec.html">objective</a> decl_0005_4791_60 = TODO(0A);
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown13CF3 : %triggervolume% {
+    // sizeof = 0x68
+    stickybool field_4;
+    stickybool field_20;
+    objective decl_0005_5853_40 = TODO(0A);
+    instanceref decl_0012_4793_48 = TODO(0A);
+    instanceref decl_0012_4836_50 = TODO(0A);
+    instanceref decl_0012_4838_58 = TODO(0A);
+    objective decl_0005_4791_60 = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        bool temp_8 = False;
+        Unknown102BD local_c = TODO(0B);
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 09000008 temp_8
+        /* 000000dc: sp  1 +1 */ 0f000060 unnamed member 60
+        /* 000000e0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000000e8: sp  0 +1 */ 06000008 temp_8
+        /* 000000ec: sp  1 -1 */ 64000019
+
+        /* 000000f0: sp  0 +0 */ 00000001
+
+        /* 000000f4: sp  0 +0 */ 00000002
+        /* 000000f8: sp  0 +1 */ 0f000050 unnamed member 50
+        /* 000000fc: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000104: sp  0 +0 */ 00000003
+        /* 00000108: sp  0 +1 */ 0900000c local_c
+        /* 0000010c: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000110: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000118: sp  0 +1 */ 0a00000c local_c
+        /* 0000011c: sp  1 +0 */ 7e000000 000102bd
+        /* 00000124: sp  1 -1 */ 69000000 beebbeeb void actor::method_063a_ffff()
+
+        /* 0000012c: sp  0 +0 */ 00000004
+        /* 00000130: sp  0 +1 */ 05000000 beebbeeb &#x27;TONG in OFFICE SPAWN!!!!&#x27;
+        /* 00000138: sp  1 +1 */ 03000005
+        /* 0000013c: sp  2 +0 */ 5c000000
+        /* 00000140: sp  2 +1 */ 04000001
+        /* 00000144: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000014c: sp  0 +0 */ 00000005
+        /* 00000150: sp  0 +0 */ 63000008 00000006
+        /* 00000158: sp  0 +1 */ 05000000 beebbeeb &#x27;Nothing here&#x27;
+        /* 00000160: sp  1 +1 */ 03000005
+        /* 00000164: sp  2 +0 */ 5c000000
+        /* 00000168: sp  2 +1 */ 04000001
+        /* 0000016c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000174: sp  0 +0 */ 00000007
+        ---
+
+        /* 00000154: sp  0 +0 */ 00000006
+        /* 00000158: sp  0 +1 */ 05000000 beebbeeb &#x27;Nothing here&#x27;
+        /* 00000160: sp  1 +1 */ 03000005
+        /* 00000164: sp  2 +0 */ 5c000000
+        /* 00000168: sp  2 +1 */ 04000001
+        /* 0000016c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000174: sp  0 +0 */ 00000007
+        ---
+        /* 00000178: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

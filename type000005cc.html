@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005cc</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05CC</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x700]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05CC : <a href="type000005cd.html">Unknown05CD</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    gcref <a href="type000004c2.html">controller</a> getController059a();
+    void method_05e0_1(<a href="type000004b8.html">barkevent</a>, string);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05CC : Unknown05CD {
+    // sizeof = 0x3c
+    stickybool field_4;
+    stickybool field_20;
+    controller getController059a() {
+        controller local_4 = TODO(0B);
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000000dc: sp  1 +1 */ 09000004 local_4
+        /* 000000e0: sp  2 +1 */ 05000000 beebbeeb &#x27;aibossscriptcontroller&#x27;
+        /* 000000e8: sp  3 -2 */ 66000000 beebbeeb this-&gt;controller actor::getControllerByName(string arg_0000_0192_4)
+        /* 000000f0: sp  1 +1 */ 0a000004 local_4
+        /* 000000f4: sp  2 -2 */ 30000000
+        /* 000000f8: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_05e0_1(barkevent arg_01a9_05e1_0, string arg_0000_05e2_4) {
+        aicontroller local_8 = TODO(0B);
+        controller local_c = TODO(0B);
+        goapscriptsymbol local_10 = TODO(0A);
+
+        /* 00000174: sp  0 +0 */ 00000002
+        /* 00000178: sp  0 +1 */ 09000008 local_8
+        /* 0000017c: sp  1 +1 */ 0900000c local_c
+        /* 00000180: sp  2 -1 */ 66000000 beebbeeb this-&gt;controller actor::getController05a5()
+        /* 00000188: sp  1 +1 */ 0a00000c local_c
+        /* 0000018c: sp  2 +0 */ 7e000000 000004ae
+        /* 00000194: sp  2 -2 */ 30000000
+
+        /* 00000198: sp  0 +0 */ 00000003
+        /* 0000019c: sp  0 +1 */ 08000004 arg_0000_05e2_4
+        /* 000001a0: sp  1 +1 */ 05000000 beebbeeb &#x27;MonologueDone&#x27;
+        /* 000001a8: sp  2 -1 */ 4f000000
+        /* 000001ac: sp  1 -1 */ 64000006
+
+        /* 000001b0: sp  0 +0 */ 00000004
+        /* 000001b4: sp  0 +1 */ 09000010 local_10
+        /* 000001b8: sp  1 +1 */ 04000000
+        /* 000001bc: sp  2 +1 */ 0a000008 local_8
+        /* 000001c0: sp  3 -3 */ 69000000 beebbeeb void aicontroller::method_073e_ffff(goapscriptsymbol arg_073f_0192_0, bool arg_0000_0740_4)
+        ---
+
+        /* 000001c8: sp  0 +0 */ 00000005
+        /* 000001cc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00000549.html">Unknown0549</a><br/>
+parent class <a href="type000005cd.html">Unknown05CD</a><br/>
+</body>
+</html>

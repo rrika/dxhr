@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00014b89</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown14B89</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega_exterior.drm n$[0x37]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown14B89 : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00001fc9.html">Unknown1FC9</a>&gt; decl_0007_1fb5_4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00007201.html">Unknown7201</a>&gt; decl_0007_1fb7_8 = TODO(0A);
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown14B89 : %debugbutton% {
+    // sizeof = 0xc
+    scenarioref&lt;Unknown1FC9&gt; decl_0007_1fb5_4 = TODO(0A);
+    scenarioref&lt;Unknown7201&gt; decl_0007_1fb7_8 = TODO(0A);
+    void method_000a_0() {
+        Unknown7201 local_0 = TODO(0B);
+        bool temp_4 = False;
+        Unknown7201 local_8 = TODO(0B);
+        Unknown1FC9 local_c = TODO(0B);
+        bool temp_10 = False;
+        Unknown1FC9 local_14 = TODO(0B);
+
+        /* 00000114: sp  0 +0 */ 00000000
+        /* 00000118: sp  0 +1 */ 09000004 temp_4
+        /* 0000011c: sp  1 +1 */ 09000000 local_0
+        /* 00000120: sp  2 +1 */ 0f000008 unnamed member 8
+        /* 00000124: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000012c: sp  1 +1 */ 0a000000 local_0
+        /* 00000130: sp  2 +0 */ 7e000000 00007201
+        /* 00000138: sp  2 -2 */ 69000000 beebbeeb bool scenario::method_09c7_ffff()
+        /* 00000140: sp  0 +1 */ 06000004 temp_4
+        /* 00000144: sp  1 +1 */ 04000000
+        /* 00000148: sp  2 -1 */ 46000000
+        /* 0000014c: sp  1 -1 */ 6400000a
+
+        /* 00000150: sp  0 +0 */ 00000001
+        /* 00000154: sp  0 +1 */ 09000008 local_8
+        /* 00000158: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 0000015c: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000164: sp  0 +1 */ 0a000008 local_8
+        /* 00000168: sp  1 +0 */ 7e000000 00007201
+        /* 00000170: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+        ---
+
+        /* 00000178: sp  0 +0 */ 00000002
+        /* 0000017c: sp  0 +1 */ 09000010 temp_10
+        /* 00000180: sp  1 +1 */ 0900000c local_c
+        /* 00000184: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000188: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000190: sp  1 +1 */ 0a00000c local_c
+        /* 00000194: sp  2 +0 */ 7e000000 00001fc9
+        /* 0000019c: sp  2 -2 */ 69000000 beebbeeb bool scenario::method_09c7_ffff()
+        /* 000001a4: sp  0 +1 */ 06000010 temp_10
+        /* 000001a8: sp  1 +1 */ 04000000
+        /* 000001ac: sp  2 -1 */ 46000000
+        /* 000001b0: sp  1 -1 */ 6400000a
+
+        /* 000001b4: sp  0 +0 */ 00000003
+        /* 000001b8: sp  0 +1 */ 09000014 local_14
+        /* 000001bc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001c0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001c8: sp  0 +1 */ 0a000014 local_14
+        /* 000001cc: sp  1 +0 */ 7e000000 00001fc9
+        /* 000001d4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+        ---
+
+        /* 000001dc: sp  0 +0 */ 00000004
+        /* 000001e0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

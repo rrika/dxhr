@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00007297</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%choppertakeoffhelper%</h1>
+		<pre>./tools/drmexplore pc-w/ det_sam_ext_warehouse.drm n$[0xc07]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %choppertakeoffhelper% : <a href="type00007289.html">cinematichelper</a> {
+    <a href="type000004bf.html">cinematic</a> decl_07c1_07bc_4 = TODO(0A);
+    dword decl_0000_1f7e_18 = 150;
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type000004aa.html">actorplayer</a>&gt; decl_012a_06a0_1c = TODO(0A);
+    bool decl_0000_0b20_24 = False;
+    void method_18ba_0();
+    // referenced at <a href="type00007297.html">async void %choppertakeoffhelper%::method_0b26_3()</a>
+    void method_18bb_1();
+    // referenced at <a href="type00007297.html">async void %choppertakeoffhelper%::method_0b26_3()</a>
+    void run();
+    void method_0b26_3();
+    // referenced at <a href="type000071fd.html">async void Unknown71FD::method_0a45_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+    void method_08f1_4();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %choppertakeoffhelper% : cinematichelper {
+    // sizeof = 0x25
+    cinematic decl_07c1_07bc_4 = TODO(0A);
+    dword decl_0000_1f7e_18 = 150;
+    playerref decl_012a_06a0_1c = TODO(0A);
+    bool decl_0000_0b20_24 = False;
+    async void method_18ba_0() {
+        bool temp_0 = False;
+        dword temp_4 = 0;
+        bool temp_8 = False;
+        actorplayer local_c = TODO(0B);
+        anchor local_10 = TODO(0A);
+        bool temp_14 = False;
+        bool temp_15 = False;
+        bool temp_16 = False;
+
+        /* 000001b4: sp  0 +0 */ 00000000
+        /* 000001b8: sp  0 +1 */ 09000008 temp_8
+        /* 000001bc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001c0: sp  2 -2 */ 65000000 beebbeeb native bool cinematic::method_07c5_ffff()
+        /* 000001c8: sp  0 +1 */ 06000008 temp_8
+        /* 000001cc: sp  1 -1 */ 64000002
+
+        /* 000001d0: sp  0 +0 */ 00000001
+        /* 000001d4: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000001d8: sp  0 +0 */ 00000002
+        /* 000001dc: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 000001e0: sp  1 +1 */ 04000001
+        /* 000001e4: sp  2 -2 */ 2e000000
+
+        /* 000001e8: sp  0 +0 */ 00000003
+        /* 000001ec: sp  0 +1 */ 09000010 local_10
+        /* 000001f0: sp  1 +1 */ 0900000c local_c
+        /* 000001f4: sp  2 +1 */ 0f00001c unnamed member 1c
+        /* 000001f8: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000200: sp  1 +1 */ 0a00000c local_c
+        /* 00000204: sp  2 +0 */ 7e000000 000004aa
+        /* 0000020c: sp  2 -2 */ 69000000 beebbeeb anchor instance::method_08d9_ffff()
+        /* 00000214: sp  0 +1 */ 09000010 local_10
+        /* 00000218: sp  1 -1 */ 66000000 beebbeeb this-&gt;void instance::method_08ec_ffff(anchor arg_00b8_08eb_0)
+
+        /* 00000220: sp  0 +0 */ 00000004
+        /* 00000224: sp  0 +1 */ 05000000 beebbeeb &#x27;scriptedEventHelper start&#x27;
+        /* 0000022c: sp  1 +1 */ 03000002
+        /* 00000230: sp  2 +0 */ 5c000000
+        /* 00000234: sp  2 +1 */ 04000001
+        /* 00000238: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000240: sp  0 +0 */ 00000005
+        /* 00000244: sp  0 +1 */ 05000000 beebbeeb &#x27;ChopperTakeOffHelper script&#x27;
+        /* 0000024c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 00000254: sp  0 +0 */ 00000006
+        /* 00000258: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void cinematicmanager::method_07cd_38()
+
+        /* 00000260: sp  0 +0 */ 00000007
+        /* 00000264: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void cinematicmanager::method_07ce_39()
+
+        /* 0000026c: sp  0 +0 */ 00000008
+        /* 00000270: sp  0 +1 */ 09000000 temp_0
+        /* 00000274: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000278: sp  2 -2 */ 65000000 beebbeeb native bool cinematic::method_07bd_ffff()
+
+        /* 00000280: sp  0 +0 */ 00000009
+        /* 00000284: sp  0 +1 */ 06000000 temp_0
+        /* 00000288: sp  1 +1 */ 05000000 beebbeeb &#x27;cinematic creation failed&#x27;
+        /* 00000290: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 00000298: sp  0 +0 */ 0000000a
+
+        /* 0000029c: sp  0 +0 */ 0000000b
+        ---
+        /* 000002a0: sp  0 +1 */ 08000004 temp_4
+        /* 000002a4: sp  1 +1 */ 03000096
+        /* 000002a8: sp  2 -1 */ 43000000
+        /* 000002ac: sp  1 +1 */ 09000014 temp_14
+        /* 000002b0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000002b4: sp  3 -2 */ 65000000 beebbeeb native bool cinematic::method_07bf_ffff()
+        /* 000002bc: sp  1 +1 */ 06000014 temp_14
+        /* 000002c0: sp  2 +0 */ 50000000
+        /* 000002c4: sp  2 -1 */ 51000000
+        /* 000002c8: sp  1 +1 */ 09000015 temp_15
+        /* 000002cc: sp  2 -1 */ 66000000 beebbeeb this-&gt;bool gamebase::method_0866_ffff()
+        /* 000002d4: sp  1 +1 */ 06000015 temp_15
+        /* 000002d8: sp  2 +0 */ 50000000
+        /* 000002dc: sp  2 -1 */ 51000000
+        /* 000002e0: sp  1 -1 */ 6400000b
+
+        /* 000002e4: sp  0 +0 */ 0000000c
+
+        /* 000002e8: sp  0 +0 */ 0000000d
+        /* 000002ec: sp  0 +1 */ 09000004 temp_4
+        /* 000002f0: sp  1 +1 */ 08000004 temp_4
+        /* 000002f4: sp  2 +1 */ 03000001
+        /* 000002f8: sp  3 -1 */ 3e000000
+        /* 000002fc: sp  2 -2 */ 2f000000
+
+        /* 00000300: sp  0 +0 */ 0000000e
+        /* 00000304: sp  0 +0 */ 7c000000
+
+        /* 00000308: sp  0 +0 */ 0000000f
+        /* 0000030c: sp  0 +0 */ 63ffffe3 00000010
+        /* 00000314: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 00000318: sp  1 -1 */ 65000000 beebbeeb native void cinematic::method_07c3_ffff()
+
+        /* 00000320: sp  0 +0 */ 00000011
+        /* 00000324: sp  0 +1 */ 09000000 temp_0
+        /* 00000328: sp  1 +1 */ 09000016 temp_16
+        /* 0000032c: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000330: sp  3 -2 */ 65000000 beebbeeb native bool cinematic::method_07be_ffff()
+        /* 00000338: sp  1 +1 */ 06000016 temp_16
+        /* 0000033c: sp  2 +0 */ 50000000
+        /* 00000340: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000344: sp  3 -3 */ 65000000 beebbeeb native bool cinematic::method_07b3_ffff(bool arg_0000_07bd_4)
+
+        /* 0000034c: sp  0 +0 */ 00000012
+        /* 00000350: sp  0 +1 */ 06000000 temp_0
+        /* 00000354: sp  1 +1 */ 05000000 beebbeeb &#x27;cinematic Play() failed&#x27;
+        /* 0000035c: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 00000364: sp  0 +0 */ 00000013
+        /* 00000368: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000310: sp  0 +0 */ 00000010
+        /* 00000314: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 00000318: sp  1 -1 */ 65000000 beebbeeb native void cinematic::method_07c3_ffff()
+
+        /* 00000320: sp  0 +0 */ 00000011
+        /* 00000324: sp  0 +1 */ 09000000 temp_0
+        /* 00000328: sp  1 +1 */ 09000016 temp_16
+        /* 0000032c: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000330: sp  3 -2 */ 65000000 beebbeeb native bool cinematic::method_07be_ffff()
+        /* 00000338: sp  1 +1 */ 06000016 temp_16
+        /* 0000033c: sp  2 +0 */ 50000000
+        /* 00000340: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000344: sp  3 -3 */ 65000000 beebbeeb native bool cinematic::method_07b3_ffff(bool arg_0000_07bd_4)
+
+        /* 0000034c: sp  0 +0 */ 00000012
+        /* 00000350: sp  0 +1 */ 06000000 temp_0
+        /* 00000354: sp  1 +1 */ 05000000 beebbeeb &#x27;cinematic Play() failed&#x27;
+        /* 0000035c: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 00000364: sp  0 +0 */ 00000013
+        /* 00000368: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_18bb_1() {
+        bool temp_0 = False;
+
+        /* 00000414: sp  0 +0 */ 00000014
+        /* 00000418: sp  0 +1 */ 09000000 temp_0
+        /* 0000041c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000420: sp  2 -2 */ 65000000 beebbeeb native bool cinematic::method_07c5_ffff()
+        /* 00000428: sp  0 +1 */ 06000000 temp_0
+        /* 0000042c: sp  1 -1 */ 64000002
+
+        /* 00000430: sp  0 +0 */ 00000015
+        /* 00000434: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000438: sp  0 +0 */ 00000016
+        /* 0000043c: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 00000440: sp  1 -1 */ 6b000000 beebbeeb (void)native async void cinematic::method_07cb_ffff()
+
+        /* 00000448: sp  0 +0 */ 00000017
+        /* 0000044c: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 00000450: sp  1 +1 */ 04000000
+        /* 00000454: sp  2 -2 */ 2e000000
+
+        /* 00000458: sp  0 +0 */ 00000018
+        /* 0000045c: sp  0 +0 */ 66000000 beebbeeb this-&gt;void instance::method_08ed_ffff()
+
+        /* 00000464: sp  0 +0 */ 00000019
+        /* 00000468: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void cinematicmanager::method_07cf_3a()
+
+        /* 00000470: sp  0 +0 */ 0000001a
+        /* 00000474: sp  0 +1 */ 05000000 beebbeeb &#x27;ChopperTakeOffHelper script&#x27;
+        /* 0000047c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085d_ffff(string arg_0000_056e_0)
+
+        /* 00000484: sp  0 +0 */ 0000001b
+        /* 00000488: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void run() {
+        bool temp_0 = False;
+
+        /* 000004d4: sp  0 +0 */ 0000001c
+        /* 000004d8: sp  0 +1 */ 09000000 temp_0
+        /* 000004dc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000004e0: sp  2 -2 */ 65000000 beebbeeb native bool cinematic::method_07c5_ffff()
+        /* 000004e8: sp  0 +1 */ 06000000 temp_0
+        /* 000004ec: sp  1 -1 */ 64000008
+
+        /* 000004f0: sp  0 +0 */ 0000001d
+
+        /* 000004f4: sp  0 +0 */ 0000001e
+        /* 000004f8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void cinematicmanager::method_07cd_38()
+
+        /* 00000500: sp  0 +0 */ 0000001f
+        /* 00000504: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void cinematicmanager::method_07ce_39()
+
+        /* 0000050c: sp  0 +0 */ 00000020
+        ---
+
+        /* 00000510: sp  0 +0 */ 00000021
+        /* 00000514: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0b26_3() {
+        bool temp_0 = False;
+
+        /* 00000544: sp  0 +0 */ 00000022
+        /* 00000548: sp  0 +1 */ 09000000 temp_0
+        /* 0000054c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000550: sp  2 -2 */ 65000000 beebbeeb native bool cinematic::method_07c5_ffff()
+        /* 00000558: sp  0 +1 */ 06000000 temp_0
+        /* 0000055c: sp  1 -1 */ 64000002
+
+        /* 00000560: sp  0 +0 */ 00000023
+        /* 00000564: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000568: sp  0 +0 */ 00000024
+        /* 0000056c: sp  0 +0 */ 6e000000 beebbeeb (void)this-&gt;virtual async void %choppertakeoffhelper%::method_18ba_3c()
+
+        /* 00000574: sp  0 +0 */ 00000025
+        /* 00000578: sp  0 +1 */ 0e000018 unnamed member 18
+        /* 0000057c: sp  1 +0 */ 5c000000
+        /* 00000580: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000584: sp  2 -2 */ 6b000000 beebbeeb (void)native async void cinematic::method_07c8_ffff(float arg_0000_07c9_0)
+
+        /* 0000058c: sp  0 +0 */ 00000026
+        /* 00000590: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void cinematichelper::method_1f9a_3b()
+
+        /* 00000598: sp  0 +0 */ 00000027
+        /* 0000059c: sp  0 +0 */ 6e000000 beebbeeb (void)this-&gt;virtual async void %choppertakeoffhelper%::method_18bb_3d()
+
+        /* 000005a4: sp  0 +0 */ 00000028
+        /* 000005a8: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_08f1_4() {
+
+        /* 000005b4: sp  0 +0 */ 00000029
+        /* 000005b8: sp  0 +1 */ 0c000024 unnamed member 24
+        /* 000005bc: sp  1 -1 */ 64000008
+
+        /* 000005c0: sp  0 +0 */ 0000002a
+        /* 000005c4: sp  0 +1 */ 05000000 beebbeeb &#x27;ChopperTakeOffHelperhelper destroyed while playing, potential cause for savedisabled bug&#x27;
+        /* 000005cc: sp  1 +1 */ 03000002
+        /* 000005d0: sp  2 +0 */ 5c000000
+        /* 000005d4: sp  2 +1 */ 04000001
+        /* 000005d8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+        ---
+
+        /* 000005e0: sp  0 +0 */ 0000002b
+
+        /* 000005e4: sp  0 +0 */ 0000002c
+        /* 000005e8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type000071fe.html">Unknown71FE</a><br/>
+parent class <a href="type00007289.html">cinematichelper</a><br/>
+</body>
+</html>

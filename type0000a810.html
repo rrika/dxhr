@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000a810</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownA810</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_restricted_area.drm n$[0x6]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownA810 : <a href="type0000059c.html">%dispatcher%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000a80c.html">UnknownA80C</a>&gt; decl_0012_2ba1_4 = {<a href="units.html#00007f6d">unit object 00007f6d</a>};
+    void method_0813_0(<a href="type000004e2.html">inventoryitem</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownA810 : %dispatcher% {
+    // sizeof = 0xc
+    instanceref decl_0012_2ba1_4 = TODO(0A);
+    async void method_0813_0(inventoryitem arg_0604_05f7_0) {
+        bool temp_14 = False;
+        inventoryitem local_18 = TODO(0A);
+        UnknownA80C local_2c = TODO(0B);
+        npcinteraction local_30 = TODO(0A);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000014 temp_14
+        /* 0000012c: sp  1 +1 */ 09000018 local_18
+        /* 00000130: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 00000134: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 0000013c: sp  0 +1 */ 06000014 temp_14
+        /* 00000140: sp  1 -1 */ 64000015
+
+        /* 00000144: sp  0 +0 */ 00000001
+
+        /* 00000148: sp  0 +0 */ 00000002
+        /* 0000014c: sp  0 +1 */ 09000030 local_30
+        /* 00000150: sp  1 +1 */ 0900002c local_2c
+        /* 00000154: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000158: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000160: sp  1 +1 */ 0a00002c local_2c
+        /* 00000164: sp  2 +0 */ 7e000000 0000a80c
+        /* 0000016c: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 00000174: sp  0 +0 */ 00000003
+        /* 00000178: sp  0 +1 */ 05000000 beebbeeb &#x27;You Picked up the Lethal Morphene - Conversation Changed&#x27;
+        /* 00000180: sp  1 +1 */ 03000005
+        /* 00000184: sp  2 +0 */ 5c000000
+        /* 00000188: sp  2 +1 */ 04000001
+        /* 0000018c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000194: sp  0 +0 */ 00000004
+        ---
+
+        /* 00000198: sp  0 +0 */ 00000005
+        /* 0000019c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type0000059c.html">%dispatcher%</a><br/>
+</body>
+</html>

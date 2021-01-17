@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00002a9f</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown2A9F</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_aptbck1.drm n$[0x7f]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown2A9F : <a href="type00001c9a.html">pickupbase</a> {
+    <a href="type000004ec.html">objective</a> objective_omalley_find_evidence = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_return_to_jenny = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_retrieve_omalleys_package = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_identify_omalleys_weapon_shipment = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_knock_out_double_t = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_neutralize_mcb_opposition = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_15cd_34 = persistent(dtp:2AE9) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_15c1_48 = persistent(dtp:2AEB) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002aa0.html">Unknown2AA0</a>&gt; decl_0012_15cf_5c = {<a href="units.html#00000887">unit object 00000887</a>};
+    void method_0813_0(gcref <a href="type000004a8.html">actor</a>, dword);
+    void method_15d0_1();
+    // referenced at <a href="type00002a9f.html">async void Unknown2A9F::method_0813_0(actor arg_05dc_0f79_0, dword arg_0000_05fd_4)</a>
+    bool method_0f7a_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown2A9F : pickupbase {
+    // sizeof = 0x64
+    objective objective_omalley_find_evidence = TODO(0A);
+    objective objective_return_to_jenny = TODO(0A);
+    objective objective_retrieve_omalleys_package = TODO(0A);
+    objective objective_identify_omalleys_weapon_shipment = TODO(0A);
+    objective objective_knock_out_double_t = TODO(0A);
+    objective objective_neutralize_mcb_opposition = TODO(0A);
+    smartscript decl_0089_15cd_34 = TODO(0A);
+    smartscript decl_0089_15c1_48 = TODO(0A);
+    instanceref decl_0012_15cf_5c = TODO(0A);
+    async void method_0813_0(actor arg_05dc_0f79_0, dword arg_0000_05fd_4) {
+        bool temp_8 = False;
+        Unknown2AA0 local_c = TODO(0B);
+        bool temp_10 = False;
+        bool temp_11 = False;
+
+        /* 00000134: sp  0 +0 */ 00000000
+        /* 00000138: sp  0 +1 */ 05000000 beebbeeb &#x27;Picked up Drugs&#x27;
+        /* 00000140: sp  1 +1 */ 03000003
+        /* 00000144: sp  2 +0 */ 5c000000
+        /* 00000148: sp  2 +1 */ 04000001
+        /* 0000014c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000154: sp  0 +0 */ 00000001
+        /* 00000158: sp  0 +1 */ 09000008 temp_8
+        /* 0000015c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000160: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000168: sp  0 +1 */ 06000008 temp_8
+        /* 0000016c: sp  1 -1 */ 64000014
+
+        /* 00000170: sp  0 +0 */ 00000002
+
+        /* 00000174: sp  0 +0 */ 00000003
+        /* 00000178: sp  0 +1 */ 04000000
+        /* 0000017c: sp  1 +1 */ 0900000c local_c
+        /* 00000180: sp  2 +1 */ 0f00005c unnamed member 5c
+        /* 00000184: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000018c: sp  1 +1 */ 0a00000c local_c
+        /* 00000190: sp  2 +0 */ 7e000000 00002aa0
+        /* 00000198: sp  2 -2 */ 69000000 beebbeeb void Unknown0585::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 000001a0: sp  0 +0 */ 00000004
+        /* 000001a4: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 000001a8: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000001b0: sp  0 +0 */ 00000005
+        /* 000001b4: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown2A9F::method_15d0_3a()
+
+        /* 000001bc: sp  0 +0 */ 00000006
+        ---
+
+        /* 000001c0: sp  0 +0 */ 00000007
+        /* 000001c4: sp  0 +1 */ 09000010 temp_10
+        /* 000001c8: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 000001cc: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000001d4: sp  0 +1 */ 06000010 temp_10
+        /* 000001d8: sp  1 +1 */ 04000000
+        /* 000001dc: sp  2 -1 */ 46000000
+        /* 000001e0: sp  1 -1 */ 6400001a
+
+        /* 000001e4: sp  0 +0 */ 00000008
+
+        /* 000001e8: sp  0 +0 */ 00000009
+        /* 000001ec: sp  0 +1 */ 04000001
+        /* 000001f0: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 000001f4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000001fc: sp  0 +0 */ 0000000a
+        /* 00000200: sp  0 +1 */ 05000000 beebbeeb &quot;Drugs found, but winners don&#x27;t use em!&quot;
+        /* 00000208: sp  1 +1 */ 03000003
+        /* 0000020c: sp  2 +0 */ 5c000000
+        /* 00000210: sp  2 +1 */ 04000001
+        /* 00000214: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000021c: sp  0 +0 */ 0000000b
+        /* 00000220: sp  0 +1 */ 09000011 temp_11
+        /* 00000224: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000228: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000230: sp  0 +1 */ 06000011 temp_11
+        /* 00000234: sp  1 +1 */ 03000003
+        /* 00000238: sp  2 +0 */ 5c000000
+        /* 0000023c: sp  2 +1 */ 04000001
+        /* 00000240: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0549_ffff(bool arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000248: sp  0 +0 */ 0000000c
+        ---
+
+        /* 0000024c: sp  0 +0 */ 0000000d
+        /* 00000250: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_15d0_1() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+        bool temp_2 = False;
+        bool temp_3 = False;
+
+        /* 00000304: sp  0 +0 */ 0000000e
+        /* 00000308: sp  0 +1 */ 09000000 temp_0
+        /* 0000030c: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 00000310: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000318: sp  0 +1 */ 06000000 temp_0
+        /* 0000031c: sp  1 +1 */ 09000001 temp_1
+        /* 00000320: sp  2 +1 */ 0f00001c unnamed member 1c
+        /* 00000324: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 0000032c: sp  1 +1 */ 06000001 temp_1
+        /* 00000330: sp  2 -1 */ 51000000
+        /* 00000334: sp  1 -1 */ 64000013
+
+        /* 00000338: sp  0 +0 */ 0000000f
+
+        /* 0000033c: sp  0 +0 */ 00000010
+        /* 00000340: sp  0 +1 */ 09000002 temp_2
+        /* 00000344: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000348: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000350: sp  0 +1 */ 06000002 temp_2
+        /* 00000354: sp  1 +1 */ 09000003 temp_3
+        /* 00000358: sp  2 +1 */ 0f000024 unnamed member 24
+        /* 0000035c: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000364: sp  1 +1 */ 06000003 temp_3
+        /* 00000368: sp  2 -1 */ 51000000
+        /* 0000036c: sp  1 -1 */ 64000004
+
+        /* 00000370: sp  0 +0 */ 00000011
+        /* 00000374: sp  0 +1 */ 0f00000c unnamed member c
+        /* 00000378: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+        ---
+
+        /* 00000380: sp  0 +0 */ 00000012
+        ---
+
+        /* 00000384: sp  0 +0 */ 00000013
+        /* 00000388: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0f7a_2() {
+        bool temp_4 = False;
+
+        /* 000003b4: sp  0 +0 */ 00000014
+        /* 000003b8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000003bc: sp  1 +1 */ 09000004 temp_4
+        /* 000003c0: sp  2 +1 */ 0f000048 unnamed member 48
+        /* 000003c4: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000003cc: sp  1 +1 */ 06000004 temp_4
+        /* 000003d0: sp  2 -2 */ 2e000000
+        /* 000003d4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00002aa3.html">Unknown2AA3</a><br/>
+parent class <a href="type00001c9a.html">pickupbase</a><br/>
+</body>
+</html>

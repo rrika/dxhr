@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000919f</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown919F</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0x35]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown919F : <a href="type000093bb.html">%sha1_lowernightlife_civilian_female_prostitute_b%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000511.html">smartscript</a> decl_0089_235e_3c = persistent(dtp:8B9E) {type=dword};
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00008b56.html">Unknown8B56</a>&gt; decl_0015_232c_50 = TODO(0A);
+    void run();
+    void method_0191_1(<a href="type000004a3.html">symbol</a>, enum <a href="type000004c4.html">conversationenum</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown919F : %sha1_lowernightlife_civilian_female_prostitute_b% {
+    // sizeof = 0x5c
+    stickybool field_4;
+    stickybool field_20;
+    smartscript decl_0089_235e_3c = TODO(0A);
+    unitref decl_0015_232c_50 = TODO(0A);
+    async void run() {
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void actornpc::method_05a2_3c()
+
+        /* 000000c0: sp  0 +0 */ 00000001
+        /* 000000c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0191_1(symbol arg_008f_0192_0, conversationenum arg_0193_0194_4) {
+        Unknown8B56 local_8 = TODO(0B);
+
+        /* 000000f4: sp  0 +0 */ 00000002
+        /* 000000f8: sp  0 +1 */ 09000008 local_8
+        /* 000000fc: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000100: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000108: sp  0 +1 */ 0a000008 local_8
+        /* 0000010c: sp  1 +0 */ 7e000000 00008b56
+        /* 00000114: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2344_2f()
+
+        /* 0000011c: sp  0 +0 */ 00000003
+        /* 00000120: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000091c3.html">Unknown91C3</a><br/>
+parent class <a href="type000093bb.html">%sha1_lowernightlife_civilian_female_prostitute_b%</a><br/>
+</body>
+</html>

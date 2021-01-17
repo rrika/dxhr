@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006eec</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6EEC</h1>
+		<pre>./tools/drmexplore pc-w/ det_sam_assembly.drm n$[0x73]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6EEC : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00006f32.html">Unknown6F32</a>&gt; decl_0007_1e5d_4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00006f3f.html">Unknown6F3F</a>&gt; decl_0007_1e5f_8 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00006f40.html">Unknown6F40</a>&gt; decl_0007_1e61_c = TODO(0A);
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6EEC : %debugbutton% {
+    // sizeof = 0x10
+    scenarioref&lt;Unknown6F32&gt; decl_0007_1e5d_4 = TODO(0A);
+    scenarioref&lt;Unknown6F3F&gt; decl_0007_1e5f_8 = TODO(0A);
+    scenarioref&lt;Unknown6F40&gt; decl_0007_1e61_c = TODO(0A);
+    void method_000a_0() {
+        Unknown6F32 local_0 = TODO(0B);
+        Unknown6F3F local_4 = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000000 local_0
+        /* 000000cc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000000d8: sp  0 +1 */ 0a000000 local_0
+        /* 000000dc: sp  1 +0 */ 7e000000 00006f32
+        /* 000000e4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000000ec: sp  0 +0 */ 00000001
+        /* 000000f0: sp  0 +1 */ 09000004 local_4
+        /* 000000f4: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 000000f8: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000100: sp  0 +1 */ 0a000004 local_4
+        /* 00000104: sp  1 +0 */ 7e000000 00006f3f
+        /* 0000010c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000114: sp  0 +0 */ 00000002
+
+        /* 00000118: sp  0 +0 */ 00000003
+        /* 0000011c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

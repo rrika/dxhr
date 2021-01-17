@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000076bb</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown76BB</h1>
+		<pre>./tools/drmexplore pc-w/ det_sarif_industries.drm n$[0xee]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown76BB : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00000013.html">Unknown0013</a>&gt; decl_0015_0020_40 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00002a07.html">Unknown2A07</a>&gt; decl_0007_1511_4c = TODO(0A);
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown76BB : %triggervolume% {
+    // sizeof = 0x50
+    stickybool field_4;
+    stickybool field_20;
+    unitref decl_0015_0020_40 = TODO(0A);
+    scenarioref&lt;Unknown2A07&gt; decl_0007_1511_4c = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown0013 local_8 = TODO(0B);
+        Unknown2A07 local_c = TODO(0B);
+        bool temp_10 = False;
+        Unknown0013 local_14 = TODO(0B);
+        Unknown0013 local_18 = TODO(0B);
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 09000008 local_8
+        /* 0000010c: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000110: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000118: sp  0 +1 */ 0a000008 local_8
+        /* 0000011c: sp  1 +0 */ 7e000000 00000013
+        /* 00000124: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_0056_2a()
+
+        /* 0000012c: sp  0 +0 */ 00000001
+        /* 00000130: sp  0 +1 */ 09000010 temp_10
+        /* 00000134: sp  1 +1 */ 0900000c local_c
+        /* 00000138: sp  2 +1 */ 0f00004c unnamed member 4c
+        /* 0000013c: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000144: sp  1 +1 */ 0a00000c local_c
+        /* 00000148: sp  2 +0 */ 7e000000 00002a07
+        /* 00000150: sp  2 -2 */ 69000000 beebbeeb bool scenario::method_09c7_ffff()
+        /* 00000158: sp  0 +1 */ 06000010 temp_10
+        /* 0000015c: sp  1 -1 */ 6400000b
+
+        /* 00000160: sp  0 +0 */ 00000002
+        /* 00000164: sp  0 +1 */ 09000014 local_14
+        /* 00000168: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 0000016c: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000174: sp  0 +1 */ 0a000014 local_14
+        /* 00000178: sp  1 +0 */ 7e000000 00000013
+        /* 00000180: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_0054_28()
+        /* 00000188: sp  0 +0 */ 6300000a 00000003
+        /* 00000190: sp  0 +1 */ 09000018 local_18
+        /* 00000194: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000198: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 000001a0: sp  0 +1 */ 0a000018 local_18
+        /* 000001a4: sp  1 +0 */ 7e000000 00000013
+        /* 000001ac: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_0053_27()
+
+        /* 000001b4: sp  0 +0 */ 00000004
+        ---
+
+        /* 0000018c: sp  0 +0 */ 00000003
+        /* 00000190: sp  0 +1 */ 09000018 local_18
+        /* 00000194: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000198: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 000001a0: sp  0 +1 */ 0a000018 local_18
+        /* 000001a4: sp  1 +0 */ 7e000000 00000013
+        /* 000001ac: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown0013::method_0053_27()
+
+        /* 000001b4: sp  0 +0 */ 00000004
+        ---
+        /* 000001b8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

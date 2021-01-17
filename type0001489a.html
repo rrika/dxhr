@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0001489a</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1489A</h1>
+		<pre>./tools/drmexplore pc-w/ sha_tym_pool_room.drm n$[0x3c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1489A : <a href="type0000059c.html">%dispatcher%</a> {
+    <a href="type00000511.html">smartscript</a> decl_0089_5ce6_4 = persistent(dtp:14992) {type=bool};
+    <a href="type00000511.html">smartscript</a> method_5ce7_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1489A : %dispatcher% {
+    // sizeof = 0x18
+    smartscript decl_0089_5ce6_4 = TODO(0A);
+    smartscript method_5ce7_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 04000001
+        /* 0000008c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000090: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000098: sp  0 +0 */ 00000001
+        /* 0000009c: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000000a0: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000a4: sp  2 -2 */ 34000000
+
+        /* 000000a8: sp  0 +0 */ 00000511
+        /* 000000ac: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type0000059c.html">%dispatcher%</a><br/>
+</body>
+</html>

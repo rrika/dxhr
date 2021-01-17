@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006382</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6382</h1>
+		<pre>./tools/drmexplore pc-w/ det_police.drm n$[0x11a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6382 : <a href="type0000059c.html">%dispatcher%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000014.html">Unknown0014</a>&gt; decl_0012_0083_4 = {<a href="units.html#00000094">unit object 00000094</a>};
+    <a href="type000004d6.html">globalsref</a>&lt;gcref <a href="type000005cf.html">Unknown05CF</a>&gt; decl_000d_1bde_c = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_1bdf_10 = persistent(dtp:64A6) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000063d2.html">Unknown63D2</a>&gt; decl_0012_1be1_24 = {<a href="units.html#000034d6">unit object 000034d6</a>};
+    void method_0813_0(<a href="type000004e2.html">inventoryitem</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6382 : %dispatcher% {
+    // sizeof = 0x2c
+    instanceref decl_0012_0083_4 = TODO(0A);
+    globalsref&lt;Unknown05CF&gt; decl_000d_1bde_c = TODO(0A);
+    smartscript decl_0089_1bdf_10 = TODO(0A);
+    instanceref decl_0012_1be1_24 = TODO(0A);
+    async void method_0813_0(inventoryitem arg_0604_05f7_0) {
+        bool temp_14 = False;
+        inventoryitem local_18 = TODO(0A);
+        Unknown0014 local_2c = TODO(0B);
+        bool temp_30 = False;
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000014 temp_14
+        /* 0000012c: sp  1 +1 */ 09000018 local_18
+        /* 00000130: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 00000134: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 0000013c: sp  0 +1 */ 06000014 temp_14
+        /* 00000140: sp  1 -1 */ 64000023
+
+        /* 00000144: sp  0 +0 */ 00000001
+
+        /* 00000148: sp  0 +0 */ 00000002
+        /* 0000014c: sp  0 +1 */ 03ffffff
+        /* 00000150: sp  1 +1 */ 0900002c local_2c
+        /* 00000154: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000158: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000160: sp  1 +1 */ 0a00002c local_2c
+        /* 00000164: sp  2 +0 */ 7e000000 00000014
+        /* 0000016c: sp  2 +0 */ 1400000c
+        /* 00000170: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 00000178: sp  0 +0 */ 00000003
+        /* 0000017c: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Briefer Ready!&#x27;
+        /* 00000184: sp  1 +1 */ 03000002
+        /* 00000188: sp  2 +0 */ 5c000000
+        /* 0000018c: sp  2 +1 */ 04000001
+        /* 00000190: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000198: sp  0 +0 */ 00000004
+        /* 0000019c: sp  0 +1 */ 09000030 temp_30
+        /* 000001a0: sp  1 +1 */ 0f000010 unnamed member 10
+        /* 000001a4: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000001ac: sp  0 +1 */ 06000030 temp_30
+        /* 000001b0: sp  1 +1 */ 04000000
+        /* 000001b4: sp  2 -1 */ 46000000
+        /* 000001b8: sp  1 -1 */ 64000004
+
+        /* 000001bc: sp  0 +0 */ 00000005
+        /* 000001c0: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 000001c4: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+        ---
+
+        /* 000001cc: sp  0 +0 */ 00000006
+        ---
+
+        /* 000001d0: sp  0 +0 */ 00000007
+        /* 000001d4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type0000059c.html">%dispatcher%</a><br/>
+</body>
+</html>

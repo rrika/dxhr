@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00004c30</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%cut_limb_screen_a%</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_limb_clinic.drm n$[0xb41]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %cut_limb_screen_a% : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_08e2_4 = {<a href="type000001b3.html">type 000001b3</a>, 1};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_184f_c = {<a href="type000001b3.html">type 000001b3</a>, 0};
+    void method_1850_0();
+    void method_1851_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %cut_limb_screen_a% : Unknown0578 {
+    // sizeof = 0x14
+    uberobjectcommand decl_01a8_08e2_4 = TODO(0A);
+    uberobjectcommand decl_01a8_184f_c = TODO(0A);
+    void method_1850_0() {
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 000000ac: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000000b4: sp  0 +0 */ 00000001
+        /* 000000b8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1851_1() {
+
+        /* 000000c4: sp  0 +0 */ 00000002
+        /* 000000c8: sp  0 +1 */ 0f00000c unnamed member c
+        /* 000000cc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000000d4: sp  0 +0 */ 00000003
+        /* 000000d8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00004bbb.html">Unknown4BBB</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+unit object #103 null<br/>
+</body>
+</html>

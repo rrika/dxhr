@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00002a02</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown2A02</h1>
+		<pre>./tools/drmexplore pc-w/ det_city__masterunit.drm n$[0xf4]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown2A02 : <a href="type000004fe.html">scenario</a> {
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_4 = TODO(0A);
+    void method_09c8_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown2A02 : scenario {
+    // sizeof = 0xc
+    playerref decl_012a_012c_4 = TODO(0A);
+    async void method_09c8_0() {
+        playercontroller local_0 = TODO(0B);
+        %human_player% local_4 = TODO(0B);
+        controller local_8 = TODO(0B);
+        hudgroup local_c = TODO(0A);
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 09000000 local_0
+        /* 0000010c: sp  1 +1 */ 09000008 local_8
+        /* 00000110: sp  2 +1 */ 09000004 local_4
+        /* 00000114: sp  3 +1 */ 0f000004 unnamed member 4
+        /* 00000118: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000120: sp  2 +1 */ 0a000004 local_4
+        /* 00000124: sp  3 +0 */ 7e000000 00000552
+        /* 0000012c: sp  3 -2 */ 69000000 beebbeeb controller actor::getController05a5()
+        /* 00000134: sp  1 +1 */ 0a000008 local_8
+        /* 00000138: sp  2 +0 */ 7e000000 000004f4
+        /* 00000140: sp  2 -2 */ 30000000
+
+        /* 00000144: sp  0 +0 */ 00000001
+        /* 00000148: sp  0 +1 */ 0900000c local_c
+        /* 0000014c: sp  1 +1 */ 0a000000 local_0
+        /* 00000150: sp  2 -2 */ 6a000000 beebbeeb virtual void playercontroller::method_0985_1f(hudgroup arg_08cd_0983_0)
+
+        /* 00000158: sp  0 +0 */ 00000002
+        /* 0000015c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000029f2.html">Unknown29F2</a><br/>
+initialized field in <a href="type000029f3.html">Unknown29F3</a><br/>
+initialized field in <a href="type000076e6.html">Unknown76E6</a><br/>
+parent class <a href="type000004fe.html">scenario</a><br/>
+</body>
+</html>

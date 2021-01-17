@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000af06</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownAF06</h1>
+		<pre>./tools/drmexplore pc-w/ pan_hyronproject.drm n$[0x20]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownAF06 : <a href="type0000b023.html">%boss_zhao_b%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000af05.html">UnknownAF05</a>&gt; decl_0012_2d72_4 = {<a href="units.html#000085fc">unit object 000085fc</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000af16.html">UnknownAF16</a>&gt; decl_0012_2d6f_c = {<a href="units.html#000085fb">unit object 000085fb</a>};
+    void method_2d73_0();
+    void method_05de_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownAF06 : %boss_zhao_b% {
+    // sizeof = 0x14
+    instanceref decl_0012_2d72_4 = TODO(0A);
+    instanceref decl_0012_2d6f_c = TODO(0A);
+    void method_2d73_0() {
+        UnknownAF05 local_0 = TODO(0B);
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 04000000
+        /* 000000dc: sp  1 +1 */ 09000000 local_0
+        /* 000000e0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000000e4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000ec: sp  1 +1 */ 0a000000 local_0
+        /* 000000f0: sp  2 +0 */ 7e000000 0000af05
+        /* 000000f8: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000100: sp  0 +0 */ 00000001
+        /* 00000104: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_05de_1() {
+        UnknownAF16 local_0 = TODO(0B);
+
+        /* 00000134: sp  0 +0 */ 00000002
+        /* 00000138: sp  0 +1 */ 09000000 local_0
+        /* 0000013c: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000140: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000148: sp  0 +1 */ 0a000000 local_0
+        /* 0000014c: sp  1 +0 */ 7e000000 0000af16
+        /* 00000154: sp  1 -1 */ 6a000000 beebbeeb virtual async void UnknownAF16::method_2e34_40()
+
+        /* 0000015c: sp  0 +0 */ 00000003
+        /* 00000160: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000af14.html">UnknownAF14</a><br/>
+initialized field in <a href="type0000af16.html">UnknownAF16</a><br/>
+initialized field in <a href="type0000af57.html">UnknownAF57</a><br/>
+parent class <a href="type0000b023.html">%boss_zhao_b%</a><br/>
+</body>
+</html>

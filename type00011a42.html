@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00011a42</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown11A42</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_port_2a.drm n$[0xd42]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown11A42 : <a href="type00000578.html">Unknown0578</a> {
+    void method_1803_0();
+    // referenced at <a href="type0001386d.html">async void Unknown1386D::method_0813_0(actor arg_05dc_0f79_0, dword arg_0000_05fd_4)</a>
+    void method_1804_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown11A42 : Unknown0578 {
+    // sizeof = 0x1
+    void method_1803_0() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 09000000 local_0
+        /* 000000dc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000000e4: sp  0 +0 */ 00000001
+        /* 000000e8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1804_1() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000124: sp  0 +0 */ 00000002
+        /* 00000128: sp  0 +1 */ 09000000 local_0
+        /* 0000012c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000134: sp  0 +0 */ 00000003
+        /* 00000138: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00011a43.html">%sha_c4_bomb_interaction%</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+</body>
+</html>

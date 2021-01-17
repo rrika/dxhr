@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000639b</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown639B</h1>
+		<pre>./tools/drmexplore pc-w/ det_police.drm n$[0x134]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown639B : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000004df.html">instance</a>&gt; decl_0012_1c30_40 = {<a href="units.html#0000345e">unit object 0000345e</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000004df.html">instance</a>&gt; decl_0012_1c31_48 = {<a href="units.html#00003489">unit object 00003489</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006366.html">Unknown6366</a>&gt; decl_0012_1bb5_50 = {<a href="units.html#00000686">unit object 00000686</a>};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_58 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000639a.html">Unknown639A</a>&gt; decl_0012_1bb7_60 = {<a href="units.html#00003478">unit object 00003478</a>};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown639B : %triggervolume% {
+    // sizeof = 0x68
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_1c30_40 = TODO(0A);
+    instanceref decl_0012_1c31_48 = TODO(0A);
+    instanceref decl_0012_1bb5_50 = TODO(0A);
+    playerref decl_012a_012c_58 = TODO(0A);
+    instanceref decl_0012_1bb7_60 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        aistate local_8 = TODO(0A);
+        Unknown6366 local_c = TODO(0B);
+        Unknown639A local_10 = TODO(0B);
+        bool temp_14 = False;
+        aistate local_18 = TODO(0A);
+        bool temp_1c = False;
+        aistate local_20 = TODO(0A);
+        Unknown6366 local_24 = TODO(0B);
+        %human_player% local_28 = TODO(0B);
+        conversation local_2c = TODO(0A);
+
+        /* 000001a4: sp  0 +0 */ 00000000
+        /* 000001a8: sp  0 +1 */ 09000008 local_8
+        /* 000001ac: sp  1 +1 */ 0900000c local_c
+        /* 000001b0: sp  2 +1 */ 0f000050 unnamed member 50
+        /* 000001b4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001bc: sp  1 +1 */ 0a00000c local_c
+        /* 000001c0: sp  2 +0 */ 7e000000 00006366
+        /* 000001c8: sp  2 -2 */ 6a000000 beebbeeb virtual aistate actornpc::method_067a_6b()
+
+        /* 000001d0: sp  0 +0 */ 00000001
+        /* 000001d4: sp  0 +1 */ 04000000
+        /* 000001d8: sp  1 +1 */ 09000010 local_10
+        /* 000001dc: sp  2 +1 */ 0f000060 unnamed member 60
+        /* 000001e0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001e8: sp  1 +1 */ 0a000010 local_10
+        /* 000001ec: sp  2 +0 */ 7e000000 0000639a
+        /* 000001f4: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000001fc: sp  0 +0 */ 00000002
+        /* 00000200: sp  0 +1 */ 05000000 beebbeeb &#x27;FirstEntry Trigger02&#x27;
+        /* 00000208: sp  1 +1 */ 03000005
+        /* 0000020c: sp  2 +0 */ 5c000000
+        /* 00000210: sp  2 +1 */ 04000001
+        /* 00000214: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000021c: sp  0 +0 */ 00000003
+        /* 00000220: sp  0 +1 */ 09000014 temp_14
+        /* 00000224: sp  1 +1 */ 09000018 local_18
+        /* 00000228: sp  2 +1 */ 09000008 local_8
+        /* 0000022c: sp  3 -3 */ 65000000 beebbeeb native bool aistate::isEqual(aistate arg_01d8_0594_4)
+        /* 00000234: sp  0 +1 */ 06000014 temp_14
+        /* 00000238: sp  1 +1 */ 0900001c temp_1c
+        /* 0000023c: sp  2 +1 */ 09000020 local_20
+        /* 00000240: sp  3 +1 */ 09000008 local_8
+        /* 00000244: sp  4 -3 */ 65000000 beebbeeb native bool aistate::isEqual(aistate arg_01d8_0594_4)
+        /* 0000024c: sp  1 +1 */ 0600001c temp_1c
+        /* 00000250: sp  2 -1 */ 52000000
+        /* 00000254: sp  1 -1 */ 64000025
+
+        /* 00000258: sp  0 +0 */ 00000004
+
+        /* 0000025c: sp  0 +0 */ 00000005
+        /* 00000260: sp  0 +1 */ 09000024 local_24
+        /* 00000264: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000268: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000270: sp  0 +1 */ 0a000024 local_24
+        /* 00000274: sp  1 +0 */ 7e000000 00006366
+        /* 0000027c: sp  1 -1 */ 69000000 beebbeeb void actornpc::method_0681_ffff()
+
+        /* 00000284: sp  0 +0 */ 00000006
+        /* 00000288: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Triggering Forced Conversation!&#x27;
+        /* 00000290: sp  1 +1 */ 03000002
+        /* 00000294: sp  2 +0 */ 5c000000
+        /* 00000298: sp  2 +1 */ 04000001
+        /* 0000029c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000002a4: sp  0 +0 */ 00000007
+        /* 000002a8: sp  0 +1 */ 0f000040 unnamed member 40
+        /* 000002ac: sp  1 +1 */ 0900002c local_2c
+        /* 000002b0: sp  2 +1 */ 04000000
+        /* 000002b4: sp  3 +1 */ 09000028 local_28
+        /* 000002b8: sp  4 +1 */ 0f000058 unnamed member 58
+        /* 000002bc: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000002c4: sp  3 +1 */ 0a000028 local_28
+        /* 000002c8: sp  4 +0 */ 7e000000 00000552
+        /* 000002d0: sp  4 -4 */ 6a000000 beebbeeb virtual void Unknown05D8::method_06d7_6b(instanceref arg_0012_06d8_0, conversation arg_018d_06d9_8, bool arg_0000_06da_10)
+
+        /* 000002d8: sp  0 +0 */ 00000008
+        /* 000002dc: sp  0 +1 */ 04000000
+        /* 000002e0: sp  1 -1 */ 66000000 beebbeeb this-&gt;void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000002e8: sp  0 +0 */ 00000009
+        ---
+
+        /* 000002ec: sp  0 +0 */ 0000000a
+        /* 000002f0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000639a.html">Unknown639A</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

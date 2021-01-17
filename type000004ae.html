@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000004ae</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>aicontroller</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x5b9]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class aicontroller : <a href="type000004c2.html">controller</a> {
+    bool method_0706_0();
+    <a href="type000004b2.html">aistate</a> method_0707_1();
+    // referenced at <a href="type000005cd.html">async void Unknown05CD::method_05f1_3(instanceref arg_0012_05f2_0)</a>
+    void method_0708_2();
+    // referenced at <a href="type000005cd.html">void Unknown05CD::method_0708_b()</a>
+    void method_0682_3();
+    void method_0709_4();
+    // referenced at <a href="type000005cd.html">void Unknown05CD::method_0709_c()</a>
+    void method_070a_5(<a href="type000004ef.html">occupation</a>, float);
+    // referenced at <a href="type000005cd.html">void Unknown05CD::method_070a_7(occupation arg_05f6_0d07_0, float arg_0000_0684_4)</a>
+    bool method_05c6_6(<a href="type000004a6.html">action</a>);
+    bool method_070b_7(<a href="type000004a6.html">action</a>);
+    <a href="type000004ef.html">occupation</a> method_070c_8();
+    // referenced at <a href="type000005cd.html">occupation Unknown05CD::method_070c_a()</a>
+    bool method_070d_9();
+    // referenced at <a href="type000005cd.html">bool Unknown05CD::method_070d_9()</a>
+    void method_067b_a(<a href="type000004b2.html">aistate</a>);
+    void method_0695_b(bool);
+    void method_070f_c(<a href="type000004e0.html">instanceref</a>);
+    // referenced at <a href="type000005cd.html">void Unknown05CD::method_070f_10(instanceref arg_0012_0d0a_0)</a>
+    void method_0692_d(bool);
+    gcref <a href="type000004a9.html">actornpc</a> method_0710_e();
+    void method_0711_f(bool, bool);
+    void method_0714_10(enum <a href="type000004d8.html">goalevent</a>);
+    dword method_0717_11(float);
+    <a href="type000004d7.html">goal</a> method_0718_12();
+    float method_0719_13();
+    <a href="type000004f3.html">plan</a> method_071a_14();
+    <a href="type000004bb.html">blackboard</a> method_071c_15();
+    <a href="type000004bb.html">blackboard</a> method_071e_16();
+    dword method_071f_17(<a href="type000004e5.html">lookat</a>);
+    dword method_0722_18(<a href="type000004e5.html">lookat</a>);
+    <a href="type000004a4.html">vector</a> method_0723_19();
+    bool method_0724_1a(<a href="type000004e0.html">instanceref</a>);
+    bool method_0725_1b(<a href="type000004e0.html">instanceref</a>);
+    bool method_0726_1c(<a href="type000004e0.html">instanceref</a>);
+    bool method_068f_1d();
+    <a href="type000004e0.html">instanceref</a> method_0727_1e();
+    bool method_0728_1f();
+    bool method_0729_20(<a href="type000004e0.html">instanceref</a>);
+    void method_0694_21(<a href="type000004e0.html">instanceref</a>);
+    void method_072a_22(<a href="type000004a6.html">action</a>, <a href="type000004a6.html">action</a>, dword);
+    void method_072e_23(<a href="type000004a6.html">action</a>, <a href="type000004a6.html">action</a>, <a href="type000004a6.html">action</a>, dword);
+    void method_0730_24(<a href="type000004a6.html">action</a>, <a href="type000004a6.html">action</a>, dword);
+    void method_0731_25();
+    void method_0732_26(string);
+    bool method_0734_27(<a href="type000004a4.html">vector</a>);
+    bool method_0736_28();
+    bool method_0737_29();
+    bool method_0738_2a(<a href="type000004a4.html">vector</a>, float);
+    float method_073b_2b(<a href="type000004e0.html">instanceref</a>);
+    void method_073c_2c(float);
+    // referenced at <a href="type000005cd.html">void Unknown05CD::method_0d06_6(float arg_0000_0684_0)</a>
+    bool method_073d_2d(<a href="type000004ef.html">occupation</a>);
+    // referenced at <a href="type000005cd.html">bool Unknown05CD::method_073d_8(occupation arg_05f6_0d07_4)</a>
+    void method_0675_2e(<a href="type0000052a.html">waypointnode</a>);
+    void method_0677_2f(<a href="type0000052a.html">waypointnode</a>);
+    void method_0678_30(<a href="type0000052a.html">waypointnode</a>);
+    void method_0679_31(<a href="type0000052a.html">waypointnode</a>);
+    void method_073e_32(<a href="type000004d9.html">goapscriptsymbol</a>, bool);
+    // referenced at <a href="type000005cc.html">async void Unknown05CC::method_05e0_1(barkevent arg_01a9_05e1_0, string arg_0000_05e2_4)</a>
+    void method_0741_33();
+    void method_0742_34();
+    void method_05d1_35(<a href="type000004d7.html">goal</a>);
+    void method_05d4_36(<a href="type000004d7.html">goal</a>);
+    void method_05d5_37(<a href="type000004d7.html">goal</a>);
+    void method_05d7_38(<a href="type000004d7.html">goal</a>, <a href="type000004d7.html">goal</a>);
+    void method_05d6_39(<a href="type000004d7.html">goal</a>);
+    void method_0743_3a(<a href="type000004e0.html">instanceref</a>);
+    void method_0744_3b(<a href="type000004e0.html">instanceref</a>, enum <a href="type00000501.html">sense</a>);
+    void method_0747_3c(<a href="type000004e0.html">instanceref</a>);
+    void method_0748_3d(<a href="type000004e0.html">instanceref</a>, <a href="type000004e0.html">instanceref</a>);
+    void method_074a_3e(<a href="type000004e0.html">instanceref</a>);
+    void method_074b_3f(<a href="type000004e0.html">instanceref</a>);
+    void method_074c_40(<a href="type000004e0.html">instanceref</a>);
+    void method_074d_41(<a href="type000004e0.html">instanceref</a>, <a href="type000004c6.html">damagetype</a>, <a href="type000004e0.html">instanceref</a>);
+    void method_074f_42(<a href="type000004e0.html">instanceref</a>);
+    void method_0750_43(<a href="type000004a4.html">vector</a>, float, bool);
+    void method_0754_44();
+    void method_0755_45(<a href="type000004e0.html">instanceref</a>, float);
+    void method_0758_46(<a href="type000004a4.html">vector</a>, float);
+    void method_0759_47(<a href="type000004e0.html">instanceref</a>, <a href="type000004a4.html">vector</a>, float);
+    void method_075a_48(<a href="type000004e0.html">instanceref</a>);
+    void method_075b_49();
+    void method_01d7_4a(<a href="type000004b2.html">aistate</a>, <a href="type000004b2.html">aistate</a>);
+    void method_075c_4b(<a href="type000004a4.html">vector</a>, float, bool);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class aicontroller : controller {
+    // sizeof = 0x1
+    bool method_0706_0(); // no bytecode
+    aistate method_0707_1(); // no bytecode
+    void method_0708_2(); // no bytecode
+    void method_0682_3(); // no bytecode
+    void method_0709_4(); // no bytecode
+    void method_070a_5(occupation arg_05f6_05f7_0, float arg_0000_0684_4); // no bytecode
+    bool method_05c6_6(action arg_0593_0367_4); // no bytecode
+    bool method_070b_7(action arg_0593_0367_4); // no bytecode
+    occupation method_070c_8(); // no bytecode
+    bool method_070d_9(); // no bytecode
+    void method_067b_a(aistate arg_01d8_01da_0); // no bytecode
+    void method_0695_b(bool arg_0000_070e_0); // no bytecode
+    void method_070f_c(instanceref arg_0012_0691_0); // no bytecode
+    void method_0692_d(bool arg_0000_0693_0); // no bytecode
+    actornpc method_0710_e(); // no bytecode
+    void method_0711_f(bool arg_0000_0712_0, bool arg_0000_0713_1); // no bytecode
+    void method_0714_10(goalevent arg_0715_0716_0); // no bytecode
+    dword method_0717_11(float arg_0000_05bc_4); // no bytecode
+    goal method_0718_12(); // no bytecode
+    float method_0719_13(); // no bytecode
+    plan method_071a_14(); // no bytecode
+    blackboard method_071c_15(); // no bytecode
+    blackboard method_071e_16(); // no bytecode
+    dword method_071f_17(lookat arg_0720_0721_4); // no bytecode
+    dword method_0722_18(lookat arg_0720_0721_4); // no bytecode
+    vector method_0723_19(); // no bytecode
+    bool method_0724_1a(instanceref arg_0012_05dd_4); // no bytecode
+    bool method_0725_1b(instanceref arg_0012_05dd_4); // no bytecode
+    bool method_0726_1c(instanceref arg_0012_05dd_4); // no bytecode
+    bool method_068f_1d(); // no bytecode
+    instanceref method_0727_1e(); // no bytecode
+    bool method_0728_1f(); // no bytecode
+    bool method_0729_20(instanceref arg_0012_0691_4); // no bytecode
+    void method_0694_21(instanceref arg_0012_0691_0); // no bytecode
+    void method_072a_22(action arg_0593_072b_0, action arg_0593_072c_c, dword arg_0000_072d_18); // no bytecode
+    void method_072e_23(action arg_0593_072b_0, action arg_0593_072f_c, action arg_0593_072c_18, dword arg_0000_072d_24); // no bytecode
+    void method_0730_24(action arg_0593_072b_0, action arg_0593_072c_c, dword arg_0000_072d_18); // no bytecode
+    void method_0731_25(); // no bytecode
+    void method_0732_26(string arg_0000_0733_0); // no bytecode
+    bool method_0734_27(vector arg_0567_0735_10); // no bytecode
+    bool method_0736_28(); // no bytecode
+    bool method_0737_29(); // no bytecode
+    bool method_0738_2a(vector arg_0567_0739_10, float arg_0000_073a_20); // no bytecode
+    float method_073b_2b(instanceref arg_0012_05dd_4); // no bytecode
+    void method_073c_2c(float arg_0000_0684_0); // no bytecode
+    bool method_073d_2d(occupation arg_05f6_05f7_4); // no bytecode
+    void method_0675_2e(waypointnode arg_0196_0676_0); // no bytecode
+    void method_0677_2f(waypointnode arg_0196_0676_0); // no bytecode
+    void method_0678_30(waypointnode arg_0196_0676_0); // no bytecode
+    void method_0679_31(waypointnode arg_0196_0676_0); // no bytecode
+    void method_073e_32(goapscriptsymbol arg_073f_0192_0, bool arg_0000_0740_4); // no bytecode
+    async void method_0741_33() {
+        /* 00000904: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0742_34() {
+        /* 00000914: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_05d1_35(goal arg_05d2_05d3_0) {
+        /* 00000924: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_05d4_36(goal arg_05d2_05d3_0) {
+        /* 00000934: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_05d5_37(goal arg_05d2_05d3_0) {
+        /* 00000944: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_05d7_38(goal arg_05d2_05d8_0, goal arg_05d2_05d9_4) {
+        /* 00000954: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_05d6_39(goal arg_05d2_05d3_0) {
+        /* 00000964: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0743_3a(instanceref arg_0012_0691_0) {
+        /* 00000974: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0744_3b(instanceref arg_0012_0691_0, sense arg_0745_0746_8) {
+        /* 00000984: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0747_3c(instanceref arg_0012_0691_0) {
+        /* 00000994: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0748_3d(instanceref arg_0012_0749_0, instanceref arg_0012_0691_8) {
+        /* 000009a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_074a_3e(instanceref arg_0012_0691_0) {
+        /* 000009b4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_074b_3f(instanceref arg_0012_0691_0) {
+        /* 000009c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_074c_40(instanceref arg_0012_0691_0) {
+        /* 000009d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_074d_41(instanceref arg_0012_074e_0, damagetype arg_062e_0025_8, instanceref arg_0012_05dd_c) {
+        /* 000009e4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_074f_42(instanceref arg_0012_074e_0) {
+        /* 000009f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0750_43(vector arg_0567_0751_0, float arg_0000_0752_10, bool arg_0000_0753_14) {
+        /* 00000a04: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0754_44() {
+        /* 00000a14: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0755_45(instanceref arg_0012_0756_0, float arg_0000_0757_8) {
+        /* 00000a24: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0758_46(vector arg_0567_0751_0, float arg_0000_0752_10) {
+        /* 00000a34: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0759_47(instanceref arg_0012_0756_0, vector arg_0567_0751_10, float arg_0000_0752_20) {
+        /* 00000a44: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_075a_48(instanceref arg_0012_05dd_0) {
+        /* 00000a54: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_075b_49() {
+        /* 00000a64: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_01d7_4a(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4) {
+        /* 00000a74: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_075c_4b(vector arg_0567_0751_0, float arg_0000_075d_10, bool arg_0000_075e_14) {
+        /* 00000a84: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004c2.html">controller</a><br/>
+</body>
+</html>

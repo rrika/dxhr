@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00002aa0</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown2AA0</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_aptbck1.drm n$[0x80]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown2AA0 : <a href="type00002af3.html">%det_interactiveboxcrossbow_a%</a> {
+    <a href="type000004ec.html">objective</a> objective_omalley_find_evidence = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_return_to_jenny = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_retrieve_omalleys_package = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_identify_omalleys_weapon_shipment = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_knock_out_double_t = TODO(0A);
+    <a href="type000004ec.html">objective</a> objective_neutralize_mcb_opposition = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_15d1_34 = persistent(dtp:2AEC) {type=bool};
+    void method_000a_0();
+    void method_15d0_1();
+    // referenced at <a href="type00002aa0.html">void Unknown2AA0::method_000a_0()</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown2AA0 : %det_interactiveboxcrossbow_a% {
+    // sizeof = 0x48
+    objective objective_omalley_find_evidence = TODO(0A);
+    objective objective_return_to_jenny = TODO(0A);
+    objective objective_retrieve_omalleys_package = TODO(0A);
+    objective objective_identify_omalleys_weapon_shipment = TODO(0A);
+    objective objective_knock_out_double_t = TODO(0A);
+    objective objective_neutralize_mcb_opposition = TODO(0A);
+    smartscript decl_0089_15d1_34 = TODO(0A);
+    void method_000a_0() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+        bool temp_2 = False;
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 05000000 beebbeeb &#x27;Interacted with Weapon Box&#x27;
+        /* 000000f0: sp  1 +1 */ 03000003
+        /* 000000f4: sp  2 +0 */ 5c000000
+        /* 000000f8: sp  2 +1 */ 04000001
+        /* 000000fc: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000104: sp  0 +0 */ 00000001
+        /* 00000108: sp  0 +1 */ 09000000 temp_0
+        /* 0000010c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000110: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000118: sp  0 +1 */ 06000000 temp_0
+        /* 0000011c: sp  1 -1 */ 64000009
+
+        /* 00000120: sp  0 +0 */ 00000002
+
+        /* 00000124: sp  0 +0 */ 00000003
+        /* 00000128: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 0000012c: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000134: sp  0 +0 */ 00000004
+        /* 00000138: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown2AA0::method_15d0_40()
+
+        /* 00000140: sp  0 +0 */ 00000005
+        ---
+
+        /* 00000144: sp  0 +0 */ 00000006
+        /* 00000148: sp  0 +1 */ 09000001 temp_1
+        /* 0000014c: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000150: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000158: sp  0 +1 */ 06000001 temp_1
+        /* 0000015c: sp  1 +1 */ 04000000
+        /* 00000160: sp  2 -1 */ 46000000
+        /* 00000164: sp  1 -1 */ 6400001a
+
+        /* 00000168: sp  0 +0 */ 00000007
+
+        /* 0000016c: sp  0 +0 */ 00000008
+        /* 00000170: sp  0 +1 */ 04000001
+        /* 00000174: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000178: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000180: sp  0 +0 */ 00000009
+        /* 00000184: sp  0 +1 */ 05000000 beebbeeb &#x27;Weapon box found!&#x27;
+        /* 0000018c: sp  1 +1 */ 03000003
+        /* 00000190: sp  2 +0 */ 5c000000
+        /* 00000194: sp  2 +1 */ 04000001
+        /* 00000198: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001a0: sp  0 +0 */ 0000000a
+        /* 000001a4: sp  0 +1 */ 09000002 temp_2
+        /* 000001a8: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 000001ac: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000001b4: sp  0 +1 */ 06000002 temp_2
+        /* 000001b8: sp  1 +1 */ 03000003
+        /* 000001bc: sp  2 +0 */ 5c000000
+        /* 000001c0: sp  2 +1 */ 04000001
+        /* 000001c4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0549_ffff(bool arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001cc: sp  0 +0 */ 0000000b
+        ---
+
+        /* 000001d0: sp  0 +0 */ 0000000c
+        /* 000001d4: sp  0 +1 */ 04000000
+        /* 000001d8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void Unknown0585::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 000001e0: sp  0 +0 */ 0000000d
+        /* 000001e4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_15d0_1() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+        bool temp_2 = False;
+        bool temp_3 = False;
+
+        /* 00000294: sp  0 +0 */ 0000000e
+        /* 00000298: sp  0 +1 */ 09000000 temp_0
+        /* 0000029c: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 000002a0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000002a8: sp  0 +1 */ 06000000 temp_0
+        /* 000002ac: sp  1 +1 */ 09000001 temp_1
+        /* 000002b0: sp  2 +1 */ 0f00001c unnamed member 1c
+        /* 000002b4: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000002bc: sp  1 +1 */ 06000001 temp_1
+        /* 000002c0: sp  2 -1 */ 51000000
+        /* 000002c4: sp  1 -1 */ 64000013
+
+        /* 000002c8: sp  0 +0 */ 0000000f
+
+        /* 000002cc: sp  0 +0 */ 00000010
+        /* 000002d0: sp  0 +1 */ 09000002 temp_2
+        /* 000002d4: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 000002d8: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000002e0: sp  0 +1 */ 06000002 temp_2
+        /* 000002e4: sp  1 +1 */ 09000003 temp_3
+        /* 000002e8: sp  2 +1 */ 0f000024 unnamed member 24
+        /* 000002ec: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000002f4: sp  1 +1 */ 06000003 temp_3
+        /* 000002f8: sp  2 -1 */ 51000000
+        /* 000002fc: sp  1 -1 */ 64000004
+
+        /* 00000300: sp  0 +0 */ 00000011
+        /* 00000304: sp  0 +1 */ 0f00000c unnamed member c
+        /* 00000308: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+        ---
+
+        /* 00000310: sp  0 +0 */ 00000012
+        ---
+
+        /* 00000314: sp  0 +0 */ 00000013
+        /* 00000318: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00002a9f.html">Unknown2A9F</a><br/>
+initialized field in <a href="type00002aa3.html">Unknown2AA3</a><br/>
+parent class <a href="type00002af3.html">%det_interactiveboxcrossbow_a%</a><br/>
+</body>
+</html>

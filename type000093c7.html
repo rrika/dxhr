@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000093c7</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%dlc_pod_control_room_a%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0xc02]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %dlc_pod_control_room_a% : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_258d_4 = {<a href="type00000441.html">type 00000441</a>, 0};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_258e_14 = {<a href="type00000441.html">type 00000441</a>, 2};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_258f_24 = {<a href="type00000441.html">type 00000441</a>, 3};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_2590_34 = {<a href="type00000441.html">type 00000441</a>, 1};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_2591_3c = {<a href="type00000441.html">type 00000441</a>, 0};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_2592_44 = {<a href="type00000441.html">type 00000441</a>, 2};
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_2593_1();
+    // referenced at <a href="type000093c7.html">async void %dlc_pod_control_room_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_240b_2();
+    // referenced at <a href="type000093c7.html">async void %dlc_pod_control_room_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_240a_3();
+    // referenced at <a href="type000093c7.html">async void %dlc_pod_control_room_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %dlc_pod_control_room_a% : Unknown0578 {
+    // sizeof = 0x4c
+    uberobjectevent decl_0a66_258d_4 = TODO(0A);
+    uberobjectevent decl_0a66_258e_14 = TODO(0A);
+    uberobjectevent decl_0a66_258f_24 = TODO(0A);
+    uberobjectcommand decl_01a8_2590_34 = TODO(0A);
+    uberobjectcommand decl_01a8_2591_3c = TODO(0A);
+    uberobjectcommand decl_01a8_2592_44 = TODO(0A);
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        playerref&lt;actorplayer&gt; local_10 = TODO(0A);
+        bool temp_18 = False;
+        bool temp_19 = False;
+        bool temp_1a = False;
+
+        /* 00000174: sp  0 +0 */ 00000000
+        /* 00000178: sp  0 +1 */ 09000018 temp_18
+        /* 0000017c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000180: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000184: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000018c: sp  0 +1 */ 06000018 temp_18
+        /* 00000190: sp  1 -1 */ 64000003
+
+        /* 00000194: sp  0 +0 */ 00000001
+        /* 00000198: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %dlc_pod_control_room_a%::method_2593_3d()
+        ---
+
+        /* 000001a0: sp  0 +0 */ 00000002
+        /* 000001a4: sp  0 +1 */ 09000019 temp_19
+        /* 000001a8: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 000001ac: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000001b0: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001b8: sp  0 +1 */ 06000019 temp_19
+        /* 000001bc: sp  1 -1 */ 64000003
+
+        /* 000001c0: sp  0 +0 */ 00000003
+        /* 000001c4: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %dlc_pod_control_room_a%::method_240b_3e()
+        ---
+
+        /* 000001cc: sp  0 +0 */ 00000004
+        /* 000001d0: sp  0 +1 */ 0900001a temp_1a
+        /* 000001d4: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000001d8: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000001dc: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001e4: sp  0 +1 */ 0600001a temp_1a
+        /* 000001e8: sp  1 -1 */ 64000003
+
+        /* 000001ec: sp  0 +0 */ 00000005
+        /* 000001f0: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %dlc_pod_control_room_a%::method_240a_3f()
+        ---
+
+        /* 000001f8: sp  0 +0 */ 00000006
+        /* 000001fc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2593_1() {
+
+        /* 00000204: sp  0 +0 */ 00000007
+        /* 00000208: sp  0 +1 */ 05000000 beebbeeb &#x27;Oxygen Delivery failure; occupant life signs failing&#x27;
+        /* 00000210: sp  1 +1 */ 03000005
+        /* 00000214: sp  2 +0 */ 5c000000
+        /* 00000218: sp  2 +1 */ 04000001
+        /* 0000021c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000224: sp  0 +0 */ 00000008
+        /* 00000228: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_240b_2() {
+
+        /* 00000274: sp  0 +0 */ 00000009
+        /* 00000278: sp  0 +1 */ 05000000 beebbeeb &#x27;Occupant life signs failed; occupant dead&#x27;
+        /* 00000280: sp  1 +1 */ 03000005
+        /* 00000284: sp  2 +0 */ 5c000000
+        /* 00000288: sp  2 +1 */ 04000001
+        /* 0000028c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000294: sp  0 +0 */ 0000000a
+        /* 00000298: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_240a_3() {
+
+        /* 000002d4: sp  0 +0 */ 0000000b
+        /* 000002d8: sp  0 +1 */ 05000000 beebbeeb &#x27;Occupant life signs stable&#x27;
+        /* 000002e0: sp  1 +1 */ 03000005
+        /* 000002e4: sp  2 +0 */ 5c000000
+        /* 000002e8: sp  2 +1 */ 04000001
+        /* 000002ec: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000002f4: sp  0 +0 */ 0000000c
+        /* 000002f8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00009198.html">Unknown9198</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+unit object #203 null<br/>
+</body>
+</html>

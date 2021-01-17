@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00013456</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown13456</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_lowerresidential.drm n$[0x91]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown13456 : <a href="type00013133.html">%sha_train_metro_a%</a> {
+    <a href="type000004f5.html">playerref</a> field_4;
+    <a href="type000004d6.html">globalsref</a>&lt;gcref <a href="type000005cf.html">Unknown05CF</a>&gt; decl_000d_001b_c = TODO(0A);
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type0000003b.html">Unknown003B</a>&gt; decl_0015_01bb_10 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000004df.html">instance</a>&gt; decl_0012_596e_1c = {<a href="units.html#0000d31c">unit object 0000d31c</a>};
+    <a href="type00000502.html">sequencergraph</a> decl_008c_596f_24 = TODO(0A);
+    <a href="type000004ee.html">objectref</a> decl_0018_5970_2c = TODO(0A);
+    void method_001a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown13456 : %sha_train_metro_a% {
+    // sizeof = 0x30
+    playerref field_4;
+    globalsref&lt;Unknown05CF&gt; decl_000d_001b_c = TODO(0A);
+    unitref decl_0015_01bb_10 = TODO(0A);
+    instanceref decl_0012_596e_1c = TODO(0A);
+    sequencergraph decl_008c_596f_24 = TODO(0A);
+    objectref decl_0018_5970_2c = TODO(0A);
+    void method_001a_0() {
+        symbol local_0 = TODO(0A);
+        Unknown05CF local_4 = TODO(0B);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+
+        /* 000000e8: sp  0 +0 */ 00000001
+        /* 000000ec: sp  0 +1 */ 09000000 local_0
+        /* 000000f0: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000000f4: sp  2 -2 */ 65000000 beebbeeb native void sequencergraph::method_09d2_ffff(symbol arg_008f_05e2_0)
+
+        /* 000000fc: sp  0 +0 */ 00000002
+        /* 00000100: sp  0 +1 */ 0f000010 unnamed member 10
+        /* 00000104: sp  1 +1 */ 0f00001c unnamed member 1c
+        /* 00000108: sp  2 +1 */ 0f00002c unnamed member 2c
+        /* 0000010c: sp  3 +1 */ 09000004 local_4
+        /* 00000110: sp  4 +1 */ 0f00000c unnamed member c
+        /* 00000114: sp  5 -2 */ 65000000 beebbeeb native gameglobalsbase globalsref::deref()
+        /* 0000011c: sp  3 +1 */ 0a000004 local_4
+        /* 00000120: sp  4 +0 */ 7e000000 000005cf
+        /* 00000128: sp  4 -4 */ 6a000000 beebbeeb virtual void Unknown05CF::method_0d50_17(unitref arg_0015_0868_0, instanceref arg_0012_086c_c, objectref arg_0018_0d51_14)
+
+        /* 00000130: sp  0 +0 */ 00000003
+        /* 00000134: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00013133.html">%sha_train_metro_a%</a><br/>
+</body>
+</html>

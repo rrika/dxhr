@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00012b04</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown12B04</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_lowerharvester.drm n$[0x31]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown12B04 : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type00000511.html">smartscript</a> decl_0089_57ad_4 = persistent(dtp:12BAD) {type=bool};
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown12B04 : %debugbutton% {
+    // sizeof = 0x18
+    smartscript decl_0089_57ad_4 = TODO(0A);
+    void method_000a_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 04000001
+        /* 0000008c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000090: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000098: sp  0 +0 */ 00000001
+        /* 0000009c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

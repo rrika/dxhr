@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000004a</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown004A</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6f]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown004A : <a href="type0000055e.html">%mtl_picinternet_soldier_belltower_c%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000055c.html">%mtl_picfunicular_soldier_belltower_i%</a>&gt; decl_0012_01db_3c = {<a href="units.html#000000a8">unit object 000000a8</a>};
+    void method_01dc_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown004A : %mtl_picinternet_soldier_belltower_c% {
+    // sizeof = 0x44
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_01db_3c = TODO(0A);
+    async void method_01dc_0() {
+        %mtl_picfunicular_soldier_belltower_i% local_0 = TODO(0B);
+        waypointnode local_4 = TODO(0A);
+        %mtl_picfunicular_soldier_belltower_i% local_14 = TODO(0B);
+        waypointnode local_18 = TODO(0A);
+
+        /* 00000114: sp  0 +0 */ 00000000
+        /* 00000118: sp  0 +1 */ 09000004 local_4
+        /* 0000011c: sp  1 +1 */ 09000000 local_0
+        /* 00000120: sp  2 +1 */ 0f00003c unnamed member 3c
+        /* 00000124: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000012c: sp  1 +1 */ 0a000000 local_0
+        /* 00000130: sp  2 +0 */ 7e000000 0000055c
+        /* 00000138: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0679_ffff(waypointnode arg_0196_0676_0)
+
+        /* 00000140: sp  0 +0 */ 00000001
+        /* 00000144: sp  0 +1 */ 09000018 local_18
+        /* 00000148: sp  1 +1 */ 09000014 local_14
+        /* 0000014c: sp  2 +1 */ 0f00003c unnamed member 3c
+        /* 00000150: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000158: sp  1 +1 */ 0a000014 local_14
+        /* 0000015c: sp  2 +0 */ 7e000000 0000055c
+        /* 00000164: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0678_ffff(waypointnode arg_0196_0676_0)
+
+        /* 0000016c: sp  0 +0 */ 00000002
+        /* 00000170: sp  0 +1 */ 05000000 beebbeeb &#x27;Gem is dead and replaced by guybrush&#x27;
+        /* 00000178: sp  1 +1 */ 03000006
+        /* 0000017c: sp  2 +0 */ 5c000000
+        /* 00000180: sp  2 +1 */ 04000001
+        /* 00000184: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000018c: sp  0 +0 */ 00000003
+        /* 00000190: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000002c.html">Unknown002C</a><br/>
+initialized field in <a href="type0000004e.html">Unknown004E</a><br/>
+parent class <a href="type0000055e.html">%mtl_picinternet_soldier_belltower_c%</a><br/>
+</body>
+</html>

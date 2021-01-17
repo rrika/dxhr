@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00007c31</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown7C31</h1>
+		<pre>./tools/drmexplore pc-w/ det_sarifhq_rail_tutorial.drm n$[0xec]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown7C31 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00007d14.html">%sarifhq_labtutorial_soldier_belltower_c%</a>&gt; decl_0012_20fa_40 = {<a href="units.html#0000508c">unit object 0000508c</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00007c20.html">Unknown7C20</a>&gt; decl_0012_20e7_48 = {<a href="units.html#0000502e">unit object 0000502e</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00007c21.html">Unknown7C21</a>&gt; decl_0012_20e8_50 = {<a href="units.html#0000502b">unit object 0000502b</a>};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown7C31 : %triggervolume% {
+    // sizeof = 0x58
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_20fa_40 = TODO(0A);
+    instanceref decl_0012_20e7_48 = TODO(0A);
+    instanceref decl_0012_20e8_50 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+
+        /* 00000094: sp  0 +0 */ 00000000
+        /* 00000098: sp  0 +1 */ 0f000040 unnamed member 40
+        /* 0000009c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000000a4: sp  0 +0 */ 00000001
+        /* 000000a8: sp  0 +1 */ 0f000048 unnamed member 48
+        /* 000000ac: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000000b4: sp  0 +0 */ 00000002
+        /* 000000b8: sp  0 +1 */ 0f000050 unnamed member 50
+        /* 000000bc: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000000c4: sp  0 +0 */ 00000003
+        /* 000000c8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

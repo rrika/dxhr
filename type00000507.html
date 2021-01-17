@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000507</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>smartfloat_approachtarget</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x614]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class smartfloat_approachtarget : <a href="type0000050c.html">smartfloat_sampledevaluation</a> {
+    void method_09d4_0(<a href="type000004a3.html">symbol</a>, <a href="type00000511.html">smartscript</a>);
+    void method_0658_1(<a href="type00000511.html">smartscript</a>);
+    // referenced at <a href="type000005d9.html">float Unknown05D9::method_09e9_1(bool arg_0000_08e0_4, float arg_0000_09f5_8)</a>
+    void method_09e2_2(float, bool);
+    float method_09e4_3(bool, float, float, float, float);
+    float method_09e9_4(bool, bool, float, float, float);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class smartfloat_approachtarget : smartfloat_sampledevaluation {
+    // sizeof = 0x1
+    void method_09d4_0(symbol arg_008f_0192_0, smartscript arg_0089_value_4); // no bytecode
+    void method_0658_1(smartscript arg_0089_value_0); // no bytecode
+    void method_09e2_2(float arg_0000_value_0, bool arg_0000_09e3_4); // no bytecode
+    float method_09e4_3(bool arg_0000_09e5_4, float arg_0000_09e6_8, float arg_0000_09e7_c, float arg_0000_09e8_10, float arg_0000_09b6_14); // no bytecode
+    float method_09e9_4(bool arg_0000_09e5_4, bool arg_0000_09ea_5, float arg_0000_09e8_8, float arg_0000_09b6_c, float arg_0000_09eb_10); // no bytecode
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00000508.html">smartfloat_approachtarget_damping</a><br/>
+parent class <a href="type0000050c.html">smartfloat_sampledevaluation</a><br/>
+</body>
+</html>

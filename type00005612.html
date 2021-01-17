@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00005612</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown5612</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0xbcc]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown5612 : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000517.html">stickybool</a> decl_0849_1a3a_4 = TODO(0A);
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_1a3b_1();
+    // referenced at <a href="type00005612.html">async void Unknown5612::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_19f4_2();
+    // referenced at <a href="type00005612.html">async void Unknown5612::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_1a3c_3();
+    // referenced at <a href="type00005612.html">async void Unknown5612::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_1a3d_4();
+    void method_1a3e_5();
+    void method_1a3f_6();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown5612 : Unknown0578 {
+    // sizeof = 0x20
+    stickybool decl_0849_1a3a_4 = TODO(0A);
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        uberobjectevent local_14 = TODO(0A);
+        bool temp_24 = False;
+        bool temp_25 = False;
+        uberobjectevent local_28 = TODO(0A);
+
+        /* 000001d4: sp  0 +0 */ 00000000
+        /* 000001d8: sp  0 +1 */ 09000010 temp_10
+        /* 000001dc: sp  1 +1 */ 09000014 local_14
+        /* 000001e0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000001e4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001ec: sp  0 +1 */ 06000010 temp_10
+        /* 000001f0: sp  1 -1 */ 64000018
+
+        /* 000001f4: sp  0 +0 */ 00000001
+
+        /* 000001f8: sp  0 +0 */ 00000002
+        /* 000001fc: sp  0 +1 */ 09000024 temp_24
+        /* 00000200: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000204: sp  2 -2 */ 65000000 beebbeeb native bool stickybool::getValue()
+        /* 0000020c: sp  0 +1 */ 06000024 temp_24
+        /* 00000210: sp  1 +0 */ 50000000
+        /* 00000214: sp  1 -1 */ 6400000a
+
+        /* 00000218: sp  0 +0 */ 00000003
+
+        /* 0000021c: sp  0 +0 */ 00000004
+        /* 00000220: sp  0 +1 */ 04000001
+        /* 00000224: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000228: sp  2 -2 */ 65000000 beebbeeb native void stickybool::setStickyBool(bool arg_0000_value_0)
+
+        /* 00000230: sp  0 +0 */ 00000005
+        /* 00000234: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown5612::method_1a3b_3d()
+
+        /* 0000023c: sp  0 +0 */ 00000006
+        ---
+
+        /* 00000240: sp  0 +0 */ 00000007
+        /* 00000244: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown5612::method_19f4_3e()
+
+        /* 0000024c: sp  0 +0 */ 00000008
+        /* 00000250: sp  0 +0 */ 6300000b 00000009
+        /* 00000258: sp  0 +1 */ 09000025 temp_25
+        /* 0000025c: sp  1 +1 */ 09000028 local_28
+        /* 00000260: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000264: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000026c: sp  0 +1 */ 06000025 temp_25
+        /* 00000270: sp  1 -1 */ 64000003
+
+        /* 00000274: sp  0 +0 */ 0000000a
+        /* 00000278: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown5612::method_1a3c_3f()
+        ---
+
+        /* 00000254: sp  0 +0 */ 00000009
+        /* 00000258: sp  0 +1 */ 09000025 temp_25
+        /* 0000025c: sp  1 +1 */ 09000028 local_28
+        /* 00000260: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000264: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000026c: sp  0 +1 */ 06000025 temp_25
+        /* 00000270: sp  1 -1 */ 64000003
+
+        /* 00000274: sp  0 +0 */ 0000000a
+        /* 00000278: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown5612::method_1a3c_3f()
+        ---
+
+        /* 00000280: sp  0 +0 */ 0000000b
+        ---
+        /* 00000284: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1a3b_1() {
+        /* 00000294: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_19f4_2() {
+        /* 000002a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1a3c_3() {
+        /* 000002b4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1a3d_4() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 000002f4: sp  0 +0 */ 0000000c
+        /* 000002f8: sp  0 +1 */ 09000000 local_0
+        /* 000002fc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000304: sp  0 +0 */ 0000000d
+        /* 00000308: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1a3e_5() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000344: sp  0 +0 */ 0000000e
+        /* 00000348: sp  0 +1 */ 09000000 local_0
+        /* 0000034c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000354: sp  0 +0 */ 0000000f
+        /* 00000358: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1a3f_6() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000394: sp  0 +0 */ 00000010
+        /* 00000398: sp  0 +1 */ 09000000 local_0
+        /* 0000039c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000003a4: sp  0 +0 */ 00000011
+        /* 000003a8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00005615.html">%alarm%</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+</body>
+</html>

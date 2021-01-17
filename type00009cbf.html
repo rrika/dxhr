@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009cbf</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9CBF</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x56]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9CBF : <a href="type00009e45.html">Unknown9E45</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009b88.html">Unknown9B88</a>&gt; decl_0012_273a_3c = {<a href="units.html#00006b32">unit object 00006b32</a>};
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_2855_44 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00005617.html">%turret_floor%</a>&gt; decl_0012_2856_54 = {<a href="units.html#000077d7">unit object 000077d7</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009cc1.html">Unknown9CC1</a>&gt; decl_0012_0aa2_5c = {<a href="units.html#00006a4f">unit object 00006a4f</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_2857_64 = persistent(dtp:9DFB) {type=bool};
+    <a href="type0000051e.html">trophy</a> decl_0d70_2858_78 = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_2859_7c = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_273c_84 = persistent(dtp:9E19) {type=dword};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009b5e.html">Unknown9B5E</a>&gt; decl_0012_26a2_98 = {<a href="units.html#00006a62">unit object 00006a62</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009c3c.html">Unknown9C3C</a>&gt; decl_0012_285b_a0 = {<a href="units.html#000073de">unit object 000073de</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009b9f.html">Unknown9B9F</a>&gt; decl_0012_27ad_a8 = {<a href="units.html#00006a31">unit object 00006a31</a>};
+    void method_01dc_0();
+    void method_285c_1();
+    // referenced at <a href="type00009cbf.html">async void Unknown9CBF::method_0190_3()</a>
+    void method_0191_2(<a href="type000004a3.html">symbol</a>, enum <a href="type000004c4.html">conversationenum</a>);
+    void method_0190_3();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9CBF : Unknown9E45 {
+    // sizeof = 0xb0
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_273a_3c = TODO(0A);
+    objectivescriptablelocator decl_0963_2855_44 = TODO(0A);
+    instanceref decl_0012_2856_54 = TODO(0A);
+    instanceref decl_0012_0aa2_5c = TODO(0A);
+    smartscript decl_0089_2857_64 = TODO(0A);
+    trophy decl_0d70_2858_78 = TODO(0A);
+    sequencergraph decl_008c_2859_7c = TODO(0A);
+    smartscript decl_0089_273c_84 = TODO(0A);
+    instanceref decl_0012_26a2_98 = TODO(0A);
+    instanceref decl_0012_285b_a0 = TODO(0A);
+    instanceref decl_0012_27ad_a8 = TODO(0A);
+    async void method_01dc_0() {
+        Unknown9B9F local_0 = TODO(0B);
+        Unknown9B9F local_4 = TODO(0B);
+
+        /* 00000144: sp  0 +0 */ 00000000
+        /* 00000148: sp  0 +1 */ 04000001
+        /* 0000014c: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 00000150: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000158: sp  0 +0 */ 00000001
+        /* 0000015c: sp  0 +1 */ 09000004 local_4
+        /* 00000160: sp  1 +1 */ 0f0000a8 unnamed member a8
+        /* 00000164: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000016c: sp  0 +1 */ 0a000004 local_4
+        /* 00000170: sp  1 +0 */ 7e000000 00009b9f
+        /* 00000178: sp  1 +0 */ 1400002c
+        /* 0000017c: sp  1 +1 */ 09000000 local_0
+        /* 00000180: sp  2 +1 */ 0f0000a8 unnamed member a8
+        /* 00000184: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000018c: sp  1 +1 */ 0a000000 local_0
+        /* 00000190: sp  2 +0 */ 7e000000 00009b9f
+        /* 00000198: sp  2 -2 */ 69000000 beebbeeb void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000001a0: sp  0 +0 */ 00000002
+        /* 000001a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_285c_1() {
+        bool temp_0 = False;
+
+        /* 000001d4: sp  0 +0 */ 00000003
+        /* 000001d8: sp  0 +1 */ 09000000 temp_0
+        /* 000001dc: sp  1 +1 */ 0f000078 unnamed member 78
+        /* 000001e0: sp  2 -2 */ 65000000 beebbeeb native bool trophy::method_0a58_ffff()
+        /* 000001e8: sp  0 +1 */ 06000000 temp_0
+        /* 000001ec: sp  1 +0 */ 50000000
+        /* 000001f0: sp  1 -1 */ 64000004
+
+        /* 000001f4: sp  0 +0 */ 00000004
+        /* 000001f8: sp  0 +1 */ 0f000078 unnamed member 78
+        /* 000001fc: sp  1 -1 */ 65000000 beebbeeb native void trophy::method_01a7_ffff()
+        ---
+
+        /* 00000204: sp  0 +0 */ 00000005
+        /* 00000208: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0191_2(symbol arg_008f_0192_0, conversationenum arg_0193_0194_4) {
+        Unknown9B5E local_8 = TODO(0B);
+
+        /* 00000234: sp  0 +0 */ 00000006
+        /* 00000238: sp  0 +1 */ 09000008 local_8
+        /* 0000023c: sp  1 +1 */ 0f000098 unnamed member 98
+        /* 00000240: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000248: sp  0 +1 */ 0a000008 local_8
+        /* 0000024c: sp  1 +0 */ 7e000000 00009b5e
+        /* 00000254: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf6_ffff()
+
+        /* 0000025c: sp  0 +0 */ 00000007
+        /* 00000260: sp  0 +1 */ 0f0000a0 unnamed member a0
+        /* 00000264: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 0000026c: sp  0 +0 */ 00000008
+        /* 00000270: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0190_3() {
+        dword temp_0 = 0;
+        Unknown9B88 local_4 = TODO(0B);
+        %turret_floor% local_8 = TODO(0B);
+        Unknown9CC1 local_c = TODO(0B);
+        damagetype local_10 = TODO(0A);
+
+        /* 00000304: sp  0 +0 */ 00000009
+        /* 00000308: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown9CBF::method_285c_84()
+
+        /* 00000310: sp  0 +0 */ 0000000a
+        /* 00000314: sp  0 +1 */ 09000000 temp_0
+        /* 00000318: sp  1 +1 */ 0f000084 unnamed member 84
+        /* 0000031c: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000324: sp  0 +1 */ 08000000 temp_0
+        /* 00000328: sp  1 +1 */ 03000001
+        /* 0000032c: sp  2 -1 */ 3e000000
+        /* 00000330: sp  1 +1 */ 0f000084 unnamed member 84
+        /* 00000334: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 0000033c: sp  0 +0 */ 0000000b
+        /* 00000340: sp  0 +1 */ 0f000044 unnamed member 44
+        /* 00000344: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 0000034c: sp  0 +0 */ 0000000c
+        /* 00000350: sp  0 +1 */ 09000004 local_4
+        /* 00000354: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000358: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000360: sp  0 +1 */ 0a000004 local_4
+        /* 00000364: sp  1 +0 */ 7e000000 00009b88
+        /* 0000036c: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown9B88::method_273d_40()
+
+        /* 00000374: sp  0 +0 */ 0000000d
+        /* 00000378: sp  0 +1 */ 0f00007c unnamed member 7c
+        /* 0000037c: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0487_ffff()
+
+        /* 00000384: sp  0 +0 */ 0000000e
+        /* 00000388: sp  0 +1 */ 09000008 local_8
+        /* 0000038c: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 00000390: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000398: sp  0 +1 */ 0a000008 local_8
+        /* 0000039c: sp  1 +0 */ 7e000000 00005617
+        /* 000003a4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown5613::method_0801_3f()
+
+        /* 000003ac: sp  0 +0 */ 0000000f
+        /* 000003b0: sp  0 +1 */ 09000010 local_10
+        /* 000003b4: sp  1 +1 */ 0900000c local_c
+        /* 000003b8: sp  2 +1 */ 0f00005c unnamed member 5c
+        /* 000003bc: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000003c4: sp  1 +1 */ 0a00000c local_c
+        /* 000003c8: sp  2 +0 */ 7e000000 00009cc1
+        /* 000003d0: sp  2 -2 */ 69000000 beebbeeb void actor::method_062d_ffff(damagetype arg_062e_0025_0)
+
+        /* 000003d8: sp  0 +0 */ 00000010
+        /* 000003dc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00009b8f.html">Unknown9B8F</a><br/>
+initialized field in <a href="type00009e8a.html">Unknown9E8A</a><br/>
+parent class <a href="type00009e45.html">Unknown9E45</a><br/>
+</body>
+</html>

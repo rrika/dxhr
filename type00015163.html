@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00015163</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown15163</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega_restriced_area.drm n$[0x6e]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown15163 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004ec.html">objective</a> decl_0005_5eb7_40 = TODO(0A);
+    void method_0a45_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_01b9_1(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown15163 : %triggervolume% {
+    // sizeof = 0x48
+    stickybool field_4;
+    stickybool field_20;
+    objective decl_0005_5eb7_40 = TODO(0A);
+    async void method_0a45_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        health local_8 = TODO(0A);
+        playerref&lt;%human_player%&gt; local_c = TODO(0A);
+        dword temp_14 = 0;
+        sound local_18 = TODO(0A);
+        bool temp_1c = False;
+
+        /* 00000174: sp  0 +0 */ 00000000
+        /* 00000178: sp  0 +1 */ 0900001c temp_1c
+        /* 0000017c: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000180: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000188: sp  0 +1 */ 0600001c temp_1c
+        /* 0000018c: sp  1 -1 */ 6400001b
+
+        /* 00000190: sp  0 +0 */ 00000001
+
+        /* 00000194: sp  0 +0 */ 00000002
+        /* 00000198: sp  0 +1 */ 09000014 temp_14
+        /* 0000019c: sp  1 +1 */ 03000000
+        /* 000001a0: sp  2 +1 */ 03000064
+        /* 000001a4: sp  3 -3 */ 66000000 beebbeeb this-&gt;dword corebase::method_0550_ffff(dword arg_0000_0551_4, dword arg_0000_0552_8)
+
+        /* 000001ac: sp  0 +0 */ 00000003
+        /* 000001b0: sp  0 +1 */ 08000014 temp_14
+        /* 000001b4: sp  1 +1 */ 0300000b
+        /* 000001b8: sp  2 -1 */ 42000000
+        /* 000001bc: sp  1 +1 */ 03000000
+        /* 000001c0: sp  2 -1 */ 45000000
+        /* 000001c4: sp  1 -1 */ 6400000c
+
+        /* 000001c8: sp  0 +0 */ 00000004
+
+        /* 000001cc: sp  0 +0 */ 00000005
+
+        /* 000001d0: sp  0 +0 */ 00000006
+        /* 000001d4: sp  0 +1 */ 03000005
+        /* 000001d8: sp  1 +1 */ 09000008 local_8
+        /* 000001dc: sp  2 -2 */ 65000000 beebbeeb native void health::method_08c2_ffff(dword arg_0000_06c2_0)
+
+        /* 000001e4: sp  0 +0 */ 00000007
+        /* 000001e8: sp  0 +1 */ 09000018 local_18
+        /* 000001ec: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+
+        /* 000001f4: sp  0 +0 */ 00000008
+        ---
+
+        /* 000001f8: sp  0 +0 */ 00000009
+        ---
+
+        /* 000001fc: sp  0 +0 */ 0000000a
+        /* 00000200: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_01b9_1(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        playerref&lt;%human_player%&gt; local_8 = TODO(0A);
+        bool temp_10 = False;
+        %human_player% local_14 = TODO(0B);
+
+        /* 00000274: sp  0 +0 */ 0000000b
+        /* 00000278: sp  0 +1 */ 09000010 temp_10
+        /* 0000027c: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000280: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000288: sp  0 +1 */ 06000010 temp_10
+        /* 0000028c: sp  1 -1 */ 6400000b
+
+        /* 00000290: sp  0 +0 */ 0000000c
+        /* 00000294: sp  0 +1 */ 03000005
+        /* 00000298: sp  1 +1 */ 09000014 local_14
+        /* 0000029c: sp  2 +1 */ 09000008 local_8
+        /* 000002a0: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000002a8: sp  1 +1 */ 0a000014 local_14
+        /* 000002ac: sp  2 +0 */ 7e000000 00000552
+        /* 000002b4: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06c1_ffff(dword arg_0000_06c2_0)
+        ---
+
+        /* 000002bc: sp  0 +0 */ 0000000d
+        /* 000002c0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0001512a.html">Unknown1512A</a><br/>
+initialized field in <a href="type0001512d.html">Unknown1512D</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

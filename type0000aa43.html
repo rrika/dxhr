@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000aa43</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownAA43</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_underwater_elevator.drm n$[0x2]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownAA43 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa4e.html">%restricted_submarine_a%</a>&gt; decl_0012_2bff_40 = {<a href="units.html#0000810a">unit object 0000810a</a>};
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownAA43 : %triggervolume% {
+    // sizeof = 0x48
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_2bff_40 = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        %restricted_submarine_a% local_8 = TODO(0B);
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 09000008 local_8
+        /* 000000bc: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000000c0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000c8: sp  0 +1 */ 0a000008 local_8
+        /* 000000cc: sp  1 +0 */ 7e000000 0000aa4e
+        /* 000000d4: sp  1 -1 */ 6a000000 beebbeeb virtual void %restricted_submarine_a%::method_2c02_3d()
+
+        /* 000000dc: sp  0 +0 */ 00000001
+        /* 000000e0: sp  0 +1 */ 05000000 beebbeeb &#x27;Submarine leaving - Activated&#x27;
+        /* 000000e8: sp  1 +1 */ 03000003
+        /* 000000ec: sp  2 +0 */ 5c000000
+        /* 000000f0: sp  2 +1 */ 04000001
+        /* 000000f4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000000fc: sp  0 +0 */ 00000002
+        /* 00000100: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

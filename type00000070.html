@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000070</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown0070</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x9d]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown0070 : <a href="type0000059c.html">%dispatcher%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000073.html">Unknown0073</a>&gt; decl_0012_021e_4 = {<a href="units.html#000000c8">unit object 000000c8</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000072.html">Unknown0072</a>&gt; decl_0012_0220_c = {<a href="units.html#000000c9">unit object 000000c9</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000071.html">Unknown0071</a>&gt; decl_0012_0222_14 = {<a href="units.html#000000ca">unit object 000000ca</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000006f.html">Unknown006F</a>&gt; decl_0012_0224_1c = {<a href="units.html#000000cb">unit object 000000cb</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_0225_24 = persistent(dtp:046B) {type=dword};
+    <a href="type000004ec.html">objective</a> decl_0005_0226_38 = TODO(0A);
+    void method_0227_0();
+    // referenced at <a href="type0000006f.html">void Unknown006F::method_021a_0()</a>
+    // referenced at <a href="type00000071.html">void Unknown0071::method_000a_0()</a>
+    // referenced at <a href="type00000072.html">void Unknown0072::method_000a_0()</a>
+    // referenced at <a href="type00000073.html">void Unknown0073::method_000a_0()</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown0070 : %dispatcher% {
+    // sizeof = 0x40
+    instanceref decl_0012_021e_4 = TODO(0A);
+    instanceref decl_0012_0220_c = TODO(0A);
+    instanceref decl_0012_0222_14 = TODO(0A);
+    instanceref decl_0012_0224_1c = TODO(0A);
+    smartscript decl_0089_0225_24 = TODO(0A);
+    objective decl_0005_0226_38 = TODO(0A);
+    void method_0227_0() {
+        Unknown0071 local_0 = TODO(0B);
+        Unknown0072 local_4 = TODO(0B);
+        Unknown0073 local_8 = TODO(0B);
+        Unknown006F local_c = TODO(0B);
+        dword temp_10 = 0;
+
+        /* 00000114: sp  0 +0 */ 00000000
+        /* 00000118: sp  0 +1 */ 04000000
+        /* 0000011c: sp  1 +1 */ 09000000 local_0
+        /* 00000120: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000124: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000012c: sp  1 +1 */ 0a000000 local_0
+        /* 00000130: sp  2 +0 */ 7e000000 00000071
+        /* 00000138: sp  2 -2 */ 69000000 beebbeeb void Unknown0585::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 00000140: sp  0 +0 */ 00000001
+        /* 00000144: sp  0 +1 */ 04000000
+        /* 00000148: sp  1 +1 */ 09000004 local_4
+        /* 0000014c: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000150: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000158: sp  1 +1 */ 0a000004 local_4
+        /* 0000015c: sp  2 +0 */ 7e000000 00000072
+        /* 00000164: sp  2 -2 */ 69000000 beebbeeb void Unknown0585::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 0000016c: sp  0 +0 */ 00000002
+        /* 00000170: sp  0 +1 */ 04000000
+        /* 00000174: sp  1 +1 */ 09000008 local_8
+        /* 00000178: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 0000017c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000184: sp  1 +1 */ 0a000008 local_8
+        /* 00000188: sp  2 +0 */ 7e000000 00000073
+        /* 00000190: sp  2 -2 */ 69000000 beebbeeb void Unknown0585::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 00000198: sp  0 +0 */ 00000003
+        /* 0000019c: sp  0 +1 */ 04000000
+        /* 000001a0: sp  1 +1 */ 0900000c local_c
+        /* 000001a4: sp  2 +1 */ 0f00001c unnamed member 1c
+        /* 000001a8: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001b0: sp  1 +1 */ 0a00000c local_c
+        /* 000001b4: sp  2 +0 */ 7e000000 0000006f
+        /* 000001bc: sp  2 -2 */ 69000000 beebbeeb void Unknown0579::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 000001c4: sp  0 +0 */ 00000004
+        /* 000001c8: sp  0 +1 */ 09000010 temp_10
+        /* 000001cc: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000001d0: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 000001d8: sp  0 +1 */ 08000010 temp_10
+        /* 000001dc: sp  1 +1 */ 03000001
+        /* 000001e0: sp  2 -1 */ 3e000000
+        /* 000001e4: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000001e8: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 000001f0: sp  0 +0 */ 00000005
+        /* 000001f4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000006f.html">Unknown006F</a><br/>
+initialized field in <a href="type00000071.html">Unknown0071</a><br/>
+initialized field in <a href="type00000072.html">Unknown0072</a><br/>
+initialized field in <a href="type00000073.html">Unknown0073</a><br/>
+parent class <a href="type0000059c.html">%dispatcher%</a><br/>
+</body>
+</html>

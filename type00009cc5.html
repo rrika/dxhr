@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009cc5</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9CC5</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x5c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9CC5 : <a href="type00009e4d.html">%dlc_1_hangarspart2_sniper_specops_a%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000511.html">smartscript</a> decl_0089_2864_3c = persistent(dtp:9E04) {type=bool};
+    void method_01d7_0(<a href="type000004b2.html">aistate</a>, <a href="type000004b2.html">aistate</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9CC5 : %dlc_1_hangarspart2_sniper_specops_a% {
+    // sizeof = 0x50
+    stickybool field_4;
+    stickybool field_20;
+    smartscript decl_0089_2864_3c = TODO(0A);
+    async void method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4) {
+        bool temp_8 = False;
+        aistate local_c = TODO(0A);
+        bool temp_10 = False;
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 09000008 temp_8
+        /* 000000dc: sp  1 +1 */ 0900000c local_c
+        /* 000000e0: sp  2 +1 */ 09000004 arg_01d8_01da_4
+        /* 000000e4: sp  3 -3 */ 65000000 beebbeeb native bool aistate::isEqual(aistate arg_01d8_0594_4)
+        /* 000000ec: sp  0 +1 */ 06000008 temp_8
+        /* 000000f0: sp  1 -1 */ 6400001a
+
+        /* 000000f4: sp  0 +0 */ 00000001
+
+        /* 000000f8: sp  0 +0 */ 00000002
+        /* 000000fc: sp  0 +1 */ 04000001
+        /* 00000100: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000104: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000010c: sp  0 +0 */ 00000003
+        /* 00000110: sp  0 +1 */ 05000000 beebbeeb &#x27;SniperA - To Hostile - Bool = &#x27;
+        /* 00000118: sp  1 +1 */ 03000005
+        /* 0000011c: sp  2 +0 */ 5c000000
+        /* 00000120: sp  2 +1 */ 04000001
+        /* 00000124: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000012c: sp  0 +0 */ 00000004
+        /* 00000130: sp  0 +1 */ 09000010 temp_10
+        /* 00000134: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000138: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000140: sp  0 +1 */ 06000010 temp_10
+        /* 00000144: sp  1 +1 */ 03000005
+        /* 00000148: sp  2 +0 */ 5c000000
+        /* 0000014c: sp  2 +1 */ 04000001
+        /* 00000150: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0549_ffff(bool arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000158: sp  0 +0 */ 00000005
+        ---
+
+        /* 0000015c: sp  0 +0 */ 00000006
+        /* 00000160: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00009b8f.html">Unknown9B8F</a><br/>
+initialized field in <a href="type00009bca.html">Unknown9BCA</a><br/>
+initialized field in <a href="type00009bcb.html">Unknown9BCB</a><br/>
+initialized field in <a href="type00009e8a.html">Unknown9E8A</a><br/>
+parent class <a href="type00009e4d.html">%dlc_1_hangarspart2_sniper_specops_a%</a><br/>
+</body>
+</html>

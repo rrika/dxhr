@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00002a3e</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown2A3E</h1>
+		<pre>./tools/drmexplore pc-w/ det_city__masterunit.drm n$[0x6d1]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown2A3E : <a href="type000004f7.html">quest</a> {
+    <a href="type00000512.html">sound</a> decl_0027_15ad_4 = dtp:2A10:vo\eng\det1\public_address\SQ01\DET1_SQ01_ENV_ELIZ_001;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002a04.html">Unknown2A04</a>&gt; decl_0012_15af_8 = {<a href="units.html#0000084b">unit object 0000084b</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_15b0_10 = persistent(dtp:2A35) {type=bool};
+    <a href="type00000502.html">sequencergraph</a> decl_008c_15b1_24 = TODO(0A);
+    void method_159d_0();
+    void method_159e_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown2A3E : quest {
+    // sizeof = 0x2c
+    sound decl_0027_15ad_4 = TODO(0A);
+    instanceref decl_0012_15af_8 = TODO(0A);
+    smartscript decl_0089_15b0_10 = TODO(0A);
+    sequencergraph decl_008c_15b1_24 = TODO(0A);
+    void method_159d_0() {
+        Unknown2A04 local_0 = TODO(0B);
+        anchor local_4 = TODO(0A);
+
+        /* 000000f4: sp  0 +0 */ 00000000
+        /* 000000f8: sp  0 +1 */ 09000004 local_4
+        /* 000000fc: sp  1 +1 */ 09000000 local_0
+        /* 00000100: sp  2 +1 */ 0f000008 unnamed member 8
+        /* 00000104: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000010c: sp  1 +1 */ 0a000000 local_0
+        /* 00000110: sp  2 +0 */ 7e000000 00002a04
+        /* 00000118: sp  2 -2 */ 69000000 beebbeeb anchor instance::method_08d9_ffff()
+        /* 00000120: sp  0 +1 */ 09000004 local_4
+        /* 00000124: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000128: sp  2 -2 */ 65000000 beebbeeb native void sound::startSound1(anchor arg_00b8_06fa_0)
+
+        /* 00000130: sp  0 +0 */ 00000001
+        /* 00000134: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_159e_1() {
+        bool temp_0 = False;
+        symbol local_1 = TODO(0A);
+        symbol local_3 = TODO(0A);
+
+        /* 000001a4: sp  0 +0 */ 00000002
+        /* 000001a8: sp  0 +1 */ 09000000 temp_0
+        /* 000001ac: sp  1 +1 */ 0f000010 unnamed member 10
+        /* 000001b0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000001b8: sp  0 +1 */ 06000000 temp_0
+        /* 000001bc: sp  1 -1 */ 64000006
+
+        /* 000001c0: sp  0 +0 */ 00000003
+        /* 000001c4: sp  0 +1 */ 09000001 local_1
+        /* 000001c8: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000001cc: sp  2 -2 */ 65000000 beebbeeb native void sequencergraph::method_09d2_ffff(symbol arg_008f_05e2_0)
+        /* 000001d4: sp  0 +0 */ 63000005 00000004
+        /* 000001dc: sp  0 +1 */ 09000003 local_3
+        /* 000001e0: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000001e4: sp  2 -2 */ 65000000 beebbeeb native void sequencergraph::method_09d2_ffff(symbol arg_008f_05e2_0)
+
+        /* 000001ec: sp  0 +0 */ 00000005
+        ---
+
+        /* 000001d8: sp  0 +0 */ 00000004
+        /* 000001dc: sp  0 +1 */ 09000003 local_3
+        /* 000001e0: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000001e4: sp  2 -2 */ 65000000 beebbeeb native void sequencergraph::method_09d2_ffff(symbol arg_008f_05e2_0)
+
+        /* 000001ec: sp  0 +0 */ 00000005
+        ---
+        /* 000001f0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

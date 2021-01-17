@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0001468a</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1468A</h1>
+		<pre>./tools/drmexplore pc-w/ sha_tym_penthouse.drm n$[0x3f]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1468A : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011f49.html">Unknown11F49</a>&gt; decl_0012_53e3_40 = {<a href="units.html#0000bfe4">unit object 0000bfe4</a>};
+    <a href="type00000502.html">sequencergraph</a> decl_008c_5c9e_48 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00011f56.html">Unknown11F56</a>&gt; decl_0007_541b_50 = TODO(0A);
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1468A : %triggervolume% {
+    // sizeof = 0x54
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_53e3_40 = TODO(0A);
+    sequencergraph decl_008c_5c9e_48 = TODO(0A);
+    scenarioref&lt;Unknown11F56&gt; decl_0007_541b_50 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown11F49 local_8 = TODO(0B);
+        symbol local_c = TODO(0A);
+        Unknown11F56 local_10 = TODO(0B);
+
+        /* 000000f4: sp  0 +0 */ 00000000
+        /* 000000f8: sp  0 +1 */ 03ffffff
+        /* 000000fc: sp  1 +1 */ 09000008 local_8
+        /* 00000100: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 00000104: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000010c: sp  1 +1 */ 0a000008 local_8
+        /* 00000110: sp  2 +0 */ 7e000000 00011f49
+        /* 00000118: sp  2 +0 */ 140002e4
+        /* 0000011c: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 00000124: sp  0 +0 */ 00000001
+        /* 00000128: sp  0 +1 */ 0900000c local_c
+        /* 0000012c: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native void sequencergraph::method_09d2_ffff(symbol arg_008f_05e2_0)
+
+        /* 00000138: sp  0 +0 */ 00000002
+        /* 0000013c: sp  0 +1 */ 09000010 local_10
+        /* 00000140: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000144: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000014c: sp  0 +1 */ 0a000010 local_10
+        /* 00000150: sp  1 +0 */ 7e000000 00011f56
+        /* 00000158: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000160: sp  0 +0 */ 00000003
+        /* 00000164: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

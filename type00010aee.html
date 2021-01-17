@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00010aee</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown10AEE</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city__masterunit.drm n$[0x6ae]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown10AEE : <a href="type000004f7.html">quest</a> {
+    <a href="type000004e8.html">mission</a> decl_0944_0e9e_4 = TODO(0A);
+    <a href="type000004e8.html">mission</a> decl_0944_4a12_c = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_0ea0_14 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_4a13_1c = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_4a14_24 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_4a15_2c = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_4a16_34 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_0e7b_3c = persistent(dtp:10AE4) {type=dword};
+    <a href="type00000511.html">smartscript</a> decl_0089_4a34_50 = persistent(dtp:10AE5) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_13ff_64 = persistent(dtp:10AE6) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_4a35_78 = persistent(dtp:10AE7) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_4a36_8c = persistent(dtp:10AE8) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_4a37_a0 = persistent(dtp:0475) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00010aa2.html">Unknown10AA2</a>&gt; decl_0012_4a39_b4 = {<a href="units.html#0000bb03">unit object 0000bb03</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00010aa3.html">Unknown10AA3</a>&gt; decl_0007_4a18_bc = TODO(0A);
+    <a href="type0000051e.html">trophy</a> decl_0d70_0e84_c0 = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_4a3a_c4 = TODO(0A);
+    <a href="type000020ec.html">augmentationupgrade</a> decl_11fa_4a3b_cc = TODO(0A);
+    <a href="type0000051e.html">trophy</a> decl_0d70_4a3c_d8 = TODO(0A);
+    dword method_140b_0();
+    bool method_4a1b_1();
+    bool method_4a1c_2();
+    bool method_4a21_3();
+    bool method_4a1d_4();
+    // referenced at <a href="type00010aee.html">bool Unknown10AEE::method_13c3_12()</a>
+    bool method_4a23_5();
+    bool method_4a22_6();
+    bool method_4a24_7();
+    void method_13b5_8();
+    bool method_4a25_9();
+    void method_4a1e_a();
+    void method_4a1f_b();
+    void method_4a20_c();
+    void method_4a26_d();
+    void method_4a2d_e();
+    void method_4a27_f();
+    void method_4a28_10();
+    void method_13b9_11();
+    bool method_13c3_12();
+    bool method_13c2_13();
+    bool method_4a29_14();
+    bool method_4a2a_15();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown10AEE : quest {
+    // sizeof = 0xdc
+    mission decl_0944_0e9e_4 = TODO(0A);
+    mission decl_0944_4a12_c = TODO(0A);
+    objective decl_0005_0ea0_14 = TODO(0A);
+    objective decl_0005_4a13_1c = TODO(0A);
+    objective decl_0005_4a14_24 = TODO(0A);
+    objective decl_0005_4a15_2c = TODO(0A);
+    objective decl_0005_4a16_34 = TODO(0A);
+    smartscript decl_0089_0e7b_3c = TODO(0A);
+    smartscript decl_0089_4a34_50 = TODO(0A);
+    smartscript decl_0089_13ff_64 = TODO(0A);
+    smartscript decl_0089_4a35_78 = TODO(0A);
+    smartscript decl_0089_4a36_8c = TODO(0A);
+    smartscript decl_0089_4a37_a0 = TODO(0A);
+    instanceref decl_0012_4a39_b4 = TODO(0A);
+    scenarioref&lt;Unknown10AA3&gt; decl_0007_4a18_bc = TODO(0A);
+    trophy decl_0d70_0e84_c0 = TODO(0A);
+    sequencergraph decl_008c_4a3a_c4 = TODO(0A);
+    augmentationupgrade decl_11fa_4a3b_cc = TODO(0A);
+    trophy decl_0d70_4a3c_d8 = TODO(0A);
+    dword method_140b_0() {
+        bool temp_4 = False;
+        bool temp_5 = False;
+        bool temp_6 = False;
+        dword temp_8 = 0;
+
+        /* 00000354: sp  0 +0 */ 00000000
+        /* 00000358: sp  0 +1 */ 09000004 temp_4
+        /* 0000035c: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000360: sp  2 -2 */ 65000000 beebbeeb native bool mission::method_0946_ffff()
+        /* 00000368: sp  0 +1 */ 06000004 temp_4
+        /* 0000036c: sp  1 -1 */ 6400000f
+
+        /* 00000370: sp  0 +0 */ 00000001
+
+        /* 00000374: sp  0 +0 */ 00000002
+        /* 00000378: sp  0 +1 */ 09000005 temp_5
+        /* 0000037c: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 00000380: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000388: sp  0 +1 */ 06000005 temp_5
+        /* 0000038c: sp  1 -1 */ 64000005
+
+        /* 00000390: sp  0 +0 */ 00000003
+        /* 00000394: sp  0 +1 */ 03000001
+        /* 00000398: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 0000039c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+        ---
+
+        /* 000003a4: sp  0 +0 */ 00000004
+        /* 000003a8: sp  0 +0 */ 6300000b 00000005
+
+        /* 000003b0: sp  0 +0 */ 00000006
+        /* 000003b4: sp  0 +1 */ 03000000
+        /* 000003b8: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 000003bc: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 000003c4: sp  0 +0 */ 00000007
+        /* 000003c8: sp  0 +1 */ 0f0000c4 unnamed member c4
+        /* 000003cc: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0487_ffff()
+
+        /* 000003d4: sp  0 +0 */ 00000008
+
+        /* 000003d8: sp  0 +0 */ 00000009
+        ---
+
+        /* 000003ac: sp  0 +0 */ 00000005
+
+        /* 000003b0: sp  0 +0 */ 00000006
+        /* 000003b4: sp  0 +1 */ 03000000
+        /* 000003b8: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 000003bc: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 000003c4: sp  0 +0 */ 00000007
+        /* 000003c8: sp  0 +1 */ 0f0000c4 unnamed member c4
+        /* 000003cc: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0487_ffff()
+
+        /* 000003d4: sp  0 +0 */ 00000008
+
+        /* 000003d8: sp  0 +0 */ 00000009
+        ---
+        /* 000003dc: sp  0 +1 */ 09000006 temp_6
+        /* 000003e0: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000003e4: sp  2 -2 */ 65000000 beebbeeb native bool mission::method_07b7_ffff()
+        /* 000003ec: sp  0 +1 */ 06000006 temp_6
+        /* 000003f0: sp  1 -1 */ 64000005
+
+        /* 000003f4: sp  0 +0 */ 0000000a
+        /* 000003f8: sp  0 +1 */ 03000002
+        /* 000003fc: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000400: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+        ---
+
+        /* 00000408: sp  0 +0 */ 0000000b
+        /* 0000040c: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000410: sp  1 +1 */ 09000008 temp_8
+        /* 00000414: sp  2 +1 */ 0f00003c unnamed member 3c
+        /* 00000418: sp  3 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000420: sp  1 +1 */ 08000008 temp_8
+        /* 00000424: sp  2 -2 */ 2f000000
+        /* 00000428: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a1b_1() {
+        bool temp_4 = False;
+
+        /* 000006f4: sp  0 +0 */ 0000000d
+        /* 000006f8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000006fc: sp  1 +1 */ 09000004 temp_4
+        /* 00000700: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000704: sp  3 -2 */ 65000000 beebbeeb native bool mission::method_07b7_ffff()
+        /* 0000070c: sp  1 +1 */ 06000004 temp_4
+        /* 00000710: sp  2 -2 */ 2e000000
+        /* 00000714: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a1c_2() {
+        bool temp_4 = False;
+
+        /* 000007e4: sp  0 +0 */ 0000000f
+        /* 000007e8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000007ec: sp  1 +1 */ 09000004 temp_4
+        /* 000007f0: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000007f4: sp  3 -2 */ 65000000 beebbeeb native bool mission::method_0946_ffff()
+        /* 000007fc: sp  1 +1 */ 06000004 temp_4
+        /* 00000800: sp  2 -2 */ 2e000000
+        /* 00000804: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a21_3() {
+        bool temp_4 = False;
+
+        /* 00000834: sp  0 +0 */ 00000011
+        /* 00000838: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000083c: sp  1 +1 */ 09000004 temp_4
+        /* 00000840: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000844: sp  3 -2 */ 65000000 beebbeeb native bool mission::method_0946_ffff()
+        /* 0000084c: sp  1 +1 */ 06000004 temp_4
+        /* 00000850: sp  2 -2 */ 2e000000
+        /* 00000854: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a1d_4() {
+        bool temp_4 = False;
+
+        /* 00000884: sp  0 +0 */ 00000013
+        /* 00000888: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000088c: sp  1 +1 */ 09000004 temp_4
+        /* 00000890: sp  2 +1 */ 0f000034 unnamed member 34
+        /* 00000894: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 0000089c: sp  1 +1 */ 06000004 temp_4
+        /* 000008a0: sp  2 -2 */ 2e000000
+        /* 000008a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a23_5() {
+        bool temp_4 = False;
+
+        /* 000008d4: sp  0 +0 */ 00000015
+        /* 000008d8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000008dc: sp  1 +1 */ 09000004 temp_4
+        /* 000008e0: sp  2 +1 */ 0f000050 unnamed member 50
+        /* 000008e4: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000008ec: sp  1 +1 */ 06000004 temp_4
+        /* 000008f0: sp  2 +1 */ 04000000
+        /* 000008f4: sp  3 -1 */ 46000000
+        /* 000008f8: sp  2 -2 */ 2e000000
+        /* 000008fc: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a22_6() {
+        bool temp_4 = False;
+
+        /* 00000934: sp  0 +0 */ 00000017
+        /* 00000938: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000093c: sp  1 +1 */ 09000004 temp_4
+        /* 00000940: sp  2 +1 */ 0f000050 unnamed member 50
+        /* 00000944: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000094c: sp  1 +1 */ 06000004 temp_4
+        /* 00000950: sp  2 -2 */ 2e000000
+        /* 00000954: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a24_7() {
+        bool temp_4 = False;
+
+        /* 00000984: sp  0 +0 */ 00000019
+        /* 00000988: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000098c: sp  1 +1 */ 09000004 temp_4
+        /* 00000990: sp  2 +1 */ 0f000050 unnamed member 50
+        /* 00000994: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000099c: sp  1 +1 */ 06000004 temp_4
+        /* 000009a0: sp  2 +1 */ 04000000
+        /* 000009a4: sp  3 -1 */ 46000000
+        /* 000009a8: sp  2 -2 */ 2e000000
+        /* 000009ac: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_13b5_8() {
+
+        /* 000009c4: sp  0 +0 */ 0000001b
+        /* 000009c8: sp  0 +1 */ 04000001
+        /* 000009cc: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 000009d0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000009d8: sp  0 +0 */ 0000001c
+        /* 000009dc: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a25_9() {
+        bool temp_4 = False;
+
+        /* 00000a04: sp  0 +0 */ 0000001d
+        /* 00000a08: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000a0c: sp  1 +1 */ 09000004 temp_4
+        /* 00000a10: sp  2 +1 */ 0f000050 unnamed member 50
+        /* 00000a14: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000a1c: sp  1 +1 */ 06000004 temp_4
+        /* 00000a20: sp  2 -2 */ 2e000000
+        /* 00000a24: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_4a1e_a() {
+
+        /* 00000434: sp  0 +0 */ 0000001f
+        /* 00000438: sp  0 +1 */ 04000001
+        /* 0000043c: sp  1 +1 */ 0f000078 unnamed member 78
+        /* 00000440: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000448: sp  0 +0 */ 00000020
+        /* 0000044c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_4a1f_b() {
+
+        /* 00000454: sp  0 +0 */ 00000021
+        /* 00000458: sp  0 +1 */ 04000001
+        /* 0000045c: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000460: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000468: sp  0 +0 */ 00000022
+        /* 0000046c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_4a20_c() {
+
+        /* 00000474: sp  0 +0 */ 00000023
+        /* 00000478: sp  0 +1 */ 04000001
+        /* 0000047c: sp  1 +1 */ 0f00008c unnamed member 8c
+        /* 00000480: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000488: sp  0 +0 */ 00000024
+        /* 0000048c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_4a26_d() {
+
+        /* 00000494: sp  0 +0 */ 00000025
+        /* 00000498: sp  0 +1 */ 04000001
+        /* 0000049c: sp  1 +1 */ 0f0000a0 unnamed member a0
+        /* 000004a0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000004a8: sp  0 +0 */ 00000026
+        /* 000004ac: sp  0 +1 */ 0f0000c0 unnamed member c0
+        /* 000004b0: sp  1 -1 */ 65000000 beebbeeb native void trophy::method_01a7_ffff()
+
+        /* 000004b8: sp  0 +0 */ 00000027
+        /* 000004bc: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_4a2d_e() {
+        Unknown10AA2 local_0 = TODO(0B);
+
+        /* 000004e4: sp  0 +0 */ 00000028
+        /* 000004e8: sp  0 +1 */ 09000000 local_0
+        /* 000004ec: sp  1 +1 */ 0f0000b4 unnamed member b4
+        /* 000004f0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000004f8: sp  0 +1 */ 0a000000 local_0
+        /* 000004fc: sp  1 +0 */ 7e000000 00010aa2
+        /* 00000504: sp  1 -1 */ 69000000 beebbeeb void actor::method_063a_ffff()
+
+        /* 0000050c: sp  0 +0 */ 00000029
+        /* 00000510: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_4a27_f() {
+
+        /* 00000524: sp  0 +0 */ 0000002a
+        /* 00000528: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 0000052c: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000534: sp  0 +0 */ 0000002b
+        /* 00000538: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 0000053c: sp  1 -1 */ 65000000 beebbeeb native void mission::disableObjective()
+
+        /* 00000544: sp  0 +0 */ 0000002c
+        /* 00000548: sp  0 +1 */ 0f0000c4 unnamed member c4
+        /* 0000054c: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0487_ffff()
+
+        /* 00000554: sp  0 +0 */ 0000002d
+        /* 00000558: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_4a28_10() {
+        Unknown10AA3 local_0 = TODO(0B);
+
+        /* 00000584: sp  0 +0 */ 0000002e
+        /* 00000588: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 0000058c: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+
+        /* 00000594: sp  0 +0 */ 0000002f
+        /* 00000598: sp  0 +1 */ 09000000 local_0
+        /* 0000059c: sp  1 +1 */ 0f0000bc unnamed member bc
+        /* 000005a0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000005a8: sp  0 +1 */ 0a000000 local_0
+        /* 000005ac: sp  1 +0 */ 7e000000 00010aa3
+        /* 000005b4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000005bc: sp  0 +0 */ 00000030
+        /* 000005c0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_13b9_11() {
+
+        /* 000005d4: sp  0 +0 */ 00000031
+        /* 000005d8: sp  0 +1 */ 0f00000c unnamed member c
+        /* 000005dc: sp  1 -1 */ 65000000 beebbeeb native void mission::disableObjective()
+
+        /* 000005e4: sp  0 +0 */ 00000032
+        /* 000005e8: sp  0 +1 */ 0f0000d8 unnamed member d8
+        /* 000005ec: sp  1 -1 */ 65000000 beebbeeb native void trophy::method_01a7_ffff()
+
+        /* 000005f4: sp  0 +0 */ 00000033
+        /* 000005f8: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_13c3_12() {
+        bool temp_4 = False;
+        bool temp_5 = False;
+
+        /* 00000634: sp  0 +0 */ 00000034
+        /* 00000638: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000063c: sp  1 +1 */ 09000004 temp_4
+        /* 00000640: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000644: sp  3 -2 */ 65000000 beebbeeb native bool mission::method_07b7_ffff()
+        /* 0000064c: sp  1 +1 */ 06000004 temp_4
+        /* 00000650: sp  2 +1 */ 09000005 temp_5
+        /* 00000654: sp  3 -1 */ 68000000 beebbeeb this-&gt;virtual bool Unknown10AEE::method_4a1d_15()
+        /* 0000065c: sp  2 +1 */ 06000005 temp_5
+        /* 00000660: sp  3 +1 */ 04000000
+        /* 00000664: sp  4 -1 */ 46000000
+        /* 00000668: sp  3 -1 */ 51000000
+        /* 0000066c: sp  2 -2 */ 2e000000
+        /* 00000670: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_13c2_13() {
+        bool temp_4 = False;
+
+        /* 000006a4: sp  0 +0 */ 00000036
+        /* 000006a8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000006ac: sp  1 +1 */ 09000004 temp_4
+        /* 000006b0: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000006b4: sp  3 -2 */ 65000000 beebbeeb native bool mission::method_07b7_ffff()
+        /* 000006bc: sp  1 +1 */ 06000004 temp_4
+        /* 000006c0: sp  2 -2 */ 2e000000
+        /* 000006c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a29_14() {
+        bool temp_4 = False;
+
+        /* 00000744: sp  0 +0 */ 00000038
+        /* 00000748: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000074c: sp  1 +1 */ 09000004 temp_4
+        /* 00000750: sp  2 +1 */ 0f0000cc unnamed member cc
+        /* 00000754: sp  3 -2 */ 65000000 beebbeeb native bool augmentationupgrade::method_12f5_ffff()
+        /* 0000075c: sp  1 +1 */ 06000004 temp_4
+        /* 00000760: sp  2 -2 */ 2e000000
+        /* 00000764: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_4a2a_15() {
+        bool temp_4 = False;
+
+        /* 00000794: sp  0 +0 */ 0000003a
+        /* 00000798: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000079c: sp  1 +1 */ 09000004 temp_4
+        /* 000007a0: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000007a4: sp  3 -2 */ 65000000 beebbeeb native bool mission::method_07b7_ffff()
+        /* 000007ac: sp  1 +1 */ 06000004 temp_4
+        /* 000007b0: sp  2 -2 */ 2e000000
+        /* 000007b4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

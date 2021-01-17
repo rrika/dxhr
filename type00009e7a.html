@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009e7a</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%lifepod_a%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6e6]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %lifepod_a% : <a href="type000004df.html">instance</a> {
+    void method_206e_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %lifepod_a% : instance {
+    // sizeof = 0x1
+    void method_206e_0() {
+        bool temp_0 = False;
+        animgraphtransition local_8 = TODO(0A);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000000 temp_0
+        /* 000000cc: sp  1 +1 */ 09000008 local_8
+        /* 000000d0: sp  2 -2 */ 66000000 beebbeeb this-&gt;bool instance::method_08d6_ffff(animgraphtransition arg_08d7_08d8_8)
+        /* 000000d8: sp  0 +1 */ 06000000 temp_0
+        /* 000000dc: sp  1 -1 */ 01000000
+
+        /* 000000e0: sp  0 +0 */ 00000001
+        /* 000000e4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00009e8a.html">Unknown9E8A</a><br/>
+parent class <a href="type000004df.html">instance</a><br/>
+unit object #436 null<br/>
+</body>
+</html>

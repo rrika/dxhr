@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0001514a</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1514A</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega_restriced_area.drm n$[0x54]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1514A : <a href="type000151ad.html">Unknown151AD</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000512.html">sound</a> field_3c;
+    <a href="type00000512.html">sound</a> field_40;
+    <a href="type00000512.html">sound</a> field_44;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00015139.html">Unknown15139</a>&gt; decl_0012_5ed0_4c = {<a href="units.html#000111e7">unit object 000111e7</a>};
+    <a href="type000004ec.html">objective</a> decl_0005_5ee2_54 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ee4_5c = {<a href="units.html#000111e8">unit object 000111e8</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ee5_64 = {<a href="units.html#000111e9">unit object 000111e9</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ee6_6c = {<a href="units.html#000111ea">unit object 000111ea</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ee7_74 = {<a href="units.html#000111eb">unit object 000111eb</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00015128.html">Unknown15128</a>&gt; decl_0012_5ee9_7c = {<a href="units.html#000111ec">unit object 000111ec</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5eea_84 = {<a href="units.html#000111ed">unit object 000111ed</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5eeb_8c = {<a href="units.html#000111ee">unit object 000111ee</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5eec_94 = {<a href="units.html#000111ef">unit object 000111ef</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5eed_9c = {<a href="units.html#000111f0">unit object 000111f0</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5eee_a4 = {<a href="units.html#000111f1">unit object 000111f1</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5eef_ac = {<a href="units.html#000111f2">unit object 000111f2</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ef0_b4 = {<a href="units.html#000111f3">unit object 000111f3</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ef1_bc = {<a href="units.html#000111f4">unit object 000111f4</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ef2_c4 = {<a href="units.html#000111f5">unit object 000111f5</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00015129.html">Unknown15129</a>&gt; decl_0012_5ef4_cc = {<a href="units.html#000111f6">unit object 000111f6</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ef5_d4 = {<a href="units.html#000111f7">unit object 000111f7</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ef6_dc = {<a href="units.html#000111f8">unit object 000111f8</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ef7_e4 = {<a href="units.html#000111f9">unit object 000111f9</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ef8_ec = {<a href="units.html#000111fa">unit object 000111fa</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5ef9_f4 = {<a href="units.html#000111fb">unit object 000111fb</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5efa_fc = {<a href="units.html#000111fc">unit object 000111fc</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5efb_104 = {<a href="units.html#000111fd">unit object 000111fd</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5efc_10c = {<a href="units.html#000111fe">unit object 000111fe</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5efd_114 = {<a href="units.html#000111ff">unit object 000111ff</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5efe_11c = {<a href="units.html#00011200">unit object 00011200</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5eff_124 = {<a href="units.html#00011201">unit object 00011201</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f00_12c = {<a href="units.html#00011202">unit object 00011202</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f01_134 = {<a href="units.html#00011203">unit object 00011203</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f02_13c = {<a href="units.html#00011204">unit object 00011204</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f03_144 = {<a href="units.html#00011205">unit object 00011205</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f04_14c = {<a href="units.html#00011206">unit object 00011206</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f05_154 = {<a href="units.html#00011207">unit object 00011207</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f06_15c = {<a href="units.html#00011208">unit object 00011208</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f07_164 = {<a href="units.html#00011209">unit object 00011209</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f08_16c = {<a href="units.html#0001120a">unit object 0001120a</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f09_174 = {<a href="units.html#0001120b">unit object 0001120b</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f0a_17c = {<a href="units.html#0001120c">unit object 0001120c</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f0b_184 = {<a href="units.html#0001120d">unit object 0001120d</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f0c_18c = {<a href="units.html#0001120e">unit object 0001120e</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f0d_194 = {<a href="units.html#0001120f">unit object 0001120f</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f0e_19c = {<a href="units.html#00011210">unit object 00011210</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f0f_1a4 = {<a href="units.html#00011211">unit object 00011211</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f10_1ac = {<a href="units.html#00011212">unit object 00011212</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f11_1b4 = {<a href="units.html#00011213">unit object 00011213</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f12_1bc = {<a href="units.html#00011214">unit object 00011214</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f13_1c4 = {<a href="units.html#00011215">unit object 00011215</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f14_1cc = {<a href="units.html#00011216">unit object 00011216</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f15_1d4 = {<a href="units.html#00011217">unit object 00011217</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f16_1dc = {<a href="units.html#00011218">unit object 00011218</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f17_1e4 = {<a href="units.html#00011219">unit object 00011219</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f18_1ec = {<a href="units.html#0001121a">unit object 0001121a</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00015127.html">Unknown15127</a>&gt; decl_0012_5f1a_1f4 = {<a href="units.html#0001121b">unit object 0001121b</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f1b_1fc = {<a href="units.html#0001121c">unit object 0001121c</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f1c_204 = {<a href="units.html#0001121d">unit object 0001121d</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f1d_20c = {<a href="units.html#0001121e">unit object 0001121e</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011d41.html">%ao_muscle_body_a%</a>&gt; decl_0012_5f1e_214 = {<a href="units.html#0001121f">unit object 0001121f</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00015152.html">Unknown15152</a>&gt; decl_0012_5f20_21c = {<a href="units.html#00011220">unit object 00011220</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014a9f.html">Unknown14A9F</a>&gt; decl_0007_5da8_224 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014a9e.html">Unknown14A9E</a>&gt; decl_0007_5daa_228 = TODO(0A);
+    <a href="type0000051e.html">trophy</a> decl_0d70_5f21_22c = TODO(0A);
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_230 = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_5f22_238 = TODO(0A);
+    void method_0190_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1514A : Unknown151AD {
+    // sizeof = 0x240
+    stickybool field_4;
+    stickybool field_20;
+    sound field_3c;
+    sound field_40;
+    sound field_44;
+    instanceref decl_0012_5ed0_4c = TODO(0A);
+    objective decl_0005_5ee2_54 = TODO(0A);
+    instanceref decl_0012_5ee4_5c = TODO(0A);
+    instanceref decl_0012_5ee5_64 = TODO(0A);
+    instanceref decl_0012_5ee6_6c = TODO(0A);
+    instanceref decl_0012_5ee7_74 = TODO(0A);
+    instanceref decl_0012_5ee9_7c = TODO(0A);
+    instanceref decl_0012_5eea_84 = TODO(0A);
+    instanceref decl_0012_5eeb_8c = TODO(0A);
+    instanceref decl_0012_5eec_94 = TODO(0A);
+    instanceref decl_0012_5eed_9c = TODO(0A);
+    instanceref decl_0012_5eee_a4 = TODO(0A);
+    instanceref decl_0012_5eef_ac = TODO(0A);
+    instanceref decl_0012_5ef0_b4 = TODO(0A);
+    instanceref decl_0012_5ef1_bc = TODO(0A);
+    instanceref decl_0012_5ef2_c4 = TODO(0A);
+    instanceref decl_0012_5ef4_cc = TODO(0A);
+    instanceref decl_0012_5ef5_d4 = TODO(0A);
+    instanceref decl_0012_5ef6_dc = TODO(0A);
+    instanceref decl_0012_5ef7_e4 = TODO(0A);
+    instanceref decl_0012_5ef8_ec = TODO(0A);
+    instanceref decl_0012_5ef9_f4 = TODO(0A);
+    instanceref decl_0012_5efa_fc = TODO(0A);
+    instanceref decl_0012_5efb_104 = TODO(0A);
+    instanceref decl_0012_5efc_10c = TODO(0A);
+    instanceref decl_0012_5efd_114 = TODO(0A);
+    instanceref decl_0012_5efe_11c = TODO(0A);
+    instanceref decl_0012_5eff_124 = TODO(0A);
+    instanceref decl_0012_5f00_12c = TODO(0A);
+    instanceref decl_0012_5f01_134 = TODO(0A);
+    instanceref decl_0012_5f02_13c = TODO(0A);
+    instanceref decl_0012_5f03_144 = TODO(0A);
+    instanceref decl_0012_5f04_14c = TODO(0A);
+    instanceref decl_0012_5f05_154 = TODO(0A);
+    instanceref decl_0012_5f06_15c = TODO(0A);
+    instanceref decl_0012_5f07_164 = TODO(0A);
+    instanceref decl_0012_5f08_16c = TODO(0A);
+    instanceref decl_0012_5f09_174 = TODO(0A);
+    instanceref decl_0012_5f0a_17c = TODO(0A);
+    instanceref decl_0012_5f0b_184 = TODO(0A);
+    instanceref decl_0012_5f0c_18c = TODO(0A);
+    instanceref decl_0012_5f0d_194 = TODO(0A);
+    instanceref decl_0012_5f0e_19c = TODO(0A);
+    instanceref decl_0012_5f0f_1a4 = TODO(0A);
+    instanceref decl_0012_5f10_1ac = TODO(0A);
+    instanceref decl_0012_5f11_1b4 = TODO(0A);
+    instanceref decl_0012_5f12_1bc = TODO(0A);
+    instanceref decl_0012_5f13_1c4 = TODO(0A);
+    instanceref decl_0012_5f14_1cc = TODO(0A);
+    instanceref decl_0012_5f15_1d4 = TODO(0A);
+    instanceref decl_0012_5f16_1dc = TODO(0A);
+    instanceref decl_0012_5f17_1e4 = TODO(0A);
+    instanceref decl_0012_5f18_1ec = TODO(0A);
+    instanceref decl_0012_5f1a_1f4 = TODO(0A);
+    instanceref decl_0012_5f1b_1fc = TODO(0A);
+    instanceref decl_0012_5f1c_204 = TODO(0A);
+    instanceref decl_0012_5f1d_20c = TODO(0A);
+    instanceref decl_0012_5f1e_214 = TODO(0A);
+    instanceref decl_0012_5f20_21c = TODO(0A);
+    scenarioref&lt;Unknown14A9F&gt; decl_0007_5da8_224 = TODO(0A);
+    scenarioref&lt;Unknown14A9E&gt; decl_0007_5daa_228 = TODO(0A);
+    trophy decl_0d70_5f21_22c = TODO(0A);
+    playerref decl_012a_012c_230 = TODO(0A);
+    sequencergraph decl_008c_5f22_238 = TODO(0A);
+    async void method_0190_0() {
+        music local_0 = TODO(0A);
+        symbol local_8 = TODO(0A);
+        bool temp_a = False;
+        %human_player% local_c = TODO(0B);
+        Unknown14A9E local_10 = TODO(0B);
+        Unknown14A9F local_14 = TODO(0B);
+        Unknown15139 local_18 = TODO(0B);
+        Unknown15139 local_1c = TODO(0B);
+        %ao_muscle_body_a% local_20 = TODO(0B);
+        %ao_muscle_body_a% local_24 = TODO(0B);
+        %ao_muscle_body_a% local_28 = TODO(0B);
+        %ao_muscle_body_a% local_2c = TODO(0B);
+        Unknown15128 local_30 = TODO(0B);
+        %ao_muscle_body_a% local_34 = TODO(0B);
+        %ao_muscle_body_a% local_38 = TODO(0B);
+        %ao_muscle_body_a% local_3c = TODO(0B);
+        %ao_muscle_body_a% local_40 = TODO(0B);
+        %ao_muscle_body_a% local_44 = TODO(0B);
+        %ao_muscle_body_a% local_48 = TODO(0B);
+        %ao_muscle_body_a% local_4c = TODO(0B);
+        %ao_muscle_body_a% local_50 = TODO(0B);
+        %ao_muscle_body_a% local_54 = TODO(0B);
+        Unknown15129 local_58 = TODO(0B);
+        %ao_muscle_body_a% local_5c = TODO(0B);
+        %ao_muscle_body_a% local_60 = TODO(0B);
+        %ao_muscle_body_a% local_64 = TODO(0B);
+        %ao_muscle_body_a% local_68 = TODO(0B);
+        %ao_muscle_body_a% local_6c = TODO(0B);
+        %ao_muscle_body_a% local_70 = TODO(0B);
+        %ao_muscle_body_a% local_74 = TODO(0B);
+        %ao_muscle_body_a% local_78 = TODO(0B);
+        %ao_muscle_body_a% local_7c = TODO(0B);
+        %ao_muscle_body_a% local_80 = TODO(0B);
+        %ao_muscle_body_a% local_84 = TODO(0B);
+        %ao_muscle_body_a% local_88 = TODO(0B);
+        %ao_muscle_body_a% local_8c = TODO(0B);
+        %ao_muscle_body_a% local_90 = TODO(0B);
+        %ao_muscle_body_a% local_94 = TODO(0B);
+        %ao_muscle_body_a% local_98 = TODO(0B);
+        %ao_muscle_body_a% local_9c = TODO(0B);
+        %ao_muscle_body_a% local_a0 = TODO(0B);
+        %ao_muscle_body_a% local_a4 = TODO(0B);
+        %ao_muscle_body_a% local_a8 = TODO(0B);
+        %ao_muscle_body_a% local_ac = TODO(0B);
+        %ao_muscle_body_a% local_b0 = TODO(0B);
+        %ao_muscle_body_a% local_b4 = TODO(0B);
+        %ao_muscle_body_a% local_b8 = TODO(0B);
+        %ao_muscle_body_a% local_bc = TODO(0B);
+        %ao_muscle_body_a% local_c0 = TODO(0B);
+        %ao_muscle_body_a% local_c4 = TODO(0B);
+        %ao_muscle_body_a% local_c8 = TODO(0B);
+        %ao_muscle_body_a% local_cc = TODO(0B);
+        %ao_muscle_body_a% local_d0 = TODO(0B);
+        %ao_muscle_body_a% local_d4 = TODO(0B);
+        %ao_muscle_body_a% local_d8 = TODO(0B);
+        %ao_muscle_body_a% local_dc = TODO(0B);
+        %ao_muscle_body_a% local_e0 = TODO(0B);
+        %ao_muscle_body_a% local_e4 = TODO(0B);
+        %ao_muscle_body_a% local_e8 = TODO(0B);
+        Unknown15127 local_ec = TODO(0B);
+        %ao_muscle_body_a% local_f0 = TODO(0B);
+        %ao_muscle_body_a% local_f4 = TODO(0B);
+        %ao_muscle_body_a% local_f8 = TODO(0B);
+        %ao_muscle_body_a% local_fc = TODO(0B);
+        Unknown15152 local_100 = TODO(0B);
+        %human_player% local_104 = TODO(0B);
+        globaleffect local_108 = TODO(0A);
+
+        /* 00000624: sp  0 +0 */ 00000000
+        /* 00000628: sp  0 +1 */ 05000000 beebbeeb &#x27;namir outro&#x27;
+        /* 00000630: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085e_ffff(string arg_0000_056e_0)
+
+        /* 00000638: sp  0 +0 */ 00000001
+        /* 0000063c: sp  0 +1 */ 03000000
+        /* 00000640: sp  1 +0 */ 5c000000
+        /* 00000644: sp  1 +1 */ 09000000 local_0
+        /* 00000648: sp  2 -2 */ 65000000 beebbeeb native void music::method_0487_ffff(float arg_0000_0953_0)
+
+        /* 00000650: sp  0 +0 */ 00000002
+        /* 00000654: sp  0 +1 */ 09000008 local_8
+        /* 00000658: sp  1 +1 */ 0f000238 unnamed member 238
+        /* 0000065c: sp  2 -2 */ 65000000 beebbeeb native void sequencergraph::method_09d2_ffff(symbol arg_008f_05e2_0)
+
+        /* 00000664: sp  0 +0 */ 00000003
+        ---
+        /* 00000668: sp  0 +1 */ 0900000a temp_a
+        /* 0000066c: sp  1 +1 */ 0f000238 unnamed member 238
+        /* 00000670: sp  2 -2 */ 65000000 beebbeeb native bool sequencergraph::method_053c_ffff()
+        /* 00000678: sp  0 +1 */ 0600000a temp_a
+        /* 0000067c: sp  1 -1 */ 64000003
+
+        /* 00000680: sp  0 +0 */ 00000004
+        /* 00000684: sp  0 +0 */ 7c000000
+        /* 00000688: sp  0 +0 */ 63fffff6 00000005
+        /* 00000690: sp  0 +1 */ 0900000c local_c
+        /* 00000694: sp  1 +1 */ 0f000230 unnamed member 230
+        /* 00000698: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000006a0: sp  0 +1 */ 0a00000c local_c
+        /* 000006a4: sp  1 +0 */ 7e000000 00000552
+        /* 000006ac: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06ce_ffff()
+
+        /* 000006b4: sp  0 +0 */ 00000006
+        /* 000006b8: sp  0 +1 */ 09000010 local_10
+        /* 000006bc: sp  1 +1 */ 0f000228 unnamed member 228
+        /* 000006c0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000006c8: sp  0 +1 */ 0a000010 local_10
+        /* 000006cc: sp  1 +0 */ 7e000000 00014a9e
+        /* 000006d4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000006dc: sp  0 +0 */ 00000007
+        /* 000006e0: sp  0 +1 */ 04000001
+        /* 000006e4: sp  1 +1 */ 09000014 local_14
+        /* 000006e8: sp  2 +1 */ 0f000224 unnamed member 224
+        /* 000006ec: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000006f4: sp  1 +1 */ 0a000014 local_14
+        /* 000006f8: sp  2 +0 */ 7e000000 00014a9f
+        /* 00000700: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000708: sp  0 +0 */ 00000008
+        /* 0000070c: sp  0 +1 */ 09000018 local_18
+        /* 00000710: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 00000714: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000071c: sp  0 +1 */ 0a000018 local_18
+        /* 00000720: sp  1 +0 */ 7e000000 00015139
+        /* 00000728: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a7_40()
+
+        /* 00000730: sp  0 +0 */ 00000009
+        /* 00000734: sp  0 +1 */ 0900001c local_1c
+        /* 00000738: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 0000073c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000744: sp  0 +1 */ 0a00001c local_1c
+        /* 00000748: sp  1 +0 */ 7e000000 00015139
+        /* 00000750: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a6_41()
+
+        /* 00000758: sp  0 +0 */ 0000000a
+        /* 0000075c: sp  0 +1 */ 09000020 local_20
+        /* 00000760: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 00000764: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000076c: sp  0 +1 */ 0a000020 local_20
+        /* 00000770: sp  1 +0 */ 7e000000 00011d41
+        /* 00000778: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000780: sp  0 +0 */ 0000000b
+        /* 00000784: sp  0 +1 */ 09000024 local_24
+        /* 00000788: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 0000078c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000794: sp  0 +1 */ 0a000024 local_24
+        /* 00000798: sp  1 +0 */ 7e000000 00011d41
+        /* 000007a0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000007a8: sp  0 +0 */ 0000000c
+        /* 000007ac: sp  0 +1 */ 09000028 local_28
+        /* 000007b0: sp  1 +1 */ 0f00006c unnamed member 6c
+        /* 000007b4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000007bc: sp  0 +1 */ 0a000028 local_28
+        /* 000007c0: sp  1 +0 */ 7e000000 00011d41
+        /* 000007c8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000007d0: sp  0 +0 */ 0000000d
+        /* 000007d4: sp  0 +1 */ 0900002c local_2c
+        /* 000007d8: sp  1 +1 */ 0f000074 unnamed member 74
+        /* 000007dc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000007e4: sp  0 +1 */ 0a00002c local_2c
+        /* 000007e8: sp  1 +0 */ 7e000000 00011d41
+        /* 000007f0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000007f8: sp  0 +0 */ 0000000e
+        /* 000007fc: sp  0 +1 */ 09000030 local_30
+        /* 00000800: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000804: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000080c: sp  0 +1 */ 0a000030 local_30
+        /* 00000810: sp  1 +0 */ 7e000000 00015128
+        /* 00000818: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000820: sp  0 +0 */ 0000000f
+        /* 00000824: sp  0 +1 */ 09000034 local_34
+        /* 00000828: sp  1 +1 */ 0f000084 unnamed member 84
+        /* 0000082c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000834: sp  0 +1 */ 0a000034 local_34
+        /* 00000838: sp  1 +0 */ 7e000000 00011d41
+        /* 00000840: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000848: sp  0 +0 */ 00000010
+        /* 0000084c: sp  0 +1 */ 09000038 local_38
+        /* 00000850: sp  1 +1 */ 0f00008c unnamed member 8c
+        /* 00000854: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000085c: sp  0 +1 */ 0a000038 local_38
+        /* 00000860: sp  1 +0 */ 7e000000 00011d41
+        /* 00000868: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000870: sp  0 +0 */ 00000011
+        /* 00000874: sp  0 +1 */ 0900003c local_3c
+        /* 00000878: sp  1 +1 */ 0f000094 unnamed member 94
+        /* 0000087c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000884: sp  0 +1 */ 0a00003c local_3c
+        /* 00000888: sp  1 +0 */ 7e000000 00011d41
+        /* 00000890: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000898: sp  0 +0 */ 00000012
+        /* 0000089c: sp  0 +1 */ 09000040 local_40
+        /* 000008a0: sp  1 +1 */ 0f00009c unnamed member 9c
+        /* 000008a4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000008ac: sp  0 +1 */ 0a000040 local_40
+        /* 000008b0: sp  1 +0 */ 7e000000 00011d41
+        /* 000008b8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000008c0: sp  0 +0 */ 00000013
+        /* 000008c4: sp  0 +1 */ 09000044 local_44
+        /* 000008c8: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 000008cc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000008d4: sp  0 +1 */ 0a000044 local_44
+        /* 000008d8: sp  1 +0 */ 7e000000 00011d41
+        /* 000008e0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000008e8: sp  0 +0 */ 00000014
+        /* 000008ec: sp  0 +1 */ 09000048 local_48
+        /* 000008f0: sp  1 +1 */ 0f0000ac unnamed member ac
+        /* 000008f4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000008fc: sp  0 +1 */ 0a000048 local_48
+        /* 00000900: sp  1 +0 */ 7e000000 00011d41
+        /* 00000908: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000910: sp  0 +0 */ 00000015
+        /* 00000914: sp  0 +1 */ 0900004c local_4c
+        /* 00000918: sp  1 +1 */ 0f0000b4 unnamed member b4
+        /* 0000091c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000924: sp  0 +1 */ 0a00004c local_4c
+        /* 00000928: sp  1 +0 */ 7e000000 00011d41
+        /* 00000930: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000938: sp  0 +0 */ 00000016
+        /* 0000093c: sp  0 +1 */ 09000050 local_50
+        /* 00000940: sp  1 +1 */ 0f0000bc unnamed member bc
+        /* 00000944: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000094c: sp  0 +1 */ 0a000050 local_50
+        /* 00000950: sp  1 +0 */ 7e000000 00011d41
+        /* 00000958: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000960: sp  0 +0 */ 00000017
+        /* 00000964: sp  0 +1 */ 09000054 local_54
+        /* 00000968: sp  1 +1 */ 0f0000c4 unnamed member c4
+        /* 0000096c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000974: sp  0 +1 */ 0a000054 local_54
+        /* 00000978: sp  1 +0 */ 7e000000 00011d41
+        /* 00000980: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000988: sp  0 +0 */ 00000018
+        /* 0000098c: sp  0 +1 */ 09000058 local_58
+        /* 00000990: sp  1 +1 */ 0f0000cc unnamed member cc
+        /* 00000994: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000099c: sp  0 +1 */ 0a000058 local_58
+        /* 000009a0: sp  1 +0 */ 7e000000 00015129
+        /* 000009a8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000009b0: sp  0 +0 */ 00000019
+        /* 000009b4: sp  0 +1 */ 0900005c local_5c
+        /* 000009b8: sp  1 +1 */ 0f0000d4 unnamed member d4
+        /* 000009bc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000009c4: sp  0 +1 */ 0a00005c local_5c
+        /* 000009c8: sp  1 +0 */ 7e000000 00011d41
+        /* 000009d0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000009d8: sp  0 +0 */ 0000001a
+        /* 000009dc: sp  0 +1 */ 09000060 local_60
+        /* 000009e0: sp  1 +1 */ 0f0000dc unnamed member dc
+        /* 000009e4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000009ec: sp  0 +1 */ 0a000060 local_60
+        /* 000009f0: sp  1 +0 */ 7e000000 00011d41
+        /* 000009f8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000a00: sp  0 +0 */ 0000001b
+        /* 00000a04: sp  0 +1 */ 09000064 local_64
+        /* 00000a08: sp  1 +1 */ 0f0000e4 unnamed member e4
+        /* 00000a0c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a14: sp  0 +1 */ 0a000064 local_64
+        /* 00000a18: sp  1 +0 */ 7e000000 00011d41
+        /* 00000a20: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000a28: sp  0 +0 */ 0000001c
+        /* 00000a2c: sp  0 +1 */ 09000068 local_68
+        /* 00000a30: sp  1 +1 */ 0f0000ec unnamed member ec
+        /* 00000a34: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a3c: sp  0 +1 */ 0a000068 local_68
+        /* 00000a40: sp  1 +0 */ 7e000000 00011d41
+        /* 00000a48: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000a50: sp  0 +0 */ 0000001d
+        /* 00000a54: sp  0 +1 */ 0900006c local_6c
+        /* 00000a58: sp  1 +1 */ 0f0000f4 unnamed member f4
+        /* 00000a5c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a64: sp  0 +1 */ 0a00006c local_6c
+        /* 00000a68: sp  1 +0 */ 7e000000 00011d41
+        /* 00000a70: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000a78: sp  0 +0 */ 0000001e
+        /* 00000a7c: sp  0 +1 */ 09000070 local_70
+        /* 00000a80: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 00000a84: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a8c: sp  0 +1 */ 0a000070 local_70
+        /* 00000a90: sp  1 +0 */ 7e000000 00011d41
+        /* 00000a98: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000aa0: sp  0 +0 */ 0000001f
+        /* 00000aa4: sp  0 +1 */ 09000074 local_74
+        /* 00000aa8: sp  1 +1 */ 0f000104 unnamed member 104
+        /* 00000aac: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000ab4: sp  0 +1 */ 0a000074 local_74
+        /* 00000ab8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ac0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000ac8: sp  0 +0 */ 00000020
+        /* 00000acc: sp  0 +1 */ 09000078 local_78
+        /* 00000ad0: sp  1 +1 */ 0f00010c unnamed member 10c
+        /* 00000ad4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000adc: sp  0 +1 */ 0a000078 local_78
+        /* 00000ae0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ae8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000af0: sp  0 +0 */ 00000021
+        /* 00000af4: sp  0 +1 */ 0900007c local_7c
+        /* 00000af8: sp  1 +1 */ 0f000114 unnamed member 114
+        /* 00000afc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b04: sp  0 +1 */ 0a00007c local_7c
+        /* 00000b08: sp  1 +0 */ 7e000000 00011d41
+        /* 00000b10: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000b18: sp  0 +0 */ 00000022
+        /* 00000b1c: sp  0 +1 */ 09000080 local_80
+        /* 00000b20: sp  1 +1 */ 0f00011c unnamed member 11c
+        /* 00000b24: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b2c: sp  0 +1 */ 0a000080 local_80
+        /* 00000b30: sp  1 +0 */ 7e000000 00011d41
+        /* 00000b38: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000b40: sp  0 +0 */ 00000023
+        /* 00000b44: sp  0 +1 */ 09000084 local_84
+        /* 00000b48: sp  1 +1 */ 0f000124 unnamed member 124
+        /* 00000b4c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b54: sp  0 +1 */ 0a000084 local_84
+        /* 00000b58: sp  1 +0 */ 7e000000 00011d41
+        /* 00000b60: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000b68: sp  0 +0 */ 00000024
+        /* 00000b6c: sp  0 +1 */ 09000088 local_88
+        /* 00000b70: sp  1 +1 */ 0f00012c unnamed member 12c
+        /* 00000b74: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b7c: sp  0 +1 */ 0a000088 local_88
+        /* 00000b80: sp  1 +0 */ 7e000000 00011d41
+        /* 00000b88: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000b90: sp  0 +0 */ 00000025
+        /* 00000b94: sp  0 +1 */ 0900008c local_8c
+        /* 00000b98: sp  1 +1 */ 0f000134 unnamed member 134
+        /* 00000b9c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000ba4: sp  0 +1 */ 0a00008c local_8c
+        /* 00000ba8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000bb0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000bb8: sp  0 +0 */ 00000026
+        /* 00000bbc: sp  0 +1 */ 09000090 local_90
+        /* 00000bc0: sp  1 +1 */ 0f00013c unnamed member 13c
+        /* 00000bc4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000bcc: sp  0 +1 */ 0a000090 local_90
+        /* 00000bd0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000bd8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000be0: sp  0 +0 */ 00000027
+        /* 00000be4: sp  0 +1 */ 09000094 local_94
+        /* 00000be8: sp  1 +1 */ 0f000144 unnamed member 144
+        /* 00000bec: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000bf4: sp  0 +1 */ 0a000094 local_94
+        /* 00000bf8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000c00: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000c08: sp  0 +0 */ 00000028
+        /* 00000c0c: sp  0 +1 */ 09000098 local_98
+        /* 00000c10: sp  1 +1 */ 0f00014c unnamed member 14c
+        /* 00000c14: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c1c: sp  0 +1 */ 0a000098 local_98
+        /* 00000c20: sp  1 +0 */ 7e000000 00011d41
+        /* 00000c28: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000c30: sp  0 +0 */ 00000029
+        /* 00000c34: sp  0 +1 */ 0900009c local_9c
+        /* 00000c38: sp  1 +1 */ 0f000154 unnamed member 154
+        /* 00000c3c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c44: sp  0 +1 */ 0a00009c local_9c
+        /* 00000c48: sp  1 +0 */ 7e000000 00011d41
+        /* 00000c50: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000c58: sp  0 +0 */ 0000002a
+        /* 00000c5c: sp  0 +1 */ 090000a0 local_a0
+        /* 00000c60: sp  1 +1 */ 0f00015c unnamed member 15c
+        /* 00000c64: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c6c: sp  0 +1 */ 0a0000a0 local_a0
+        /* 00000c70: sp  1 +0 */ 7e000000 00011d41
+        /* 00000c78: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000c80: sp  0 +0 */ 0000002b
+        /* 00000c84: sp  0 +1 */ 090000a4 local_a4
+        /* 00000c88: sp  1 +1 */ 0f000164 unnamed member 164
+        /* 00000c8c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c94: sp  0 +1 */ 0a0000a4 local_a4
+        /* 00000c98: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ca0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000ca8: sp  0 +0 */ 0000002c
+        /* 00000cac: sp  0 +1 */ 090000a8 local_a8
+        /* 00000cb0: sp  1 +1 */ 0f00016c unnamed member 16c
+        /* 00000cb4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000cbc: sp  0 +1 */ 0a0000a8 local_a8
+        /* 00000cc0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000cc8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000cd0: sp  0 +0 */ 0000002d
+        /* 00000cd4: sp  0 +1 */ 090000ac local_ac
+        /* 00000cd8: sp  1 +1 */ 0f000174 unnamed member 174
+        /* 00000cdc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000ce4: sp  0 +1 */ 0a0000ac local_ac
+        /* 00000ce8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000cf0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000cf8: sp  0 +0 */ 0000002e
+        /* 00000cfc: sp  0 +1 */ 090000b0 local_b0
+        /* 00000d00: sp  1 +1 */ 0f00017c unnamed member 17c
+        /* 00000d04: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d0c: sp  0 +1 */ 0a0000b0 local_b0
+        /* 00000d10: sp  1 +0 */ 7e000000 00011d41
+        /* 00000d18: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000d20: sp  0 +0 */ 0000002f
+        /* 00000d24: sp  0 +1 */ 090000b4 local_b4
+        /* 00000d28: sp  1 +1 */ 0f000184 unnamed member 184
+        /* 00000d2c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d34: sp  0 +1 */ 0a0000b4 local_b4
+        /* 00000d38: sp  1 +0 */ 7e000000 00011d41
+        /* 00000d40: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000d48: sp  0 +0 */ 00000030
+        /* 00000d4c: sp  0 +1 */ 090000b8 local_b8
+        /* 00000d50: sp  1 +1 */ 0f00018c unnamed member 18c
+        /* 00000d54: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d5c: sp  0 +1 */ 0a0000b8 local_b8
+        /* 00000d60: sp  1 +0 */ 7e000000 00011d41
+        /* 00000d68: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000d70: sp  0 +0 */ 00000031
+        /* 00000d74: sp  0 +1 */ 090000bc local_bc
+        /* 00000d78: sp  1 +1 */ 0f000194 unnamed member 194
+        /* 00000d7c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d84: sp  0 +1 */ 0a0000bc local_bc
+        /* 00000d88: sp  1 +0 */ 7e000000 00011d41
+        /* 00000d90: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000d98: sp  0 +0 */ 00000032
+        /* 00000d9c: sp  0 +1 */ 090000c0 local_c0
+        /* 00000da0: sp  1 +1 */ 0f00019c unnamed member 19c
+        /* 00000da4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000dac: sp  0 +1 */ 0a0000c0 local_c0
+        /* 00000db0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000db8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000dc0: sp  0 +0 */ 00000033
+        /* 00000dc4: sp  0 +1 */ 090000c4 local_c4
+        /* 00000dc8: sp  1 +1 */ 0f0001a4 unnamed member 1a4
+        /* 00000dcc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000dd4: sp  0 +1 */ 0a0000c4 local_c4
+        /* 00000dd8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000de0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000de8: sp  0 +0 */ 00000034
+        /* 00000dec: sp  0 +1 */ 090000c8 local_c8
+        /* 00000df0: sp  1 +1 */ 0f0001ac unnamed member 1ac
+        /* 00000df4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000dfc: sp  0 +1 */ 0a0000c8 local_c8
+        /* 00000e00: sp  1 +0 */ 7e000000 00011d41
+        /* 00000e08: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000e10: sp  0 +0 */ 00000035
+        /* 00000e14: sp  0 +1 */ 090000cc local_cc
+        /* 00000e18: sp  1 +1 */ 0f0001b4 unnamed member 1b4
+        /* 00000e1c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e24: sp  0 +1 */ 0a0000cc local_cc
+        /* 00000e28: sp  1 +0 */ 7e000000 00011d41
+        /* 00000e30: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000e38: sp  0 +0 */ 00000036
+        /* 00000e3c: sp  0 +1 */ 090000d0 local_d0
+        /* 00000e40: sp  1 +1 */ 0f0001bc unnamed member 1bc
+        /* 00000e44: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e4c: sp  0 +1 */ 0a0000d0 local_d0
+        /* 00000e50: sp  1 +0 */ 7e000000 00011d41
+        /* 00000e58: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000e60: sp  0 +0 */ 00000037
+        /* 00000e64: sp  0 +1 */ 090000d4 local_d4
+        /* 00000e68: sp  1 +1 */ 0f0001c4 unnamed member 1c4
+        /* 00000e6c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e74: sp  0 +1 */ 0a0000d4 local_d4
+        /* 00000e78: sp  1 +0 */ 7e000000 00011d41
+        /* 00000e80: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000e88: sp  0 +0 */ 00000038
+        /* 00000e8c: sp  0 +1 */ 090000d8 local_d8
+        /* 00000e90: sp  1 +1 */ 0f0001cc unnamed member 1cc
+        /* 00000e94: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e9c: sp  0 +1 */ 0a0000d8 local_d8
+        /* 00000ea0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ea8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000eb0: sp  0 +0 */ 00000039
+        /* 00000eb4: sp  0 +1 */ 090000dc local_dc
+        /* 00000eb8: sp  1 +1 */ 0f0001d4 unnamed member 1d4
+        /* 00000ebc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000ec4: sp  0 +1 */ 0a0000dc local_dc
+        /* 00000ec8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ed0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000ed8: sp  0 +0 */ 0000003a
+        /* 00000edc: sp  0 +1 */ 090000e0 local_e0
+        /* 00000ee0: sp  1 +1 */ 0f0001dc unnamed member 1dc
+        /* 00000ee4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000eec: sp  0 +1 */ 0a0000e0 local_e0
+        /* 00000ef0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ef8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000f00: sp  0 +0 */ 0000003b
+        /* 00000f04: sp  0 +1 */ 090000e4 local_e4
+        /* 00000f08: sp  1 +1 */ 0f0001e4 unnamed member 1e4
+        /* 00000f0c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000f14: sp  0 +1 */ 0a0000e4 local_e4
+        /* 00000f18: sp  1 +0 */ 7e000000 00011d41
+        /* 00000f20: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000f28: sp  0 +0 */ 0000003c
+        /* 00000f2c: sp  0 +1 */ 090000e8 local_e8
+        /* 00000f30: sp  1 +1 */ 0f0001ec unnamed member 1ec
+        /* 00000f34: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000f3c: sp  0 +1 */ 0a0000e8 local_e8
+        /* 00000f40: sp  1 +0 */ 7e000000 00011d41
+        /* 00000f48: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000f50: sp  0 +0 */ 0000003d
+        /* 00000f54: sp  0 +1 */ 090000ec local_ec
+        /* 00000f58: sp  1 +1 */ 0f0001f4 unnamed member 1f4
+        /* 00000f5c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000f64: sp  0 +1 */ 0a0000ec local_ec
+        /* 00000f68: sp  1 +0 */ 7e000000 00015127
+        /* 00000f70: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000f78: sp  0 +0 */ 0000003e
+        /* 00000f7c: sp  0 +1 */ 090000f0 local_f0
+        /* 00000f80: sp  1 +1 */ 0f0001fc unnamed member 1fc
+        /* 00000f84: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000f8c: sp  0 +1 */ 0a0000f0 local_f0
+        /* 00000f90: sp  1 +0 */ 7e000000 00011d41
+        /* 00000f98: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000fa0: sp  0 +0 */ 0000003f
+        /* 00000fa4: sp  0 +1 */ 090000f4 local_f4
+        /* 00000fa8: sp  1 +1 */ 0f000204 unnamed member 204
+        /* 00000fac: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000fb4: sp  0 +1 */ 0a0000f4 local_f4
+        /* 00000fb8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000fc0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000fc8: sp  0 +0 */ 00000040
+        /* 00000fcc: sp  0 +1 */ 090000f8 local_f8
+        /* 00000fd0: sp  1 +1 */ 0f00020c unnamed member 20c
+        /* 00000fd4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000fdc: sp  0 +1 */ 0a0000f8 local_f8
+        /* 00000fe0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000fe8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000ff0: sp  0 +0 */ 00000041
+        /* 00000ff4: sp  0 +1 */ 090000fc local_fc
+        /* 00000ff8: sp  1 +1 */ 0f000214 unnamed member 214
+        /* 00000ffc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001004: sp  0 +1 */ 0a0000fc local_fc
+        /* 00001008: sp  1 +0 */ 7e000000 00011d41
+        /* 00001010: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00001018: sp  0 +0 */ 00000042
+        /* 0000101c: sp  0 +1 */ 04000000
+        /* 00001020: sp  1 -1 */ 66000000 beebbeeb this-&gt;void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00001028: sp  0 +0 */ 00000043
+        /* 0000102c: sp  0 +1 */ 0f00022c unnamed member 22c
+        /* 00001030: sp  1 -1 */ 65000000 beebbeeb native void trophy::method_01a7_ffff()
+
+        /* 00001038: sp  0 +0 */ 00000044
+        /* 0000103c: sp  0 +1 */ 0f000054 unnamed member 54
+        /* 00001040: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00001048: sp  0 +0 */ 00000045
+        /* 0000104c: sp  0 +1 */ 09000100 local_100
+        /* 00001050: sp  1 +1 */ 0f00021c unnamed member 21c
+        /* 00001054: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000105c: sp  0 +1 */ 0a000100 local_100
+        /* 00001060: sp  1 +0 */ 7e000000 00015152
+        /* 00001068: sp  1 -1 */ 69000000 beebbeeb void instance::method_07c2_ffff()
+
+        /* 00001070: sp  0 +0 */ 00000046
+        /* 00001074: sp  0 +1 */ 02000000 3f000000
+        /* 0000107c: sp  1 -1 */ 80000000
+
+        /* 00001080: sp  0 +0 */ 00000047
+        /* 00001084: sp  0 +1 */ 09000104 local_104
+        /* 00001088: sp  1 +1 */ 0f000230 unnamed member 230
+        /* 0000108c: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001094: sp  0 +1 */ 0a000104 local_104
+        /* 00001098: sp  1 +0 */ 7e000000 00000552
+        /* 000010a0: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06cd_ffff()
+
+        /* 000010a8: sp  0 +0 */ 00000048
+        /* 000010ac: sp  0 +1 */ 02000000 3ecccccd
+        /* 000010b4: sp  1 +1 */ 0300001e
+        /* 000010b8: sp  2 +0 */ 5c000000
+        /* 000010bc: sp  2 -1 */ 4a000000
+        /* 000010c0: sp  1 +0 */ 5a000000
+        /* 000010c4: sp  1 +1 */ 09000108 local_108
+        /* 000010c8: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02e0_ffff(dword arg_0000_0564_0)
+
+        /* 000010d0: sp  0 +0 */ 00000049
+        /* 000010d4: sp  0 +1 */ 05000000 beebbeeb &#x27;namir outro&#x27;
+        /* 000010dc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085d_ffff(string arg_0000_056e_0)
+
+        /* 000010e4: sp  0 +0 */ 0000004a
+        /* 000010e8: sp  0 +0 */ 66000000 beebbeeb this-&gt;void actor::method_063a_ffff()
+
+        /* 000010f0: sp  0 +0 */ 0000004b
+        /* 000010f4: sp  0 +0 */ 7b000000
+        ---
+
+        /* 0000068c: sp  0 +0 */ 00000005
+        /* 00000690: sp  0 +1 */ 0900000c local_c
+        /* 00000694: sp  1 +1 */ 0f000230 unnamed member 230
+        /* 00000698: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000006a0: sp  0 +1 */ 0a00000c local_c
+        /* 000006a4: sp  1 +0 */ 7e000000 00000552
+        /* 000006ac: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06ce_ffff()
+
+        /* 000006b4: sp  0 +0 */ 00000006
+        /* 000006b8: sp  0 +1 */ 09000010 local_10
+        /* 000006bc: sp  1 +1 */ 0f000228 unnamed member 228
+        /* 000006c0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000006c8: sp  0 +1 */ 0a000010 local_10
+        /* 000006cc: sp  1 +0 */ 7e000000 00014a9e
+        /* 000006d4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000006dc: sp  0 +0 */ 00000007
+        /* 000006e0: sp  0 +1 */ 04000001
+        /* 000006e4: sp  1 +1 */ 09000014 local_14
+        /* 000006e8: sp  2 +1 */ 0f000224 unnamed member 224
+        /* 000006ec: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000006f4: sp  1 +1 */ 0a000014 local_14
+        /* 000006f8: sp  2 +0 */ 7e000000 00014a9f
+        /* 00000700: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000708: sp  0 +0 */ 00000008
+        /* 0000070c: sp  0 +1 */ 09000018 local_18
+        /* 00000710: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 00000714: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000071c: sp  0 +1 */ 0a000018 local_18
+        /* 00000720: sp  1 +0 */ 7e000000 00015139
+        /* 00000728: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a7_40()
+
+        /* 00000730: sp  0 +0 */ 00000009
+        /* 00000734: sp  0 +1 */ 0900001c local_1c
+        /* 00000738: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 0000073c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000744: sp  0 +1 */ 0a00001c local_1c
+        /* 00000748: sp  1 +0 */ 7e000000 00015139
+        /* 00000750: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a6_41()
+
+        /* 00000758: sp  0 +0 */ 0000000a
+        /* 0000075c: sp  0 +1 */ 09000020 local_20
+        /* 00000760: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 00000764: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000076c: sp  0 +1 */ 0a000020 local_20
+        /* 00000770: sp  1 +0 */ 7e000000 00011d41
+        /* 00000778: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000780: sp  0 +0 */ 0000000b
+        /* 00000784: sp  0 +1 */ 09000024 local_24
+        /* 00000788: sp  1 +1 */ 0f000064 unnamed member 64
+        /* 0000078c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000794: sp  0 +1 */ 0a000024 local_24
+        /* 00000798: sp  1 +0 */ 7e000000 00011d41
+        /* 000007a0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000007a8: sp  0 +0 */ 0000000c
+        /* 000007ac: sp  0 +1 */ 09000028 local_28
+        /* 000007b0: sp  1 +1 */ 0f00006c unnamed member 6c
+        /* 000007b4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000007bc: sp  0 +1 */ 0a000028 local_28
+        /* 000007c0: sp  1 +0 */ 7e000000 00011d41
+        /* 000007c8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000007d0: sp  0 +0 */ 0000000d
+        /* 000007d4: sp  0 +1 */ 0900002c local_2c
+        /* 000007d8: sp  1 +1 */ 0f000074 unnamed member 74
+        /* 000007dc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000007e4: sp  0 +1 */ 0a00002c local_2c
+        /* 000007e8: sp  1 +0 */ 7e000000 00011d41
+        /* 000007f0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000007f8: sp  0 +0 */ 0000000e
+        /* 000007fc: sp  0 +1 */ 09000030 local_30
+        /* 00000800: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000804: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000080c: sp  0 +1 */ 0a000030 local_30
+        /* 00000810: sp  1 +0 */ 7e000000 00015128
+        /* 00000818: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000820: sp  0 +0 */ 0000000f
+        /* 00000824: sp  0 +1 */ 09000034 local_34
+        /* 00000828: sp  1 +1 */ 0f000084 unnamed member 84
+        /* 0000082c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000834: sp  0 +1 */ 0a000034 local_34
+        /* 00000838: sp  1 +0 */ 7e000000 00011d41
+        /* 00000840: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000848: sp  0 +0 */ 00000010
+        /* 0000084c: sp  0 +1 */ 09000038 local_38
+        /* 00000850: sp  1 +1 */ 0f00008c unnamed member 8c
+        /* 00000854: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000085c: sp  0 +1 */ 0a000038 local_38
+        /* 00000860: sp  1 +0 */ 7e000000 00011d41
+        /* 00000868: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000870: sp  0 +0 */ 00000011
+        /* 00000874: sp  0 +1 */ 0900003c local_3c
+        /* 00000878: sp  1 +1 */ 0f000094 unnamed member 94
+        /* 0000087c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000884: sp  0 +1 */ 0a00003c local_3c
+        /* 00000888: sp  1 +0 */ 7e000000 00011d41
+        /* 00000890: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000898: sp  0 +0 */ 00000012
+        /* 0000089c: sp  0 +1 */ 09000040 local_40
+        /* 000008a0: sp  1 +1 */ 0f00009c unnamed member 9c
+        /* 000008a4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000008ac: sp  0 +1 */ 0a000040 local_40
+        /* 000008b0: sp  1 +0 */ 7e000000 00011d41
+        /* 000008b8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000008c0: sp  0 +0 */ 00000013
+        /* 000008c4: sp  0 +1 */ 09000044 local_44
+        /* 000008c8: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 000008cc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000008d4: sp  0 +1 */ 0a000044 local_44
+        /* 000008d8: sp  1 +0 */ 7e000000 00011d41
+        /* 000008e0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000008e8: sp  0 +0 */ 00000014
+        /* 000008ec: sp  0 +1 */ 09000048 local_48
+        /* 000008f0: sp  1 +1 */ 0f0000ac unnamed member ac
+        /* 000008f4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000008fc: sp  0 +1 */ 0a000048 local_48
+        /* 00000900: sp  1 +0 */ 7e000000 00011d41
+        /* 00000908: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000910: sp  0 +0 */ 00000015
+        /* 00000914: sp  0 +1 */ 0900004c local_4c
+        /* 00000918: sp  1 +1 */ 0f0000b4 unnamed member b4
+        /* 0000091c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000924: sp  0 +1 */ 0a00004c local_4c
+        /* 00000928: sp  1 +0 */ 7e000000 00011d41
+        /* 00000930: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000938: sp  0 +0 */ 00000016
+        /* 0000093c: sp  0 +1 */ 09000050 local_50
+        /* 00000940: sp  1 +1 */ 0f0000bc unnamed member bc
+        /* 00000944: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000094c: sp  0 +1 */ 0a000050 local_50
+        /* 00000950: sp  1 +0 */ 7e000000 00011d41
+        /* 00000958: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000960: sp  0 +0 */ 00000017
+        /* 00000964: sp  0 +1 */ 09000054 local_54
+        /* 00000968: sp  1 +1 */ 0f0000c4 unnamed member c4
+        /* 0000096c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000974: sp  0 +1 */ 0a000054 local_54
+        /* 00000978: sp  1 +0 */ 7e000000 00011d41
+        /* 00000980: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000988: sp  0 +0 */ 00000018
+        /* 0000098c: sp  0 +1 */ 09000058 local_58
+        /* 00000990: sp  1 +1 */ 0f0000cc unnamed member cc
+        /* 00000994: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000099c: sp  0 +1 */ 0a000058 local_58
+        /* 000009a0: sp  1 +0 */ 7e000000 00015129
+        /* 000009a8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000009b0: sp  0 +0 */ 00000019
+        /* 000009b4: sp  0 +1 */ 0900005c local_5c
+        /* 000009b8: sp  1 +1 */ 0f0000d4 unnamed member d4
+        /* 000009bc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000009c4: sp  0 +1 */ 0a00005c local_5c
+        /* 000009c8: sp  1 +0 */ 7e000000 00011d41
+        /* 000009d0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 000009d8: sp  0 +0 */ 0000001a
+        /* 000009dc: sp  0 +1 */ 09000060 local_60
+        /* 000009e0: sp  1 +1 */ 0f0000dc unnamed member dc
+        /* 000009e4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000009ec: sp  0 +1 */ 0a000060 local_60
+        /* 000009f0: sp  1 +0 */ 7e000000 00011d41
+        /* 000009f8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000a00: sp  0 +0 */ 0000001b
+        /* 00000a04: sp  0 +1 */ 09000064 local_64
+        /* 00000a08: sp  1 +1 */ 0f0000e4 unnamed member e4
+        /* 00000a0c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a14: sp  0 +1 */ 0a000064 local_64
+        /* 00000a18: sp  1 +0 */ 7e000000 00011d41
+        /* 00000a20: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000a28: sp  0 +0 */ 0000001c
+        /* 00000a2c: sp  0 +1 */ 09000068 local_68
+        /* 00000a30: sp  1 +1 */ 0f0000ec unnamed member ec
+        /* 00000a34: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a3c: sp  0 +1 */ 0a000068 local_68
+        /* 00000a40: sp  1 +0 */ 7e000000 00011d41
+        /* 00000a48: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000a50: sp  0 +0 */ 0000001d
+        /* 00000a54: sp  0 +1 */ 0900006c local_6c
+        /* 00000a58: sp  1 +1 */ 0f0000f4 unnamed member f4
+        /* 00000a5c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a64: sp  0 +1 */ 0a00006c local_6c
+        /* 00000a68: sp  1 +0 */ 7e000000 00011d41
+        /* 00000a70: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000a78: sp  0 +0 */ 0000001e
+        /* 00000a7c: sp  0 +1 */ 09000070 local_70
+        /* 00000a80: sp  1 +1 */ 0f0000fc unnamed member fc
+        /* 00000a84: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000a8c: sp  0 +1 */ 0a000070 local_70
+        /* 00000a90: sp  1 +0 */ 7e000000 00011d41
+        /* 00000a98: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000aa0: sp  0 +0 */ 0000001f
+        /* 00000aa4: sp  0 +1 */ 09000074 local_74
+        /* 00000aa8: sp  1 +1 */ 0f000104 unnamed member 104
+        /* 00000aac: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000ab4: sp  0 +1 */ 0a000074 local_74
+        /* 00000ab8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ac0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000ac8: sp  0 +0 */ 00000020
+        /* 00000acc: sp  0 +1 */ 09000078 local_78
+        /* 00000ad0: sp  1 +1 */ 0f00010c unnamed member 10c
+        /* 00000ad4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000adc: sp  0 +1 */ 0a000078 local_78
+        /* 00000ae0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ae8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000af0: sp  0 +0 */ 00000021
+        /* 00000af4: sp  0 +1 */ 0900007c local_7c
+        /* 00000af8: sp  1 +1 */ 0f000114 unnamed member 114
+        /* 00000afc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b04: sp  0 +1 */ 0a00007c local_7c
+        /* 00000b08: sp  1 +0 */ 7e000000 00011d41
+        /* 00000b10: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000b18: sp  0 +0 */ 00000022
+        /* 00000b1c: sp  0 +1 */ 09000080 local_80
+        /* 00000b20: sp  1 +1 */ 0f00011c unnamed member 11c
+        /* 00000b24: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b2c: sp  0 +1 */ 0a000080 local_80
+        /* 00000b30: sp  1 +0 */ 7e000000 00011d41
+        /* 00000b38: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000b40: sp  0 +0 */ 00000023
+        /* 00000b44: sp  0 +1 */ 09000084 local_84
+        /* 00000b48: sp  1 +1 */ 0f000124 unnamed member 124
+        /* 00000b4c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b54: sp  0 +1 */ 0a000084 local_84
+        /* 00000b58: sp  1 +0 */ 7e000000 00011d41
+        /* 00000b60: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000b68: sp  0 +0 */ 00000024
+        /* 00000b6c: sp  0 +1 */ 09000088 local_88
+        /* 00000b70: sp  1 +1 */ 0f00012c unnamed member 12c
+        /* 00000b74: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000b7c: sp  0 +1 */ 0a000088 local_88
+        /* 00000b80: sp  1 +0 */ 7e000000 00011d41
+        /* 00000b88: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000b90: sp  0 +0 */ 00000025
+        /* 00000b94: sp  0 +1 */ 0900008c local_8c
+        /* 00000b98: sp  1 +1 */ 0f000134 unnamed member 134
+        /* 00000b9c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000ba4: sp  0 +1 */ 0a00008c local_8c
+        /* 00000ba8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000bb0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000bb8: sp  0 +0 */ 00000026
+        /* 00000bbc: sp  0 +1 */ 09000090 local_90
+        /* 00000bc0: sp  1 +1 */ 0f00013c unnamed member 13c
+        /* 00000bc4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000bcc: sp  0 +1 */ 0a000090 local_90
+        /* 00000bd0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000bd8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000be0: sp  0 +0 */ 00000027
+        /* 00000be4: sp  0 +1 */ 09000094 local_94
+        /* 00000be8: sp  1 +1 */ 0f000144 unnamed member 144
+        /* 00000bec: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000bf4: sp  0 +1 */ 0a000094 local_94
+        /* 00000bf8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000c00: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000c08: sp  0 +0 */ 00000028
+        /* 00000c0c: sp  0 +1 */ 09000098 local_98
+        /* 00000c10: sp  1 +1 */ 0f00014c unnamed member 14c
+        /* 00000c14: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c1c: sp  0 +1 */ 0a000098 local_98
+        /* 00000c20: sp  1 +0 */ 7e000000 00011d41
+        /* 00000c28: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000c30: sp  0 +0 */ 00000029
+        /* 00000c34: sp  0 +1 */ 0900009c local_9c
+        /* 00000c38: sp  1 +1 */ 0f000154 unnamed member 154
+        /* 00000c3c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c44: sp  0 +1 */ 0a00009c local_9c
+        /* 00000c48: sp  1 +0 */ 7e000000 00011d41
+        /* 00000c50: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000c58: sp  0 +0 */ 0000002a
+        /* 00000c5c: sp  0 +1 */ 090000a0 local_a0
+        /* 00000c60: sp  1 +1 */ 0f00015c unnamed member 15c
+        /* 00000c64: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c6c: sp  0 +1 */ 0a0000a0 local_a0
+        /* 00000c70: sp  1 +0 */ 7e000000 00011d41
+        /* 00000c78: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000c80: sp  0 +0 */ 0000002b
+        /* 00000c84: sp  0 +1 */ 090000a4 local_a4
+        /* 00000c88: sp  1 +1 */ 0f000164 unnamed member 164
+        /* 00000c8c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000c94: sp  0 +1 */ 0a0000a4 local_a4
+        /* 00000c98: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ca0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000ca8: sp  0 +0 */ 0000002c
+        /* 00000cac: sp  0 +1 */ 090000a8 local_a8
+        /* 00000cb0: sp  1 +1 */ 0f00016c unnamed member 16c
+        /* 00000cb4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000cbc: sp  0 +1 */ 0a0000a8 local_a8
+        /* 00000cc0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000cc8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000cd0: sp  0 +0 */ 0000002d
+        /* 00000cd4: sp  0 +1 */ 090000ac local_ac
+        /* 00000cd8: sp  1 +1 */ 0f000174 unnamed member 174
+        /* 00000cdc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000ce4: sp  0 +1 */ 0a0000ac local_ac
+        /* 00000ce8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000cf0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000cf8: sp  0 +0 */ 0000002e
+        /* 00000cfc: sp  0 +1 */ 090000b0 local_b0
+        /* 00000d00: sp  1 +1 */ 0f00017c unnamed member 17c
+        /* 00000d04: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d0c: sp  0 +1 */ 0a0000b0 local_b0
+        /* 00000d10: sp  1 +0 */ 7e000000 00011d41
+        /* 00000d18: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000d20: sp  0 +0 */ 0000002f
+        /* 00000d24: sp  0 +1 */ 090000b4 local_b4
+        /* 00000d28: sp  1 +1 */ 0f000184 unnamed member 184
+        /* 00000d2c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d34: sp  0 +1 */ 0a0000b4 local_b4
+        /* 00000d38: sp  1 +0 */ 7e000000 00011d41
+        /* 00000d40: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000d48: sp  0 +0 */ 00000030
+        /* 00000d4c: sp  0 +1 */ 090000b8 local_b8
+        /* 00000d50: sp  1 +1 */ 0f00018c unnamed member 18c
+        /* 00000d54: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d5c: sp  0 +1 */ 0a0000b8 local_b8
+        /* 00000d60: sp  1 +0 */ 7e000000 00011d41
+        /* 00000d68: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000d70: sp  0 +0 */ 00000031
+        /* 00000d74: sp  0 +1 */ 090000bc local_bc
+        /* 00000d78: sp  1 +1 */ 0f000194 unnamed member 194
+        /* 00000d7c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000d84: sp  0 +1 */ 0a0000bc local_bc
+        /* 00000d88: sp  1 +0 */ 7e000000 00011d41
+        /* 00000d90: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000d98: sp  0 +0 */ 00000032
+        /* 00000d9c: sp  0 +1 */ 090000c0 local_c0
+        /* 00000da0: sp  1 +1 */ 0f00019c unnamed member 19c
+        /* 00000da4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000dac: sp  0 +1 */ 0a0000c0 local_c0
+        /* 00000db0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000db8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000dc0: sp  0 +0 */ 00000033
+        /* 00000dc4: sp  0 +1 */ 090000c4 local_c4
+        /* 00000dc8: sp  1 +1 */ 0f0001a4 unnamed member 1a4
+        /* 00000dcc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000dd4: sp  0 +1 */ 0a0000c4 local_c4
+        /* 00000dd8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000de0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000de8: sp  0 +0 */ 00000034
+        /* 00000dec: sp  0 +1 */ 090000c8 local_c8
+        /* 00000df0: sp  1 +1 */ 0f0001ac unnamed member 1ac
+        /* 00000df4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000dfc: sp  0 +1 */ 0a0000c8 local_c8
+        /* 00000e00: sp  1 +0 */ 7e000000 00011d41
+        /* 00000e08: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000e10: sp  0 +0 */ 00000035
+        /* 00000e14: sp  0 +1 */ 090000cc local_cc
+        /* 00000e18: sp  1 +1 */ 0f0001b4 unnamed member 1b4
+        /* 00000e1c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e24: sp  0 +1 */ 0a0000cc local_cc
+        /* 00000e28: sp  1 +0 */ 7e000000 00011d41
+        /* 00000e30: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000e38: sp  0 +0 */ 00000036
+        /* 00000e3c: sp  0 +1 */ 090000d0 local_d0
+        /* 00000e40: sp  1 +1 */ 0f0001bc unnamed member 1bc
+        /* 00000e44: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e4c: sp  0 +1 */ 0a0000d0 local_d0
+        /* 00000e50: sp  1 +0 */ 7e000000 00011d41
+        /* 00000e58: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000e60: sp  0 +0 */ 00000037
+        /* 00000e64: sp  0 +1 */ 090000d4 local_d4
+        /* 00000e68: sp  1 +1 */ 0f0001c4 unnamed member 1c4
+        /* 00000e6c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e74: sp  0 +1 */ 0a0000d4 local_d4
+        /* 00000e78: sp  1 +0 */ 7e000000 00011d41
+        /* 00000e80: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000e88: sp  0 +0 */ 00000038
+        /* 00000e8c: sp  0 +1 */ 090000d8 local_d8
+        /* 00000e90: sp  1 +1 */ 0f0001cc unnamed member 1cc
+        /* 00000e94: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000e9c: sp  0 +1 */ 0a0000d8 local_d8
+        /* 00000ea0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ea8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000eb0: sp  0 +0 */ 00000039
+        /* 00000eb4: sp  0 +1 */ 090000dc local_dc
+        /* 00000eb8: sp  1 +1 */ 0f0001d4 unnamed member 1d4
+        /* 00000ebc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000ec4: sp  0 +1 */ 0a0000dc local_dc
+        /* 00000ec8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ed0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000ed8: sp  0 +0 */ 0000003a
+        /* 00000edc: sp  0 +1 */ 090000e0 local_e0
+        /* 00000ee0: sp  1 +1 */ 0f0001dc unnamed member 1dc
+        /* 00000ee4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000eec: sp  0 +1 */ 0a0000e0 local_e0
+        /* 00000ef0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000ef8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000f00: sp  0 +0 */ 0000003b
+        /* 00000f04: sp  0 +1 */ 090000e4 local_e4
+        /* 00000f08: sp  1 +1 */ 0f0001e4 unnamed member 1e4
+        /* 00000f0c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000f14: sp  0 +1 */ 0a0000e4 local_e4
+        /* 00000f18: sp  1 +0 */ 7e000000 00011d41
+        /* 00000f20: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000f28: sp  0 +0 */ 0000003c
+        /* 00000f2c: sp  0 +1 */ 090000e8 local_e8
+        /* 00000f30: sp  1 +1 */ 0f0001ec unnamed member 1ec
+        /* 00000f34: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000f3c: sp  0 +1 */ 0a0000e8 local_e8
+        /* 00000f40: sp  1 +0 */ 7e000000 00011d41
+        /* 00000f48: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000f50: sp  0 +0 */ 0000003d
+        /* 00000f54: sp  0 +1 */ 090000ec local_ec
+        /* 00000f58: sp  1 +1 */ 0f0001f4 unnamed member 1f4
+        /* 00000f5c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000f64: sp  0 +1 */ 0a0000ec local_ec
+        /* 00000f68: sp  1 +0 */ 7e000000 00015127
+        /* 00000f70: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000f78: sp  0 +0 */ 0000003e
+        /* 00000f7c: sp  0 +1 */ 090000f0 local_f0
+        /* 00000f80: sp  1 +1 */ 0f0001fc unnamed member 1fc
+        /* 00000f84: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000f8c: sp  0 +1 */ 0a0000f0 local_f0
+        /* 00000f90: sp  1 +0 */ 7e000000 00011d41
+        /* 00000f98: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000fa0: sp  0 +0 */ 0000003f
+        /* 00000fa4: sp  0 +1 */ 090000f4 local_f4
+        /* 00000fa8: sp  1 +1 */ 0f000204 unnamed member 204
+        /* 00000fac: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000fb4: sp  0 +1 */ 0a0000f4 local_f4
+        /* 00000fb8: sp  1 +0 */ 7e000000 00011d41
+        /* 00000fc0: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000fc8: sp  0 +0 */ 00000040
+        /* 00000fcc: sp  0 +1 */ 090000f8 local_f8
+        /* 00000fd0: sp  1 +1 */ 0f00020c unnamed member 20c
+        /* 00000fd4: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000fdc: sp  0 +1 */ 0a0000f8 local_f8
+        /* 00000fe0: sp  1 +0 */ 7e000000 00011d41
+        /* 00000fe8: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00000ff0: sp  0 +0 */ 00000041
+        /* 00000ff4: sp  0 +1 */ 090000fc local_fc
+        /* 00000ff8: sp  1 +1 */ 0f000214 unnamed member 214
+        /* 00000ffc: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00001004: sp  0 +1 */ 0a0000fc local_fc
+        /* 00001008: sp  1 +0 */ 7e000000 00011d41
+        /* 00001010: sp  1 -1 */ 69000000 beebbeeb void %ao_muscle_body_a%::method_527c_ffff()
+
+        /* 00001018: sp  0 +0 */ 00000042
+        /* 0000101c: sp  0 +1 */ 04000000
+        /* 00001020: sp  1 -1 */ 66000000 beebbeeb this-&gt;void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00001028: sp  0 +0 */ 00000043
+        /* 0000102c: sp  0 +1 */ 0f00022c unnamed member 22c
+        /* 00001030: sp  1 -1 */ 65000000 beebbeeb native void trophy::method_01a7_ffff()
+
+        /* 00001038: sp  0 +0 */ 00000044
+        /* 0000103c: sp  0 +1 */ 0f000054 unnamed member 54
+        /* 00001040: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00001048: sp  0 +0 */ 00000045
+        /* 0000104c: sp  0 +1 */ 09000100 local_100
+        /* 00001050: sp  1 +1 */ 0f00021c unnamed member 21c
+        /* 00001054: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000105c: sp  0 +1 */ 0a000100 local_100
+        /* 00001060: sp  1 +0 */ 7e000000 00015152
+        /* 00001068: sp  1 -1 */ 69000000 beebbeeb void instance::method_07c2_ffff()
+
+        /* 00001070: sp  0 +0 */ 00000046
+        /* 00001074: sp  0 +1 */ 02000000 3f000000
+        /* 0000107c: sp  1 -1 */ 80000000
+
+        /* 00001080: sp  0 +0 */ 00000047
+        /* 00001084: sp  0 +1 */ 09000104 local_104
+        /* 00001088: sp  1 +1 */ 0f000230 unnamed member 230
+        /* 0000108c: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00001094: sp  0 +1 */ 0a000104 local_104
+        /* 00001098: sp  1 +0 */ 7e000000 00000552
+        /* 000010a0: sp  1 -1 */ 69000000 beebbeeb void actorplayer::method_06cd_ffff()
+
+        /* 000010a8: sp  0 +0 */ 00000048
+        /* 000010ac: sp  0 +1 */ 02000000 3ecccccd
+        /* 000010b4: sp  1 +1 */ 0300001e
+        /* 000010b8: sp  2 +0 */ 5c000000
+        /* 000010bc: sp  2 -1 */ 4a000000
+        /* 000010c0: sp  1 +0 */ 5a000000
+        /* 000010c4: sp  1 +1 */ 09000108 local_108
+        /* 000010c8: sp  2 -2 */ 65000000 beebbeeb native void globaleffect::method_02e0_ffff(dword arg_0000_0564_0)
+
+        /* 000010d0: sp  0 +0 */ 00000049
+        /* 000010d4: sp  0 +1 */ 05000000 beebbeeb &#x27;namir outro&#x27;
+        /* 000010dc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void gamebase::method_085d_ffff(string arg_0000_056e_0)
+
+        /* 000010e4: sp  0 +0 */ 0000004a
+        /* 000010e8: sp  0 +0 */ 66000000 beebbeeb this-&gt;void actor::method_063a_ffff()
+
+        /* 000010f0: sp  0 +0 */ 0000004b
+        /* 000010f4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00015151.html">Unknown15151</a><br/>
+initialized field in <a href="type00015152.html">Unknown15152</a><br/>
+initialized field in <a href="type00015160.html">Unknown15160</a><br/>
+parent class <a href="type000151ad.html">Unknown151AD</a><br/>
+</body>
+</html>

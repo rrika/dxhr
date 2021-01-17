@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00006366</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown6366</h1>
+		<pre>./tools/drmexplore pc-w/ det_police.drm n$[0xfd]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown6366 : <a href="type000064cb.html">%det1_policebasement_civilian_geraldcampbell%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000639a.html">Unknown639A</a>&gt; decl_0012_1bb7_3c = {<a href="units.html#00003478">unit object 00003478</a>};
+    <a href="type0000052b.html">waypointset</a> decl_01e3_1bb8_44 = TODO(0A);
+    <a href="type0000052a.html">waypointnode</a> decl_0196_1bb9_4c = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_1bba_5c = persistent(dtp:64A7) {type=bool};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_115c_70 = TODO(0A);
+    void method_01d7_0(<a href="type000004b2.html">aistate</a>, <a href="type000004b2.html">aistate</a>);
+    void method_0190_1();
+    void method_05ce_2(<a href="type0000052a.html">waypointnode</a>);
+    void method_05da_3();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown6366 : %det1_policebasement_civilian_geraldcampbell% {
+    // sizeof = 0x78
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_1bb7_3c = TODO(0A);
+    waypointset decl_01e3_1bb8_44 = TODO(0A);
+    waypointnode decl_0196_1bb9_4c = TODO(0A);
+    smartscript decl_0089_1bba_5c = TODO(0A);
+    playerref decl_012a_115c_70 = TODO(0A);
+    async void method_01d7_0(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4) {
+        bool temp_8 = False;
+        aistate local_c = TODO(0A);
+
+        /* 00000144: sp  0 +0 */ 00000000
+        /* 00000148: sp  0 +1 */ 09000008 temp_8
+        /* 0000014c: sp  1 +1 */ 0900000c local_c
+        /* 00000150: sp  2 +1 */ 09000004 arg_01d8_01da_4
+        /* 00000154: sp  3 -3 */ 65000000 beebbeeb native bool aistate::isEqual(aistate arg_01d8_0594_4)
+        /* 0000015c: sp  0 +1 */ 06000008 temp_8
+        /* 00000160: sp  1 +0 */ 50000000
+        /* 00000164: sp  1 -1 */ 64000017
+
+        /* 00000168: sp  0 +0 */ 00000001
+
+        /* 0000016c: sp  0 +0 */ 00000002
+        /* 00000170: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Forced Conversation Trigger is disabled...&#x27;
+        /* 00000178: sp  1 +1 */ 03000003
+        /* 0000017c: sp  2 +0 */ 5c000000
+        /* 00000180: sp  2 +1 */ 04000001
+        /* 00000184: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000018c: sp  0 +0 */ 00000003
+        /* 00000190: sp  0 +1 */ 04000001
+        /* 00000194: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 00000198: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000001a0: sp  0 +0 */ 00000004
+        /* 000001a4: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Coroner is agitated! SmartBool set to TRUE!&#x27;
+        /* 000001ac: sp  1 +1 */ 03000003
+        /* 000001b0: sp  2 +0 */ 5c000000
+        /* 000001b4: sp  2 +1 */ 04000001
+        /* 000001b8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001c0: sp  0 +0 */ 00000005
+        ---
+
+        /* 000001c4: sp  0 +0 */ 00000006
+        /* 000001c8: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0190_1() {
+        Unknown639A local_0 = TODO(0B);
+
+        /* 00000274: sp  0 +0 */ 00000007
+        /* 00000278: sp  0 +1 */ 04000000
+        /* 0000027c: sp  1 +1 */ 09000000 local_0
+        /* 00000280: sp  2 +1 */ 0f00003c unnamed member 3c
+        /* 00000284: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000028c: sp  1 +1 */ 0a000000 local_0
+        /* 00000290: sp  2 +0 */ 7e000000 0000639a
+        /* 00000298: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 000002a0: sp  0 +0 */ 00000008
+        /* 000002a4: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Forced Conversation Trigger is disabled...&#x27;
+        /* 000002ac: sp  1 +1 */ 03000003
+        /* 000002b0: sp  2 +0 */ 5c000000
+        /* 000002b4: sp  2 +1 */ 04000001
+        /* 000002b8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000002c0: sp  0 +0 */ 00000009
+        /* 000002c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_05ce_2(waypointnode arg_0196_05cf_0) {
+        bool temp_10 = False;
+        waypointnode local_14 = TODO(0A);
+        npcinteraction local_24 = TODO(0A);
+
+        /* 00000374: sp  0 +0 */ 0000000a
+        /* 00000378: sp  0 +1 */ 09000010 temp_10
+        /* 0000037c: sp  1 +1 */ 09000014 local_14
+        /* 00000380: sp  2 +1 */ 09000000 arg_0196_05cf_0
+        /* 00000384: sp  3 -3 */ 65000000 beebbeeb native bool waypointnode::isEqual(waypointnode arg_0196_05cf_4)
+        /* 0000038c: sp  0 +1 */ 06000010 temp_10
+        /* 00000390: sp  1 +1 */ 04000001
+        /* 00000394: sp  2 -1 */ 46000000
+        /* 00000398: sp  1 -1 */ 6400000e
+
+        /* 0000039c: sp  0 +0 */ 0000000b
+
+        /* 000003a0: sp  0 +0 */ 0000000c
+        /* 000003a4: sp  0 +1 */ 09000024 local_24
+        /* 000003a8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 000003b0: sp  0 +0 */ 0000000d
+        /* 000003b4: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Node02 reached, switched to AFTERMATH Conversation!&#x27;
+        /* 000003bc: sp  1 +1 */ 03000003
+        /* 000003c0: sp  2 +0 */ 5c000000
+        /* 000003c4: sp  2 +1 */ 04000001
+        /* 000003c8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000003d0: sp  0 +0 */ 0000000e
+        ---
+
+        /* 000003d4: sp  0 +0 */ 0000000f
+        /* 000003d8: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_05da_3() {
+        Unknown639A local_0 = TODO(0B);
+
+        /* 00000444: sp  0 +0 */ 00000010
+        /* 00000448: sp  0 +1 */ 04000000
+        /* 0000044c: sp  1 +1 */ 09000000 local_0
+        /* 00000450: sp  2 +1 */ 0f00003c unnamed member 3c
+        /* 00000454: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000045c: sp  1 +1 */ 0a000000 local_0
+        /* 00000460: sp  2 +0 */ 7e000000 0000639a
+        /* 00000468: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 00000470: sp  0 +0 */ 00000011
+        /* 00000474: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Forced Conversation Trigger is disabled...&#x27;
+        /* 0000047c: sp  1 +1 */ 03000003
+        /* 00000480: sp  2 +0 */ 5c000000
+        /* 00000484: sp  2 +1 */ 04000001
+        /* 00000488: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000490: sp  0 +0 */ 00000012
+        /* 00000494: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00006377.html">Unknown6377</a><br/>
+initialized field in <a href="type0000639a.html">Unknown639A</a><br/>
+initialized field in <a href="type0000639b.html">Unknown639B</a><br/>
+initialized field in <a href="type000063d3.html">Unknown63D3</a><br/>
+parent class <a href="type000064cb.html">%det1_policebasement_civilian_geraldcampbell%</a><br/>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000a814</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownA814</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_restricted_area.drm n$[0xa]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownA814 : <a href="type0000a883.html">%dlc_st_data_puck_b%</a> {
+    <a href="type00000522.html">uberobjectevent</a> field_4;
+    <a href="type00000521.html">uberobjectcommand</a> field_14;
+    <a href="type00000521.html">uberobjectcommand</a> field_1c;
+    <a href="type00000521.html">uberobjectcommand</a> field_24;
+    <a href="type00000521.html">uberobjectcommand</a> field_2c;
+    <a href="type000004f5.html">playerref</a> field_34;
+    <a href="type000004f2.html">pickup</a> field_3c;
+    <a href="type00000522.html">uberobjectevent</a> field_44;
+    <a href="type00000522.html">uberobjectevent</a> field_54;
+    <a href="type00000521.html">uberobjectcommand</a> field_64;
+    <a href="type00000521.html">uberobjectcommand</a> field_6c;
+    <a href="type00000522.html">uberobjectevent</a> field_74;
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_2baa_88 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_2bab_90 = persistent(dtp:A87D) {type=dword};
+    <a href="type0000051e.html">trophy</a> decl_0d70_2bac_a4 = TODO(0A);
+    void method_0a74_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownA814 : %dlc_st_data_puck_b% {
+    // sizeof = 0xa8
+    uberobjectevent field_4;
+    uberobjectcommand field_14;
+    uberobjectcommand field_1c;
+    uberobjectcommand field_24;
+    uberobjectcommand field_2c;
+    playerref field_34;
+    pickup field_3c;
+    uberobjectevent field_44;
+    uberobjectevent field_54;
+    uberobjectcommand field_64;
+    uberobjectcommand field_6c;
+    uberobjectevent field_74;
+    playerref decl_012a_2baa_88 = TODO(0A);
+    smartscript decl_0089_2bab_90 = TODO(0A);
+    trophy decl_0d70_2bac_a4 = TODO(0A);
+    async void method_0a74_0() {
+        %human_player% local_0 = TODO(0B);
+        bool temp_4 = False;
+        pickup local_8 = TODO(0A);
+        dword temp_c = 0;
+        %human_player% local_10 = TODO(0B);
+        experiencereward local_14 = TODO(0A);
+        dword temp_1c = 0;
+        dword temp_20 = 0;
+        dword temp_24 = 0;
+
+        /* 00000184: sp  0 +0 */ 00000000
+        /* 00000188: sp  0 +1 */ 05000000 beebbeeb &#x27;You are now OnPlayerInteractStart with Table B&#x27;
+        /* 00000190: sp  1 +1 */ 03000005
+        /* 00000194: sp  2 +0 */ 5c000000
+        /* 00000198: sp  2 +1 */ 04000001
+        /* 0000019c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001a4: sp  0 +0 */ 00000001
+        /* 000001a8: sp  0 +1 */ 09000004 temp_4
+        /* 000001ac: sp  1 +1 */ 09000008 local_8
+        /* 000001b0: sp  2 +1 */ 03000001
+        /* 000001b4: sp  3 +1 */ 04000001
+        /* 000001b8: sp  4 +1 */ 09000000 local_0
+        /* 000001bc: sp  5 +1 */ 0f000088 unnamed member 88
+        /* 000001c0: sp  6 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000001c8: sp  4 +1 */ 0a000000 local_0
+        /* 000001cc: sp  5 +0 */ 7e000000 00000552
+        /* 000001d4: sp  5 -5 */ 69000000 beebbeeb bool actor::method_05fa_ffff(pickup arg_05fb_05fc_4, dword arg_0000_05fd_8, bool arg_0000_05fe_c)
+        /* 000001dc: sp  0 +1 */ 06000004 temp_4
+        /* 000001e0: sp  1 -1 */ 6400004c
+
+        /* 000001e4: sp  0 +0 */ 00000002
+
+        /* 000001e8: sp  0 +0 */ 00000003
+        /* 000001ec: sp  0 +1 */ 05000000 beebbeeb &quot;You&#x27;ve got the Data Puck&quot;
+        /* 000001f4: sp  1 +1 */ 03000005
+        /* 000001f8: sp  2 +0 */ 5c000000
+        /* 000001fc: sp  2 +1 */ 04000001
+        /* 00000200: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000208: sp  0 +0 */ 00000004
+        /* 0000020c: sp  0 +1 */ 0900000c temp_c
+        /* 00000210: sp  1 +1 */ 0f000090 unnamed member 90
+        /* 00000214: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 0000021c: sp  0 +1 */ 0800000c temp_c
+        /* 00000220: sp  1 +1 */ 03000001
+        /* 00000224: sp  2 -1 */ 3e000000
+        /* 00000228: sp  1 +1 */ 0f000090 unnamed member 90
+        /* 0000022c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000234: sp  0 +0 */ 00000005
+        /* 00000238: sp  0 +1 */ 09000014 local_14
+        /* 0000023c: sp  1 +1 */ 09000010 local_10
+        /* 00000240: sp  2 +1 */ 0f000034 unnamed member 34
+        /* 00000244: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000024c: sp  1 +1 */ 0a000010 local_10
+        /* 00000250: sp  2 +0 */ 7e000000 00000552
+        /* 00000258: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06a6_ffff(experiencereward arg_06a7_06a8_0)
+
+        /* 00000260: sp  0 +0 */ 00000006
+        /* 00000264: sp  0 +1 */ 0900001c temp_1c
+        /* 00000268: sp  1 +1 */ 0f000090 unnamed member 90
+        /* 0000026c: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000274: sp  0 +1 */ 0800001c temp_1c
+        /* 00000278: sp  1 +1 */ 03000005
+        /* 0000027c: sp  2 +0 */ 5c000000
+        /* 00000280: sp  2 +1 */ 04000001
+        /* 00000284: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0545_ffff(dword arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000028c: sp  0 +0 */ 00000007
+        /* 00000290: sp  0 +1 */ 09000020 temp_20
+        /* 00000294: sp  1 +1 */ 0f000090 unnamed member 90
+        /* 00000298: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 000002a0: sp  0 +1 */ 08000020 temp_20
+        /* 000002a4: sp  1 +1 */ 03000003
+        /* 000002a8: sp  2 -1 */ 45000000
+        /* 000002ac: sp  1 -1 */ 6400000f
+
+        /* 000002b0: sp  0 +0 */ 00000008
+
+        /* 000002b4: sp  0 +0 */ 00000009
+        /* 000002b8: sp  0 +1 */ 0f0000a4 unnamed member a4
+        /* 000002bc: sp  1 -1 */ 65000000 beebbeeb native void trophy::method_01a7_ffff()
+
+        /* 000002c4: sp  0 +0 */ 0000000a
+        /* 000002c8: sp  0 +1 */ 05000000 beebbeeb &quot;You&#x27;ve used all three Smart Pucks -- TROPHY UNLOCKED&quot;
+        /* 000002d0: sp  1 +1 */ 03000005
+        /* 000002d4: sp  2 +0 */ 5c000000
+        /* 000002d8: sp  2 +1 */ 04000001
+        /* 000002dc: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000002e4: sp  0 +0 */ 0000000b
+        /* 000002e8: sp  0 +0 */ 63000008 0000000c
+        /* 000002f0: sp  0 +1 */ 05000000 beebbeeb &quot;You haven&#x27;t used all three Smart Pucks&quot;
+        /* 000002f8: sp  1 +1 */ 03000005
+        /* 000002fc: sp  2 +0 */ 5c000000
+        /* 00000300: sp  2 +1 */ 04000001
+        /* 00000304: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000030c: sp  0 +0 */ 0000000d
+        ---
+
+        /* 000002ec: sp  0 +0 */ 0000000c
+        /* 000002f0: sp  0 +1 */ 05000000 beebbeeb &quot;You haven&#x27;t used all three Smart Pucks&quot;
+        /* 000002f8: sp  1 +1 */ 03000005
+        /* 000002fc: sp  2 +0 */ 5c000000
+        /* 00000300: sp  2 +1 */ 04000001
+        /* 00000304: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000030c: sp  0 +0 */ 0000000d
+        ---
+        /* 00000310: sp  0 +0 */ 63000008 0000000e
+        /* 00000318: sp  0 +1 */ 05000000 beebbeeb &quot;You don&#x27;t have the Data Puck&quot;
+        /* 00000320: sp  1 +1 */ 03000005
+        /* 00000324: sp  2 +0 */ 5c000000
+        /* 00000328: sp  2 +1 */ 04000001
+        /* 0000032c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000334: sp  0 +0 */ 0000000f
+        ---
+
+        /* 00000314: sp  0 +0 */ 0000000e
+        /* 00000318: sp  0 +1 */ 05000000 beebbeeb &quot;You don&#x27;t have the Data Puck&quot;
+        /* 00000320: sp  1 +1 */ 03000005
+        /* 00000324: sp  2 +0 */ 5c000000
+        /* 00000328: sp  2 +1 */ 04000001
+        /* 0000032c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000334: sp  0 +0 */ 0000000f
+        ---
+        /* 00000338: sp  0 +1 */ 09000024 temp_24
+        /* 0000033c: sp  1 +1 */ 0f000090 unnamed member 90
+        /* 00000340: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000348: sp  0 +1 */ 08000024 temp_24
+        /* 0000034c: sp  1 +1 */ 03000005
+        /* 00000350: sp  2 +0 */ 5c000000
+        /* 00000354: sp  2 +1 */ 04000001
+        /* 00000358: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_0545_ffff(dword arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000360: sp  0 +0 */ 00000010
+        /* 00000364: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type0000a883.html">%dlc_st_data_puck_b%</a><br/>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00012076</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown12076</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city__masterunit.drm n$[0x40]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown12076 : <a href="type00000525.html">unit</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011f49.html">Unknown11F49</a>&gt; decl_0012_53e3_4 = {<a href="units.html#0000bfe4">unit object 0000bfe4</a>};
+    <a href="type000004ec.html">objective</a> decl_0005_5596_c = TODO(0A);
+    void method_0120_0(<a href="type000004e0.html">instanceref</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown12076 : unit {
+    // sizeof = 0x14
+    instanceref decl_0012_53e3_4 = TODO(0A);
+    objective decl_0005_5596_c = TODO(0A);
+    async void method_0120_0(instanceref arg_0012_0121_0) {
+        bool temp_8 = False;
+        Unknown11F49 local_c = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000008 temp_8
+        /* 000000cc: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_0946_ffff()
+        /* 000000d8: sp  0 +1 */ 06000008 temp_8
+        /* 000000dc: sp  1 -1 */ 6400000c
+
+        /* 000000e0: sp  0 +0 */ 00000001
+        /* 000000e4: sp  0 +1 */ 03ffffff
+        /* 000000e8: sp  1 +1 */ 0900000c local_c
+        /* 000000ec: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000000f0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000f8: sp  1 +1 */ 0a00000c local_c
+        /* 000000fc: sp  2 +0 */ 7e000000 00011f49
+        /* 00000104: sp  2 +0 */ 140002b4
+        /* 00000108: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+        ---
+
+        /* 00000110: sp  0 +0 */ 00000002
+        /* 00000114: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000525.html">unit</a><br/>
+</body>
+</html>

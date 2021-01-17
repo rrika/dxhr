@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000091a2</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown91A2</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0x38]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown91A2 : <a href="type00002133.html">%level0_secretarea%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000091a3.html">Unknown91A3</a>&gt; decl_0012_2418_40 = {<a href="units.html#00005eb2">unit object 00005eb2</a>};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown91A2 : %level0_secretarea% {
+    // sizeof = 0x48
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_2418_40 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown91A3 local_8 = TODO(0B);
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 04000000
+        /* 000000bc: sp  1 +1 */ 09000008 local_8
+        /* 000000c0: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 000000c4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000cc: sp  1 +1 */ 0a000008 local_8
+        /* 000000d0: sp  2 +0 */ 7e000000 000091a3
+        /* 000000d8: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 000000e0: sp  0 +0 */ 00000001
+        /* 000000e4: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - other xpvolume lvl0 is disabled!&#x27;
+        /* 000000ec: sp  1 +1 */ 03000003
+        /* 000000f0: sp  2 +0 */ 5c000000
+        /* 000000f4: sp  2 +1 */ 04000001
+        /* 000000f8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000100: sp  0 +0 */ 00000002
+        /* 00000104: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000091a3.html">Unknown91A3</a><br/>
+parent class <a href="type00002133.html">%level0_secretarea%</a><br/>
+</body>
+</html>

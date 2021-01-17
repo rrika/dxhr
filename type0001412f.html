@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0001412f</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1412F</h1>
+		<pre>./tools/drmexplore pc-w/ sha_tym_lab_admin.drm n$[0x2b]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1412F : <a href="type00005615.html">%alarm%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_20 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_5ae4_28 = persistent(dtp:14300) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_5ae5_3c = persistent(dtp:142FF) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006a9b.html">%television_large%</a>&gt; decl_0012_5ae7_50 = {<a href="units.html#0000f5c4">unit object 0000f5c4</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00006a9b.html">%television_large%</a>&gt; decl_0012_5ae8_58 = {<a href="units.html#0000f5c5">unit object 0000f5c5</a>};
+    void method_1a3b_0();
+    void method_19f4_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1412F : %alarm% {
+    // sizeof = 0x60
+    stickybool field_4;
+    playerref decl_012a_012c_20 = TODO(0A);
+    smartscript decl_0089_5ae4_28 = TODO(0A);
+    smartscript decl_0089_5ae5_3c = TODO(0A);
+    instanceref decl_0012_5ae7_50 = TODO(0A);
+    instanceref decl_0012_5ae8_58 = TODO(0A);
+    void method_1a3b_0() {
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 04000000
+        /* 000000bc: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 000000c0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000c8: sp  0 +0 */ 00000001
+        /* 000000cc: sp  0 +1 */ 04000001
+        /* 000000d0: sp  1 +1 */ 0f000028 unnamed member 28
+        /* 000000d4: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000dc: sp  0 +0 */ 00000002
+        /* 000000e0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_19f4_1() {
+        %human_player% local_0 = TODO(0B);
+        %human_player% local_4 = TODO(0B);
+        %television_large% local_8 = TODO(0B);
+        %television_large% local_c = TODO(0B);
+        %television_large% local_10 = TODO(0B);
+        %television_large% local_14 = TODO(0B);
+
+        /* 00000174: sp  0 +0 */ 00000003
+        /* 00000178: sp  0 +1 */ 03000005
+        /* 0000017c: sp  1 +1 */ 04000001
+        /* 00000180: sp  2 +1 */ 09000000 local_0
+        /* 00000184: sp  3 +1 */ 0f000020 unnamed member 20
+        /* 00000188: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000190: sp  2 +1 */ 0a000000 local_0
+        /* 00000194: sp  3 +0 */ 7e000000 00000552
+        /* 0000019c: sp  3 -3 */ 69000000 beebbeeb void actor::method_065d_ffff(dword arg_0000_065b_0, bool arg_0000_065e_4)
+
+        /* 000001a4: sp  0 +0 */ 00000004
+        /* 000001a8: sp  0 +1 */ 03000004
+        /* 000001ac: sp  1 +1 */ 04000001
+        /* 000001b0: sp  2 +1 */ 09000004 local_4
+        /* 000001b4: sp  3 +1 */ 0f000020 unnamed member 20
+        /* 000001b8: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000001c0: sp  2 +1 */ 0a000004 local_4
+        /* 000001c4: sp  3 +0 */ 7e000000 00000552
+        /* 000001cc: sp  3 -3 */ 69000000 beebbeeb void actor::method_065d_ffff(dword arg_0000_065b_0, bool arg_0000_065e_4)
+
+        /* 000001d4: sp  0 +0 */ 00000005
+        /* 000001d8: sp  0 +1 */ 09000008 local_8
+        /* 000001dc: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 000001e0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001e8: sp  0 +1 */ 0a000008 local_8
+        /* 000001ec: sp  1 +0 */ 7e000000 00006a9b
+        /* 000001f4: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137f_ffff()
+
+        /* 000001fc: sp  0 +0 */ 00000006
+        /* 00000200: sp  0 +1 */ 0900000c local_c
+        /* 00000204: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000208: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000210: sp  0 +1 */ 0a00000c local_c
+        /* 00000214: sp  1 +0 */ 7e000000 00006a9b
+        /* 0000021c: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000224: sp  0 +0 */ 00000007
+        /* 00000228: sp  0 +1 */ 09000010 local_10
+        /* 0000022c: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000230: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000238: sp  0 +1 */ 0a000010 local_10
+        /* 0000023c: sp  1 +0 */ 7e000000 00006a9b
+        /* 00000244: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137f_ffff()
+
+        /* 0000024c: sp  0 +0 */ 00000008
+        /* 00000250: sp  0 +1 */ 09000014 local_14
+        /* 00000254: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000258: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000260: sp  0 +1 */ 0a000014 local_14
+        /* 00000264: sp  1 +0 */ 7e000000 00006a9b
+        /* 0000026c: sp  1 -1 */ 69000000 beebbeeb void Unknown2139::method_137e_ffff()
+
+        /* 00000274: sp  0 +0 */ 00000009
+        /* 00000278: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00005615.html">%alarm%</a><br/>
+</body>
+</html>

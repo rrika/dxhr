@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009bcc</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9BCC</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0x77]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9BCC : <a href="type00002134.html">%triggerplane%</a> {
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_2695_4 = TODO(0A);
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_2804_14 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_26d2_24 = TODO(0A);
+    void method_103d_0(gcref <a href="type000004df.html">instance</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9BCC : %triggerplane% {
+    // sizeof = 0x2c
+    objectivescriptablelocator decl_0963_2695_4 = TODO(0A);
+    objectivescriptablelocator decl_0963_2804_14 = TODO(0A);
+    objective decl_0005_26d2_24 = TODO(0A);
+    async void method_103d_0(instance arg_0022_01ba_0) {
+        bool temp_4 = False;
+
+        /* 000000b4: sp  0 +0 */ 00000000
+        /* 000000b8: sp  0 +1 */ 09000004 temp_4
+        /* 000000bc: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000000c0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000000c8: sp  0 +1 */ 06000004 temp_4
+        /* 000000cc: sp  1 -1 */ 64000012
+
+        /* 000000d0: sp  0 +0 */ 00000001
+
+        /* 000000d4: sp  0 +0 */ 00000002
+        /* 000000d8: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 000000dc: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 000000e4: sp  0 +0 */ 00000003
+        /* 000000e8: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 000000ec: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 000000f4: sp  0 +0 */ 00000004
+        /* 000000f8: sp  0 +1 */ 05000000 beebbeeb &#x27;locator a disable locator b enable&#x27;
+        /* 00000100: sp  1 +1 */ 03000008
+        /* 00000104: sp  2 +0 */ 5c000000
+        /* 00000108: sp  2 +1 */ 04000001
+        /* 0000010c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000114: sp  0 +0 */ 00000005
+        ---
+
+        /* 00000118: sp  0 +0 */ 00000006
+        /* 0000011c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00002134.html">%triggerplane%</a><br/>
+</body>
+</html>

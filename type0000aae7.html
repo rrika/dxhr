@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000aae7</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownAAE7</h1>
+		<pre>./tools/drmexplore pc-w/ pan__masterunit.drm n$[0x177]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownAAE7 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa84.html">UnknownAA84</a>&gt; decl_0012_2ca5_4 = {<a href="units.html#00008312">unit object 00008312</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa83.html">UnknownAA83</a>&gt; decl_0012_2c2c_c = {<a href="units.html#00008313">unit object 00008313</a>};
+    <a href="type00000502.html">sequencergraph</a> decl_008c_2c15_14 = TODO(0A);
+    void method_2c6f_0();
+    void method_2c70_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownAAE7 : quest {
+    // sizeof = 0x1c
+    instanceref decl_0012_2ca5_4 = TODO(0A);
+    instanceref decl_0012_2c2c_c = TODO(0A);
+    sequencergraph decl_008c_2c15_14 = TODO(0A);
+    void method_2c6f_0() {
+        UnknownAA83 local_0 = TODO(0B);
+        UnknownAA84 local_4 = TODO(0B);
+        UnknownAA84 local_8 = TODO(0B);
+
+        /* 000000f4: sp  0 +0 */ 00000000
+        /* 000000f8: sp  0 +1 */ 04000000
+        /* 000000fc: sp  1 +1 */ 09000000 local_0
+        /* 00000100: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000104: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000010c: sp  1 +1 */ 0a000000 local_0
+        /* 00000110: sp  2 +0 */ 7e000000 0000aa83
+        /* 00000118: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000120: sp  0 +0 */ 00000001
+        /* 00000124: sp  0 +1 */ 09000004 local_4
+        /* 00000128: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 0000012c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000134: sp  0 +1 */ 0a000004 local_4
+        /* 00000138: sp  1 +0 */ 7e000000 0000aa84
+        /* 00000140: sp  1 -1 */ 69000000 beebbeeb void %base_elevator%::method_0ff7_ffff()
+
+        /* 00000148: sp  0 +0 */ 00000002
+        /* 0000014c: sp  0 +1 */ 04000000
+        /* 00000150: sp  1 +1 */ 09000008 local_8
+        /* 00000154: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000158: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000160: sp  1 +1 */ 0a000008 local_8
+        /* 00000164: sp  2 +0 */ 7e000000 0000aa84
+        /* 0000016c: sp  2 -2 */ 69000000 beebbeeb void %base_elevator%::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 00000174: sp  0 +0 */ 00000003
+        /* 00000178: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 0000017c: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 00000184: sp  0 +0 */ 00000004
+        /* 00000188: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_2c70_1() {
+        /* 00000194: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

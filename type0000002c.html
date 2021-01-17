@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000002c</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown002C</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x3e]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown002C : <a href="type0000059c.html">%dispatcher%</a> {
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_4 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000002b.html">Unknown002B</a>&gt; decl_0012_012e_c = {<a href="units.html#0000009e">unit object 0000009e</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000026.html">Unknown0026</a>&gt; decl_0012_00ed_14 = {<a href="units.html#0000009f">unit object 0000009f</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000570.html">%objectivelocator%</a>&gt; decl_0012_0131_1c = {<a href="units.html#000000a0">unit object 000000a0</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000002f.html">Unknown002F</a>&gt; decl_0012_0133_24 = {<a href="units.html#000000a1">unit object 000000a1</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0000005e.html">Unknown005E</a>&gt; decl_0007_0135_2c = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00000053.html">Unknown0053</a>&gt; decl_0007_0137_30 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00000063.html">Unknown0063</a>&gt; decl_0007_0139_34 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00000062.html">Unknown0062</a>&gt; decl_0007_013b_38 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_013c_3c = TODO(0A);
+    <a href="type00000528.html">video</a> decl_0126_013d_44 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000002d.html">Unknown002D</a>&gt; decl_0012_013f_54 = {<a href="units.html#000000a2">unit object 000000a2</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_0140_5c = persistent(dtp:047A) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000563.html">%mtl_picinternet_soldier_belltower_h%</a>&gt; decl_0012_0142_70 = {<a href="units.html#000000a3">unit object 000000a3</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000563.html">%mtl_picinternet_soldier_belltower_h%</a>&gt; decl_0012_0143_78 = {<a href="units.html#000000a4">unit object 000000a4</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000047.html">Unknown0047</a>&gt; decl_0012_0145_80 = {<a href="units.html#000000a5">unit object 000000a5</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000055d.html">%mtl_picinternet_soldier_belltower_a%</a>&gt; decl_0012_0147_88 = {<a href="units.html#000000a6">unit object 000000a6</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000048.html">Unknown0048</a>&gt; decl_0012_0149_90 = {<a href="units.html#000000a7">unit object 000000a7</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000055c.html">%mtl_picfunicular_soldier_belltower_i%</a>&gt; decl_0012_014b_98 = {<a href="units.html#000000a8">unit object 000000a8</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000049.html">Unknown0049</a>&gt; decl_0012_014d_a0 = {<a href="units.html#000000a9">unit object 000000a9</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000004a.html">Unknown004A</a>&gt; decl_0012_014f_a8 = {<a href="units.html#000000aa">unit object 000000aa</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000004b.html">Unknown004B</a>&gt; decl_0012_0151_b0 = {<a href="units.html#000000ab">unit object 000000ab</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000055f.html">%mtl_picinternet_soldier_belltower_d%</a>&gt; decl_0012_0153_b8 = {<a href="units.html#000000ac">unit object 000000ac</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000564.html">%mtl_picinternet_soldier_belltower_j%</a>&gt; decl_0012_0155_c0 = {<a href="units.html#000000ad">unit object 000000ad</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000004c.html">Unknown004C</a>&gt; decl_0012_0157_c8 = {<a href="units.html#000000ae">unit object 000000ae</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000004d.html">Unknown004D</a>&gt; decl_0012_0159_d0 = {<a href="units.html#000000af">unit object 000000af</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000004e.html">Unknown004E</a>&gt; decl_0012_015b_d8 = {<a href="units.html#000000b0">unit object 000000b0</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000004f.html">Unknown004F</a>&gt; decl_0012_015d_e0 = {<a href="units.html#000000b1">unit object 000000b1</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000050.html">Unknown0050</a>&gt; decl_0012_015f_e8 = {<a href="units.html#000000b2">unit object 000000b2</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000051.html">Unknown0051</a>&gt; decl_0012_0161_f0 = {<a href="units.html#000000b3">unit object 000000b3</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000052.html">Unknown0052</a>&gt; decl_0012_0163_f8 = {<a href="units.html#000000b4">unit object 000000b4</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_0165_100 = {<a href="units.html#000000b5">unit object 000000b5</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_0166_108 = {<a href="units.html#000000b6">unit object 000000b6</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_0167_110 = {<a href="units.html#000000b7">unit object 000000b7</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_0168_118 = {<a href="units.html#000000b8">unit object 000000b8</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_0169_120 = {<a href="units.html#000000b9">unit object 000000b9</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_016a_128 = {<a href="units.html#000000ba">unit object 000000ba</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_016b_130 = {<a href="units.html#000000bb">unit object 000000bb</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_016c_138 = {<a href="units.html#000000bc">unit object 000000bc</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_016d_140 = {<a href="units.html#000000bd">unit object 000000bd</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000573.html">%destroyphysicsobjectsvolume%</a>&gt; decl_0012_016e_148 = {<a href="units.html#000000be">unit object 000000be</a>};
+    void method_016f_0();
+    // referenced at <a href="type0000004c.html">async void Unknown004C::method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown002C : %dispatcher% {
+    // sizeof = 0x150
+    playerref decl_012a_012c_4 = TODO(0A);
+    instanceref decl_0012_012e_c = TODO(0A);
+    instanceref decl_0012_00ed_14 = TODO(0A);
+    instanceref decl_0012_0131_1c = TODO(0A);
+    instanceref decl_0012_0133_24 = TODO(0A);
+    scenarioref&lt;Unknown005E&gt; decl_0007_0135_2c = TODO(0A);
+    scenarioref&lt;Unknown0053&gt; decl_0007_0137_30 = TODO(0A);
+    scenarioref&lt;Unknown0063&gt; decl_0007_0139_34 = TODO(0A);
+    scenarioref&lt;Unknown0062&gt; decl_0007_013b_38 = TODO(0A);
+    objective decl_0005_013c_3c = TODO(0A);
+    video decl_0126_013d_44 = TODO(0A);
+    instanceref decl_0012_013f_54 = TODO(0A);
+    smartscript decl_0089_0140_5c = TODO(0A);
+    instanceref decl_0012_0142_70 = TODO(0A);
+    instanceref decl_0012_0143_78 = TODO(0A);
+    instanceref decl_0012_0145_80 = TODO(0A);
+    instanceref decl_0012_0147_88 = TODO(0A);
+    instanceref decl_0012_0149_90 = TODO(0A);
+    instanceref decl_0012_014b_98 = TODO(0A);
+    instanceref decl_0012_014d_a0 = TODO(0A);
+    instanceref decl_0012_014f_a8 = TODO(0A);
+    instanceref decl_0012_0151_b0 = TODO(0A);
+    instanceref decl_0012_0153_b8 = TODO(0A);
+    instanceref decl_0012_0155_c0 = TODO(0A);
+    instanceref decl_0012_0157_c8 = TODO(0A);
+    instanceref decl_0012_0159_d0 = TODO(0A);
+    instanceref decl_0012_015b_d8 = TODO(0A);
+    instanceref decl_0012_015d_e0 = TODO(0A);
+    instanceref decl_0012_015f_e8 = TODO(0A);
+    instanceref decl_0012_0161_f0 = TODO(0A);
+    instanceref decl_0012_0163_f8 = TODO(0A);
+    instanceref decl_0012_0165_100 = TODO(0A);
+    instanceref decl_0012_0166_108 = TODO(0A);
+    instanceref decl_0012_0167_110 = TODO(0A);
+    instanceref decl_0012_0168_118 = TODO(0A);
+    instanceref decl_0012_0169_120 = TODO(0A);
+    instanceref decl_0012_016a_128 = TODO(0A);
+    instanceref decl_0012_016b_130 = TODO(0A);
+    instanceref decl_0012_016c_138 = TODO(0A);
+    instanceref decl_0012_016d_140 = TODO(0A);
+    instanceref decl_0012_016e_148 = TODO(0A);
+    void method_016f_0() {
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 0f000090 unnamed member 90
+        /* 0000010c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000114: sp  0 +0 */ 00000001
+        /* 00000118: sp  0 +1 */ 0f0000a8 unnamed member a8
+        /* 0000011c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000124: sp  0 +0 */ 00000002
+        /* 00000128: sp  0 +1 */ 0f000070 unnamed member 70
+        /* 0000012c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000134: sp  0 +0 */ 00000003
+        /* 00000138: sp  0 +1 */ 0f0000a0 unnamed member a0
+        /* 0000013c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000144: sp  0 +0 */ 00000004
+        /* 00000148: sp  0 +1 */ 0f000078 unnamed member 78
+        /* 0000014c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000154: sp  0 +0 */ 00000005
+        /* 00000158: sp  0 +1 */ 0f000080 unnamed member 80
+        /* 0000015c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000164: sp  0 +0 */ 00000006
+        /* 00000168: sp  0 +1 */ 0f000088 unnamed member 88
+        /* 0000016c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000174: sp  0 +0 */ 00000007
+        /* 00000178: sp  0 +1 */ 0f000098 unnamed member 98
+        /* 0000017c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000184: sp  0 +0 */ 00000008
+        /* 00000188: sp  0 +1 */ 0f0000b0 unnamed member b0
+        /* 0000018c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000194: sp  0 +0 */ 00000009
+        /* 00000198: sp  0 +1 */ 0f0000b8 unnamed member b8
+        /* 0000019c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000001a4: sp  0 +0 */ 0000000a
+        /* 000001a8: sp  0 +1 */ 0f0000c0 unnamed member c0
+        /* 000001ac: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000001b4: sp  0 +0 */ 0000000b
+        /* 000001b8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000002d.html">Unknown002D</a><br/>
+initialized field in <a href="type0000004c.html">Unknown004C</a><br/>
+initialized field in <a href="type0000c56b.html">UnknownC56B</a><br/>
+parent class <a href="type0000059c.html">%dispatcher%</a><br/>
+</body>
+</html>

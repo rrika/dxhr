@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000119ee</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown119EE</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_port_2a.drm n$[0xdf]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown119EE : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000119ed.html">Unknown119ED</a>&gt; decl_0012_5155_40 = {<a href="units.html#0000bf06">unit object 0000bf06</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000119ef.html">Unknown119EF</a>&gt; decl_0012_5159_48 = {<a href="units.html#0000bf08">unit object 0000bf08</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000119f0.html">Unknown119F0</a>&gt; decl_0012_515b_50 = {<a href="units.html#0000bf09">unit object 0000bf09</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000119f1.html">Unknown119F1</a>&gt; decl_0012_515d_58 = {<a href="units.html#0000bf0a">unit object 0000bf0a</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000119dd.html">Unknown119DD</a>&gt; decl_0012_512e_60 = {<a href="units.html#0000bee7">unit object 0000bee7</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000119dc.html">Unknown119DC</a>&gt; decl_0012_512d_68 = {<a href="units.html#0000bf05">unit object 0000bf05</a>};
+    <a href="type00000512.html">sound</a> decl_0027_5125_70 = dtp:19FD:V;
+    <a href="type00000502.html">sequencergraph</a> decl_008c_515e_74 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_512f_7c = persistent(dtp:11A31) {type=bool};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown119EE : %triggervolume% {
+    // sizeof = 0x90
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_5155_40 = TODO(0A);
+    instanceref decl_0012_5159_48 = TODO(0A);
+    instanceref decl_0012_515b_50 = TODO(0A);
+    instanceref decl_0012_515d_58 = TODO(0A);
+    instanceref decl_0012_512e_60 = TODO(0A);
+    instanceref decl_0012_512d_68 = TODO(0A);
+    sound decl_0027_5125_70 = TODO(0A);
+    sequencergraph decl_008c_515e_74 = TODO(0A);
+    smartscript decl_0089_512f_7c = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        bool temp_8 = False;
+        Unknown119ED local_c = TODO(0B);
+        Unknown119EF local_10 = TODO(0B);
+        Unknown119F0 local_14 = TODO(0B);
+        Unknown119F1 local_18 = TODO(0B);
+        Unknown119DC local_1c = TODO(0B);
+        anchor local_20 = TODO(0A);
+
+        /* 00000144: sp  0 +0 */ 00000000
+        /* 00000148: sp  0 +1 */ 09000008 temp_8
+        /* 0000014c: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000150: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000158: sp  0 +1 */ 06000008 temp_8
+        /* 0000015c: sp  1 +1 */ 04000000
+        /* 00000160: sp  2 -1 */ 46000000
+        /* 00000164: sp  1 -1 */ 64000046
+
+        /* 00000168: sp  0 +0 */ 00000001
+
+        /* 0000016c: sp  0 +0 */ 00000002
+        /* 00000170: sp  0 +1 */ 04000000
+        /* 00000174: sp  1 +1 */ 0900000c local_c
+        /* 00000178: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 0000017c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000184: sp  1 +1 */ 0a00000c local_c
+        /* 00000188: sp  2 +0 */ 7e000000 000119ed
+        /* 00000190: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 00000198: sp  0 +0 */ 00000003
+        /* 0000019c: sp  0 +1 */ 04000000
+        /* 000001a0: sp  1 +1 */ 09000010 local_10
+        /* 000001a4: sp  2 +1 */ 0f000048 unnamed member 48
+        /* 000001a8: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001b0: sp  1 +1 */ 0a000010 local_10
+        /* 000001b4: sp  2 +0 */ 7e000000 000119ef
+        /* 000001bc: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 000001c4: sp  0 +0 */ 00000004
+        /* 000001c8: sp  0 +1 */ 04000000
+        /* 000001cc: sp  1 +1 */ 09000014 local_14
+        /* 000001d0: sp  2 +1 */ 0f000050 unnamed member 50
+        /* 000001d4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001dc: sp  1 +1 */ 0a000014 local_14
+        /* 000001e0: sp  2 +0 */ 7e000000 000119f0
+        /* 000001e8: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 000001f0: sp  0 +0 */ 00000005
+        /* 000001f4: sp  0 +1 */ 04000000
+        /* 000001f8: sp  1 +1 */ 09000018 local_18
+        /* 000001fc: sp  2 +1 */ 0f000058 unnamed member 58
+        /* 00000200: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000208: sp  1 +1 */ 0a000018 local_18
+        /* 0000020c: sp  2 +0 */ 7e000000 000119f1
+        /* 00000214: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 0000021c: sp  0 +0 */ 00000006
+        /* 00000220: sp  0 +1 */ 09000020 local_20
+        /* 00000224: sp  1 +1 */ 0900001c local_1c
+        /* 00000228: sp  2 +1 */ 0f000068 unnamed member 68
+        /* 0000022c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000234: sp  1 +1 */ 0a00001c local_1c
+        /* 00000238: sp  2 +0 */ 7e000000 000119dc
+        /* 00000240: sp  2 -2 */ 69000000 beebbeeb anchor instance::method_08d9_ffff()
+        /* 00000248: sp  0 +1 */ 09000020 local_20
+        /* 0000024c: sp  1 +1 */ 0f000070 unnamed member 70
+        /* 00000250: sp  2 -2 */ 65000000 beebbeeb native void sound::startSound1(anchor arg_00b8_06fa_0)
+
+        /* 00000258: sp  0 +0 */ 00000007
+        /* 0000025c: sp  0 +1 */ 0f000074 unnamed member 74
+        /* 00000260: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 00000268: sp  0 +0 */ 00000008
+        /* 0000026c: sp  0 +1 */ 04000001
+        /* 00000270: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000274: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000027c: sp  0 +0 */ 00000009
+        ---
+
+        /* 00000280: sp  0 +0 */ 0000000a
+        /* 00000284: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000119ed.html">Unknown119ED</a><br/>
+initialized field in <a href="type000119ef.html">Unknown119EF</a><br/>
+initialized field in <a href="type000119f0.html">Unknown119F0</a><br/>
+initialized field in <a href="type000119f1.html">Unknown119F1</a><br/>
+initialized field in <a href="type0001385c.html">Unknown1385C</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000580</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%base_elevator_exterior_dbl_door%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0xd47]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %base_elevator_exterior_dbl_door% : <a href="type0000057f.html">Unknown057F</a> {
+    <a href="type000004f5.html">playerref</a> field_4;
+    <a href="type000004f5.html">playerref</a> field_c;
+    <a href="type00000512.html">sound</a> field_1c;
+    <a href="type00000526.html">unitref</a> field_20;
+    <a href="type00000517.html">stickybool</a> field_2c;
+    <a href="type000004e6.html">marker</a> field_48;
+    <a href="type000004e6.html">marker</a> field_50;
+    void method_01a5_0();
+    void method_01a6_1();
+    void method_02ca_2(bool);
+    void method_0b9d_3();
+    void method_01a7_4();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %base_elevator_exterior_dbl_door% : Unknown057F {
+    // sizeof = 0x61
+    playerref field_4;
+    playerref field_c;
+    sound field_1c;
+    unitref field_20;
+    stickybool field_2c;
+    marker field_48;
+    marker field_50;
+    void method_01a5_0() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000000 local_0
+        /* 0000012c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000134: sp  0 +0 */ 00000001
+        /* 00000138: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a6_1() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000174: sp  0 +0 */ 00000002
+        /* 00000178: sp  0 +1 */ 09000000 local_0
+        /* 0000017c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000184: sp  0 +0 */ 00000003
+        /* 00000188: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02ca_2(bool arg_0000_0680_0) {
+        uberobjectcommand local_4 = TODO(0A);
+        uberobjectcommand local_c = TODO(0A);
+
+        /* 000001e4: sp  0 +0 */ 00000004
+        /* 000001e8: sp  0 +1 */ 06000000 arg_0000_0680_0
+        /* 000001ec: sp  1 -1 */ 64000005
+
+        /* 000001f0: sp  0 +0 */ 00000005
+        /* 000001f4: sp  0 +1 */ 09000004 local_4
+        /* 000001f8: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 00000200: sp  0 +0 */ 63000004 00000006
+        /* 00000208: sp  0 +1 */ 0900000c local_c
+        /* 0000020c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000214: sp  0 +0 */ 00000007
+        ---
+
+        /* 00000204: sp  0 +0 */ 00000006
+        /* 00000208: sp  0 +1 */ 0900000c local_c
+        /* 0000020c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000214: sp  0 +0 */ 00000007
+        ---
+        /* 00000218: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0b9d_3() {
+
+        /* 00000224: sp  0 +0 */ 00000008
+        /* 00000228: sp  0 +1 */ 04000000
+        /* 0000022c: sp  1 +1 */ 05000000 beebbeeb &#x27;Elevator Doors have no lock behaviour!&#x27;
+        /* 00000234: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 0000023c: sp  0 +0 */ 00000009
+        /* 00000240: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a7_4() {
+
+        /* 00000284: sp  0 +0 */ 0000000a
+        /* 00000288: sp  0 +1 */ 04000000
+        /* 0000028c: sp  1 +1 */ 05000000 beebbeeb &#x27;Elevator Doors have no unlock behaviour!&#x27;
+        /* 00000294: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 0000029c: sp  0 +0 */ 0000000b
+        /* 000002a0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type0000058c.html">%det_adam_elevator_door_a%</a><br/>
+derived class <a href="type00005b29.html">Unknown5B29</a><br/>
+derived class <a href="type00005b35.html">%det_fema_elevator_dbl_a%</a><br/>
+derived class <a href="type00007d23.html">%det_sarifoffice_elevator_extdoor_a%</a><br/>
+derived class <a href="type00009e7f.html">%elevatordoor_pic_funicular%</a><br/>
+derived class <a href="type0001355b.html">%sha_lower_door_sl2_jaya_elevator_a%</a><br/>
+derived class <a href="type00013f26.html">%sha_tym_elevator_door_lower%</a><br/>
+derived class <a href="type00014e73.html">%ranch_lab_elevator_exterior_dbl_door_a%</a><br/>
+derived class <a href="type000151b1.html">%ranch_hugh_darrow_elevator_dbl_door_a%</a><br/>
+parent class <a href="type0000057f.html">Unknown057F</a><br/>
+unit object #11 null<br/>
+unit object #12 null<br/>
+unit object #31 null<br/>
+unit object #32 null<br/>
+</body>
+</html>

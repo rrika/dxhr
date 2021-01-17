@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005f5</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05F5</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x732]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05F5 : <a href="type000004f7.html">quest</a> {
+    <a href="type000004bf.html">cinematic</a> decl_07c1_0ea8_4 = TODO(0A);
+    void method_033e_0();
+    void method_033f_1();
+    void method_0340_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05F5 : quest {
+    // sizeof = 0x18
+    cinematic decl_07c1_0ea8_4 = TODO(0A);
+    void method_033e_0() {
+        instanceref&lt;Unknown0079&gt; local_0 = TODO(0A);
+        Unknown0079 local_8 = TODO(0B);
+
+        /* 00000134: sp  0 +0 */ 00000000
+        /* 00000138: sp  0 +1 */ 09000008 local_8
+        /* 0000013c: sp  1 +1 */ 09000000 local_0
+        /* 00000140: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000148: sp  0 +1 */ 0a000008 local_8
+        /* 0000014c: sp  1 +0 */ 7e000000 00000079
+        /* 00000154: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000158: sp  2 -2 */ 65000000 beebbeeb native void cinematic::method_07c4_ffff(instance arg_0022_0023_0)
+
+        /* 00000160: sp  0 +0 */ 00000001
+        /* 00000164: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_033f_1() {
+        bool temp_0 = False;
+
+        /* 00000194: sp  0 +0 */ 00000002
+        /* 00000198: sp  0 +1 */ 09000000 temp_0
+        /* 0000019c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001a0: sp  2 -2 */ 65000000 beebbeeb native bool cinematic::method_07bd_ffff()
+        /* 000001a8: sp  0 +1 */ 06000000 temp_0
+        /* 000001ac: sp  1 -1 */ 01000000
+
+        /* 000001b0: sp  0 +0 */ 00000003
+        /* 000001b4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0340_2() {
+        bool temp_0 = False;
+
+        /* 000001e4: sp  0 +0 */ 00000004
+        /* 000001e8: sp  0 +1 */ 09000000 temp_0
+        /* 000001ec: sp  1 +1 */ 04000001
+        /* 000001f0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000001f4: sp  3 -3 */ 65000000 beebbeeb native bool cinematic::method_07b3_ffff(bool arg_0000_07bd_4)
+        /* 000001fc: sp  0 +1 */ 06000000 temp_0
+        /* 00000200: sp  1 -1 */ 01000000
+
+        /* 00000204: sp  0 +0 */ 00000005
+        /* 00000208: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 0000020c: sp  1 -1 */ 65000000 beebbeeb native void cinematic::method_07c3_ffff()
+
+        /* 00000214: sp  0 +0 */ 00000006
+        /* 00000218: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

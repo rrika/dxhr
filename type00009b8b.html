@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009b8b</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9B8B</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0x34]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9B8B : <a href="type0000059c.html">%dispatcher%</a> {
+    <a href="type000004f2.html">pickup</a> decl_05fb_2746_4 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_2747_8 = persistent(dtp:9E0C) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009b58.html">Unknown9B58</a>&gt; decl_0012_266a_1c = {<a href="units.html#00006a2e">unit object 00006a2e</a>};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_24 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_2748_2c = persistent(dtp:9DFC) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2723_40 = persistent(dtp:9E0E) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2726_54 = persistent(dtp:9E10) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2728_68 = persistent(dtp:9E12) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2724_7c = persistent(dtp:9E1A) {type=dword};
+    <a href="type00000511.html">smartscript</a> decl_0089_2749_90 = persistent(dtp:9E09) {type=bool};
+    <a href="type000004ec.html">objective</a> decl_0005_274a_a4 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_274b_ac = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_274c_b4 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_274d_bc = TODO(0A);
+    void method_0813_0(<a href="type000004e2.html">inventoryitem</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9B8B : %dispatcher% {
+    // sizeof = 0xc4
+    pickup decl_05fb_2746_4 = TODO(0A);
+    smartscript decl_0089_2747_8 = TODO(0A);
+    instanceref decl_0012_266a_1c = TODO(0A);
+    playerref decl_012a_012c_24 = TODO(0A);
+    smartscript decl_0089_2748_2c = TODO(0A);
+    smartscript decl_0089_2723_40 = TODO(0A);
+    smartscript decl_0089_2726_54 = TODO(0A);
+    smartscript decl_0089_2728_68 = TODO(0A);
+    smartscript decl_0089_2724_7c = TODO(0A);
+    smartscript decl_0089_2749_90 = TODO(0A);
+    objective decl_0005_274a_a4 = TODO(0A);
+    objective decl_0005_274b_ac = TODO(0A);
+    objective decl_0005_274c_b4 = TODO(0A);
+    objective decl_0005_274d_bc = TODO(0A);
+    async void method_0813_0(inventoryitem arg_0604_05f7_0) {
+        bool temp_14 = False;
+        inventoryitem local_18 = TODO(0A);
+        Unknown9B58 local_2c = TODO(0B);
+        bool temp_30 = False;
+        inventoryitem local_34 = TODO(0A);
+        dword temp_48 = 0;
+        bool temp_4c = False;
+        bool temp_4d = False;
+        bool temp_4e = False;
+        bool temp_4f = False;
+        bool temp_50 = False;
+        inventoryitem local_54 = TODO(0A);
+        dword temp_68 = 0;
+        bool temp_6c = False;
+        bool temp_6d = False;
+        bool temp_6e = False;
+        bool temp_6f = False;
+        bool temp_70 = False;
+        inventoryitem local_74 = TODO(0A);
+        dword temp_88 = 0;
+        bool temp_8c = False;
+        bool temp_8d = False;
+        bool temp_8e = False;
+        bool temp_8f = False;
+        bool temp_90 = False;
+        inventoryitem local_94 = TODO(0A);
+
+        /* 00000354: sp  0 +0 */ 00000000
+        /* 00000358: sp  0 +1 */ 09000014 temp_14
+        /* 0000035c: sp  1 +1 */ 09000018 local_18
+        /* 00000360: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 00000364: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 0000036c: sp  0 +1 */ 06000014 temp_14
+        /* 00000370: sp  1 -1 */ 6400001c
+
+        /* 00000374: sp  0 +0 */ 00000001
+
+        /* 00000378: sp  0 +0 */ 00000002
+        /* 0000037c: sp  0 +1 */ 04000001
+        /* 00000380: sp  1 +1 */ 0f00002c unnamed member 2c
+        /* 00000384: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000038c: sp  0 +0 */ 00000003
+        /* 00000390: sp  0 +1 */ 03ffffff
+        /* 00000394: sp  1 +1 */ 0900002c local_2c
+        /* 00000398: sp  2 +1 */ 0f00001c unnamed member 1c
+        /* 0000039c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000003a4: sp  1 +1 */ 0a00002c local_2c
+        /* 000003a8: sp  2 +0 */ 7e000000 00009b58
+        /* 000003b0: sp  2 +0 */ 14000004
+        /* 000003b4: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 000003bc: sp  0 +0 */ 00000004
+        /* 000003c0: sp  0 +1 */ 05000000 beebbeeb &#x27;burkes eye acquired&#x27;
+        /* 000003c8: sp  1 +1 */ 0300000a
+        /* 000003cc: sp  2 +0 */ 5c000000
+        /* 000003d0: sp  2 +1 */ 04000001
+        /* 000003d4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000003dc: sp  0 +0 */ 00000005
+        /* 000003e0: sp  0 +0 */ 630000f5 00000006
+        /* 000003e8: sp  0 +1 */ 09000030 temp_30
+        /* 000003ec: sp  1 +1 */ 09000034 local_34
+        /* 000003f0: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 000003f4: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 000003fc: sp  0 +1 */ 06000030 temp_30
+        /* 00000400: sp  1 -1 */ 6400003f
+
+        /* 00000404: sp  0 +0 */ 00000007
+
+        /* 00000408: sp  0 +0 */ 00000008
+        /* 0000040c: sp  0 +1 */ 04000001
+        /* 00000410: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000414: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000041c: sp  0 +0 */ 00000009
+        /* 00000420: sp  0 +1 */ 09000048 temp_48
+        /* 00000424: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000428: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000430: sp  0 +1 */ 08000048 temp_48
+        /* 00000434: sp  1 +1 */ 03000001
+        /* 00000438: sp  2 -1 */ 3e000000
+        /* 0000043c: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000440: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000448: sp  0 +0 */ 0000000a
+        /* 0000044c: sp  0 +1 */ 0900004c temp_4c
+        /* 00000450: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 00000454: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 0000045c: sp  0 +1 */ 0600004c temp_4c
+        /* 00000460: sp  1 -1 */ 6400001d
+
+        /* 00000464: sp  0 +0 */ 0000000b
+
+        /* 00000468: sp  0 +0 */ 0000000c
+        /* 0000046c: sp  0 +1 */ 0f0000a4 unnamed member a4
+        /* 00000470: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000478: sp  0 +0 */ 0000000d
+        /* 0000047c: sp  0 +1 */ 0900004d temp_4d
+        /* 00000480: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 00000484: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 0000048c: sp  0 +1 */ 0600004d temp_4d
+        /* 00000490: sp  1 +1 */ 0900004e temp_4e
+        /* 00000494: sp  2 +1 */ 0f0000ac unnamed member ac
+        /* 00000498: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000004a0: sp  1 +1 */ 0600004e temp_4e
+        /* 000004a4: sp  2 +1 */ 0900004f temp_4f
+        /* 000004a8: sp  3 +1 */ 0f0000b4 unnamed member b4
+        /* 000004ac: sp  4 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000004b4: sp  2 +1 */ 0600004f temp_4f
+        /* 000004b8: sp  3 -1 */ 51000000
+        /* 000004bc: sp  2 -1 */ 51000000
+        /* 000004c0: sp  1 -1 */ 64000004
+
+        /* 000004c4: sp  0 +0 */ 0000000e
+        /* 000004c8: sp  0 +1 */ 0f0000bc unnamed member bc
+        /* 000004cc: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+        ---
+
+        /* 000003e4: sp  0 +0 */ 00000006
+        /* 000003e8: sp  0 +1 */ 09000030 temp_30
+        /* 000003ec: sp  1 +1 */ 09000034 local_34
+        /* 000003f0: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 000003f4: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 000003fc: sp  0 +1 */ 06000030 temp_30
+        /* 00000400: sp  1 -1 */ 6400003f
+
+        /* 00000404: sp  0 +0 */ 00000007
+
+        /* 00000408: sp  0 +0 */ 00000008
+        /* 0000040c: sp  0 +1 */ 04000001
+        /* 00000410: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000414: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 0000041c: sp  0 +0 */ 00000009
+        /* 00000420: sp  0 +1 */ 09000048 temp_48
+        /* 00000424: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000428: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000430: sp  0 +1 */ 08000048 temp_48
+        /* 00000434: sp  1 +1 */ 03000001
+        /* 00000438: sp  2 -1 */ 3e000000
+        /* 0000043c: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000440: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000448: sp  0 +0 */ 0000000a
+        /* 0000044c: sp  0 +1 */ 0900004c temp_4c
+        /* 00000450: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 00000454: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 0000045c: sp  0 +1 */ 0600004c temp_4c
+        /* 00000460: sp  1 -1 */ 6400001d
+
+        /* 00000464: sp  0 +0 */ 0000000b
+
+        /* 00000468: sp  0 +0 */ 0000000c
+        /* 0000046c: sp  0 +1 */ 0f0000a4 unnamed member a4
+        /* 00000470: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000478: sp  0 +0 */ 0000000d
+        /* 0000047c: sp  0 +1 */ 0900004d temp_4d
+        /* 00000480: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 00000484: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 0000048c: sp  0 +1 */ 0600004d temp_4d
+        /* 00000490: sp  1 +1 */ 0900004e temp_4e
+        /* 00000494: sp  2 +1 */ 0f0000ac unnamed member ac
+        /* 00000498: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000004a0: sp  1 +1 */ 0600004e temp_4e
+        /* 000004a4: sp  2 +1 */ 0900004f temp_4f
+        /* 000004a8: sp  3 +1 */ 0f0000b4 unnamed member b4
+        /* 000004ac: sp  4 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000004b4: sp  2 +1 */ 0600004f temp_4f
+        /* 000004b8: sp  3 -1 */ 51000000
+        /* 000004bc: sp  2 -1 */ 51000000
+        /* 000004c0: sp  1 -1 */ 64000004
+
+        /* 000004c4: sp  0 +0 */ 0000000e
+        /* 000004c8: sp  0 +1 */ 0f0000bc unnamed member bc
+        /* 000004cc: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+        ---
+
+        /* 000004d4: sp  0 +0 */ 0000000f
+        ---
+
+        /* 000004d8: sp  0 +0 */ 00000010
+        /* 000004dc: sp  0 +1 */ 05000000 beebbeeb &#x27;rocketlauncher barrel acquired&#x27;
+        /* 000004e4: sp  1 +1 */ 0300000a
+        /* 000004e8: sp  2 +0 */ 5c000000
+        /* 000004ec: sp  2 +1 */ 04000001
+        /* 000004f0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000004f8: sp  0 +0 */ 00000011
+        /* 000004fc: sp  0 +0 */ 630000ae 00000012
+        /* 00000504: sp  0 +1 */ 09000050 temp_50
+        /* 00000508: sp  1 +1 */ 09000054 local_54
+        /* 0000050c: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 00000510: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 00000518: sp  0 +1 */ 06000050 temp_50
+        /* 0000051c: sp  1 -1 */ 6400003f
+
+        /* 00000520: sp  0 +0 */ 00000013
+
+        /* 00000524: sp  0 +0 */ 00000014
+        /* 00000528: sp  0 +1 */ 04000001
+        /* 0000052c: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 00000530: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000538: sp  0 +0 */ 00000015
+        /* 0000053c: sp  0 +1 */ 09000068 temp_68
+        /* 00000540: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000544: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 0000054c: sp  0 +1 */ 08000068 temp_68
+        /* 00000550: sp  1 +1 */ 03000001
+        /* 00000554: sp  2 -1 */ 3e000000
+        /* 00000558: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 0000055c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000564: sp  0 +0 */ 00000016
+        /* 00000568: sp  0 +1 */ 0900006c temp_6c
+        /* 0000056c: sp  1 +1 */ 0f0000ac unnamed member ac
+        /* 00000570: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000578: sp  0 +1 */ 0600006c temp_6c
+        /* 0000057c: sp  1 -1 */ 6400001d
+
+        /* 00000580: sp  0 +0 */ 00000017
+
+        /* 00000584: sp  0 +0 */ 00000018
+        /* 00000588: sp  0 +1 */ 0f0000ac unnamed member ac
+        /* 0000058c: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000594: sp  0 +0 */ 00000019
+        /* 00000598: sp  0 +1 */ 0900006d temp_6d
+        /* 0000059c: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 000005a0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000005a8: sp  0 +1 */ 0600006d temp_6d
+        /* 000005ac: sp  1 +1 */ 0900006e temp_6e
+        /* 000005b0: sp  2 +1 */ 0f0000ac unnamed member ac
+        /* 000005b4: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000005bc: sp  1 +1 */ 0600006e temp_6e
+        /* 000005c0: sp  2 +1 */ 0900006f temp_6f
+        /* 000005c4: sp  3 +1 */ 0f0000b4 unnamed member b4
+        /* 000005c8: sp  4 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000005d0: sp  2 +1 */ 0600006f temp_6f
+        /* 000005d4: sp  3 -1 */ 51000000
+        /* 000005d8: sp  2 -1 */ 51000000
+        /* 000005dc: sp  1 -1 */ 64000004
+
+        /* 000005e0: sp  0 +0 */ 0000001a
+        /* 000005e4: sp  0 +1 */ 0f0000bc unnamed member bc
+        /* 000005e8: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+        ---
+
+        /* 00000500: sp  0 +0 */ 00000012
+        /* 00000504: sp  0 +1 */ 09000050 temp_50
+        /* 00000508: sp  1 +1 */ 09000054 local_54
+        /* 0000050c: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 00000510: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 00000518: sp  0 +1 */ 06000050 temp_50
+        /* 0000051c: sp  1 -1 */ 6400003f
+
+        /* 00000520: sp  0 +0 */ 00000013
+
+        /* 00000524: sp  0 +0 */ 00000014
+        /* 00000528: sp  0 +1 */ 04000001
+        /* 0000052c: sp  1 +1 */ 0f000054 unnamed member 54
+        /* 00000530: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000538: sp  0 +0 */ 00000015
+        /* 0000053c: sp  0 +1 */ 09000068 temp_68
+        /* 00000540: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000544: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 0000054c: sp  0 +1 */ 08000068 temp_68
+        /* 00000550: sp  1 +1 */ 03000001
+        /* 00000554: sp  2 -1 */ 3e000000
+        /* 00000558: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 0000055c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000564: sp  0 +0 */ 00000016
+        /* 00000568: sp  0 +1 */ 0900006c temp_6c
+        /* 0000056c: sp  1 +1 */ 0f0000ac unnamed member ac
+        /* 00000570: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000578: sp  0 +1 */ 0600006c temp_6c
+        /* 0000057c: sp  1 -1 */ 6400001d
+
+        /* 00000580: sp  0 +0 */ 00000017
+
+        /* 00000584: sp  0 +0 */ 00000018
+        /* 00000588: sp  0 +1 */ 0f0000ac unnamed member ac
+        /* 0000058c: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000594: sp  0 +0 */ 00000019
+        /* 00000598: sp  0 +1 */ 0900006d temp_6d
+        /* 0000059c: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 000005a0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000005a8: sp  0 +1 */ 0600006d temp_6d
+        /* 000005ac: sp  1 +1 */ 0900006e temp_6e
+        /* 000005b0: sp  2 +1 */ 0f0000ac unnamed member ac
+        /* 000005b4: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000005bc: sp  1 +1 */ 0600006e temp_6e
+        /* 000005c0: sp  2 +1 */ 0900006f temp_6f
+        /* 000005c4: sp  3 +1 */ 0f0000b4 unnamed member b4
+        /* 000005c8: sp  4 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000005d0: sp  2 +1 */ 0600006f temp_6f
+        /* 000005d4: sp  3 -1 */ 51000000
+        /* 000005d8: sp  2 -1 */ 51000000
+        /* 000005dc: sp  1 -1 */ 64000004
+
+        /* 000005e0: sp  0 +0 */ 0000001a
+        /* 000005e4: sp  0 +1 */ 0f0000bc unnamed member bc
+        /* 000005e8: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+        ---
+
+        /* 000005f0: sp  0 +0 */ 0000001b
+        ---
+
+        /* 000005f4: sp  0 +0 */ 0000001c
+        /* 000005f8: sp  0 +1 */ 05000000 beebbeeb &#x27;rocketlauncher scope acquired&#x27;
+        /* 00000600: sp  1 +1 */ 0300000a
+        /* 00000604: sp  2 +0 */ 5c000000
+        /* 00000608: sp  2 +1 */ 04000001
+        /* 0000060c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000614: sp  0 +0 */ 0000001d
+        /* 00000618: sp  0 +0 */ 63000067 0000001e
+        /* 00000620: sp  0 +1 */ 09000070 temp_70
+        /* 00000624: sp  1 +1 */ 09000074 local_74
+        /* 00000628: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 0000062c: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 00000634: sp  0 +1 */ 06000070 temp_70
+        /* 00000638: sp  1 -1 */ 6400003f
+
+        /* 0000063c: sp  0 +0 */ 0000001f
+
+        /* 00000640: sp  0 +0 */ 00000020
+        /* 00000644: sp  0 +1 */ 04000001
+        /* 00000648: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 0000064c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000654: sp  0 +0 */ 00000021
+        /* 00000658: sp  0 +1 */ 09000088 temp_88
+        /* 0000065c: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000660: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000668: sp  0 +1 */ 08000088 temp_88
+        /* 0000066c: sp  1 +1 */ 03000001
+        /* 00000670: sp  2 -1 */ 3e000000
+        /* 00000674: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000678: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000680: sp  0 +0 */ 00000022
+        /* 00000684: sp  0 +1 */ 0900008c temp_8c
+        /* 00000688: sp  1 +1 */ 0f0000b4 unnamed member b4
+        /* 0000068c: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000694: sp  0 +1 */ 0600008c temp_8c
+        /* 00000698: sp  1 -1 */ 6400001d
+
+        /* 0000069c: sp  0 +0 */ 00000023
+
+        /* 000006a0: sp  0 +0 */ 00000024
+        /* 000006a4: sp  0 +1 */ 0f0000b4 unnamed member b4
+        /* 000006a8: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000006b0: sp  0 +0 */ 00000025
+        /* 000006b4: sp  0 +1 */ 0900008d temp_8d
+        /* 000006b8: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 000006bc: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000006c4: sp  0 +1 */ 0600008d temp_8d
+        /* 000006c8: sp  1 +1 */ 0900008e temp_8e
+        /* 000006cc: sp  2 +1 */ 0f0000ac unnamed member ac
+        /* 000006d0: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000006d8: sp  1 +1 */ 0600008e temp_8e
+        /* 000006dc: sp  2 +1 */ 0900008f temp_8f
+        /* 000006e0: sp  3 +1 */ 0f0000b4 unnamed member b4
+        /* 000006e4: sp  4 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000006ec: sp  2 +1 */ 0600008f temp_8f
+        /* 000006f0: sp  3 -1 */ 51000000
+        /* 000006f4: sp  2 -1 */ 51000000
+        /* 000006f8: sp  1 -1 */ 64000004
+
+        /* 000006fc: sp  0 +0 */ 00000026
+        /* 00000700: sp  0 +1 */ 0f0000bc unnamed member bc
+        /* 00000704: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+        ---
+
+        /* 0000061c: sp  0 +0 */ 0000001e
+        /* 00000620: sp  0 +1 */ 09000070 temp_70
+        /* 00000624: sp  1 +1 */ 09000074 local_74
+        /* 00000628: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 0000062c: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 00000634: sp  0 +1 */ 06000070 temp_70
+        /* 00000638: sp  1 -1 */ 6400003f
+
+        /* 0000063c: sp  0 +0 */ 0000001f
+
+        /* 00000640: sp  0 +0 */ 00000020
+        /* 00000644: sp  0 +1 */ 04000001
+        /* 00000648: sp  1 +1 */ 0f000068 unnamed member 68
+        /* 0000064c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000654: sp  0 +0 */ 00000021
+        /* 00000658: sp  0 +1 */ 09000088 temp_88
+        /* 0000065c: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000660: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000668: sp  0 +1 */ 08000088 temp_88
+        /* 0000066c: sp  1 +1 */ 03000001
+        /* 00000670: sp  2 -1 */ 3e000000
+        /* 00000674: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000678: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000680: sp  0 +0 */ 00000022
+        /* 00000684: sp  0 +1 */ 0900008c temp_8c
+        /* 00000688: sp  1 +1 */ 0f0000b4 unnamed member b4
+        /* 0000068c: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000694: sp  0 +1 */ 0600008c temp_8c
+        /* 00000698: sp  1 -1 */ 6400001d
+
+        /* 0000069c: sp  0 +0 */ 00000023
+
+        /* 000006a0: sp  0 +0 */ 00000024
+        /* 000006a4: sp  0 +1 */ 0f0000b4 unnamed member b4
+        /* 000006a8: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000006b0: sp  0 +0 */ 00000025
+        /* 000006b4: sp  0 +1 */ 0900008d temp_8d
+        /* 000006b8: sp  1 +1 */ 0f0000a4 unnamed member a4
+        /* 000006bc: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000006c4: sp  0 +1 */ 0600008d temp_8d
+        /* 000006c8: sp  1 +1 */ 0900008e temp_8e
+        /* 000006cc: sp  2 +1 */ 0f0000ac unnamed member ac
+        /* 000006d0: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000006d8: sp  1 +1 */ 0600008e temp_8e
+        /* 000006dc: sp  2 +1 */ 0900008f temp_8f
+        /* 000006e0: sp  3 +1 */ 0f0000b4 unnamed member b4
+        /* 000006e4: sp  4 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000006ec: sp  2 +1 */ 0600008f temp_8f
+        /* 000006f0: sp  3 -1 */ 51000000
+        /* 000006f4: sp  2 -1 */ 51000000
+        /* 000006f8: sp  1 -1 */ 64000004
+
+        /* 000006fc: sp  0 +0 */ 00000026
+        /* 00000700: sp  0 +1 */ 0f0000bc unnamed member bc
+        /* 00000704: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+        ---
+
+        /* 0000070c: sp  0 +0 */ 00000027
+        ---
+
+        /* 00000710: sp  0 +0 */ 00000028
+        /* 00000714: sp  0 +1 */ 05000000 beebbeeb &#x27;rocketlauncher trigger acquired&#x27;
+        /* 0000071c: sp  1 +1 */ 0300000a
+        /* 00000720: sp  2 +0 */ 5c000000
+        /* 00000724: sp  2 +1 */ 04000001
+        /* 00000728: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000730: sp  0 +0 */ 00000029
+        /* 00000734: sp  0 +0 */ 63000020 0000002a
+        /* 0000073c: sp  0 +1 */ 09000090 temp_90
+        /* 00000740: sp  1 +1 */ 09000094 local_94
+        /* 00000744: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 00000748: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 00000750: sp  0 +1 */ 06000090 temp_90
+        /* 00000754: sp  1 -1 */ 64000010
+
+        /* 00000758: sp  0 +0 */ 0000002b
+
+        /* 0000075c: sp  0 +0 */ 0000002c
+        /* 00000760: sp  0 +1 */ 04000001
+        /* 00000764: sp  1 +1 */ 0f000090 unnamed member 90
+        /* 00000768: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000770: sp  0 +0 */ 0000002d
+        /* 00000774: sp  0 +1 */ 05000000 beebbeeb &#x27;jensen found the revolver&#x27;
+        /* 0000077c: sp  1 +1 */ 0300000a
+        /* 00000780: sp  2 +0 */ 5c000000
+        /* 00000784: sp  2 +1 */ 04000001
+        /* 00000788: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000790: sp  0 +0 */ 0000002e
+        /* 00000794: sp  0 +0 */ 63000008 0000002f
+        /* 0000079c: sp  0 +1 */ 05000000 beebbeeb &#x27;Jensen didnt pick any story item&#x27;
+        /* 000007a4: sp  1 +1 */ 03000008
+        /* 000007a8: sp  2 +0 */ 5c000000
+        /* 000007ac: sp  2 +1 */ 04000001
+        /* 000007b0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000007b8: sp  0 +0 */ 00000030
+        ---
+
+        /* 00000738: sp  0 +0 */ 0000002a
+        /* 0000073c: sp  0 +1 */ 09000090 temp_90
+        /* 00000740: sp  1 +1 */ 09000094 local_94
+        /* 00000744: sp  2 +1 */ 09000000 arg_0604_05f7_0
+        /* 00000748: sp  3 -3 */ 65000000 beebbeeb native bool inventoryitem::isEqual(inventoryitem arg_0604_0542_4)
+        /* 00000750: sp  0 +1 */ 06000090 temp_90
+        /* 00000754: sp  1 -1 */ 64000010
+
+        /* 00000758: sp  0 +0 */ 0000002b
+
+        /* 0000075c: sp  0 +0 */ 0000002c
+        /* 00000760: sp  0 +1 */ 04000001
+        /* 00000764: sp  1 +1 */ 0f000090 unnamed member 90
+        /* 00000768: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000770: sp  0 +0 */ 0000002d
+        /* 00000774: sp  0 +1 */ 05000000 beebbeeb &#x27;jensen found the revolver&#x27;
+        /* 0000077c: sp  1 +1 */ 0300000a
+        /* 00000780: sp  2 +0 */ 5c000000
+        /* 00000784: sp  2 +1 */ 04000001
+        /* 00000788: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000790: sp  0 +0 */ 0000002e
+        /* 00000794: sp  0 +0 */ 63000008 0000002f
+        /* 0000079c: sp  0 +1 */ 05000000 beebbeeb &#x27;Jensen didnt pick any story item&#x27;
+        /* 000007a4: sp  1 +1 */ 03000008
+        /* 000007a8: sp  2 +0 */ 5c000000
+        /* 000007ac: sp  2 +1 */ 04000001
+        /* 000007b0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000007b8: sp  0 +0 */ 00000030
+        ---
+
+        /* 00000798: sp  0 +0 */ 0000002f
+        /* 0000079c: sp  0 +1 */ 05000000 beebbeeb &#x27;Jensen didnt pick any story item&#x27;
+        /* 000007a4: sp  1 +1 */ 03000008
+        /* 000007a8: sp  2 +0 */ 5c000000
+        /* 000007ac: sp  2 +1 */ 04000001
+        /* 000007b0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000007b8: sp  0 +0 */ 00000030
+        ---
+        /* 000007bc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type0000059c.html">%dispatcher%</a><br/>
+</body>
+</html>

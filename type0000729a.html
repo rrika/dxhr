@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000729a</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown729A</h1>
+		<pre>./tools/drmexplore pc-w/ det_sam_ext_warehouse.drm n$[0xcac]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown729A : <a href="type000004f7.html">quest</a> {
+    gcref <a href="type000004ce.html">dlcsystem</a> decl_00bc_1fb4_4 = TODO(0B);
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_8 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00001fc9.html">Unknown1FC9</a>&gt; decl_0007_1fb5_10 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00007201.html">Unknown7201</a>&gt; decl_0007_1fb7_14 = TODO(0A);
+    <a href="type000004be.html">briefing</a> decl_00c1_100d_18 = TODO(0A);
+    void method_1f91_0();
+    void method_1f92_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown729A : quest {
+    // sizeof = 0x20
+    dlcsystem decl_00bc_1fb4_4 = TODO(0B);
+    playerref decl_012a_012c_8 = TODO(0A);
+    scenarioref&lt;Unknown1FC9&gt; decl_0007_1fb5_10 = TODO(0A);
+    scenarioref&lt;Unknown7201&gt; decl_0007_1fb7_14 = TODO(0A);
+    briefing decl_00c1_100d_18 = TODO(0A);
+    void method_1f91_0() {
+        bool temp_0 = False;
+        Unknown1FC9 local_4 = TODO(0B);
+        bool temp_8 = False;
+        Unknown7201 local_c = TODO(0B);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000000 temp_0
+        /* 0000012c: sp  1 +1 */ 03000001
+        /* 00000130: sp  2 +1 */ 10000004
+        /* 00000134: sp  3 -3 */ 69000000 beebbeeb bool dlcsystem::method_081b_ffff(dword arg_0000_081c_4)
+        /* 0000013c: sp  0 +1 */ 06000000 temp_0
+        /* 00000140: sp  1 -1 */ 64000016
+
+        /* 00000144: sp  0 +0 */ 00000001
+
+        /* 00000148: sp  0 +0 */ 00000002
+        /* 0000014c: sp  0 +1 */ 05000000 beebbeeb &#x27;SAM dlc Premium pack activated&#x27;
+        /* 00000154: sp  1 +1 */ 0300000f
+        /* 00000158: sp  2 +0 */ 5c000000
+        /* 0000015c: sp  2 +1 */ 04000001
+        /* 00000160: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000168: sp  0 +0 */ 00000003
+        /* 0000016c: sp  0 +1 */ 09000004 local_4
+        /* 00000170: sp  1 +1 */ 0f000010 unnamed member 10
+        /* 00000174: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000017c: sp  0 +1 */ 0a000004 local_4
+        /* 00000180: sp  1 +0 */ 7e000000 00001fc9
+        /* 00000188: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000190: sp  0 +0 */ 00000004
+
+        /* 00000194: sp  0 +0 */ 00000005
+        /* 00000198: sp  0 +0 */ 63000008 00000006
+        /* 000001a0: sp  0 +1 */ 05000000 beebbeeb &#x27;SAM dlc Premium pack NOT activated&#x27;
+        /* 000001a8: sp  1 +1 */ 0300000f
+        /* 000001ac: sp  2 +0 */ 5c000000
+        /* 000001b0: sp  2 +1 */ 04000001
+        /* 000001b4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001bc: sp  0 +0 */ 00000007
+        ---
+
+        /* 0000019c: sp  0 +0 */ 00000006
+        /* 000001a0: sp  0 +1 */ 05000000 beebbeeb &#x27;SAM dlc Premium pack NOT activated&#x27;
+        /* 000001a8: sp  1 +1 */ 0300000f
+        /* 000001ac: sp  2 +0 */ 5c000000
+        /* 000001b0: sp  2 +1 */ 04000001
+        /* 000001b4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001bc: sp  0 +0 */ 00000007
+        ---
+        /* 000001c0: sp  0 +1 */ 09000008 temp_8
+        /* 000001c4: sp  1 +1 */ 03000002
+        /* 000001c8: sp  2 +1 */ 10000004
+        /* 000001cc: sp  3 -3 */ 69000000 beebbeeb bool dlcsystem::method_081b_ffff(dword arg_0000_081c_4)
+        /* 000001d4: sp  0 +1 */ 06000008 temp_8
+        /* 000001d8: sp  1 -1 */ 6400001a
+
+        /* 000001dc: sp  0 +0 */ 00000008
+
+        /* 000001e0: sp  0 +0 */ 00000009
+        /* 000001e4: sp  0 +1 */ 05000000 beebbeeb &#x27;SAM dlc weapon pack activated&#x27;
+        /* 000001ec: sp  1 +1 */ 0300000f
+        /* 000001f0: sp  2 +0 */ 5c000000
+        /* 000001f4: sp  2 +1 */ 04000001
+        /* 000001f8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000200: sp  0 +0 */ 0000000a
+        /* 00000204: sp  0 +1 */ 0900000c local_c
+        /* 00000208: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 0000020c: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000214: sp  0 +1 */ 0a00000c local_c
+        /* 00000218: sp  1 +0 */ 7e000000 00007201
+        /* 00000220: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000228: sp  0 +0 */ 0000000b
+
+        /* 0000022c: sp  0 +0 */ 0000000c
+
+        /* 00000230: sp  0 +0 */ 0000000d
+
+        /* 00000234: sp  0 +0 */ 0000000e
+
+        /* 00000238: sp  0 +0 */ 0000000f
+
+        /* 0000023c: sp  0 +0 */ 00000010
+        /* 00000240: sp  0 +0 */ 63000008 00000011
+        /* 00000248: sp  0 +1 */ 05000000 beebbeeb &#x27;SAM dlc_weapon NOT activated&#x27;
+        /* 00000250: sp  1 +1 */ 0300000f
+        /* 00000254: sp  2 +0 */ 5c000000
+        /* 00000258: sp  2 +1 */ 04000001
+        /* 0000025c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000264: sp  0 +0 */ 00000012
+        ---
+
+        /* 00000244: sp  0 +0 */ 00000011
+        /* 00000248: sp  0 +1 */ 05000000 beebbeeb &#x27;SAM dlc_weapon NOT activated&#x27;
+        /* 00000250: sp  1 +1 */ 0300000f
+        /* 00000254: sp  2 +0 */ 5c000000
+        /* 00000258: sp  2 +1 */ 04000001
+        /* 0000025c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000264: sp  0 +0 */ 00000012
+        ---
+        /* 00000268: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1f92_1() {
+
+        /* 00000304: sp  0 +0 */ 00000013
+        /* 00000308: sp  0 +1 */ 05000000 beebbeeb &#x27;PlayChopperCommentary called!!&#x27;
+        /* 00000310: sp  1 +1 */ 0300000f
+        /* 00000314: sp  2 +0 */ 5c000000
+        /* 00000318: sp  2 +1 */ 04000001
+        /* 0000031c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000324: sp  0 +0 */ 00000014
+
+        /* 00000328: sp  0 +0 */ 00000015
+        /* 0000032c: sp  0 +1 */ 03000000
+        /* 00000330: sp  1 +1 */ 0f000018 unnamed member 18
+        /* 00000334: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 0000033c: sp  0 +0 */ 00000016
+        /* 00000340: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

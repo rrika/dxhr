@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000119ea</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown119EA</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_port_2a.drm n$[0xdd]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown119EA : <a href="type00011a43.html">%sha_c4_bomb_interaction%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000119de.html">Unknown119DE</a>&gt; decl_0012_5133_c = {<a href="units.html#0000bf13">unit object 0000bf13</a>};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_115c_14 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_514c_1c = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_514d_24 = TODO(0A);
+    void method_514e_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown119EA : %sha_c4_bomb_interaction% {
+    // sizeof = 0x2c
+    instanceref decl_0012_5133_c = TODO(0A);
+    playerref decl_012a_115c_14 = TODO(0A);
+    objective decl_0005_514c_1c = TODO(0A);
+    objective decl_0005_514d_24 = TODO(0A);
+    void method_514e_0() {
+        %human_player% local_0 = TODO(0B);
+        pickup local_4 = TODO(0A);
+        bool temp_8 = False;
+        bool temp_9 = False;
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 0f00000c unnamed member c
+        /* 0000010c: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 00000114: sp  0 +0 */ 00000001
+        /* 00000118: sp  0 +1 */ 09000004 local_4
+        /* 0000011c: sp  1 +1 */ 03000001
+        /* 00000120: sp  2 +1 */ 04000001
+        /* 00000124: sp  3 +1 */ 09000000 local_0
+        /* 00000128: sp  4 +1 */ 0f000014 unnamed member 14
+        /* 0000012c: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000134: sp  3 +1 */ 0a000000 local_0
+        /* 00000138: sp  4 +0 */ 7e000000 00000552
+        /* 00000140: sp  4 -4 */ 69000000 beebbeeb void actor::method_0600_ffff(pickup arg_05fb_05fc_0, dword arg_0000_05fd_4, bool arg_0000_05fe_8)
+
+        /* 00000148: sp  0 +0 */ 00000002
+        /* 0000014c: sp  0 +1 */ 09000008 temp_8
+        /* 00000150: sp  1 +1 */ 0f00001c unnamed member 1c
+        /* 00000154: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 0000015c: sp  0 +1 */ 06000008 temp_8
+        /* 00000160: sp  1 -1 */ 64000004
+
+        /* 00000164: sp  0 +0 */ 00000003
+        /* 00000168: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 0000016c: sp  1 -1 */ 65000000 beebbeeb native void objective::method_0958_ffff()
+        ---
+
+        /* 00000174: sp  0 +0 */ 00000004
+        /* 00000178: sp  0 +1 */ 09000009 temp_9
+        /* 0000017c: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 00000180: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000188: sp  0 +1 */ 06000009 temp_9
+        /* 0000018c: sp  1 -1 */ 64000004
+
+        /* 00000190: sp  0 +0 */ 00000005
+        /* 00000194: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 00000198: sp  1 -1 */ 65000000 beebbeeb native void objective::method_0958_ffff()
+        ---
+
+        /* 000001a0: sp  0 +0 */ 00000006
+        /* 000001a4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0001386d.html">Unknown1386D</a><br/>
+parent class <a href="type00011a43.html">%sha_c4_bomb_interaction%</a><br/>
+</body>
+</html>

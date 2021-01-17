@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00004d9e</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown4D9E</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_police.drm n$[0x10b]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown4D9E : <a href="type00000525.html">unit</a> {
+    <a href="type000004ec.html">objective</a> decl_0005_18a7_4 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_18a8_c = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000004df.html">instance</a>&gt; decl_0012_18a9_14 = {<a href="units.html#00001b55">unit object 00001b55</a>};
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_098e_1c = TODO(0A);
+    <a href="type000004e8.html">mission</a> decl_0944_18aa_24 = TODO(0A);
+    <a href="type00000502.html">sequencergraph</a> decl_008c_18ab_2c = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00001f78.html">Unknown1F78</a>&gt; decl_0007_18ac_34 = TODO(0A);
+    void method_0120_0(<a href="type000004e0.html">instanceref</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown4D9E : unit {
+    // sizeof = 0x38
+    objective decl_0005_18a7_4 = TODO(0A);
+    objective decl_0005_18a8_c = TODO(0A);
+    instanceref decl_0012_18a9_14 = TODO(0A);
+    playerref decl_012a_098e_1c = TODO(0A);
+    mission decl_0944_18aa_24 = TODO(0A);
+    sequencergraph decl_008c_18ab_2c = TODO(0A);
+    scenarioref&lt;Unknown1F78&gt; decl_0007_18ac_34 = TODO(0A);
+    async void method_0120_0(instanceref arg_0012_0121_0) {
+        %human_player% local_8 = TODO(0B);
+        bool temp_c = False;
+        bool temp_d = False;
+        bool temp_e = False;
+        Unknown1F78 local_10 = TODO(0B);
+        bool temp_14 = False;
+        Unknown1F78 local_18 = TODO(0B);
+
+        /* 00000134: sp  0 +0 */ 00000000
+        /* 00000138: sp  0 +1 */ 0900000c temp_c
+        /* 0000013c: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 00000140: sp  2 +1 */ 09000008 local_8
+        /* 00000144: sp  3 +1 */ 0f00001c unnamed member 1c
+        /* 00000148: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000150: sp  2 +1 */ 0a000008 local_8
+        /* 00000154: sp  3 +0 */ 7e000000 00000552
+        /* 0000015c: sp  3 -3 */ 69000000 beebbeeb bool actorplayer::method_06e1_ffff(instanceref arg_0012_0542_4)
+        /* 00000164: sp  0 +1 */ 0600000c temp_c
+        /* 00000168: sp  1 +1 */ 0900000d temp_d
+        /* 0000016c: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000170: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 00000178: sp  1 +1 */ 0600000d temp_d
+        /* 0000017c: sp  2 -1 */ 51000000
+        /* 00000180: sp  1 -1 */ 6400000a
+
+        /* 00000184: sp  0 +0 */ 00000001
+
+        /* 00000188: sp  0 +0 */ 00000002
+        /* 0000018c: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 00000190: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 00000198: sp  0 +0 */ 00000003
+        /* 0000019c: sp  0 +1 */ 0f00000c unnamed member c
+        /* 000001a0: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+
+        /* 000001a8: sp  0 +0 */ 00000004
+        ---
+
+        /* 000001ac: sp  0 +0 */ 00000005
+        /* 000001b0: sp  0 +1 */ 0900000e temp_e
+        /* 000001b4: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 000001b8: sp  2 -2 */ 65000000 beebbeeb native bool mission::method_0946_ffff()
+        /* 000001c0: sp  0 +1 */ 0600000e temp_e
+        /* 000001c4: sp  1 -1 */ 6400001f
+
+        /* 000001c8: sp  0 +0 */ 00000006
+
+        /* 000001cc: sp  0 +0 */ 00000007
+        /* 000001d0: sp  0 +1 */ 0f00002c unnamed member 2c
+        /* 000001d4: sp  1 -1 */ 65000000 beebbeeb native void sequencergraph::method_0090_ffff()
+
+        /* 000001dc: sp  0 +0 */ 00000008
+        /* 000001e0: sp  0 +1 */ 09000014 temp_14
+        /* 000001e4: sp  1 +1 */ 09000010 local_10
+        /* 000001e8: sp  2 +1 */ 0f000034 unnamed member 34
+        /* 000001ec: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001f4: sp  1 +1 */ 0a000010 local_10
+        /* 000001f8: sp  2 +0 */ 7e000000 00001f78
+        /* 00000200: sp  2 -2 */ 69000000 beebbeeb bool scenario::method_09c7_ffff()
+        /* 00000208: sp  0 +1 */ 06000014 temp_14
+        /* 0000020c: sp  1 +1 */ 04000000
+        /* 00000210: sp  2 -1 */ 46000000
+        /* 00000214: sp  1 -1 */ 6400000a
+
+        /* 00000218: sp  0 +0 */ 00000009
+        /* 0000021c: sp  0 +1 */ 09000018 local_18
+        /* 00000220: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000224: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000022c: sp  0 +1 */ 0a000018 local_18
+        /* 00000230: sp  1 +0 */ 7e000000 00001f78
+        /* 00000238: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+        ---
+
+        /* 00000240: sp  0 +0 */ 0000000a
+        ---
+
+        /* 00000244: sp  0 +0 */ 0000000b
+        /* 00000248: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00004d72.html">Unknown4D72</a><br/>
+initialized field in <a href="type00004d73.html">Unknown4D73</a><br/>
+initialized field in <a href="type00004d74.html">Unknown4D74</a><br/>
+initialized field in <a href="type00005528.html">Unknown5528</a><br/>
+parent class <a href="type00000525.html">unit</a><br/>
+</body>
+</html>

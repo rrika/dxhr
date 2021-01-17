@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0001432e</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1432E</h1>
+		<pre>./tools/drmexplore pc-w/ sha_tym_lab_admin.drm n$[0xd46]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1432E : <a href="type000004f7.html">quest</a> {
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_4 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00014144.html">Unknown14144</a>&gt; decl_0012_5baa_c = {<a href="units.html#0000f5f2">unit object 0000f5f2</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002142.html">%keypad_a%</a>&gt; decl_0012_5c25_14 = {<a href="units.html#0000f6cc">unit object 0000f6cc</a>};
+    void method_5bec_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1432E : quest {
+    // sizeof = 0x1c
+    playerref decl_012a_012c_4 = TODO(0A);
+    instanceref decl_0012_5baa_c = TODO(0A);
+    instanceref decl_0012_5c25_14 = TODO(0A);
+    void method_5bec_0() {
+        %human_player% local_0 = TODO(0B);
+        Unknown14144 local_4 = TODO(0B);
+        %keypad_a% local_8 = TODO(0B);
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 03000004
+        /* 000000dc: sp  1 +1 */ 04000001
+        /* 000000e0: sp  2 +1 */ 09000000 local_0
+        /* 000000e4: sp  3 +1 */ 0f000004 unnamed member 4
+        /* 000000e8: sp  4 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000000f0: sp  2 +1 */ 0a000000 local_0
+        /* 000000f4: sp  3 +0 */ 7e000000 00000552
+        /* 000000fc: sp  3 -3 */ 69000000 beebbeeb void actor::method_065d_ffff(dword arg_0000_065b_0, bool arg_0000_065e_4)
+
+        /* 00000104: sp  0 +0 */ 00000001
+        /* 00000108: sp  0 +1 */ 09000004 local_4
+        /* 0000010c: sp  1 +1 */ 0f00000c unnamed member c
+        /* 00000110: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000118: sp  0 +1 */ 0a000004 local_4
+        /* 0000011c: sp  1 +0 */ 7e000000 00014144
+        /* 00000124: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown057E::method_01a7_40()
+
+        /* 0000012c: sp  0 +0 */ 00000002
+        /* 00000130: sp  0 +1 */ 09000008 local_8
+        /* 00000134: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 00000138: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000140: sp  0 +1 */ 0a000008 local_8
+        /* 00000144: sp  1 +0 */ 7e000000 00002142
+        /* 0000014c: sp  1 -1 */ 69000000 beebbeeb void Unknown0586::method_0c07_ffff()
+
+        /* 00000154: sp  0 +0 */ 00000003
+        /* 00000158: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

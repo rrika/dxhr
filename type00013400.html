@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00013400</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown13400</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_lowerresidential.drm n$[0x36]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown13400 : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type00000511.html">smartscript</a> decl_0089_47ae_4 = persistent(dtp:10326) {type=bool};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000102b9.html">Unknown102B9</a>&gt; decl_0007_4822_18 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_4815_1c = TODO(0A);
+    void method_000a_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown13400 : %debugbutton% {
+    // sizeof = 0x24
+    smartscript decl_0089_47ae_4 = TODO(0A);
+    scenarioref&lt;Unknown102B9&gt; decl_0007_4822_18 = TODO(0A);
+    objective decl_0005_4815_1c = TODO(0A);
+    void method_000a_0() {
+        bool temp_0 = False;
+        Unknown102B9 local_4 = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000000 temp_0
+        /* 000000cc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000000d8: sp  0 +1 */ 06000000 temp_0
+        /* 000000dc: sp  1 -1 */ 64000010
+
+        /* 000000e0: sp  0 +0 */ 00000001
+
+        /* 000000e4: sp  0 +0 */ 00000002
+        /* 000000e8: sp  0 +1 */ 04000000
+        /* 000000ec: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000f0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000f8: sp  0 +0 */ 00000003
+        /* 000000fc: sp  0 +1 */ 05000000 beebbeeb &#x27;Terminals Inactive&#x27;
+        /* 00000104: sp  1 +1 */ 03000003
+        /* 00000108: sp  2 +0 */ 5c000000
+        /* 0000010c: sp  2 +1 */ 04000001
+        /* 00000110: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000118: sp  0 +0 */ 00000004
+        /* 0000011c: sp  0 +0 */ 6300001d 00000005
+
+        /* 00000124: sp  0 +0 */ 00000006
+        /* 00000128: sp  0 +1 */ 04000001
+        /* 0000012c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000138: sp  0 +0 */ 00000007
+        /* 0000013c: sp  0 +1 */ 05000000 beebbeeb &#x27;Terminals Active&#x27;
+        /* 00000144: sp  1 +1 */ 03000003
+        /* 00000148: sp  2 +0 */ 5c000000
+        /* 0000014c: sp  2 +1 */ 04000001
+        /* 00000150: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000158: sp  0 +0 */ 00000008
+        /* 0000015c: sp  0 +1 */ 09000004 local_4
+        /* 00000160: sp  1 +1 */ 0f000018 unnamed member 18
+        /* 00000164: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000016c: sp  0 +1 */ 0a000004 local_4
+        /* 00000170: sp  1 +0 */ 7e000000 000102b9
+        /* 00000178: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000180: sp  0 +0 */ 00000009
+        /* 00000184: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 00000188: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+
+        /* 00000190: sp  0 +0 */ 0000000a
+
+        /* 00000194: sp  0 +0 */ 0000000b
+        ---
+
+        /* 00000120: sp  0 +0 */ 00000005
+
+        /* 00000124: sp  0 +0 */ 00000006
+        /* 00000128: sp  0 +1 */ 04000001
+        /* 0000012c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000138: sp  0 +0 */ 00000007
+        /* 0000013c: sp  0 +1 */ 05000000 beebbeeb &#x27;Terminals Active&#x27;
+        /* 00000144: sp  1 +1 */ 03000003
+        /* 00000148: sp  2 +0 */ 5c000000
+        /* 0000014c: sp  2 +1 */ 04000001
+        /* 00000150: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000158: sp  0 +0 */ 00000008
+        /* 0000015c: sp  0 +1 */ 09000004 local_4
+        /* 00000160: sp  1 +1 */ 0f000018 unnamed member 18
+        /* 00000164: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000016c: sp  0 +1 */ 0a000004 local_4
+        /* 00000170: sp  1 +0 */ 7e000000 000102b9
+        /* 00000178: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000180: sp  0 +0 */ 00000009
+        /* 00000184: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 00000188: sp  1 -1 */ 65000000 beebbeeb native void objective::method_094a_ffff()
+
+        /* 00000190: sp  0 +0 */ 0000000a
+
+        /* 00000194: sp  0 +0 */ 0000000b
+        ---
+        /* 00000198: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

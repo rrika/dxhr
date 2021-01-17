@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000063d2</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown63D2</h1>
+		<pre>./tools/drmexplore pc-w/ det_police.drm n$[0x16b]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown63D2 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00001fca.html">Unknown1FCA</a>&gt; decl_0007_1114_40 = TODO(0A);
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_0021_1(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+    void method_0b47_2(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown63D2 : %triggervolume% {
+    // sizeof = 0x44
+    stickybool field_4;
+    stickybool field_20;
+    scenarioref&lt;Unknown1FCA&gt; decl_0007_1114_40 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        instanceref&lt;Unknown638E&gt; local_8 = TODO(0A);
+        Unknown638E local_10 = TODO(0B);
+        class local_14 = TODO(0A);
+        Unknown638E local_18 = TODO(0B);
+        npcinteraction local_1c = TODO(0A);
+
+        /* 000001a4: sp  0 +0 */ 00000000
+        /* 000001a8: sp  0 +1 */ 09000014 local_14
+        /* 000001ac: sp  1 +1 */ 09000010 local_10
+        /* 000001b0: sp  2 +1 */ 09000008 local_8
+        /* 000001b4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001bc: sp  1 +1 */ 0a000010 local_10
+        /* 000001c0: sp  2 +0 */ 7e000000 0000638e
+        /* 000001c8: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_066c_ffff(class arg_066b_066d_0)
+
+        /* 000001d0: sp  0 +0 */ 00000001
+        /* 000001d4: sp  0 +1 */ 0900001c local_1c
+        /* 000001d8: sp  1 +1 */ 09000018 local_18
+        /* 000001dc: sp  2 +1 */ 09000008 local_8
+        /* 000001e0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001e8: sp  1 +1 */ 0a000018 local_18
+        /* 000001ec: sp  2 +0 */ 7e000000 0000638e
+        /* 000001f4: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 000001fc: sp  0 +0 */ 00000002
+        /* 00000200: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Wayne is now 3rdTier_Neutral!&#x27;
+        /* 00000208: sp  1 +1 */ 03000003
+        /* 0000020c: sp  2 +0 */ 5c000000
+        /* 00000210: sp  2 +1 */ 04000001
+        /* 00000214: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000021c: sp  0 +0 */ 00000003
+        /* 00000220: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0021_1(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown1FCA local_8 = TODO(0B);
+
+        /* 00000284: sp  0 +0 */ 00000004
+        /* 00000288: sp  0 +1 */ 04000000
+        /* 0000028c: sp  1 +1 */ 09000008 local_8
+        /* 00000290: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 00000294: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000029c: sp  1 +1 */ 0a000008 local_8
+        /* 000002a0: sp  2 +0 */ 7e000000 00001fca
+        /* 000002a8: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000002b0: sp  0 +0 */ 00000005
+        /* 000002b4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0b47_2(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown1FCA local_8 = TODO(0B);
+
+        /* 000002e4: sp  0 +0 */ 00000006
+        /* 000002e8: sp  0 +1 */ 09000008 local_8
+        /* 000002ec: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000002f0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000002f8: sp  0 +1 */ 0a000008 local_8
+        /* 000002fc: sp  1 +0 */ 7e000000 00001fca
+        /* 00000304: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000030c: sp  0 +0 */ 00000007
+        /* 00000310: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00006382.html">Unknown6382</a><br/>
+initialized field in <a href="type000063d3.html">Unknown63D3</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000063a0</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown63A0</h1>
+		<pre>./tools/drmexplore pc-w/ det_police.drm n$[0x139]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown63A0 : <a href="type00002134.html">%triggerplane%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000064c9.html">%det1_policebasement_deskcop_detpolice_d%</a>&gt; decl_0012_1c3b_4 = {<a href="units.html#00003332">unit object 00003332</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000063a1.html">Unknown63A1</a>&gt; decl_0012_1c3f_c = {<a href="units.html#0000347c">unit object 0000347c</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000639f.html">Unknown639F</a>&gt; decl_0012_1c39_14 = {<a href="units.html#0000347a">unit object 0000347a</a>};
+    void method_103d_0(gcref <a href="type000004df.html">instance</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown63A0 : %triggerplane% {
+    // sizeof = 0x1c
+    instanceref decl_0012_1c3b_4 = TODO(0A);
+    instanceref decl_0012_1c3f_c = TODO(0A);
+    instanceref decl_0012_1c39_14 = TODO(0A);
+    async void method_103d_0(instance arg_0022_01ba_0) {
+        %det1_policebasement_deskcop_detpolice_d% local_4 = TODO(0B);
+        waypointnode local_8 = TODO(0A);
+        Unknown639F local_18 = TODO(0B);
+        Unknown63A1 local_1c = TODO(0B);
+
+        /* 00000104: sp  0 +0 */ 00000000
+        /* 00000108: sp  0 +1 */ 09000008 local_8
+        /* 0000010c: sp  1 +1 */ 09000004 local_4
+        /* 00000110: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000114: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000011c: sp  1 +1 */ 0a000004 local_4
+        /* 00000120: sp  2 +0 */ 7e000000 000064c9
+        /* 00000128: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0675_ffff(waypointnode arg_0196_0676_0)
+
+        /* 00000130: sp  0 +0 */ 00000001
+        /* 00000134: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Basement Cop start patrolling!&#x27;
+        /* 0000013c: sp  1 +1 */ 03000003
+        /* 00000140: sp  2 +0 */ 5c000000
+        /* 00000144: sp  2 +1 */ 04000001
+        /* 00000148: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000150: sp  0 +0 */ 00000002
+        /* 00000154: sp  0 +1 */ 04000000
+        /* 00000158: sp  1 +1 */ 09000018 local_18
+        /* 0000015c: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000160: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000168: sp  1 +1 */ 0a000018 local_18
+        /* 0000016c: sp  2 +0 */ 7e000000 0000639f
+        /* 00000174: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 0000017c: sp  0 +0 */ 00000003
+        /* 00000180: sp  0 +1 */ 04000000
+        /* 00000184: sp  1 +1 */ 0900001c local_1c
+        /* 00000188: sp  2 +1 */ 0f00000c unnamed member c
+        /* 0000018c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000194: sp  1 +1 */ 0a00001c local_1c
+        /* 00000198: sp  2 +0 */ 7e000000 000063a1
+        /* 000001a0: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000001a8: sp  0 +0 */ 00000004
+        /* 000001ac: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - ALL TriggerPlanes are disabled!&#x27;
+        /* 000001b4: sp  1 +1 */ 03000003
+        /* 000001b8: sp  2 +0 */ 5c000000
+        /* 000001bc: sp  2 +1 */ 04000001
+        /* 000001c0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001c8: sp  0 +0 */ 00000005
+        /* 000001cc: sp  0 +1 */ 04000000
+        /* 000001d0: sp  1 -1 */ 66000000 beebbeeb this-&gt;void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000001d8: sp  0 +0 */ 00000006
+        /* 000001dc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000639f.html">Unknown639F</a><br/>
+initialized field in <a href="type000063a1.html">Unknown63A1</a><br/>
+parent class <a href="type00002134.html">%triggerplane%</a><br/>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00004d77</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown4D77</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_police.drm n$[0xde]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown4D77 : <a href="type00002142.html">%keypad_a%</a> {
+    <a href="type00000521.html">uberobjectcommand</a> field_4;
+    <a href="type00000521.html">uberobjectcommand</a> field_c;
+    <a href="type00000522.html">uberobjectevent</a> field_14;
+    <a href="type00000522.html">uberobjectevent</a> field_24;
+    <a href="type00000522.html">uberobjectevent</a> field_34;
+    <a href="type00000522.html">uberobjectevent</a> field_44;
+    <a href="type00000521.html">uberobjectcommand</a> field_54;
+    <a href="type00000521.html">uberobjectcommand</a> field_5c;
+    <a href="type00000523.html">uberobjectquery</a> field_64;
+    <a href="type00000523.html">uberobjectquery</a> field_70;
+    <a href="type00000521.html">uberobjectcommand</a> field_7c;
+    <a href="type00000522.html">uberobjectevent</a> field_84;
+    <a href="type00000522.html">uberobjectevent</a> field_94;
+    <a href="type00000522.html">uberobjectevent</a> field_a4;
+    <a href="type00000522.html">uberobjectevent</a> field_b4;
+    <a href="type00000522.html">uberobjectevent</a> field_c4;
+    <a href="type00000522.html">uberobjectevent</a> field_d4;
+    <a href="type00000522.html">uberobjectevent</a> field_e4;
+    <a href="type00000511.html">smartscript</a> decl_0089_1892_f4 = persistent(dtp:4E02) {type=bool};
+    void method_0c06_0();
+    void run();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown4D77 : %keypad_a% {
+    // sizeof = 0x108
+    uberobjectcommand field_4;
+    uberobjectcommand field_c;
+    uberobjectevent field_14;
+    uberobjectevent field_24;
+    uberobjectevent field_34;
+    uberobjectevent field_44;
+    uberobjectcommand field_54;
+    uberobjectcommand field_5c;
+    uberobjectquery field_64;
+    uberobjectquery field_70;
+    uberobjectcommand field_7c;
+    uberobjectevent field_84;
+    uberobjectevent field_94;
+    uberobjectevent field_a4;
+    uberobjectevent field_b4;
+    uberobjectevent field_c4;
+    uberobjectevent field_d4;
+    uberobjectevent field_e4;
+    smartscript decl_0089_1892_f4 = TODO(0A);
+    void method_0c06_0() {
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +1 */ 04000001
+        /* 000000ac: sp  1 +1 */ 0f0000f4 unnamed member f4
+        /* 000000b0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000b8: sp  0 +0 */ 00000001
+        /* 000000bc: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void run() {
+        bool temp_0 = False;
+
+        /* 000000e4: sp  0 +0 */ 00000002
+        /* 000000e8: sp  0 +0 */ 77000000
+
+        /* 000000ec: sp  0 +0 */ 00000000
+
+        /* 000000f0: sp  0 +0 */ 00000003
+        /* 000000f4: sp  0 +1 */ 09000000 temp_0
+        /* 000000f8: sp  1 +1 */ 0f0000f4 unnamed member f4
+        /* 000000fc: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000104: sp  0 +1 */ 06000000 temp_0
+        /* 00000108: sp  1 -1 */ 6400000d
+
+        /* 0000010c: sp  0 +0 */ 00000004
+
+        /* 00000110: sp  0 +0 */ 00000005
+        /* 00000114: sp  0 +0 */ 66000000 beebbeeb this-&gt;void Unknown0586::method_09c6_ffff()
+
+        /* 0000011c: sp  0 +0 */ 00000006
+        /* 00000120: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Other keypad is UNLOCKED!&#x27;
+        /* 00000128: sp  1 +1 */ 03000003
+        /* 0000012c: sp  2 +0 */ 5c000000
+        /* 00000130: sp  2 +1 */ 04000001
+        /* 00000134: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000013c: sp  0 +0 */ 00000007
+        ---
+
+        /* 00000140: sp  0 +0 */ 00000008
+        /* 00000144: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00002142.html">%keypad_a%</a><br/>
+</body>
+</html>

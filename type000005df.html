@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005df</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05DF</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x713]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05DF : <a href="type000004f7.html">quest</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000001a.html">Unknown001A</a>&gt; decl_0012_0093_4 = {<a href="units.html#00000426">unit object 00000426</a>};
+    void method_041e_0();
+    void method_041f_1();
+    void method_0420_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05DF : quest {
+    // sizeof = 0xc
+    instanceref decl_0012_0093_4 = TODO(0A);
+    void method_041e_0() {
+        Unknown001A local_0 = TODO(0B);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 09000000 local_0
+        /* 000000ec: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000f0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000f8: sp  0 +1 */ 0a000000 local_0
+        /* 000000fc: sp  1 +0 */ 7e000000 0000001a
+        /* 00000104: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown001A::method_00b4_41()
+
+        /* 0000010c: sp  0 +0 */ 00000001
+        /* 00000110: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_041f_1() {
+        Unknown001A local_0 = TODO(0B);
+
+        /* 00000144: sp  0 +0 */ 00000002
+        /* 00000148: sp  0 +1 */ 09000000 local_0
+        /* 0000014c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000150: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000158: sp  0 +1 */ 0a000000 local_0
+        /* 0000015c: sp  1 +0 */ 7e000000 0000001a
+        /* 00000164: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown001A::method_00b5_42()
+
+        /* 0000016c: sp  0 +0 */ 00000003
+        /* 00000170: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0420_2() {
+        Unknown001A local_0 = TODO(0B);
+
+        /* 000001a4: sp  0 +0 */ 00000004
+        /* 000001a8: sp  0 +1 */ 09000000 local_0
+        /* 000001ac: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001b0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001b8: sp  0 +1 */ 0a000000 local_0
+        /* 000001bc: sp  1 +0 */ 7e000000 0000001a
+        /* 000001c4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown001A::method_00b6_43()
+
+        /* 000001cc: sp  0 +0 */ 00000005
+        /* 000001d0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

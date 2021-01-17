@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000064cf</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%laserbeam_flickering%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0xbf8]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %laserbeam_flickering% : <a href="type00003898.html">Unknown3898</a> {
+    <a href="type00000521.html">uberobjectcommand</a> field_4;
+    <a href="type00000523.html">uberobjectquery</a> field_c;
+    <a href="type00000523.html">uberobjectquery</a> field_18;
+    <a href="type00000522.html">uberobjectevent</a> field_24;
+    <a href="type00000522.html">uberobjectevent</a> field_34;
+    <a href="type00000522.html">uberobjectevent</a> field_44;
+    <a href="type00000522.html">uberobjectevent</a> field_54;
+    <a href="type000004f5.html">playerref</a> field_64;
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_1cb6_6c = {<a href="type000002bb.html">type 000002bb</a>, 4};
+    <a href="type00000517.html">stickybool</a> decl_0849_1cb7_7c = TODO(0A);
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_1bf2_1();
+    // referenced at <a href="type000064cf.html">async void %laserbeam_flickering%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_1cb8_2();
+    void method_1cb9_3();
+    // referenced at <a href="type000064cf.html">async void %laserbeam_flickering%::method_08ce_4()</a>
+    void method_08ce_4();
+    void method_1cba_5();
+    void method_1cbb_6();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %laserbeam_flickering% : Unknown3898 {
+    // sizeof = 0x98
+    uberobjectcommand field_4;
+    uberobjectquery field_c;
+    uberobjectquery field_18;
+    uberobjectevent field_24;
+    uberobjectevent field_34;
+    uberobjectevent field_44;
+    uberobjectevent field_54;
+    playerref field_64;
+    uberobjectevent decl_0a66_1cb6_6c = TODO(0A);
+    stickybool decl_0849_1cb7_7c = TODO(0A);
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+
+        /* 00000164: sp  0 +0 */ 00000000
+        /* 00000168: sp  0 +1 */ 09000010 temp_10
+        /* 0000016c: sp  1 +1 */ 0f00006c unnamed member 6c
+        /* 00000170: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000174: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000017c: sp  0 +1 */ 06000010 temp_10
+        /* 00000180: sp  1 -1 */ 6400000a
+
+        /* 00000184: sp  0 +0 */ 00000001
+
+        /* 00000188: sp  0 +0 */ 00000002
+        /* 0000018c: sp  0 +1 */ 04000001
+        /* 00000190: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 00000194: sp  2 -2 */ 65000000 beebbeeb native void stickybool::setStickyBool(bool arg_0000_value_0)
+
+        /* 0000019c: sp  0 +0 */ 00000003
+        /* 000001a0: sp  0 +0 */ 6e000000 beebbeeb (void)this-&gt;virtual async void %laserbeam_flickering%::method_1bf2_40()
+
+        /* 000001a8: sp  0 +0 */ 00000004
+        ---
+
+        /* 000001ac: sp  0 +0 */ 00000005
+        /* 000001b0: sp  0 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000001b4: sp  1 -1 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void Unknown3898::method_0a65_38(uberobjectevent arg_0a66_0a67_0)
+
+        /* 000001c0: sp  0 +0 */ 00000006
+        /* 000001c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_1bf2_1() {
+        /* 000001d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1cb8_2() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000214: sp  0 +0 */ 00000007
+        /* 00000218: sp  0 +1 */ 09000000 local_0
+        /* 0000021c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000224: sp  0 +0 */ 00000008
+        /* 00000228: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1cb9_3() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000264: sp  0 +0 */ 00000009
+        /* 00000268: sp  0 +1 */ 09000000 local_0
+        /* 0000026c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000274: sp  0 +0 */ 0000000a
+        /* 00000278: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_08ce_4() {
+        bool temp_0 = False;
+
+        /* 000002a4: sp  0 +0 */ 0000000b
+        /* 000002a8: sp  0 +0 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void instance::method_08ce_11()
+
+        /* 000002b4: sp  0 +0 */ 0000000c
+        /* 000002b8: sp  0 +1 */ 09000000 temp_0
+        /* 000002bc: sp  1 +1 */ 0f00007c unnamed member 7c
+        /* 000002c0: sp  2 -2 */ 65000000 beebbeeb native bool stickybool::getValue()
+        /* 000002c8: sp  0 +1 */ 06000000 temp_0
+        /* 000002cc: sp  1 -1 */ 64000003
+
+        /* 000002d0: sp  0 +0 */ 0000000d
+        /* 000002d4: sp  0 +0 */ 66000000 beebbeeb this-&gt;void %laserbeam_flickering%::method_1cb9_ffff()
+        ---
+
+        /* 000002dc: sp  0 +0 */ 0000000e
+        /* 000002e0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1cba_5() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000324: sp  0 +0 */ 0000000f
+        /* 00000328: sp  0 +1 */ 09000000 local_0
+        /* 0000032c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000334: sp  0 +0 */ 00000010
+        /* 00000338: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_1cbb_6() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000374: sp  0 +0 */ 00000011
+        /* 00000378: sp  0 +1 */ 09000000 local_0
+        /* 0000037c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000384: sp  0 +0 */ 00000012
+        /* 00000388: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type0000638c.html">Unknown638C</a><br/>
+derived class <a href="type000091a1.html">Unknown91A1</a><br/>
+derived class <a href="type00014161.html">Unknown14161</a><br/>
+derived class <a href="type00014162.html">Unknown14162</a><br/>
+derived class <a href="type000148be.html">Unknown148BE</a><br/>
+derived class <a href="type000148bf.html">Unknown148BF</a><br/>
+initialized field in <a href="type00009b7c.html">Unknown9B7C</a><br/>
+initialized field in <a href="type00009c1c.html">Unknown9C1C</a><br/>
+initialized field in <a href="type00009c1d.html">Unknown9C1D</a><br/>
+parent class <a href="type00003898.html">Unknown3898</a><br/>
+unit object #106 null<br/>
+unit object #109 null<br/>
+unit object #149 null<br/>
+unit object #253 null<br/>
+unit object #298 null<br/>
+unit object #308 null<br/>
+unit object #428 null<br/>
+unit object #429 null<br/>
+unit object #430 null<br/>
+unit object #431 null<br/>
+unit object #432 null<br/>
+unit object #433 null<br/>
+unit object #9 null<br/>
+</body>
+</html>

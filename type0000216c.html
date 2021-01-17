@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000216c</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown216C</h1>
+		<pre>./tools/drmexplore pc-w/ det_adam_apt_c.drm n$[0xc13]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown216C : <a href="type000004f7.html">quest</a> {
+    <a href="type000004be.html">briefing</a> decl_00c1_13fa_4 = TODO(0A);
+    void method_12ed_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown216C : quest {
+    // sizeof = 0xc
+    briefing decl_00c1_13fa_4 = TODO(0A);
+    void method_12ed_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 03ffffff
+        /* 0000008c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000090: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 00000098: sp  0 +0 */ 00000001
+        /* 0000009c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

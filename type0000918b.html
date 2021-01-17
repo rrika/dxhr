@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000918b</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown918B</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0x21]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown918B : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092a2.html">Unknown92A2</a>&gt; decl_0007_23de_4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092a3.html">Unknown92A3</a>&gt; decl_0007_23e0_8 = TODO(0A);
+    void method_0bf3_0();
+    void method_0bf4_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown918B : %debugbutton% {
+    // sizeof = 0xc
+    scenarioref&lt;Unknown92A2&gt; decl_0007_23de_4 = TODO(0A);
+    scenarioref&lt;Unknown92A3&gt; decl_0007_23e0_8 = TODO(0A);
+    void method_0bf3_0() {
+        Unknown92A2 local_0 = TODO(0B);
+        Unknown92A3 local_4 = TODO(0B);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 04000001
+        /* 000000ec: sp  1 +1 */ 09000000 local_0
+        /* 000000f0: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000000f4: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000000fc: sp  1 +1 */ 0a000000 local_0
+        /* 00000100: sp  2 +0 */ 7e000000 000092a2
+        /* 00000108: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000110: sp  0 +0 */ 00000001
+        /* 00000114: sp  0 +1 */ 09000004 local_4
+        /* 00000118: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 0000011c: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000124: sp  0 +1 */ 0a000004 local_4
+        /* 00000128: sp  1 +0 */ 7e000000 000092a3
+        /* 00000130: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000138: sp  0 +0 */ 00000002
+        /* 0000013c: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Red Lighting!&#x27;
+        /* 00000144: sp  1 +1 */ 03000003
+        /* 00000148: sp  2 +0 */ 5c000000
+        /* 0000014c: sp  2 +1 */ 04000001
+        /* 00000150: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000158: sp  0 +0 */ 00000003
+        /* 0000015c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0bf4_1() {
+        Unknown92A3 local_0 = TODO(0B);
+        Unknown92A2 local_4 = TODO(0B);
+
+        /* 000001b4: sp  0 +0 */ 00000004
+        /* 000001b8: sp  0 +1 */ 04000001
+        /* 000001bc: sp  1 +1 */ 09000000 local_0
+        /* 000001c0: sp  2 +1 */ 0f000008 unnamed member 8
+        /* 000001c4: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001cc: sp  1 +1 */ 0a000000 local_0
+        /* 000001d0: sp  2 +0 */ 7e000000 000092a3
+        /* 000001d8: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000001e0: sp  0 +0 */ 00000005
+        /* 000001e4: sp  0 +1 */ 09000004 local_4
+        /* 000001e8: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001ec: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001f4: sp  0 +1 */ 0a000004 local_4
+        /* 000001f8: sp  1 +0 */ 7e000000 000092a2
+        /* 00000200: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000208: sp  0 +0 */ 00000006
+        /* 0000020c: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - Blue Lighting!&#x27;
+        /* 00000214: sp  1 +1 */ 03000003
+        /* 00000218: sp  2 +0 */ 5c000000
+        /* 0000021c: sp  2 +1 */ 04000001
+        /* 00000220: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000228: sp  0 +0 */ 00000007
+        /* 0000022c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

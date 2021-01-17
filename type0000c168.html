@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000c168</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%gas_valve_a%</h1>
+		<pre>./tools/drmexplore pc-w/ pic_bossfight.drm n$[0x77a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %gas_valve_a% : <a href="type00000585.html">Unknown0585</a> {
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_3218_1();
+    // referenced at <a href="type0000c12b.html">async void UnknownC12B::method_01dc_0()</a>
+    void method_31f7_2();
+    // referenced at <a href="type0000c168.html">async void %gas_valve_a%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %gas_valve_a% : Unknown0585 {
+    // sizeof = 0x1
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        uberobjectevent local_10 = TODO(0A);
+        uberobjectevent local_20 = TODO(0A);
+        bool temp_30 = False;
+        bool temp_31 = False;
+
+        /* 00000144: sp  0 +0 */ 00000000
+        /* 00000148: sp  0 +1 */ 09000000 arg_0a66_0a67_0
+        /* 0000014c: sp  1 -1 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void Unknown0585::method_0a65_38(uberobjectevent arg_0a66_0a67_0)
+
+        /* 00000158: sp  0 +0 */ 00000001
+        /* 0000015c: sp  0 +1 */ 09000030 temp_30
+        /* 00000160: sp  1 +1 */ 09000010 local_10
+        /* 00000164: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000168: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000170: sp  0 +1 */ 06000030 temp_30
+        /* 00000174: sp  1 -1 */ 64000004
+
+        /* 00000178: sp  0 +0 */ 00000002
+        /* 0000017c: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown0585::method_0bf4_3f()
+        /* 00000184: sp  0 +0 */ 6300000b 00000003
+        /* 0000018c: sp  0 +1 */ 09000031 temp_31
+        /* 00000190: sp  1 +1 */ 09000020 local_20
+        /* 00000194: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000198: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001a0: sp  0 +1 */ 06000031 temp_31
+        /* 000001a4: sp  1 -1 */ 64000003
+
+        /* 000001a8: sp  0 +0 */ 00000004
+        /* 000001ac: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %gas_valve_a%::method_31f7_40()
+        ---
+
+        /* 00000188: sp  0 +0 */ 00000003
+        /* 0000018c: sp  0 +1 */ 09000031 temp_31
+        /* 00000190: sp  1 +1 */ 09000020 local_20
+        /* 00000194: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000198: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001a0: sp  0 +1 */ 06000031 temp_31
+        /* 000001a4: sp  1 -1 */ 64000003
+
+        /* 000001a8: sp  0 +0 */ 00000004
+        /* 000001ac: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %gas_valve_a%::method_31f7_40()
+        ---
+
+        /* 000001b4: sp  0 +0 */ 00000005
+        ---
+        /* 000001b8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_3218_1() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 000001f4: sp  0 +0 */ 00000006
+        /* 000001f8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown0585::method_0bf4_3f()
+
+        /* 00000200: sp  0 +0 */ 00000007
+        /* 00000204: sp  0 +1 */ 09000000 local_0
+        /* 00000208: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000210: sp  0 +0 */ 00000008
+        /* 00000214: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_31f7_2() {
+        /* 00000224: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type0000c13b.html">UnknownC13B</a><br/>
+derived class <a href="type0000c13c.html">UnknownC13C</a><br/>
+derived class <a href="type0000c13d.html">UnknownC13D</a><br/>
+derived class <a href="type0000c13e.html">UnknownC13E</a><br/>
+parent class <a href="type00000585.html">Unknown0585</a><br/>
+unit object #115 null<br/>
+unit object #116 null<br/>
+unit object #117 null<br/>
+unit object #118 null<br/>
+</body>
+</html>

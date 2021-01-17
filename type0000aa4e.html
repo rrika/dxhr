@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000aa4e</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%restricted_submarine_a%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_underwater_elevator.drm n$[0x159]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %restricted_submarine_a% : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_1dd1_4 = {<a href="type00000509.html">type 00000509</a>, 0};
+    void method_2c02_0();
+    // referenced at <a href="type0000aa43.html">async void UnknownAA43::method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %restricted_submarine_a% : Unknown0578 {
+    // sizeof = 0xc
+    uberobjectcommand decl_01a8_1dd1_4 = TODO(0A);
+    void method_2c02_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 0000008c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000094: sp  0 +0 */ 00000001
+        /* 00000098: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type0000aa43.html">UnknownAA43</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+unit object #5 null<br/>
+</body>
+</html>

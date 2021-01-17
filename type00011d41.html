@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00011d41</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%ao_muscle_body_a%</h1>
+		<pre>./tools/drmexplore pc-w/ sin_omega_restriced_area.drm n$[0x999]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %ao_muscle_body_a% : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_527b_4 = {<a href="type00000e10.html">type 00000e10</a>, 9};
+    void method_527c_0();
+    // referenced at <a href="type0001514a.html">async void Unknown1514A::method_0190_0()</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %ao_muscle_body_a% : Unknown0578 {
+    // sizeof = 0xc
+    uberobjectcommand decl_01a8_527b_4 = TODO(0A);
+    void method_527c_0() {
+
+        /* 00000084: sp  0 +0 */ 00000000
+        /* 00000088: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 0000008c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000094: sp  0 +0 */ 00000001
+        /* 00000098: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00015127.html">Unknown15127</a><br/>
+derived class <a href="type00015128.html">Unknown15128</a><br/>
+derived class <a href="type00015129.html">Unknown15129</a><br/>
+initialized field in <a href="type0001514a.html">Unknown1514A</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+</body>
+</html>

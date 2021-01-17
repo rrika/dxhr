@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00002d16</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%quicksavevolume%</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0xd36]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %quicksavevolume% : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004f5.html">playerref</a> decl_012a_160e_40 = TODO(0A);
+    void run();
+    void method_0021_1(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %quicksavevolume% : %triggervolume% {
+    // sizeof = 0x48
+    stickybool field_4;
+    stickybool field_20;
+    playerref decl_012a_160e_40 = TODO(0A);
+    async void run() {
+        instance local_0 = TODO(0B);
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 0f000040 unnamed member 40
+        /* 000000dc: sp  1 -1 */ 6b000000 beebbeeb (void)native async void playerref::method_0991_ffff()
+
+        /* 000000e4: sp  0 +0 */ 00000001
+        /* 000000e8: sp  0 +1 */ 09000000 local_0
+        /* 000000ec: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000000f0: sp  2 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000000f8: sp  0 +1 */ 0a000000 local_0
+        /* 000000fc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void triggervolumebase::method_0a39_ffff(instance arg_0022_0023_0)
+
+        /* 00000104: sp  0 +0 */ 00000002
+        /* 00000108: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0021_1(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+
+        /* 00000114: sp  0 +0 */ 00000003
+        /* 00000118: sp  0 +1 */ 0a000000 arg_0022_01ba_0
+        /* 0000011c: sp  1 +1 */ 08000004 arg_0024_0025_4
+        /* 00000120: sp  2 -2 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void Unknown05F8::method_0021_3e(instance arg_0022_01ba_0, triggertype arg_0024_0025_4)
+
+        /* 0000012c: sp  0 +0 */ 00000004
+        /* 00000130: sp  0 +0 */ 66000000 beebbeeb this-&gt;void triggervolumebase::method_0a49_ffff()
+
+        /* 00000138: sp  0 +0 */ 00000005
+        /* 0000013c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00005581.html">Unknown5581</a><br/>
+derived class <a href="type00006bcc.html">Unknown6BCC</a><br/>
+derived class <a href="type000071bb.html">Unknown71BB</a><br/>
+derived class <a href="type0000757b.html">Unknown757B</a><br/>
+derived class <a href="type00007c1a.html">Unknown7C1A</a><br/>
+derived class <a href="type00007c1b.html">Unknown7C1B</a><br/>
+derived class <a href="type00007c1c.html">Unknown7C1C</a><br/>
+derived class <a href="type00013443.html">Unknown13443</a><br/>
+derived class <a href="type00014169.html">Unknown14169</a><br/>
+derived class <a href="type000148c4.html">Unknown148C4</a><br/>
+derived class <a href="type00015148.html">Unknown15148</a><br/>
+derived class <a href="type00015a25.html">Unknown15A25</a><br/>
+initialized field in <a href="type00014192.html">Unknown14192</a><br/>
+initialized field in <a href="type0001514e.html">Unknown1514E</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+unit object #1 null<br/>
+unit object #10 null<br/>
+unit object #11 null<br/>
+unit object #110 null<br/>
+unit object #116 null<br/>
+unit object #117 null<br/>
+unit object #118 null<br/>
+unit object #119 null<br/>
+unit object #12 null<br/>
+unit object #120 null<br/>
+unit object #129 null<br/>
+unit object #13 null<br/>
+unit object #130 null<br/>
+unit object #139 null<br/>
+unit object #14 null<br/>
+unit object #140 null<br/>
+unit object #141 null<br/>
+unit object #142 null<br/>
+unit object #15 null<br/>
+unit object #16 null<br/>
+unit object #162 null<br/>
+unit object #166 null<br/>
+unit object #17 null<br/>
+unit object #179 null<br/>
+unit object #18 null<br/>
+unit object #180 null<br/>
+unit object #181 null<br/>
+unit object #182 null<br/>
+unit object #183 null<br/>
+unit object #19 null<br/>
+unit object #2 null<br/>
+unit object #20 null<br/>
+unit object #210 null<br/>
+unit object #22 null<br/>
+unit object #232 null<br/>
+unit object #237 null<br/>
+unit object #24 null<br/>
+unit object #244 null<br/>
+unit object #245 null<br/>
+unit object #258 null<br/>
+unit object #26 null<br/>
+unit object #27 null<br/>
+unit object #29 null<br/>
+unit object #3 null<br/>
+unit object #343 null<br/>
+unit object #344 null<br/>
+unit object #345 null<br/>
+unit object #346 null<br/>
+unit object #347 null<br/>
+unit object #38 null<br/>
+unit object #383 null<br/>
+unit object #384 null<br/>
+unit object #387 null<br/>
+unit object #388 null<br/>
+unit object #389 null<br/>
+unit object #39 null<br/>
+unit object #4 null<br/>
+unit object #40 null<br/>
+unit object #41 null<br/>
+unit object #42 null<br/>
+unit object #431 null<br/>
+unit object #50 null<br/>
+unit object #51 null<br/>
+unit object #52 null<br/>
+unit object #53 null<br/>
+unit object #54 null<br/>
+unit object #543 null<br/>
+unit object #544 null<br/>
+unit object #55 null<br/>
+unit object #56 null<br/>
+unit object #57 null<br/>
+unit object #58 null<br/>
+unit object #59 null<br/>
+unit object #600 null<br/>
+unit object #62 null<br/>
+unit object #64 null<br/>
+unit object #68 null<br/>
+unit object #69 null<br/>
+unit object #70 null<br/>
+unit object #71 null<br/>
+unit object #88 null<br/>
+unit object #92 null<br/>
+unit object #93 null<br/>
+unit object #94 null<br/>
+unit object #95 null<br/>
+unit object #96 null<br/>
+unit object #97 null<br/>
+unit object #98 null<br/>
+</body>
+</html>

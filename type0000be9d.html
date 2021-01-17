@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000be9d</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownBE9D</h1>
+		<pre>./tools/drmexplore pc-w/ pan_tower.drm n$[0x10]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownBE9D : <a href="type0000bf1e.html">%pan_tower_civilian_hughdarrow%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000511.html">smartscript</a> decl_0089_312d_3c = persistent(dtp:BF0C) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_312e_50 = persistent(dtp:BF0D) {type=bool};
+    void method_01dc_0();
+    void method_00e3_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownBE9D : %pan_tower_civilian_hughdarrow% {
+    // sizeof = 0x64
+    stickybool field_4;
+    stickybool field_20;
+    smartscript decl_0089_312d_3c = TODO(0A);
+    smartscript decl_0089_312e_50 = TODO(0A);
+    async void method_01dc_0() {
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +1 */ 04000001
+        /* 000000ac: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 000000b0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000000b8: sp  0 +0 */ 00000001
+        /* 000000bc: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_00e3_1() {
+        bool temp_0 = False;
+        npcinteraction local_4 = TODO(0A);
+        npcinteraction local_c = TODO(0A);
+
+        /* 00000124: sp  0 +0 */ 00000002
+        /* 00000128: sp  0 +1 */ 09000000 temp_0
+        /* 0000012c: sp  1 +1 */ 0f000050 unnamed member 50
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000138: sp  0 +1 */ 06000000 temp_0
+        /* 0000013c: sp  1 -1 */ 6400000f
+
+        /* 00000140: sp  0 +0 */ 00000003
+
+        /* 00000144: sp  0 +0 */ 00000004
+        /* 00000148: sp  0 +1 */ 09000004 local_4
+        /* 0000014c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 00000154: sp  0 +0 */ 00000005
+        /* 00000158: sp  0 +1 */ 05000000 beebbeeb &#x27;Positive in script&#x27;
+        /* 00000160: sp  1 +1 */ 03000005
+        /* 00000164: sp  2 +0 */ 5c000000
+        /* 00000168: sp  2 +1 */ 04000001
+        /* 0000016c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000174: sp  0 +0 */ 00000006
+        /* 00000178: sp  0 +0 */ 6300000e 00000007
+
+        /* 00000180: sp  0 +0 */ 00000008
+        /* 00000184: sp  0 +1 */ 0900000c local_c
+        /* 00000188: sp  1 -1 */ 66000000 beebbeeb this-&gt;void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 00000190: sp  0 +0 */ 00000009
+        /* 00000194: sp  0 +1 */ 05000000 beebbeeb &#x27;negative in script&#x27;
+        /* 0000019c: sp  1 +1 */ 03000005
+        /* 000001a0: sp  2 +0 */ 5c000000
+        /* 000001a4: sp  2 +1 */ 04000001
+        /* 000001a8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001b0: sp  0 +0 */ 0000000a
+
+        /* 000001b4: sp  0 +0 */ 0000000b
+        ---
+
+        /* 0000017c: sp  0 +0 */ 00000007
+
+        /* 00000180: sp  0 +0 */ 00000008
+        /* 00000184: sp  0 +1 */ 0900000c local_c
+        /* 00000188: sp  1 -1 */ 66000000 beebbeeb this-&gt;void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 00000190: sp  0 +0 */ 00000009
+        /* 00000194: sp  0 +1 */ 05000000 beebbeeb &#x27;negative in script&#x27;
+        /* 0000019c: sp  1 +1 */ 03000005
+        /* 000001a0: sp  2 +0 */ 5c000000
+        /* 000001a4: sp  2 +1 */ 04000001
+        /* 000001a8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001b0: sp  0 +0 */ 0000000a
+
+        /* 000001b4: sp  0 +0 */ 0000000b
+        ---
+        /* 000001b8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type0000bf1e.html">%pan_tower_civilian_hughdarrow%</a><br/>
+</body>
+</html>

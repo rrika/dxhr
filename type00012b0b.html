@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00012b0b</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown12B0B</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_lowerharvester.drm n$[0x3a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown12B0B : <a href="type000110d6.html">%sha2_cityharvesterhideout_sneaker_harvester_b%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    void method_05ce_0(<a href="type0000052a.html">waypointnode</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown12B0B : %sha2_cityharvesterhideout_sneaker_harvester_b% {
+    // sizeof = 0x3c
+    stickybool field_4;
+    stickybool field_20;
+    async void method_05ce_0(waypointnode arg_0196_05cf_0) {
+        bool temp_10 = False;
+        waypointnode local_14 = TODO(0A);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000010 temp_10
+        /* 000000cc: sp  1 +1 */ 09000014 local_14
+        /* 000000d0: sp  2 +1 */ 09000000 arg_0196_05cf_0
+        /* 000000d4: sp  3 -3 */ 65000000 beebbeeb native bool waypointnode::isEqual(waypointnode arg_0196_05cf_4)
+        /* 000000dc: sp  0 +1 */ 06000010 temp_10
+        /* 000000e0: sp  1 -1 */ 64000001
+
+        /* 000000e4: sp  0 +0 */ 00000001
+        ---
+
+        /* 000000e8: sp  0 +0 */ 00000002
+        /* 000000ec: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000110d6.html">%sha2_cityharvesterhideout_sneaker_harvester_b%</a><br/>
+</body>
+</html>

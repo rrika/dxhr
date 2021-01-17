@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00011a43</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%sha_c4_bomb_interaction%</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_port_2a.drm n$[0xd51]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %sha_c4_bomb_interaction% : <a href="type00011a42.html">Unknown11A42</a> {
+    <a href="type000004be.html">briefing</a> decl_00c1_519f_4 = TODO(0A);
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_514e_1();
+    // referenced at <a href="type00011a43.html">async void %sha_c4_bomb_interaction%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %sha_c4_bomb_interaction% : Unknown11A42 {
+    // sizeof = 0xc
+    briefing decl_00c1_519f_4 = TODO(0A);
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        uberobjectevent local_14 = TODO(0A);
+        uberobjectsectionid local_24 = TODO(0A);
+        bool temp_28 = False;
+        uberobjectevent local_2c = TODO(0A);
+
+        /* 00000154: sp  0 +0 */ 00000000
+        /* 00000158: sp  0 +1 */ 09000000 arg_0a66_0a67_0
+        /* 0000015c: sp  1 -1 */ 67000000 beebbeeb beebbeeb this-&gt;virtual async void uberobjectbase::method_0a65_38(uberobjectevent arg_0a66_0a67_0)
+
+        /* 00000168: sp  0 +0 */ 00000001
+        /* 0000016c: sp  0 +1 */ 09000010 temp_10
+        /* 00000170: sp  1 +1 */ 09000014 local_14
+        /* 00000174: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000178: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 00000180: sp  0 +1 */ 06000010 temp_10
+        /* 00000184: sp  1 -1 */ 64000007
+
+        /* 00000188: sp  0 +0 */ 00000002
+        /* 0000018c: sp  0 +1 */ 0b000000 unnamed member 0
+        /* 00000190: sp  1 +1 */ 09000024 local_24
+        /* 00000194: sp  2 +1 */ 03ffffff
+        /* 00000198: sp  3 +1 */ 0f000004 unnamed member 4
+        /* 0000019c: sp  4 -4 */ 65000000 beebbeeb native void briefing::method_07b4_ffff(instance arg_0022_06ff_0, uberobjectsectionid arg_07b5_07b6_4, dword arg_0000_068c_8)
+        ---
+
+        /* 000001a4: sp  0 +0 */ 00000003
+        /* 000001a8: sp  0 +1 */ 09000028 temp_28
+        /* 000001ac: sp  1 +1 */ 0900002c local_2c
+        /* 000001b0: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 000001b4: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 000001bc: sp  0 +1 */ 06000028 temp_28
+        /* 000001c0: sp  1 -1 */ 64000003
+
+        /* 000001c4: sp  0 +0 */ 00000004
+        /* 000001c8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %sha_c4_bomb_interaction%::method_514e_3d()
+        ---
+
+        /* 000001d0: sp  0 +0 */ 00000005
+        /* 000001d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_514e_1() {
+        /* 000001e4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type000119ea.html">Unknown119EA</a><br/>
+parent class <a href="type00011a42.html">Unknown11A42</a><br/>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00000035</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown0035</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x47]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown0035 : <a href="type00000592.html">%sha_caps_capsule_door%</a> {
+    <a href="type000004f5.html">playerref</a> field_4;
+    <a href="type000004f5.html">playerref</a> field_c;
+    <a href="type00000512.html">sound</a> field_1c;
+    <a href="type00000526.html">unitref</a> field_20;
+    <a href="type00000517.html">stickybool</a> field_2c;
+    <a href="type000004e6.html">marker</a> field_48;
+    <a href="type000004e6.html">marker</a> field_50;
+    <a href="type00000522.html">uberobjectevent</a> field_64;
+    <a href="type00000522.html">uberobjectevent</a> field_74;
+    <a href="type00000522.html">uberobjectevent</a> field_84;
+    <a href="type00000522.html">uberobjectevent</a> field_94;
+    <a href="type00000521.html">uberobjectcommand</a> field_a4;
+    <a href="type00000521.html">uberobjectcommand</a> field_ac;
+    <a href="type00000523.html">uberobjectquery</a> field_b4;
+    <a href="type00000523.html">uberobjectquery</a> field_c0;
+    <a href="type00000523.html">uberobjectquery</a> field_cc;
+    <a href="type00000523.html">uberobjectquery</a> field_d8;
+    <a href="type00000522.html">uberobjectevent</a> field_e4;
+    <a href="type00000522.html">uberobjectevent</a> field_f4;
+    <a href="type00000521.html">uberobjectcommand</a> field_104;
+    <a href="type00000522.html">uberobjectevent</a> field_10c;
+    <a href="type00000523.html">uberobjectquery</a> field_11c;
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_128 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000004df.html">instance</a>&gt; decl_0012_019c_130 = {<a href="units.html#000000c2">unit object 000000c2</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000034.html">Unknown0034</a>&gt; decl_0012_019e_138 = {<a href="units.html#000000c1">unit object 000000c1</a>};
+    <a href="type000004ec.html">objective</a> decl_0005_019f_140 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_01a0_148 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000035.html">Unknown0035</a>&gt; decl_0012_019b_150 = {<a href="units.html#000000c0">unit object 000000c0</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00000033.html">Unknown0033</a>&gt; decl_0012_0165_158 = {<a href="units.html#000000c3">unit object 000000c3</a>};
+    void method_01a2_0();
+    void method_01a3_1();
+    void method_01a4_2();
+    void method_01a5_3();
+    // referenced at <a href="type00000034.html">async void Unknown0034::method_0191_1(symbol arg_008f_0192_0, conversationenum arg_0193_0194_4)</a>
+    void run();
+    void method_01a6_5();
+    void method_01a7_6();
+    void method_001a_7();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown0035 : %sha_caps_capsule_door% {
+    // sizeof = 0x160
+    playerref field_4;
+    playerref field_c;
+    sound field_1c;
+    unitref field_20;
+    stickybool field_2c;
+    marker field_48;
+    marker field_50;
+    uberobjectevent field_64;
+    uberobjectevent field_74;
+    uberobjectevent field_84;
+    uberobjectevent field_94;
+    uberobjectcommand field_a4;
+    uberobjectcommand field_ac;
+    uberobjectquery field_b4;
+    uberobjectquery field_c0;
+    uberobjectquery field_cc;
+    uberobjectquery field_d8;
+    uberobjectevent field_e4;
+    uberobjectevent field_f4;
+    uberobjectcommand field_104;
+    uberobjectevent field_10c;
+    uberobjectquery field_11c;
+    playerref decl_012a_012c_128 = TODO(0A);
+    instanceref decl_0012_019c_130 = TODO(0A);
+    instanceref decl_0012_019e_138 = TODO(0A);
+    objective decl_0005_019f_140 = TODO(0A);
+    objective decl_0005_01a0_148 = TODO(0A);
+    instanceref decl_0012_019b_150 = TODO(0A);
+    instanceref decl_0012_0165_158 = TODO(0A);
+    void method_01a2_0() {
+        bool temp_0 = False;
+        %human_player% local_4 = TODO(0B);
+        conversation local_8 = TODO(0A);
+        Unknown0033 local_10 = TODO(0B);
+
+        /* 000001e4: sp  0 +0 */ 00000000
+
+        /* 000001e8: sp  0 +0 */ 00000001
+        /* 000001ec: sp  0 +1 */ 09000000 temp_0
+        /* 000001f0: sp  1 +1 */ 0f000148 unnamed member 148
+        /* 000001f4: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 000001fc: sp  0 +1 */ 06000000 temp_0
+        /* 00000200: sp  1 +0 */ 50000000
+        /* 00000204: sp  1 -1 */ 64000021
+
+        /* 00000208: sp  0 +0 */ 00000002
+
+        /* 0000020c: sp  0 +0 */ 00000003
+        /* 00000210: sp  0 +1 */ 05000000 beebbeeb &#x27;function On_Open is reading&#x27;
+        /* 00000218: sp  1 +1 */ 03000005
+        /* 0000021c: sp  2 +0 */ 5c000000
+        /* 00000220: sp  2 +1 */ 04000001
+        /* 00000224: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000022c: sp  0 +0 */ 00000004
+        /* 00000230: sp  0 +1 */ 0f000130 unnamed member 130
+        /* 00000234: sp  1 +1 */ 09000008 local_8
+        /* 00000238: sp  2 +1 */ 04000000
+        /* 0000023c: sp  3 +1 */ 09000004 local_4
+        /* 00000240: sp  4 +1 */ 0f000128 unnamed member 128
+        /* 00000244: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000024c: sp  3 +1 */ 0a000004 local_4
+        /* 00000250: sp  4 +0 */ 7e000000 00000552
+        /* 00000258: sp  4 -4 */ 6a000000 beebbeeb virtual void Unknown05D8::method_06d7_6b(instanceref arg_0012_06d8_0, conversation arg_018d_06d9_8, bool arg_0000_06da_10)
+
+        /* 00000260: sp  0 +0 */ 00000005
+        /* 00000264: sp  0 +1 */ 09000010 local_10
+        /* 00000268: sp  1 +1 */ 0f000158 unnamed member 158
+        /* 0000026c: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000274: sp  0 +1 */ 0a000010 local_10
+        /* 00000278: sp  1 +0 */ 7e000000 00000033
+        /* 00000280: sp  1 -1 */ 6a000000 beebbeeb virtual void %destroyphysicsobjectsvolume%::method_0b44_42()
+
+        /* 00000288: sp  0 +0 */ 00000006
+        ---
+
+        /* 0000028c: sp  0 +0 */ 00000007
+        /* 00000290: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a3_1() {
+        /* 000002c4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a4_2() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000304: sp  0 +0 */ 00000008
+        /* 00000308: sp  0 +1 */ 09000000 local_0
+        /* 0000030c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000314: sp  0 +0 */ 00000009
+        /* 00000318: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a5_3() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000354: sp  0 +0 */ 0000000a
+        /* 00000358: sp  0 +1 */ 09000000 local_0
+        /* 0000035c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000364: sp  0 +0 */ 0000000b
+        /* 00000368: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void run() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+
+        /* 000003a4: sp  0 +0 */ 0000000c
+        /* 000003a8: sp  0 +0 */ 77000000
+
+        /* 000003ac: sp  0 +0 */ 00000000
+
+        /* 000003b0: sp  0 +0 */ 0000000d
+        /* 000003b4: sp  0 +1 */ 09000000 temp_0
+        /* 000003b8: sp  1 +1 */ 0f000148 unnamed member 148
+        /* 000003bc: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_0946_ffff()
+        /* 000003c4: sp  0 +1 */ 06000000 temp_0
+        /* 000003c8: sp  1 +1 */ 09000001 temp_1
+        /* 000003cc: sp  2 +1 */ 0f000140 unnamed member 140
+        /* 000003d0: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_0946_ffff()
+        /* 000003d8: sp  1 +1 */ 06000001 temp_1
+        /* 000003dc: sp  2 -1 */ 52000000
+        /* 000003e0: sp  1 -1 */ 64000003
+
+        /* 000003e4: sp  0 +0 */ 0000000e
+
+        /* 000003e8: sp  0 +0 */ 0000000f
+
+        /* 000003ec: sp  0 +0 */ 00000010
+        ---
+
+        /* 000003f0: sp  0 +0 */ 00000011
+        /* 000003f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a6_5() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000434: sp  0 +0 */ 00000012
+        /* 00000438: sp  0 +1 */ 09000000 local_0
+        /* 0000043c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000444: sp  0 +0 */ 00000013
+        /* 00000448: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a7_6() {
+        uberobjectcommand local_0 = TODO(0A);
+
+        /* 00000484: sp  0 +0 */ 00000014
+        /* 00000488: sp  0 +1 */ 09000000 local_0
+        /* 0000048c: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 00000494: sp  0 +0 */ 00000015
+        /* 00000498: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_001a_7() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+        uberobjectcommand local_4 = TODO(0A);
+        bool temp_c = False;
+        bool temp_d = False;
+        Unknown0034 local_10 = TODO(0B);
+        barkevent local_14 = TODO(0A);
+        Unknown0034 local_18 = TODO(0B);
+        barkevent local_1c = TODO(0A);
+        uberobjectcommand local_20 = TODO(0A);
+
+        /* 000005b4: sp  0 +0 */ 00000016
+
+        /* 000005b8: sp  0 +0 */ 00000017
+        /* 000005bc: sp  0 +1 */ 09000000 temp_0
+        /* 000005c0: sp  1 +1 */ 0f000140 unnamed member 140
+        /* 000005c4: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000005cc: sp  0 +1 */ 06000000 temp_0
+        /* 000005d0: sp  1 +1 */ 09000001 temp_1
+        /* 000005d4: sp  2 +1 */ 0f000148 unnamed member 148
+        /* 000005d8: sp  3 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000005e0: sp  1 +1 */ 06000001 temp_1
+        /* 000005e4: sp  2 -1 */ 52000000
+        /* 000005e8: sp  1 -1 */ 64000005
+
+        /* 000005ec: sp  0 +0 */ 00000018
+        /* 000005f0: sp  0 +1 */ 09000004 local_4
+        /* 000005f4: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+        /* 000005fc: sp  0 +0 */ 63000034 00000019
+
+        /* 00000604: sp  0 +0 */ 0000001a
+        /* 00000608: sp  0 +1 */ 0900000c temp_c
+        /* 0000060c: sp  1 +1 */ 0f000148 unnamed member 148
+        /* 00000610: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000618: sp  0 +1 */ 0600000c temp_c
+        /* 0000061c: sp  1 -1 */ 64000009
+
+        /* 00000620: sp  0 +0 */ 0000001b
+        /* 00000624: sp  0 +1 */ 05000000 beebbeeb &quot;Debug: Don&#x27;t say anything Arie!&quot;
+        /* 0000062c: sp  1 +1 */ 03000005
+        /* 00000630: sp  2 +0 */ 5c000000
+        /* 00000634: sp  2 +1 */ 04000001
+        /* 00000638: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+        /* 00000640: sp  0 +0 */ 6300001e 0000001c
+        /* 00000648: sp  0 +1 */ 0900000d temp_d
+        /* 0000064c: sp  1 +1 */ 0f000140 unnamed member 140
+        /* 00000650: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000658: sp  0 +1 */ 0600000d temp_d
+        /* 0000065c: sp  1 -1 */ 6400000c
+
+        /* 00000660: sp  0 +0 */ 0000001d
+        /* 00000664: sp  0 +1 */ 09000014 local_14
+        /* 00000668: sp  1 +1 */ 09000010 local_10
+        /* 0000066c: sp  2 +1 */ 0f000138 unnamed member 138
+        /* 00000670: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000678: sp  1 +1 */ 0a000010 local_10
+        /* 0000067c: sp  2 +0 */ 7e000000 00000034
+        /* 00000684: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown05CD::method_07f0_76(barkevent arg_01a9_0d05_0)
+        /* 0000068c: sp  0 +0 */ 6300000b 0000001e
+        /* 00000694: sp  0 +1 */ 0900001c local_1c
+        /* 00000698: sp  1 +1 */ 09000018 local_18
+        /* 0000069c: sp  2 +1 */ 0f000138 unnamed member 138
+        /* 000006a0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000006a8: sp  1 +1 */ 0a000018 local_18
+        /* 000006ac: sp  2 +0 */ 7e000000 00000034
+        /* 000006b4: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown05CD::method_07f0_76(barkevent arg_01a9_0d05_0)
+
+        /* 000006bc: sp  0 +0 */ 0000001f
+        ---
+
+        /* 00000600: sp  0 +0 */ 00000019
+
+        /* 00000604: sp  0 +0 */ 0000001a
+        /* 00000608: sp  0 +1 */ 0900000c temp_c
+        /* 0000060c: sp  1 +1 */ 0f000148 unnamed member 148
+        /* 00000610: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000618: sp  0 +1 */ 0600000c temp_c
+        /* 0000061c: sp  1 -1 */ 64000009
+
+        /* 00000620: sp  0 +0 */ 0000001b
+        /* 00000624: sp  0 +1 */ 05000000 beebbeeb &quot;Debug: Don&#x27;t say anything Arie!&quot;
+        /* 0000062c: sp  1 +1 */ 03000005
+        /* 00000630: sp  2 +0 */ 5c000000
+        /* 00000634: sp  2 +1 */ 04000001
+        /* 00000638: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+        /* 00000640: sp  0 +0 */ 6300001e 0000001c
+        /* 00000648: sp  0 +1 */ 0900000d temp_d
+        /* 0000064c: sp  1 +1 */ 0f000140 unnamed member 140
+        /* 00000650: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000658: sp  0 +1 */ 0600000d temp_d
+        /* 0000065c: sp  1 -1 */ 6400000c
+
+        /* 00000660: sp  0 +0 */ 0000001d
+        /* 00000664: sp  0 +1 */ 09000014 local_14
+        /* 00000668: sp  1 +1 */ 09000010 local_10
+        /* 0000066c: sp  2 +1 */ 0f000138 unnamed member 138
+        /* 00000670: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000678: sp  1 +1 */ 0a000010 local_10
+        /* 0000067c: sp  2 +0 */ 7e000000 00000034
+        /* 00000684: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown05CD::method_07f0_76(barkevent arg_01a9_0d05_0)
+        /* 0000068c: sp  0 +0 */ 6300000b 0000001e
+        /* 00000694: sp  0 +1 */ 0900001c local_1c
+        /* 00000698: sp  1 +1 */ 09000018 local_18
+        /* 0000069c: sp  2 +1 */ 0f000138 unnamed member 138
+        /* 000006a0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000006a8: sp  1 +1 */ 0a000018 local_18
+        /* 000006ac: sp  2 +0 */ 7e000000 00000034
+        /* 000006b4: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown05CD::method_07f0_76(barkevent arg_01a9_0d05_0)
+
+        /* 000006bc: sp  0 +0 */ 0000001f
+        ---
+
+        /* 00000644: sp  0 +0 */ 0000001c
+        /* 00000648: sp  0 +1 */ 0900000d temp_d
+        /* 0000064c: sp  1 +1 */ 0f000140 unnamed member 140
+        /* 00000650: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b9_ffff()
+        /* 00000658: sp  0 +1 */ 0600000d temp_d
+        /* 0000065c: sp  1 -1 */ 6400000c
+
+        /* 00000660: sp  0 +0 */ 0000001d
+        /* 00000664: sp  0 +1 */ 09000014 local_14
+        /* 00000668: sp  1 +1 */ 09000010 local_10
+        /* 0000066c: sp  2 +1 */ 0f000138 unnamed member 138
+        /* 00000670: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000678: sp  1 +1 */ 0a000010 local_10
+        /* 0000067c: sp  2 +0 */ 7e000000 00000034
+        /* 00000684: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown05CD::method_07f0_76(barkevent arg_01a9_0d05_0)
+        /* 0000068c: sp  0 +0 */ 6300000b 0000001e
+        /* 00000694: sp  0 +1 */ 0900001c local_1c
+        /* 00000698: sp  1 +1 */ 09000018 local_18
+        /* 0000069c: sp  2 +1 */ 0f000138 unnamed member 138
+        /* 000006a0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000006a8: sp  1 +1 */ 0a000018 local_18
+        /* 000006ac: sp  2 +0 */ 7e000000 00000034
+        /* 000006b4: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown05CD::method_07f0_76(barkevent arg_01a9_0d05_0)
+
+        /* 000006bc: sp  0 +0 */ 0000001f
+        ---
+
+        /* 00000690: sp  0 +0 */ 0000001e
+        /* 00000694: sp  0 +1 */ 0900001c local_1c
+        /* 00000698: sp  1 +1 */ 09000018 local_18
+        /* 0000069c: sp  2 +1 */ 0f000138 unnamed member 138
+        /* 000006a0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000006a8: sp  1 +1 */ 0a000018 local_18
+        /* 000006ac: sp  2 +0 */ 7e000000 00000034
+        /* 000006b4: sp  2 -2 */ 6a000000 beebbeeb virtual void Unknown05CD::method_07f0_76(barkevent arg_01a9_0d05_0)
+
+        /* 000006bc: sp  0 +0 */ 0000001f
+        ---
+        /* 000006c0: sp  0 +1 */ 09000020 local_20
+        /* 000006c4: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000006cc: sp  0 +0 */ 00000020
+
+        /* 000006d0: sp  0 +0 */ 00000021
+        ---
+        /* 000006d4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00000034.html">Unknown0034</a><br/>
+initialized field in <a href="type00000035.html">Unknown0035</a><br/>
+initialized field in <a href="type00012293.html">Unknown12293</a><br/>
+initialized field in <a href="type000122c3.html">Unknown122C3</a><br/>
+initialized field in <a href="type000122e0.html">Unknown122E0</a><br/>
+parent class <a href="type00000592.html">%sha_caps_capsule_door%</a><br/>
+</body>
+</html>

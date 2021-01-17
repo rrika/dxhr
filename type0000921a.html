@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000921a</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown921A</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0xb0]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown921A : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004ec.html">objective</a> decl_0005_2489_40 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_248a_48 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009198.html">Unknown9198</a>&gt; decl_0012_23fe_50 = {<a href="units.html#00005ec7">unit object 00005ec7</a>};
+    <a href="type00000502.html">sequencergraph</a> decl_008c_23e1_58 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_2409_60 = persistent(dtp:939E) {type=dword};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown921A : %triggervolume% {
+    // sizeof = 0x74
+    stickybool field_4;
+    stickybool field_20;
+    objective decl_0005_2489_40 = TODO(0A);
+    objective decl_0005_248a_48 = TODO(0A);
+    instanceref decl_0012_23fe_50 = TODO(0A);
+    sequencergraph decl_008c_23e1_58 = TODO(0A);
+    smartscript decl_0089_2409_60 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +1 */ 03000003
+        /* 000000ac: sp  1 +1 */ 0f000060 unnamed member 60
+        /* 000000b0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 000000b8: sp  0 +0 */ 00000001
+        /* 000000bc: sp  0 +1 */ 05000000 beebbeeb &#x27;DEBUG - SmartInt is set to 3 - FAILED!&#x27;
+        /* 000000c4: sp  1 +1 */ 03000003
+        /* 000000c8: sp  2 +0 */ 5c000000
+        /* 000000cc: sp  2 +1 */ 04000001
+        /* 000000d0: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000000d8: sp  0 +0 */ 00000002
+        /* 000000dc: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

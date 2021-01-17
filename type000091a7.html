@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000091a7</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown91A7</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_cargo_int.drm n$[0x3d]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown91A7 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092aa.html">Unknown92AA</a>&gt; decl_0007_241f_40 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type000092a9.html">Unknown92A9</a>&gt; decl_0007_2421_44 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_23b2_48 = persistent(dtp:938F) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000091a8.html">Unknown91A8</a>&gt; decl_0012_2423_5c = {<a href="units.html#00005eb5">unit object 00005eb5</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000091a9.html">Unknown91A9</a>&gt; decl_0012_2425_64 = {<a href="units.html#00005eb6">unit object 00005eb6</a>};
+    void method_01b9_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown91A7 : %triggervolume% {
+    // sizeof = 0x6c
+    stickybool field_4;
+    stickybool field_20;
+    scenarioref&lt;Unknown92AA&gt; decl_0007_241f_40 = TODO(0A);
+    scenarioref&lt;Unknown92A9&gt; decl_0007_2421_44 = TODO(0A);
+    smartscript decl_0089_23b2_48 = TODO(0A);
+    instanceref decl_0012_2423_5c = TODO(0A);
+    instanceref decl_0012_2425_64 = TODO(0A);
+    async void method_01b9_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown91A8 local_8 = TODO(0B);
+        Unknown91A9 local_c = TODO(0B);
+        bool temp_10 = False;
+        Unknown92A9 local_14 = TODO(0B);
+        Unknown92AA local_18 = TODO(0B);
+
+        /* 00000114: sp  0 +0 */ 00000000
+        /* 00000118: sp  0 +1 */ 04000000
+        /* 0000011c: sp  1 +1 */ 09000008 local_8
+        /* 00000120: sp  2 +1 */ 0f00005c unnamed member 5c
+        /* 00000124: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000012c: sp  1 +1 */ 0a000008 local_8
+        /* 00000130: sp  2 +0 */ 7e000000 000091a8
+        /* 00000138: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 00000140: sp  0 +0 */ 00000001
+        /* 00000144: sp  0 +1 */ 04000000
+        /* 00000148: sp  1 +1 */ 0900000c local_c
+        /* 0000014c: sp  2 +1 */ 0f000064 unnamed member 64
+        /* 00000150: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000158: sp  1 +1 */ 0a00000c local_c
+        /* 0000015c: sp  2 +0 */ 7e000000 000091a9
+        /* 00000164: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 0000016c: sp  0 +0 */ 00000002
+        /* 00000170: sp  0 +1 */ 09000010 temp_10
+        /* 00000174: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000178: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000180: sp  0 +1 */ 06000010 temp_10
+        /* 00000184: sp  1 +1 */ 04000001
+        /* 00000188: sp  2 -1 */ 46000000
+        /* 0000018c: sp  1 -1 */ 64000015
+
+        /* 00000190: sp  0 +0 */ 00000003
+
+        /* 00000194: sp  0 +0 */ 00000004
+        /* 00000198: sp  0 +1 */ 09000014 local_14
+        /* 0000019c: sp  1 +1 */ 0f000044 unnamed member 44
+        /* 000001a0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001a8: sp  0 +1 */ 0a000014 local_14
+        /* 000001ac: sp  1 +0 */ 7e000000 000092a9
+        /* 000001b4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000001bc: sp  0 +0 */ 00000005
+        /* 000001c0: sp  0 +1 */ 05000000 beebbeeb &#x27;Activating Alarmed scenario&#x27;
+        /* 000001c8: sp  1 +1 */ 03000005
+        /* 000001cc: sp  2 +0 */ 5c000000
+        /* 000001d0: sp  2 +1 */ 04000001
+        /* 000001d4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001dc: sp  0 +0 */ 00000006
+        /* 000001e0: sp  0 +0 */ 63000014 00000007
+
+        /* 000001e8: sp  0 +0 */ 00000008
+        /* 000001ec: sp  0 +1 */ 09000018 local_18
+        /* 000001f0: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000001f4: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001fc: sp  0 +1 */ 0a000018 local_18
+        /* 00000200: sp  1 +0 */ 7e000000 000092aa
+        /* 00000208: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000210: sp  0 +0 */ 00000009
+        /* 00000214: sp  0 +1 */ 05000000 beebbeeb &#x27;Activating Relaxed scenario&#x27;
+        /* 0000021c: sp  1 +1 */ 03000005
+        /* 00000220: sp  2 +0 */ 5c000000
+        /* 00000224: sp  2 +1 */ 04000001
+        /* 00000228: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000230: sp  0 +0 */ 0000000a
+
+        /* 00000234: sp  0 +0 */ 0000000b
+        ---
+
+        /* 000001e4: sp  0 +0 */ 00000007
+
+        /* 000001e8: sp  0 +0 */ 00000008
+        /* 000001ec: sp  0 +1 */ 09000018 local_18
+        /* 000001f0: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000001f4: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001fc: sp  0 +1 */ 0a000018 local_18
+        /* 00000200: sp  1 +0 */ 7e000000 000092aa
+        /* 00000208: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000210: sp  0 +0 */ 00000009
+        /* 00000214: sp  0 +1 */ 05000000 beebbeeb &#x27;Activating Relaxed scenario&#x27;
+        /* 0000021c: sp  1 +1 */ 03000005
+        /* 00000220: sp  2 +0 */ 5c000000
+        /* 00000224: sp  2 +1 */ 04000001
+        /* 00000228: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000230: sp  0 +0 */ 0000000a
+
+        /* 00000234: sp  0 +0 */ 0000000b
+        ---
+        /* 00000238: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000091a8.html">Unknown91A8</a><br/>
+initialized field in <a href="type000091a9.html">Unknown91A9</a><br/>
+parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

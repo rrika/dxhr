@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000005da</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown05DA</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x70e]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown05DA : <a href="type000004f4.html">playercontroller</a> {
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type00000552.html">%human_player%</a>&gt; decl_012a_012c_4 = TODO(0A);
+    <a href="type00000514.html">soundgroup</a> decl_0a20_0dfa_c = TODO(0A);
+    <a href="type00000514.html">soundgroup</a> decl_0a20_0dfb_10 = TODO(0A);
+    <a href="type00000514.html">soundgroup</a> decl_0a20_0dfc_14 = TODO(0A);
+    bool decl_0000_06c6_18 = False;
+    bool decl_0000_0dfd_19 = False;
+    <a href="type00000511.html">smartscript</a> decl_0089_0dfe_1c = empty;
+    bool decl_0000_0dff_30 = False;
+    void run();
+    void method_098b_1(<a href="type00000527.html">upgradedescriptor</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown05DA : playercontroller {
+    // sizeof = 0x31
+    playerref decl_012a_012c_4 = TODO(0A);
+    soundgroup decl_0a20_0dfa_c = TODO(0A);
+    soundgroup decl_0a20_0dfb_10 = TODO(0A);
+    soundgroup decl_0a20_0dfc_14 = TODO(0A);
+    bool decl_0000_06c6_18 = False;
+    bool decl_0000_0dfd_19 = False;
+    smartscript decl_0089_0dfe_1c = TODO(0A);
+    bool decl_0000_0dff_30 = False;
+    async void run() {
+        %human_player% local_0 = TODO(0B);
+        %human_player% local_4 = TODO(0B);
+        bool temp_8 = False;
+        %human_player% local_c = TODO(0B);
+        bool temp_10 = False;
+        %human_player% local_14 = TODO(0B);
+        bool temp_18 = False;
+        actor local_1c = TODO(0B);
+        bool temp_20 = False;
+        actor local_24 = TODO(0B);
+        bool temp_28 = False;
+        bool temp_29 = False;
+        smartscript local_2c = TODO(0A);
+        smartscript local_40 = TODO(0A);
+
+        /* 00000214: sp  0 +0 */ 00000000
+        ---
+        /* 00000218: sp  0 +1 */ 04000001
+        /* 0000021c: sp  1 -1 */ 640000ed
+
+        /* 00000220: sp  0 +0 */ 00000001
+
+        /* 00000224: sp  0 +0 */ 00000002
+
+        /* 00000228: sp  0 +0 */ 00000003
+        /* 0000022c: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 00000230: sp  1 +1 */ 09000000 local_0
+        /* 00000234: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000238: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000240: sp  1 +1 */ 0a000000 local_0
+        /* 00000244: sp  2 +0 */ 7e000000 00000552
+        /* 0000024c: sp  2 -2 */ 69000000 beebbeeb bool actorplayer::method_06c6_ffff()
+
+        /* 00000254: sp  0 +0 */ 00000004
+        /* 00000258: sp  0 +1 */ 0c000018 unnamed member 18
+        /* 0000025c: sp  1 +1 */ 0c000019 unnamed member 19
+        /* 00000260: sp  2 +0 */ 50000000
+        /* 00000264: sp  2 -1 */ 51000000
+        /* 00000268: sp  1 +1 */ 0c000030 unnamed member 30
+        /* 0000026c: sp  2 -1 */ 52000000
+        /* 00000270: sp  1 -1 */ 64000082
+
+        /* 00000274: sp  0 +0 */ 00000005
+
+        /* 00000278: sp  0 +0 */ 00000006
+        /* 0000027c: sp  0 +1 */ 0f000019 unnamed member 19
+        /* 00000280: sp  1 +1 */ 04000001
+        /* 00000284: sp  2 -2 */ 2e000000
+
+        /* 00000288: sp  0 +0 */ 00000007
+        /* 0000028c: sp  0 +1 */ 09000008 temp_8
+        /* 00000290: sp  1 +1 */ 09000004 local_4
+        /* 00000294: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000298: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000002a0: sp  1 +1 */ 0a000004 local_4
+        /* 000002a4: sp  2 +0 */ 7e000000 00000552
+        /* 000002ac: sp  2 -2 */ 6a000000 beebbeeb virtual bool actorplayer::method_0666_69()
+        /* 000002b4: sp  0 +1 */ 06000008 temp_8
+        /* 000002b8: sp  1 -1 */ 6400001b
+
+        /* 000002bc: sp  0 +0 */ 00000008
+
+        /* 000002c0: sp  0 +0 */ 00000009
+        /* 000002c4: sp  0 +1 */ 03000000
+        /* 000002c8: sp  1 +0 */ 5c000000
+        /* 000002cc: sp  1 +1 */ 02000000 3e4ccccd
+        /* 000002d4: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 000002d8: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000002e0: sp  0 +0 */ 0000000a
+        /* 000002e4: sp  0 +1 */ 03000000
+        /* 000002e8: sp  1 +0 */ 5c000000
+        /* 000002ec: sp  1 +1 */ 02000000 3e4ccccd
+        /* 000002f4: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 000002f8: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000300: sp  0 +0 */ 0000000b
+        /* 00000304: sp  0 +1 */ 03000000
+        /* 00000308: sp  1 +0 */ 5c000000
+        /* 0000030c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000314: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000318: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000320: sp  0 +0 */ 0000000c
+        /* 00000324: sp  0 +0 */ 6300004f 0000000d
+        /* 0000032c: sp  0 +1 */ 09000010 temp_10
+        /* 00000330: sp  1 +1 */ 0900000c local_c
+        /* 00000334: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000338: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000340: sp  1 +1 */ 0a00000c local_c
+        /* 00000344: sp  2 +0 */ 7e000000 00000552
+        /* 0000034c: sp  2 -2 */ 69000000 beebbeeb bool actorplayer::method_06c8_ffff()
+        /* 00000354: sp  0 +1 */ 06000010 temp_10
+        /* 00000358: sp  1 -1 */ 6400001b
+
+        /* 0000035c: sp  0 +0 */ 0000000e
+
+        /* 00000360: sp  0 +0 */ 0000000f
+        /* 00000364: sp  0 +1 */ 03000001
+        /* 00000368: sp  1 +0 */ 5c000000
+        /* 0000036c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000374: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000378: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000380: sp  0 +0 */ 00000010
+        /* 00000384: sp  0 +1 */ 03000000
+        /* 00000388: sp  1 +0 */ 5c000000
+        /* 0000038c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000394: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 00000398: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000003a0: sp  0 +0 */ 00000011
+        /* 000003a4: sp  0 +1 */ 03000000
+        /* 000003a8: sp  1 +0 */ 5c000000
+        /* 000003ac: sp  1 +1 */ 02000000 3e4ccccd
+        /* 000003b4: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000003b8: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000003c0: sp  0 +0 */ 00000012
+        /* 000003c4: sp  0 +0 */ 63000027 00000013
+        /* 000003cc: sp  0 +1 */ 09000018 temp_18
+        /* 000003d0: sp  1 +1 */ 09000014 local_14
+        /* 000003d4: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000003d8: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000003e0: sp  1 +1 */ 0a000014 local_14
+        /* 000003e4: sp  2 +0 */ 7e000000 00000552
+        /* 000003ec: sp  2 -2 */ 69000000 beebbeeb bool actorplayer::method_06c7_ffff()
+        /* 000003f4: sp  0 +1 */ 06000018 temp_18
+        /* 000003f8: sp  1 -1 */ 6400001a
+
+        /* 000003fc: sp  0 +0 */ 00000014
+
+        /* 00000400: sp  0 +0 */ 00000015
+        /* 00000404: sp  0 +1 */ 03000001
+        /* 00000408: sp  1 +0 */ 5c000000
+        /* 0000040c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000414: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000418: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000420: sp  0 +0 */ 00000016
+        /* 00000424: sp  0 +1 */ 03000001
+        /* 00000428: sp  1 +0 */ 5c000000
+        /* 0000042c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000434: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 00000438: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000440: sp  0 +0 */ 00000017
+        /* 00000444: sp  0 +1 */ 03000000
+        /* 00000448: sp  1 +0 */ 5c000000
+        /* 0000044c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000454: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000458: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000460: sp  0 +0 */ 00000018
+        ---
+
+        /* 00000328: sp  0 +0 */ 0000000d
+        /* 0000032c: sp  0 +1 */ 09000010 temp_10
+        /* 00000330: sp  1 +1 */ 0900000c local_c
+        /* 00000334: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000338: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000340: sp  1 +1 */ 0a00000c local_c
+        /* 00000344: sp  2 +0 */ 7e000000 00000552
+        /* 0000034c: sp  2 -2 */ 69000000 beebbeeb bool actorplayer::method_06c8_ffff()
+        /* 00000354: sp  0 +1 */ 06000010 temp_10
+        /* 00000358: sp  1 -1 */ 6400001b
+
+        /* 0000035c: sp  0 +0 */ 0000000e
+
+        /* 00000360: sp  0 +0 */ 0000000f
+        /* 00000364: sp  0 +1 */ 03000001
+        /* 00000368: sp  1 +0 */ 5c000000
+        /* 0000036c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000374: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000378: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000380: sp  0 +0 */ 00000010
+        /* 00000384: sp  0 +1 */ 03000000
+        /* 00000388: sp  1 +0 */ 5c000000
+        /* 0000038c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000394: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 00000398: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000003a0: sp  0 +0 */ 00000011
+        /* 000003a4: sp  0 +1 */ 03000000
+        /* 000003a8: sp  1 +0 */ 5c000000
+        /* 000003ac: sp  1 +1 */ 02000000 3e4ccccd
+        /* 000003b4: sp  2 +1 */ 0f00000c unnamed member c
+        /* 000003b8: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000003c0: sp  0 +0 */ 00000012
+        /* 000003c4: sp  0 +0 */ 63000027 00000013
+        /* 000003cc: sp  0 +1 */ 09000018 temp_18
+        /* 000003d0: sp  1 +1 */ 09000014 local_14
+        /* 000003d4: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000003d8: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000003e0: sp  1 +1 */ 0a000014 local_14
+        /* 000003e4: sp  2 +0 */ 7e000000 00000552
+        /* 000003ec: sp  2 -2 */ 69000000 beebbeeb bool actorplayer::method_06c7_ffff()
+        /* 000003f4: sp  0 +1 */ 06000018 temp_18
+        /* 000003f8: sp  1 -1 */ 6400001a
+
+        /* 000003fc: sp  0 +0 */ 00000014
+
+        /* 00000400: sp  0 +0 */ 00000015
+        /* 00000404: sp  0 +1 */ 03000001
+        /* 00000408: sp  1 +0 */ 5c000000
+        /* 0000040c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000414: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000418: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000420: sp  0 +0 */ 00000016
+        /* 00000424: sp  0 +1 */ 03000001
+        /* 00000428: sp  1 +0 */ 5c000000
+        /* 0000042c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000434: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 00000438: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000440: sp  0 +0 */ 00000017
+        /* 00000444: sp  0 +1 */ 03000000
+        /* 00000448: sp  1 +0 */ 5c000000
+        /* 0000044c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000454: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000458: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000460: sp  0 +0 */ 00000018
+        ---
+
+        /* 000003c8: sp  0 +0 */ 00000013
+        /* 000003cc: sp  0 +1 */ 09000018 temp_18
+        /* 000003d0: sp  1 +1 */ 09000014 local_14
+        /* 000003d4: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000003d8: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000003e0: sp  1 +1 */ 0a000014 local_14
+        /* 000003e4: sp  2 +0 */ 7e000000 00000552
+        /* 000003ec: sp  2 -2 */ 69000000 beebbeeb bool actorplayer::method_06c7_ffff()
+        /* 000003f4: sp  0 +1 */ 06000018 temp_18
+        /* 000003f8: sp  1 -1 */ 6400001a
+
+        /* 000003fc: sp  0 +0 */ 00000014
+
+        /* 00000400: sp  0 +0 */ 00000015
+        /* 00000404: sp  0 +1 */ 03000001
+        /* 00000408: sp  1 +0 */ 5c000000
+        /* 0000040c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000414: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000418: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000420: sp  0 +0 */ 00000016
+        /* 00000424: sp  0 +1 */ 03000001
+        /* 00000428: sp  1 +0 */ 5c000000
+        /* 0000042c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000434: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 00000438: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000440: sp  0 +0 */ 00000017
+        /* 00000444: sp  0 +1 */ 03000000
+        /* 00000448: sp  1 +0 */ 5c000000
+        /* 0000044c: sp  1 +1 */ 02000000 3e4ccccd
+        /* 00000454: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000458: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000460: sp  0 +0 */ 00000018
+        ---
+
+        /* 00000464: sp  0 +0 */ 00000019
+        ---
+        /* 00000468: sp  0 +1 */ 0f000030 unnamed member 30
+        /* 0000046c: sp  1 +1 */ 04000000
+        /* 00000470: sp  2 -2 */ 2e000000
+
+        /* 00000474: sp  0 +0 */ 0000001a
+        /* 00000478: sp  0 +0 */ 63000024 0000001b
+        /* 00000480: sp  0 +1 */ 0c000018 unnamed member 18
+        /* 00000484: sp  1 +0 */ 50000000
+        /* 00000488: sp  1 +1 */ 0c000019 unnamed member 19
+        /* 0000048c: sp  2 -1 */ 51000000
+        /* 00000490: sp  1 -1 */ 6400001e
+
+        /* 00000494: sp  0 +0 */ 0000001c
+
+        /* 00000498: sp  0 +0 */ 0000001d
+        /* 0000049c: sp  0 +1 */ 0f000019 unnamed member 19
+        /* 000004a0: sp  1 +1 */ 04000000
+        /* 000004a4: sp  2 -2 */ 2e000000
+
+        /* 000004a8: sp  0 +0 */ 0000001e
+        /* 000004ac: sp  0 +1 */ 03000001
+        /* 000004b0: sp  1 +0 */ 5c000000
+        /* 000004b4: sp  1 +1 */ 02000000 3e99999a
+        /* 000004bc: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 000004c0: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000004c8: sp  0 +0 */ 0000001f
+        /* 000004cc: sp  0 +1 */ 03000001
+        /* 000004d0: sp  1 +0 */ 5c000000
+        /* 000004d4: sp  1 +1 */ 02000000 3e4ccccd
+        /* 000004dc: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 000004e0: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000004e8: sp  0 +0 */ 00000020
+        /* 000004ec: sp  0 +1 */ 03000001
+        /* 000004f0: sp  1 +0 */ 5c000000
+        /* 000004f4: sp  1 +1 */ 02000000 3e4ccccd
+        /* 000004fc: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000500: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000508: sp  0 +0 */ 00000021
+        ---
+
+        /* 0000047c: sp  0 +0 */ 0000001b
+        /* 00000480: sp  0 +1 */ 0c000018 unnamed member 18
+        /* 00000484: sp  1 +0 */ 50000000
+        /* 00000488: sp  1 +1 */ 0c000019 unnamed member 19
+        /* 0000048c: sp  2 -1 */ 51000000
+        /* 00000490: sp  1 -1 */ 6400001e
+
+        /* 00000494: sp  0 +0 */ 0000001c
+
+        /* 00000498: sp  0 +0 */ 0000001d
+        /* 0000049c: sp  0 +1 */ 0f000019 unnamed member 19
+        /* 000004a0: sp  1 +1 */ 04000000
+        /* 000004a4: sp  2 -2 */ 2e000000
+
+        /* 000004a8: sp  0 +0 */ 0000001e
+        /* 000004ac: sp  0 +1 */ 03000001
+        /* 000004b0: sp  1 +0 */ 5c000000
+        /* 000004b4: sp  1 +1 */ 02000000 3e99999a
+        /* 000004bc: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 000004c0: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000004c8: sp  0 +0 */ 0000001f
+        /* 000004cc: sp  0 +1 */ 03000001
+        /* 000004d0: sp  1 +0 */ 5c000000
+        /* 000004d4: sp  1 +1 */ 02000000 3e4ccccd
+        /* 000004dc: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 000004e0: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000004e8: sp  0 +0 */ 00000020
+        /* 000004ec: sp  0 +1 */ 03000001
+        /* 000004f0: sp  1 +0 */ 5c000000
+        /* 000004f4: sp  1 +1 */ 02000000 3e4ccccd
+        /* 000004fc: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000500: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000508: sp  0 +0 */ 00000021
+        ---
+
+        /* 0000050c: sp  0 +0 */ 00000022
+        ---
+
+        /* 00000510: sp  0 +0 */ 00000023
+        /* 00000514: sp  0 +1 */ 09000020 temp_20
+        /* 00000518: sp  1 +1 */ 0900001c local_1c
+        /* 0000051c: sp  2 -1 */ 66000000 beebbeeb this-&gt;actor controller::method_0789_ffff()
+        /* 00000524: sp  1 +1 */ 0a00001c local_1c
+        /* 00000528: sp  2 -2 */ 69000000 beebbeeb bool actor::method_062a_ffff()
+        /* 00000530: sp  0 +1 */ 06000020 temp_20
+        /* 00000534: sp  1 +1 */ 09000028 temp_28
+        /* 00000538: sp  2 +1 */ 09000024 local_24
+        /* 0000053c: sp  3 -1 */ 66000000 beebbeeb this-&gt;actor controller::method_0789_ffff()
+        /* 00000544: sp  2 +1 */ 0a000024 local_24
+        /* 00000548: sp  3 -2 */ 69000000 beebbeeb bool actor::isAlive636()
+        /* 00000550: sp  1 +1 */ 06000028 temp_28
+        /* 00000554: sp  2 -1 */ 51000000
+        /* 00000558: sp  1 -1 */ 64000014
+
+        /* 0000055c: sp  0 +0 */ 00000024
+
+        /* 00000560: sp  0 +0 */ 00000025
+        /* 00000564: sp  0 +1 */ 09000029 temp_29
+        /* 00000568: sp  1 +1 */ 0f00001c unnamed member 1c
+        /* 0000056c: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::method_08b3_ffff()
+        /* 00000574: sp  0 +1 */ 06000029 temp_29
+        /* 00000578: sp  1 +0 */ 50000000
+        /* 0000057c: sp  1 -1 */ 64000005
+
+        /* 00000580: sp  0 +0 */ 00000026
+        /* 00000584: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 00000588: sp  1 +1 */ 0900002c local_2c
+        /* 0000058c: sp  2 -2 */ 34000000
+
+        /* 00000590: sp  0 +0 */ 00000511
+        ---
+
+        /* 00000594: sp  0 +0 */ 00000027
+        /* 00000598: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 0000059c: sp  1 -1 */ 65000000 beebbeeb native void smartscript::method_09fa_ffff()
+
+        /* 000005a4: sp  0 +0 */ 00000028
+        /* 000005a8: sp  0 +0 */ 63000005 00000029
+        /* 000005b0: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 000005b4: sp  1 +1 */ 09000040 local_40
+        /* 000005b8: sp  2 -2 */ 34000000
+
+        /* 000005bc: sp  0 +0 */ 00000511
+
+        /* 000005c0: sp  0 +0 */ 0000002a
+        ---
+
+        /* 000005ac: sp  0 +0 */ 00000029
+        /* 000005b0: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 000005b4: sp  1 +1 */ 09000040 local_40
+        /* 000005b8: sp  2 -2 */ 34000000
+
+        /* 000005bc: sp  0 +0 */ 00000511
+
+        /* 000005c0: sp  0 +0 */ 0000002a
+        ---
+
+        /* 000005c4: sp  0 +0 */ 0000002b
+        /* 000005c8: sp  0 +0 */ 7c000000
+
+        /* 000005cc: sp  0 +0 */ 0000002c
+        /* 000005d0: sp  0 +0 */ 63ffff10 0000002d
+        /* 000005d8: sp  0 +0 */ 7b000000
+        ---
+
+        /* 000005d4: sp  0 +0 */ 0000002d
+        /* 000005d8: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_098b_1(upgradedescriptor arg_098c_098d_0) {
+        bool temp_4 = False;
+        upgradedescriptor local_8 = TODO(0A);
+        %human_player% local_c = TODO(0B);
+        %human_player% local_10 = TODO(0B);
+        float temp_14 = 0.0;
+
+        /* 00000664: sp  0 +0 */ 0000002e
+        /* 00000668: sp  0 +1 */ 09000004 temp_4
+        /* 0000066c: sp  1 +1 */ 09000008 local_8
+        /* 00000670: sp  2 +1 */ 09000000 arg_098c_098d_0
+        /* 00000674: sp  3 -3 */ 65000000 beebbeeb native bool upgradedescriptor::isEqual(upgradedescriptor arg_098c_0542_4)
+        /* 0000067c: sp  0 +1 */ 06000004 temp_4
+        /* 00000680: sp  1 -1 */ 64000015
+
+        /* 00000684: sp  0 +0 */ 0000002f
+        /* 00000688: sp  0 +1 */ 09000014 temp_14
+        /* 0000068c: sp  1 +1 */ 09000010 local_10
+        /* 00000690: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000694: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000069c: sp  1 +1 */ 0a000010 local_10
+        /* 000006a0: sp  2 +0 */ 7e000000 00000552
+        /* 000006a8: sp  2 -2 */ 69000000 beebbeeb float actorplayer::method_06af_ffff()
+        /* 000006b0: sp  0 +1 */ 08000014 temp_14
+        /* 000006b4: sp  1 +1 */ 0900000c local_c
+        /* 000006b8: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000006bc: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 000006c4: sp  1 +1 */ 0a00000c local_c
+        /* 000006c8: sp  2 +0 */ 7e000000 00000552
+        /* 000006d0: sp  2 -2 */ 69000000 beebbeeb void actorplayer::method_06b4_ffff(float arg_0000_0630_0)
+        ---
+
+        /* 000006d8: sp  0 +0 */ 00000030
+        /* 000006dc: sp  0 +1 */ 0f000030 unnamed member 30
+        /* 000006e0: sp  1 +1 */ 04000001
+        /* 000006e4: sp  2 -2 */ 2e000000
+
+        /* 000006e8: sp  0 +0 */ 00000031
+        /* 000006ec: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f4.html">playercontroller</a><br/>
+</body>
+</html>

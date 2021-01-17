@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00014900</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown14900</h1>
+		<pre>./tools/drmexplore pc-w/ sha_tym_pool_room.drm n$[0xa4]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown14900 : <a href="type0000389b.html">%valve%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00014896.html">Unknown14896</a>&gt; decl_0012_5ce0_4 = {<a href="units.html#0000fe78">unit object 0000fe78</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00014900.html">Unknown14900</a>&gt; decl_0012_5d40_c = {<a href="units.html#0000fe81">unit object 0000fe81</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0001490a.html">Unknown1490A</a>&gt; decl_0007_5d3b_14 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_5d51_18 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_5d52_20 = persistent(dtp:1498E) {type=bool};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014901.html">Unknown14901</a>&gt; decl_0007_5d54_34 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000148b7.html">Unknown148B7</a>&gt; decl_0012_35c1_38 = {<a href="units.html#0000fe87">unit object 0000fe87</a>};
+    void method_0bf4_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown14900 : %valve% {
+    // sizeof = 0x40
+    instanceref decl_0012_5ce0_4 = TODO(0A);
+    instanceref decl_0012_5d40_c = TODO(0A);
+    scenarioref&lt;Unknown1490A&gt; decl_0007_5d3b_14 = TODO(0A);
+    objective decl_0005_5d51_18 = TODO(0A);
+    smartscript decl_0089_5d52_20 = TODO(0A);
+    scenarioref&lt;Unknown14901&gt; decl_0007_5d54_34 = TODO(0A);
+    instanceref decl_0012_35c1_38 = TODO(0A);
+    void method_0bf4_0() {
+        Unknown14900 local_0 = TODO(0B);
+        Unknown1490A local_4 = TODO(0B);
+        Unknown14901 local_8 = TODO(0B);
+        Unknown148B7 local_c = TODO(0B);
+        Unknown14896 local_10 = TODO(0B);
+        bool temp_14 = False;
+        Unknown14896 local_18 = TODO(0B);
+        npcinteraction local_1c = TODO(0A);
+        Unknown14896 local_24 = TODO(0B);
+        waypointnode local_28 = TODO(0A);
+        Unknown14896 local_38 = TODO(0B);
+        waypointnode local_3c = TODO(0A);
+        Unknown14896 local_4c = TODO(0B);
+        waypointnode local_50 = TODO(0A);
+
+        /* 00000204: sp  0 +0 */ 00000000
+        /* 00000208: sp  0 +1 */ 04000000
+        /* 0000020c: sp  1 +1 */ 09000000 local_0
+        /* 00000210: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000214: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000021c: sp  1 +1 */ 0a000000 local_0
+        /* 00000220: sp  2 +0 */ 7e000000 00014900
+        /* 00000228: sp  2 -2 */ 69000000 beebbeeb void Unknown0585::method_02ca_ffff(bool arg_0000_0680_0)
+
+        /* 00000230: sp  0 +0 */ 00000001
+        /* 00000234: sp  0 +1 */ 04000001
+        /* 00000238: sp  1 +1 */ 09000004 local_4
+        /* 0000023c: sp  2 +1 */ 0f000014 unnamed member 14
+        /* 00000240: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000248: sp  1 +1 */ 0a000004 local_4
+        /* 0000024c: sp  2 +0 */ 7e000000 0001490a
+        /* 00000254: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 0000025c: sp  0 +0 */ 00000002
+        /* 00000260: sp  0 +1 */ 09000008 local_8
+        /* 00000264: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000268: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000270: sp  0 +1 */ 0a000008 local_8
+        /* 00000274: sp  1 +0 */ 7e000000 00014901
+        /* 0000027c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000284: sp  0 +0 */ 00000003
+        /* 00000288: sp  0 +1 */ 0900000c local_c
+        /* 0000028c: sp  1 +1 */ 0f000038 unnamed member 38
+        /* 00000290: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000298: sp  0 +1 */ 0a00000c local_c
+        /* 0000029c: sp  1 +0 */ 7e000000 000148b7
+        /* 000002a4: sp  1 -1 */ 6a000000 beebbeeb virtual void %hazard_dispatcher%::method_09c6_40()
+
+        /* 000002ac: sp  0 +0 */ 00000004
+        /* 000002b0: sp  0 +1 */ 09000014 temp_14
+        /* 000002b4: sp  1 +1 */ 09000010 local_10
+        /* 000002b8: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000002bc: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002c4: sp  1 +1 */ 0a000010 local_10
+        /* 000002c8: sp  2 +0 */ 7e000000 00014896
+        /* 000002d0: sp  2 -2 */ 69000000 beebbeeb bool actor::isAlive636()
+        /* 000002d8: sp  0 +1 */ 06000014 temp_14
+        /* 000002dc: sp  1 -1 */ 64000038
+
+        /* 000002e0: sp  0 +0 */ 00000005
+
+        /* 000002e4: sp  0 +0 */ 00000006
+        /* 000002e8: sp  0 +1 */ 04000001
+        /* 000002ec: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 000002f0: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 000002f8: sp  0 +0 */ 00000007
+        /* 000002fc: sp  0 +1 */ 0900001c local_1c
+        /* 00000300: sp  1 +1 */ 09000018 local_18
+        /* 00000304: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000308: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000310: sp  1 +1 */ 0a000018 local_18
+        /* 00000314: sp  2 +0 */ 7e000000 00014896
+        /* 0000031c: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0687_ffff(npcinteraction arg_0688_0689_0)
+
+        /* 00000324: sp  0 +0 */ 00000008
+        /* 00000328: sp  0 +1 */ 09000028 local_28
+        /* 0000032c: sp  1 +1 */ 09000024 local_24
+        /* 00000330: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000334: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000033c: sp  1 +1 */ 0a000024 local_24
+        /* 00000340: sp  2 +0 */ 7e000000 00014896
+        /* 00000348: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0675_ffff(waypointnode arg_0196_0676_0)
+
+        /* 00000350: sp  0 +0 */ 00000009
+        /* 00000354: sp  0 +1 */ 0900003c local_3c
+        /* 00000358: sp  1 +1 */ 09000038 local_38
+        /* 0000035c: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 00000360: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000368: sp  1 +1 */ 0a000038 local_38
+        /* 0000036c: sp  2 +0 */ 7e000000 00014896
+        /* 00000374: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0678_ffff(waypointnode arg_0196_0676_0)
+
+        /* 0000037c: sp  0 +0 */ 0000000a
+        /* 00000380: sp  0 +1 */ 09000050 local_50
+        /* 00000384: sp  1 +1 */ 0900004c local_4c
+        /* 00000388: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 0000038c: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000394: sp  1 +1 */ 0a00004c local_4c
+        /* 00000398: sp  2 +0 */ 7e000000 00014896
+        /* 000003a0: sp  2 -2 */ 69000000 beebbeeb void actornpc::method_0677_ffff(waypointnode arg_0196_0676_0)
+
+        /* 000003a8: sp  0 +0 */ 0000000b
+        /* 000003ac: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 000003b0: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 000003b8: sp  0 +0 */ 0000000c
+        /* 000003bc: sp  0 +0 */ 63000008 0000000d
+        /* 000003c4: sp  0 +1 */ 05000000 beebbeeb &#x27;obj secondaire not failed&#x27;
+        /* 000003cc: sp  1 +1 */ 03000006
+        /* 000003d0: sp  2 +0 */ 5c000000
+        /* 000003d4: sp  2 +1 */ 04000001
+        /* 000003d8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000003e0: sp  0 +0 */ 0000000e
+        ---
+
+        /* 000003c0: sp  0 +0 */ 0000000d
+        /* 000003c4: sp  0 +1 */ 05000000 beebbeeb &#x27;obj secondaire not failed&#x27;
+        /* 000003cc: sp  1 +1 */ 03000006
+        /* 000003d0: sp  2 +0 */ 5c000000
+        /* 000003d4: sp  2 +1 */ 04000001
+        /* 000003d8: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000003e0: sp  0 +0 */ 0000000e
+        ---
+        /* 000003e4: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type000148d3.html">Unknown148D3</a><br/>
+initialized field in <a href="type00014900.html">Unknown14900</a><br/>
+parent class <a href="type0000389b.html">%valve%</a><br/>
+</body>
+</html>

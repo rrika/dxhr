@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00014893</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown14893</h1>
+		<pre>./tools/drmexplore pc-w/ sha_tym_pool_room.drm n$[0x35]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown14893 : <a href="type0001499a.html">%ao_tym_crane_robot_a%</a> {
+    <a href="type000004ab.html">actorsensor</a> field_4;
+    <a href="type000004ab.html">actorsensor</a> field_8;
+    <a href="type000004e9.html">modelmarker</a> field_10;
+    <a href="type00000521.html">uberobjectcommand</a> field_28;
+    <a href="type00000521.html">uberobjectcommand</a> field_30;
+    <a href="type00000522.html">uberobjectevent</a> field_38;
+    <a href="type00000522.html">uberobjectevent</a> field_48;
+    <a href="type00000522.html">uberobjectevent</a> field_58;
+    <a href="type00000522.html">uberobjectevent</a> field_68;
+    <a href="type00000523.html">uberobjectquery</a> field_78;
+    <a href="type00000523.html">uberobjectquery</a> field_84;
+    <a href="type00000523.html">uberobjectquery</a> field_90;
+    <a href="type00000523.html">uberobjectquery</a> field_9c;
+    <a href="type00000522.html">uberobjectevent</a> field_a8;
+    <a href="type00000522.html">uberobjectevent</a> field_b8;
+    <a href="type00000522.html">uberobjectevent</a> field_c8;
+    <a href="type00000521.html">uberobjectcommand</a> field_d8;
+    <a href="type00000521.html">uberobjectcommand</a> field_e0;
+    <a href="type00000522.html">uberobjectevent</a> field_e8;
+    <a href="type00000522.html">uberobjectevent</a> field_f8;
+    <a href="type00000522.html">uberobjectevent</a> field_108;
+    <a href="type00000522.html">uberobjectevent</a> field_118;
+    <a href="type00000522.html">uberobjectevent</a> field_128;
+    <a href="type00000521.html">uberobjectcommand</a> field_138;
+    <a href="type00000521.html">uberobjectcommand</a> field_140;
+    <a href="type00000522.html">uberobjectevent</a> field_158;
+    <a href="type00000521.html">uberobjectcommand</a> field_168;
+    <a href="type00000521.html">uberobjectcommand</a> field_170;
+    <a href="type000004f5.html">playerref</a> field_178;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000148ab.html">Unknown148AB</a>&gt; decl_0012_5cbf_180 = {<a href="units.html#0000fe6c">unit object 0000fe6c</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000148ac.html">Unknown148AC</a>&gt; decl_0012_5cc1_188 = {<a href="units.html#0000fe6d">unit object 0000fe6d</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002e96.html">%button%</a>&gt; decl_0012_3821_190 = {<a href="units.html#0000fe6e">unit object 0000fe6e</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002e96.html">%button%</a>&gt; decl_0012_3827_198 = {<a href="units.html#0000fe6f">unit object 0000fe6f</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002e96.html">%button%</a>&gt; decl_0012_3828_1a0 = {<a href="units.html#0000fe70">unit object 0000fe70</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002e96.html">%button%</a>&gt; decl_0012_269c_1a8 = {<a href="units.html#0000fe71">unit object 0000fe71</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002e96.html">%button%</a>&gt; decl_0012_5cc2_1b0 = {<a href="units.html#0000fe72">unit object 0000fe72</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00002e96.html">%button%</a>&gt; decl_0012_5cc3_1b8 = {<a href="units.html#0000fe73">unit object 0000fe73</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00014322.html">%sha_tym_lower_door_sl_glass_b%</a>&gt; decl_0012_5cc5_1c0 = {<a href="units.html#0000fe74">unit object 0000fe74</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00014322.html">%sha_tym_lower_door_sl_glass_b%</a>&gt; decl_0012_5cc6_1c8 = {<a href="units.html#0000fe75">unit object 0000fe75</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014905.html">Unknown14905</a>&gt; decl_0007_5cc8_1d0 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014906.html">Unknown14906</a>&gt; decl_0007_5cca_1d4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014907.html">Unknown14907</a>&gt; decl_0007_5ccc_1d8 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014908.html">Unknown14908</a>&gt; decl_0007_5cce_1dc = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014902.html">Unknown14902</a>&gt; decl_0007_5cd0_1e0 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014903.html">Unknown14903</a>&gt; decl_0007_5cd2_1e4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00014904.html">Unknown14904</a>&gt; decl_0007_5cd4_1e8 = TODO(0A);
+    void method_0ff8_0();
+    void method_0ff9_1();
+    void method_0ffb_2();
+    void method_0ffa_3();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown14893 : %ao_tym_crane_robot_a% {
+    // sizeof = 0x1ec
+    actorsensor field_4;
+    actorsensor field_8;
+    modelmarker field_10;
+    uberobjectcommand field_28;
+    uberobjectcommand field_30;
+    uberobjectevent field_38;
+    uberobjectevent field_48;
+    uberobjectevent field_58;
+    uberobjectevent field_68;
+    uberobjectquery field_78;
+    uberobjectquery field_84;
+    uberobjectquery field_90;
+    uberobjectquery field_9c;
+    uberobjectevent field_a8;
+    uberobjectevent field_b8;
+    uberobjectevent field_c8;
+    uberobjectcommand field_d8;
+    uberobjectcommand field_e0;
+    uberobjectevent field_e8;
+    uberobjectevent field_f8;
+    uberobjectevent field_108;
+    uberobjectevent field_118;
+    uberobjectevent field_128;
+    uberobjectcommand field_138;
+    uberobjectcommand field_140;
+    uberobjectevent field_158;
+    uberobjectcommand field_168;
+    uberobjectcommand field_170;
+    playerref field_178;
+    instanceref decl_0012_5cbf_180 = TODO(0A);
+    instanceref decl_0012_5cc1_188 = TODO(0A);
+    instanceref decl_0012_3821_190 = TODO(0A);
+    instanceref decl_0012_3827_198 = TODO(0A);
+    instanceref decl_0012_3828_1a0 = TODO(0A);
+    instanceref decl_0012_269c_1a8 = TODO(0A);
+    instanceref decl_0012_5cc2_1b0 = TODO(0A);
+    instanceref decl_0012_5cc3_1b8 = TODO(0A);
+    instanceref decl_0012_5cc5_1c0 = TODO(0A);
+    instanceref decl_0012_5cc6_1c8 = TODO(0A);
+    scenarioref&lt;Unknown14905&gt; decl_0007_5cc8_1d0 = TODO(0A);
+    scenarioref&lt;Unknown14906&gt; decl_0007_5cca_1d4 = TODO(0A);
+    scenarioref&lt;Unknown14907&gt; decl_0007_5ccc_1d8 = TODO(0A);
+    scenarioref&lt;Unknown14908&gt; decl_0007_5cce_1dc = TODO(0A);
+    scenarioref&lt;Unknown14902&gt; decl_0007_5cd0_1e0 = TODO(0A);
+    scenarioref&lt;Unknown14903&gt; decl_0007_5cd2_1e4 = TODO(0A);
+    scenarioref&lt;Unknown14904&gt; decl_0007_5cd4_1e8 = TODO(0A);
+    void method_0ff8_0() {
+        Unknown148AB local_0 = TODO(0B);
+        Unknown148AC local_4 = TODO(0B);
+        %button% local_8 = TODO(0B);
+        %button% local_c = TODO(0B);
+        %button% local_10 = TODO(0B);
+        %sha_tym_lower_door_sl_glass_b% local_14 = TODO(0B);
+        Unknown14906 local_18 = TODO(0B);
+        Unknown14908 local_1c = TODO(0B);
+        Unknown14903 local_20 = TODO(0B);
+        Unknown14904 local_24 = TODO(0B);
+
+        /* 000001e4: sp  0 +0 */ 00000000
+        /* 000001e8: sp  0 +1 */ 04000000
+        /* 000001ec: sp  1 +1 */ 09000000 local_0
+        /* 000001f0: sp  2 +1 */ 0f000180 unnamed member 180
+        /* 000001f4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001fc: sp  1 +1 */ 0a000000 local_0
+        /* 00000200: sp  2 +0 */ 7e000000 000148ab
+        /* 00000208: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000210: sp  0 +0 */ 00000001
+        /* 00000214: sp  0 +1 */ 04000001
+        /* 00000218: sp  1 +1 */ 09000004 local_4
+        /* 0000021c: sp  2 +1 */ 0f000188 unnamed member 188
+        /* 00000220: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000228: sp  1 +1 */ 0a000004 local_4
+        /* 0000022c: sp  2 +0 */ 7e000000 000148ac
+        /* 00000234: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 0000023c: sp  0 +0 */ 00000002
+        /* 00000240: sp  0 +1 */ 09000008 local_8
+        /* 00000244: sp  1 +1 */ 0f000190 unnamed member 190
+        /* 00000248: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000250: sp  0 +1 */ 0a000008 local_8
+        /* 00000254: sp  1 +0 */ 7e000000 00002e96
+        /* 0000025c: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf6_ffff()
+
+        /* 00000264: sp  0 +0 */ 00000003
+        /* 00000268: sp  0 +1 */ 0900000c local_c
+        /* 0000026c: sp  1 +1 */ 0f0001a0 unnamed member 1a0
+        /* 00000270: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000278: sp  0 +1 */ 0a00000c local_c
+        /* 0000027c: sp  1 +0 */ 7e000000 00002e96
+        /* 00000284: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf6_ffff()
+
+        /* 0000028c: sp  0 +0 */ 00000004
+        /* 00000290: sp  0 +1 */ 09000010 local_10
+        /* 00000294: sp  1 +1 */ 0f0001b0 unnamed member 1b0
+        /* 00000298: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002a0: sp  0 +1 */ 0a000010 local_10
+        /* 000002a4: sp  1 +0 */ 7e000000 00002e96
+        /* 000002ac: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf6_ffff()
+
+        /* 000002b4: sp  0 +0 */ 00000005
+        /* 000002b8: sp  0 +1 */ 09000014 local_14
+        /* 000002bc: sp  1 +1 */ 0f0001c8 unnamed member 1c8
+        /* 000002c0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002c8: sp  0 +1 */ 0a000014 local_14
+        /* 000002cc: sp  1 +0 */ 7e000000 00014322
+        /* 000002d4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown5841::method_01a6_41()
+
+        /* 000002dc: sp  0 +0 */ 00000006
+        /* 000002e0: sp  0 +1 */ 09000018 local_18
+        /* 000002e4: sp  1 +1 */ 0f0001d4 unnamed member 1d4
+        /* 000002e8: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000002f0: sp  0 +1 */ 0a000018 local_18
+        /* 000002f4: sp  1 +0 */ 7e000000 00014906
+        /* 000002fc: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000304: sp  0 +0 */ 00000007
+        /* 00000308: sp  0 +1 */ 04000001
+        /* 0000030c: sp  1 +1 */ 0900001c local_1c
+        /* 00000310: sp  2 +1 */ 0f0001dc unnamed member 1dc
+        /* 00000314: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000031c: sp  1 +1 */ 0a00001c local_1c
+        /* 00000320: sp  2 +0 */ 7e000000 00014908
+        /* 00000328: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000330: sp  0 +0 */ 00000008
+        /* 00000334: sp  0 +1 */ 04000001
+        /* 00000338: sp  1 +1 */ 09000020 local_20
+        /* 0000033c: sp  2 +1 */ 0f0001e4 unnamed member 1e4
+        /* 00000340: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000348: sp  1 +1 */ 0a000020 local_20
+        /* 0000034c: sp  2 +0 */ 7e000000 00014903
+        /* 00000354: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 0000035c: sp  0 +0 */ 00000009
+        /* 00000360: sp  0 +1 */ 09000024 local_24
+        /* 00000364: sp  1 +1 */ 0f0001e8 unnamed member 1e8
+        /* 00000368: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000370: sp  0 +1 */ 0a000024 local_24
+        /* 00000374: sp  1 +0 */ 7e000000 00014904
+        /* 0000037c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000384: sp  0 +0 */ 0000000a
+        /* 00000388: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0ff9_1() {
+        Unknown148AB local_0 = TODO(0B);
+        Unknown148AC local_4 = TODO(0B);
+        %button% local_8 = TODO(0B);
+        %button% local_c = TODO(0B);
+        %button% local_10 = TODO(0B);
+        %sha_tym_lower_door_sl_glass_b% local_14 = TODO(0B);
+        Unknown14905 local_18 = TODO(0B);
+        Unknown14907 local_1c = TODO(0B);
+        Unknown14903 local_20 = TODO(0B);
+        Unknown14904 local_24 = TODO(0B);
+
+        /* 00000464: sp  0 +0 */ 0000000b
+        /* 00000468: sp  0 +1 */ 04000001
+        /* 0000046c: sp  1 +1 */ 09000000 local_0
+        /* 00000470: sp  2 +1 */ 0f000180 unnamed member 180
+        /* 00000474: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000047c: sp  1 +1 */ 0a000000 local_0
+        /* 00000480: sp  2 +0 */ 7e000000 000148ab
+        /* 00000488: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 00000490: sp  0 +0 */ 0000000c
+        /* 00000494: sp  0 +1 */ 04000000
+        /* 00000498: sp  1 +1 */ 09000004 local_4
+        /* 0000049c: sp  2 +1 */ 0f000188 unnamed member 188
+        /* 000004a0: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000004a8: sp  1 +1 */ 0a000004 local_4
+        /* 000004ac: sp  2 +0 */ 7e000000 000148ac
+        /* 000004b4: sp  2 -2 */ 69000000 beebbeeb void instance::method_06f7_ffff(bool arg_0000_04d4_0)
+
+        /* 000004bc: sp  0 +0 */ 0000000d
+        /* 000004c0: sp  0 +1 */ 09000008 local_8
+        /* 000004c4: sp  1 +1 */ 0f000198 unnamed member 198
+        /* 000004c8: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000004d0: sp  0 +1 */ 0a000008 local_8
+        /* 000004d4: sp  1 +0 */ 7e000000 00002e96
+        /* 000004dc: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf6_ffff()
+
+        /* 000004e4: sp  0 +0 */ 0000000e
+        /* 000004e8: sp  0 +1 */ 0900000c local_c
+        /* 000004ec: sp  1 +1 */ 0f0001a8 unnamed member 1a8
+        /* 000004f0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000004f8: sp  0 +1 */ 0a00000c local_c
+        /* 000004fc: sp  1 +0 */ 7e000000 00002e96
+        /* 00000504: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf6_ffff()
+
+        /* 0000050c: sp  0 +0 */ 0000000f
+        /* 00000510: sp  0 +1 */ 09000010 local_10
+        /* 00000514: sp  1 +1 */ 0f0001b8 unnamed member 1b8
+        /* 00000518: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000520: sp  0 +1 */ 0a000010 local_10
+        /* 00000524: sp  1 +0 */ 7e000000 00002e96
+        /* 0000052c: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf6_ffff()
+
+        /* 00000534: sp  0 +0 */ 00000010
+        /* 00000538: sp  0 +1 */ 09000014 local_14
+        /* 0000053c: sp  1 +1 */ 0f0001c0 unnamed member 1c0
+        /* 00000540: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000548: sp  0 +1 */ 0a000014 local_14
+        /* 0000054c: sp  1 +0 */ 7e000000 00014322
+        /* 00000554: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown5841::method_01a6_41()
+
+        /* 0000055c: sp  0 +0 */ 00000011
+        /* 00000560: sp  0 +1 */ 09000018 local_18
+        /* 00000564: sp  1 +1 */ 0f0001d0 unnamed member 1d0
+        /* 00000568: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000570: sp  0 +1 */ 0a000018 local_18
+        /* 00000574: sp  1 +0 */ 7e000000 00014905
+        /* 0000057c: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000584: sp  0 +0 */ 00000012
+        /* 00000588: sp  0 +1 */ 04000001
+        /* 0000058c: sp  1 +1 */ 0900001c local_1c
+        /* 00000590: sp  2 +1 */ 0f0001d8 unnamed member 1d8
+        /* 00000594: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 0000059c: sp  1 +1 */ 0a00001c local_1c
+        /* 000005a0: sp  2 +0 */ 7e000000 00014907
+        /* 000005a8: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000005b0: sp  0 +0 */ 00000013
+        /* 000005b4: sp  0 +1 */ 04000001
+        /* 000005b8: sp  1 +1 */ 09000020 local_20
+        /* 000005bc: sp  2 +1 */ 0f0001e4 unnamed member 1e4
+        /* 000005c0: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000005c8: sp  1 +1 */ 0a000020 local_20
+        /* 000005cc: sp  2 +0 */ 7e000000 00014903
+        /* 000005d4: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000005dc: sp  0 +0 */ 00000014
+        /* 000005e0: sp  0 +1 */ 09000024 local_24
+        /* 000005e4: sp  1 +1 */ 0f0001e8 unnamed member 1e8
+        /* 000005e8: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000005f0: sp  0 +1 */ 0a000024 local_24
+        /* 000005f4: sp  1 +0 */ 7e000000 00014904
+        /* 000005fc: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000604: sp  0 +0 */ 00000015
+        /* 00000608: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0ffb_2() {
+        %sha_tym_lower_door_sl_glass_b% local_0 = TODO(0B);
+        %button% local_4 = TODO(0B);
+        %button% local_8 = TODO(0B);
+        %button% local_c = TODO(0B);
+        Unknown14907 local_10 = TODO(0B);
+        Unknown14905 local_14 = TODO(0B);
+        Unknown14904 local_18 = TODO(0B);
+        Unknown14903 local_1c = TODO(0B);
+
+        /* 000006c4: sp  0 +0 */ 00000016
+        /* 000006c8: sp  0 +1 */ 09000000 local_0
+        /* 000006cc: sp  1 +1 */ 0f0001c0 unnamed member 1c0
+        /* 000006d0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000006d8: sp  0 +1 */ 0a000000 local_0
+        /* 000006dc: sp  1 +0 */ 7e000000 00014322
+        /* 000006e4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown5841::method_01a5_42()
+
+        /* 000006ec: sp  0 +0 */ 00000017
+        /* 000006f0: sp  0 +1 */ 09000004 local_4
+        /* 000006f4: sp  1 +1 */ 0f000198 unnamed member 198
+        /* 000006f8: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000700: sp  0 +1 */ 0a000004 local_4
+        /* 00000704: sp  1 +0 */ 7e000000 00002e96
+        /* 0000070c: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf5_ffff()
+
+        /* 00000714: sp  0 +0 */ 00000018
+        /* 00000718: sp  0 +1 */ 09000008 local_8
+        /* 0000071c: sp  1 +1 */ 0f0001a8 unnamed member 1a8
+        /* 00000720: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000728: sp  0 +1 */ 0a000008 local_8
+        /* 0000072c: sp  1 +0 */ 7e000000 00002e96
+        /* 00000734: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf5_ffff()
+
+        /* 0000073c: sp  0 +0 */ 00000019
+        /* 00000740: sp  0 +1 */ 0900000c local_c
+        /* 00000744: sp  1 +1 */ 0f0001b8 unnamed member 1b8
+        /* 00000748: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000750: sp  0 +1 */ 0a00000c local_c
+        /* 00000754: sp  1 +0 */ 7e000000 00002e96
+        /* 0000075c: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf5_ffff()
+
+        /* 00000764: sp  0 +0 */ 0000001a
+        /* 00000768: sp  0 +1 */ 09000010 local_10
+        /* 0000076c: sp  1 +1 */ 0f0001d8 unnamed member 1d8
+        /* 00000770: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000778: sp  0 +1 */ 0a000010 local_10
+        /* 0000077c: sp  1 +0 */ 7e000000 00014907
+        /* 00000784: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000078c: sp  0 +0 */ 0000001b
+        /* 00000790: sp  0 +1 */ 04000001
+        /* 00000794: sp  1 +1 */ 09000014 local_14
+        /* 00000798: sp  2 +1 */ 0f0001d0 unnamed member 1d0
+        /* 0000079c: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000007a4: sp  1 +1 */ 0a000014 local_14
+        /* 000007a8: sp  2 +0 */ 7e000000 00014905
+        /* 000007b0: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000007b8: sp  0 +0 */ 0000001c
+        /* 000007bc: sp  0 +1 */ 04000001
+        /* 000007c0: sp  1 +1 */ 09000018 local_18
+        /* 000007c4: sp  2 +1 */ 0f0001e8 unnamed member 1e8
+        /* 000007c8: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000007d0: sp  1 +1 */ 0a000018 local_18
+        /* 000007d4: sp  2 +0 */ 7e000000 00014904
+        /* 000007dc: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000007e4: sp  0 +0 */ 0000001d
+        /* 000007e8: sp  0 +1 */ 0900001c local_1c
+        /* 000007ec: sp  1 +1 */ 0f0001e4 unnamed member 1e4
+        /* 000007f0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000007f8: sp  0 +1 */ 0a00001c local_1c
+        /* 000007fc: sp  1 +0 */ 7e000000 00014903
+        /* 00000804: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000080c: sp  0 +0 */ 0000001e
+        /* 00000810: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0ffa_3() {
+        %sha_tym_lower_door_sl_glass_b% local_0 = TODO(0B);
+        %button% local_4 = TODO(0B);
+        %button% local_8 = TODO(0B);
+        %button% local_c = TODO(0B);
+        Unknown14908 local_10 = TODO(0B);
+        Unknown14906 local_14 = TODO(0B);
+        Unknown14904 local_18 = TODO(0B);
+        Unknown14903 local_1c = TODO(0B);
+
+        /* 000008d4: sp  0 +0 */ 0000001f
+        /* 000008d8: sp  0 +1 */ 09000000 local_0
+        /* 000008dc: sp  1 +1 */ 0f0001c8 unnamed member 1c8
+        /* 000008e0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000008e8: sp  0 +1 */ 0a000000 local_0
+        /* 000008ec: sp  1 +0 */ 7e000000 00014322
+        /* 000008f4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown5841::method_01a5_42()
+
+        /* 000008fc: sp  0 +0 */ 00000020
+        /* 00000900: sp  0 +1 */ 09000004 local_4
+        /* 00000904: sp  1 +1 */ 0f000190 unnamed member 190
+        /* 00000908: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000910: sp  0 +1 */ 0a000004 local_4
+        /* 00000914: sp  1 +0 */ 7e000000 00002e96
+        /* 0000091c: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf5_ffff()
+
+        /* 00000924: sp  0 +0 */ 00000021
+        /* 00000928: sp  0 +1 */ 09000008 local_8
+        /* 0000092c: sp  1 +1 */ 0f0001a0 unnamed member 1a0
+        /* 00000930: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000938: sp  0 +1 */ 0a000008 local_8
+        /* 0000093c: sp  1 +0 */ 7e000000 00002e96
+        /* 00000944: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf5_ffff()
+
+        /* 0000094c: sp  0 +0 */ 00000022
+        /* 00000950: sp  0 +1 */ 0900000c local_c
+        /* 00000954: sp  1 +1 */ 0f0001b0 unnamed member 1b0
+        /* 00000958: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000960: sp  0 +1 */ 0a00000c local_c
+        /* 00000964: sp  1 +0 */ 7e000000 00002e96
+        /* 0000096c: sp  1 -1 */ 69000000 beebbeeb void Unknown0585::method_0bf5_ffff()
+
+        /* 00000974: sp  0 +0 */ 00000023
+        /* 00000978: sp  0 +1 */ 09000010 local_10
+        /* 0000097c: sp  1 +1 */ 0f0001dc unnamed member 1dc
+        /* 00000980: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000988: sp  0 +1 */ 0a000010 local_10
+        /* 0000098c: sp  1 +0 */ 7e000000 00014908
+        /* 00000994: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000099c: sp  0 +0 */ 00000024
+        /* 000009a0: sp  0 +1 */ 04000001
+        /* 000009a4: sp  1 +1 */ 09000014 local_14
+        /* 000009a8: sp  2 +1 */ 0f0001d4 unnamed member 1d4
+        /* 000009ac: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000009b4: sp  1 +1 */ 0a000014 local_14
+        /* 000009b8: sp  2 +0 */ 7e000000 00014906
+        /* 000009c0: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000009c8: sp  0 +0 */ 00000025
+        /* 000009cc: sp  0 +1 */ 04000001
+        /* 000009d0: sp  1 +1 */ 09000018 local_18
+        /* 000009d4: sp  2 +1 */ 0f0001e8 unnamed member 1e8
+        /* 000009d8: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000009e0: sp  1 +1 */ 0a000018 local_18
+        /* 000009e4: sp  2 +0 */ 7e000000 00014904
+        /* 000009ec: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 000009f4: sp  0 +0 */ 00000026
+        /* 000009f8: sp  0 +1 */ 0900001c local_1c
+        /* 000009fc: sp  1 +1 */ 0f0001e4 unnamed member 1e4
+        /* 00000a00: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000a08: sp  0 +1 */ 0a00001c local_1c
+        /* 00000a0c: sp  1 +0 */ 7e000000 00014903
+        /* 00000a14: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 00000a1c: sp  0 +0 */ 00000027
+        /* 00000a20: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type0001499a.html">%ao_tym_crane_robot_a%</a><br/>
+</body>
+</html>

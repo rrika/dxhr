@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00001f38</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1F38</h1>
+		<pre>./tools/drmexplore pc-w/ det_adam_apt_c.drm n$[0x47]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1F38 : <a href="type00000595.html">%debugbutton%</a> {
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00001f81.html">Unknown1F81</a>&gt; decl_0007_102c_4 = TODO(0A);
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type00001f82.html">Unknown1F82</a>&gt; decl_0007_102e_8 = TODO(0A);
+    void method_0bf3_0();
+    void method_0bf4_1();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1F38 : %debugbutton% {
+    // sizeof = 0xc
+    scenarioref&lt;Unknown1F81&gt; decl_0007_102c_4 = TODO(0A);
+    scenarioref&lt;Unknown1F82&gt; decl_0007_102e_8 = TODO(0A);
+    void method_0bf3_0() {
+        Unknown1F81 local_0 = TODO(0B);
+        Unknown1F82 local_4 = TODO(0B);
+
+        /* 000000e4: sp  0 +0 */ 00000000
+        /* 000000e8: sp  0 +1 */ 09000000 local_0
+        /* 000000ec: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000000f0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000000f8: sp  0 +1 */ 0a000000 local_0
+        /* 000000fc: sp  1 +0 */ 7e000000 00001f81
+        /* 00000104: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000010c: sp  0 +0 */ 00000001
+        /* 00000110: sp  0 +1 */ 05000000 beebbeeb &#x27;Wayne hostile&#x27;
+        /* 00000118: sp  1 +1 */ 03000005
+        /* 0000011c: sp  2 +0 */ 5c000000
+        /* 00000120: sp  2 +1 */ 04000001
+        /* 00000124: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000012c: sp  0 +0 */ 00000002
+        /* 00000130: sp  0 +1 */ 04000000
+        /* 00000134: sp  1 +1 */ 09000004 local_4
+        /* 00000138: sp  2 +1 */ 0f000008 unnamed member 8
+        /* 0000013c: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000144: sp  1 +1 */ 0a000004 local_4
+        /* 00000148: sp  2 +0 */ 7e000000 00001f82
+        /* 00000150: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000158: sp  0 +0 */ 00000003
+        /* 0000015c: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0bf4_1() {
+        Unknown1F82 local_0 = TODO(0B);
+        Unknown1F81 local_4 = TODO(0B);
+
+        /* 000001a4: sp  0 +0 */ 00000004
+        /* 000001a8: sp  0 +1 */ 09000000 local_0
+        /* 000001ac: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 000001b0: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 000001b8: sp  0 +1 */ 0a000000 local_0
+        /* 000001bc: sp  1 +0 */ 7e000000 00001f82
+        /* 000001c4: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 000001cc: sp  0 +0 */ 00000005
+        /* 000001d0: sp  0 +1 */ 05000000 beebbeeb &#x27;Wayne non hostile&#x27;
+        /* 000001d8: sp  1 +1 */ 03000005
+        /* 000001dc: sp  2 +0 */ 5c000000
+        /* 000001e0: sp  2 +1 */ 04000001
+        /* 000001e4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000001ec: sp  0 +0 */ 00000006
+        /* 000001f0: sp  0 +1 */ 04000000
+        /* 000001f4: sp  1 +1 */ 09000004 local_4
+        /* 000001f8: sp  2 +1 */ 0f000004 unnamed member 4
+        /* 000001fc: sp  3 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000204: sp  1 +1 */ 0a000004 local_4
+        /* 00000208: sp  2 +0 */ 7e000000 00001f81
+        /* 00000210: sp  2 -2 */ 69000000 beebbeeb void scenario::method_09c6_ffff(bool arg_0000_031d_0)
+
+        /* 00000218: sp  0 +0 */ 00000007
+        /* 0000021c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000595.html">%debugbutton%</a><br/>
+</body>
+</html>

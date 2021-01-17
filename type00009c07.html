@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009c07</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9C07</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0xb2]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9C07 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00008b56.html">Unknown8B56</a>&gt; decl_0015_232c_40 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_235e_4c = persistent(dtp:8B9E) {type=dword};
+    void method_0021_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9C07 : %triggervolume% {
+    // sizeof = 0x60
+    stickybool field_4;
+    stickybool field_20;
+    unitref decl_0015_232c_40 = TODO(0A);
+    smartscript decl_0089_235e_4c = TODO(0A);
+    async void method_0021_0(instance arg_0022_01ba_0, triggertype arg_0024_0025_4) {
+        Unknown8B56 local_8 = TODO(0B);
+        dword temp_c = 0;
+        Unknown8B56 local_10 = TODO(0B);
+        dword temp_14 = 0;
+        Unknown8B56 local_18 = TODO(0B);
+        dword temp_1c = 0;
+        Unknown8B56 local_20 = TODO(0B);
+        dword temp_24 = 0;
+        Unknown8B56 local_28 = TODO(0B);
+        dword temp_2c = 0;
+        Unknown8B56 local_30 = TODO(0B);
+
+        /* 00000174: sp  0 +0 */ 00000000
+        /* 00000178: sp  0 +1 */ 09000008 local_8
+        /* 0000017c: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000180: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000188: sp  0 +1 */ 0a000008 local_8
+        /* 0000018c: sp  1 +0 */ 7e000000 00008b56
+        /* 00000194: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2330_1b()
+
+        /* 0000019c: sp  0 +0 */ 00000001
+        /* 000001a0: sp  0 +1 */ 0900000c temp_c
+        /* 000001a4: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 000001a8: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 000001b0: sp  0 +1 */ 0800000c temp_c
+        /* 000001b4: sp  1 +1 */ 03000002
+        /* 000001b8: sp  2 -1 */ 45000000
+        /* 000001bc: sp  1 -1 */ 6400000a
+
+        /* 000001c0: sp  0 +0 */ 00000002
+        /* 000001c4: sp  0 +1 */ 09000010 local_10
+        /* 000001c8: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000001cc: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 000001d4: sp  0 +1 */ 0a000010 local_10
+        /* 000001d8: sp  1 +0 */ 7e000000 00008b56
+        /* 000001e0: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2345_30()
+        ---
+
+        /* 000001e8: sp  0 +0 */ 00000003
+        /* 000001ec: sp  0 +1 */ 09000014 temp_14
+        /* 000001f0: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 000001f4: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 000001fc: sp  0 +1 */ 08000014 temp_14
+        /* 00000200: sp  1 +1 */ 03000003
+        /* 00000204: sp  2 -1 */ 45000000
+        /* 00000208: sp  1 -1 */ 6400000a
+
+        /* 0000020c: sp  0 +0 */ 00000004
+        /* 00000210: sp  0 +1 */ 09000018 local_18
+        /* 00000214: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000218: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000220: sp  0 +1 */ 0a000018 local_18
+        /* 00000224: sp  1 +0 */ 7e000000 00008b56
+        /* 0000022c: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2346_31()
+        ---
+
+        /* 00000234: sp  0 +0 */ 00000005
+        /* 00000238: sp  0 +1 */ 0900001c temp_1c
+        /* 0000023c: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 00000240: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000248: sp  0 +1 */ 0800001c temp_1c
+        /* 0000024c: sp  1 +1 */ 03000004
+        /* 00000250: sp  2 -1 */ 45000000
+        /* 00000254: sp  1 -1 */ 6400000a
+
+        /* 00000258: sp  0 +0 */ 00000006
+        /* 0000025c: sp  0 +1 */ 09000020 local_20
+        /* 00000260: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 00000264: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 0000026c: sp  0 +1 */ 0a000020 local_20
+        /* 00000270: sp  1 +0 */ 7e000000 00008b56
+        /* 00000278: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2347_32()
+        ---
+
+        /* 00000280: sp  0 +0 */ 00000007
+        /* 00000284: sp  0 +1 */ 09000024 temp_24
+        /* 00000288: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 0000028c: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 00000294: sp  0 +1 */ 08000024 temp_24
+        /* 00000298: sp  1 +1 */ 03000006
+        /* 0000029c: sp  2 -1 */ 45000000
+        /* 000002a0: sp  1 -1 */ 6400000a
+
+        /* 000002a4: sp  0 +0 */ 00000008
+        /* 000002a8: sp  0 +1 */ 09000028 local_28
+        /* 000002ac: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000002b0: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 000002b8: sp  0 +1 */ 0a000028 local_28
+        /* 000002bc: sp  1 +0 */ 7e000000 00008b56
+        /* 000002c4: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_2349_34()
+        ---
+
+        /* 000002cc: sp  0 +0 */ 00000009
+        /* 000002d0: sp  0 +1 */ 0900002c temp_2c
+        /* 000002d4: sp  1 +1 */ 0f00004c unnamed member 4c
+        /* 000002d8: sp  2 -2 */ 65000000 beebbeeb native dword smartscript::getDword()
+        /* 000002e0: sp  0 +1 */ 0800002c temp_2c
+        /* 000002e4: sp  1 +1 */ 03000007
+        /* 000002e8: sp  2 -1 */ 45000000
+        /* 000002ec: sp  1 -1 */ 6400000a
+
+        /* 000002f0: sp  0 +0 */ 0000000a
+        /* 000002f4: sp  0 +1 */ 09000030 local_30
+        /* 000002f8: sp  1 +1 */ 0f000040 unnamed member 40
+        /* 000002fc: sp  2 -2 */ 65000000 beebbeeb native unit unitref::deref()
+        /* 00000304: sp  0 +1 */ 0a000030 local_30
+        /* 00000308: sp  1 +0 */ 7e000000 00008b56
+        /* 00000310: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown8B56::method_234a_35()
+        ---
+
+        /* 00000318: sp  0 +0 */ 0000000b
+        /* 0000031c: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

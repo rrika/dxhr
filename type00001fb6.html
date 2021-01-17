@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00001fb6</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown1FB6</h1>
+		<pre>./tools/drmexplore pc-w/ det_adam_apt_c.drm n$[0x11a]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown1FB6 : <a href="type0000212a.html">%det2_citydetroit2_striker_taggartguard_d%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00001fb8.html">Unknown1FB8</a>&gt; decl_0012_125c_3c = {<a href="units.html#00000647">unit object 00000647</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_125d_44 = persistent(dtp:209C) {type=bool};
+    <a href="type0000052a.html">waypointnode</a> decl_0196_125e_58 = TODO(0A);
+    <a href="type0000052a.html">waypointnode</a> decl_0196_125f_68 = TODO(0A);
+    <a href="type0000052a.html">waypointnode</a> decl_0196_1260_78 = TODO(0A);
+    void method_01dc_0();
+    void method_01d7_1(<a href="type000004b2.html">aistate</a>, <a href="type000004b2.html">aistate</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown1FB6 : %det2_citydetroit2_striker_taggartguard_d% {
+    // sizeof = 0x88
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_125c_3c = TODO(0A);
+    smartscript decl_0089_125d_44 = TODO(0A);
+    waypointnode decl_0196_125e_58 = TODO(0A);
+    waypointnode decl_0196_125f_68 = TODO(0A);
+    waypointnode decl_0196_1260_78 = TODO(0A);
+    async void method_01dc_0() {
+        Unknown1FB8 local_0 = TODO(0B);
+
+        /* 000000d4: sp  0 +0 */ 00000000
+        /* 000000d8: sp  0 +1 */ 04000000
+        /* 000000dc: sp  1 +1 */ 09000000 local_0
+        /* 000000e0: sp  2 +1 */ 0f00003c unnamed member 3c
+        /* 000000e4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000ec: sp  1 +1 */ 0a000000 local_0
+        /* 000000f0: sp  2 +0 */ 7e000000 00001fb8
+        /* 000000f8: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 00000100: sp  0 +0 */ 00000001
+        /* 00000104: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_01d7_1(aistate arg_01d8_01d9_0, aistate arg_01d8_01da_4) {
+        Unknown1FB8 local_8 = TODO(0B);
+
+        /* 00000134: sp  0 +0 */ 00000002
+        /* 00000138: sp  0 +1 */ 04000000
+        /* 0000013c: sp  1 +1 */ 09000008 local_8
+        /* 00000140: sp  2 +1 */ 0f00003c unnamed member 3c
+        /* 00000144: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000014c: sp  1 +1 */ 0a000008 local_8
+        /* 00000150: sp  2 +0 */ 7e000000 00001fb8
+        /* 00000158: sp  2 -2 */ 69000000 beebbeeb void triggervolumebase::method_0a3d_ffff(bool arg_0000_04d4_0)
+
+        /* 00000160: sp  0 +0 */ 00000003
+        /* 00000164: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00001fb8.html">Unknown1FB8</a><br/>
+initialized field in <a href="type00001fb9.html">Unknown1FB9</a><br/>
+initialized field in <a href="type00001fba.html">Unknown1FBA</a><br/>
+initialized field in <a href="type00001fbb.html">Unknown1FBB</a><br/>
+initialized field in <a href="type0000216f.html">Unknown216F</a><br/>
+parent class <a href="type0000212a.html">%det2_citydetroit2_striker_taggartguard_d%</a><br/>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00002cbe</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>%hazard_dispatcher%</h1>
+		<pre>./tools/drmexplore pc-w/ det_city_back2.drm n$[0x908]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class %hazard_dispatcher% : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_15f7_4 = {<a href="type000000e8.html">type 000000e8</a>, 1};
+    <a href="type00000522.html">uberobjectevent</a> decl_0a66_0680_14 = {<a href="type000000e8.html">type 000000e8</a>, 0};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_0801_24 = {<a href="type000000e8.html">type 000000e8</a>, 1};
+    <a href="type00000521.html">uberobjectcommand</a> decl_01a8_04d4_2c = {<a href="type000000e8.html">type 000000e8</a>, 0};
+    void method_0a65_0(<a href="type00000522.html">uberobjectevent</a>);
+    void method_09c8_1();
+    // referenced at <a href="type00002cbe.html">async void %hazard_dispatcher%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_09c9_2();
+    // referenced at <a href="type00002cbe.html">async void %hazard_dispatcher%::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_09c5_3();
+    void method_09c6_4();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class %hazard_dispatcher% : Unknown0578 {
+    // sizeof = 0x34
+    uberobjectevent decl_0a66_15f7_4 = TODO(0A);
+    uberobjectevent decl_0a66_0680_14 = TODO(0A);
+    uberobjectcommand decl_01a8_0801_24 = TODO(0A);
+    uberobjectcommand decl_01a8_04d4_2c = TODO(0A);
+    async void method_0a65_0(uberobjectevent arg_0a66_0a67_0) {
+        bool temp_10 = False;
+        bool temp_11 = False;
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 09000010 temp_10
+        /* 0000012c: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 00000130: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000134: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000013c: sp  0 +1 */ 06000010 temp_10
+        /* 00000140: sp  1 -1 */ 64000004
+
+        /* 00000144: sp  0 +0 */ 00000001
+        /* 00000148: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %hazard_dispatcher%::method_09c8_3d()
+        /* 00000150: sp  0 +0 */ 6300000b 00000002
+        /* 00000158: sp  0 +1 */ 09000011 temp_11
+        /* 0000015c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000160: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000164: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000016c: sp  0 +1 */ 06000011 temp_11
+        /* 00000170: sp  1 -1 */ 64000003
+
+        /* 00000174: sp  0 +0 */ 00000003
+        /* 00000178: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %hazard_dispatcher%::method_09c9_3e()
+        ---
+
+        /* 00000154: sp  0 +0 */ 00000002
+        /* 00000158: sp  0 +1 */ 09000011 temp_11
+        /* 0000015c: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000160: sp  2 +1 */ 09000000 arg_0a66_0a67_0
+        /* 00000164: sp  3 -3 */ 65000000 beebbeeb native bool uberobjectevent::isEqual(uberobjectevent arg_0a66_0542_4)
+        /* 0000016c: sp  0 +1 */ 06000011 temp_11
+        /* 00000170: sp  1 -1 */ 64000003
+
+        /* 00000174: sp  0 +0 */ 00000003
+        /* 00000178: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void %hazard_dispatcher%::method_09c9_3e()
+        ---
+
+        /* 00000180: sp  0 +0 */ 00000004
+        ---
+        /* 00000184: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_09c8_1() {
+        /* 00000194: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_09c9_2() {
+        /* 000001a4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_09c5_3() {
+
+        /* 000001b4: sp  0 +0 */ 00000005
+        /* 000001b8: sp  0 +1 */ 0f00002c unnamed member 2c
+        /* 000001bc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000001c4: sp  0 +0 */ 00000006
+        /* 000001c8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_09c6_4() {
+
+        /* 000001d4: sp  0 +0 */ 00000007
+        /* 000001d8: sp  0 +1 */ 0f000024 unnamed member 24
+        /* 000001dc: sp  1 -1 */ 66000000 beebbeeb this-&gt;void uberobjectbase::method_0a5f_ffff(uberobjectcommand arg_01a8_0a60_0)
+
+        /* 000001e4: sp  0 +0 */ 00000008
+        /* 000001e8: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type00003885.html">Unknown3885</a><br/>
+derived class <a href="type000071b9.html">Unknown71B9</a><br/>
+derived class <a href="type0000b3ee.html">UnknownB3EE</a><br/>
+derived class <a href="type0000c12a.html">UnknownC12A</a><br/>
+derived class <a href="type00013869.html">Unknown13869</a><br/>
+derived class <a href="type00013e77.html">Unknown13E77</a><br/>
+derived class <a href="type000148b7.html">Unknown148B7</a><br/>
+initialized field in <a href="type0000b041.html">%dispatcher_hyronproject_first_phase%</a><br/>
+initialized field in <a href="type0000b042.html">%dispatcher_hyronproject_second_phase%</a><br/>
+initialized field in <a href="type0000b043.html">%dispatcher_hyronproject_third_phase%</a><br/>
+initialized field in <a href="type0000c12b.html">UnknownC12B</a><br/>
+initialized field in <a href="type00011df0.html">Unknown11DF0</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+unit object #101 null<br/>
+unit object #106 null<br/>
+unit object #13 null<br/>
+unit object #15 null<br/>
+unit object #159 null<br/>
+unit object #16 null<br/>
+unit object #17 null<br/>
+unit object #175 null<br/>
+unit object #18 null<br/>
+unit object #19 null<br/>
+unit object #20 null<br/>
+unit object #21 null<br/>
+unit object #22 null<br/>
+unit object #23 null<br/>
+unit object #236 null<br/>
+unit object #24 null<br/>
+unit object #25 null<br/>
+unit object #26 null<br/>
+unit object #31 null<br/>
+unit object #32 null<br/>
+unit object #37 null<br/>
+unit object #38 null<br/>
+unit object #40 null<br/>
+unit object #490 null<br/>
+unit object #50 null<br/>
+unit object #58 null<br/>
+unit object #68 null<br/>
+unit object #7 null<br/>
+unit object #72 null<br/>
+unit object #86 null<br/>
+unit object #87 null<br/>
+unit object #88 null<br/>
+unit object #89 null<br/>
+unit object #90 null<br/>
+</body>
+</html>

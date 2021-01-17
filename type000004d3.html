@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 000004d3</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>gameglobalsbase</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x5df]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class gameglobalsbase : <a href="type000004d2.html">gamebase</a> {
+    void method_088c_0();
+    void method_088d_1(dword);
+    void method_088f_2();
+    void method_0890_3();
+    // referenced at <a href="type000005cf.html">async void Unknown05CF::method_0891_a(unitref arg_0015_0868_0, bool arg_0000_0892_c)</a>
+    void method_0891_4(<a href="type00000526.html">unitref</a>, bool);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class gameglobalsbase : gamebase {
+    // sizeof = 0x1
+    void method_088c_0(); // no bytecode
+    void method_088d_1(dword arg_0000_088e_0); // no bytecode
+    async void method_088f_2() {
+        /* 000000f4: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0890_3(); // no bytecode
+    async void method_0891_4(unitref arg_0015_0868_0, bool arg_0000_0892_c) {
+        /* 00000104: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type000005cf.html">Unknown05CF</a><br/>
+parent class <a href="type000004d2.html">gamebase</a><br/>
+</body>
+</html>

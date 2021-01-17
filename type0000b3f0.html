@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000b3f0</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>UnknownB3F0</h1>
+		<pre>./tools/drmexplore pc-w/ pan_insertion.drm n$[0x10]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class UnknownB3F0 : <a href="type00000575.html">%triggervolume%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type0000aa81.html">UnknownAA81</a>&gt; decl_0012_2c06_40 = {<a href="units.html#000082b3">unit object 000082b3</a>};
+    <a href="type00000500.html">scenarioref</a>&lt;gcref <a href="type0000aa8e.html">UnknownAA8E</a>&gt; decl_0007_2c55_48 = TODO(0A);
+    void method_0eb7_0(gcref <a href="type000004df.html">instance</a>, enum <a href="type0000051c.html">triggertype</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class UnknownB3F0 : %triggervolume% {
+    // sizeof = 0x4c
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_2c06_40 = TODO(0A);
+    scenarioref&lt;UnknownAA8E&gt; decl_0007_2c55_48 = TODO(0A);
+    async void method_0eb7_0(instance arg_0022_0023_0, triggertype arg_0024_0025_4) {
+        UnknownAA81 local_8 = TODO(0B);
+        UnknownAA8E scenarioPanChaosOff = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 03ffffff
+        /* 000000cc: sp  1 +1 */ 09000008 local_8
+        /* 000000d0: sp  2 +1 */ 0f000040 unnamed member 40
+        /* 000000d4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000dc: sp  1 +1 */ 0a000008 local_8
+        /* 000000e0: sp  2 +0 */ 7e000000 0000aa81
+        /* 000000e8: sp  2 +0 */ 1400001c
+        /* 000000ec: sp  2 -2 */ 65000000 beebbeeb native void briefing::method_07b3_ffff(dword arg_0000_068c_0)
+
+        /* 000000f4: sp  0 +0 */ 00000001
+        /* 000000f8: sp  0 +1 */ 05000000 beebbeeb &#x27;Play mapstart briefer&#x27;
+        /* 00000100: sp  1 +1 */ 03000006
+        /* 00000104: sp  2 +0 */ 5c000000
+        /* 00000108: sp  2 +1 */ 04000001
+        /* 0000010c: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000114: sp  0 +0 */ 00000002
+        /* 00000118: sp  0 +1 */ 0900000c scenarioPanChaosOff
+        /* 0000011c: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 00000120: sp  2 -2 */ 65000000 beebbeeb native scenario scenarioref::deref()
+        /* 00000128: sp  0 +1 */ 0a00000c scenarioPanChaosOff
+        /* 0000012c: sp  1 +0 */ 7e000000 0000aa8e
+        /* 00000134: sp  1 -1 */ 69000000 beebbeeb void scenario::method_09c5_ffff()
+
+        /* 0000013c: sp  0 +0 */ 00000003
+        /* 00000140: sp  0 +1 */ 05000000 beebbeeb &#x27;scenario hangar_chaos_OFF Activated&#x27;
+        /* 00000148: sp  1 +1 */ 03000006
+        /* 0000014c: sp  2 +0 */ 5c000000
+        /* 00000150: sp  2 +1 */ 04000001
+        /* 00000154: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 0000015c: sp  0 +0 */ 00000004
+        /* 00000160: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00000575.html">%triggervolume%</a><br/>
+</body>
+</html>

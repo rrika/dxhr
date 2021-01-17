@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00011f74</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown11F74</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city__masterunit.drm n$[0x6b1]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown11F74 : <a href="type000004f7.html">quest</a> {
+    <a href="type00000512.html">sound</a> decl_0027_544f_4 = dtp:1F60:V;
+    <a href="type00000512.html">sound</a> decl_0027_5450_8 = dtp:1F61:V;
+    <a href="type00000512.html">sound</a> decl_0027_5451_c = dtp:1F62:V;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011f4d.html">Unknown11F4D</a>&gt; decl_0012_5452_10 = {<a href="units.html#0000bfec">unit object 0000bfec</a>};
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_5412_18 = TODO(0A);
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_5417_28 = TODO(0A);
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_540b_38 = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011f4e.html">Unknown11F4E</a>&gt; decl_0012_541d_48 = {<a href="units.html#0000bfed">unit object 0000bfed</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011f4f.html">Unknown11F4F</a>&gt; decl_0012_541f_50 = {<a href="units.html#0000bfee">unit object 0000bfee</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_5420_58 = persistent(dtp:11F6A) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_5421_6c = persistent(dtp:11F6B) {type=bool};
+    void method_5439_0();
+    void method_543a_1();
+    void method_543b_2();
+    void method_543c_3();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown11F74 : quest {
+    // sizeof = 0x80
+    sound decl_0027_544f_4 = TODO(0A);
+    sound decl_0027_5450_8 = TODO(0A);
+    sound decl_0027_5451_c = TODO(0A);
+    instanceref decl_0012_5452_10 = TODO(0A);
+    objectivescriptablelocator decl_0963_5412_18 = TODO(0A);
+    objectivescriptablelocator decl_0963_5417_28 = TODO(0A);
+    objectivescriptablelocator decl_0963_540b_38 = TODO(0A);
+    instanceref decl_0012_541d_48 = TODO(0A);
+    instanceref decl_0012_541f_50 = TODO(0A);
+    smartscript decl_0089_5420_58 = TODO(0A);
+    smartscript decl_0089_5421_6c = TODO(0A);
+    void method_5439_0() {
+        Unknown11F4D local_0 = TODO(0B);
+        anchor local_4 = TODO(0A);
+
+        /* 00000134: sp  0 +0 */ 00000000
+        /* 00000138: sp  0 +1 */ 09000004 local_4
+        /* 0000013c: sp  1 +1 */ 09000000 local_0
+        /* 00000140: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 00000144: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 0000014c: sp  1 +1 */ 0a000000 local_0
+        /* 00000150: sp  2 +0 */ 7e000000 00011f4d
+        /* 00000158: sp  2 -2 */ 69000000 beebbeeb anchor instance::method_08d9_ffff()
+        /* 00000160: sp  0 +1 */ 09000004 local_4
+        /* 00000164: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 00000168: sp  2 -2 */ 65000000 beebbeeb native void sound::startSound1(anchor arg_00b8_06fa_0)
+
+        /* 00000170: sp  0 +0 */ 00000001
+        /* 00000174: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_543a_1() {
+        soundendtype local_0 = TODO(0A);
+        Unknown11F4D local_4 = TODO(0B);
+        anchor local_8 = TODO(0A);
+
+        /* 000001d4: sp  0 +0 */ 00000002
+        /* 000001d8: sp  0 +1 */ 09000000 local_0
+        /* 000001dc: sp  1 +1 */ 0f000004 unnamed member 4
+        /* 000001e0: sp  2 -2 */ 65000000 beebbeeb native void sound::stopSound(soundendtype arg_0a17_0a18_0)
+
+        /* 000001e8: sp  0 +0 */ 00000003
+        /* 000001ec: sp  0 +1 */ 09000008 local_8
+        /* 000001f0: sp  1 +1 */ 09000004 local_4
+        /* 000001f4: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 000001f8: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000200: sp  1 +1 */ 0a000004 local_4
+        /* 00000204: sp  2 +0 */ 7e000000 00011f4d
+        /* 0000020c: sp  2 -2 */ 69000000 beebbeeb anchor instance::method_08d9_ffff()
+        /* 00000214: sp  0 +1 */ 09000008 local_8
+        /* 00000218: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 0000021c: sp  2 -2 */ 65000000 beebbeeb native void sound::startSound1(anchor arg_00b8_06fa_0)
+
+        /* 00000224: sp  0 +0 */ 00000004
+        /* 00000228: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_543b_2() {
+        soundendtype local_0 = TODO(0A);
+        Unknown11F4D local_4 = TODO(0B);
+        anchor local_8 = TODO(0A);
+
+        /* 00000284: sp  0 +0 */ 00000005
+        /* 00000288: sp  0 +1 */ 09000000 local_0
+        /* 0000028c: sp  1 +1 */ 0f000008 unnamed member 8
+        /* 00000290: sp  2 -2 */ 65000000 beebbeeb native void sound::stopSound(soundendtype arg_0a17_0a18_0)
+
+        /* 00000298: sp  0 +0 */ 00000006
+        /* 0000029c: sp  0 +1 */ 09000008 local_8
+        /* 000002a0: sp  1 +1 */ 09000004 local_4
+        /* 000002a4: sp  2 +1 */ 0f000010 unnamed member 10
+        /* 000002a8: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000002b0: sp  1 +1 */ 0a000004 local_4
+        /* 000002b4: sp  2 +0 */ 7e000000 00011f4d
+        /* 000002bc: sp  2 -2 */ 69000000 beebbeeb anchor instance::method_08d9_ffff()
+        /* 000002c4: sp  0 +1 */ 09000008 local_8
+        /* 000002c8: sp  1 +1 */ 0f00000c unnamed member c
+        /* 000002cc: sp  2 -2 */ 65000000 beebbeeb native void sound::startSound1(anchor arg_00b8_06fa_0)
+
+        /* 000002d4: sp  0 +0 */ 00000007
+        /* 000002d8: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_543c_3() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+
+        /* 00000314: sp  0 +0 */ 00000008
+        /* 00000318: sp  0 +1 */ 09000000 temp_0
+        /* 0000031c: sp  1 +1 */ 0f00006c unnamed member 6c
+        /* 00000320: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000328: sp  0 +1 */ 06000000 temp_0
+        /* 0000032c: sp  1 +1 */ 04000001
+        /* 00000330: sp  2 -1 */ 46000000
+        /* 00000334: sp  1 -1 */ 6400000b
+
+        /* 00000338: sp  0 +0 */ 00000009
+
+        /* 0000033c: sp  0 +0 */ 0000000a
+        /* 00000340: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 00000344: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 0000034c: sp  0 +0 */ 0000000b
+        /* 00000350: sp  0 +1 */ 0f000038 unnamed member 38
+        /* 00000354: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 0000035c: sp  0 +0 */ 0000000c
+        /* 00000360: sp  0 +0 */ 63000022 0000000d
+        /* 00000368: sp  0 +1 */ 09000001 temp_1
+        /* 0000036c: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000370: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000378: sp  0 +1 */ 06000001 temp_1
+        /* 0000037c: sp  1 +1 */ 04000001
+        /* 00000380: sp  2 -1 */ 46000000
+        /* 00000384: sp  1 -1 */ 6400000b
+
+        /* 00000388: sp  0 +0 */ 0000000e
+
+        /* 0000038c: sp  0 +0 */ 0000000f
+        /* 00000390: sp  0 +1 */ 0f000028 unnamed member 28
+        /* 00000394: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 0000039c: sp  0 +0 */ 00000010
+        /* 000003a0: sp  0 +1 */ 0f000038 unnamed member 38
+        /* 000003a4: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 000003ac: sp  0 +0 */ 00000011
+        /* 000003b0: sp  0 +0 */ 6300000e 00000012
+
+        /* 000003b8: sp  0 +0 */ 00000013
+        /* 000003bc: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 000003c0: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 000003c8: sp  0 +0 */ 00000014
+        /* 000003cc: sp  0 +1 */ 0f000028 unnamed member 28
+        /* 000003d0: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 000003d8: sp  0 +0 */ 00000015
+        /* 000003dc: sp  0 +1 */ 0f000038 unnamed member 38
+        /* 000003e0: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 000003e8: sp  0 +0 */ 00000016
+
+        /* 000003ec: sp  0 +0 */ 00000017
+        ---
+
+        /* 00000364: sp  0 +0 */ 0000000d
+        /* 00000368: sp  0 +1 */ 09000001 temp_1
+        /* 0000036c: sp  1 +1 */ 0f000058 unnamed member 58
+        /* 00000370: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000378: sp  0 +1 */ 06000001 temp_1
+        /* 0000037c: sp  1 +1 */ 04000001
+        /* 00000380: sp  2 -1 */ 46000000
+        /* 00000384: sp  1 -1 */ 6400000b
+
+        /* 00000388: sp  0 +0 */ 0000000e
+
+        /* 0000038c: sp  0 +0 */ 0000000f
+        /* 00000390: sp  0 +1 */ 0f000028 unnamed member 28
+        /* 00000394: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 0000039c: sp  0 +0 */ 00000010
+        /* 000003a0: sp  0 +1 */ 0f000038 unnamed member 38
+        /* 000003a4: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 000003ac: sp  0 +0 */ 00000011
+        /* 000003b0: sp  0 +0 */ 6300000e 00000012
+
+        /* 000003b8: sp  0 +0 */ 00000013
+        /* 000003bc: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 000003c0: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 000003c8: sp  0 +0 */ 00000014
+        /* 000003cc: sp  0 +1 */ 0f000028 unnamed member 28
+        /* 000003d0: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 000003d8: sp  0 +0 */ 00000015
+        /* 000003dc: sp  0 +1 */ 0f000038 unnamed member 38
+        /* 000003e0: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 000003e8: sp  0 +0 */ 00000016
+
+        /* 000003ec: sp  0 +0 */ 00000017
+        ---
+
+        /* 000003b4: sp  0 +0 */ 00000012
+
+        /* 000003b8: sp  0 +0 */ 00000013
+        /* 000003bc: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 000003c0: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 000003c8: sp  0 +0 */ 00000014
+        /* 000003cc: sp  0 +1 */ 0f000028 unnamed member 28
+        /* 000003d0: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_04d4_ffff()
+
+        /* 000003d8: sp  0 +0 */ 00000015
+        /* 000003dc: sp  0 +1 */ 0f000038 unnamed member 38
+        /* 000003e0: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 000003e8: sp  0 +0 */ 00000016
+
+        /* 000003ec: sp  0 +0 */ 00000017
+        ---
+        /* 000003f0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type000004f7.html">quest</a><br/>
+</body>
+</html>

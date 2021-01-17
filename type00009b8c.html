@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00009b8c</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown9B8C</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_hangar.drm n$[0x35]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown9B8C : <a href="type0000059c.html">%dispatcher%</a> {
+    <a href="type00000512.html">sound</a> decl_0027_274f_4 = dtp:9D13:vo\eng\DLC_Base\Npcs\Unique\Pieter_Burke\CP23\BASE_CP23_SCE_BURK_001;
+    <a href="type00000512.html">sound</a> decl_0027_2750_8 = dtp:9D13:vo\eng\DLC_Base\Npcs\Unique\Pieter_Burke\CP23\BASE_CP23_SCE_BURK_001;
+    <a href="type00000512.html">sound</a> decl_0027_2751_c = dtp:9D14:vo\eng\DLC_Base\Npcs\Unique\Pieter_Burke\CP23\BASE_CP23_SCE_BURK_002;
+    <a href="type00000512.html">sound</a> decl_0027_2752_10 = dtp:9D15:vo\eng\DLC_Base\Npcs\Unique\Pieter_Burke\CP23\BASE_CP23_SCE_BURK_003;
+    <a href="type00000512.html">sound</a> decl_0027_2753_14 = dtp:9D16:vo\eng\DLC_Base\Npcs\Unique\Pieter_Burke\CP23\BASE_CP23_SCE_BURK_004;
+    <a href="type00000512.html">sound</a> decl_0027_2754_18 = dtp:9D17:vo\eng\DLC_Base\Npcs\Unique\Pieter_Burke\CP23\BASE_CP23_SCE_BURK_005;
+    <a href="type00000512.html">sound</a> decl_0027_2755_1c = dtp:9D18:vo\eng\DLC_Base\Npcs\Unique\Pieter_Burke\CP23\BASE_CP23_SCE_BURK_006;
+    <a href="type00000511.html">smartscript</a> decl_0089_2756_20 = persistent(dtp:9E01) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_2757_34 = persistent(dtp:9E1D) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_272a_48 = persistent(dtp:9E1E) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_272e_5c = persistent(dtp:9E20) {type=bool};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00009b58.html">Unknown9B58</a>&gt; decl_0012_266a_70 = {<a href="units.html#00006a2e">unit object 00006a2e</a>};
+    <a href="type00000511.html">smartscript</a> decl_0089_235e_78 = persistent(dtp:8B9E) {type=dword};
+    void run();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown9B8C : %dispatcher% {
+    // sizeof = 0x8c
+    sound decl_0027_274f_4 = TODO(0A);
+    sound decl_0027_2750_8 = TODO(0A);
+    sound decl_0027_2751_c = TODO(0A);
+    sound decl_0027_2752_10 = TODO(0A);
+    sound decl_0027_2753_14 = TODO(0A);
+    sound decl_0027_2754_18 = TODO(0A);
+    sound decl_0027_2755_1c = TODO(0A);
+    smartscript decl_0089_2756_20 = TODO(0A);
+    smartscript decl_0089_2757_34 = TODO(0A);
+    smartscript decl_0089_272a_48 = TODO(0A);
+    smartscript decl_0089_272e_5c = TODO(0A);
+    instanceref decl_0012_266a_70 = TODO(0A);
+    smartscript decl_0089_235e_78 = TODO(0A);
+    async void run() {
+        bool temp_0 = False;
+        soundgroup local_4 = TODO(0A);
+        soundgroup local_8 = TODO(0A);
+        bool temp_c = False;
+        bool temp_d = False;
+        bool temp_e = False;
+        soundgroup local_10 = TODO(0A);
+        soundgroup local_14 = TODO(0A);
+        Unknown9B58 local_18 = TODO(0B);
+        symbol local_1c = TODO(0A);
+
+        /* 000001b4: sp  0 +0 */ 00000000
+        /* 000001b8: sp  0 +1 */ 09000000 temp_0
+        /* 000001bc: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 000001c0: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000001c8: sp  0 +1 */ 06000000 temp_0
+        /* 000001cc: sp  1 +1 */ 04000000
+        /* 000001d0: sp  2 -1 */ 46000000
+        /* 000001d4: sp  1 -1 */ 6400007d
+
+        /* 000001d8: sp  0 +0 */ 00000001
+
+        /* 000001dc: sp  0 +0 */ 00000002
+        /* 000001e0: sp  0 +1 */ 02000000 3e800000
+        /* 000001e8: sp  1 +1 */ 02000000 3f000000
+        /* 000001f0: sp  2 +1 */ 09000004 local_4
+        /* 000001f4: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 000001fc: sp  0 +0 */ 00000003
+        /* 00000200: sp  0 +1 */ 02000000 3f000000
+        /* 00000208: sp  1 +1 */ 02000000 3f000000
+        /* 00000210: sp  2 +1 */ 09000008 local_8
+        /* 00000214: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 0000021c: sp  0 +0 */ 00000004
+        /* 00000220: sp  0 +1 */ 04000001
+        /* 00000224: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 00000228: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000230: sp  0 +0 */ 00000005
+        /* 00000234: sp  0 +1 */ 03000007
+        /* 00000238: sp  1 +1 */ 0f000078 unnamed member 78
+        /* 0000023c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000244: sp  0 +0 */ 00000006
+
+        /* 00000248: sp  0 +0 */ 00000007
+        /* 0000024c: sp  0 +1 */ 0f000008 unnamed member 8
+        /* 00000250: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+
+        /* 00000258: sp  0 +0 */ 00000008
+        /* 0000025c: sp  0 +1 */ 0900000c temp_c
+        /* 00000260: sp  1 +1 */ 0f000034 unnamed member 34
+        /* 00000264: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000026c: sp  0 +1 */ 0600000c temp_c
+        /* 00000270: sp  1 +1 */ 04000001
+        /* 00000274: sp  2 -1 */ 46000000
+        /* 00000278: sp  1 -1 */ 64000005
+
+        /* 0000027c: sp  0 +0 */ 00000009
+        /* 00000280: sp  0 +1 */ 0f00000c unnamed member c
+        /* 00000284: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+        /* 0000028c: sp  0 +0 */ 63000020 0000000a
+        /* 00000294: sp  0 +1 */ 0900000d temp_d
+        /* 00000298: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 0000029c: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000002a4: sp  0 +1 */ 0600000d temp_d
+        /* 000002a8: sp  1 +1 */ 04000001
+        /* 000002ac: sp  2 -1 */ 46000000
+        /* 000002b0: sp  1 -1 */ 64000005
+
+        /* 000002b4: sp  0 +0 */ 0000000b
+        /* 000002b8: sp  0 +1 */ 0f000010 unnamed member 10
+        /* 000002bc: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+        /* 000002c4: sp  0 +0 */ 63000012 0000000c
+        /* 000002cc: sp  0 +1 */ 0900000e temp_e
+        /* 000002d0: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 000002d4: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000002dc: sp  0 +1 */ 0600000e temp_e
+        /* 000002e0: sp  1 +1 */ 04000001
+        /* 000002e4: sp  2 -1 */ 46000000
+        /* 000002e8: sp  1 -1 */ 64000005
+
+        /* 000002ec: sp  0 +0 */ 0000000d
+        /* 000002f0: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 000002f4: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+        /* 000002fc: sp  0 +0 */ 63000004 0000000e
+        /* 00000304: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 00000308: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+
+        /* 00000310: sp  0 +0 */ 0000000f
+        ---
+
+        /* 00000290: sp  0 +0 */ 0000000a
+        /* 00000294: sp  0 +1 */ 0900000d temp_d
+        /* 00000298: sp  1 +1 */ 0f000048 unnamed member 48
+        /* 0000029c: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000002a4: sp  0 +1 */ 0600000d temp_d
+        /* 000002a8: sp  1 +1 */ 04000001
+        /* 000002ac: sp  2 -1 */ 46000000
+        /* 000002b0: sp  1 -1 */ 64000005
+
+        /* 000002b4: sp  0 +0 */ 0000000b
+        /* 000002b8: sp  0 +1 */ 0f000010 unnamed member 10
+        /* 000002bc: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+        /* 000002c4: sp  0 +0 */ 63000012 0000000c
+        /* 000002cc: sp  0 +1 */ 0900000e temp_e
+        /* 000002d0: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 000002d4: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000002dc: sp  0 +1 */ 0600000e temp_e
+        /* 000002e0: sp  1 +1 */ 04000001
+        /* 000002e4: sp  2 -1 */ 46000000
+        /* 000002e8: sp  1 -1 */ 64000005
+
+        /* 000002ec: sp  0 +0 */ 0000000d
+        /* 000002f0: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 000002f4: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+        /* 000002fc: sp  0 +0 */ 63000004 0000000e
+        /* 00000304: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 00000308: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+
+        /* 00000310: sp  0 +0 */ 0000000f
+        ---
+
+        /* 000002c8: sp  0 +0 */ 0000000c
+        /* 000002cc: sp  0 +1 */ 0900000e temp_e
+        /* 000002d0: sp  1 +1 */ 0f00005c unnamed member 5c
+        /* 000002d4: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 000002dc: sp  0 +1 */ 0600000e temp_e
+        /* 000002e0: sp  1 +1 */ 04000001
+        /* 000002e4: sp  2 -1 */ 46000000
+        /* 000002e8: sp  1 -1 */ 64000005
+
+        /* 000002ec: sp  0 +0 */ 0000000d
+        /* 000002f0: sp  0 +1 */ 0f000014 unnamed member 14
+        /* 000002f4: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+        /* 000002fc: sp  0 +0 */ 63000004 0000000e
+        /* 00000304: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 00000308: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+
+        /* 00000310: sp  0 +0 */ 0000000f
+        ---
+
+        /* 00000300: sp  0 +0 */ 0000000e
+        /* 00000304: sp  0 +1 */ 0f000018 unnamed member 18
+        /* 00000308: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+
+        /* 00000310: sp  0 +0 */ 0000000f
+        ---
+        /* 00000314: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 00000318: sp  1 -1 */ 6b000000 beebbeeb (void)native async void sound::method_0a13_ffff()
+
+        /* 00000320: sp  0 +0 */ 00000010
+        /* 00000324: sp  0 +1 */ 05000000 beebbeeb &#x27;INT SET TO 7&#x27;
+        /* 0000032c: sp  1 +1 */ 03000005
+        /* 00000330: sp  2 +0 */ 5c000000
+        /* 00000334: sp  2 +1 */ 04000001
+        /* 00000338: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 00000340: sp  0 +0 */ 00000011
+        /* 00000344: sp  0 +1 */ 03000007
+        /* 00000348: sp  1 +1 */ 0f000078 unnamed member 78
+        /* 0000034c: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setDword(dword arg_0000_value_0)
+
+        /* 00000354: sp  0 +0 */ 00000012
+        /* 00000358: sp  0 +1 */ 03000001
+        /* 0000035c: sp  1 +0 */ 5c000000
+        /* 00000360: sp  1 +1 */ 02000000 3f000000
+        /* 00000368: sp  2 +1 */ 09000010 local_10
+        /* 0000036c: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000374: sp  0 +0 */ 00000013
+        /* 00000378: sp  0 +1 */ 03000001
+        /* 0000037c: sp  1 +0 */ 5c000000
+        /* 00000380: sp  1 +1 */ 02000000 3f000000
+        /* 00000388: sp  2 +1 */ 09000014 local_14
+        /* 0000038c: sp  3 -3 */ 65000000 beebbeeb native void soundgroup::method_096b_ffff(float arg_0000_0839_0, float arg_0000_0547_4)
+
+        /* 00000394: sp  0 +0 */ 00000014
+        /* 00000398: sp  0 +1 */ 0900001c local_1c
+        /* 0000039c: sp  1 +1 */ 09000018 local_18
+        /* 000003a0: sp  2 +1 */ 0f000070 unnamed member 70
+        /* 000003a4: sp  3 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000003ac: sp  1 +1 */ 0a000018 local_18
+        /* 000003b0: sp  2 +0 */ 7e000000 00009b58
+        /* 000003b8: sp  2 +0 */ 14000064
+        /* 000003bc: sp  2 -2 */ 65000000 beebbeeb native void sequencergraph::method_09d2_ffff(symbol arg_008f_05e2_0)
+
+        /* 000003c4: sp  0 +0 */ 00000015
+        /* 000003c8: sp  0 +0 */ 63000008 00000016
+        /* 000003d0: sp  0 +1 */ 05000000 beebbeeb &#x27;CP26 Burke wont be played twice&#x27;
+        /* 000003d8: sp  1 +1 */ 0300000a
+        /* 000003dc: sp  2 +0 */ 5c000000
+        /* 000003e0: sp  2 +1 */ 04000001
+        /* 000003e4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000003ec: sp  0 +0 */ 00000017
+        ---
+
+        /* 000003cc: sp  0 +0 */ 00000016
+        /* 000003d0: sp  0 +1 */ 05000000 beebbeeb &#x27;CP26 Burke wont be played twice&#x27;
+        /* 000003d8: sp  1 +1 */ 0300000a
+        /* 000003dc: sp  2 +0 */ 5c000000
+        /* 000003e0: sp  2 +1 */ 04000001
+        /* 000003e4: sp  3 -3 */ 66000000 beebbeeb this-&gt;void corebase::method_054b_ffff(string arg_0000_value_0, float arg_0000_0547_4, bool arg_0000_0548_8)
+
+        /* 000003ec: sp  0 +0 */ 00000017
+        ---
+        /* 000003f0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type0000059c.html">%dispatcher%</a><br/>
+</body>
+</html>

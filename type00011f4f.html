@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00011f4f</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown11F4F</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city__masterunit.drm n$[0x3c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown11F4F : <a href="type00011f72.html">%sha1_tympenthouse_boxguard_b%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type00000517.html">stickybool</a> field_20;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type00011f4d.html">Unknown11F4D</a>&gt; decl_0012_53ff_3c = {<a href="units.html#0000bfec">unit object 0000bfec</a>};
+    <a href="type000004ed.html">objectivescriptablelocator</a> decl_0963_5417_44 = TODO(0A);
+    <a href="type00000526.html">unitref</a>&lt;gcref <a href="type00011f51.html">Unknown11F51</a>&gt; decl_0015_5419_54 = TODO(0A);
+    <a href="type00000511.html">smartscript</a> decl_0089_5414_60 = persistent(dtp:11F6B) {type=bool};
+    <a href="type00000511.html">smartscript</a> decl_0089_5413_74 = persistent(dtp:11F6A) {type=bool};
+    void method_5415_0();
+    // referenced at <a href="type00011f4f.html">async void Unknown11F4F::method_01dc_1()</a>
+    // referenced at <a href="type00011f4f.html">async void Unknown11F4F::method_023c_2()</a>
+    void method_01dc_1();
+    void method_023c_2();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown11F4F : %sha1_tympenthouse_boxguard_b% {
+    // sizeof = 0x88
+    stickybool field_4;
+    stickybool field_20;
+    instanceref decl_0012_53ff_3c = TODO(0A);
+    objectivescriptablelocator decl_0963_5417_44 = TODO(0A);
+    unitref decl_0015_5419_54 = TODO(0A);
+    smartscript decl_0089_5414_60 = TODO(0A);
+    smartscript decl_0089_5413_74 = TODO(0A);
+    void method_5415_0() {
+        bool temp_0 = False;
+        bool temp_1 = False;
+        Unknown11F4D local_4 = TODO(0B);
+
+        /* 00000124: sp  0 +0 */ 00000000
+        /* 00000128: sp  0 +1 */ 04000001
+        /* 0000012c: sp  1 +1 */ 0f000060 unnamed member 60
+        /* 00000130: sp  2 -2 */ 65000000 beebbeeb native void smartscript::setBool(bool arg_0000_value_0)
+
+        /* 00000138: sp  0 +0 */ 00000001
+        /* 0000013c: sp  0 +1 */ 0f000044 unnamed member 44
+        /* 00000140: sp  1 -1 */ 65000000 beebbeeb native void objectivescriptablelocator::method_0801_ffff()
+
+        /* 00000148: sp  0 +0 */ 00000002
+        /* 0000014c: sp  0 +1 */ 09000000 temp_0
+        /* 00000150: sp  1 +1 */ 0f000074 unnamed member 74
+        /* 00000154: sp  2 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 0000015c: sp  0 +1 */ 06000000 temp_0
+        /* 00000160: sp  1 +1 */ 04000001
+        /* 00000164: sp  2 -1 */ 46000000
+        /* 00000168: sp  1 +1 */ 09000001 temp_1
+        /* 0000016c: sp  2 +1 */ 0f000060 unnamed member 60
+        /* 00000170: sp  3 -2 */ 65000000 beebbeeb native bool smartscript::getBool()
+        /* 00000178: sp  1 +1 */ 06000001 temp_1
+        /* 0000017c: sp  2 +1 */ 04000001
+        /* 00000180: sp  3 -1 */ 46000000
+        /* 00000184: sp  2 -1 */ 51000000
+        /* 00000188: sp  1 -1 */ 6400000a
+
+        /* 0000018c: sp  0 +0 */ 00000003
+        /* 00000190: sp  0 +1 */ 09000004 local_4
+        /* 00000194: sp  1 +1 */ 0f00003c unnamed member 3c
+        /* 00000198: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000001a0: sp  0 +1 */ 0a000004 local_4
+        /* 000001a4: sp  1 +0 */ 7e000000 00011f4d
+        /* 000001ac: sp  1 -1 */ 6a000000 beebbeeb virtual void Unknown11F4D::method_540e_40()
+        ---
+
+        /* 000001b4: sp  0 +0 */ 00000004
+        /* 000001b8: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_01dc_1() {
+
+        /* 000001c4: sp  0 +0 */ 00000005
+        /* 000001c8: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown11F4F::method_5415_84()
+
+        /* 000001d0: sp  0 +0 */ 00000006
+        /* 000001d4: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_023c_2() {
+        damagetype local_0 = TODO(0A);
+        bool temp_4 = False;
+        damagetype local_8 = TODO(0A);
+
+        /* 00000234: sp  0 +0 */ 00000007
+        /* 00000238: sp  0 +1 */ 09000004 temp_4
+        /* 0000023c: sp  1 +1 */ 09000008 local_8
+        /* 00000240: sp  2 +1 */ 09000000 local_0
+        /* 00000244: sp  3 -1 */ 66000000 beebbeeb this-&gt;damagetype actor::method_063c_ffff()
+        /* 0000024c: sp  2 +1 */ 09000000 local_0
+        /* 00000250: sp  3 -3 */ 65000000 beebbeeb native bool damagetype::isEqual(damagetype arg_062e_0542_4)
+        /* 00000258: sp  0 +1 */ 06000004 temp_4
+        /* 0000025c: sp  1 +0 */ 50000000
+        /* 00000260: sp  1 -1 */ 64000003
+
+        /* 00000264: sp  0 +0 */ 00000008
+        /* 00000268: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual void Unknown11F4F::method_5415_84()
+        ---
+
+        /* 00000270: sp  0 +0 */ 00000009
+        /* 00000274: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		initialized field in <a href="type00011f50.html">Unknown11F50</a><br/>
+initialized field in <a href="type00011f74.html">Unknown11F74</a><br/>
+initialized field in <a href="type0001469e.html">Unknown1469E</a><br/>
+parent class <a href="type00011f72.html">%sha1_tympenthouse_boxguard_b%</a><br/>
+</body>
+</html>

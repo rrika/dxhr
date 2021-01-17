@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 0000057f</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown057F</h1>
+		<pre>./tools/drmexplore pc-w/ dlc_masterunit.drm n$[0x6d0]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown057F : <a href="type00000578.html">Unknown0578</a> {
+    <a href="type000004f5.html">playerref</a> decl_012a_0ba7_4 = TODO(0A);
+    <a href="type000004f5.html">playerref</a>&lt;gcref <a href="type000004aa.html">actorplayer</a>&gt; decl_012a_06a0_c = TODO(0A);
+    <a href="type000004fb.html">scaleformmovie</a> decl_09ab_0ba8_14 = TODO(0A);
+    <a href="type00000512.html">sound</a> decl_0027_0ba9_1c = dtp:0112:Z;
+    <a href="type00000526.html">unitref</a> decl_0015_0037_20 = TODO(0A);
+    <a href="type00000517.html">stickybool</a> decl_0849_0baa_2c = TODO(0A);
+    <a href="type000004e6.html">marker</a> decl_0942_0bab_48 = TODO(0A);
+    <a href="type000004e6.html">marker</a> decl_0942_0bac_50 = TODO(0A);
+    float decl_0000_0bad_58 = 0.5;
+    float decl_0000_0bae_5c = 0.0;
+    bool decl_0000_0baf_60 = True;
+    bool method_091b_0();
+    <a href="type000004e1.html">instancestatus</a> method_091d_1();
+    void method_0bb0_2();
+    // referenced at <a href="type0000057e.html">async void Unknown057E::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    // referenced at <a href="type00000581.html">async void Unknown0581::method_0a65_0(uberobjectevent arg_0a66_0a67_0)</a>
+    // referenced at <a href="type00000582.html">async void Unknown0582::method_0a65_1(uberobjectevent arg_0a66_0a67_0)</a>
+    void method_001a_3();
+    // referenced at <a href="type0000057f.html">async void Unknown057F::method_0bb0_2()</a>
+    void method_0b9d_4();
+    void method_01a7_5();
+    void method_01a6_6();
+    void method_01a5_7();
+    void method_02ca_8(bool);
+    bool method_0a75_9();
+    // referenced at <a href="type0000057f.html">bool Unknown057F::method_091b_0()</a>
+    // referenced at <a href="type0000057f.html">instancestatus Unknown057F::method_091d_1()</a>
+    bool method_0bb1_a(gcref <a href="type000004a8.html">actor</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown057F : Unknown0578 {
+    // sizeof = 0x61
+    playerref decl_012a_0ba7_4 = TODO(0A);
+    playerref decl_012a_06a0_c = TODO(0A);
+    scaleformmovie decl_09ab_0ba8_14 = TODO(0A);
+    sound decl_0027_0ba9_1c = TODO(0A);
+    unitref decl_0015_0037_20 = TODO(0A);
+    stickybool decl_0849_0baa_2c = TODO(0A);
+    marker decl_0942_0bab_48 = TODO(0A);
+    marker decl_0942_0bac_50 = TODO(0A);
+    float decl_0000_0bad_58 = 0.5;
+    float decl_0000_0bae_5c = 0.0;
+    bool decl_0000_0baf_60 = True;
+    bool method_091b_0() {
+        bool temp_4 = False;
+
+        /* 000001e4: sp  0 +0 */ 00000000
+        /* 000001e8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000001ec: sp  1 +1 */ 09000004 temp_4
+        /* 000001f0: sp  2 -1 */ 68000000 beebbeeb this-&gt;virtual bool Unknown057F::method_0a75_3b()
+        /* 000001f8: sp  1 +1 */ 06000004 temp_4
+        /* 000001fc: sp  2 -2 */ 2e000000
+        /* 00000200: sp  0 +0 */ 7b000000
+        ---
+    }
+    instancestatus method_091d_1() {
+        bool temp_4 = False;
+        instancestatus local_8 = TODO(0A);
+        bool temp_c = False;
+        instancestatus local_10 = TODO(0A);
+        instancestatus local_14 = TODO(0A);
+
+        /* 00000334: sp  0 +0 */ 00000002
+        /* 00000338: sp  0 +1 */ 09000004 temp_4
+        /* 0000033c: sp  1 -1 */ 68000000 beebbeeb this-&gt;virtual bool Unknown057F::method_0a75_3b()
+        /* 00000344: sp  0 +1 */ 06000004 temp_4
+        /* 00000348: sp  1 +0 */ 50000000
+        /* 0000034c: sp  1 -1 */ 64000006
+
+        /* 00000350: sp  0 +0 */ 00000003
+        /* 00000354: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000358: sp  1 +1 */ 09000008 local_8
+        /* 0000035c: sp  2 -2 */ 34000000
+
+        /* 00000360: sp  0 +0 */ 000004e1
+        /* 00000364: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000368: sp  0 +0 */ 00000004
+        /* 0000036c: sp  0 +1 */ 0900000c temp_c
+        /* 00000370: sp  1 -1 */ 66000000 beebbeeb this-&gt;bool uberobjectbase::method_0632_ffff()
+        /* 00000378: sp  0 +1 */ 0600000c temp_c
+        /* 0000037c: sp  1 -1 */ 64000006
+
+        /* 00000380: sp  0 +0 */ 00000005
+        /* 00000384: sp  0 +1 */ 08000000 unnamed local 0
+        /* 00000388: sp  1 +1 */ 09000010 local_10
+        /* 0000038c: sp  2 -2 */ 34000000
+
+        /* 00000390: sp  0 +0 */ 000004e1
+        /* 00000394: sp  0 +0 */ 7b000000
+        ---
+
+        /* 00000398: sp  0 +0 */ 00000006
+        /* 0000039c: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000003a0: sp  1 +1 */ 09000014 local_14
+        /* 000003a4: sp  2 -2 */ 34000000
+
+        /* 000003a8: sp  0 +0 */ 000004e1
+        /* 000003ac: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_0bb0_2() {
+        actorplayer local_0 = TODO(0B);
+        bool temp_4 = False;
+
+        /* 000003f4: sp  0 +0 */ 00000008
+        /* 000003f8: sp  0 +1 */ 09000004 temp_4
+        /* 000003fc: sp  1 +1 */ 09000000 local_0
+        /* 00000400: sp  2 +1 */ 0f00000c unnamed member c
+        /* 00000404: sp  3 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 0000040c: sp  1 +1 */ 0a000000 local_0
+        /* 00000410: sp  2 +0 */ 7e000000 000004aa
+        /* 00000418: sp  2 -2 */ 69000000 beebbeeb bool actorplayer::method_06d4_ffff()
+        /* 00000420: sp  0 +1 */ 06000004 temp_4
+        /* 00000424: sp  1 +0 */ 50000000
+        /* 00000428: sp  1 -1 */ 64000003
+
+        /* 0000042c: sp  0 +0 */ 00000009
+        /* 00000430: sp  0 +0 */ 68000000 beebbeeb this-&gt;virtual async void Unknown057F::method_001a_3e()
+        ---
+
+        /* 00000438: sp  0 +0 */ 0000000a
+        /* 0000043c: sp  0 +0 */ 7b000000
+        ---
+    }
+    async void method_001a_3() {
+        /* 00000444: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_0b9d_4() {
+
+        /* 00000454: sp  0 +0 */ 0000000b
+        /* 00000458: sp  0 +1 */ 04000000
+        /* 0000045c: sp  1 +1 */ 05000000 beebbeeb &#x27;Scripted story doors not implemented for this door type!&#x27;
+        /* 00000464: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 0000046c: sp  0 +0 */ 0000000c
+        /* 00000470: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a7_5() {
+
+        /* 000004c4: sp  0 +0 */ 0000000d
+        /* 000004c8: sp  0 +1 */ 04000000
+        /* 000004cc: sp  1 +1 */ 05000000 beebbeeb &#x27;Scripted story doors not implemented for this door type!&#x27;
+        /* 000004d4: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 000004dc: sp  0 +0 */ 0000000e
+        /* 000004e0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a6_6() {
+
+        /* 00000534: sp  0 +0 */ 0000000f
+        /* 00000538: sp  0 +1 */ 04000000
+        /* 0000053c: sp  1 +1 */ 05000000 beebbeeb &#x27;Scripted story doors not implemented for this door type!&#x27;
+        /* 00000544: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 0000054c: sp  0 +0 */ 00000010
+        /* 00000550: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_01a5_7() {
+
+        /* 000005a4: sp  0 +0 */ 00000011
+        /* 000005a8: sp  0 +1 */ 04000000
+        /* 000005ac: sp  1 +1 */ 05000000 beebbeeb &#x27;Scripted story doors not implemented for this door type!&#x27;
+        /* 000005b4: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 000005bc: sp  0 +0 */ 00000012
+        /* 000005c0: sp  0 +0 */ 7b000000
+        ---
+    }
+    void method_02ca_8(bool arg_0000_0680_0) {
+
+        /* 00000614: sp  0 +0 */ 00000013
+        /* 00000618: sp  0 +1 */ 04000000
+        /* 0000061c: sp  1 +1 */ 05000000 beebbeeb &#x27;Scripted story doors not implemented for this door type!&#x27;
+        /* 00000624: sp  2 -2 */ 66000000 beebbeeb this-&gt;void gamebase::method_0832_ffff(bool arg_0000_025a_0, string arg_0000_0833_4)
+
+        /* 0000062c: sp  0 +0 */ 00000014
+        /* 00000630: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0a75_9() {
+        bool temp_4 = False;
+        actorplayer local_8 = TODO(0B);
+        bool temp_c = False;
+        bool temp_d = False;
+
+        /* 000006e4: sp  0 +0 */ 00000015
+        /* 000006e8: sp  0 +1 */ 08000000 unnamed local 0
+        /* 000006ec: sp  1 +1 */ 09000004 temp_4
+        /* 000006f0: sp  2 +1 */ 0f00002c unnamed member 2c
+        /* 000006f4: sp  3 -2 */ 65000000 beebbeeb native bool stickybool::getValue()
+        /* 000006fc: sp  1 +1 */ 06000004 temp_4
+        /* 00000700: sp  2 +1 */ 0900000c temp_c
+        /* 00000704: sp  3 +1 */ 09000008 local_8
+        /* 00000708: sp  4 +1 */ 0f00000c unnamed member c
+        /* 0000070c: sp  5 -2 */ 65000000 beebbeeb native instance playerref::deref()
+        /* 00000714: sp  3 +1 */ 0a000008 local_8
+        /* 00000718: sp  4 +0 */ 7e000000 000004aa
+        /* 00000720: sp  4 -2 */ 69000000 beebbeeb bool actorplayer::method_06d4_ffff()
+        /* 00000728: sp  2 +1 */ 0600000c temp_c
+        /* 0000072c: sp  3 +1 */ 0900000d temp_d
+        /* 00000730: sp  4 -1 */ 66000000 beebbeeb this-&gt;bool gamebase::method_0864_ffff()
+        /* 00000738: sp  3 +1 */ 0600000d temp_d
+        /* 0000073c: sp  4 -1 */ 52000000
+        /* 00000740: sp  3 -1 */ 51000000
+        /* 00000744: sp  2 +0 */ 50000000
+        /* 00000748: sp  2 -2 */ 2e000000
+        /* 0000074c: sp  0 +0 */ 7b000000
+        ---
+    }
+    bool method_0bb1_a(actor arg_05dc_0bb2_4) {
+        bool temp_8 = False;
+        bool temp_9 = False;
+
+        /* 00000244: sp  0 +0 */ 00000017
+        /* 00000248: sp  0 +1 */ 08000000 unnamed local 0
+        /* 0000024c: sp  1 +1 */ 09000008 temp_8
+        /* 00000250: sp  2 +1 */ 0a000004 arg_05dc_0bb2_4
+        /* 00000254: sp  3 -2 */ 69000000 beebbeeb bool actor::isAlive636()
+        /* 0000025c: sp  1 +1 */ 06000008 temp_8
+        /* 00000260: sp  2 +1 */ 09000009 temp_9
+        /* 00000264: sp  3 +1 */ 0a000004 arg_05dc_0bb2_4
+        /* 00000268: sp  4 -2 */ 69000000 beebbeeb bool actor::method_0638_ffff()
+        /* 00000270: sp  2 +1 */ 06000009 temp_9
+        /* 00000274: sp  3 +0 */ 50000000
+        /* 00000278: sp  3 -1 */ 51000000
+        /* 0000027c: sp  2 -2 */ 2e000000
+        /* 00000280: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		derived class <a href="type0000057e.html">Unknown057E</a><br/>
+derived class <a href="type00000580.html">%base_elevator_exterior_dbl_door%</a><br/>
+derived class <a href="type00000581.html">Unknown0581</a><br/>
+derived class <a href="type00000582.html">Unknown0582</a><br/>
+derived class <a href="type00005841.html">Unknown5841</a><br/>
+parent class <a href="type00000578.html">Unknown0578</a><br/>
+</body>
+</html>

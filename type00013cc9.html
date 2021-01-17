@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00013cc9</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown13CC9</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_thehive.drm n$[0x52]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown13CC9 : <a href="type00002134.html">%triggerplane%</a> {
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000102bd.html">Unknown102BD</a>&gt; decl_0012_4793_4 = {<a href="units.html#0000ba72">unit object 0000ba72</a>};
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000102bc.html">Unknown102BC</a>&gt; decl_0012_4836_c = {<a href="units.html#0000ba84">unit object 0000ba84</a>};
+    <a href="type000004ec.html">objective</a> decl_0005_51ef_14 = TODO(0A);
+    <a href="type000004ec.html">objective</a> decl_0005_58c3_1c = TODO(0A);
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000102ba.html">Unknown102BA</a>&gt; decl_0012_4838_24 = {<a href="units.html#0000ba85">unit object 0000ba85</a>};
+    void method_103d_0(gcref <a href="type000004df.html">instance</a>);
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown13CC9 : %triggerplane% {
+    // sizeof = 0x2c
+    instanceref decl_0012_4793_4 = TODO(0A);
+    instanceref decl_0012_4836_c = TODO(0A);
+    objective decl_0005_51ef_14 = TODO(0A);
+    objective decl_0005_58c3_1c = TODO(0A);
+    instanceref decl_0012_4838_24 = TODO(0A);
+    async void method_103d_0(instance arg_0022_01ba_0) {
+        bool temp_4 = False;
+        Unknown102BA local_8 = TODO(0B);
+
+        /* 000000c4: sp  0 +0 */ 00000000
+        /* 000000c8: sp  0 +1 */ 09000004 temp_4
+        /* 000000cc: sp  1 +1 */ 0f000014 unnamed member 14
+        /* 000000d0: sp  2 -2 */ 65000000 beebbeeb native bool objective::method_07b7_ffff()
+        /* 000000d8: sp  0 +1 */ 06000004 temp_4
+        /* 000000dc: sp  1 -1 */ 64000014
+
+        /* 000000e0: sp  0 +0 */ 00000001
+
+        /* 000000e4: sp  0 +0 */ 00000002
+        /* 000000e8: sp  0 +1 */ 0f000004 unnamed member 4
+        /* 000000ec: sp  1 -1 */ 65000000 beebbeeb native void instanceref::method_0927_ffff()
+
+        /* 000000f4: sp  0 +0 */ 00000003
+        /* 000000f8: sp  0 +1 */ 09000008 local_8
+        /* 000000fc: sp  1 +1 */ 0f000024 unnamed member 24
+        /* 00000100: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 00000108: sp  0 +1 */ 0a000008 local_8
+        /* 0000010c: sp  1 +0 */ 7e000000 000102ba
+        /* 00000114: sp  1 -1 */ 69000000 beebbeeb void actor::method_063a_ffff()
+
+        /* 0000011c: sp  0 +0 */ 00000004
+        /* 00000120: sp  0 +1 */ 0f00001c unnamed member 1c
+        /* 00000124: sp  1 -1 */ 65000000 beebbeeb native void objective::disableObjective()
+
+        /* 0000012c: sp  0 +0 */ 00000005
+        ---
+
+        /* 00000130: sp  0 +0 */ 00000006
+        /* 00000134: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00002134.html">%triggerplane%</a><br/>
+</body>
+</html>

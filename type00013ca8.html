@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DXHR: Type 00013ca8</title>
+	<style>
+	.mono { font-family: monospace; }
+	</style>
+</head>
+<body>
+<h1>Unknown13CA8</h1>
+		<pre>./tools/drmexplore pc-w/ sha_city_thehive.drm n$[0x2c]i
+		</pre>
+		<h2>Interface</h2>
+		<pre>class Unknown13CA8 : <a href="type00005615.html">%alarm%</a> {
+    <a href="type00000517.html">stickybool</a> field_4;
+    <a href="type000004e0.html">instanceref</a>&lt;gcref <a href="type000102b5.html">Unknown102B5</a>&gt; decl_0012_47b8_20 = {<a href="units.html#0000ba7d">unit object 0000ba7d</a>};
+    void method_19f4_0();
+}</pre>
+
+		<h2>Interface (text version)</h2>
+		<pre>class Unknown13CA8 : %alarm% {
+    // sizeof = 0x28
+    stickybool field_4;
+    instanceref decl_0012_47b8_20 = TODO(0A);
+    void method_19f4_0() {
+        Unknown102B5 local_0 = TODO(0B);
+
+        /* 000000a4: sp  0 +0 */ 00000000
+        /* 000000a8: sp  0 +1 */ 09000000 local_0
+        /* 000000ac: sp  1 +1 */ 0f000020 unnamed member 20
+        /* 000000b0: sp  2 -2 */ 65000000 beebbeeb native instance instanceref::deref()
+        /* 000000b8: sp  0 +1 */ 0a000000 local_0
+        /* 000000bc: sp  1 +0 */ 7e000000 000102b5
+        /* 000000c4: sp  1 -1 */ 69000000 beebbeeb void instance::method_07c2_ffff()
+
+        /* 000000cc: sp  0 +0 */ 00000001
+        /* 000000d0: sp  0 +0 */ 7b000000
+        ---
+    }
+};
+</pre>
+		<h2>See also</h2>
+		parent class <a href="type00005615.html">%alarm%</a><br/>
+</body>
+</html>

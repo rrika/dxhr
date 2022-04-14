@@ -3,7 +3,7 @@ bl_info = {
 	"description": "Import CDC unit files",
 	"author": "rrika",
 	"version": (1, 0),
-	"blender": (2, 80, 0), # could be lower?
+	"blender": (3, 0, 0),
 	"location": "File > Import > CDC Unit (.drm)",
 	"warning": "", # used for warning icon and text in addons panel
 	"category": "Import-Export"}
@@ -79,13 +79,13 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 			# guess the root
 			for entry in self.properties.files:
 				parts = os.path.split(os.path.join(self.directory, entry.name))
-				while parts:
-					try_this = os.path.join(*(parts + ("objectlist.txt",)))
-					print(try_this)
+				while parts and parts != "/":
+					path, _ = parts
+					try_this = os.path.join(path, "objectlist.txt")
 					if os.path.exists(try_this):
-						basepath = os.path.join(*parts)
+						basepath = os.path.join(path)
 						break
-					parts = parts[:-1]
+					parts = os.path.split(path)
 				break
 
 		scene = bpy.context.scene
@@ -173,9 +173,9 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 		identity_mat = (1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
 
 		for entry in self.properties.files:
-			filepath = entry.name
+			filepath = os.path.join(self.directory, entry.name)
 
-			sections, unit_i = db.load(filepath)
+			sections, unit_i = db.load(os.path.relpath(filepath, start=basepath))
 			unitref = drm.Reference(sections, sections[unit_i])
 
 			sub0 = unitref.deref(0)
@@ -202,15 +202,24 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 			if sub50:
 				sub50_0 = sub50.deref(0)
 				sub50_14 = sub50.deref(0x14)
-				cell_count, cell_count_ = sub50_0.access(struct.Struct("<LL").unpack_from)
+				sub50_18 = sub50.deref(0x18)
+				if sub50_18:
+					sub50_18_4 = sub50_18.deref(4)
+					cell_count, cell_count_ = sub50_0.access(struct.Struct("<LL").unpack_from)
+				else:
+					sub50_18_4 = None
+					cell_count, cell_count_ = 0, 0
 			else:
 				sub50_0 = None
 				sub50_14 = None
+				sub50_18_4 = None
 				cell_count, cell_count_ = 0, 0
 
 			print("#cell #cell", cell_count, cell_count_) # should be equal
 
 			objs = []
+			if sub50_18_4:
+				objs.append((identity_mat, sub50_18_4, "cell"))
 
 			for i in range(cell_count):
 				cell = sub50_14.deref(4*i)

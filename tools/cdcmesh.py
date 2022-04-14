@@ -13,7 +13,7 @@ from bpy.props import *
 from bpy_extras.io_utils import ImportHelper
 
 import os.path
-import array, struct
+import array, struct, math
 import drm
 
 # bit reversed crc32 of the name
@@ -164,7 +164,9 @@ vec2   = struct.Struct("<hh").unpack_from
 vec1h  = struct.Struct("<h").unpack_from
 vec1f  = struct.Struct("<f").unpack_from
 
-def read_rendermodel(context, basename, data, instanciate):
+vec3b  = struct.Struct("<BBB").unpack_from
+
+def read_rendermodel(context, basename, data, instanciate, armature_object=None):
 
 	nIndices   = uint32(data, 0x0C)[0]
 	iVsSelect  = uint32(data, 0x4C)[0]
@@ -193,7 +195,8 @@ def read_rendermodel(context, basename, data, instanciate):
 		oMesh = oMeshes + i*0x60
 		fDistances = vec4(data, oMesh + 0)
 		nLocalSubmeshes = uint32(data, oMesh + 0x30)[0]
-		nUnknown   = uint32(data, oMesh + 0x38)[0]
+		nBones     = uint16(data, oMesh + 0x34)[0]
+		oBoneIdxs  = uint32(data, oMesh + 0x38)[0] # matrix gather offsets
 		oVertices  = uint32(data, oMesh + 0x3C)[0]
 		oFormat    = uint32(data, oMesh + 0x4C)[0]
 		nVertices  = uint32(data, oMesh + 0x50)[0]
@@ -250,9 +253,26 @@ def read_rendermodel(context, basename, data, instanciate):
 		#lTexCoords1C = [vec2(data, oVertices + j*iStride + 0x1C) for j in range(nVertices)]
 		#lTexCoords20 = [vec2(data, oVertices + j*iStride + 0x20) for j in range(nVertices)]
 		#lTexCoords24 = [vec2(data, oVertices + j*iStride + 0x24) for j in range(nVertices)]
+		if "SkinWeights" in layout and "SkinIndices" in layout:
+			lSkinWeights = [vec3b(data, oVertices + j*iStride + layout["SkinWeights"]) for j in range(nVertices)]
+			lSkinIndices = [vec3b(data, oVertices + j*iStride + layout["SkinIndices"]) for j in range(nVertices)]
+		else:
+			lSkinWeights = [(255, 0, 0)] * nVertices
+			lSkinIndices = [(0, 0, 0)] * nVertices
 
 		lVertices  = [vec3(data, oVertices + j*iStride + layout["Position"]) for j in range(nVertices)]
-		lNormals   = [vec3(data, oVertices + j*iStride + layout["Normal"]) for j in range(nVertices)]
+		lNormals   = [vec3b(data, oVertices + j*iStride + layout["Normal"]) for j in range(nVertices)]
+
+		normals = []
+		for (x, y, z) in lNormals:
+			x = x / 255.0 * 2 - 1
+			y = y / 255.0 * 2 - 1
+			z = z / 255.0 * 2 - 1
+			l = math.sqrt(x*x + y*y + z*z)
+			x = x/l
+			y = y/l
+			z = z/l
+			normals.append((x, y, z))
 
 		# uvmaps = [#("lTexCoords0C", lTexCoords0C),
 		# 	 ("lTexCoords1C", lTexCoords1C),
@@ -291,12 +311,32 @@ def read_rendermodel(context, basename, data, instanciate):
 		setup_mesh(mesh,
 			list(zip(lIndices[0::3], lIndices[1::3], lIndices[2::3])),
 			[v for vertex in lVertices for v in vertex],
-			[n for normal in lNormals for n in normal],
+			[n for normal in normals for n in normal],
 			uvmaps,
 			colors,
 			instanciate=instanciate,
 			poly_mats = poly_mats
 		)
+
+		if instanciate:
+			# apply vertex weights
+			gs = []
+			for i in range(nBones):
+				bone_index = uint32(data, oBoneIdxs + 4*i)[0]
+				g = mobj.vertex_groups.new(name='bone{}'.format(bone_index))
+				gs.append(g)
+
+			for i in range(nVertices):
+				for j in range(3):
+					w = lSkinWeights[i][j]
+					x = lSkinIndices[i][j]
+					if w:
+						gs[x].add([i], w/255.0, 'REPLACE')
+
+			if armature_object:
+				bpy.context.view_layer.objects.active = mobj
+				bpy.ops.object.modifier_add(type='ARMATURE')
+				bpy.context.object.modifiers["Armature"].object = armature_object
 
 	return out
 
@@ -394,8 +434,63 @@ def read_renderterrain(context, basename, data, instanciate):
 				poly_mats=[materialIndex]*(len(lIndices)//3)
 			)
 
-
 	return out
+
+def setup_skeleton(name, relbones):
+	armature = bpy.data.armatures.new(name)
+	armature_object = bpy.data.objects.new(name, armature)
+	bpy.context.collection.objects.link(armature_object)
+	armature_object.select_set(state = True, view_layer = bpy.context.view_layer)
+	bpy.context.view_layer.objects.active = armature_object
+	bpy.ops.object.mode_set(mode='EDIT', toggle=False)
+	edit_bones = armature_object.data.edit_bones
+
+	absbones = []
+	for i, (parent, (x, y, z)) in enumerate(relbones):
+		if parent is not None:
+			px, py, pz = absbones[parent][1]
+		else:
+			px, py, pz = 0, 0, 0
+		absbones.append((parent, (px + x, py + y, pz + z)))
+
+	childpos = {}
+	for i, (parent, pos) in enumerate(absbones):
+		childpos.setdefault(parent, []).append(pos)
+
+	ebones = []
+	for i, (parent, (x, y, z)) in enumerate(absbones):
+
+		b = edit_bones.new('bone{}'.format(i))
+		ebones.append(b)
+
+		if parent is not None:
+			p = ebones[parent]
+			b.parent = p
+			px, py, pz = p.head
+		else:
+			px, py, pz = 0, 0, 0
+
+		b.head = (x, y, z)
+		c = childpos.get(i, [])
+		if c:
+			b.tail = c[0] # pick a random child to connect to
+		else:
+			b.tail = (x, y, z+1)
+
+	bpy.ops.object.mode_set(mode='OBJECT')
+	armature_object.select_set(state = False, view_layer = bpy.context.view_layer)
+	return armature_object
+
+def read_skeleton(skeletonblob, bonecount):
+	name = "skeleton{}".format(skeletonblob)
+	bones = []
+	for i in range(bonecount):
+		bone = skeletonblob.add(64 * i)
+		xyz = bone.access(vec3, 0x20)
+		parent = bone.access(uint32, 0x38)[0]
+		bones.append((parent if parent != 0xffffffff else None, xyz))
+	return setup_skeleton(name, bones)
+
 
 # gcc -shared -o libsquish.so -Wl,--whole-archive /usr/lib/libsquish.a -Wl,--no-whole-archive -lm
 
@@ -642,12 +737,25 @@ def load_mesh(out, context, sections, sec, sname, instanciate):
 			#continue # for now
 			data = sec.payload[sec.payload.find(b"Mesh"):]
 			#try:
-			meshes = read_rendermodel(context, sname, data, instanciate)
+
+			armature_object = None
+			meshheader = drm.Reference(sections, sec)
+			meshC = meshheader.deref(0xC)
+			meshC = None #disable for now
+			if meshC:
+				bonecount = meshC.access(uint32, 8)[0]
+				bones = meshC.deref(0xC)
+				if bones:
+					armature_object = read_skeleton(bones, bonecount)
+
+			meshes = read_rendermodel(context, sname, data, instanciate, armature_object)
 			#except Exception as e:
 			#	print("couldn't load", sname, e)
 			#	continue
 			out.extend(meshes)
 			read_matrefs(sec, meshes, 0x8)
+
+
 		elif sec.subtypeid == 24:
 			_, data_i, data_o = sec.fixupinfo[4]
 			data = sec.payload[data_o:]

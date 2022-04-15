@@ -90,6 +90,12 @@ class DBSections:
 	def __getitem__(self, i):
 		return self.get(i)[1]
 
+	def __len__(self):
+		return self.db.section_count[self.drm_id]
+
+	def __iter__(self):
+		return (self.get(i)[1] for i in range(len(self)))
+
 	def get(self, i):
 		if isinstance(i, tuple):
 			typeid, s_id = i
@@ -106,7 +112,7 @@ class DBSections:
 
 class DB:
 	def __init__(self, basepath_or_bigfile):
-		if isinstance(basepath_or_bigfile, game.BigFile):
+		if isinstance(basepath_or_bigfile, bigfile.BigFile):
 			self.basepath = None
 			self.bigfile = basepath_or_bigfile
 		else:
@@ -115,6 +121,7 @@ class DB:
 		self.index = {} # {(type, id): {(drm_id, section)}}
 		self.cache = {} # {(drm_id, section_index): section}
 		self.lru = [] # [(drm_id, num_sections)]
+		self.section_count = {} # {drm_id: num_sections}
 
 	def lookup(self, typeid, s_id):
 		if (typeid, s_id) not in self.index:
@@ -220,6 +227,7 @@ class DB:
 		self.clean_cache()
 
 		self.lru.append((drm_id, root, len(sections)))
+		self.section_count[drm_id] = len(sections)
 
 		return sections, root
 

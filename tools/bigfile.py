@@ -1,4 +1,4 @@
-import struct, os
+import struct, os, os.path
 from zlib import crc32
 
 flipbyte = bytes([
@@ -86,6 +86,7 @@ class UnpackedHashedGame:
 
 class UnpackedGame:
 	def __init__(self, basepath):
+		self.basepath = basepath
 		if basepath[-1] in "/\\":
 			r = len(basepath)
 		else:
@@ -98,5 +99,5 @@ class UnpackedGame:
 				self.filelist.append(path)
 
 	def get(self, path, language_mask, language_ref):
-		with open(path, "rb") as f:
+		with open(os.path.join(self.basepath, path), "rb") as f:
 			return f.read()

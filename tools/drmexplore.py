@@ -1,18 +1,10 @@
 #!/usr/bin/env python3
 import sys, os, struct
 import os.path
-sys.path.append("./tools/")
 import drm
 
 uint32 = struct.Struct("<I").unpack_from
 uint16 = struct.Struct("<H").unpack_from
-
-basepath = "./pc-w"
-db = drm.DB(basepath)
-
-fname = sys.argv[1]
-fname = os.path.relpath(fname, basepath)
-sections, rootsectionindex = db.load(fname)
 
 typenames = {
 	0: "Generic",
@@ -42,7 +34,7 @@ subtypenames = {
 	50: "CameraShake"
 }
 
-def oneline_summary(i, section):
+def oneline_summary(fname, sections, i, section):
 
 	sectype = section.typeid
 	subtype = section.subtypeid
@@ -136,9 +128,20 @@ def dump32(sections, index, section):
 	visited = set()
 	dump32_internal(sections, index, section, "", 0, len(section.payload), visited)
 
-index = build_ref_index(sections)
+def main():
+	basepath = "./pc-w"
+	db = drm.DB(basepath)
 
-for i, section in enumerate(sections):
-	oneline_summary(i, section)
-	#print_references(i, section)
-	#dump32(sections, index, section)
+	fname = sys.argv[1]
+	fname = os.path.relpath(fname, basepath)
+	sections, rootsectionindex = db.load(fname)
+
+	index = build_ref_index(sections)
+
+	for i, section in enumerate(sections):
+		oneline_summary(fname, sections, i, section)
+		#print_references(i, section)
+		#dump32(sections, index, section)
+
+if __name__ == '__main__':
+	main()

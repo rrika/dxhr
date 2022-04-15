@@ -1,0 +1,12 @@
+<project>
+	<name>Deus Ex 3 (PS3)</name>
+	<dependencies>
+		<dependency>Shared</dependency>
+	</dependencies>
+	<list_location>Deus Ex 3 (PS3)</list_location>
+	<install_locations>
+		<install_location>
+			<action type="path">T:\DXHR\console\ps3</action>
+		</install_location>
+	</install_locations>
+</project>

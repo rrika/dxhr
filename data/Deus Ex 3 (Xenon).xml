@@ -1,0 +1,12 @@
+<project>
+	<name>Deus Ex 3 (Xenon)</name>
+	<dependencies>
+		<dependency>Shared</dependency>
+	</dependencies>
+	<list_location>Deus Ex 3 (Xenon)</list_location>
+	<install_locations>
+		<install_location>
+			<action type="path">T:\DXHR\console\xenon</action>
+		</install_location>
+	</install_locations>
+</project>

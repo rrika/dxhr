@@ -269,7 +269,7 @@ def cdrm(data):
 	return b"".join(outparts)
 
 
-def read(data):
+def read(data, *, check=False):
 	version, drm_dependency_list_size, obj_dependency_list_size, unknown0C, \
 	unknown10, flags, section_count, root_section = struct.unpack("<IIIIIIII", data[:32])
 
@@ -319,10 +319,70 @@ def read(data):
 
 		sections.append(sec) #, unknown05, unknown06, reloc_size_and_flags & 0xff])
 
+	if check:
+		data2 = write(
+			obj_dependency_list,
+			drm_dependency_list,
+			unknown0C,
+			unknown10,
+			flags,
+			sections,
+			root_section)
+
+		if False:
+			import binascii
+			print(binascii.hexlify(data).decode("ascii"))
+			print(binascii.hexlify(data2).decode("ascii"))
+
+		assert len(data) == len(data2), (len(data), len(data2))
+		assert data == data2
+
 	return sections, root_section
 
+def pad16join(parts):
+	allparts = []
+	count = 0
+	for part in parts:
+		allparts.append(part); count += len(part)
+		npad = (-count) % 16
+		allparts.append(b"\0" * npad); count += npad
+	return b"".join(allparts)
 
-def read_reloc(data, ty_id_to_index, current_section_index, current_section_payload):
+def write(obj_dependency_list, drm_dependency_list, unknown0C,
+	unknown10, flags, sections, root_section):
+
+	parts = []
+
+	#obj_dependency_list = b"\0".join(obj_dependency_list)
+	#drm_dependency_list = b"\0".join(drm_dependency_list)
+
+	header = struct.pack("<IIIIIIII", 21,
+		len(drm_dependency_list),
+		len(obj_dependency_list),
+		unknown0C, unknown10, flags, len(sections), root_section)
+
+	for section in sections:
+		header += struct.pack("<IBBHIII",
+			len(section.payload),
+			section.typeid, # byte
+			section.unk5,   # byte
+			section.unk6,   # short
+			(len(section.fixup) << 8) | (section.subtypeid << 1),
+			section.s_id,
+			section.language)
+
+	header += obj_dependency_list
+	header += drm_dependency_list
+
+	parts.append(header)
+
+	for section in sections:
+		parts.append(section.fixup)
+		parts.append(section.payload)
+
+	return pad16join(parts)
+
+def read_reloc(data, ty_id_to_index, current_section_index, current_section_payload, *, check=False):
 	if len(data) == 0:
 		return {}
 
@@ -369,4 +429,56 @@ def read_reloc(data, ty_id_to_index, current_section_index, current_section_payl
 			relocs[patchsite] = (4, key, 0)
 		c+=4
 
+	if check:
+		data2 = write_reloc(relocs, current_section_index)
+		assert data == data2
+
 	return relocs
+
+def write_reloc(reloc, section_index):
+	if not reloc:
+		return b""
+
+	r0 = b""
+	r1 = b""
+	r2 = b""
+	r4 = b""
+	for patchsite, (ty, target, targetoff) in reloc.items():
+		if ty == 0:
+			assert patchsite <= 0xffffffff
+			assert targetoff <= 0xffffffff
+			value = patchsite | (targetoff << 32)
+			r0 += struct.pack("<Q", value)
+
+		elif ty == 1:
+			assert target <= 0x3FFF
+			assert patchsite <= 0xFFFFFF
+			assert targetoff <= 0x3FFFFFF
+			value = target | (patchsite << 12) | (targetoff << 38)
+			r1 += struct.pack("<Q", value)
+
+		elif ty in (2, 4):
+			(targetty, targetid) = target
+			assert targetoff == 0
+			assert patchsite % 4 == 0
+			assert targetty <= 0x7F
+			assert (patchsite >> 2) <= 0x01FFFFFF
+			value = (patchsite >> 2) | (targetty << 25)
+			if ty == 2:
+				r2 += struct.pack("<I", value)
+			else:
+				r4 += struct.pack("<I", value)
+
+	rawreloc = struct.pack("<IIIII",
+		len(r0) // 8,
+		len(r1) // 8,
+		len(r2) // 4,
+		0,
+		len(r4) // 4)
+
+	rawreloc += r0
+	rawreloc += r1
+	rawreloc += r2
+	rawreloc += r4
+
+	return rawreloc

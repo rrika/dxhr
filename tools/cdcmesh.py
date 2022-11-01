@@ -326,14 +326,14 @@ def read_rendermodel(context, basename, data, instanciate, armature_object=None)
 				g = mobj.vertex_groups.new(name='bone{}'.format(bone_index))
 				gs.append(g)
 
-			for i in range(nVertices):
-				for j in range(3):
-					w = lSkinWeights[i][j]
-					x = lSkinIndices[i][j]
-					if w:
-						gs[x].add([i], w/255.0, 'REPLACE')
-
 			if armature_object:
+				for i in range(nVertices):
+					for j in range(3):
+						w = lSkinWeights[i][j]
+						x = lSkinIndices[i][j]
+						if w:
+							gs[x].add([i], w/255.0, 'REPLACE')
+
 				bpy.context.view_layer.objects.active = mobj
 				bpy.ops.object.modifier_add(type='ARMATURE')
 				bpy.context.object.modifiers["Armature"].object = armature_object

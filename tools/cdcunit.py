@@ -382,9 +382,12 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 
 					meshes_for(fname, fun=gamelods)(m)
 
-			for i in range(rel_count):
-				name = rel.access_null_terminated(0x100 * i).decode("utf-8")
-				print("rel", name)
+			if rel:
+				for i in range(rel_count):
+					name = rel.access_null_terminated(0x100 * i).decode("utf-8")
+					print("rel", name)
+			else:
+				print("no rel")
 
 		bpy.context.view_layer.update()
 

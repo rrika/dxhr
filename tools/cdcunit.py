@@ -64,6 +64,11 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 		description = "Load occlusion meshes.",
 		default = False)
 
+	load_streamgroups: bpy.props.BoolProperty(
+		name = "Load streamgroups",
+		description = "Load streamgroups.",
+		default = True)
+
 	basepath: bpy.props.StringProperty(
 		name = "DRM Root",
 		description = "Path to pc-w/", 
@@ -178,13 +183,13 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 			sections, unit_i = db.load(os.path.relpath(filepath, start=basepath))
 			unitref = drm.Reference(sections, sections[unit_i])
 
-			sub0 = unitref.deref(0)
+			sub0 = unitref.deref(0) # Terrain
 			rel = sub0.deref(0x4)
 			cd0 = sub0.deref(0x18)
 			rel_count = sub0.access(uint16, 0x2)[0]
 			cd0_count = sub0.access(uint32, 0x14)[0]
 
-			sub30 = unitref.deref(0x30)
+			sub30 = unitref.deref(0x30) # ADMD
 			if sub30:
 				obj_count  = sub30.access(uint32, 0x14)[0]
 				obj2_count = sub30.access(uint32, 0x1C)[0]
@@ -198,11 +203,25 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 				obj_ = None
 				imf = None
 
-			sub50 = unitref.deref(0x50)
+			sub50 = unitref.deref(0x50) # CellGroupData
+			streamgroups = []
 			if sub50:
-				sub50_0 = sub50.deref(0)
-				sub50_14 = sub50.deref(0x14)
-				sub50_18 = sub50.deref(0x18)
+				sub50_0 = sub50.deref(0) # CellGroupDataHeader
+				sub50_C = sub50.deref(0xC) # CellStreamGroupData*
+				sub50_14 = sub50.deref(0x14) # CellData*[]
+				sub50_18 = sub50.deref(0x18) # CellStreamData (void terrain)
+				if sub50_0 and sub50_C:
+					streamgroup_count = sub50_0.access(uint32, 0xC)[0]
+					for i in range(streamgroup_count):
+						streamgroup = sub50_C.add(i * 0x14)
+						streamgroup_name = streamgroup.deref(0x0)
+						streamgroup_path = streamgroup.deref(0xC)
+						if streamgroup_path:
+							streamgroup_name = streamgroup_name.access_null_terminated().decode('ascii')
+							streamgroup_path = streamgroup_path.access_null_terminated().decode('ascii')
+							print("streamgroup", streamgroup_name, "at", streamgroup_path)
+							streamgroups.append((streamgroup_name, streamgroup_path))
+
 				if sub50_18:
 					sub50_18_4 = sub50_18.deref(4)
 					cell_count, cell_count_ = sub50_0.access(struct.Struct("<LL").unpack_from)
@@ -214,6 +233,45 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 				sub50_14 = None
 				sub50_18_4 = None
 				cell_count, cell_count_ = 0, 0
+
+			if self.properties.load_streamgroups:
+				for (streamgroup_name, streamgroup_path) in streamgroups:
+
+					import cdcmesh
+					# TODO: modify load_mesh so it can take whole drms loaded through DB
+					cdcmesh.texregistry = cdcmesh.texregistry or {}
+					cdcmesh.matregistry = cdcmesh.matregistry or {}
+					cdcmesh.runlater = cdcmesh.runlater or []
+
+					streamgroup_path = "streamgroups/{}.drm".format(streamgroup_path)
+					streamgroup_sections, _ = db.load(streamgroup_path)
+					streamgroup_collection = None
+
+					for i, section in enumerate(streamgroup_sections):
+						#if section.typeid == 7: # dtp:
+						#	streamgroup_ref = drm.Reference(streamgroup_sections, section)
+						#	streamgroup_rendermesh = streamgroup_ref.deref(4)
+						#	if streamgroup_rendermesh:
+						#		cdcmesh.execute_items(context, [(streamgroup_name, streamgroup_rendermesh)], instanciate=True)
+						#	else:
+						#		print("no rendermesh on", streamgroup_name)
+
+						# HACK: else the textures don't load
+						# TODO: modify load_mesh so it can take whole drms loaded through DB
+						out = []
+						sname = "{}.{}".format(streamgroup_name, i)
+						print(sname)
+						cdcmesh.load_mesh(out, context, streamgroup_sections, section, sname, instanciate=False)
+						for j, mesh in enumerate(out):
+							if not streamgroup_collection:
+								streamgroup_collection = coll("streamgroup {}".format(streamgroup_name))
+
+							mobj = bpy.data.objects.new("{}.{}".format(sname, j), mesh)
+							streamgroup_collection.objects.link(mobj)
+						del out
+
+					for r in cdcmesh.runlater: r()
+					cdcmesh.runlater = []
 
 			print("#cell #cell", cell_count, cell_count_) # should be equal
 

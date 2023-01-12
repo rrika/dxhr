@@ -37,8 +37,7 @@ vertex_attributes = {
 }
 
 def setup_mesh(mesh, indices, flatvertices=None, flatnormals=None,
-	texcoords_layers=[], color_layers={},
-	instanciate=True, poly_mats=None):
+	texcoords_layers=[], color_layers={}, poly_mats=None):
 
 	mesh.vertices.add(len(flatvertices)//3)
 	mesh.vertices.foreach_set('co', flatvertices)
@@ -314,7 +313,6 @@ def read_rendermodel(context, basename, data, instanciate, armature_object=None)
 			[n for normal in normals for n in normal],
 			uvmaps,
 			colors,
-			instanciate=instanciate,
 			poly_mats = poly_mats
 		)
 
@@ -430,7 +428,6 @@ def read_renderterrain(context, basename, data, instanciate):
 				list(zip(lIndices[0::3], lIndices[1::3], lIndices[2::3])),
 				flattened_xyz,
 				texcoords_layers=[["offset12", uvs]],
-				instanciate=instanciate,
 				poly_mats=[materialIndex]*(len(lIndices)//3)
 			)
 
@@ -781,7 +778,7 @@ def execute_items(context, items, instanciate=True):
 
 		if not isinstance(filepath, str):
 			# hack to sneak in pre-loaded drms
-			assert isinstance(filepath, drm.Reference)
+			assert isinstance(filepath, drm.Reference), repr(type(filepath))
 			load_mesh(out, context, filepath.sections, filepath.section, basename, instanciate)
 			continue
 

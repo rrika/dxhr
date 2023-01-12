@@ -219,6 +219,7 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 						if streamgroup_path:
 							streamgroup_name = streamgroup_name.access_null_terminated().decode('ascii')
 							streamgroup_path = streamgroup_path.access_null_terminated().decode('ascii')
+							streamgroup_path = streamgroup_path.lower()
 							print("streamgroup", streamgroup_name, "at", streamgroup_path)
 							streamgroups.append((streamgroup_name, streamgroup_path))
 
@@ -244,7 +245,13 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 					cdcmesh.runlater = cdcmesh.runlater or []
 
 					streamgroup_path = "streamgroups/{}.drm".format(streamgroup_path)
-					streamgroup_sections, _ = db.load(streamgroup_path)
+					try:
+						streamgroup_sections, _ = db.load(streamgroup_path)
+					except Exception as e:
+						print("Couldn't load streamgroup from path {}".format(streamgroup_path))
+						print(e)
+						continue
+
 					streamgroup_collection = None
 
 					for i, section in enumerate(streamgroup_sections):

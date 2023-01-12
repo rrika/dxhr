@@ -117,7 +117,7 @@ def setup_mesh(mesh, indices, flatvertices=None, flatnormals=None,
 
 	def adapt(uv):
 		u, v = uv
-		return u/2048.0, v/2048.0
+		return 16*u, 16*v
 
 	for layer_name, texcoords in texcoords_layers:
 		mesh.uv_layers.new(name=layer_name)
@@ -131,6 +131,7 @@ def setup_mesh(mesh, indices, flatvertices=None, flatnormals=None,
 			if hasattr(bm.faces, "ensure_lookup_table"):
 				bm.faces.ensure_lookup_table()
 			#commented out because crashing atm
+			assert len(indices) == len(bm.faces), (len(indices), len(bm.faces))
 			for fi, tri in enumerate(indices):
 				face = bm.faces[fi]
 				for vi, z in enumerate(tri):
@@ -158,12 +159,43 @@ uint16 = struct.Struct("<H").unpack_from
 uint8  = struct.Struct("<B").unpack_from
 vec4   = struct.Struct("<ffff").unpack_from
 vec3   = struct.Struct("<fff").unpack_from
-vec2   = struct.Struct("<hh").unpack_from
-
-vec1h  = struct.Struct("<h").unpack_from
+vec2f  = struct.Struct("<fff").unpack_from
 vec1f  = struct.Struct("<f").unpack_from
 
+vec2h  = struct.Struct("<hh").unpack_from
+vec1h  = struct.Struct("<h").unpack_from
+
 vec3b  = struct.Struct("<BBB").unpack_from
+
+def read_attrib(data, base, iStride, nVertices, attr_layout):
+	offset, fmt = attr_layout
+
+	if fmt == 2: # float3
+		values = [vec3(data, base + j*iStride + offset) for j in range(nVertices)]
+		return values, 3
+
+	if fmt in (4, 5, 6): # uchar3 unorm
+		values = []
+		for j in range(nVertices):
+			x, y, z = vec3b(data, base + j*iStride + offset)
+			values.append((x/255.0, y/255.0, z/255.0))
+		return values, 3
+
+	if fmt == 7: # uchar3 unorm according to what the game tells directx, but treat it as uint (it's used for skinning indices)
+		values = []
+		for j in range(nVertices):
+			x, y, z = vec3b(data, base + j*iStride + offset)
+			values.append((x, y, z))
+		return values, 3
+
+	if fmt == 19: # short2 snorm
+		values = []
+		for j in range(nVertices):
+			x, y = vec2h(data, base + j*iStride + offset)
+			values.append(((x+0.5)/32767.5, (y+0.5)/32767.5))
+		return values, 2
+
+	assert False, "unknown format {0}=0x{0:x}".format(fmt)
 
 def read_rendermodel(context, basename, data, instanciate, armature_object=None):
 
@@ -226,9 +258,10 @@ def read_rendermodel(context, basename, data, instanciate, armature_object=None)
 			oAttr = oFormat + 0x10 + 8 * j
 			iAttrHash = uint32(data, oAttr)[0]
 			iAttrLoc = uint16(data, oAttr+4)[0]
-			print("          Attribute #{} {:08x} {} {:08x}".format(j, iAttrHash, vertex_attributes.get(iAttrHash, ""), iAttrLoc))
+			iAttrFmt = uint8(data, oAttr+6)[0]
+			print("          Attribute #{} {:08x} {} {:08x} format={}".format(j, iAttrHash, vertex_attributes.get(iAttrHash, ""), iAttrLoc, iAttrFmt))
 			if iAttrHash in vertex_attributes:
-				layout[vertex_attributes[iAttrHash]] = iAttrLoc & 0xffff
+				layout[vertex_attributes[iAttrHash]] = (iAttrLoc, iAttrFmt)
 
 		for j in range(nLocalSubmeshes):
 			oSubmesh = oSubmeshes + 0x40 * submeshIndex
@@ -248,25 +281,27 @@ def read_rendermodel(context, basename, data, instanciate, armature_object=None)
 		lIndices   = indices[iIndex:iIndex + nTriangles*3]
 		#lVertices  = [vec3(data, oVertices + j*iStride + 0x00) for j in range(nVertices)]
 		#lNormals   = [vec3(data, oVertices + j*iStride + 0x10) for j in range(nVertices)]
-		#lTexCoords0C = [vec2(data, oVertices + j*iStride + 0x0C) for j in range(nVertices)]
-		#lTexCoords1C = [vec2(data, oVertices + j*iStride + 0x1C) for j in range(nVertices)]
-		#lTexCoords20 = [vec2(data, oVertices + j*iStride + 0x20) for j in range(nVertices)]
-		#lTexCoords24 = [vec2(data, oVertices + j*iStride + 0x24) for j in range(nVertices)]
+		#lTexCoords0C = [vec2h(data, oVertices + j*iStride + 0x0C) for j in range(nVertices)]
+		#lTexCoords1C = [vec2h(data, oVertices + j*iStride + 0x1C) for j in range(nVertices)]
+		#lTexCoords20 = [vec2h(data, oVertices + j*iStride + 0x20) for j in range(nVertices)]
+		#lTexCoords24 = [vec2h(data, oVertices + j*iStride + 0x24) for j in range(nVertices)]
 		if "SkinWeights" in layout and "SkinIndices" in layout:
-			lSkinWeights = [vec3b(data, oVertices + j*iStride + layout["SkinWeights"]) for j in range(nVertices)]
-			lSkinIndices = [vec3b(data, oVertices + j*iStride + layout["SkinIndices"]) for j in range(nVertices)]
+			lSkinWeights, dimSkinWeights = read_attrib(data, oVertices, iStride, nVertices, layout["SkinWeights"])
+			lSkinIndices, dimSkinIndices = read_attrib(data, oVertices, iStride, nVertices, layout["SkinIndices"])
 		else:
 			lSkinWeights = [(255, 0, 0)] * nVertices
 			lSkinIndices = [(0, 0, 0)] * nVertices
 
-		lVertices  = [vec3(data, oVertices + j*iStride + layout["Position"]) for j in range(nVertices)]
-		lNormals   = [vec3b(data, oVertices + j*iStride + layout["Normal"]) for j in range(nVertices)]
+		lVertices, dimVertices = read_attrib(data, oVertices, iStride, nVertices, layout["Position"])
+		lNormals,  dimNormals  = read_attrib(data, oVertices, iStride, nVertices, layout["Normal"])
+		assert dimVertices == 3
+		assert dimNormals == 3
 
 		normals = []
 		for (x, y, z) in lNormals:
-			x = x / 255.0 * 2 - 1
-			y = y / 255.0 * 2 - 1
-			z = z / 255.0 * 2 - 1
+			x = x * 2 - 1
+			y = y * 2 - 1
+			z = z * 2 - 1
 			l = math.sqrt(x*x + y*y + z*z)
 			x = x/l
 			y = y/l
@@ -282,14 +317,14 @@ def read_rendermodel(context, basename, data, instanciate, armature_object=None)
 		uvmaps = []
 		for uvmap in ("TexCoord1", "TexCoord2", "TexCoord3", "TexCoord4"):
 			if uvmap in layout:
-				uvmaps.append((
-					uvmap,
-					[vec2(data, oVertices + j*iStride + layout[uvmap]) for j in range(nVertices)]))
+				uvValues, dimUv = read_attrib(data, oVertices, iStride, nVertices, layout[uvmap])
+				assert dimUv == 2
+				uvmaps.append((uvmap, uvValues))
 
 		colors = {}
 		for color in ("Color1", "Color2"):
 			if color in layout:
-				lAttr = [vec1f(data, oVertices + j*iStride + layout[color] + 0)[0] for j in range(nVertices)]
+				lAttr = [vec1f(data, oVertices + j*iStride + layout[color][0] + 0)[0] for j in range(nVertices)]
 				colors[color] = lAttr
 
 		# for k in range(0x18, iStride, 4):
@@ -380,7 +415,7 @@ def read_renderterrain(context, basename, data, instanciate):
 
 		lVertices  = [
 			(vec3(data, oVertices + j*iStride + 0x00),
-			 vec2(data, oVertices + j*iStride + 0x0C))
+			 vec2h(data, oVertices + j*iStride + 0x0C))
 			for j in range(nVertices)]
 		lBuffers.append(lVertices)
 

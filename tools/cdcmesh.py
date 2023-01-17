@@ -526,13 +526,14 @@ def read_skeleton(skeletonblob, bonecount):
 
 # gcc -shared -o libsquish.so -Wl,--whole-archive /usr/lib/libsquish.a -Wl,--no-whole-archive -lm
 
-import ctypes
-if False:
-	import os.path
-	path = os.path.join(os.path.dirname(__file__), "libsquish.so") # a dll really
-	libsquish = ctypes.CDLL(path)
-	libsquish_GetStorageRequirements = getattr(libsquish, "?GetStorageRequirements@squish@@YAHHHH@Z")
-	libsquish_DecompressImage = getattr(libsquish, "?DecompressImage@squish@@YAXPEAEHHPEBXH@Z")
+import ctypes, os, sys
+if os.name == 'nt':
+	is_64bits = sys.maxsize > 2**32
+	dll_name = "gibsquish\\squish{}.dll".format(64 if is_64bits else 32)
+	dll_path = os.path.join(os.path.dirname(__file__), dll_name)
+	libsquish = ctypes.CDLL(dll_path)
+	libsquish_GetStorageRequirements = getattr(libsquish, "GetStorageRequirements")
+	libsquish_DecompressImage = getattr(libsquish, "DecompressImage")
 else:
 	libsquish = ctypes.CDLL("libsquish.so")
 	libsquish_GetStorageRequirements = getattr(libsquish, "_ZN6squish22GetStorageRequirementsEiii")

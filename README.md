@@ -5,5 +5,6 @@ tools/cdcunit.py - blender extension to load unit files
 tools/cdcmesh.py - blender extension to load mesh files (required by cdcunit)
 tools/drm.py     - python implementation of DRM reader (required by cdcunit and cdcmesh)
 
-place the python scripts in ~/.config/blender/2.91/scripts/addons/ or equivalent
+place the python scripts in ~/.config/blender/2.91/scripts/addons/ or equivalent.
+on windows also copy gibsquish/, on linux make sure to install squish through your distro.
 ```

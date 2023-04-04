@@ -380,13 +380,20 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 			for i in range(imf_count):
 				mat = imf.access(float4x4, i*0x90)
 				dtpid = imf.access(uint32, i*0x90 + 0x48)[0]
-				try:
-					print("{}/{} (dtp: {:04x}) @ {}".format(i, imf_count, dtpid, imf))
-					fname = imf.deref(0x4C+i*0x90).access_null_terminated().decode("ascii")
-					#print(mat, fname)
-					objs.append((mat, fname, "imf"))
-				except:
-					print("getting path failed for obj #", i)
+				fname = imf.deref(0x4C+i*0x90)
+				print("{}/{} (dtp: {:04x}) @ {}".format(i, imf_count, dtpid, imf))
+				if dtpid and not fname:
+					dtp_intermediatemesh = db.lookup(7, dtpid)
+					dtp_intermediatemesh_imfresourcedata = dtp_intermediatemesh.deref(4)
+					objs.append((mat, dtp_intermediatemesh_imfresourcedata, "embedded imf"))
+
+				else:
+					try:
+						fname = fname.access_null_terminated().decode("ascii")
+						#print(mat, fname)
+						objs.append((mat, fname, "imf"))
+					except:
+						print("getting path failed for obj #", i)
 
 			for mat, fname, category in objs:
 				m = mk_matrix(mat)
@@ -402,7 +409,7 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 						name = "{}.lod{}".format(n, i)
 						obj = bpy.data.objects.new(name, mesh)
 						obj.matrix_world = m
-						if category == "imf":
+						if category in ("imf", "embedded imf"):
 							z = min(i, len(lod_collections)-1)
 							print(i, z, len(lod_collections))
 							lod_collections[z].objects.link(obj)

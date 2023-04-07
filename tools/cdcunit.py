@@ -8,6 +8,7 @@ bl_info = {
 	"warning": "", # used for warning icon and text in addons panel
 	"category": "Import-Export"}
 
+import math
 import mathutils
 import bpy
 import os.path
@@ -361,12 +362,28 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 				pos = posrot[4:7]
 				scl = posrot[8:11]
 				index = posrot[12]
-				mat = [ # ignoring rot for now
+				mat = [
 					scl[0], 0, 0, 0,
 					0, scl[1], 0, 0,
 					0, 0, scl[2], 0,
-					pos[0], pos[1], pos[2], 1
+					0, 0, 0, 1,
 				]
+				def apply_rot(axis):
+					angle = rot[axis]
+					s = math.sin(angle)
+					c = math.cos(angle)
+					a0 = (axis+1) % 3
+					a1 = (axis+2) % 3
+					for i in range(4):
+						t0 = mat[4*i + a0]
+						t1 = mat[4*i + a1]
+						mat[4*i + a0] = t0*c - t1*s
+						mat[4*i + a1] = t0*s + t1*c
+				apply_rot(2)
+				apply_rot(1)
+				apply_rot(0)
+				mat[12:15] = pos
+
 				print(pos, rot, scl, index, objlist.get(index, ""))
 				if index in objlist:
 					fname = objlist[index] + ".drm"

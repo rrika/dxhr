@@ -219,7 +219,7 @@ def main():
 		print(n)
 
 		#try:
-		secs, root_sec = db.load(n)
+		secs, root_sec, _ = db.load(n)
 		#except Exception as e:
 		#	print(e)
 		#	continue
@@ -253,7 +253,7 @@ def object_get_script_id(drmname):
 	if drmname in drmname_to_scriptid:
 		return drmname_to_scriptid[drmname]
 
-	try: secs, root_sec = db.load(drmname)
+	try: secs, root_sec, _ = db.load(drmname)
 	except: return
 
 	obj = drm.Reference(secs, secs[root_sec], 0)
@@ -445,8 +445,8 @@ def load_script(db, script, path):
 			method_xrefs.setdefault(sig, []).append(s)
 
 scenarios = []
-objdb, objdb_root = db.load("pc-w/objective_database.drm")
-scndb, scndb_root = db.load("pc-w/scenario_database.drm")
+objdb, objdb_root, _ = db.load("pc-w/objective_database.drm")
+scndb, scndb_root, _ = db.load("pc-w/scenario_database.drm")
 
 
 with open(os.path.join(db.basepath, "pc-w/local/locals.bin"), "rb") as f:

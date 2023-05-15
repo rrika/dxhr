@@ -37,7 +37,7 @@ def read_scenarios(db, scndb, scndb_root):
 
 if __name__ == '__main__':
 	db = drm.DB("pc-w/")
-	scndb, scndb_root = db.load("scenario_database.drm")
+	scndb, scndb_root, _ = db.load("scenario_database.drm")
 	for scn_id, count_a, count_b, lines in read_scenarios(db, scndb, scndb_root):
 		for i, l in enumerate(lines):
 			if i:

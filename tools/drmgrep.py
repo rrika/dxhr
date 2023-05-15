@@ -18,7 +18,7 @@ db = drm.DB(basepath)
 
 for fname in fnames:
 	fname = os.path.relpath(fname, basepath)
-	sections, rootsectionindex = db.load(fname)
+	sections, rootsectionindex, _ = db.load(fname)
 	matches = []
 	for i, section in enumerate(sections):
 		try:

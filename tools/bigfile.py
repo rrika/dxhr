@@ -101,3 +101,44 @@ class UnpackedGame:
 	def get(self, path, language_mask, language_ref):
 		with open(os.path.join(self.basepath, path), "rb") as f:
 			return f.read()
+
+def write_bigfile(f, entries):
+	# entries = [(path, spec, data)]
+
+	offset = 4 + 64 + 4 + len(entries) * 4 + len(entries) * 16
+	headers_end = offset
+	offset += 2047
+	offset &= ~2047
+	headers_pad = offset - headers_end
+
+	entries.sort(key=lambda entry: crc32r(entry[0]))
+	offsets = []
+	for path, spec, data in entries:
+		begin = offset
+		offset += len(data)
+		end = offset
+		offset += 2047
+		offset &= ~2047
+		pad = offset - end
+		offsets.append((begin, pad))
+
+	header = b"\x00\x00\xf0\x7f"
+	header += b"pc-w".ljust(64, b"\0")
+	header += struct.pack("<I", len(entries))
+	f.write(header); del header
+
+	for path, spec, data in entries:
+		f.write(struct.pack("<I", crc32r(path)))
+
+	for (offset, pad), (path, spec, data) in zip(offsets, entries):
+		f.write(struct.pack("<IIII",
+			len(data),
+			offset >> 11,
+			spec,
+			len(data)))
+
+	f.write(b"\0" * headers_pad)
+
+	for (offset, pad), (path, spec, data) in zip(offsets, entries):
+		f.write(data)
+		f.write(b"\0" * pad)

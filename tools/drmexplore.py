@@ -134,7 +134,7 @@ def main():
 
 	fname = sys.argv[1]
 	fname = os.path.relpath(fname, basepath)
-	sections, rootsectionindex = db.load(fname)
+	sections, rootsectionindex, _ = db.load(fname)
 
 	index = build_ref_index(sections)
 

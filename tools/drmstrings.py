@@ -25,7 +25,7 @@ cutoff = 8
 
 for fname in fnames:
 	fname = os.path.relpath(fname, basepath)
-	sections, rootsectionindex = db.load(fname)
+	sections, rootsectionindex, _ = db.load(fname)
 	for i, section in enumerate(sections):
 		print("{}/{:x}".format(fname, i))
 		for (a, b) in findstrings(section.payload):

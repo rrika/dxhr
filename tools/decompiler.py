@@ -395,7 +395,7 @@ def decompile_function(db, s, bytecode, t, local_inits, print):
 def main():
 	db = drm.DB("./")
 	for i, n in enumerate(sys.argv[1:]):
-		secs, _ = db.load(n)
+		secs, _, _ = db.load(n)
 		for j, sec in enumerate(secs):
 			if sec.typeid == 8: # script
 				script = Reference(secs, sec, 0)

@@ -181,7 +181,7 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 		for entry in self.properties.files:
 			filepath = os.path.join(self.directory, entry.name)
 
-			sections, unit_i = db.load(os.path.relpath(filepath, start=basepath))
+			sections, unit_i, _ = db.load(os.path.relpath(filepath, start=basepath))
 			unitref = drm.Reference(sections, sections[unit_i])
 
 			sub0 = unitref.deref(0) # Terrain
@@ -247,7 +247,7 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 
 					streamgroup_path = "streamgroups/{}.drm".format(streamgroup_path)
 					try:
-						streamgroup_sections, _ = db.load(streamgroup_path)
+						streamgroup_sections, _, _ = db.load(streamgroup_path)
 					except Exception as e:
 						print("Couldn't load streamgroup from path {}".format(streamgroup_path))
 						print(e)
@@ -387,7 +387,7 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 				print(pos, rot, scl, index, objlist.get(index, ""))
 				if index in objlist:
 					fname = objlist[index] + ".drm"
-					# obj_sections, obj_root_section_index = db.load(fname)
+					# obj_sections, obj_root_section_index, _ = db.load(fname)
 					# obj_root_section = obj_sections[obj_root_section_index]
 					# obj_root_section.pay
 					objs.append((mat, fname, "obj"))

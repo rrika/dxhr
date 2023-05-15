@@ -10,7 +10,7 @@ with open(sys.argv[1], "rb") as f:
 if data[0:4] == b"CDRM":
 	data = drm.cdrm(data)
 
-sections, root_index = drm.read(data)
+sections, root_index, _ = drm.read(data)
 
 def deref(ref, optoff = 0):
 	section_index, offset = ref

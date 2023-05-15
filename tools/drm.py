@@ -10,6 +10,22 @@ class Section:
 	# self.payload
 	pass
 
+class DRMExtraData:
+	# self.obj_dependency_list
+	# self.drm_dependency_list
+	# self.unknown0C
+	# self.unknown10
+	# self.flags
+	def write(self, sections, root_section):
+		return write(
+			self.obj_dependency_list,
+			self.drm_dependency_list,
+			self.unknown0C,
+			self.unknown10,
+			self.flags,
+			sections,
+			root_section)
+
 class MissingReference:
 	def __init__(self, key):
 		self.key = key
@@ -128,7 +144,7 @@ class DB:
 			return None
 
 		drm_id, section_index = self.index[typeid, s_id]
-		sections, _ = self.load(drm_id)
+		sections, _, _ = self.load(drm_id)
 		return Reference(DBSections(self, drm_id), sections[section_index])
 
 	#def create_index(self, indexpath, fnames):
@@ -193,8 +209,8 @@ class DB:
 
 	def load(self, path):
 		drm_id = path
-		sections, root_section = self.load_internal(path)
-		return DBSections(self, drm_id), root_section
+		sections, root_section, extra = self.load_internal(path)
+		return DBSections(self, drm_id), root_section, extra
 
 	def load_raw(self, path):
 		if self.basepath:
@@ -212,13 +228,13 @@ class DB:
 				del self.lru[i:i+1]
 				return [
 					self.cache[drm_id, i] for i in range(l_num)
-				], l_root
+				], l_root, None
 
 		data = self.load_raw(path)
 		if data[0:4] == b"CDRM":
 			data = cdrm(data)
 
-		sections, root = read(data)
+		sections, root, extra = read(data)
 
 		for i, section in enumerate(sections):
 			self.index[section.typeid, section.s_id] = drm_id, i
@@ -229,7 +245,7 @@ class DB:
 		self.lru.append((drm_id, root, len(sections)))
 		self.section_count[drm_id] = len(sections)
 
-		return sections, root
+		return sections, root, extra
 
 
 def align16(v): return (v+15)&~15
@@ -337,7 +353,14 @@ def read(data, *, check=False):
 		assert len(data) == len(data2), (len(data), len(data2))
 		assert data == data2
 
-	return sections, root_section
+	extra = DRMExtraData()
+	extra.obj_dependency_list = obj_dependency_list
+	extra.drm_dependency_list = drm_dependency_list
+	extra.unknown0C = unknown0C
+	extra.unknown10 = unknown10
+	extra.flags = flags
+
+	return sections, root_section, extra
 
 def pad16join(parts):
 	allparts = []

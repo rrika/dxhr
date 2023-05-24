@@ -541,10 +541,7 @@ def read_skeleton(skeletonblob, bonecount):
 
 import numpy
 
-def read_pcd9(basename, data):
-	from dds import convert_pcd9
-	width, height, out_blob = convert_pcd9(data)
-
+def read_pcd9(basename, sec_id, data):
 	# from ctypes import create_string_buffer, byref, c_int
 
 	# magic, format, size, unkC, width, height, bpp = struct.unpack("<IIIIHHH", data[:22])
@@ -568,18 +565,23 @@ def read_pcd9(basename, data):
 	# 	firstmip = data[0x1C:0x1C+width*height*4]
 	# 	pixels = firstmip
 
-	from PIL import Image
-	from io import BytesIO
-    
-	pil_image = Image.open(BytesIO(out_blob))
+	from pathlib import Path
+	import tempfile
+	tmp_dir = tempfile.gettempdir()
+	file_name = Path(tmp_dir) / f"{sec_id}.dds"
+	if not file_name.exists():
+		from dds import convert_pcd9
+		width, height, out_blob = convert_pcd9(data)
 
-	im = bpy.data.images.new(basename, width, height)
-	im.pixels.foreach_set((numpy.asarray(pil_image.convert('RGBA'), dtype=numpy.float32) / 255.0 ).ravel())
+		with open(file_name, "wb") as f:
+			f.write(out_blob)
 
+	im = bpy.data.images.load(str(file_name))
 	im.pack()
 
 	t = bpy.data.textures.new(basename, 'IMAGE')
 	t.image = im
+
 
 	return t
 
@@ -801,7 +803,7 @@ def load_mesh(out, context, sections, sec, sname, instanciate):
 			read_matrefs(sec, meshes, 0xC)
 
 	elif sec.typeid == 0x5:
-		texregistry[sec.s_id] = read_pcd9(sname, sec.payload)
+		texregistry[sec.s_id] = read_pcd9(sname, sec.s_id, sec.payload)
 	elif sec.typeid == 0xA and (sec.language >> 30) != 1:
 		matref = Reference(sections, sec, 0)
 		matregistry[sec.s_id] = read_mat(sname, matref)

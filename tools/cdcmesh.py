@@ -543,7 +543,7 @@ import numpy
 
 def read_pcd9(basename, data):
 	from dds import convert_pcd9
-	height, width, out_blob = convert_pcd9(data)
+	width, height, out_blob = convert_pcd9(data)
 
 	# from ctypes import create_string_buffer, byref, c_int
 
@@ -568,12 +568,14 @@ def read_pcd9(basename, data):
 	# 	firstmip = data[0x1C:0x1C+width*height*4]
 	# 	pixels = firstmip
 
+	from PIL import Image
+	from io import BytesIO
+    
+	pil_image = Image.open(BytesIO(out_blob))
+
 	im = bpy.data.images.new(basename, width, height)
-	pi = numpy.frombuffer(out_blob, dtype="B")
-	po = numpy.empty(shape=pi.shape, dtype=float)
-	numpy.multiply(pi, 1/255.0, po)
-	im.pixels = po.data
-	#im.pixels = [v / 255.0 for v in pixels]
+	im.pixels.foreach_set((numpy.asarray(pil_image.convert('RGBA'), dtype=numpy.float32) / 255.0 ).ravel())
+
 	im.pack()
 
 	t = bpy.data.textures.new(basename, 'IMAGE')

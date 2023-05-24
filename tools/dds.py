@@ -92,6 +92,6 @@ def convert_pcd9(data: bytes):
 
     assert len(out_blob) == 124 + 4
 
-    out_blob = data[28:]
+    out_blob += data[28:]
     
-    return img_height, img_height, out_blob
+    return img_width, img_height, out_blob

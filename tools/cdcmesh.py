@@ -526,47 +526,50 @@ def read_skeleton(skeletonblob, bonecount):
 
 # gcc -shared -o libsquish.so -Wl,--whole-archive /usr/lib/libsquish.a -Wl,--no-whole-archive -lm
 
-import ctypes
-if False:
-	import os.path
-	path = os.path.join(os.path.dirname(__file__), "libsquish.so") # a dll really
-	libsquish = ctypes.CDLL(path)
-	libsquish_GetStorageRequirements = getattr(libsquish, "?GetStorageRequirements@squish@@YAHHHH@Z")
-	libsquish_DecompressImage = getattr(libsquish, "?DecompressImage@squish@@YAXPEAEHHPEBXH@Z")
-else:
-	libsquish = ctypes.CDLL("libsquish.so")
-	libsquish_GetStorageRequirements = getattr(libsquish, "_ZN6squish22GetStorageRequirementsEiii")
-	libsquish_DecompressImage = getattr(libsquish, "_ZN6squish15DecompressImageEPhiiPKvi")
+# import ctypes
+# if False:
+# 	import os.path
+# 	path = os.path.join(os.path.dirname(__file__), "libsquish.so") # a dll really
+# 	libsquish = ctypes.CDLL(path)
+# 	libsquish_GetStorageRequirements = getattr(libsquish, "?GetStorageRequirements@squish@@YAHHHH@Z")
+# 	libsquish_DecompressImage = getattr(libsquish, "?DecompressImage@squish@@YAXPEAEHHPEBXH@Z")
+# else:
+# 	libsquish = ctypes.CDLL("libsquish.so")
+# 	libsquish_GetStorageRequirements = getattr(libsquish, "_ZN6squish22GetStorageRequirementsEiii")
+# 	libsquish_DecompressImage = getattr(libsquish, "_ZN6squish15DecompressImageEPhiiPKvi")
 
 
 import numpy
 
 def read_pcd9(basename, data):
-	from ctypes import create_string_buffer, byref, c_int
+	from dds import convert_pcd9
+	height, width, out_blob = convert_pcd9(data)
 
-	magic, format, size, unkC, width, height, bpp = struct.unpack("<IIIIHHH", data[:22])
-	assert magic == 0x39444350
-	flags = {
-		21: 0,
-		0x31545844: 1,
-		0x33545844: 2,
-		0x35545844: 4
-	}[format]
-	if flags > 0:
-		if not libsquish: return None
-		size = libsquish_GetStorageRequirements(c_int(width), c_int(height), c_int(flags))
-		firstmip = data[0x1C:0x1C+size]
+	# from ctypes import create_string_buffer, byref, c_int
 
-		compressed = create_string_buffer(firstmip)
-		uncompressed = create_string_buffer(width*height*4)
-		libsquish_DecompressImage(byref(uncompressed), c_int(width), c_int(height), byref(compressed), c_int(flags))
-		pixels = uncompressed.raw
-	else:
-		firstmip = data[0x1C:0x1C+width*height*4]
-		pixels = firstmip
+	# magic, format, size, unkC, width, height, bpp = struct.unpack("<IIIIHHH", data[:22])
+	# assert magic == 0x39444350
+	# flags = {
+	# 	21: 0,
+	# 	0x31545844: 1,
+	# 	0x33545844: 2,
+	# 	0x35545844: 4
+	# }[format]
+	# if flags > 0:
+	# 	if not libsquish: return None
+	# 	size = libsquish_GetStorageRequirements(c_int(width), c_int(height), c_int(flags))
+	# 	firstmip = data[0x1C:0x1C+size]
+
+	# 	compressed = create_string_buffer(firstmip)
+	# 	uncompressed = create_string_buffer(width*height*4)
+	# 	libsquish_DecompressImage(byref(uncompressed), c_int(width), c_int(height), byref(compressed), c_int(flags))
+	# 	pixels = uncompressed.raw
+	# else:
+	# 	firstmip = data[0x1C:0x1C+width*height*4]
+	# 	pixels = firstmip
 
 	im = bpy.data.images.new(basename, width, height)
-	pi = numpy.frombuffer(pixels, dtype="B")
+	pi = numpy.frombuffer(out_blob, dtype="B")
 	po = numpy.empty(shape=pi.shape, dtype=float)
 	numpy.multiply(pi, 1/255.0, po)
 	im.pixels = po.data

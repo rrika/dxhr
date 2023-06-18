@@ -13,8 +13,10 @@ from bpy.props import *
 from bpy_extras.io_utils import ImportHelper
 
 import os.path
-import array, struct, math
+import array, struct, math, tempfile
+
 import drm
+from dds import convert_pcd9
 
 # bit reversed crc32 of the name
 vertex_attributes = {
@@ -539,49 +541,23 @@ def read_skeleton(skeletonblob, bonecount):
 # 	libsquish_DecompressImage = getattr(libsquish, "_ZN6squish15DecompressImageEPhiiPKvi")
 
 
-import numpy
-
 def read_pcd9(basename, sec_id, data):
-	# from ctypes import create_string_buffer, byref, c_int
+	# todo: allow use of a user specified persistent cache
+	fd, fname = tempfile.mkstemp(suffix=".dds")
 
-	# magic, format, size, unkC, width, height, bpp = struct.unpack("<IIIIHHH", data[:22])
-	# assert magic == 0x39444350
-	# flags = {
-	# 	21: 0,
-	# 	0x31545844: 1,
-	# 	0x33545844: 2,
-	# 	0x35545844: 4
-	# }[format]
-	# if flags > 0:
-	# 	if not libsquish: return None
-	# 	size = libsquish_GetStorageRequirements(c_int(width), c_int(height), c_int(flags))
-	# 	firstmip = data[0x1C:0x1C+size]
+	width, height, out_blob = convert_pcd9(data)
+	f = os.fdopen(fd, "wb")
+	f.write(out_blob)
+	f.close() # blender wants to mmap the file which sometimes fails if the file is still open
 
-	# 	compressed = create_string_buffer(firstmip)
-	# 	uncompressed = create_string_buffer(width*height*4)
-	# 	libsquish_DecompressImage(byref(uncompressed), c_int(width), c_int(height), byref(compressed), c_int(flags))
-	# 	pixels = uncompressed.raw
-	# else:
-	# 	firstmip = data[0x1C:0x1C+width*height*4]
-	# 	pixels = firstmip
-
-	from pathlib import Path
-	import tempfile
-	tmp_dir = tempfile.gettempdir()
-	file_name = Path(tmp_dir) / f"{sec_id}.dds"
-	if not file_name.exists():
-		from dds import convert_pcd9
-		width, height, out_blob = convert_pcd9(data)
-
-		with open(file_name, "wb") as f:
-			f.write(out_blob)
-
-	im = bpy.data.images.load(str(file_name))
+	im = bpy.data.images.load(fname)
+	im.name = "{}.{:x}".format(basename , sec_id)
 	im.pack()
+
+	os.unlink(fname)
 
 	t = bpy.data.textures.new(basename, 'IMAGE')
 	t.image = im
-
 
 	return t
 

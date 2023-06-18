@@ -3,7 +3,20 @@ def convert_pcd9(data: bytes):
     import struct
 
     assert data[0:4] == b"\x50\x43\x44\x39"
-    pcd9, tex_fmt, len_data, len_mipmaps, img_width, img_height, _, _ = struct.unpack_from("LLLLHHLL", data)
+    pcd9, tex_fmt, len_data, unknownC, img_width, img_height, img_depth, \
+        unknown16, num_mipmaps, flags, tex_class = struct.unpack_from("<LLLLHHHBBHB", data)
+
+    #print(pcd9, tex_fmt, len_data, unknownC, img_width, img_height, img_depth, \
+    #    unknown16, num_mipmaps, flags, tex_class)
+
+    # tex_class = 0   Unknown
+    # tex_class = 1   2D
+    # tex_class = 2   3D
+    # tex_class = 3   Cube
+    # tex_class = 4   NormalMap
+    # flag 0x8000 also represents cubemap
+
+    is_dxt = tex_fmt in (0x31545844, 0x33545844, 0x35545844)
 
     out_blob = b''
 
@@ -14,27 +27,35 @@ def convert_pcd9(data: bytes):
         caps = 0x1
         height = 0x2
         width = 0x4
+        pitch = 0x8
         pixel_format = 0x1000
         mipmap_count = 0x20000
         linear_size = 0x80000
 
-        out = caps | height | width | pixel_format | linear_size
-        if len_mipmaps > 0:
+        out = caps | height | width | pixel_format
+        if is_dxt:
+            out |= linear_size
+        else:
+            out |= pitch
+        if num_mipmaps > 0:
             out |= mipmap_count
 
         return out
 
 
     def pitch():
-        rows = max([1, int((img_height + 3) / 4)])
-        cols = max([1, int((img_width + 3) / 4)])
+        cols = (img_width + 3) // 4
+        rows = (img_height + 3) // 4
 
         if tex_fmt == 21:
-            return int(4 * img_height * img_width)
-        if tex_fmt == 827611204:
+            return int(4 * img_width) # don't multiply with img_height
+        elif tex_fmt == 827611204: # DXT1
             blk_size = 8
-        if tex_fmt == 861165636 or tex_fmt == 894720068:
+        elif tex_fmt == 861165636 or tex_fmt == 894720068: # DXT3 DXT5
             blk_size = 16
+        else:
+            assert False, "unknown tex format: {:x}".format(tex_fmt)
+
         return int(rows * cols * blk_size)
 
     out_blob += struct.pack(
@@ -45,9 +66,8 @@ def convert_pcd9(data: bytes):
         img_width,
         pitch(),
         0,  # depth,
-        len_mipmaps,
+        num_mipmaps,
     )
-
 
     def pixel_format():
         flags_alpha_pixels = 0x1
@@ -78,16 +98,23 @@ def convert_pcd9(data: bytes):
         flags_texture = 0x1000
 
         out = flags_texture
-        if len_mipmaps > 0:
+        if num_mipmaps > 0:
             out |= (flags_complex | flags_mipmap)
         return out
+
+    def dwCaps2():
+        # flags_fullcubemap = 0xFE00
+        # if tex_class == 3:
+        #     return flags_fullcubemap
+
+        return 0
 
     out_blob += struct.pack(
         '<4I4x',
         dwCaps1(),  # dwCaps1
-        0,  # dwCaps2 - no cubemaps in DXHR... technically.
+        dwCaps2(),  # dwCaps2
         0,  # dwCaps3 = 0
-        0  # dwCaps4 = 0
+        0   # dwCaps4 = 0
     )
 
     assert len(out_blob) == 124 + 4

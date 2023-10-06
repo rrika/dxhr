@@ -127,7 +127,7 @@ class DBSections:
 		return DBSections(self.db, drm_id), section
 
 class DB:
-	def __init__(self, basepath_or_bigfile):
+	def __init__(self, basepath_or_bigfile, specmask=0xBFFF0001):
 		if isinstance(basepath_or_bigfile, bigfile.BigFile):
 			self.basepath = None
 			self.bigfile = basepath_or_bigfile
@@ -138,6 +138,7 @@ class DB:
 		self.cache = {} # {(drm_id, section_index): section}
 		self.lru = [] # [(drm_id, num_sections)]
 		self.section_count = {} # {drm_id: num_sections}
+		self.specmask = specmask
 
 	def lookup(self, typeid, s_id):
 		if (typeid, s_id) not in self.index:
@@ -217,7 +218,7 @@ class DB:
 			with open(os.path.join(self.basepath, path), "rb") as f:
 				return f.read()
 		if self.bigfile:
-			return self.bigfile.get(path, 0xBFFF0001, 0xBFFF0001)
+			return self.bigfile.get(path, self.specmask, self.specmask)
 
 	def load_internal(self, path):
 		drm_id = path
@@ -234,7 +235,7 @@ class DB:
 		if data[0:4] == b"CDRM":
 			data = cdrm(data)
 
-		sections, root, extra = read(data)
+		sections, root, extra = read(data, specmask=self.specmask)
 
 		for i, section in enumerate(sections):
 			self.index[section.typeid, section.s_id] = drm_id, i
@@ -285,7 +286,7 @@ def cdrm(data):
 	return b"".join(outparts)
 
 
-def read(data, *, check=False):
+def read(data, *, check=False, specmask=0xBFFF0001):
 	version, drm_dependency_list_size, obj_dependency_list_size, unknown0C, \
 	unknown10, flags, section_count, root_section = struct.unpack("<IIIIIIII", data[:32])
 
@@ -304,7 +305,7 @@ def read(data, *, check=False):
 
 	for i, (payloadSize, typeid, unknown05, unknown06, reloc_size_and_flags, s_id, language) in \
 		enumerate(struct.iter_unpack("<IBBHIII", data[32:32+section_count*20])):
-		if language & 0xc0000000 == 0x40000000: # don't pick dx9 sections
+		if language & specmask != specmask:
 			continue
 		ty_id_to_index[typeid, s_id] = i
 

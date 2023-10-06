@@ -12,6 +12,7 @@
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <assert.h>
+#include <unistd.h>
 
 #ifndef S_IFDIR
 #define S_IFDIR 0x4000
@@ -37,7 +38,9 @@ static uint32_t localeMask;
 static size_t num_locale_matching_indices;
 static size_t *locale_matching_indices;
 static struct stat bigfile_stats[10];
-static uint32_t chunk_size = 0x7FF00000;
+static int bigfile_fds[10];
+static uint32_t chunk_size = 0;
+static size_t num_bigfiles;
 
 static struct entry {
 	uint32_t uncompressedSize;
@@ -47,24 +50,35 @@ static struct entry {
 } *entries;
 
 static void bigfiles_mmap(char *bigpath) {
-	size_t totalsize = 0;
-	for (int i=0; i<9; i++)
-		totalsize += chunk_size;
+	int i;
 
-	char *target = base = mmap(0, totalsize, PROT_READ, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
-	printf("first map gave %010lx\n", (size_t)target);
+	// open and stat all files
 	bigpath = strdup(bigpath);
 	char *numberPatchPoint = bigpath + strlen(bigpath) - 3;
-	for (unsigned int i=0;; i++) {
+	for (i=0; i<10; i++) {
 		snprintf(numberPatchPoint, 4, "%03d", i);
-		int fd = open(bigpath, O_RDONLY);
-		if (fstat(fd, bigfile_stats+i))
+		int fd = bigfile_fds[i] = open(bigpath, O_RDONLY);
+		if (fd == -1 || fstat(fd, bigfile_stats+i))
 			memset(bigfile_stats + i, 0, sizeof(struct stat));
 		if (fd == -1)
 			break;
-		printf("Loaded bigfile[%03d]", i);
+	}
+	num_bigfiles = i;
+
+	// read chunk size
+	read(bigfile_fds[0], &chunk_size, 4);
+
+	// reserve address space
+	size_t totalsize = num_bigfiles * chunk_size;
+	char *target = base = mmap(0, totalsize, PROT_READ, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+	printf("first map gave %010lx\n", (size_t)target);
+	printf("chunk sizes is %08x\n", chunk_size);
+
+	// map files
+	for (i=0; i<num_bigfiles; i++) {
+		printf("bigfile[%03d]", i);
 		off_t size = bigfile_stats[i].st_size;
-		if (target != mmap(target, size, PROT_READ, MAP_PRIVATE | MAP_FIXED, fd, 0)) {
+		if (target != mmap(target, size, PROT_READ, MAP_PRIVATE | MAP_FIXED, bigfile_fds[i], 0)) {
 			printf(": Couldn't get desired mmap\n");
 			exit(1);
 		}
@@ -83,7 +97,6 @@ static void bigfiles_mmap(char *bigpath) {
 	//num_hashes = 100;
 
 	// filter
-
 	num_locale_matching_indices = 0;
 	for (unsigned index=0; index < num_hashes; index++) {
 		//printf("locale test %5d %08x %s\n", index, entries[index].locale,

@@ -37,6 +37,7 @@ static uint32_t localeMask;
 static size_t num_locale_matching_indices;
 static size_t *locale_matching_indices;
 static struct stat bigfile_stats[10];
+static uint32_t chunk_size = 0x7FF00000;
 
 static struct entry {
 	uint32_t uncompressedSize;
@@ -103,7 +104,7 @@ int *sizes = sizes_mac_conservative;
 static void bigfiles_mmap(char *bigpath) {
 	size_t totalsize = 0;
 	for (int i=0; sizes[i]; i++)
-		totalsize += 0x7FF00000; /*sizes[i];*/
+		totalsize += chunk_size; /*sizes[i];*/
 
 	char *target = base = mmap(0, totalsize, PROT_READ, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
 	printf("first map gave %010lx\n", (size_t)target);
@@ -124,10 +125,10 @@ static void bigfiles_mmap(char *bigpath) {
 		printf(" %010lx:%010lx:%010lx (%010x+%010x)\n",
 			(uintptr_t)target,
 			(uintptr_t)target+sizes[i],
-			(uintptr_t)target+0x7FF00000,
+			(uintptr_t)target+chunk_size,
 			sizes[i],
-			0x7FF00000-sizes[i]);
-		target += 0x7FF00000; /*sizes[i];*/
+			chunk_size-sizes[i]);
+		target += chunk_size; /*sizes[i];*/
 	}
 
 	hashes = (uint32_t*)(base+8+64);
@@ -151,12 +152,12 @@ static void bigfiles_mmap(char *bigpath) {
 		{
 			// bounds check
 			uint64_t offset = entries[index].offset * 2048ul;
-			unsigned filenr = offset / 0x7FF00000;
-			if ((offset % 0x7FF00000) + entries[index].uncompressedSize > sizes[filenr]) {
+			unsigned filenr = offset / chunk_size;
+			if ((offset % chunk_size) + entries[index].uncompressedSize > sizes[filenr]) {
 				printf("file %08x index %08x wants abs range %10lx-%10lx rel range %10lx-%10lx in file[%d] of len %08x\n",
 					hashes[index], index,
 					offset, offset + entries[index].uncompressedSize,
-					offset%0x7FF00000, offset%0x7FF00000 + entries[index].uncompressedSize,
+					offset%chunk_size, offset%chunk_size + entries[index].uncompressedSize,
 					filenr, sizes[filenr]);
 			}
 		}
@@ -220,7 +221,7 @@ static int bigf_getattr(const char *path, struct stat *stbuf)
 		stbuf->st_size = entries[index].uncompressedSize;
 
 		uint64_t offset = entries[index].offset * 2048ul;
-		unsigned filenr = offset / 0x7FF00000;
+		unsigned filenr = offset / chunk_size;
 
 		stbuf->st_atime = bigfile_stats[filenr].st_atime;
 		stbuf->st_mtime = bigfile_stats[filenr].st_mtime;
@@ -295,8 +296,8 @@ static int bigf_read(const char *path, char *buf, size_t size, off_t offset2,
 			size = len - offset2;
 
 		uint64_t offset = entries[index].offset * 2048ul;
-		unsigned filenr = offset / 0x7FF00000;
-		assert((offset % 0x7FF00000) + len <= sizes[filenr]);
+		unsigned filenr = offset / chunk_size;
+		assert((offset % chunk_size) + len <= sizes[filenr]);
 		memcpy(buf, base + offset + offset2, size);
 	} else
 		size = 0;

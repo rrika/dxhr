@@ -46,65 +46,10 @@ static struct entry {
 	uint32_t compressedSize;
 } *entries;
 
-int sizes_pc[] = { /* for the bigfiles of DXHRDC */
-	0x7febd000,
-	0x7fa5d800,
-	0x7fcac000,
-	0x7fdfc800,
-	0x7feed000,
-	0x7feea000,
-	0x7fe3a000,
-	0x7fee0000,
-	0x6c50b000,
-	0
-};
-
-int sizes_mac_old[] = {
-	0x7febc500,
-	0x7fa32aa0,
-	0x7fc90ee0,
-	0x7fdd6450,
-	0x7fed2dd0,
-	0x7fec8590,
-	0x7fe38470,
-	0x7fede270,
-	0x6c47a600,
-	0
-};
-
-// file size based assumption
-int sizes_mac_conservative[] = {
-	0x7febd000,
-	0x7fa5d800,
-	0x7fcac000,
-	0x7fdfc800,
-	0x7feed000,
-	0x7feea000,
-	0x7fe3a000,
-	0x7fee0000,
-	0x6c50b000,
-	0
-};
-
-// last file in bigfile based assumption
-int sizes_mac_tight[] = {
-	0x7febce94,
-	0x7fa5d618,
-	0x7fcabcc4,
-	0x7fdfc520,
-	0x7feec874,
-	0x7fee9ee0,
-	0x7fe39a4b,
-	0x7fedff24,
-	0x6c50adf2
-};
-
-int *sizes = sizes_mac_conservative;
-
 static void bigfiles_mmap(char *bigpath) {
 	size_t totalsize = 0;
-	for (int i=0; sizes[i]; i++)
-		totalsize += chunk_size; /*sizes[i];*/
+	for (int i=0; i<9; i++)
+		totalsize += chunk_size;
 
 	char *target = base = mmap(0, totalsize, PROT_READ, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
 	printf("first map gave %010lx\n", (size_t)target);
@@ -118,17 +63,18 @@ static void bigfiles_mmap(char *bigpath) {
 		if (fd == -1)
 			break;
 		printf("Loaded bigfile[%03d]", i);
-		if (target != mmap(target, sizes[i], PROT_READ, MAP_PRIVATE | MAP_FIXED, fd, 0)) {
+		off_t size = bigfile_stats[i].st_size;
+		if (target != mmap(target, size, PROT_READ, MAP_PRIVATE | MAP_FIXED, fd, 0)) {
 			printf(": Couldn't get desired mmap\n");
 			exit(1);
 		}
-		printf(" %010lx:%010lx:%010lx (%010x+%010x)\n",
+		printf(" %010lx:%010lx:%010lx (%010lx+%010lx)\n",
 			(uintptr_t)target,
-			(uintptr_t)target+sizes[i],
+			(uintptr_t)target+size,
 			(uintptr_t)target+chunk_size,
-			sizes[i],
-			chunk_size-sizes[i]);
-		target += chunk_size; /*sizes[i];*/
+			size,
+			chunk_size-size);
+		target += chunk_size;
 	}
 
 	hashes = (uint32_t*)(base+8+64);
@@ -153,12 +99,12 @@ static void bigfiles_mmap(char *bigpath) {
 			// bounds check
 			uint64_t offset = entries[index].offset * 2048ul;
 			unsigned filenr = offset / chunk_size;
-			if ((offset % chunk_size) + entries[index].uncompressedSize > sizes[filenr]) {
-				printf("file %08x index %08x wants abs range %10lx-%10lx rel range %10lx-%10lx in file[%d] of len %08x\n",
+			if ((offset % chunk_size) + entries[index].uncompressedSize > bigfile_stats[filenr].st_size) {
+				printf("file %08x index %08x wants abs range %10lx-%10lx rel range %10lx-%10lx in file[%d] of len %08lx\n",
 					hashes[index], index,
 					offset, offset + entries[index].uncompressedSize,
 					offset%chunk_size, offset%chunk_size + entries[index].uncompressedSize,
-					filenr, sizes[filenr]);
+					filenr, bigfile_stats[filenr].st_size);
 			}
 		}
 
@@ -297,7 +243,7 @@ static int bigf_read(const char *path, char *buf, size_t size, off_t offset2,
 
 		uint64_t offset = entries[index].offset * 2048ul;
 		unsigned filenr = offset / chunk_size;
-		assert((offset % chunk_size) + len <= sizes[filenr]);
+		assert((offset % chunk_size) + len <= bigfile_stats[filenr].st_size);
 		memcpy(buf, base + offset + offset2, size);
 	} else
 		size = 0;

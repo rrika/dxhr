@@ -13,6 +13,8 @@
 #include <sys/mman.h>
 #include <assert.h>
 #include <unistd.h>
+#include <byteswap.h>
+#include <stdbool.h>
 
 #ifndef S_IFDIR
 #define S_IFDIR 0x4000
@@ -41,6 +43,7 @@ static struct stat bigfile_stats[10];
 static int bigfile_fds[10];
 static uint32_t chunk_size = 0;
 static size_t num_bigfiles;
+static bool big_endian = false;
 
 static struct entry {
 	uint32_t uncompressedSize;
@@ -67,6 +70,10 @@ static void bigfiles_mmap(char *bigpath) {
 
 	// read chunk size
 	read(bigfile_fds[0], &chunk_size, 4);
+	if (chunk_size < 0x10000) {
+		big_endian = true;
+		chunk_size = __bswap_32(chunk_size);
+	}
 
 	// reserve address space
 	size_t totalsize = num_bigfiles * chunk_size;
@@ -93,8 +100,26 @@ static void bigfiles_mmap(char *bigpath) {
 
 	hashes = (uint32_t*)(base+8+64);
 	num_hashes = hashes[-1];
+	if (big_endian)
+		num_hashes = __bswap_32(num_hashes);
 	entries = (struct entry*)(hashes + num_hashes);
-	//num_hashes = 100;
+
+	if (big_endian) {
+		uint32_t *swapped_hashes = malloc(num_hashes * 4);
+		struct entry *swapped_entries = malloc(num_hashes * 16);
+		for (int i=0; i<num_hashes; i++) {
+			swapped_hashes[i] = __bswap_32(hashes[i]);
+		}
+		for (int i=0; i<num_hashes; i++) {
+			struct entry *e = &entries[i];
+			swapped_entries[i].uncompressedSize = __bswap_32(e->uncompressedSize);
+			swapped_entries[i].offset = __bswap_32(e->offset);
+			swapped_entries[i].locale = __bswap_32(e->locale);
+			swapped_entries[i].compressedSize = __bswap_32(e->compressedSize);
+		}
+		hashes = swapped_hashes;
+		entries = swapped_entries;
+	}
 
 	// filter
 	num_locale_matching_indices = 0;

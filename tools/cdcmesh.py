@@ -201,19 +201,19 @@ def read_attrib(data, base, iStride, nVertices, attr_layout):
 
 def read_rendermodel(context, basename, data, instanciate, armature_object=None):
 
-	nIndices   = uint32(data, 0x0C)[0]
-	iVsSelect  = uint32(data, 0x4C)[0]
-	oSubmeshes = uint32(data, 0x54)[0] # tab0
-	oMeshes    = uint32(data, 0x58)[0]
-	oIndices   = uint32(data, 0x60)[0]
-	nSubmeshes = uint16(data, 0x64)[0]
-	nMeshes    = uint16(data, 0x66)[0]
+	nIndices    = uint32(data, 0x0C)[0]
+	iVsSelect   = uint32(data, 0x4C)[0]
+	oPrimGroups = uint32(data, 0x54)[0] # PrimGroup
+	oBatches    = uint32(data, 0x58)[0] # ModelBatch
+	oIndices    = uint32(data, 0x60)[0]
+	nSubmeshes  = uint16(data, 0x64)[0]
+	nBatches    = uint16(data, 0x66)[0]
 
 	print("read_rendermodel(..., {!r}, ...)".format(basename))
 	print("    nIndices = {0} = 0x{0:x}".format(nIndices))
 	print("    iVsSelect = {0} = 0x{0:x}".format(iVsSelect))
-	print("    oSubmeshes = {0} = 0x{0:x}".format(oSubmeshes))
-	print("    oMeshes = {0} = 0x{0:x}".format(oMeshes))
+	print("    oPrimGroups = {0} = 0x{0:x}".format(oPrimGroups))
+	print("    oBatches = {0} = 0x{0:x}".format(oBatches))
 	print("    oIndices = {0} = 0x{0:x}".format(oIndices))
 	print()
 
@@ -222,19 +222,19 @@ def read_rendermodel(context, basename, data, instanciate, armature_object=None)
 	out = []
 
 	submeshIndex = 0
-	for i in range(nMeshes):
+	for i in range(nBatches):
 		name = "{}_{}".format(basename, i)
 
-		oMesh = oMeshes + i*0x60
-		fDistances = vec4(data, oMesh + 0)
-		nLocalSubmeshes = uint32(data, oMesh + 0x30)[0]
-		nBones     = uint16(data, oMesh + 0x34)[0]
-		oBoneIdxs  = uint32(data, oMesh + 0x38)[0] # matrix gather offsets
-		oVertices  = uint32(data, oMesh + 0x3C)[0]
-		oFormat    = uint32(data, oMesh + 0x4C)[0]
-		nVertices  = uint32(data, oMesh + 0x50)[0]
-		iIndex     = uint32(data, oMesh + 0x54)[0]
-		nTriangles = uint32(data, oMesh + 0x58)[0]
+		oBatch = oBatches + i*0x60
+		fDistances = vec4(data, oBatch + 0)
+		nLocalSubmeshes = uint32(data, oBatch + 0x30)[0]
+		nBones     = uint16(data, oBatch + 0x34)[0]
+		oBoneIdxs  = uint32(data, oBatch + 0x38)[0] # matrix gather offsets
+		oVertices  = uint32(data, oBatch + 0x3C)[0]
+		oFormat    = uint32(data, oBatch + 0x4C)[0]
+		nVertices  = uint32(data, oBatch + 0x50)[0]
+		iIndex     = uint32(data, oBatch + 0x54)[0]
+		nTriangles = uint32(data, oBatch + 0x58)[0]
 
 		nAttr      = uint16(data, oFormat + 0x8)[0]
 		iStride    = uint8(data, oFormat + 0xA)[0]
@@ -246,7 +246,7 @@ def read_rendermodel(context, basename, data, instanciate, armature_object=None)
 
 		poly_mats = []
 
-		print("        Submesh #{}".format(i))
+		print("        ModelBatch #{}".format(i))
 		print("            fDistances = {}".format(fDistances))
 		print("            nVertices = {0} = 0x{0:x}".format(nVertices))
 		print("            iIndex = {0} = 0x{0:x}".format(iIndex))
@@ -266,11 +266,12 @@ def read_rendermodel(context, basename, data, instanciate, armature_object=None)
 				layout[vertex_attributes[iAttrHash]] = (iAttrLoc, iAttrFmt)
 
 		for j in range(nLocalSubmeshes):
-			oSubmesh = oSubmeshes + 0x40 * submeshIndex
-			iStartIndex = uint32(data, oSubmesh + 0x10)[0]
-			nTrianglesSub = uint32(data, oSubmesh + 0x14)[0]
-			iMaterial   = uint32(data, oSubmesh + 0x28)[0]
-			print("          Submesh #{} (#{})".format(j, submeshIndex))
+			oPrimGroup = oPrimGroups + 0x40 * submeshIndex
+			iStartIndex = uint32(data, oPrimGroup + 0x10)[0]
+			nTrianglesSub = uint32(data, oPrimGroup + 0x14)[0]
+			iGroupFlags = uint32(data, oPrimGroup + 0x1C)[0]
+			iMaterial   = uint32(data, oPrimGroup + 0x28)[0]
+			print("          PrimGroup #{} (#{})".format(j, submeshIndex))
 			print("              iStartIndex = {0} = 0x{0:x}".format(iStartIndex))
 			print("              nTrianglesSub = {0} = 0x{0:x}".format(nTrianglesSub))
 			print("              iMaterial = {0} = 0x{0:x}".format(iMaterial))
@@ -376,6 +377,7 @@ def read_rendermodel(context, basename, data, instanciate, armature_object=None)
 	return out
 
 def read_renderterrain(context, basename, data, instanciate):
+	# RenderTerrainDataHeader
 	nLists   = uint32(data, 0x08)[0]
 	oTargets = uint32(data, 0x0C)[0]
 	nTargets = uint32(data, 0x10)[0]
@@ -426,18 +428,22 @@ def read_renderterrain(context, basename, data, instanciate):
 	for i in range(nLists):
 		oList   = uint32(data, oLists + i*4)[0]
 		if oList == 0 or oList >= len(data)-2: continue
+		# TerrainChunkArray
 		nRanges = uint16(data, oList)[0]
 		print("nranges:", nRanges)
 
 		for j in range(nRanges):
 			oRange = oList+4+16*j
+			# TerrainChunk
 			target     = uint16(data, oRange + 0x0)[0]
 			count      = uint16(data, oRange + 0x2)[0]
 			firstIndex = uint32(data, oRange + 0x4)[0]
 
 			print("{:x}/{:x} {:x} @ {:x} = {:x} + {:x}".format(i, j, target, oRange, oList, oRange-oList))
+			# RenderTerrainGroup
 			materialIndex = uint32(data, oTargets + target*0x20 + 0)[0]
 			bufferIndex = uint32(data, oTargets + target*0x20 + 4)[0]
+			groupFlags = uint32(data, oTargets + target*0x20 + 8)[0]
 
 			if bufferIndex not in range(len(lBuffers)):
 				print(i,j,"had invalid bufferIndex", bufferIndex)
@@ -772,7 +778,7 @@ def load_mesh(out, context, sections, sec, sname, instanciate):
 
 
 		elif sec.subtypeid == 24:
-			_, data_i, data_o = sec.fixupinfo[4]
+			_, data_i, data_o = sec.fixupinfo[4] # RenderTerrainData::pHeader
 			data = sec.payload[data_o:]
 			meshes = read_renderterrain(context, sname, data, instanciate)
 			out.extend(meshes)

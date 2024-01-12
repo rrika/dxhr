@@ -33,14 +33,16 @@ static struct fuse_operations bigf_oper = {
 	.read    = bigf_read,
 };
 
+#define MAX_BIGFILES 28
+
 static char *base;
 static uint32_t *hashes;
 static size_t num_hashes;
 static uint32_t localeMask;
 static size_t num_locale_matching_indices;
 static size_t *locale_matching_indices;
-static struct stat bigfile_stats[10];
-static int bigfile_fds[10];
+static struct stat bigfile_stats[MAX_BIGFILES];
+static int bigfile_fds[MAX_BIGFILES];
 static uint32_t chunk_size = 0;
 static size_t num_bigfiles;
 static bool big_endian = false;
@@ -58,7 +60,7 @@ static void bigfiles_mmap(char *bigpath) {
 	// open and stat all files
 	bigpath = strdup(bigpath);
 	char *numberPatchPoint = bigpath + strlen(bigpath) - 3;
-	for (i=0; i<10; i++) {
+	for (i=0; i<MAX_BIGFILES; i++) {
 		snprintf(numberPatchPoint, 4, "%03d", i);
 		int fd = bigfile_fds[i] = open(bigpath, O_RDONLY);
 		if (fd == -1 || fstat(fd, bigfile_stats+i))

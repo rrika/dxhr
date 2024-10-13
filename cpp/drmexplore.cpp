@@ -3,6 +3,7 @@
 #include <functional>
 #include <iomanip>
 #include <iostream>
+#include <unordered_map>
 #include <set>
 #include <sstream>
 #include <cctype>
@@ -11,6 +12,8 @@
 
 using Reference = DRM::Section::Reference;
 using Section = DRM::Section;
+
+std::unordered_map<uint32_t, std::string> dtpPaths;
 
 template <class T>
 struct ll {
@@ -92,9 +95,14 @@ static void summary(std::ostream &os, Section& s) {
 
 	switch (uint8_t st = (s.header.fixupSizeAndflags >> 1) & 0x7f) {
 		case 5:  os << " (Texture)"; break;
+		case 13: os << " (Sound)"; break;
 		case 24: os << " (RenderTerrain)"; break;
 		case 26: os << " (RenderModel)"; break;
 		case 27: os << " (?)"; break;
+		case 40: os << " (SmartScript)"; break;
+		case 41: os << " (Scaleform)"; break;
+		case 42: os << " (Conversation)"; break;
+		case 50: os << " (CameraShake)"; break;
 		default: os << " " << (int)st;
 	}
 
@@ -123,6 +131,13 @@ static void summary(std::ostream &os, Section& s) {
 	os << " unk6:" << s.header.unknown06
 	   << levels[dxflags]
 	   << " (" << s.header.payloadSize << " bytes)";
+
+	if (s.header.type == Section::ContentType::DTPData ||
+	    s.header.type == Section::ContentType::RenderMesh ||
+	    s.header.type == Section::ContentType::Material ||
+	    s.header.type == Section::ContentType::Script)
+		if (auto pathIt = dtpPaths.find(s.header.id); pathIt != dtpPaths.end())
+			os << " " << pathIt->second;
 
 	os << std::endl;
 }
@@ -283,6 +298,30 @@ static DRM::Data *openFile(std::string& filename) {
 	return contents;
 }
 
+void load_dtpids() {
+	std::string devfolder = basefolder;
+	devfolder.resize(devfolder.size() - 3); // remove "-w/"
+	devfolder += "-dev/";                   // add  "-dev/"
+	std::ifstream in(devfolder+"/dtpdata.ids", std::ios::in | std::ios::binary);
+	if (!in)
+		return;
+
+	{ uint32_t count; in >> count; }
+	while (!in.eof()) {
+		uint32_t index; in >> index;
+		{ char comma; in >> comma; }
+
+		std::string name;
+		std::getline(in, name);
+		if (name[name.size()-1] == '\r')
+			name.resize(name.size() - 1);
+
+		dtpPaths[index] = std::move(name);
+	}
+
+	in.close();
+}
+
 int main(int argc, char **argv) {
 	if (argc < 4) {
 		std::cerr << "Usage: drmexplore path/to/drms/ file.drm {query}" << std::endl;
@@ -308,6 +347,7 @@ int main(int argc, char **argv) {
 	basefolder = argv[1];
 	std::string fname(argv[2]);
 	auto handle = db.load(fname, openFile);
+	load_dtpids();
 	for (int i=3; i<argc; i++)
 		query(handle.sections, std::string(argv[i]));
 

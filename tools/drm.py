@@ -291,7 +291,7 @@ def read(data, *, check=False, specmask=0xBFFF0001):
 	unknown10, flags, section_count, root_section = struct.unpack("<IIIIIIII", data[:32])
 
 	if version not in (19, 21):
-		return None, None
+		return None, None, None
 
 	realign = flags & 1 # TODO
 	cursor = 32 + section_count*20

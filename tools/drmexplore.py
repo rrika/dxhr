@@ -45,7 +45,7 @@ def oneline_summary(fname, sections, i, section):
 	else:
 		desc += " {:x}".format(subtype)
 
-	desc += " {:x}".format(section.s_id)
+	desc += " 0x{0:x}= {0}".format(section.s_id)
 
 	if sectype == 6: # FMODSoundBank
 		desc += " "

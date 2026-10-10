@@ -29,6 +29,12 @@ def collect_existing():
 			c.setdefault(mesh.cdcorigin, []).append(mesh)
 	return c
 
+def popup_label(title, text, icon="INFO"):
+	def draw(self, context):
+		for line in text.split("\n"):
+			self.layout.label(text=line)
+	bpy.context.window_manager.popup_menu(draw, title=title, icon=icon)
+
 class UnitImporter(bpy.types.Operator, ImportHelper):
 	bl_idname = "import_mesh.cdcunit"
 	bl_label = 'Import CDC Unit'
@@ -178,10 +184,58 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 
 		identity_mat = (1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
 
+		def load_streamgroup(streamgroup_name, streamgroup_path):
+			import cdcmesh
+			# TODO: modify load_mesh so it can take whole drms loaded through DB
+			cdcmesh.texregistry = cdcmesh.texregistry or {}
+			cdcmesh.matregistry = cdcmesh.matregistry or {}
+			cdcmesh.runlater = cdcmesh.runlater or []
+
+			streamgroup_path = "streamgroups/{}.drm".format(streamgroup_path)
+			try:
+				streamgroup_sections, _, _ = db.load(streamgroup_path)
+			except Exception as e:
+				print("Couldn't load streamgroup from path {}".format(streamgroup_path))
+				print(e)
+				return
+
+			streamgroup_collection = None
+
+			for i, section in enumerate(streamgroup_sections):
+				#if section.typeid == 7: # dtp:
+				#	streamgroup_ref = drm.Reference(streamgroup_sections, section)
+				#	streamgroup_rendermesh = streamgroup_ref.deref(4)
+				#	if streamgroup_rendermesh:
+				#		cdcmesh.execute_items(context, [(streamgroup_name, streamgroup_rendermesh)], instanciate=True)
+				#	else:
+				#		print("no rendermesh on", streamgroup_name)
+
+				# HACK: else the textures don't load
+				# TODO: modify load_mesh so it can take whole drms loaded through DB
+				out = []
+				sname = "{}.{}".format(streamgroup_name, i)
+				print(sname)
+				cdcmesh.load_mesh(out, context, streamgroup_sections, section, sname, instanciate=False)
+				for j, mesh in enumerate(out):
+					if not streamgroup_collection:
+						streamgroup_collection = coll("streamgroup {}".format(streamgroup_name))
+
+					mobj = bpy.data.objects.new("{}.{}".format(sname, j), mesh)
+					streamgroup_collection.objects.link(mobj)
+				del out
+
+			for r in cdcmesh.runlater: r()
+			cdcmesh.runlater = []
+
 		for entry in self.properties.files:
 			filepath = os.path.join(self.directory, entry.name)
 
 			sections, unit_i, _ = db.load(os.path.relpath(filepath, start=basepath))
+			if unit_i == 0xffffffff:
+				# potentially a streamunit
+				streamgroup_path = os.path.splitext(os.path.basename(filepath))[0]
+				load_streamgroup(streamgroup_path, streamgroup_path)
+				continue
 			unitref = drm.Reference(sections, sections[unit_i])
 
 			sub0 = unitref.deref(0) # Terrain
@@ -238,48 +292,7 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 
 			if self.properties.load_streamgroups:
 				for (streamgroup_name, streamgroup_path) in streamgroups:
-
-					import cdcmesh
-					# TODO: modify load_mesh so it can take whole drms loaded through DB
-					cdcmesh.texregistry = cdcmesh.texregistry or {}
-					cdcmesh.matregistry = cdcmesh.matregistry or {}
-					cdcmesh.runlater = cdcmesh.runlater or []
-
-					streamgroup_path = "streamgroups/{}.drm".format(streamgroup_path)
-					try:
-						streamgroup_sections, _, _ = db.load(streamgroup_path)
-					except Exception as e:
-						print("Couldn't load streamgroup from path {}".format(streamgroup_path))
-						print(e)
-						continue
-
-					streamgroup_collection = None
-
-					for i, section in enumerate(streamgroup_sections):
-						#if section.typeid == 7: # dtp:
-						#	streamgroup_ref = drm.Reference(streamgroup_sections, section)
-						#	streamgroup_rendermesh = streamgroup_ref.deref(4)
-						#	if streamgroup_rendermesh:
-						#		cdcmesh.execute_items(context, [(streamgroup_name, streamgroup_rendermesh)], instanciate=True)
-						#	else:
-						#		print("no rendermesh on", streamgroup_name)
-
-						# HACK: else the textures don't load
-						# TODO: modify load_mesh so it can take whole drms loaded through DB
-						out = []
-						sname = "{}.{}".format(streamgroup_name, i)
-						print(sname)
-						cdcmesh.load_mesh(out, context, streamgroup_sections, section, sname, instanciate=False)
-						for j, mesh in enumerate(out):
-							if not streamgroup_collection:
-								streamgroup_collection = coll("streamgroup {}".format(streamgroup_name))
-
-							mobj = bpy.data.objects.new("{}.{}".format(sname, j), mesh)
-							streamgroup_collection.objects.link(mobj)
-						del out
-
-					for r in cdcmesh.runlater: r()
-					cdcmesh.runlater = []
+					load_streamgroup(streamgroup_name, streamgroup_path)
 
 			print("#cell #cell", cell_count, cell_count_) # should be equal
 
@@ -479,6 +492,14 @@ class UnitImporter(bpy.types.Operator, ImportHelper):
 				print("no rel")
 
 		bpy.context.view_layer.update()
+
+		if "streamgroups" in self.directory:
+			popup_label(
+				"Streamgroups aren't units",
+				"You might've selected a streamgroup file for loading.\n"+
+				"Streamgroups don't contain objects. To see the scene as intended\n"+
+				"pick the corresponding unit or scenario file from the top-level directory.\n"+
+				"The relevant streamgroups will be opened automatically.")
 
 		return {'FINISHED'}
 

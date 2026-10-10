@@ -190,7 +190,7 @@ class DB:
 						del self.cache[evict, i]
 
 	def load_single(self, path, section_index):
-		assert isinstance(section_index, int)
+		assert isinstance(section_index, int) and section_index < 0x80000000
 		drm_id = path
 
 		if (drm_id, section_index) in self.cache:
@@ -202,6 +202,7 @@ class DB:
 			return self.cache[drm_id, section_index]
 
 		sections, root, extra = self.load_internal(path)
+		assert section_index < len(sections), "{}[{}] is out of range".format(path, section_index)
 		s = sections[section_index]
 		return s
 

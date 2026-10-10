@@ -129,11 +129,9 @@ class DBSections:
 class DB:
 	def __init__(self, basepath_or_bigfile, specmask=0xBFFF0001):
 		if isinstance(basepath_or_bigfile, bigfile.BigFile):
-			self.basepath = None
-			self.bigfile = basepath_or_bigfile
+			self.fs = basepath_or_bigfile
 		else:
-			self.basepath = basepath_or_bigfile
-			self.bigfile = None
+			self.fs = bigfile.UnpackedGame(basepath_or_bigfile)
 		self.index = {} # {(type, id): {(drm_id, section)}}
 		self.cache = {} # {(drm_id, section_index): section}
 		self.lru = [] # [(drm_id, num_sections)]
@@ -203,22 +201,19 @@ class DB:
 					break
 			return self.cache[drm_id, section_index]
 
-		sections, root = self.load_internal(path)
+		sections, root, extra = self.load_internal(path)
 		s = sections[section_index]
-		assert False
 		return s
 
 	def load(self, path):
 		drm_id = path
 		sections, root_section, extra = self.load_internal(path)
+		if not sections:
+			return None, None, None
 		return DBSections(self, drm_id), root_section, extra
 
 	def load_raw(self, path):
-		if self.basepath:
-			with open(os.path.join(self.basepath, path), "rb") as f:
-				return f.read()
-		if self.bigfile:
-			return self.bigfile.get(path, self.specmask, self.specmask)
+		return self.fs.get(path, self.specmask, self.specmask)
 
 	def load_internal(self, path):
 		drm_id = path
@@ -236,6 +231,8 @@ class DB:
 			data = cdrm(data)
 
 		sections, root, extra = read(data, specmask=self.specmask)
+		if not sections:
+			return None, None, None
 
 		for i, section in enumerate(sections):
 			self.index[section.typeid, section.s_id] = drm_id, i

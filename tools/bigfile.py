@@ -69,7 +69,12 @@ class BigFile:
 		return f.read(size)
 
 	def get(self, path, language_mask, language_ref):
-		file_hash = crc32r(path)
+		if isinstance(path, int):
+			file_hash = path
+		elif isinstance(path, bytes):
+			file_hash = crc32r(path)
+		else:
+			file_hash = crc32r(path.encode("utf-8"))
 		for offset, size, language in self.entries.get(file_hash, []):
 			if language & language_mask == language_ref:
 				return self.get_slice(offset, size)
